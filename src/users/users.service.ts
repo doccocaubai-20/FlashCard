@@ -47,6 +47,8 @@ export class UsersService {
         email: true,
         name: true,
         avatarUrl: true,
+        age: true,
+        authProvider: true,
         createdAt: true,
         role: true,
       }
@@ -70,8 +72,37 @@ export class UsersService {
     return `This action removes a #${id} user`;
   }
 
-  async validatePassword(user: any, password: string): Promise<boolean> {
+  async findOrCreateGoogleUser(data: { email: string; name: string; avatarUrl?: string; googleId: string }) {
+    let user = await this.prisma.user.findUnique({
+      where: { email: data.email },
+    });
+
     if (!user) {
+      user = await this.prisma.user.create({
+        data: {
+          email: data.email,
+          name: data.name,
+          avatarUrl: data.avatarUrl,
+          authProvider: 'GOOGLE',
+          googleId: data.googleId,
+        },
+      });
+    } else if (user.authProvider !== 'GOOGLE' || !user.googleId) {
+      user = await this.prisma.user.update({
+        where: { id: user.id },
+        data: {
+          authProvider: 'GOOGLE',
+          googleId: data.googleId,
+          avatarUrl: user.avatarUrl || data.avatarUrl,
+        },
+      });
+    }
+
+    return user;
+  }
+
+  async validatePassword(user: any, password: string): Promise<boolean> {
+    if (!user || !user.password) {
       return false
     }
     return await bcrypt.compare(password, user.password)

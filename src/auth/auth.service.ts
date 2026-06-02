@@ -31,6 +31,8 @@ export class AuthService {
                 name: user.name,
                 role: user.role,
                 avatarUrl: user.avatarUrl,
+                age: user.age,
+                authProvider: user.authProvider,
             },
         };
     }

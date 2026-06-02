@@ -1,7 +1,30 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 
+const HSK_MAPPING = {
+  '你': { hsk2: '1', hsk3: '1' },
+  '好': { hsk2: '1', hsk3: '1' },
+  '谢谢': { hsk2: '1', hsk3: '1' },
+  '再见': { hsk2: '1', hsk3: '1' },
+  '水': { hsk2: '1', hsk3: '1' },
+  '学习': { hsk2: '2', hsk3: '1' },
+  '高兴': { hsk2: '2', hsk3: '1' },
+  '电脑': { hsk2: '3', hsk3: '2' },
+  '简单': { hsk2: '3', hsk3: '2' },
+  '经理': { hsk2: '4', hsk3: '3' },
+  '会议': { hsk2: '4', hsk3: '3' },
+  '环境': { hsk2: '5', hsk3: '4' },
+  '贸易': { hsk2: '6', hsk3: '5' },
+  '谈判': { hsk2: '6', hsk3: '6' },
+  '儒家': { hsk2: '6', hsk3: '7-9' },
+};
+
+function getHskLevels(hanzi: string) {
+  return HSK_MAPPING[hanzi] || { hsk2: null, hsk3: null };
+}
+
 function mapFlashcardToFrontend(card: any) {
+  const levels = getHskLevels(card.hanzi);
   return {
     ...card,
     character: card.hanzi,
@@ -9,7 +32,9 @@ function mapFlashcardToFrontend(card: any) {
     back: card.pinyin && card.meaning ? `${card.pinyin} | ${card.meaning}` : (card.meaning || card.pinyin || ''),
     example: card.exampleHanzi 
       ? `${card.exampleHanzi}${card.examplePinyin ? ` (${card.examplePinyin})` : ''}${card.exampleMeaning ? ` - ${card.exampleMeaning}` : ''}`
-      : undefined
+      : undefined,
+    hsk2Level: levels.hsk2,
+    hsk3Level: levels.hsk3,
   };
 }
 
@@ -40,7 +65,7 @@ function isConsecutiveDay(day1: string, day2: string): boolean {
 export class StudyService {
   constructor(private readonly prisma: PrismaService) {}
 
-  async getTodayCards(userId: number, tzOffset: number, extra?: number) {
+  async getTodayCards(userId: number, tzOffset: number, extra?: number, deckId?: number) {
     // 1. Get due progresses
     const dueProgresses = await this.prisma.userProgress.findMany({
       where: {
@@ -48,6 +73,7 @@ export class StudyService {
         nextReviewDate: {
           lte: new Date(),
         },
+        flashcard: deckId ? { deckId } : undefined,
       },
       include: {
         flashcard: true,
@@ -118,7 +144,7 @@ export class StudyService {
     // 4. Find cards that don't have progress yet for this user
     const newCards = await this.prisma.flashcard.findMany({
       where: {
-        deckId: { in: deckIds },
+        deckId: deckId ? deckId : { in: deckIds },
         progresses: {
           none: {
             userId: userId,
@@ -289,5 +315,39 @@ export class StudyService {
       repetitions: updatedProgress.repetitions,
       nextReviewDate: updatedProgress.nextReviewDate,
     };
+  }
+
+  async getAllCards(userId: number) {
+    const decks = await this.prisma.deck.findMany({
+      where: {
+        OR: [
+          { userId },
+          { isSystem: true },
+        ],
+      },
+      select: { id: true },
+    });
+    const deckIds = decks.map((d) => d.id);
+    const cards = await this.prisma.flashcard.findMany({
+      where: {
+        deckId: { in: deckIds },
+      },
+      include: {
+        progresses: {
+          where: { userId },
+        },
+      },
+    });
+    return cards.map((c) => {
+      const p = c.progresses[0];
+      return {
+        ...mapFlashcardToFrontend(c),
+        progressId: p?.id,
+        interval: p?.interval ?? 0,
+        easeFactor: p?.easeFactor ?? 2.5,
+        repetitions: p?.repetitions ?? 0,
+        nextReviewDate: p?.nextReviewDate,
+      };
+    });
   }
 }

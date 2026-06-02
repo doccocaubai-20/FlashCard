@@ -24,4 +24,41 @@ export class AuthController {
 
         return this.authService.login(newUser);
     }
+
+    @Post('google')
+    @HttpCode(HttpStatus.OK)
+    async googleLogin(@Body() body: { credential?: string }) {
+        let payload: { email: string; name: string; avatarUrl?: string; googleId: string };
+
+        const credential = body.credential;
+        if (!credential) {
+            throw new UnauthorizedException('Không tìm thấy thông tin xác thực từ Google!');
+        }
+
+        try {
+            // Base64 decode Google JWT payload without external libraries
+            const parts = credential.split('.');
+            if (parts.length < 2) {
+                throw new Error('Invalid token format');
+            }
+            const decodedPayload = JSON.parse(Buffer.from(parts[1], 'base64').toString('utf-8'));
+            const { email, name, picture, sub } = decodedPayload;
+
+            if (!email) {
+                throw new UnauthorizedException('Token Google không chứa địa chỉ email!');
+            }
+
+            payload = {
+                email,
+                name,
+                avatarUrl: picture,
+                googleId: sub,
+            };
+        } catch (e) {
+            throw new UnauthorizedException('Token xác thực Google không hợp lệ!');
+        }
+
+        const user = await this.usersService.findOrCreateGoogleUser(payload);
+        return this.authService.login(user);
+    }
 }

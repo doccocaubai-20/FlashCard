@@ -18,14 +18,23 @@ export class DecksService {
   }
 
   async findAllUserDecks(userId: number) {
-    return this.prisma.deck.findMany({
+    const decks = await this.prisma.deck.findMany({
       where: {
         OR: [
           { userId: userId },
           { isSystem: true }
         ]
       },
-    })
+      include: {
+        _count: {
+          select: { flashcards: true }
+        }
+      }
+    });
+    return decks.map(deck => ({
+      ...deck,
+      cardCount: deck._count.flashcards
+    }));
   }
   async findOne(id: number) {
     return this.prisma.deck.findUnique({

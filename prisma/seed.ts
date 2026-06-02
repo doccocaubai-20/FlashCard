@@ -2,98 +2,103 @@ import 'dotenv/config';
 import { PrismaClient } from '@prisma/client';
 import { Pool } from 'pg';
 import { PrismaPg } from '@prisma/adapter-pg';
+import * as fs from 'fs';
+import * as path from 'path';
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 const adapter = new PrismaPg(pool);
 const prisma = new PrismaClient({ adapter });
 
 async function main() {
-  console.log('Seeding database...');
+  console.log('Seeding Database from dictionary.json...');
 
-  // 1. Create a system deck if it doesn't exist
-  let systemDeck = await prisma.deck.findFirst({
-    where: { isSystem: true },
-  });
-
-  if (!systemDeck) {
-    systemDeck = await prisma.deck.create({
-      data: {
-        title: 'Tiếng Trung Cơ Bản (Hệ Thống)',
-        description: 'Bộ thẻ từ vựng giao tiếp tiếng Trung cơ bản dành cho người mới bắt đầu.',
-        isSystem: true,
-      },
-    });
-    console.log('Created system deck:', systemDeck.title);
-  }
-
-  // 2. Add some Chinese flashcards to the system deck
-  const flashcards = [
-    {
-      hanzi: '你',
-      pinyin: 'nǐ',
-      meaning: 'bạn, anh, chị (ngôi thứ 2 số ít)',
-      radicals: '亻(nhân)',
-      exampleHanzi: '你好',
-      examplePinyin: 'nǐ hǎo',
-      exampleMeaning: 'Xin chào',
-    },
-    {
-      hanzi: '好',
-      pinyin: 'hǎo',
-      meaning: 'tốt, đẹp, khỏe, ngon',
-      radicals: '女(nữ), 子(tử)',
-      exampleHanzi: '你好吗？',
-      examplePinyin: 'nǐ hǎo ma?',
-      exampleMeaning: 'Bạn khỏe không?',
-    },
-    {
-      hanzi: '谢谢',
-      pinyin: 'xièxie',
-      meaning: 'cảm ơn',
-      radicals: '言(ngôn)',
-      exampleHanzi: '谢谢你的 giúp đỡ.',
-      examplePinyin: 'xièxie nǐ de giúp đỡ.',
-      exampleMeaning: 'Cảm ơn sự giúp đỡ của bạn.',
-    },
-    {
-      hanzi: '再见',
-      pinyin: 'zàijiàn',
-      meaning: 'tạm biệt, hẹn gặp lại',
-      radicals: '冂(quynh), 见(kiến)',
-      exampleHanzi: '老师，再见！',
-      examplePinyin: 'lǎoshī, zàijiàn!',
-      exampleMeaning: 'Chào thầy/cô, tạm biệt!',
-    },
-    {
-      hanzi: '水',
-      pinyin: 'shuǐ',
-      meaning: 'nước',
-      radicals: '水(thủy)',
-      exampleHanzi: '我想喝水。',
-      examplePinyin: 'wǒ xiǎng hē shuǐ.',
-      exampleMeaning: 'Tôi muốn uống nước.',
-    },
+  // 1. Create or Find system decks
+  const decksData = [
+    { level: 1, title: 'Từ vựng HSK 1 (Hệ thống)', description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 1 được lấy từ từ điển.' },
+    { level: 2, title: 'Từ vựng HSK 2 (Hệ thống)', description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 2 được lấy từ từ điển.' },
+    { level: 3, title: 'Từ vựng HSK 3 (Hệ thống)', description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 3 được lấy từ từ điển.' }
   ];
 
-  for (const card of flashcards) {
-    await prisma.flashcard.upsert({
-      where: {
-        deckId_hanzi_meaning: {
-          deckId: systemDeck.id,
-          hanzi: card.hanzi,
-          meaning: card.meaning,
-        },
-      },
-      update: {},
-      create: {
-        ...card,
-        deckId: systemDeck.id,
-      },
+  const decksMap = new Map<number, number>(); // level -> deckId
+
+  for (const d of decksData) {
+    let deck = await prisma.deck.findFirst({
+      where: { title: d.title, isSystem: true }
     });
+    if (!deck) {
+      deck = await prisma.deck.create({
+        data: {
+          title: d.title,
+          description: d.description,
+          isSystem: true
+        }
+      });
+      console.log('Created system deck:', deck.title);
+    } else {
+      console.log('Found existing system deck:', deck.title);
+    }
+    decksMap.set(d.level, deck.id);
   }
 
-  console.log(`Seeded ${flashcards.length} flashcards.`);
-  console.log('Seeding completed successfully!');
+  // 2. Read and Parse dictionary.json from frontend directory
+  const dictPath = path.join(__dirname, '../../flashcard-frontend/src/data/dictionary.json');
+  console.log('Reading dictionary from:', dictPath);
+  
+  if (!fs.existsSync(dictPath)) {
+    throw new Error(`Dictionary file not found at ${dictPath}`);
+  }
+
+  const rawData = fs.readFileSync(dictPath, 'utf8');
+  const dictionary = JSON.parse(rawData);
+
+  if (!Array.isArray(dictionary)) {
+    throw new Error('dictionary.json must be a JSON array of words');
+  }
+
+  // 3. Clear existing cards in these system decks to avoid duplicate constraints
+  const deckIds = Array.from(decksMap.values());
+  console.log('Clearing old system flashcards...');
+  await prisma.flashcard.deleteMany({
+    where: {
+      deckId: { in: deckIds }
+    }
+  });
+
+  // 4. Map HSK entries to database cards
+  const cardsToInsert: any[] = [];
+  for (const entry of dictionary) {
+    if (!entry) continue;
+    
+    // Skip entries containing Latin letters (slang or informal words like B超, A片, C位, etc.)
+    if (/[a-zA-Z]/.test(entry.s || '')) {
+      continue;
+    }
+
+    const hskLevel = Number(entry.hsk);
+    if (hskLevel === 1 || hskLevel === 2 || hskLevel === 3) {
+      const deckId = decksMap.get(hskLevel);
+      if (deckId) {
+        cardsToInsert.push({
+          deckId,
+          hanzi: entry.s || '',
+          pinyin: entry.p || '',
+          meaning: entry.vi || '',
+          radicals: entry.sv || '', // Save Sino-Vietnamese / Hán Việt as radicals
+        });
+      }
+    }
+  }
+
+  console.log(`Found ${cardsToInsert.length} matching HSK 1-3 cards in dictionary.`);
+
+  // 5. Bulk Seeding into the database
+  console.log('Seeding HSK cards into database...');
+  const result = await prisma.flashcard.createMany({
+    data: cardsToInsert,
+    skipDuplicates: true
+  });
+
+  console.log(`Successfully seeded ${result.count} new HSK cards into system decks!`);
 }
 
 main()

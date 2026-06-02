@@ -11,12 +11,21 @@ export class StudyController {
   async getToday(
     @Req() req: any,
     @Query('tzOffset') tzOffsetStr?: string,
-    @Query('extra') extraStr?: string
+    @Query('extra') extraStr?: string,
+    @Query('deckId') deckIdStr?: string
   ) {
     const userId = req.user.id;
     const tzOffset = tzOffsetStr !== undefined ? parseInt(tzOffsetStr, 10) : 420;
     const extra = extraStr !== undefined ? parseInt(extraStr, 10) : undefined;
-    return this.studyService.getTodayCards(userId, tzOffset, extra);
+    const deckId = deckIdStr !== undefined ? parseInt(deckIdStr, 10) : undefined;
+    return this.studyService.getTodayCards(userId, tzOffset, extra, deckId);
+  }
+
+  @Get('all-cards')
+  @UseGuards(AuthGuard('jwt'))
+  async getAllCards(@Req() req: any) {
+    const userId = req.user.id;
+    return this.studyService.getAllCards(userId);
   }
 
   @Post('review')
