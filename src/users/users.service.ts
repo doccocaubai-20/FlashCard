@@ -53,8 +53,17 @@ export class UsersService {
     })
   }
 
-  async update(id: number, data: Prisma.UserUpdateInput) {
-    return `This action updates a #${id} user`;
+  async update(id: number, data: any) {
+    const updateData = { ...data };
+    if (updateData.password) {
+      updateData.password = await bcrypt.hash(updateData.password, 10);
+    }
+    const updatedUser = await this.prisma.user.update({
+      where: { id },
+      data: updateData,
+    });
+    const { password, ...result } = updatedUser;
+    return result;
   }
 
   async remove(id: number) {

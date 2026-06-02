@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards, Req, ParseIntPipe } from '@nestjs/common';
+import { Controller, Get, Post, Put, Body, Patch, Param, Delete, UseGuards, Req, ParseIntPipe } from '@nestjs/common';
 import { DecksService } from './decks.service';
 import { Prisma } from '@prisma/client';
 import { AuthGuard } from "@nestjs/passport";
@@ -26,9 +26,15 @@ export class DecksController {
     return this.decksService.findOne(+id);
   }
 
+  @Get(':id/flashcards')
+  findFlashcards(@Param('id', ParseIntPipe) id: number) {
+    return this.decksService.findFlashcardsByDeckId(id);
+  }
+
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateDeckDto: Prisma.DeckUpdateInput) {
-    return this.decksService.update(+id, updateDeckDto);
+  @Put(':id')
+  update(@Param('id', ParseIntPipe) id: number, @Body() updateDeckDto: Prisma.DeckUpdateInput) {
+    return this.decksService.update(id, updateDeckDto);
   }
 
   @Delete(':id')

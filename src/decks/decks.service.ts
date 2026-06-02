@@ -33,6 +33,28 @@ export class DecksService {
     })
   }
 
+  async findFlashcardsByDeckId(deckId: number) {
+    const deck = await this.prisma.deck.findUnique({
+      where: { id: deckId },
+    });
+    if (!deck) {
+      throw new NotFoundException('Không tìm thấy bộ thẻ!');
+    }
+    const cards = await this.prisma.flashcard.findMany({
+      where: { deckId },
+      orderBy: { id: 'desc' },
+    });
+    return cards.map((card) => ({
+      ...card,
+      character: card.hanzi,
+      front: card.hanzi,
+      back: card.pinyin && card.meaning ? `${card.pinyin} | ${card.meaning}` : (card.meaning || card.pinyin || ''),
+      example: card.exampleHanzi 
+        ? `${card.exampleHanzi}${card.examplePinyin ? ` (${card.examplePinyin})` : ''}${card.exampleMeaning ? ` - ${card.exampleMeaning}` : ''}`
+        : undefined
+    }));
+  }
+
   async update(id: number, data: Prisma.DeckUpdateInput) {
     return this.prisma.deck.update({
       where: { id },

@@ -19,6 +19,7 @@ model User {
   email        String       @unique
   name         String
   avatarUrl    String?
+  age          Int?
   password     String?
   googleId     String?      @unique
   authProvider AuthProvider @default(LOCAL)
@@ -29,6 +30,8 @@ model User {
   progress UserProgress[]
   stats    UserStats?
   decks    Deck[]
+  studyLogs StudyLog[]
+  dictionaryHistory DictionaryHistory[]
 }
 
 enum AuthProvider {
@@ -41,6 +44,7 @@ model UserStats {
   userId        Int       @unique
   currentStreak Int       @default(0)
   longestStreak Int       @default(0)
+  dailyTarget   Int       @default(20)
   lastStudyDate DateTime?
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
@@ -76,6 +80,7 @@ model Flashcard {
 
   deck       Deck           @relation(fields: [deckId], references: [id])
   progresses UserProgress[]
+  studyLogs  StudyLog[]
 
   @@unique([deckId, hanzi, meaning])
 }
@@ -93,4 +98,31 @@ model UserProgress {
   flashcard Flashcard @relation(fields: [flashcardId], references: [id], onDelete: Cascade)
 
   @@unique([userId, flashcardId])
+}
+
+model StudyLog {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  cardId    Int
+  rating    Int
+  createdAt DateTime @default(now())
+
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  flashcard Flashcard @relation(fields: [cardId], references: [id], onDelete: Cascade)
+}
+
+model DictionaryHistory {
+  id            Int      @id @default(autoincrement())
+  userId        Int
+  hanzi         String
+  pinyin        String?
+  sv            String?
+  vi            String?
+  aiExplanation String?  @db.Text
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, hanzi])
 }
