@@ -46,33 +46,6 @@ export class FlashcardsService {
     }
   }
 
-  async createBulk(userId: number, role: string, deckId: number, cards: any[]) {
-    const deck = await this.prisma.deck.findUnique({
-      where: { id: deckId },
-    })
-    if (!deck) {
-      throw new NotFoundException('Deck not found');
-    }
-
-    if (role !== 'ADMIN' && (deck.isSystem || deck.userId !== userId)) {
-      throw new ForbiddenException('Bạn không có quyền thêm thẻ vào bộ này!');
-    }
-    const dataToInsert = cards.map((card) => ({
-      ...card,
-      deckId: deckId,
-    }));
-
-    const result = await this.prisma.flashcard.createMany({
-      data: dataToInsert,
-      skipDuplicates: true,
-    });
-
-    return {
-      message: 'Thêm thẻ bài thành công',
-      count: result.count,
-    };
-  }
-
   async bulkImport(userId: number, role: string, items: any[]) {
     if (!Array.isArray(items) || items.length === 0) {
       return [];
@@ -89,9 +62,9 @@ export class FlashcardsService {
     }
 
     const dataToInsert = items.map((item) => {
-      let pinyin = '';
-      let meaning = '';
-      if (item.back) {
+      let pinyin = item.pinyin || '';
+      let meaning = item.meaning || '';
+      if (item.back && !pinyin && !meaning) {
         const parts = item.back.split('|');
         if (parts.length >= 2) {
           pinyin = parts[0].trim();
@@ -102,9 +75,15 @@ export class FlashcardsService {
       }
       return {
         deckId: deckId,
-        hanzi: item.front || '',
+        hanzi: item.hanzi || item.front || '',
         pinyin: pinyin,
         meaning: meaning,
+        radicals: item.radicals || null,
+        strokeData: item.strokeData || null,
+        audioUrl: item.audioUrl || null,
+        exampleHanzi: item.exampleHanzi || null,
+        examplePinyin: item.examplePinyin || null,
+        exampleMeaning: item.exampleMeaning || null,
       };
     });
 

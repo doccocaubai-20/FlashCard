@@ -1,10 +1,12 @@
 import { Controller, Post, Body, UnauthorizedException, HttpCode, HttpStatus } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { Prisma } from '@prisma/client';
 import { UsersService } from 'src/users/users.service';
 import { RegisterDTO } from './guards/dto/register-user.dto';
+import { OAuth2Client } from 'google-auth-library';
 @Controller('api/auth')
 export class AuthController {
+    private readonly googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
+
     constructor(private readonly authService: AuthService,
         private readonly usersService: UsersService) { }
 
@@ -36,12 +38,15 @@ export class AuthController {
         }
 
         try {
-            // Base64 decode Google JWT payload without external libraries
-            const parts = credential.split('.');
-            if (parts.length < 2) {
-                throw new Error('Invalid token format');
+            const ticket = await this.googleClient.verifyIdToken({
+                idToken: credential,
+                audience: process.env.GOOGLE_CLIENT_ID,
+            });
+
+            const decodedPayload = ticket.getPayload();
+            if (!decodedPayload) {
+                throw new UnauthorizedException('Token Google không hợp lệ!');
             }
-            const decodedPayload = JSON.parse(Buffer.from(parts[1], 'base64').toString('utf-8'));
             const { email, name, picture, sub } = decodedPayload;
 
             if (!email) {
@@ -50,12 +55,12 @@ export class AuthController {
 
             payload = {
                 email,
-                name,
+                name: name || email.split('@')[0],
                 avatarUrl: picture,
                 googleId: sub,
             };
         } catch (e) {
-            throw new UnauthorizedException('Token xác thực Google không hợp lệ!');
+            throw new UnauthorizedException('Token xác thực Google không hợp lệ hoặc đã hết hạn!');
         }
 
         const user = await this.usersService.findOrCreateGoogleUser(payload);

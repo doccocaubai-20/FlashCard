@@ -4,7 +4,6 @@ import { CreateFlashcardDto } from './dto/create-flashcard.dto';
 import { UpdateFlashcardDto } from './dto/update-flashcard.dto';
 import { Prisma } from '@prisma/client';
 import { AuthGuard } from "@nestjs/passport";
-import { CreateBulkFlashcardsDto } from './dto/create-bulk.dto';
 @Controller('api/flashcards')
 export class FlashcardsController {
   constructor(private readonly flashcardsService: FlashcardsService) { }
@@ -14,19 +13,6 @@ export class FlashcardsController {
   async create(@Body() body: CreateFlashcardDto, @Req() req: any) {
     const userId = req.user.id;
     return this.flashcardsService.create(userId, req.user.role, body);
-  }
-
-  @Post('bulk')
-  @UseGuards(AuthGuard('jwt'))
-  async createBulk(@Body() body: CreateBulkFlashcardsDto, @Req() req: any) {
-    const userId = req.user.id;
-    console.log('Incoming data:', body)
-    return this.flashcardsService.createBulk(
-      userId,
-      req.user.role,
-      body.deckId,
-      body.cards
-    );
   }
 
   @Post('bulk-import')

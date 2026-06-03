@@ -26,15 +26,33 @@ export class DecksService {
         ]
       },
       include: {
-        _count: {
-          select: { flashcards: true }
+        flashcards: {
+          select: {
+            id: true,
+            progresses: {
+              where: { userId },
+              select: { repetitions: true }
+            }
+          }
         }
       }
     });
-    return decks.map(deck => ({
-      ...deck,
-      cardCount: deck._count.flashcards
-    }));
+    return decks.map(deck => {
+      const cardCount = deck.flashcards.length;
+      const studiedCount = deck.flashcards.filter(card => 
+        card.progresses.length > 0 && card.progresses[0].repetitions > 0
+      ).length;
+      return {
+        id: deck.id,
+        title: deck.title,
+        description: deck.description,
+        isSystem: deck.isSystem,
+        createdAt: deck.createdAt,
+        userId: deck.userId,
+        cardCount,
+        studiedCount,
+      };
+    });
   }
   async findOne(id: number) {
     return this.prisma.deck.findUnique({
