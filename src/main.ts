@@ -12,7 +12,19 @@ async function bootstrap() {
   app.use(urlencoded({ limit: '10mb', extended: true }));
 
   app.enableCors({
-    origin: ['http://localhost:5173'],
+    origin: (origin, callback) => {
+      if (!origin) return callback(null, true);
+      const isAllowed = 
+        origin === 'http://localhost:5173' || 
+        origin.endsWith('.vercel.app') || 
+        (process.env.FRONTEND_URL && origin === process.env.FRONTEND_URL);
+
+      if (isAllowed) {
+        callback(null, true);
+      } else {
+        callback(null, false); // Block other origins gracefully
+      }
+    },
     credentials: true,
   });
   app.useGlobalPipes(new ValidationPipe({
