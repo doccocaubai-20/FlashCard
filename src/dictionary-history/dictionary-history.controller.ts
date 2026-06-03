@@ -18,6 +18,14 @@ export class DictionaryHistoryController {
     return this.dictionaryHistoryService.createOrUpdate(req.user.id, dto);
   }
 
+  @Post('explain')
+  explain(
+    @Req() req: any,
+    @Body() body: { hanzi: string; traditional?: string; pinyin?: string; sv?: string; vi?: string; en?: string }
+  ) {
+    return this.dictionaryHistoryService.explain(req.user.id, body);
+  }
+
   @Delete()
   clearHistory(@Req() req: any) {
     return this.dictionaryHistoryService.clearHistory(req.user.id);
