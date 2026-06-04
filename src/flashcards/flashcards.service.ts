@@ -100,9 +100,13 @@ export class FlashcardsService {
     return cards.map(mapFlashcardToFrontend);
   }
 
-  async findAllByDeckId(deckId: number) {
-    if (await this.prisma.deck.findUnique({ where: { id: deckId } }) === null) {
+  async findAllByDeckId(deckId: number, userId: number, role: string) {
+    const deck = await this.prisma.deck.findUnique({ where: { id: deckId } });
+    if (!deck) {
       throw new NotFoundException('Deck not found');
+    }
+    if (!deck.isSystem && deck.userId !== userId && role !== 'ADMIN') {
+      throw new ForbiddenException('Bạn không có quyền truy cập bộ thẻ này!');
     }
     const cards = await this.prisma.flashcard.findMany({
       where: {
@@ -115,36 +119,55 @@ export class FlashcardsService {
     return cards.map(mapFlashcardToFrontend);
   }
 
-  async findOne(id: number) {
+  async findOne(id: number, userId: number, role: string) {
     const card = await this.prisma.flashcard.findUnique({
-      where: { id }
-    })
+      where: { id },
+      include: { deck: true }
+    });
     if (!card) {
       throw new NotFoundException('Flashcard not found');
+    }
+    if (!card.deck.isSystem && card.deck.userId !== userId && role !== 'ADMIN') {
+      throw new ForbiddenException('Bạn không có quyền truy cập thẻ bài này!');
     }
     return mapFlashcardToFrontend(card);
   }
 
-  async update(id: number, data: Prisma.FlashcardUpdateInput) {
+  async update(id: number, userId: number, role: string, data: any) {
     const card = await this.prisma.flashcard.findUnique({
       where: { id },
+      include: { deck: true }
     });
     if (!card) {
       throw new NotFoundException('Flashcard not found');
     }
+    if (card.deck.userId !== userId && role !== 'ADMIN') {
+      throw new ForbiddenException('Bạn không có quyền chỉnh sửa thẻ bài này!');
+    }
+
+    const cleanData = { ...data };
+    if (role !== 'ADMIN') {
+      delete cleanData.deck;
+      delete cleanData.deckId;
+    }
+
     const updatedCard = await this.prisma.flashcard.update({
       where: { id },
-      data,
+      data: cleanData,
     });
     return mapFlashcardToFrontend(updatedCard);
   }
 
-  async remove(id: number) {
+  async remove(id: number, userId: number, role: string) {
     const card = await this.prisma.flashcard.findUnique({
       where: { id },
+      include: { deck: true }
     });
     if (!card) {
       throw new NotFoundException('Flashcard not found');
+    }
+    if (card.deck.userId !== userId && role !== 'ADMIN') {
+      throw new ForbiddenException('Bạn không có quyền xóa thẻ bài này!');
     }
     await this.prisma.flashcard.delete({
       where: { id },

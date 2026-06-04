@@ -23,27 +23,35 @@ export class FlashcardsController {
   }
 
   @Get()
-  async findAll(@Query('deckId', ParseIntPipe) deckId: number) {
+  @UseGuards(AuthGuard('jwt'))
+  async findAll(@Query('deckId', ParseIntPipe) deckId: number, @Req() req: any) {
     if (!deckId) {
       throw new BadRequestException('deckId query parameter is required');
     }
-    return this.flashcardsService.findAllByDeckId(deckId);
+    return this.flashcardsService.findAllByDeckId(deckId, req.user.id, req.user.role);
   }
 
   @Get(':id')
-  async findOne(@Param('id', ParseIntPipe) id: number) {
-    return this.flashcardsService.findOne(id);
+  @UseGuards(AuthGuard('jwt'))
+  async findOne(@Param('id', ParseIntPipe) id: number, @Req() req: any) {
+    return this.flashcardsService.findOne(id, req.user.id, req.user.role);
   }
 
   @Patch(':id')
   @Put(':id')
-  update(@Param('id', ParseIntPipe) id: number, @Body() updateFlashcardDto: Prisma.FlashcardUpdateInput) {
-    return this.flashcardsService.update(id, updateFlashcardDto);
+  @UseGuards(AuthGuard('jwt'))
+  update(
+    @Param('id', ParseIntPipe) id: number,
+    @Req() req: any,
+    @Body() updateFlashcardDto: Prisma.FlashcardUpdateInput
+  ) {
+    return this.flashcardsService.update(id, req.user.id, req.user.role, updateFlashcardDto);
   }
 
   @Delete(':id')
-  remove(@Param('id', ParseIntPipe) id: number) {
-    return this.flashcardsService.remove(id);
+  @UseGuards(AuthGuard('jwt'))
+  remove(@Param('id', ParseIntPipe) id: number, @Req() req: any) {
+    return this.flashcardsService.remove(id, req.user.id, req.user.role);
   }
 }
 
