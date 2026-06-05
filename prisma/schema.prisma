@@ -122,6 +122,7 @@ model DictionaryHistory {
   sv            String?
   vi            String?
   aiExplanation String?  @db.Text
+  aiGeneratedAt DateTime?
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
 

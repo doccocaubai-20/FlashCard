@@ -174,4 +174,68 @@ export class FlashcardsService {
     });
     return { success: true, message: 'Flashcard deleted' };
   }
+
+  async generateWithAI(userId: number, topic: string, count: number, hskLevel?: number, excludeWords?: string[]) {
+    const apiKey = process.env.DEEPSEEK_API_KEY;
+    const model = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
+    if (!apiKey) throw new Error('DeepSeek API Key chưa được cấu hình!');
+
+    const hskHint = hskLevel ? ` ở cấp độ HSK ${hskLevel}` : '';
+    const excludeHint = excludeWords && excludeWords.length > 0
+      ? `\n- TUYỆT ĐỐI KHÔNG ĐƯỢC chứa các từ vựng sau đây (tránh trùng lặp với thẻ đã có): ${excludeWords.join(', ')}`
+      : '';
+
+    const prompt = `Bạn là giáo viên tiếng Trung. Hãy tạo ${count} flashcard từ vựng tiếng Trung về chủ đề "${topic}"${hskHint}.${excludeHint}
+
+TRẢ VỀ CHỈ MỘT MẢNG JSON THUẦN TÚY, không có markdown, không có giải thích, đúng format sau:
+[
+  {
+    "hanzi": "你好",
+    "pinyin": "nǐ hǎo",
+    "meaning": "xin chào",
+    "exampleHanzi": "你好，我叫小明。",
+    "examplePinyin": "Nǐ hǎo, wǒ jiào Xiǎomíng.",
+    "exampleMeaning": "Xin chào, tôi tên là Tiểu Minh."
+  }
+]
+
+Yêu cầu:
+- Chọn từ thông dụng, đúng chủ đề
+- Pinyin phải có dấu thanh điệu đầy đủ
+- Nghĩa tiếng Việt ngắn gọn, chính xác
+- Câu ví dụ tự nhiên, ngắn (dưới 15 chữ)
+- Trả về đúng ${count} từ`;
+
+    const response = await fetch('https://api.deepseek.com/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
+      body: JSON.stringify({
+        model,
+        messages: [
+          { role: 'system', content: 'You are a Chinese language teacher. Always respond with valid JSON arrays only.' },
+          { role: 'user', content: prompt },
+        ],
+        temperature: 0.3,
+        max_tokens: 4000,
+      }),
+      signal: AbortSignal.timeout(60000),
+    });
+
+    if (!response.ok) throw new Error(`DeepSeek API error: ${response.status}`);
+    const resJson: any = await response.json();
+    let content = resJson.choices[0].message.content.trim();
+
+    // Strip markdown code blocks if present
+    content = content.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/```$/i, '').trim();
+
+    let cards: any[];
+    try {
+      cards = JSON.parse(content);
+    } catch {
+      throw new Error('AI trả về dữ liệu không hợp lệ. Vui lòng thử lại!');
+    }
+
+    if (!Array.isArray(cards)) throw new Error('AI không trả về mảng flashcard hợp lệ!');
+    return cards.slice(0, count);
+  }
 }

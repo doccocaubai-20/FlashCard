@@ -1,4 +1,4 @@
-import { Controller, Req, Get, Post, Put, Body, Query, Patch, Param, Delete, UseGuards, BadRequestException, ParseIntPipe } from '@nestjs/common';
+import { Controller, Req, Get, Post, Put, Body, Query, Patch, Param, Delete, UseGuards, BadRequestException, ParseIntPipe, HttpException, HttpStatus } from '@nestjs/common';
 import { FlashcardsService } from './flashcards.service';
 import { CreateFlashcardDto } from './dto/create-flashcard.dto';
 import { UpdateFlashcardDto } from './dto/update-flashcard.dto';
@@ -52,6 +52,22 @@ export class FlashcardsController {
   @UseGuards(AuthGuard('jwt'))
   remove(@Param('id', ParseIntPipe) id: number, @Req() req: any) {
     return this.flashcardsService.remove(id, req.user.id, req.user.role);
+  }
+
+  @Post('ai-generate')
+  @UseGuards(AuthGuard('jwt'))
+  async generateWithAI(@Req() req: any, @Body() body: { topic: string; count?: number; hskLevel?: number; excludeWords?: string[] }) {
+    const { topic, count = 10, hskLevel, excludeWords } = body;
+    if (!topic || topic.trim().length === 0) {
+      throw new HttpException('Vui lòng nhập chủ đề!', HttpStatus.BAD_REQUEST);
+    }
+    const safeCount = Math.min(Math.max(count, 5), 30);
+    try {
+      const cards = await this.flashcardsService.generateWithAI(req.user.id, topic.trim(), safeCount, hskLevel, excludeWords);
+      return { cards, topic: topic.trim(), count: cards.length };
+    } catch (err) {
+      throw new HttpException(err.message || 'Lỗi tạo flashcard bằng AI!', HttpStatus.BAD_GATEWAY);
+    }
   }
 }
 

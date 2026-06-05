@@ -14,7 +14,7 @@ export class DictionaryHistoryService {
     });
   }
 
-  async createOrUpdate(userId: number, dto: CreateHistoryDto) {
+  async createOrUpdate(userId: number, dto: CreateHistoryDto & { aiGeneratedAt?: Date | null }) {
     const updateData: any = {
       pinyin: dto.pinyin,
       sv: dto.sv,
@@ -22,6 +22,9 @@ export class DictionaryHistoryService {
     };
     if (dto.aiExplanation !== undefined) {
       updateData.aiExplanation = dto.aiExplanation;
+    }
+    if (dto.aiGeneratedAt !== undefined) {
+      updateData.aiGeneratedAt = dto.aiGeneratedAt;
     }
 
     return this.prisma.dictionaryHistory.upsert({
@@ -39,6 +42,7 @@ export class DictionaryHistoryService {
         sv: dto.sv,
         vi: dto.vi,
         aiExplanation: dto.aiExplanation || null,
+        aiGeneratedAt: dto.aiGeneratedAt || null,
       },
     });
   }
@@ -56,8 +60,7 @@ export class DictionaryHistoryService {
     const count = await this.prisma.dictionaryHistory.count({
       where: {
         userId,
-        aiExplanation: { not: null },
-        updatedAt: {
+        aiGeneratedAt: {
           gte: todayStart,
         },
       },
@@ -175,7 +178,9 @@ ${isSingleChar ? '' : `3. Phần Giải nghĩa tổng hợp (Đặt tiêu đề:
             { role: 'user', content: prompt },
           ],
           temperature: 0.2,
+          max_tokens: 800,
         }),
+        signal: AbortSignal.timeout(25000),
       });
 
       if (!response.ok) {
@@ -198,6 +203,7 @@ ${isSingleChar ? '' : `3. Phần Giải nghĩa tổng hợp (Đặt tiêu đề:
         sv: body.sv,
         vi: body.vi,
         aiExplanation: cleanedContent,
+        aiGeneratedAt: new Date(),
       });
 
       const finalUsage = await this.getTodayCount(userId);
@@ -209,9 +215,12 @@ ${isSingleChar ? '' : `3. Phần Giải nghĩa tổng hợp (Đặt tiêu đề:
       };
     } catch (err) {
       console.error('Failed to generate AI explanation:', err);
+      const isTimeout = err.name === 'TimeoutError' || err.name === 'AbortError';
       throw new HttpException(
-        'Không thể tạo giải thích bằng AI: ' + err.message,
-        HttpStatus.BAD_GATEWAY,
+        isTimeout
+          ? 'AI đang bận, vui lòng thử lại sau vài giây!'
+          : 'Không thể tạo giải thích bằng AI: ' + err.message,
+        isTimeout ? HttpStatus.REQUEST_TIMEOUT : HttpStatus.BAD_GATEWAY,
       );
     }
   }

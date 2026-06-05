@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Param, ParseIntPipe, UseGuards, Req } from '@nestjs/common';
+import { Controller, Get, Post, Param, Query, ParseIntPipe, UseGuards, Req } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { SocialService } from './social.service';
 
@@ -10,6 +10,11 @@ export class SocialController {
   @Get('leaderboard')
   getLeaderboard() {
     return this.socialService.getLeaderboard();
+  }
+
+  @Get('decks/public')
+  getPublicDecks(@Query('page') page = '1', @Query('limit') limit = '20') {
+    return this.socialService.getPublicDecks(+page, +limit);
   }
 
   @Post('decks/:id/share')
