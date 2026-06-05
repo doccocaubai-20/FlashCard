@@ -26,6 +26,12 @@ export class DictionaryService {
 
     if (type === 'hanzi') {
       const queryStr = q.trim();
+      // Check if query contains Chinese characters
+      const isHanzi = /[\u4e00-\u9fa5]/.test(queryStr);
+      if (!isHanzi) {
+        return [];
+      }
+
       // Exact matches on Simplified or Traditional
       const exactMatches = await this.prisma.dictionaryWord.findMany({
         where: {
@@ -39,28 +45,24 @@ export class DictionaryService {
       if (exactMatches.length > 0) {
         results = exactMatches;
       } else {
-        // Check if query contains Chinese characters
-        const isHanzi = /[\u4e00-\u9fa5]/.test(queryStr);
-        if (isHanzi) {
-          results = await this.prisma.dictionaryWord.findMany({
-            where: {
-              OR: [
-                { s: { startsWith: queryStr } },
-                { t: { startsWith: queryStr } },
-              ],
-            },
-            take: 30,
-          });
-        }
+        results = await this.prisma.dictionaryWord.findMany({
+          where: {
+            OR: [
+              { s: { startsWith: queryStr } },
+              { t: { startsWith: queryStr } },
+            ],
+          },
+          take: 30,
+        });
       }
     } else if (type === 'pinyin') {
-      // 1. Exact matches
+      // 1. Exact matches (case-sensitive because sp/p/pt are saved in lowercase and cleanQ is lowercased)
       const exactMatches = await this.prisma.dictionaryWord.findMany({
         where: {
           OR: [
-            { p: { equals: cleanQ, mode: 'insensitive' } },
-            { pt: { equals: cleanQ, mode: 'insensitive' } },
-            { sp: { equals: cleanQ, mode: 'insensitive' } },
+            { sp: cleanQ },
+            { p: cleanQ },
+            { pt: cleanQ },
           ],
         },
         take: 30,
@@ -69,13 +71,13 @@ export class DictionaryService {
       if (exactMatches.length >= 30) {
         results = exactMatches;
       } else {
-        // 2. Prefix matches (startsWith)
+        // 2. Prefix matches (startsWith) - case-sensitive to use B-tree index
         const prefixMatches = await this.prisma.dictionaryWord.findMany({
           where: {
             OR: [
-              { p: { startsWith: cleanQ, mode: 'insensitive' } },
-              { pt: { startsWith: cleanQ, mode: 'insensitive' } },
-              { sp: { startsWith: cleanQ, mode: 'insensitive' } },
+              { sp: { startsWith: cleanQ } },
+              { p: { startsWith: cleanQ } },
+              { pt: { startsWith: cleanQ } },
             ],
             NOT: {
               id: { in: exactMatches.map(m => m.id) }
@@ -86,19 +88,19 @@ export class DictionaryService {
         results = [...exactMatches, ...prefixMatches];
       }
     } else if (type === 'meaning') {
-      // 1. Exact sv match
+      // 1. Exact sv match (case-sensitive)
       const exactSv = await this.prisma.dictionaryWord.findMany({
-        where: { sv: { equals: cleanQ, mode: 'insensitive' } },
+        where: { sv: cleanQ },
         take: 30,
       });
 
       if (exactSv.length >= 30) {
         results = exactSv;
       } else {
-        // 2. Prefix sv match
+        // 2. Prefix sv match (case-sensitive)
         const prefixSv = await this.prisma.dictionaryWord.findMany({
           where: {
-            sv: { startsWith: cleanQ, mode: 'insensitive' },
+            sv: { startsWith: cleanQ },
             NOT: {
               id: { in: exactSv.map(m => m.id) }
             }
@@ -110,7 +112,7 @@ export class DictionaryService {
         if (currentMatches.length >= 30) {
           results = currentMatches;
         } else {
-          // 3. Substring vi match
+          // 3. Substring vi match (case-insensitive contains fallback)
           const containsVi = await this.prisma.dictionaryWord.findMany({
             where: {
               vi: { contains: cleanQ, mode: 'insensitive' },

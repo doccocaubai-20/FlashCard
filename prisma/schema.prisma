@@ -160,4 +160,7 @@ model DictionaryWord {
   @@index([s])
   @@index([sp])
   @@index([hsk])
+  @@index([sv])
+  @@index([p])
+  @@index([pt])
 }
