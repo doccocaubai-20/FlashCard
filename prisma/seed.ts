@@ -155,6 +155,52 @@ async function main() {
     console.log(`Successfully seeded ${result.count} cards for ${deckConfig.title}!`);
   }
 
+  // 5. Seed DictionaryWord
+  const existingDictCount = await prisma.dictionaryWord.count();
+  if (existingDictCount > 0) {
+    console.log(`\nDictionary already has ${existingDictCount} words. Skipping Dictionary seeding.`);
+  } else {
+    if (fs.existsSync(dictPath)) {
+      console.log('\nSeeding DictionaryWord table...');
+      const rawDict = fs.readFileSync(dictPath, 'utf8');
+      const dictionary = JSON.parse(rawDict);
+      if (Array.isArray(dictionary)) {
+        const wordsToInsert: any[] = [];
+        for (const entry of dictionary) {
+          if (!entry || !entry.s) continue;
+          wordsToInsert.push({
+            s: entry.s,
+            t: entry.t || null,
+            p: entry.p || null,
+            pt: entry.pt || null,
+            sp: entry.sp || null,
+            b: entry.b ? Number(entry.b) : null,
+            vi: entry.vi || null,
+            sv: entry.sv || null,
+            en: Array.isArray(entry.en) ? entry.en : entry.en ? [entry.en] : [],
+            hsk: entry.hsk ? Number(entry.hsk) : null,
+          });
+        }
+        
+        console.log(`Preparing to seed ${wordsToInsert.length} dictionary words...`);
+        const batchSize = 5000;
+        let insertedCount = 0;
+        for (let i = 0; i < wordsToInsert.length; i += batchSize) {
+          const batch = wordsToInsert.slice(i, i + batchSize);
+          const result = await prisma.dictionaryWord.createMany({
+            data: batch,
+            skipDuplicates: true
+          });
+          insertedCount += result.count;
+          console.log(`Inserted batch ${Math.floor(i / batchSize) + 1}: +${result.count} words (total: ${insertedCount})`);
+        }
+        console.log(`Finished seeding DictionaryWord. Total inserted: ${insertedCount}`);
+      }
+    } else {
+      console.log('\ndictionary.json not found. Skipping DictionaryWord seeding.');
+    }
+  }
+
   console.log('\nAll decks seeded successfully!');
 }
 

@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { APP_GUARD } from '@nestjs/core';
+import { ThrottlerModule } from '@nestjs/throttler';
+import { CustomThrottlerGuard } from './common/guards/custom-throttler.guard';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { PrismaModule } from './prisma/prisma.module';
@@ -10,9 +13,19 @@ import { StudyModule } from './study/study.module';
 import { StatsModule } from './stats/stats.module';
 import { DictionaryHistoryModule } from './dictionary-history/dictionary-history.module';
 import { FavoriteWordModule } from './favorite-words/favoriteWord.module';
+import { DictionaryModule } from './dictionary/dictionary.module';
+import { AdminModule } from './admin/admin.module';
+import { SocialModule } from './social/social.module';
 
 @Module({
   imports: [
+    ThrottlerModule.forRoot([
+      {
+        name: 'default',
+        ttl: 60000, // 1 minute
+        limit: 100,  // 100 requests per minute
+      },
+    ]),
     PrismaModule,
     DecksModule,
     UsersModule,
@@ -21,9 +34,18 @@ import { FavoriteWordModule } from './favorite-words/favoriteWord.module';
     StudyModule,
     StatsModule,
     DictionaryHistoryModule,
-    FavoriteWordModule
+    FavoriteWordModule,
+    DictionaryModule,
+    AdminModule,
+    SocialModule
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [
+    AppService,
+    {
+      provide: APP_GUARD,
+      useClass: CustomThrottlerGuard,
+    },
+  ],
 })
 export class AppModule { }

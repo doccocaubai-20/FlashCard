@@ -56,6 +56,8 @@ model Deck {
   title       String
   description String?
   isSystem    Boolean  @default(false)
+  isPublic    Boolean  @default(false)
+  shareCode   String?  @unique
   createdAt   DateTime @default(now())
 
   userId Int?
@@ -140,4 +142,22 @@ model FavoriteWord {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   
   @@unique([userId, hanzi])
+}
+
+model DictionaryWord {
+  id  Int      @id @default(autoincrement())
+  s   String   // Giản thể
+  t   String?  // Phồn thể
+  p   String?  // Pinyin
+  pt  String?  // Pinyin số
+  sp  String?  // Pinyin trơn
+  b   Int?     // Số nét
+  vi  String?  // Nghĩa tiếng Việt
+  sv  String?  // Âm Hán Việt
+  en  String[] // Mảng nghĩa tiếng Anh
+  hsk Int?     // Cấp độ HSK
+
+  @@index([s])
+  @@index([sp])
+  @@index([hsk])
 }

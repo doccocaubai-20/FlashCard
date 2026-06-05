@@ -1,5 +1,6 @@
 import { Controller, Get, Post, Delete, Body, UseGuards, Req } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
+import { Throttle } from '@nestjs/throttler';
 import { DictionaryHistoryService } from './dictionary-history.service';
 import { CreateHistoryDto } from './dto/create-history.dto';
 
@@ -13,11 +14,17 @@ export class DictionaryHistoryController {
     return this.dictionaryHistoryService.findAll(req.user.id);
   }
 
+  @Get('today-count')
+  getTodayCount(@Req() req: any) {
+    return this.dictionaryHistoryService.getTodayCount(req.user.id);
+  }
+
   @Post()
   createOrUpdate(@Req() req: any, @Body() dto: CreateHistoryDto) {
     return this.dictionaryHistoryService.createOrUpdate(req.user.id, dto);
   }
 
+  @Throttle({ default: { limit: 3, ttl: 60000 } })
   @Post('explain')
   explain(
     @Req() req: any,

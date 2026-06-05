@@ -7,12 +7,14 @@ export class DecksService {
   constructor(private readonly prisma: PrismaService) { }
 
 
-  async create(userId: number, data: any) {
+  async create(userId: number, data: any, role = 'USER') {
+    const isSystem = data.isSystem === true && role === 'ADMIN';
     return this.prisma.deck.create({
       data: {
         title: data.title,
         description: data.description,
-        userId: userId,
+        isSystem: isSystem,
+        userId: isSystem ? null : userId,
       },
     })
   }

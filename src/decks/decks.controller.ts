@@ -13,7 +13,7 @@ export class DecksController {
 
   @Post()
   create(@Body() createDeckDto: CreateDeckDto, @Req() req: any) {
-    return this.decksService.create(req.user.id, createDeckDto);
+    return this.decksService.create(req.user.id, createDeckDto, req.user.role);
   }
 
   @Get()
