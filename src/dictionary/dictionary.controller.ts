@@ -1,4 +1,10 @@
-import { Controller, Get, Query, ParseIntPipe, BadRequestException } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Query,
+  ParseIntPipe,
+  BadRequestException,
+} from '@nestjs/common';
 import { DictionaryService } from './dictionary.service';
 
 @Controller('api/dictionary')
@@ -12,7 +18,9 @@ export class DictionaryController {
     @Query('multiple') multiple?: string,
   ) {
     if (!type || !q) {
-      throw new BadRequestException('Query parameters "type" and "q" are required');
+      throw new BadRequestException(
+        'Query parameters "type" and "q" are required',
+      );
     }
     const isMultiple = multiple === 'true';
     return this.dictionaryService.search(type, q, isMultiple);

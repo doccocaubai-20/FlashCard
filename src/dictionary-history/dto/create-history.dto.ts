@@ -3,7 +3,7 @@ import { IsNotEmpty, IsOptional, IsString } from 'class-validator';
 export class CreateHistoryDto {
   @IsNotEmpty()
   @IsString()
-  hanzi: string;
+  hanzi!: string;
 
   @IsOptional()
   @IsString()

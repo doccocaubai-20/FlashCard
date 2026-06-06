@@ -1,11 +1,13 @@
-import { Injectable, NotFoundException, ForbiddenException } from '@nestjs/common';
+import {
+  Injectable,
+  NotFoundException,
+  ForbiddenException,
+} from '@nestjs/common';
 import { Prisma } from '@prisma/client';
 import { PrismaService } from 'src/prisma/prisma.service';
 @Injectable()
 export class DecksService {
-
-  constructor(private readonly prisma: PrismaService) { }
-
+  constructor(private readonly prisma: PrismaService) {}
 
   async create(userId: number, data: any, role = 'USER') {
     const isSystem = data.isSystem === true && role === 'ADMIN';
@@ -16,16 +18,13 @@ export class DecksService {
         isSystem: isSystem,
         userId: isSystem ? null : userId,
       },
-    })
+    });
   }
 
   async findAllUserDecks(userId: number) {
     const decks = await this.prisma.deck.findMany({
       where: {
-        OR: [
-          { userId: userId },
-          { isSystem: true }
-        ]
+        OR: [{ userId: userId }, { isSystem: true }],
       },
       include: {
         flashcards: {
@@ -33,16 +32,17 @@ export class DecksService {
             id: true,
             progresses: {
               where: { userId },
-              select: { repetitions: true }
-            }
-          }
-        }
-      }
+              select: { repetitions: true },
+            },
+          },
+        },
+      },
     });
-    return decks.map(deck => {
+    return decks.map((deck) => {
       const cardCount = deck.flashcards.length;
-      const studiedCount = deck.flashcards.filter(card => 
-        card.progresses.length > 0 && card.progresses[0].repetitions > 0
+      const studiedCount = deck.flashcards.filter(
+        (card) =>
+          card.progresses.length > 0 && card.progresses[0].repetitions > 0,
       ).length;
       return {
         id: deck.id,
@@ -58,8 +58,8 @@ export class DecksService {
   }
   async findOne(id: number) {
     return this.prisma.deck.findUnique({
-      where: { id }
-    })
+      where: { id },
+    });
   }
 
   async findFlashcardsByDeckId(deckId: number) {
@@ -77,18 +77,21 @@ export class DecksService {
       ...card,
       character: card.hanzi,
       front: card.hanzi,
-      back: card.pinyin && card.meaning ? `${card.pinyin} | ${card.meaning}` : (card.meaning || card.pinyin || ''),
-      example: card.exampleHanzi 
+      back:
+        card.pinyin && card.meaning
+          ? `${card.pinyin} | ${card.meaning}`
+          : card.meaning || card.pinyin || '',
+      example: card.exampleHanzi
         ? `${card.exampleHanzi}${card.examplePinyin ? ` (${card.examplePinyin})` : ''}${card.exampleMeaning ? ` - ${card.exampleMeaning}` : ''}`
-        : undefined
+        : undefined,
     }));
   }
 
   async update(id: number, data: Prisma.DeckUpdateInput) {
     return this.prisma.deck.update({
       where: { id },
-      data
-    })
+      data,
+    });
   }
 
   async remove(deckId: number, currentUserId: number, currentUserRole: string) {
@@ -107,11 +110,15 @@ export class DecksService {
     }
 
     if (deck.isSystem) {
-      throw new ForbiddenException('Không thể xóa bộ thẻ mặc định của hệ thống!');
+      throw new ForbiddenException(
+        'Không thể xóa bộ thẻ mặc định của hệ thống!',
+      );
     }
 
     if (deck.userId !== currentUserId) {
-      throw new ForbiddenException('Bạn không có quyền thao tác trên bộ thẻ của người khác!');
+      throw new ForbiddenException(
+        'Bạn không có quyền thao tác trên bộ thẻ của người khác!',
+      );
     }
 
     return this.prisma.deck.delete({
@@ -129,7 +136,9 @@ export class DecksService {
     }
 
     if (!deck.isSystem) {
-      throw new ForbiddenException('Chỉ có thể xóa bộ thẻ mặc định của hệ thống!');
+      throw new ForbiddenException(
+        'Chỉ có thể xóa bộ thẻ mặc định của hệ thống!',
+      );
     }
 
     return this.prisma.deck.delete({

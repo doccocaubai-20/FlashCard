@@ -1,12 +1,27 @@
-import { Controller, Req, Get, Post, Put, Body, Query, Patch, Param, Delete, UseGuards, BadRequestException, ParseIntPipe, HttpException, HttpStatus } from '@nestjs/common';
+import {
+  Controller,
+  Req,
+  Get,
+  Post,
+  Put,
+  Body,
+  Query,
+  Patch,
+  Param,
+  Delete,
+  UseGuards,
+  BadRequestException,
+  ParseIntPipe,
+  HttpException,
+  HttpStatus,
+} from '@nestjs/common';
 import { FlashcardsService } from './flashcards.service';
 import { CreateFlashcardDto } from './dto/create-flashcard.dto';
-import { UpdateFlashcardDto } from './dto/update-flashcard.dto';
 import { Prisma } from '@prisma/client';
-import { AuthGuard } from "@nestjs/passport";
+import { AuthGuard } from '@nestjs/passport';
 @Controller('api/flashcards')
 export class FlashcardsController {
-  constructor(private readonly flashcardsService: FlashcardsService) { }
+  constructor(private readonly flashcardsService: FlashcardsService) {}
 
   @Post()
   @UseGuards(AuthGuard('jwt'))
@@ -24,11 +39,18 @@ export class FlashcardsController {
 
   @Get()
   @UseGuards(AuthGuard('jwt'))
-  async findAll(@Query('deckId', ParseIntPipe) deckId: number, @Req() req: any) {
+  async findAll(
+    @Query('deckId', ParseIntPipe) deckId: number,
+    @Req() req: any,
+  ) {
     if (!deckId) {
       throw new BadRequestException('deckId query parameter is required');
     }
-    return this.flashcardsService.findAllByDeckId(deckId, req.user.id, req.user.role);
+    return this.flashcardsService.findAllByDeckId(
+      deckId,
+      req.user.id,
+      req.user.role,
+    );
   }
 
   @Get(':id')
@@ -43,9 +65,14 @@ export class FlashcardsController {
   update(
     @Param('id', ParseIntPipe) id: number,
     @Req() req: any,
-    @Body() updateFlashcardDto: Prisma.FlashcardUpdateInput
+    @Body() updateFlashcardDto: Prisma.FlashcardUpdateInput,
   ) {
-    return this.flashcardsService.update(id, req.user.id, req.user.role, updateFlashcardDto);
+    return this.flashcardsService.update(
+      id,
+      req.user.id,
+      req.user.role,
+      updateFlashcardDto,
+    );
   }
 
   @Delete(':id')
@@ -56,18 +83,36 @@ export class FlashcardsController {
 
   @Post('ai-generate')
   @UseGuards(AuthGuard('jwt'))
-  async generateWithAI(@Req() req: any, @Body() body: { topic: string; count?: number; hskLevel?: number; excludeWords?: string[] }) {
+  async generateWithAI(
+    @Req() req: any,
+    @Body()
+    body: {
+      topic: string;
+      count?: number;
+      hskLevel?: number;
+      excludeWords?: string[];
+    },
+  ) {
     const { topic, count = 10, hskLevel, excludeWords } = body;
     if (!topic || topic.trim().length === 0) {
       throw new HttpException('Vui lòng nhập chủ đề!', HttpStatus.BAD_REQUEST);
     }
     const safeCount = Math.min(Math.max(count, 5), 30);
     try {
-      const cards = await this.flashcardsService.generateWithAI(req.user.id, topic.trim(), safeCount, hskLevel, excludeWords);
+      const cards = await this.flashcardsService.generateWithAI(
+        req.user.id,
+        topic.trim(),
+        safeCount,
+        hskLevel,
+        excludeWords,
+      );
       return { cards, topic: topic.trim(), count: cards.length };
     } catch (err) {
-      throw new HttpException(err.message || 'Lỗi tạo flashcard bằng AI!', HttpStatus.BAD_GATEWAY);
+      const error = err as any;
+      throw new HttpException(
+        error?.message || 'Lỗi tạo flashcard bằng AI!',
+        HttpStatus.BAD_GATEWAY,
+      );
     }
   }
 }
-

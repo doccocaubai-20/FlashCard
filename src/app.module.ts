@@ -23,7 +23,7 @@ import { SocialModule } from './social/social.module';
       {
         name: 'default',
         ttl: 60000, // 1 minute
-        limit: 100,  // 100 requests per minute
+        limit: 100, // 100 requests per minute
       },
     ]),
     PrismaModule,
@@ -37,7 +37,7 @@ import { SocialModule } from './social/social.module';
     FavoriteWordModule,
     DictionaryModule,
     AdminModule,
-    SocialModule
+    SocialModule,
   ],
   controllers: [AppController],
   providers: [
@@ -48,4 +48,4 @@ import { SocialModule } from './social/social.module';
     },
   ],
 })
-export class AppModule { }
+export class AppModule {}

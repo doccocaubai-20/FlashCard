@@ -1,4 +1,16 @@
-import { Controller, Get, Post, Patch, Delete, Body, Param, Query, UseGuards, SetMetadata, ParseIntPipe } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Patch,
+  Delete,
+  Body,
+  Param,
+  Query,
+  UseGuards,
+  SetMetadata,
+  ParseIntPipe,
+} from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { RolesGuard } from 'src/auth/guards/roles.guard';
 import { AdminService } from './admin.service';
@@ -20,7 +32,10 @@ export class AdminController {
   }
 
   @Patch('users/:id/role')
-  updateUserRole(@Param('id', ParseIntPipe) id: number, @Body() body: { role: string }) {
+  updateUserRole(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() body: { role: string },
+  ) {
     return this.adminService.updateUserRole(id, body.role);
   }
 
@@ -37,7 +52,13 @@ export class AdminController {
   @Patch('decks/:id')
   updateDeck(
     @Param('id', ParseIntPipe) id: number,
-    @Body() body: { title?: string; description?: string; isPublic?: boolean; isSystem?: boolean },
+    @Body()
+    body: {
+      title?: string;
+      description?: string;
+      isPublic?: boolean;
+      isSystem?: boolean;
+    },
   ) {
     return this.adminService.updateDeck(id, body);
   }

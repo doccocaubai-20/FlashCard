@@ -1,23 +1,25 @@
-import { ConflictException, Injectable, BadRequestException } from '@nestjs/common';
+import {
+  ConflictException,
+  Injectable,
+  BadRequestException,
+} from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
-import { Prisma } from '@prisma/client';
-import * as bcrypt from "bcrypt"
+import * as bcrypt from 'bcrypt';
 import { RegisterDTO } from 'src/auth/guards/dto/register-user.dto';
 @Injectable()
 export class UsersService {
-
-  constructor(private readonly prisma: PrismaService) { }
+  constructor(private readonly prisma: PrismaService) {}
   async create(data: RegisterDTO) {
     const existingUser = await this.prisma.user.findUnique({
       where: { email: data.email },
-    })
+    });
 
     if (existingUser) {
-      throw new ConflictException('Email đã được sử dụng!')
+      throw new ConflictException('Email đã được sử dụng!');
     }
 
     if (!data.password) {
-      throw new BadRequestException('Password is required!')
+      throw new BadRequestException('Password is required!');
     }
 
     const hashedPassword = await bcrypt.hash(data.password, 10);
@@ -26,16 +28,16 @@ export class UsersService {
       data: {
         ...data,
         password: hashedPassword,
-      }
-    })
-    const { password, ...result } = newUser
-    return result
+      },
+    });
+    const { password: _password, ...result } = newUser;
+    return result;
   }
 
   async findByEmail(email: string) {
     return this.prisma.user.findUnique({
-      where: { email: email }
-    })
+      where: { email: email },
+    });
   }
 
   async findById(id: number) {
@@ -51,8 +53,8 @@ export class UsersService {
         authProvider: true,
         createdAt: true,
         role: true,
-      }
-    })
+      },
+    });
   }
 
   async update(id: number, data: any) {
@@ -64,15 +66,20 @@ export class UsersService {
       where: { id },
       data: updateData,
     });
-    const { password, ...result } = updatedUser;
+    const { password: _password, ...result } = updatedUser;
     return result;
   }
 
-  async remove(id: number) {
+  remove(id: number) {
     return `This action removes a #${id} user`;
   }
 
-  async findOrCreateGoogleUser(data: { email: string; name: string; avatarUrl?: string; googleId: string }) {
+  async findOrCreateGoogleUser(data: {
+    email: string;
+    name: string;
+    avatarUrl?: string;
+    googleId: string;
+  }) {
     let user = await this.prisma.user.findUnique({
       where: { email: data.email },
     });
@@ -103,8 +110,8 @@ export class UsersService {
 
   async validatePassword(user: any, password: string): Promise<boolean> {
     if (!user || !user.password) {
-      return false
+      return false;
     }
-    return await bcrypt.compare(password, user.password)
+    return await bcrypt.compare(password, user.password);
   }
 }

@@ -1,4 +1,8 @@
-import { Injectable, ConflictException, NotFoundException } from '@nestjs/common';
+import {
+  Injectable,
+  ConflictException,
+  NotFoundException,
+} from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 import { CreateFavoriteWordDto } from './dto/favoriteWord.dto';
 
@@ -25,7 +29,8 @@ export class FavoriteWordService {
         },
       });
     } catch (error) {
-      if (error.code === 'P2002') {
+      const err = error as any;
+      if (err?.code === 'P2002') {
         throw new ConflictException('Từ này đã có trong mục yêu thích!');
       }
       throw error;

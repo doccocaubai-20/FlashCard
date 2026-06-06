@@ -35,10 +35,7 @@ export class DictionaryService {
       // Exact matches on Simplified or Traditional
       const exactMatches = await this.prisma.dictionaryWord.findMany({
         where: {
-          OR: [
-            { s: queryStr },
-            { t: queryStr },
-          ],
+          OR: [{ s: queryStr }, { t: queryStr }],
         },
       });
 
@@ -59,11 +56,7 @@ export class DictionaryService {
       // 1. Exact matches (case-sensitive because sp/p/pt are saved in lowercase and cleanQ is lowercased)
       const exactMatches = await this.prisma.dictionaryWord.findMany({
         where: {
-          OR: [
-            { sp: cleanQ },
-            { p: cleanQ },
-            { pt: cleanQ },
-          ],
+          OR: [{ sp: cleanQ }, { p: cleanQ }, { pt: cleanQ }],
         },
         take: 30,
       });
@@ -80,8 +73,8 @@ export class DictionaryService {
               { pt: { startsWith: cleanQ } },
             ],
             NOT: {
-              id: { in: exactMatches.map(m => m.id) }
-            }
+              id: { in: exactMatches.map((m) => m.id) },
+            },
           },
           take: 30 - exactMatches.length,
         });
@@ -102,8 +95,8 @@ export class DictionaryService {
           where: {
             sv: { startsWith: cleanQ },
             NOT: {
-              id: { in: exactSv.map(m => m.id) }
-            }
+              id: { in: exactSv.map((m) => m.id) },
+            },
           },
           take: 30 - exactSv.length,
         });
@@ -117,8 +110,8 @@ export class DictionaryService {
             where: {
               vi: { contains: cleanQ, mode: 'insensitive' },
               NOT: {
-                id: { in: currentMatches.map(m => m.id) }
-              }
+                id: { in: currentMatches.map((m) => m.id) },
+              },
             },
             take: 30 - currentMatches.length,
           });
@@ -129,7 +122,11 @@ export class DictionaryService {
 
     // Enrich compound words' Hán Việt reading
     const enriched = await this.enrichMultipleSv(results);
-    const finalResult = multiple ? enriched.slice(0, 30) : (enriched.length > 0 ? enriched[0] : null);
+    const finalResult = multiple
+      ? enriched.slice(0, 30)
+      : enriched.length > 0
+        ? enriched[0]
+        : null;
 
     // Cache final computed result
     this.searchCache.set(cacheKey, finalResult);
@@ -138,7 +135,9 @@ export class DictionaryService {
 
   // Batch enrichment of Hán Việt readings for compound words
   async enrichMultipleSv(entries: any[]) {
-    const missingSvEntries = entries.filter(e => !e.sv && e.s && e.s.length > 1);
+    const missingSvEntries = entries.filter(
+      (e) => !e.sv && e.s && e.s.length > 1,
+    );
     if (missingSvEntries.length === 0) return entries;
 
     // Collect all unique characters
@@ -156,8 +155,8 @@ export class DictionaryService {
       },
       select: {
         s: true,
-        sv: true
-      }
+        sv: true,
+      },
     });
 
     const svMap = new Map<string, string>();
@@ -171,7 +170,7 @@ export class DictionaryService {
     for (const e of entries) {
       if (!e.sv && e.s) {
         const chars = Array.from(e.s as string);
-        const parts = chars.map(c => svMap.get(c) || `[${c}]`);
+        const parts = chars.map((c) => svMap.get(c) || `[${c}]`);
         e.sv = parts.join(' ').replace(/\s+/g, ' ').trim();
       }
     }
@@ -207,13 +206,13 @@ export class DictionaryService {
         hsk: { gte: 1, lte: 3 },
       },
     });
-    const shortCandidates = candidates.filter(c => c.s && c.s.length <= 2);
+    const shortCandidates = candidates.filter((c) => c.s && c.s.length <= 2);
     const pool = shortCandidates.length > 0 ? shortCandidates : candidates;
     let chosen: any;
 
     if (pool.length === 0) {
       const fallback = await this.prisma.dictionaryWord.findMany({
-        take: 100
+        take: 100,
       });
       chosen = fallback[Math.floor(Math.random() * fallback.length)];
     } else {
@@ -225,7 +224,7 @@ export class DictionaryService {
 
     this.wordOfTheDayCache = {
       date: todayStr,
-      word: result
+      word: result,
     };
     return result;
   }
@@ -277,7 +276,7 @@ export class DictionaryService {
       },
     });
     // Return entries that are single characters
-    const result = entries.filter(e => e.s.length === 1);
+    const result = entries.filter((e) => e.s.length === 1);
     this.syllableDetailsCache.set(cleanSyllable, result);
     return result;
   }
@@ -297,14 +296,16 @@ export class DictionaryService {
     });
 
     // Sort by HSK level (HSK 1-3 first) and stroke count descending
-    const result = words.sort((a, b) => {
-      const aHsk = a.hsk || 99;
-      const bHsk = b.hsk || 99;
-      if (aHsk !== bHsk) return aHsk - bHsk;
-      const aB = a.b || 0;
-      const bB = b.b || 0;
-      return bB - aB;
-    }).slice(0, 40); // limit 40
+    const result = words
+      .sort((a, b) => {
+        const aHsk = a.hsk || 99;
+        const bHsk = b.hsk || 99;
+        if (aHsk !== bHsk) return aHsk - bHsk;
+        const aB = a.b || 0;
+        const bB = b.b || 0;
+        return bB - aB;
+      })
+      .slice(0, 40); // limit 40
 
     this.radicalCache.set(cleanChar, result);
     return result;

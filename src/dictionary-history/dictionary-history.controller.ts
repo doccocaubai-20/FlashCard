@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Delete, Body, UseGuards, Req } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Delete,
+  Body,
+  UseGuards,
+  Req,
+} from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { Throttle } from '@nestjs/throttler';
 import { DictionaryHistoryService } from './dictionary-history.service';
@@ -7,7 +15,9 @@ import { CreateHistoryDto } from './dto/create-history.dto';
 @Controller('api/dictionary-history')
 @UseGuards(AuthGuard('jwt'))
 export class DictionaryHistoryController {
-  constructor(private readonly dictionaryHistoryService: DictionaryHistoryService) {}
+  constructor(
+    private readonly dictionaryHistoryService: DictionaryHistoryService,
+  ) {}
 
   @Get()
   findAll(@Req() req: any) {
@@ -28,7 +38,15 @@ export class DictionaryHistoryController {
   @Post('explain')
   explain(
     @Req() req: any,
-    @Body() body: { hanzi: string; traditional?: string; pinyin?: string; sv?: string; vi?: string; en?: string }
+    @Body()
+    body: {
+      hanzi: string;
+      traditional?: string;
+      pinyin?: string;
+      sv?: string;
+      vi?: string;
+      en?: string;
+    },
   ) {
     return this.dictionaryHistoryService.explain(req.user.id, body);
   }

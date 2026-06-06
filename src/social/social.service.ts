@@ -1,4 +1,8 @@
-import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
+import {
+  Injectable,
+  NotFoundException,
+  BadRequestException,
+} from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
@@ -31,7 +35,10 @@ export class SocialService {
     });
 
     const rankedUsers = users.map((u) => {
-      const totalRepetitions = u.progress.reduce((sum, p) => sum + p.repetitions, 0);
+      const totalRepetitions = u.progress.reduce(
+        (sum, p) => sum + p.repetitions,
+        0,
+      );
       const currentStreak = u.stats?.currentStreak || 0;
       // Score calculation: 100 points per streak day, 10 points per card repetition
       const score = currentStreak * 100 + totalRepetitions * 10;
@@ -67,7 +74,9 @@ export class SocialService {
     }
 
     if (deck.userId !== userId) {
-      throw new BadRequestException('Bạn chỉ có quyền chia sẻ bộ từ vựng tự tạo của chính mình!');
+      throw new BadRequestException(
+        'Bạn chỉ có quyền chia sẻ bộ từ vựng tự tạo của chính mình!',
+      );
     }
 
     if (deck.isSystem) {
@@ -125,7 +134,9 @@ export class SocialService {
     const newDeck = await this.prisma.deck.create({
       data: {
         title: originalDeck.title,
-        description: originalDeck.description ? `${originalDeck.description} (Nguồn: Bản chia sẻ)` : 'Được nhập từ bản chia sẻ công khai.',
+        description: originalDeck.description
+          ? `${originalDeck.description} (Nguồn: Bản chia sẻ)`
+          : 'Được nhập từ bản chia sẻ công khai.',
         userId,
         isSystem: false,
         isPublic: false,
@@ -162,7 +173,11 @@ export class SocialService {
       this.prisma.deck.findMany({
         where: { isPublic: true },
         select: {
-          id: true, title: true, description: true, shareCode: true, createdAt: true,
+          id: true,
+          title: true,
+          description: true,
+          shareCode: true,
+          createdAt: true,
           user: { select: { name: true, avatarUrl: true } },
           _count: { select: { flashcards: true } },
         },

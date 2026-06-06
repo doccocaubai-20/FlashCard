@@ -3,7 +3,7 @@ import { IsNotEmpty, IsOptional, IsString } from 'class-validator';
 export class CreateFavoriteWordDto {
   @IsString()
   @IsNotEmpty()
-  hanzi: string;
+  hanzi!: string;
 
   @IsString()
   @IsOptional()

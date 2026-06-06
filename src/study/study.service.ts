@@ -1,22 +1,22 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 
 const HSK_MAPPING = {
-  '你': { hsk2: '1', hsk3: '1' },
-  '好': { hsk2: '1', hsk3: '1' },
-  '谢谢': { hsk2: '1', hsk3: '1' },
-  '再见': { hsk2: '1', hsk3: '1' },
-  '水': { hsk2: '1', hsk3: '1' },
-  '学习': { hsk2: '2', hsk3: '1' },
-  '高兴': { hsk2: '2', hsk3: '1' },
-  '电脑': { hsk2: '3', hsk3: '2' },
-  '简单': { hsk2: '3', hsk3: '2' },
-  '经理': { hsk2: '4', hsk3: '3' },
-  '会议': { hsk2: '4', hsk3: '3' },
-  '环境': { hsk2: '5', hsk3: '4' },
-  '贸易': { hsk2: '6', hsk3: '5' },
-  '谈判': { hsk2: '6', hsk3: '6' },
-  '儒家': { hsk2: '6', hsk3: '7-9' },
+  你: { hsk2: '1', hsk3: '1' },
+  好: { hsk2: '1', hsk3: '1' },
+  谢谢: { hsk2: '1', hsk3: '1' },
+  再见: { hsk2: '1', hsk3: '1' },
+  水: { hsk2: '1', hsk3: '1' },
+  学习: { hsk2: '2', hsk3: '1' },
+  高兴: { hsk2: '2', hsk3: '1' },
+  电脑: { hsk2: '3', hsk3: '2' },
+  简单: { hsk2: '3', hsk3: '2' },
+  经理: { hsk2: '4', hsk3: '3' },
+  会议: { hsk2: '4', hsk3: '3' },
+  环境: { hsk2: '5', hsk3: '4' },
+  贸易: { hsk2: '6', hsk3: '5' },
+  谈判: { hsk2: '6', hsk3: '6' },
+  儒家: { hsk2: '6', hsk3: '7-9' },
 };
 
 function getHskLevels(hanzi: string) {
@@ -29,8 +29,11 @@ function mapFlashcardToFrontend(card: any) {
     ...card,
     character: card.hanzi,
     front: card.hanzi,
-    back: card.pinyin && card.meaning ? `${card.pinyin} | ${card.meaning}` : (card.meaning || card.pinyin || ''),
-    example: card.exampleHanzi 
+    back:
+      card.pinyin && card.meaning
+        ? `${card.pinyin} | ${card.meaning}`
+        : card.meaning || card.pinyin || '',
+    example: card.exampleHanzi
       ? `${card.exampleHanzi}${card.examplePinyin ? ` (${card.examplePinyin})` : ''}${card.exampleMeaning ? ` - ${card.exampleMeaning}` : ''}`
       : undefined,
     hsk2Level: levels.hsk2,
@@ -65,7 +68,12 @@ function isConsecutiveDay(day1: string, day2: string): boolean {
 export class StudyService {
   constructor(private readonly prisma: PrismaService) {}
 
-  async getTodayCards(userId: number, tzOffset: number, extra?: number, deckId?: number) {
+  async getTodayCards(
+    userId: number,
+    tzOffset: number,
+    extra?: number,
+    deckId?: number,
+  ) {
     // 1. Get due progresses
     const dueProgresses = await this.prisma.userProgress.findMany({
       where: {
@@ -132,10 +140,7 @@ export class StudyService {
     // 3. Fetch user or system decks to pull new cards from
     const decks = await this.prisma.deck.findMany({
       where: {
-        OR: [
-          { userId },
-          { isSystem: true },
-        ],
+        OR: [{ userId }, { isSystem: true }],
       },
       select: { id: true },
     });
@@ -185,7 +190,10 @@ export class StudyService {
     return [...mappedDueCards, ...mappedNewCards];
   }
 
-  async submitReview(userId: number, body: { cardId: number; rating: number; tzOffset?: number }) {
+  async submitReview(
+    userId: number,
+    body: { cardId: number; rating: number; tzOffset?: number },
+  ) {
     const tzOffset = body.tzOffset !== undefined ? body.tzOffset : 420;
 
     // 1. Check if progress exists
@@ -219,7 +227,7 @@ export class StudyService {
 
     easeFactor = Math.max(
       1.3,
-      easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02))
+      easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)),
     );
 
     if (quality < 3) {
@@ -279,7 +287,10 @@ export class StudyService {
     let longestStreak = stats.longestStreak;
 
     if (stats.lastStudyDate) {
-      const localLastStudyStr = getLocalDateString(stats.lastStudyDate, tzOffset);
+      const localLastStudyStr = getLocalDateString(
+        stats.lastStudyDate,
+        tzOffset,
+      );
 
       if (localTodayStr !== localLastStudyStr) {
         const consecutive = isConsecutiveDay(localLastStudyStr, localTodayStr);
@@ -320,10 +331,7 @@ export class StudyService {
   async getAllCards(userId: number) {
     const decks = await this.prisma.deck.findMany({
       where: {
-        OR: [
-          { userId },
-          { isSystem: true },
-        ],
+        OR: [{ userId }, { isSystem: true }],
       },
       select: { id: true },
     });

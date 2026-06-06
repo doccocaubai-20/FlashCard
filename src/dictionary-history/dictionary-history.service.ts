@@ -14,7 +14,10 @@ export class DictionaryHistoryService {
     });
   }
 
-  async createOrUpdate(userId: number, dto: CreateHistoryDto & { aiGeneratedAt?: Date | null }) {
+  async createOrUpdate(
+    userId: number,
+    dto: CreateHistoryDto & { aiGeneratedAt?: Date | null },
+  ) {
     const updateData: any = {
       pinyin: dto.pinyin,
       sv: dto.sv,
@@ -71,7 +74,15 @@ export class DictionaryHistoryService {
 
   async explain(
     userId: number,
-    body: { hanzi: string; traditional?: string; pinyin?: string; sv?: string; vi?: string; en?: string; refresh?: boolean }
+    body: {
+      hanzi: string;
+      traditional?: string;
+      pinyin?: string;
+      sv?: string;
+      vi?: string;
+      en?: string;
+      refresh?: boolean;
+    },
   ) {
     // 1. If not forcing a refresh, check if we already have AI explanation cached (either globally or locally)
     if (!body.refresh) {
@@ -87,7 +98,11 @@ export class DictionaryHistoryService {
         },
       });
 
-      if (existingShared && existingShared.aiExplanation && existingShared.aiExplanation.trim()) {
+      if (
+        existingShared &&
+        existingShared.aiExplanation &&
+        existingShared.aiExplanation.trim()
+      ) {
         // Cache this shared explanation for the current user's history as well
         await this.createOrUpdate(userId, {
           hanzi: body.hanzi,
@@ -98,11 +113,11 @@ export class DictionaryHistoryService {
         });
 
         const usage = await this.getTodayCount(userId);
-        return { 
-          aiExplanation: existingShared.aiExplanation, 
+        return {
+          aiExplanation: existingShared.aiExplanation,
           cached: true,
           todayCount: usage.count,
-          limit: usage.limit
+          limit: usage.limit,
         };
       }
     }
@@ -130,7 +145,10 @@ export class DictionaryHistoryService {
 
     try {
       const briefMeaning = body.en
-        ? (Array.isArray(body.en) ? body.en[0] : body.en.split(/[;,]/)[0]).trim()
+        ? (Array.isArray(body.en)
+            ? body.en[0]
+            : body.en.split(/[;,]/)[0]
+          ).trim()
         : (body.vi || '').split('/')[0].trim();
 
       const isSingleChar = body.hanzi.length === 1;
@@ -149,9 +167,13 @@ ${isSingleChar ? `   - Hãy giải thích chi tiết cấu tạo chữ "${body.h
        <span class="font-bold text-ink dark:text-on-dark text-sm">[Chữ đơn]</span> - <span class="text-xs text-primary font-semibold">[Hán Việt / Bính âm]</span>: [Nội dung phân tích]
      </div>
 
-${isSingleChar ? '' : `3. Phần Giải nghĩa tổng hợp (Đặt tiêu đề: <h3 class="text-xs font-bold text-primary mt-4 mb-2 uppercase tracking-wide">2. Giải nghĩa tổng hợp</h3>)
+${
+  isSingleChar
+    ? ''
+    : `3. Phần Giải nghĩa tổng hợp (Đặt tiêu đề: <h3 class="text-xs font-bold text-primary mt-4 mb-2 uppercase tracking-wide">2. Giải nghĩa tổng hợp</h3>)
    - Giải thích cách kết hợp ý nghĩa của các chữ đơn để cấu thành nên nghĩa khái niệm hiện tại của từ ghép "${body.hanzi}". Viết cô đọng trong 2-3 câu.
-`}
+`
+}
 
 4. Phần Ví dụ thực tế (Đặt tiêu đề: <h3 class="text-xs font-bold text-primary mt-4 mb-2.5 uppercase tracking-wide">${isSingleChar ? '2' : '3'}. Ví dụ thực tế ngắn</h3>)
    - Đưa ra đúng 3 ví dụ giao tiếp thực tế cực kỳ ngắn gọn (mỗi câu dưới 12 chữ Hán) sử dụng từ/chữ "${body.hanzi}".
@@ -162,26 +184,30 @@ ${isSingleChar ? '' : `3. Phần Giải nghĩa tổng hợp (Đặt tiêu đề:
        <div class="text-xs text-body dark:text-on-dark-mute italic">[Dịch nghĩa tiếng Việt tự nhiên, trôi chảy]</div>
      </li>`;
 
-      const response = await fetch('https://api.deepseek.com/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`,
+      const response = await fetch(
+        'https://api.deepseek.com/chat/completions',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${apiKey}`,
+          },
+          body: JSON.stringify({
+            model,
+            messages: [
+              {
+                role: 'system',
+                content:
+                  'You are a helpful Chinese language assistant. Respond as concisely as possible in structured HTML, avoiding any conversational filler.',
+              },
+              { role: 'user', content: prompt },
+            ],
+            temperature: 0.2,
+            max_tokens: 800,
+          }),
+          signal: AbortSignal.timeout(25000),
         },
-        body: JSON.stringify({
-          model,
-          messages: [
-            {
-              role: 'system',
-              content: 'You are a helpful Chinese language assistant. Respond as concisely as possible in structured HTML, avoiding any conversational filler.',
-            },
-            { role: 'user', content: prompt },
-          ],
-          temperature: 0.2,
-          max_tokens: 800,
-        }),
-        signal: AbortSignal.timeout(25000),
-      });
+      );
 
       if (!response.ok) {
         const errorText = await response.text();
@@ -207,19 +233,22 @@ ${isSingleChar ? '' : `3. Phần Giải nghĩa tổng hợp (Đặt tiêu đề:
       });
 
       const finalUsage = await this.getTodayCount(userId);
-      return { 
-        aiExplanation: cleanedContent, 
+      return {
+        aiExplanation: cleanedContent,
         cached: false,
         todayCount: finalUsage.count,
-        limit: finalUsage.limit
+        limit: finalUsage.limit,
       };
     } catch (err) {
       console.error('Failed to generate AI explanation:', err);
-      const isTimeout = err.name === 'TimeoutError' || err.name === 'AbortError';
+      const error = err as any;
+      const isTimeout =
+        error?.name === 'TimeoutError' || error?.name === 'AbortError';
       throw new HttpException(
         isTimeout
           ? 'AI đang bận, vui lòng thử lại sau vài giây!'
-          : 'Không thể tạo giải thích bằng AI: ' + err.message,
+          : 'Không thể tạo giải thích bằng AI: ' +
+              (error?.message || String(err)),
         isTimeout ? HttpStatus.REQUEST_TIMEOUT : HttpStatus.BAD_GATEWAY,
       );
     }

@@ -14,9 +14,9 @@ async function bootstrap() {
   app.enableCors({
     origin: (origin, callback) => {
       if (!origin) return callback(null, true);
-      const isAllowed = 
-        origin === 'http://localhost:5173' || 
-        origin.endsWith('.vercel.app') || 
+      const isAllowed =
+        origin === 'http://localhost:5173' ||
+        origin.endsWith('.vercel.app') ||
         (process.env.FRONTEND_URL && origin === process.env.FRONTEND_URL);
 
       if (isAllowed) {
@@ -27,9 +27,13 @@ async function bootstrap() {
     },
     credentials: true,
   });
-  app.useGlobalPipes(new ValidationPipe({
-    whitelist: true,
-  }));
+  app.useGlobalPipes(
+    new ValidationPipe({
+      whitelist: true,
+    }),
+  );
   await app.listen(process.env.PORT ?? 3000);
 }
-bootstrap();
+bootstrap().catch((err) => {
+  console.error(err);
+});

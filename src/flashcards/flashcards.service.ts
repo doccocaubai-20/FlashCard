@@ -1,6 +1,9 @@
-import { Injectable, NotFoundException, ConflictException, ForbiddenException } from '@nestjs/common';
-import { CreateFlashcardDto } from './dto/create-flashcard.dto';
-import { UpdateFlashcardDto } from './dto/update-flashcard.dto';
+import {
+  Injectable,
+  NotFoundException,
+  ConflictException,
+  ForbiddenException,
+} from '@nestjs/common';
 import { Prisma } from '@prisma/client';
 import { PrismaService } from 'src/prisma/prisma.service';
 function mapFlashcardToFrontend(card: any) {
@@ -8,21 +11,24 @@ function mapFlashcardToFrontend(card: any) {
     ...card,
     character: card.hanzi,
     front: card.hanzi,
-    back: card.pinyin && card.meaning ? `${card.pinyin} | ${card.meaning}` : (card.meaning || card.pinyin || ''),
-    example: card.exampleHanzi 
+    back:
+      card.pinyin && card.meaning
+        ? `${card.pinyin} | ${card.meaning}`
+        : card.meaning || card.pinyin || '',
+    example: card.exampleHanzi
       ? `${card.exampleHanzi}${card.examplePinyin ? ` (${card.examplePinyin})` : ''}${card.exampleMeaning ? ` - ${card.exampleMeaning}` : ''}`
-      : undefined
+      : undefined,
   };
 }
 
 @Injectable()
 export class FlashcardsService {
-  constructor(private readonly prisma: PrismaService) { }
+  constructor(private readonly prisma: PrismaService) {}
 
   async create(userId: number, role: string, data: any) {
     const deck = await this.prisma.deck.findUnique({
-      where: { id: data.deckId }
-    })
+      where: { id: data.deckId },
+    });
     if (!deck) {
       throw new NotFoundException('Deck not found');
     }
@@ -33,7 +39,7 @@ export class FlashcardsService {
       const card = await this.prisma.flashcard.create({
         data: {
           ...data,
-        }
+        },
       });
       return mapFlashcardToFrontend(card);
     } catch (error) {
@@ -111,10 +117,10 @@ export class FlashcardsService {
     const cards = await this.prisma.flashcard.findMany({
       where: {
         deck: {
-          id: deckId
-        }
+          id: deckId,
+        },
       },
-      orderBy: { id: 'desc' }
+      orderBy: { id: 'desc' },
     });
     return cards.map(mapFlashcardToFrontend);
   }
@@ -122,12 +128,16 @@ export class FlashcardsService {
   async findOne(id: number, userId: number, role: string) {
     const card = await this.prisma.flashcard.findUnique({
       where: { id },
-      include: { deck: true }
+      include: { deck: true },
     });
     if (!card) {
       throw new NotFoundException('Flashcard not found');
     }
-    if (!card.deck.isSystem && card.deck.userId !== userId && role !== 'ADMIN') {
+    if (
+      !card.deck.isSystem &&
+      card.deck.userId !== userId &&
+      role !== 'ADMIN'
+    ) {
       throw new ForbiddenException('Bạn không có quyền truy cập thẻ bài này!');
     }
     return mapFlashcardToFrontend(card);
@@ -136,7 +146,7 @@ export class FlashcardsService {
   async update(id: number, userId: number, role: string, data: any) {
     const card = await this.prisma.flashcard.findUnique({
       where: { id },
-      include: { deck: true }
+      include: { deck: true },
     });
     if (!card) {
       throw new NotFoundException('Flashcard not found');
@@ -161,7 +171,7 @@ export class FlashcardsService {
   async remove(id: number, userId: number, role: string) {
     const card = await this.prisma.flashcard.findUnique({
       where: { id },
-      include: { deck: true }
+      include: { deck: true },
     });
     if (!card) {
       throw new NotFoundException('Flashcard not found');
@@ -175,15 +185,22 @@ export class FlashcardsService {
     return { success: true, message: 'Flashcard deleted' };
   }
 
-  async generateWithAI(userId: number, topic: string, count: number, hskLevel?: number, excludeWords?: string[]) {
+  async generateWithAI(
+    userId: number,
+    topic: string,
+    count: number,
+    hskLevel?: number,
+    excludeWords?: string[],
+  ) {
     const apiKey = process.env.DEEPSEEK_API_KEY;
     const model = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
     if (!apiKey) throw new Error('DeepSeek API Key chưa được cấu hình!');
 
     const hskHint = hskLevel ? ` ở cấp độ HSK ${hskLevel}` : '';
-    const excludeHint = excludeWords && excludeWords.length > 0
-      ? `\n- TUYỆT ĐỐI KHÔNG ĐƯỢC chứa các từ vựng sau đây (tránh trùng lặp với thẻ đã có): ${excludeWords.join(', ')}`
-      : '';
+    const excludeHint =
+      excludeWords && excludeWords.length > 0
+        ? `\n- TUYỆT ĐỐI KHÔNG ĐƯỢC chứa các từ vựng sau đây (tránh trùng lặp với thẻ đã có): ${excludeWords.join(', ')}`
+        : '';
 
     const prompt = `Bạn là giáo viên tiếng Trung. Hãy tạo ${count} flashcard từ vựng tiếng Trung về chủ đề "${topic}"${hskHint}.${excludeHint}
 
@@ -208,11 +225,18 @@ Yêu cầu:
 
     const response = await fetch('https://api.deepseek.com/chat/completions', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${apiKey}`,
+      },
       body: JSON.stringify({
         model,
         messages: [
-          { role: 'system', content: 'You are a Chinese language teacher. Always respond with valid JSON arrays only.' },
+          {
+            role: 'system',
+            content:
+              'You are a Chinese language teacher. Always respond with valid JSON arrays only.',
+          },
           { role: 'user', content: prompt },
         ],
         temperature: 0.3,
@@ -226,7 +250,11 @@ Yêu cầu:
     let content = resJson.choices[0].message.content.trim();
 
     // Strip markdown code blocks if present
-    content = content.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/```$/i, '').trim();
+    content = content
+      .replace(/^```json\s*/i, '')
+      .replace(/^```\s*/i, '')
+      .replace(/```$/i, '')
+      .trim();
 
     let cards: any[];
     try {
@@ -235,7 +263,8 @@ Yêu cầu:
       throw new Error('AI trả về dữ liệu không hợp lệ. Vui lòng thử lại!');
     }
 
-    if (!Array.isArray(cards)) throw new Error('AI không trả về mảng flashcard hợp lệ!');
+    if (!Array.isArray(cards))
+      throw new Error('AI không trả về mảng flashcard hợp lệ!');
     return cards.slice(0, count);
   }
 }

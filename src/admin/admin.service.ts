@@ -21,7 +21,11 @@ export class AdminService {
 
     const rawUsers = await this.prisma.user.findMany({
       select: {
-        id: true, email: true, name: true, role: true, createdAt: true,
+        id: true,
+        email: true,
+        name: true,
+        role: true,
+        createdAt: true,
         _count: { select: { studyLogs: true, progress: true } },
       },
       orderBy: { createdAt: 'desc' },
@@ -29,8 +33,13 @@ export class AdminService {
     });
 
     const usersList = rawUsers.map((u) => ({
-      id: u.id, email: u.email, name: u.name, role: u.role, createdAt: u.createdAt,
-      totalStudies: u._count.studyLogs, totalCardsLearned: u._count.progress,
+      id: u.id,
+      email: u.email,
+      name: u.name,
+      role: u.role,
+      createdAt: u.createdAt,
+      totalStudies: u._count.studyLogs,
+      totalCardsLearned: u._count.progress,
     }));
 
     const signupsTrend: any[] = [];
@@ -44,17 +53,36 @@ export class AdminService {
         where: { createdAt: { gte: startOfDay, lt: endOfDay } },
       });
       signupsTrend.push({
-        date: startOfDay.toLocaleDateString('vi-VN', { month: 'numeric', day: 'numeric' }),
+        date: startOfDay.toLocaleDateString('vi-VN', {
+          month: 'numeric',
+          day: 'numeric',
+        }),
         count,
       });
     }
 
-    return { overview: { totalUsers, totalDecks, totalFlashcards, totalStudyLogs, dau }, signupsTrend, users: usersList };
+    return {
+      overview: {
+        totalUsers,
+        totalDecks,
+        totalFlashcards,
+        totalStudyLogs,
+        dau,
+      },
+      signupsTrend,
+      users: usersList,
+    };
   }
 
   async getAllUsers() {
     return this.prisma.user.findMany({
-      select: { id: true, email: true, name: true, role: true, createdAt: true },
+      select: {
+        id: true,
+        email: true,
+        name: true,
+        role: true,
+        createdAt: true,
+      },
       orderBy: { createdAt: 'desc' },
     });
   }
@@ -73,13 +101,20 @@ export class AdminService {
     const where: any = {};
     if (filter === 'system') where.isSystem = true;
     else if (filter === 'public') where.isPublic = true;
-    else if (filter === 'user') { where.isSystem = false; }
+    else if (filter === 'user') {
+      where.isSystem = false;
+    }
 
     return this.prisma.deck.findMany({
       where,
       select: {
-        id: true, title: true, description: true,
-        isSystem: true, isPublic: true, shareCode: true, createdAt: true,
+        id: true,
+        title: true,
+        description: true,
+        isSystem: true,
+        isPublic: true,
+        shareCode: true,
+        createdAt: true,
         userId: true,
         user: { select: { name: true, email: true } },
         _count: { select: { flashcards: true } },
@@ -101,7 +136,15 @@ export class AdminService {
     });
   }
 
-  async updateDeck(deckId: number, data: { title?: string; description?: string; isPublic?: boolean; isSystem?: boolean }) {
+  async updateDeck(
+    deckId: number,
+    data: {
+      title?: string;
+      description?: string;
+      isPublic?: boolean;
+      isSystem?: boolean;
+    },
+  ) {
     const deck = await this.prisma.deck.findUnique({ where: { id: deckId } });
     if (!deck) throw new NotFoundException('Không tìm thấy bộ thẻ!');
     return this.prisma.deck.update({
@@ -114,7 +157,9 @@ export class AdminService {
     const deck = await this.prisma.deck.findUnique({ where: { id: deckId } });
     if (!deck) throw new NotFoundException('Không tìm thấy bộ thẻ!');
     // Delete all flashcards first, then progress, then the deck
-    await this.prisma.userProgress.deleteMany({ where: { flashcard: { deckId } } });
+    await this.prisma.userProgress.deleteMany({
+      where: { flashcard: { deckId } },
+    });
     await this.prisma.studyLog.deleteMany({ where: { flashcard: { deckId } } });
     await this.prisma.flashcard.deleteMany({ where: { deckId } });
     await this.prisma.deck.delete({ where: { id: deckId } });
