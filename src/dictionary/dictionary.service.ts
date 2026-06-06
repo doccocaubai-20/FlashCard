@@ -24,7 +24,31 @@ export class DictionaryService {
 
     let results: any[] = [];
 
-    if (type === 'hanzi') {
+    if (type === 'all') {
+      const [hanziMatches, pinyinMatches, meaningMatches] = await Promise.all([
+        this.search('hanzi', q, true),
+        this.search('pinyin', q, true),
+        this.search('meaning', q, true),
+      ]);
+
+      const combined = [
+        ...(Array.isArray(hanziMatches) ? hanziMatches : hanziMatches ? [hanziMatches] : []),
+        ...(Array.isArray(pinyinMatches) ? pinyinMatches : pinyinMatches ? [pinyinMatches] : []),
+        ...(Array.isArray(meaningMatches) ? meaningMatches : meaningMatches ? [meaningMatches] : []),
+      ];
+
+      const seen = new Set();
+      const deduplicated: any[] = [];
+      for (const item of combined) {
+        if (!item) continue;
+        const key = `${item.s}-${item.p}-${item.vi}`;
+        if (!seen.has(key)) {
+          seen.add(key);
+          deduplicated.push(item);
+        }
+      }
+      results = deduplicated;
+    } else if (type === 'hanzi') {
       const queryStr = q.trim();
       // Check if query contains Chinese characters
       const isHanzi = /[\u4e00-\u9fa5]/.test(queryStr);
