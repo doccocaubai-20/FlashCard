@@ -17,7 +17,12 @@ async function bootstrap() {
       const isAllowed =
         origin === 'http://localhost:5173' ||
         origin.endsWith('.vercel.app') ||
-        (process.env.FRONTEND_URL && origin === process.env.FRONTEND_URL);
+        origin === 'https://chongziapp.id.vn' ||
+        origin === 'https://www.chongziapp.id.vn' ||
+        (process.env.FRONTEND_URL && (
+          origin === process.env.FRONTEND_URL ||
+          origin === process.env.FRONTEND_URL.replace('://', '://www.')
+        ));
 
       if (isAllowed) {
         callback(null, true);
