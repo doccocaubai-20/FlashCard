@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
@@ -147,6 +147,9 @@ export class AdminService {
   ) {
     const deck = await this.prisma.deck.findUnique({ where: { id: deckId } });
     if (!deck) throw new NotFoundException('Không tìm thấy bộ thẻ!');
+    if (!deck.isSystem) {
+      throw new BadRequestException('Admin không được phép chỉnh sửa bộ bài của người dùng!');
+    }
     return this.prisma.deck.update({
       where: { id: deckId },
       data,
@@ -156,6 +159,9 @@ export class AdminService {
   async deleteDeck(deckId: number) {
     const deck = await this.prisma.deck.findUnique({ where: { id: deckId } });
     if (!deck) throw new NotFoundException('Không tìm thấy bộ thẻ!');
+    if (!deck.isSystem) {
+      throw new BadRequestException('Admin không được phép xóa bộ bài của người dùng!');
+    }
     // Delete all flashcards first, then progress, then the deck
     await this.prisma.userProgress.deleteMany({
       where: { flashcard: { deckId } },

@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
@@ -25,29 +25,35 @@ export class DictionaryService {
     let results: any[] = [];
 
     if (type === 'all') {
-      const [hanziMatches, pinyinMatches, meaningMatches] = await Promise.all([
-        this.search('hanzi', q, true),
-        this.search('pinyin', q, true),
-        this.search('meaning', q, true),
-      ]);
-
-      const combined = [
-        ...(Array.isArray(hanziMatches) ? hanziMatches : hanziMatches ? [hanziMatches] : []),
-        ...(Array.isArray(pinyinMatches) ? pinyinMatches : pinyinMatches ? [pinyinMatches] : []),
-        ...(Array.isArray(meaningMatches) ? meaningMatches : meaningMatches ? [meaningMatches] : []),
-      ];
-
-      const seen = new Set();
-      const deduplicated: any[] = [];
-      for (const item of combined) {
-        if (!item) continue;
-        const key = `${item.s}-${item.p}-${item.vi}`;
-        if (!seen.has(key)) {
-          seen.add(key);
-          deduplicated.push(item);
+      const isHanzi = /[\u4e00-\u9fa5]/.test(q);
+      if (isHanzi) {
+        results = await this.search('hanzi', q, true);
+        if (results.length === 0 && cleanQ.length > 2) {
+          results = await this.segmentHanziSentence(cleanQ);
         }
+      } else {
+        const [pinyinMatches, meaningMatches] = await Promise.all([
+          this.search('pinyin', q, true),
+          this.search('meaning', q, true),
+        ]);
+
+        const combined = [
+          ...(Array.isArray(pinyinMatches) ? pinyinMatches : pinyinMatches ? [pinyinMatches] : []),
+          ...(Array.isArray(meaningMatches) ? meaningMatches : meaningMatches ? [meaningMatches] : []),
+        ];
+
+        const seen = new Set();
+        const deduplicated: any[] = [];
+        for (const item of combined) {
+          if (!item) continue;
+          const key = `${item.s}-${item.p}-${item.vi}`;
+          if (!seen.has(key)) {
+            seen.add(key);
+            deduplicated.push(item);
+          }
+        }
+        results = deduplicated;
       }
-      results = deduplicated;
     } else if (type === 'hanzi') {
       const queryStr = q.trim();
       // Check if query contains Chinese characters
@@ -333,5 +339,176 @@ export class DictionaryService {
 
     this.radicalCache.set(cleanChar, result);
     return result;
+  }
+
+  async segmentHanziSentence(text: string) {
+    const cleanText = text.replace(/[.,/#!$%^&*;:{}=\-_`~()?？。！，、；：\s]/g, '').trim();
+    if (!cleanText) return [];
+
+    const chars = Array.from(cleanText);
+    const result: any[] = [];
+    let i = 0;
+    const maxWordLength = 8;
+
+    while (i < chars.length) {
+      let matched = false;
+      for (let len = Math.min(maxWordLength, chars.length - i); len >= 1; len--) {
+        const word = chars.slice(i, i + len).join('');
+        const matches = await this.prisma.dictionaryWord.findMany({
+          where: {
+            OR: [{ s: word }, { t: word }],
+          },
+        });
+        const exact = matches.find((m) => m.s === word || m.t === word);
+        if (exact) {
+          result.push({ ...exact, isSegmentedPart: true });
+          i += len;
+          matched = true;
+          break;
+        }
+      }
+
+      if (!matched) {
+        const char = chars[i];
+        result.push({
+          s: char,
+          t: char,
+          p: '',
+          vi: 'Từ tố chưa được cập nhật',
+          isVirtual: true,
+          isSegmentedPart: true,
+        });
+        i++;
+      }
+    }
+    return this.enrichMultipleSv(result);
+  }
+
+  async compareSynonyms(word1: string, word2: string) {
+    const apiKey = process.env.DEEPSEEK_API_KEY;
+    const model = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
+
+    if (!apiKey) {
+      throw new HttpException(
+        'DeepSeek API Key is not configured on the server.',
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
+    }
+
+    const prompt = `Bạn là một giáo viên dạy tiếng Trung chuyên nghiệp. Hãy phân biệt chi tiết cách dùng của hai từ đồng nghĩa sau: "${word1}" và "${word2}".
+    Yêu cầu cấu trúc kết quả trả về bằng định dạng Markdown rõ ràng gồm:
+    1. Định nghĩa ngắn gọn của từng từ.
+    2. Điểm giống nhau giữa 2 từ.
+    3. Điểm khác biệt quan trọng (về ngữ cảnh sử dụng, cấu trúc ngữ pháp đi kèm).
+    4. Cung cấp 2 câu ví dụ thực tế cho mỗi từ (kèm chữ Hán, Pinyin và dịch nghĩa tiếng Việt).`;
+
+    try {
+      const response = await fetch(
+        'https://api.deepseek.com/chat/completions',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${apiKey}`,
+          },
+          body: JSON.stringify({
+            model,
+            messages: [{ role: 'user', content: prompt }],
+            temperature: 0.3,
+          }),
+          signal: AbortSignal.timeout(25000),
+        },
+      );
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`API Error: ${response.status} - ${errorText}`);
+      }
+
+      const resJson: any = await response.json();
+      return { explanation: resJson.choices[0].message.content };
+    } catch (err) {
+      console.error('Failed to compare synonyms:', err);
+      const error = err as any;
+      const isTimeout =
+        error?.name === 'TimeoutError' || error?.name === 'AbortError';
+      throw new HttpException(
+        isTimeout
+          ? 'AI đang bận, vui lòng thử lại sau vài giây!'
+          : 'Không thể so sánh bằng AI: ' + (error?.message || String(err)),
+        isTimeout ? HttpStatus.REQUEST_TIMEOUT : HttpStatus.BAD_GATEWAY,
+      );
+    }
+  }
+
+  async ocrAnalyze(text: string) {
+    if (text.length <= 6) {
+      return { isLongSentence: false, originalText: text };
+    }
+
+    const apiKey = process.env.DEEPSEEK_API_KEY;
+    const model = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
+
+    if (!apiKey) {
+      throw new HttpException(
+        'DeepSeek API Key is not configured on the server.',
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
+    }
+
+    const prompt = `Phân tích câu tiếng Trung sau: "${text}".
+    Yêu cầu trả về cấu trúc định dạng JSON chính xác như sau (và TUYỆT ĐỐI không bọc trong khối code markdown \`\`\`json):
+    {
+      "pinyin": "Phiên âm Pinyin toàn bộ câu",
+      "translation": "Dịch nghĩa tiếng Việt toàn bộ câu",
+      "words": [
+        { "word": "Từ đơn/Từ ghép trích ra từ câu", "meaning": "Nghĩa tiếng Việt ngắn gọn của từ này" }
+      ]
+    }`;
+
+    try {
+      const response = await fetch(
+        'https://api.deepseek.com/chat/completions',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${apiKey}`,
+          },
+          body: JSON.stringify({
+            model,
+            response_format: { type: 'json_object' },
+            messages: [{ role: 'user', content: prompt }],
+            temperature: 0.2,
+          }),
+          signal: AbortSignal.timeout(25000),
+        },
+      );
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`API Error: ${response.status} - ${errorText}`);
+      }
+
+      const resJson: any = await response.json();
+      const result = JSON.parse(resJson.choices[0].message.content);
+
+      return {
+        isLongSentence: true,
+        originalText: text,
+        ...result,
+      };
+    } catch (err) {
+      console.error('Failed to analyze OCR sentence:', err);
+      const error = err as any;
+      const isTimeout =
+        error?.name === 'TimeoutError' || error?.name === 'AbortError';
+      throw new HttpException(
+        isTimeout
+          ? 'AI đang bận, vui lòng thử lại sau vài giây!'
+          : 'Không thể phân tích bằng AI: ' + (error?.message || String(err)),
+        isTimeout ? HttpStatus.REQUEST_TIMEOUT : HttpStatus.BAD_GATEWAY,
+      );
+    }
   }
 }

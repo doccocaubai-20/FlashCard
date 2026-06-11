@@ -16,8 +16,6 @@ async function bootstrap() {
       if (!origin) return callback(null, true);
       const isAllowed =
         origin === 'http://localhost:5173' ||
-        origin === 'https://chongziapp.id.vn' ||
-        origin === 'https://www.chongziapp.id.vn' ||
         origin.endsWith('.vercel.app') ||
         (process.env.FRONTEND_URL && origin === process.env.FRONTEND_URL);
 

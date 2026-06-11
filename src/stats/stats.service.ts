@@ -6,6 +6,14 @@ function getLocalDateString(date: Date, offsetMinutes: number): string {
   return localTime.toISOString().split('T')[0];
 }
 
+function isConsecutiveDay(day1: string, day2: string): boolean {
+  const d1 = new Date(day1);
+  const d2 = new Date(day2);
+  const diffTime = Math.abs(d2.getTime() - d1.getTime());
+  const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
+  return diffDays === 1;
+}
+
 function getUtcStartOfDay(localDateStr: string, offsetMinutes: number): Date {
   const d = new Date(`${localDateStr}T00:00:00.000Z`);
   return new Date(d.getTime() - offsetMinutes * 60 * 1000);
@@ -28,6 +36,20 @@ export class StatsService {
       stats = await this.prisma.userStats.create({
         data: { userId },
       });
+    }
+
+    if (stats.lastStudyDate) {
+      const localLastStudyStr = getLocalDateString(stats.lastStudyDate, tzOffset);
+      const localTodayStr = getLocalDateString(new Date(), tzOffset);
+
+      if (localTodayStr !== localLastStudyStr && !isConsecutiveDay(localLastStudyStr, localTodayStr)) {
+        if (stats.currentStreak > 0) {
+          stats = await this.prisma.userStats.update({
+            where: { userId },
+            data: { currentStreak: 0 },
+          });
+        }
+      }
     }
 
     // 1. Completed cards today
