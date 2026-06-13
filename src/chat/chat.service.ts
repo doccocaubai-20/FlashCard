@@ -66,9 +66,96 @@ export class ChatService {
 
 Hãy trả lời thân thiện, mạch lạc, ngắn gọn và sử dụng Markdown nếu cần thiết để ví dụ chữ Hán và Pinyin rõ ràng. Trả lời bằng ngôn ngữ người dùng nói (thường là Tiếng Việt).`;
 
+    let customSystemPrompt = systemPrompt;
+    const lowerContent = content.toLowerCase();
+
+    if (
+      lowerContent.includes('bộ bài') ||
+      lowerContent.includes('bài học') ||
+      lowerContent.includes('deck') ||
+      lowerContent.includes('từ vựng') ||
+      lowerContent.includes('thẻ') ||
+      lowerContent.includes('học từ')
+    ) {
+      try {
+        // 1. Lấy danh sách các bộ bài hiện có kèm số lượng từ (không lấy chi tiết flashcard để tiết kiệm token)
+        const decks = await this.prisma.deck.findMany({
+          where: {
+            OR: [
+              { userId },
+              { isPublic: true },
+              { isSystem: true },
+            ],
+          },
+          include: {
+            _count: {
+              select: { flashcards: true },
+            },
+          },
+        });
+
+        // 2. Tìm xem tin nhắn của người dùng có đề cập đến tên bộ bài nào cụ thể không
+        const matchedDecks = decks.filter((d) =>
+          lowerContent.includes(d.title.toLowerCase()),
+        );
+
+        let decksSummary = '';
+        if (matchedDecks.length > 0) {
+          // Người dùng chỉ định rõ tên bộ bài -> Chỉ nạp từ vựng của bộ bài đó (Giới hạn tối đa 50 từ)
+          const matchedDecksWithCards = await this.prisma.deck.findMany({
+            where: {
+              id: { in: matchedDecks.map((d) => d.id) },
+            },
+            include: {
+              flashcards: {
+                take: 50, // Giới hạn tối đa 50 từ để tránh quá tải token
+                select: {
+                  hanzi: true,
+                  pinyin: true,
+                  meaning: true,
+                  exampleHanzi: true,
+                  examplePinyin: true,
+                  exampleMeaning: true,
+                },
+              },
+            },
+          });
+
+          decksSummary = matchedDecksWithCards
+            .map((d) => {
+              const cardsInfo = d.flashcards
+                .map((f) => {
+                  let info = `${f.hanzi} (${f.pinyin}: ${f.meaning})`;
+                  if (f.exampleHanzi) {
+                    info += ` [Ví dụ gốc: ${f.exampleHanzi} (${f.examplePinyin}): ${f.exampleMeaning}]`;
+                  }
+                  return info;
+                })
+                .join(', ');
+
+              const totalCount = decks.find((x) => x.id === d.id)?._count?.flashcards || 0;
+              const limitText = totalCount > 50 ? ` (Đang nạp 50/${totalCount} từ tiêu biểu để tối ưu)` : '';
+              return `- Bộ bài "${d.title}" (ID: ${d.id})${limitText}: ${cardsInfo || 'Chưa có từ vựng nào'}`;
+            })
+            .join('\n');
+
+          customSystemPrompt += `\n\n[Dữ liệu Bộ bài trùng khớp của học viên]:\n${decksSummary}\n\nHọc viên đang muốn học các từ vựng này. Hãy giải thích nghĩa, đọc các câu ví dụ mẫu gốc hoặc tạo các câu mới có nghĩa tự nhiên chứa các từ này để giảng dạy cho học viên.`;
+        } else {
+          // Người dùng nói chung chung -> Chỉ liệt kê tên các bộ bài và số lượng từ để họ chọn
+          decksSummary = decks
+            .map((d) => `- "${d.title}" (có ${d._count.flashcards} từ)`)
+            .join('\n');
+
+          customSystemPrompt += `\n\n[Danh sách Bộ bài hiện có của học viên]:\n${decksSummary}\n\nHọc viên chưa chỉ định rõ bộ bài cụ thể nào. Hãy liệt kê thân thiện danh sách các bộ bài trên kèm số lượng từ, hỏi học viên muốn ôn tập bộ bài nào và nhắc họ gõ đúng tên bộ bài để bạn nạp từ vựng. Tuyệt đối không tự đoán mò từ vựng của bộ bài nếu chưa được nạp.`;
+        }
+      } catch (dbErr) {
+        console.error('Failed to fetch user decks for chatbot context:', dbErr);
+      }
+    }
+
     // 4. Xây dựng danh sách tin nhắn gửi lên API
     const apiMessages = [
-      { role: 'system', content: systemPrompt },
+      { role: 'system', content: customSystemPrompt },
       ...sortedHistory.map((msg) => ({
         role: msg.role === 'user' ? 'user' : 'assistant',
         content: msg.content,
