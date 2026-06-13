@@ -16,6 +16,7 @@ import { FavoriteWordModule } from './favorite-words/favoriteWord.module';
 import { DictionaryModule } from './dictionary/dictionary.module';
 import { AdminModule } from './admin/admin.module';
 import { SocialModule } from './social/social.module';
+import { ChatModule } from './chat/chat.module';
 
 @Module({
   imports: [
@@ -38,6 +39,7 @@ import { SocialModule } from './social/social.module';
     DictionaryModule,
     AdminModule,
     SocialModule,
+    ChatModule,
   ],
   controllers: [AppController],
   providers: [

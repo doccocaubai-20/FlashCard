@@ -33,6 +33,7 @@ model User {
   studyLogs StudyLog[]
   dictionaryHistory DictionaryHistory[]
   favoriteWords FavoriteWord[]
+  chatMessages ChatMessage[]
 }
 
 enum AuthProvider {
@@ -143,6 +144,16 @@ model FavoriteWord {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   
   @@unique([userId, hanzi])
+}
+
+model ChatMessage {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  role      String   // "user" hoặc "assistant"
+  content   String   @db.Text
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model DictionaryWord {
