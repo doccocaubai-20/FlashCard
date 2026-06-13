@@ -18,13 +18,45 @@ export class FavoriteWordService {
   }
 
   async addFavoriteWord(userId: number, dto: CreateFavoriteWordDto) {
+    let sv = dto.sv || null;
+
+    // Tự động truy vấn âm Hán-Việt từ từ điển nếu không được truyền từ frontend
+    if (!sv && dto.hanzi) {
+      try {
+        const dictWord = await this.prisma.dictionaryWord.findFirst({
+          where: { s: dto.hanzi },
+          select: { sv: true },
+        });
+
+        if (dictWord && dictWord.sv) {
+          sv = dictWord.sv;
+        } else {
+          // Phân tách từ ghép thành chữ đơn để ghép âm Hán-Việt
+          const chars = Array.from(dto.hanzi);
+          if (chars.length > 1) {
+            const parts: string[] = [];
+            for (const char of chars) {
+              const charWord = await this.prisma.dictionaryWord.findFirst({
+                where: { s: char },
+                select: { sv: true },
+              });
+              parts.push(charWord?.sv || `[${char}]`);
+            }
+            sv = parts.join(' ').replace(/\s+/g, ' ').trim();
+          }
+        }
+      } catch (err) {
+        console.error('Failed to auto-lookup SV in FavoriteWordService:', err);
+      }
+    }
+
     try {
       return await this.prisma.favoriteWord.create({
         data: {
           userId,
           hanzi: dto.hanzi,
           pinyin: dto.pinyin || null,
-          sv: dto.sv || null,
+          sv,
           vi: dto.vi || null,
         },
       });
