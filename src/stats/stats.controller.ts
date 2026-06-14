@@ -88,4 +88,30 @@ export class StatsController {
       tzOffset,
     );
   }
+
+  @Get('daily-quiz')
+  @UseGuards(AuthGuard('jwt'))
+  async getDailyQuiz(@Req() req: any, @Query('tzOffset') tzOffsetStr?: string) {
+    const userId = req.user.id;
+    const tzOffset =
+      tzOffsetStr !== undefined ? parseInt(tzOffsetStr, 10) : 420;
+    return this.statsService.getDailyQuiz(userId, tzOffset);
+  }
+
+  @Get('garden')
+  @UseGuards(AuthGuard('jwt'))
+  async getGardenState(@Req() req: any, @Query('tzOffset') tzOffsetStr?: string) {
+    const userId = req.user.id;
+    const tzOffset =
+      tzOffsetStr !== undefined ? parseInt(tzOffsetStr, 10) : 420;
+    return this.statsService.getGardenState(userId, tzOffset);
+  }
+
+  @Post('garden/harvest')
+  @UseGuards(AuthGuard('jwt'))
+  async harvestGarden(@Req() req: any, @Body() body: { tzOffset?: number }) {
+    const userId = req.user.id;
+    const tzOffset = body.tzOffset !== undefined ? body.tzOffset : 420;
+    return this.statsService.harvestGarden(userId, tzOffset);
+  }
 }

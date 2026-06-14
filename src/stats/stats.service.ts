@@ -92,6 +92,19 @@ function shuffleArray<T>(array: T[]): T[] {
   return arr;
 }
 
+function createSeedRandom(seedStr: string) {
+  let h = 1779033703 ^ seedStr.length;
+  for (let i = 0; i < seedStr.length; i++) {
+    h = Math.imul(h ^ seedStr.charCodeAt(i), 3432918353);
+    h = (h << 13) | (h >>> 19);
+  }
+  return function () {
+    h = Math.imul(h ^ (h >>> 16), 2246822507);
+    h = Math.imul(h ^ (h >>> 13), 3266489909);
+    return ((h ^= h >>> 16) >>> 0) / 4294967296;
+  };
+}
+
 @Injectable()
 export class StatsService {
   constructor(private readonly prisma: PrismaService) {}
@@ -380,5 +393,268 @@ export class StatsService {
     }
 
     return updated;
+  }
+
+  async getGardenState(userId: number, tzOffset: number) {
+    // 1. Get all progresses for the user
+    const progresses = await this.prisma.userProgress.findMany({
+      where: { userId },
+      include: { flashcard: true },
+    });
+
+    const now = new Date();
+    let seedsCount = 0;
+    let sproutsCount = 0;
+    let saplingsCount = 0;
+    let goldenTreesCount = 0;
+    let overdueCount = 0;
+
+    const seeds: any[] = [];
+    const sprouts: any[] = [];
+    const saplings: any[] = [];
+    const goldens: any[] = [];
+
+    for (const p of progresses) {
+      const isOverdue = p.nextReviewDate <= now;
+      if (isOverdue) overdueCount++;
+
+      let stage: 'seed' | 'sprout' | 'sapling' | 'golden';
+      if (p.repetitions === 0) {
+        stage = 'seed';
+        seedsCount++;
+        seeds.push(p);
+      } else if (p.interval < 7) {
+        stage = 'sprout';
+        sproutsCount++;
+        sprouts.push(p);
+      } else if (p.interval < 30) {
+        stage = 'sapling';
+        saplingsCount++;
+        saplings.push(p);
+      } else {
+        stage = 'golden';
+        goldenTreesCount++;
+        goldens.push(p);
+      }
+    }
+
+    // Helper to shuffle array in-place
+    const shuffle = (arr: any[]) => {
+      const copy = [...arr];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    };
+
+    // Pick up to 3 cards from each category to display (max 12 plants)
+    const displayPlants: any[] = [];
+    const selectedSeeds = shuffle(seeds).slice(0, 3);
+    const selectedSprouts = shuffle(sprouts).slice(0, 3);
+    const selectedSaplings = shuffle(saplings).slice(0, 3);
+    const selectedGoldens = shuffle(goldens).slice(0, 3);
+
+    const mapProgressToPlant = (p: any, stage: 'seed' | 'sprout' | 'sapling' | 'golden') => ({
+      id: p.id,
+      hanzi: p.flashcard.hanzi,
+      pinyin: p.flashcard.pinyin || '',
+      meaning: p.flashcard.meaning || '',
+      stage,
+      interval: p.interval,
+      nextReviewDate: p.nextReviewDate,
+      isOverdue: p.nextReviewDate <= now,
+    });
+
+    displayPlants.push(...selectedSeeds.map(p => mapProgressToPlant(p, 'seed')));
+    displayPlants.push(...selectedSprouts.map(p => mapProgressToPlant(p, 'sprout')));
+    displayPlants.push(...selectedSaplings.map(p => mapProgressToPlant(p, 'sapling')));
+    displayPlants.push(...selectedGoldens.map(p => mapProgressToPlant(p, 'golden')));
+
+    // Get user stats to check harvest date
+    let stats = await this.prisma.userStats.findUnique({
+      where: { userId },
+    });
+    if (!stats) {
+      stats = await this.prisma.userStats.create({
+        data: { userId },
+      });
+    }
+
+    let canHarvest = false;
+    const harvestReward = goldenTreesCount > 0 ? Math.min(20, Math.max(2, goldenTreesCount * 2)) : 0;
+
+    if (goldenTreesCount > 0) {
+      if (!stats.lastGardenHarvestDate) {
+        canHarvest = true;
+      } else {
+        const localTodayStr = getLocalDateString(new Date(), tzOffset);
+        const localLastHarvestStr = getLocalDateString(stats.lastGardenHarvestDate, tzOffset);
+        canHarvest = localTodayStr !== localLastHarvestStr;
+      }
+    }
+
+    return {
+      seedsCount,
+      sproutsCount,
+      saplingsCount,
+      goldenTreesCount,
+      overdueCount,
+      plants: displayPlants,
+      canHarvest,
+      harvestReward,
+      lastHarvestDate: stats.lastGardenHarvestDate,
+    };
+  }
+
+  async harvestGarden(userId: number, tzOffset: number) {
+    const stats = await this.prisma.userStats.findUnique({
+      where: { userId },
+    });
+    if (!stats) {
+      throw new Error('User stats not found');
+    }
+
+    // Count actual golden trees
+    const goldenTreesCount = await this.prisma.userProgress.count({
+      where: {
+        userId,
+        repetitions: { gt: 0 },
+        interval: { gte: 30 },
+      },
+    });
+
+    if (goldenTreesCount === 0) {
+      throw new Error('Bạn cần có ít nhất một Cây cổ thụ hoàng kim (ôn tập giãn cách >= 30 ngày) để thu hoạch!');
+    }
+
+    // Check harvest limit
+    if (stats.lastGardenHarvestDate) {
+      const localTodayStr = getLocalDateString(new Date(), tzOffset);
+      const localLastHarvestStr = getLocalDateString(stats.lastGardenHarvestDate, tzOffset);
+      if (localTodayStr === localLastHarvestStr) {
+        throw new Error('Hôm nay bạn đã thu hoạch rồi, hãy quay lại vào ngày mai nhé!');
+      }
+    }
+
+    const reward = Math.min(20, Math.max(2, goldenTreesCount * 2));
+
+    const updated = await this.prisma.userStats.update({
+      where: { userId },
+      data: {
+        coins: { increment: reward },
+        lastGardenHarvestDate: new Date(),
+      },
+    });
+
+    return {
+      harvestedCoins: reward,
+      newBalance: updated.coins,
+    };
+  }
+
+  async getDailyQuiz(userId: number, tzOffset: number) {
+    const localTodayStr = getLocalDateString(new Date(), tzOffset);
+
+    // Fetch HSK 1-3 candidate words from dictionary
+    const candidates = await this.prisma.dictionaryWord.findMany({
+      where: {
+        hsk: { in: [1, 2, 3] },
+      },
+      select: {
+        id: true,
+        s: true,
+        p: true,
+        vi: true,
+        hsk: true,
+      },
+    });
+
+    // Fallback static question if database table is empty
+    if (candidates.length === 0) {
+      return {
+        question: 'Chữ Hán nào dưới đây mang ý nghĩa là "Khó" (Nán/Difficult)?',
+        options: [
+          { text: 'A. 难 (nán)', isCorrect: true },
+          { text: 'B. 易 (yì)', isCorrect: false },
+          { text: 'C. 忙 (máng)', isCorrect: false },
+          { text: 'D. 慢 (màn)', isCorrect: false },
+        ],
+        xpReward: 20,
+        coinReward: 10,
+      };
+    }
+
+    const rng = createSeedRandom(userId.toString() + '_' + localTodayStr);
+
+    const correctIdx = Math.floor(rng() * candidates.length);
+    const correctWord = candidates[correctIdx];
+
+    const incorrectWords: any[] = [];
+    let attempts = 0;
+    while (incorrectWords.length < 3 && attempts < 100) {
+      attempts++;
+      const idx = Math.floor(rng() * candidates.length);
+      const w = candidates[idx];
+      if (
+        w.id !== correctWord.id &&
+        !incorrectWords.some(x => x.id === w.id) &&
+        w.s !== correctWord.s &&
+        w.vi !== correctWord.vi
+      ) {
+        incorrectWords.push(w);
+      }
+    }
+
+    // Fallback if not enough candidates found
+    while (incorrectWords.length < 3) {
+      const idx = Math.floor(rng() * candidates.length);
+      const w = candidates[idx];
+      if (w.id !== correctWord.id) {
+        incorrectWords.push(w);
+      }
+    }
+
+    const questionType = rng() < 0.5 ? 'hanzi_to_meaning' : 'meaning_to_hanzi';
+    let questionText = '';
+    let options: { text: string; isCorrect: boolean }[] = [];
+
+    if (questionType === 'hanzi_to_meaning') {
+      questionText = `Chữ Hán "${correctWord.s}" (${correctWord.p || ''}) mang ý nghĩa nào dưới đây?`;
+      options = [
+        { text: correctWord.vi || 'Không rõ nghĩa', isCorrect: true },
+        { text: incorrectWords[0].vi || 'Không rõ nghĩa', isCorrect: false },
+        { text: incorrectWords[1].vi || 'Không rõ nghĩa', isCorrect: false },
+        { text: incorrectWords[2].vi || 'Không rõ nghĩa', isCorrect: false },
+      ];
+    } else {
+      questionText = `Từ nào dưới đây mang ý nghĩa là "${correctWord.vi || 'Không rõ nghĩa'}"?`;
+      options = [
+        { text: `${correctWord.s} (${correctWord.p || ''})`, isCorrect: true },
+        { text: `${incorrectWords[0].s} (${incorrectWords[0].p || ''})`, isCorrect: false },
+        { text: `${incorrectWords[1].s} (${incorrectWords[1].p || ''})`, isCorrect: false },
+        { text: `${incorrectWords[2].s} (${incorrectWords[2].p || ''})`, isCorrect: false },
+      ];
+    }
+
+    // Shuffle options deterministically
+    for (let i = options.length - 1; i > 0; i--) {
+      const j = Math.floor(rng() * (i + 1));
+      [options[i], options[j]] = [options[j], options[i]];
+    }
+
+    // Map prefix labels (A, B, C, D)
+    const prefixes = ['A. ', 'B. ', 'C. ', 'D. '];
+    const finalOptions = options.map((opt, idx) => ({
+      text: prefixes[idx] + opt.text,
+      isCorrect: opt.isCorrect,
+    }));
+
+    return {
+      question: questionText,
+      options: finalOptions,
+      xpReward: 20,
+      coinReward: 10,
+    };
   }
 }

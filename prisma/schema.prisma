@@ -43,14 +43,15 @@ enum AuthProvider {
 }
 
 model UserStats {
-  id            Int       @id @default(autoincrement())
-  userId        Int       @unique
-  currentStreak Int       @default(0)
-  longestStreak Int       @default(0)
-  dailyTarget   Int       @default(20)
-  lastStudyDate DateTime?
-  xp            Int       @default(0)
-  coins         Int       @default(0)
+  id                    Int       @id @default(autoincrement())
+  userId                Int       @unique
+  currentStreak         Int       @default(0)
+  longestStreak         Int       @default(0)
+  dailyTarget           Int       @default(20)
+  lastStudyDate         DateTime?
+  xp                    Int       @default(0)
+  coins                 Int       @default(0)
+  lastGardenHarvestDate DateTime?
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
