@@ -2,6 +2,7 @@ import {
   Controller,
   Get,
   Put,
+  Post,
   Body,
   Query,
   UseGuards,
@@ -44,5 +45,22 @@ export class StatsController {
   async updateGoals(@Req() req: any, @Body() body: { dailyTarget: number }) {
     const userId = req.user.id;
     return this.statsService.updateGoals(userId, body.dailyTarget);
+  }
+
+  @Put('add-xp-coins')
+  @UseGuards(AuthGuard('jwt'))
+  async addXpCoins(
+    @Req() req: any,
+    @Body() body: { xp: number; coins: number },
+  ) {
+    const userId = req.user.id;
+    return this.statsService.updateXPAndCoins(userId, body.xp, body.coins);
+  }
+
+  @Post('buy-item')
+  @UseGuards(AuthGuard('jwt'))
+  async buyItem(@Req() req: any, @Body() body: { price: number }) {
+    const userId = req.user.id;
+    return this.statsService.buyItem(userId, body.price);
   }
 }

@@ -48,6 +48,8 @@ model UserStats {
   longestStreak Int       @default(0)
   dailyTarget   Int       @default(20)
   lastStudyDate DateTime?
+  xp            Int       @default(0)
+  coins         Int       @default(0)
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }

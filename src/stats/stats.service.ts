@@ -78,6 +78,9 @@ export class StatsService {
       streak: stats.currentStreak,
       completedCards,
       totalStudied,
+      xp: stats.xp,
+      coins: stats.coins,
+      dailyTarget: stats.dailyTarget,
     };
   }
 
@@ -189,6 +192,47 @@ export class StatsService {
 
     return {
       dailyTarget: stats.dailyTarget,
+    };
+  }
+
+  async updateXPAndCoins(userId: number, xpToAdd: number, coinsToAdd: number) {
+    let stats = await this.prisma.userStats.findUnique({
+      where: { userId },
+    });
+    if (!stats) {
+      stats = await this.prisma.userStats.create({
+        data: { userId, xp: xpToAdd, coins: coinsToAdd },
+      });
+    } else {
+      stats = await this.prisma.userStats.update({
+        where: { userId },
+        data: {
+          xp: { increment: xpToAdd },
+          coins: { increment: coinsToAdd },
+        },
+      });
+    }
+    return {
+      xp: stats.xp,
+      coins: stats.coins,
+    };
+  }
+
+  async buyItem(userId: number, itemPrice: number) {
+    const stats = await this.prisma.userStats.findUnique({
+      where: { userId },
+    });
+    if (!stats || stats.coins < itemPrice) {
+      throw new Error('Số xu tích lũy không đủ để mua vật phẩm này.');
+    }
+    const updated = await this.prisma.userStats.update({
+      where: { userId },
+      data: {
+        coins: { decrement: itemPrice },
+      },
+    });
+    return {
+      coins: updated.coins,
     };
   }
 }
