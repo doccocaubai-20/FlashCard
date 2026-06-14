@@ -52,6 +52,9 @@ model UserStats {
   xp                    Int       @default(0)
   coins                 Int       @default(0)
   lastGardenHarvestDate DateTime?
+  streakFreezeCount     Int       @default(0)
+  xpBoostCount          Int       @default(0)
+  xpBoostUntil          DateTime?
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }

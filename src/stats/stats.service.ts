@@ -125,10 +125,34 @@ export class StatsService {
 
       if (localTodayStr !== localLastStudyStr && !isConsecutiveDay(localLastStudyStr, localTodayStr)) {
         if (stats.currentStreak > 0) {
-          stats = await this.prisma.userStats.update({
-            where: { userId },
-            data: { currentStreak: 0 },
-          });
+          // Streak is broken! Let's check if they have a streak freeze.
+          const d1 = new Date(localLastStudyStr);
+          const d2 = new Date(localTodayStr);
+          const diffTime = Math.abs(d2.getTime() - d1.getTime());
+          const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
+          const neededFreezes = diffDays - 1;
+
+          if (neededFreezes > 0 && stats.streakFreezeCount >= neededFreezes) {
+            // Consume needed freezes and fake a study date on yesterday
+            const yesterdayLocal = new Date(localTodayStr);
+            yesterdayLocal.setDate(yesterdayLocal.getDate() - 1);
+            // Convert to UTC date at noon
+            const yesterdayUtc = new Date(yesterdayLocal.getTime() - tzOffset * 60 * 1000 + 12 * 60 * 60 * 1000);
+
+            stats = await this.prisma.userStats.update({
+              where: { userId },
+              data: {
+                streakFreezeCount: { decrement: neededFreezes },
+                lastStudyDate: yesterdayUtc,
+              },
+            });
+          } else {
+            // Reset streak
+            stats = await this.prisma.userStats.update({
+              where: { userId },
+              data: { currentStreak: 0 },
+            });
+          }
         }
       }
     }
@@ -162,6 +186,9 @@ export class StatsService {
       xp: stats.xp,
       coins: stats.coins,
       dailyTarget: stats.dailyTarget,
+      streakFreezeCount: stats.streakFreezeCount,
+      xpBoostCount: stats.xpBoostCount,
+      xpBoostUntil: stats.xpBoostUntil,
     };
   }
 
@@ -282,38 +309,84 @@ export class StatsService {
     });
     if (!stats) {
       stats = await this.prisma.userStats.create({
-        data: { userId, xp: xpToAdd, coins: coinsToAdd },
-      });
-    } else {
-      stats = await this.prisma.userStats.update({
-        where: { userId },
-        data: {
-          xp: { increment: xpToAdd },
-          coins: { increment: coinsToAdd },
-        },
+        data: { userId },
       });
     }
+
+    let finalXpToAdd = xpToAdd;
+    if (stats.xpBoostUntil && stats.xpBoostUntil > new Date()) {
+      finalXpToAdd = xpToAdd * 2;
+    }
+
+    const updated = await this.prisma.userStats.update({
+      where: { userId },
+      data: {
+        xp: { increment: finalXpToAdd },
+        coins: { increment: coinsToAdd },
+      },
+    });
     return {
-      xp: stats.xp,
-      coins: stats.coins,
+      xp: updated.xp,
+      coins: updated.coins,
     };
   }
 
-  async buyItem(userId: number, itemPrice: number) {
+  async buyItem(userId: number, itemPrice: number, itemType: string) {
     const stats = await this.prisma.userStats.findUnique({
       where: { userId },
     });
     if (!stats || stats.coins < itemPrice) {
       throw new Error('Số xu tích lũy không đủ để mua vật phẩm này.');
     }
+
+    const dataToUpdate: any = {
+      coins: { decrement: itemPrice },
+    };
+
+    if (itemType === 'freeze') {
+      dataToUpdate.streakFreezeCount = { increment: 1 };
+    } else if (itemType === 'booster') {
+      dataToUpdate.xpBoostCount = { increment: 1 };
+    } else {
+      throw new Error('Loại vật phẩm không hợp lệ.');
+    }
+
+    const updated = await this.prisma.userStats.update({
+      where: { userId },
+      data: dataToUpdate,
+    });
+
+    return {
+      coins: updated.coins,
+      streakFreezeCount: updated.streakFreezeCount,
+      xpBoostCount: updated.xpBoostCount,
+    };
+  }
+
+  async useXpBoost(userId: number) {
+    const stats = await this.prisma.userStats.findUnique({
+      where: { userId },
+    });
+    if (!stats) {
+      throw new Error('User stats not found');
+    }
+    if (stats.xpBoostCount <= 0) {
+      throw new Error('Bạn không có bình thuốc nhân đôi XP nào để sử dụng.');
+    }
+
+    const xpBoostUntil = new Date(Date.now() + 60 * 60 * 1000); // 1 hour
+
     const updated = await this.prisma.userStats.update({
       where: { userId },
       data: {
-        coins: { decrement: itemPrice },
+        xpBoostCount: { decrement: 1 },
+        xpBoostUntil,
       },
     });
+
     return {
-      coins: updated.coins,
+      xpBoostCount: updated.xpBoostCount,
+      xpBoostUntil: updated.xpBoostUntil,
     };
   }
 

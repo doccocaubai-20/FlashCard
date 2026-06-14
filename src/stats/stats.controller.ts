@@ -59,9 +59,16 @@ export class StatsController {
 
   @Post('buy-item')
   @UseGuards(AuthGuard('jwt'))
-  async buyItem(@Req() req: any, @Body() body: { price: number }) {
+  async buyItem(@Req() req: any, @Body() body: { price: number; itemType: string }) {
     const userId = req.user.id;
-    return this.statsService.buyItem(userId, body.price);
+    return this.statsService.buyItem(userId, body.price, body.itemType);
+  }
+
+  @Post('use-xp-boost')
+  @UseGuards(AuthGuard('jwt'))
+  async useXpBoost(@Req() req: any) {
+    const userId = req.user.id;
+    return this.statsService.useXpBoost(userId);
   }
 
   @Get('quests')
