@@ -230,22 +230,38 @@ export class StudyService {
     let repetitions = progress.repetitions;
     let interval = progress.interval;
 
-    easeFactor = Math.max(
-      1.3,
-      easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)),
-    );
+    if (quality === 4) {
+      easeFactor = Math.min(3.0, easeFactor + 0.15); // Boost ease factor for Easy words
+    } else {
+      easeFactor = Math.max(
+        1.3,
+        easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)),
+      );
+    }
 
     if (quality < 3) {
       repetitions = 0;
       interval = 1;
     } else {
       repetitions += 1;
-      if (repetitions === 1) {
-        interval = 1;
-      } else if (repetitions === 2) {
-        interval = 6;
+      if (quality === 4) {
+        // Easy cards get a larger initial interval (4 days instead of 1)
+        if (repetitions === 1) {
+          interval = 4;
+        } else if (repetitions === 2) {
+          interval = 8;
+        } else {
+          interval = Math.round(progress.interval * easeFactor * 1.3) || 4;
+        }
       } else {
-        interval = Math.round(progress.interval * easeFactor) || 1;
+        // Good cards (quality = 3)
+        if (repetitions === 1) {
+          interval = 1;
+        } else if (repetitions === 2) {
+          interval = 6;
+        } else {
+          interval = Math.round(progress.interval * easeFactor) || 1;
+        }
       }
     }
 
