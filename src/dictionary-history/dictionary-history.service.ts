@@ -2,9 +2,14 @@ import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 import { CreateHistoryDto } from './dto/create-history.dto';
 
+import { StatsService } from '../stats/stats.service';
+
 @Injectable()
 export class DictionaryHistoryService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly statsService: StatsService,
+  ) {}
 
   async findAll(userId: number) {
     return this.prisma.dictionaryHistory.findMany({
@@ -30,7 +35,7 @@ export class DictionaryHistoryService {
       updateData.aiGeneratedAt = dto.aiGeneratedAt;
     }
 
-    return this.prisma.dictionaryHistory.upsert({
+    const result = await this.prisma.dictionaryHistory.upsert({
       where: {
         userId_hanzi: {
           userId,
@@ -48,6 +53,11 @@ export class DictionaryHistoryService {
         aiGeneratedAt: dto.aiGeneratedAt || null,
       },
     });
+
+    // Update daily quest progress for DICTIONARY_LOOKUP
+    await this.statsService.incrementQuestProgress(userId, 'DICTIONARY_LOOKUP', 1, 420);
+
+    return result;
   }
 
   async clearHistory(userId: number) {

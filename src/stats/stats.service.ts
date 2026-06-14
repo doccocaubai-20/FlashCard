@@ -24,6 +24,74 @@ function getUtcEndOfDay(localDateStr: string, offsetMinutes: number): Date {
   return new Date(d.getTime() - offsetMinutes * 60 * 1000);
 }
 
+const QUEST_TEMPLATES = [
+  {
+    type: 'STUDY_CARDS',
+    title: 'Ôn tập thẻ flashcard',
+    description: 'Ôn tập 20 thẻ từ vựng với thuật toán SRS',
+    target: 20,
+    xpReward: 25,
+    coinReward: 15,
+  },
+  {
+    type: 'AI_CHAT',
+    title: 'Trò chuyện với AI Assistant',
+    description: 'Hỏi đáp hoặc thực hành hội thoại với AI 5 lần',
+    target: 5,
+    xpReward: 20,
+    coinReward: 10,
+  },
+  {
+    type: 'DICTIONARY_LOOKUP',
+    title: 'Tra cứu từ điển',
+    description: 'Tra cứu ý nghĩa hoặc âm Hán-Việt của 3 từ vựng',
+    target: 3,
+    xpReward: 15,
+    coinReward: 8,
+  },
+  {
+    type: 'FAVORITE_WORD',
+    title: 'Lưu từ vựng yêu thích',
+    description: 'Lưu thêm 2 từ mới vào Sổ tay từ vựng của bạn',
+    target: 2,
+    xpReward: 15,
+    coinReward: 8,
+  },
+  {
+    type: 'PLAY_GAME',
+    title: 'Đại chiến game HSK',
+    description: 'Chơi 1 ván game lật thẻ, xếp câu hoặc rơi từ',
+    target: 1,
+    xpReward: 20,
+    coinReward: 10,
+  },
+  {
+    type: 'WRITE_PRACTICE',
+    title: 'Luyện viết chữ Hán',
+    description: 'Tập viết nét chữ Hán chuẩn xác 3 lần',
+    target: 3,
+    xpReward: 20,
+    coinReward: 10,
+  },
+  {
+    type: 'SPEAK_PRACTICE',
+    title: 'Luyện phát âm tiếng Trung',
+    description: 'Thu âm phát âm chuẩn 2 câu mẫu hoặc từ vựng',
+    target: 2,
+    xpReward: 20,
+    coinReward: 10,
+  },
+];
+
+function shuffleArray<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 @Injectable()
 export class StatsService {
   constructor(private readonly prisma: PrismaService) {}
@@ -234,5 +302,83 @@ export class StatsService {
     return {
       coins: updated.coins,
     };
+  }
+
+  async getDailyQuests(userId: number, tzOffset: number) {
+    const localTodayStr = getLocalDateString(new Date(), tzOffset);
+
+    // 1. Check if user already has quests generated for today
+    let quests = await this.prisma.userQuest.findMany({
+      where: {
+        userId,
+        dateStr: localTodayStr,
+      },
+      orderBy: { id: 'asc' },
+    });
+
+    // 2. If no quests exist, generate exactly 3 random unique quests
+    if (quests.length === 0) {
+      const selected = shuffleArray(QUEST_TEMPLATES).slice(0, 3);
+      quests = [];
+      for (const t of selected) {
+        const q = await this.prisma.userQuest.create({
+          data: {
+            userId,
+            questType: t.type,
+            title: t.title,
+            description: t.description,
+            target: t.target,
+            xpReward: t.xpReward,
+            coinReward: t.coinReward,
+            dateStr: localTodayStr,
+          },
+        });
+        quests.push(q);
+      }
+    }
+
+    return quests;
+  }
+
+  async incrementQuestProgress(
+    userId: number,
+    questType: string,
+    amount: number,
+    tzOffset: number,
+  ) {
+    const localTodayStr = getLocalDateString(new Date(), tzOffset);
+
+    // 1. Find the active quest of this type for today
+    const quest = await this.prisma.userQuest.findFirst({
+      where: {
+        userId,
+        questType,
+        dateStr: localTodayStr,
+        completed: false,
+      },
+    });
+
+    if (!quest) {
+      return null;
+    }
+
+    // 2. Increment progress and check completion
+    const newProgress = Math.min(quest.target, quest.progress + amount);
+    const completed = newProgress >= quest.target;
+
+    const updated = await this.prisma.userQuest.update({
+      where: { id: quest.id },
+      data: {
+        progress: newProgress,
+        completed,
+      },
+    });
+
+    // 3. If newly completed, award rewards
+    if (completed && !quest.completed) {
+      await this.updateXPAndCoins(userId, quest.xpReward, quest.coinReward);
+    }
+
+    return updated;
   }
 }

@@ -63,4 +63,29 @@ export class StatsController {
     const userId = req.user.id;
     return this.statsService.buyItem(userId, body.price);
   }
+
+  @Get('quests')
+  @UseGuards(AuthGuard('jwt'))
+  async getQuests(@Req() req: any, @Query('tzOffset') tzOffsetStr?: string) {
+    const userId = req.user.id;
+    const tzOffset =
+      tzOffsetStr !== undefined ? parseInt(tzOffsetStr, 10) : 420;
+    return this.statsService.getDailyQuests(userId, tzOffset);
+  }
+
+  @Put('quests/progress')
+  @UseGuards(AuthGuard('jwt'))
+  async incrementQuestProgress(
+    @Req() req: any,
+    @Body() body: { questType: string; amount: number; tzOffset?: number },
+  ) {
+    const userId = req.user.id;
+    const tzOffset = body.tzOffset !== undefined ? body.tzOffset : 420;
+    return this.statsService.incrementQuestProgress(
+      userId,
+      body.questType,
+      body.amount,
+      tzOffset,
+    );
+  }
 }

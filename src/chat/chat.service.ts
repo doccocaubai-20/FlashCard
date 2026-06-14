@@ -1,9 +1,14 @@
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 
+import { StatsService } from '../stats/stats.service';
+
 @Injectable()
 export class ChatService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly statsService: StatsService,
+  ) {}
 
   async getHistory(userId: number) {
     return this.prisma.chatMessage.findMany({
@@ -198,6 +203,10 @@ Hãy trả lời thân thiện, mạch lạc, ngắn gọn và sử dụng Markd
           content: content.trim(),
         },
       });
+
+      // Update daily quest progress for AI_CHAT
+      await this.statsService.incrementQuestProgress(userId, 'AI_CHAT', 1, 420);
+
 
       const savedReply = await this.prisma.chatMessage.create({
         data: {

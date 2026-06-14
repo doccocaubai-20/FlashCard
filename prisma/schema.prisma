@@ -34,6 +34,7 @@ model User {
   dictionaryHistory DictionaryHistory[]
   favoriteWords FavoriteWord[]
   chatMessages ChatMessage[]
+  quests   UserQuest[]
 }
 
 enum AuthProvider {
@@ -177,4 +178,23 @@ model DictionaryWord {
   @@index([sv])
   @@index([p])
   @@index([pt])
+}
+
+model UserQuest {
+  id          Int      @id @default(autoincrement())
+  userId      Int
+  questType   String   // "STUDY_CARDS", "AI_CHAT", "DICTIONARY_LOOKUP", "FAVORITE_WORD", "PLAY_GAME", "WRITE_PRACTICE", "SPEAK_PRACTICE"
+  title       String
+  description String?
+  target      Int
+  progress    Int      @default(0)
+  xpReward    Int      @default(20)
+  coinReward  Int      @default(10)
+  completed   Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  dateStr     String   // YYYY-MM-DD local date
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, dateStr])
 }

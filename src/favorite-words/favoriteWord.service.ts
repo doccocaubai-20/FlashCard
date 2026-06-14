@@ -6,9 +6,14 @@ import {
 import { PrismaService } from 'src/prisma/prisma.service';
 import { CreateFavoriteWordDto } from './dto/favoriteWord.dto';
 
+import { StatsService } from '../stats/stats.service';
+
 @Injectable()
 export class FavoriteWordService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly statsService: StatsService,
+  ) {}
 
   async getAllFavoriteWords(userId: number) {
     return this.prisma.favoriteWord.findMany({
@@ -51,7 +56,7 @@ export class FavoriteWordService {
     }
 
     try {
-      return await this.prisma.favoriteWord.create({
+      const favWord = await this.prisma.favoriteWord.create({
         data: {
           userId,
           hanzi: dto.hanzi,
@@ -60,6 +65,11 @@ export class FavoriteWordService {
           vi: dto.vi || null,
         },
       });
+
+      // Update daily quest progress for FAVORITE_WORD
+      await this.statsService.incrementQuestProgress(userId, 'FAVORITE_WORD', 1, 420);
+
+      return favWord;
     } catch (error) {
       const err = error as any;
       if (err?.code === 'P2002') {

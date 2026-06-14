@@ -64,9 +64,14 @@ function isConsecutiveDay(day1: string, day2: string): boolean {
   return diffDays === 1;
 }
 
+import { StatsService } from '../stats/stats.service';
+
 @Injectable()
 export class StudyService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly statsService: StatsService,
+  ) {}
 
   async getTodayCards(
     userId: number,
@@ -316,6 +321,23 @@ export class StudyService {
         lastStudyDate: now,
       },
     });
+
+    // Award XP and Coins based on Streak Combo Multiplier
+    let xpReward = 5;
+    let coinReward = 2;
+    if (currentStreak >= 14) {
+      xpReward = 10;
+      coinReward = 4;
+    } else if (currentStreak >= 7) {
+      xpReward = 7;
+      coinReward = 3;
+    }
+
+    await this.statsService.updateXPAndCoins(userId, xpReward, coinReward);
+
+    // Update daily quest progress for STUDY_CARDS
+    await this.statsService.incrementQuestProgress(userId, 'STUDY_CARDS', 1, tzOffset);
+
 
     // 6. Return mapped card progress
     return {
