@@ -129,6 +129,7 @@ export class StudyService {
             gte: startOfLocalToday,
             lte: endOfLocalToday,
           },
+          flashcard: deckId ? { deckId } : undefined,
         },
       });
 
