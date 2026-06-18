@@ -17,6 +17,7 @@ import { DictionaryModule } from './dictionary/dictionary.module';
 import { AdminModule } from './admin/admin.module';
 import { SocialModule } from './social/social.module';
 import { ChatModule } from './chat/chat.module';
+import { HskExamModule } from './hsk-exam/hsk-exam.module';
 
 @Module({
   imports: [
@@ -40,6 +41,7 @@ import { ChatModule } from './chat/chat.module';
     AdminModule,
     SocialModule,
     ChatModule,
+    HskExamModule,
   ],
   controllers: [AppController],
   providers: [

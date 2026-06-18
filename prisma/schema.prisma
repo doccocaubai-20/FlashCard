@@ -35,6 +35,7 @@ model User {
   favoriteWords FavoriteWord[]
   chatMessages ChatMessage[]
   quests   UserQuest[]
+  hskExamResults HskExamResult[]
 }
 
 enum AuthProvider {
@@ -201,4 +202,19 @@ model UserQuest {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, dateStr])
+}
+
+model HskExamResult {
+  id             Int      @id @default(autoincrement())
+  userId         Int
+  hskLevel       Int      // Cấp độ HSK (1-6)
+  examTitle      String   // Tên đề thi (ví dụ: "Đề mô phỏng HSK 1 - Bộ đề 01")
+  score          Int      // Điểm đạt được
+  maxScore       Int      // Tổng điểm (thường là 100 hoặc 300)
+  correctAnswers Int      // Số câu đúng
+  totalQuestions Int      // Tổng số câu hỏi
+  duration       Int      // Thời gian làm bài (tính bằng giây)
+  completedAt    DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
