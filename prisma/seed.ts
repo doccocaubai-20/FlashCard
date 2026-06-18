@@ -65,17 +65,9 @@ function lookupSV(hanzi: string): string {
 async function main() {
   console.log('Seeding Database...');
 
-  // 1. Delete all old system flashcards
-  console.log('Deleting all old system flashcards...');
-  await prisma.flashcard.deleteMany({
-    where: {
-      deck: { isSystem: true }
-    }
-  });
-
-  // 2. Delete all old system decks
-  console.log('Deleting all old system decks...');
-  await prisma.deck.deleteMany({
+  // Get all existing system decks to check against
+  console.log('Checking existing system decks in database...');
+  const existingDecks = await prisma.deck.findMany({
     where: { isSystem: true }
   });
 
@@ -120,6 +112,12 @@ async function main() {
 
   // 4. Loop through each deck config and seed
   for (const deckConfig of decksToSeed) {
+    const exists = existingDecks.some(d => d.title === deckConfig.title);
+    if (exists) {
+      console.log(`\nDeck "${deckConfig.title}" already exists in the database. Skipping to preserve progress.`);
+      continue;
+    }
+
     console.log(`\nCreating deck: ${deckConfig.title}...`);
     const deck = await prisma.deck.create({
       data: {
