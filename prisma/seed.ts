@@ -90,6 +90,31 @@ async function main() {
       title: 'Từ vựng HSK 2 (Hệ thống)',
       description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 2 được đồng bộ từ file tu_vung_hsk2.json.',
       fileName: 'tu_vung_hsk2.json',
+    },
+    {
+      title: 'Từ vựng HSK 3 (Hệ thống)',
+      description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 3 được đồng bộ từ file tu_vung_hsk3.json.',
+      fileName: 'tu_vung_hsk3.json',
+    },
+    {
+      title: 'Từ vựng HSK 4 (Hệ thống)',
+      description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 4 được đồng bộ từ file tu_vung_hsk4.json.',
+      fileName: 'tu_vung_hsk4.json',
+    },
+    {
+      title: 'Từ vựng HSK 5 (Hệ thống)',
+      description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 5 được đồng bộ từ file tu_vung_hsk5.json.',
+      fileName: 'tu_vung_hsk5.json',
+    },
+    {
+      title: 'Từ vựng HSK 6 (Hệ thống)',
+      description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 6 được đồng bộ từ file tu_vung_hsk6.json.',
+      fileName: 'tu_vung_hsk6.json',
+    },
+    {
+      title: 'Từ vựng HSK 7-9 (Hệ thống)',
+      description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 7-9 được đồng bộ từ file tu_vung_hsk7_9.json.',
+      fileName: 'tu_vung_hsk7_9.json',
     }
   ];
 
