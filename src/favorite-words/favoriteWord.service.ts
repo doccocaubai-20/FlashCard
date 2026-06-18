@@ -63,6 +63,9 @@ export class FavoriteWordService {
           pinyin: dto.pinyin || null,
           sv,
           vi: dto.vi || null,
+          exampleHanzi: dto.exampleHanzi || null,
+          examplePinyin: dto.examplePinyin || null,
+          exampleMeaning: dto.exampleMeaning || null,
         },
       });
 

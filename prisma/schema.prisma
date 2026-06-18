@@ -141,13 +141,16 @@ model DictionaryHistory {
 }
 
 model FavoriteWord {
-  id       Int      @id @default(autoincrement())
-  userId   Int
-  hanzi    String
-  pinyin   String?
-  sv       String?
-  vi       String?
-  createdAt DateTime @default(now()) 
+  id             Int      @id @default(autoincrement())
+  userId         Int
+  hanzi          String
+  pinyin         String?
+  sv             String?
+  vi             String?
+  exampleHanzi   String?
+  examplePinyin  String?
+  exampleMeaning String?
+  createdAt      DateTime @default(now()) 
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   

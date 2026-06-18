@@ -16,4 +16,17 @@ export class CreateFavoriteWordDto {
   @IsString()
   @IsOptional()
   vi?: string;
+
+  @IsString()
+  @IsOptional()
+  exampleHanzi?: string;
+
+  @IsString()
+  @IsOptional()
+  examplePinyin?: string;
+
+  @IsString()
+  @IsOptional()
+  exampleMeaning?: string;
 }
+
