@@ -468,7 +468,7 @@ export class StatsService {
     return updated;
   }
 
-  async getGardenState(userId: number, tzOffset: number) {
+  async getGardenState(userId: number, tzOffset: number, all = false) {
     // 1. Get all progresses for the user
     const progresses = await this.prisma.userProgress.findMany({
       where: { userId },
@@ -521,13 +521,6 @@ export class StatsService {
       return copy;
     };
 
-    // Pick up to 3 cards from each category to display (max 12 plants)
-    const displayPlants: any[] = [];
-    const selectedSeeds = shuffle(seeds).slice(0, 3);
-    const selectedSprouts = shuffle(sprouts).slice(0, 3);
-    const selectedSaplings = shuffle(saplings).slice(0, 3);
-    const selectedGoldens = shuffle(goldens).slice(0, 3);
-
     const mapProgressToPlant = (p: any, stage: 'seed' | 'sprout' | 'sapling' | 'golden') => ({
       id: p.id,
       hanzi: p.flashcard.hanzi,
@@ -539,10 +532,29 @@ export class StatsService {
       isOverdue: p.nextReviewDate <= now,
     });
 
-    displayPlants.push(...selectedSeeds.map(p => mapProgressToPlant(p, 'seed')));
-    displayPlants.push(...selectedSprouts.map(p => mapProgressToPlant(p, 'sprout')));
-    displayPlants.push(...selectedSaplings.map(p => mapProgressToPlant(p, 'sapling')));
-    displayPlants.push(...selectedGoldens.map(p => mapProgressToPlant(p, 'golden')));
+    const displayPlants: any[] = [];
+    if (all) {
+      // Map all progresses
+      for (const p of progresses) {
+        let stage: 'seed' | 'sprout' | 'sapling' | 'golden';
+        if (p.repetitions === 0) stage = 'seed';
+        else if (p.interval < 7) stage = 'sprout';
+        else if (p.interval < 30) stage = 'sapling';
+        else stage = 'golden';
+        displayPlants.push(mapProgressToPlant(p, stage));
+      }
+    } else {
+      // Pick up to 3 cards from each category to display (max 12 plants)
+      const selectedSeeds = shuffle(seeds).slice(0, 3);
+      const selectedSprouts = shuffle(sprouts).slice(0, 3);
+      const selectedSaplings = shuffle(saplings).slice(0, 3);
+      const selectedGoldens = shuffle(goldens).slice(0, 3);
+
+      displayPlants.push(...selectedSeeds.map(p => mapProgressToPlant(p, 'seed')));
+      displayPlants.push(...selectedSprouts.map(p => mapProgressToPlant(p, 'sprout')));
+      displayPlants.push(...selectedSaplings.map(p => mapProgressToPlant(p, 'sapling')));
+      displayPlants.push(...selectedGoldens.map(p => mapProgressToPlant(p, 'golden')));
+    }
 
     // Get user stats to check harvest date
     let stats = await this.prisma.userStats.findUnique({

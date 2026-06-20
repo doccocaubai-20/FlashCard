@@ -107,11 +107,16 @@ export class StatsController {
 
   @Get('garden')
   @UseGuards(AuthGuard('jwt'))
-  async getGardenState(@Req() req: any, @Query('tzOffset') tzOffsetStr?: string) {
+  async getGardenState(
+    @Req() req: any,
+    @Query('tzOffset') tzOffsetStr?: string,
+    @Query('all') allStr?: string,
+  ) {
     const userId = req.user.id;
     const tzOffset =
       tzOffsetStr !== undefined ? parseInt(tzOffsetStr, 10) : 420;
-    return this.statsService.getGardenState(userId, tzOffset);
+    const all = allStr === 'true';
+    return this.statsService.getGardenState(userId, tzOffset, all);
   }
 
   @Post('garden/harvest')
