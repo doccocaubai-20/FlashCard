@@ -56,6 +56,9 @@ model UserStats {
   streakFreezeCount     Int       @default(0)
   xpBoostCount          Int       @default(0)
   xpBoostUntil          DateTime?
+  water                 Int       @default(35)
+  fertilizer            Int       @default(55)
+  harvestPoints         Int       @default(170)
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }

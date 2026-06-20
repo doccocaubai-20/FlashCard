@@ -27,11 +27,11 @@ function getUtcEndOfDay(localDateStr: string, offsetMinutes: number): Date {
 const QUEST_TEMPLATES = [
   {
     type: 'STUDY_CARDS',
-    title: 'Ôn tập thẻ flashcard',
-    description: 'Ôn tập 20 thẻ từ vựng với thuật toán SRS',
-    target: 20,
-    xpReward: 25,
-    coinReward: 15,
+    title: 'Tưới nước học tập',
+    description: 'Tưới nước cho 10 cây bằng cách ôn tập thẻ SRS',
+    target: 10,
+    xpReward: 20,
+    coinReward: 20,
   },
   {
     type: 'AI_CHAT',
@@ -59,11 +59,11 @@ const QUEST_TEMPLATES = [
   },
   {
     type: 'PLAY_GAME',
-    title: 'Đại chiến game HSK',
-    description: 'Chơi 1 ván game lật thẻ, xếp câu hoặc rơi từ',
+    title: 'Dọn sạch cỏ dại',
+    description: 'Dọn dẹp cỏ dại bằng cách tham gia trò chơi HSK',
     target: 1,
-    xpReward: 20,
-    coinReward: 10,
+    xpReward: 30,
+    coinReward: 30,
   },
   {
     type: 'WRITE_PRACTICE',
@@ -75,11 +75,11 @@ const QUEST_TEMPLATES = [
   },
   {
     type: 'SPEAK_PRACTICE',
-    title: 'Luyện phát âm tiếng Trung',
-    description: 'Thu âm phát âm chuẩn 2 câu mẫu hoặc từ vựng',
+    title: 'Thu hoạch cây tri thức',
+    description: 'Luyện nói 2 câu để thu hoạch năng lượng quả ngọt',
     target: 2,
-    xpReward: 20,
-    coinReward: 10,
+    xpReward: 25,
+    coinReward: 25,
   },
 ];
 
@@ -189,6 +189,9 @@ export class StatsService {
       streakFreezeCount: stats.streakFreezeCount,
       xpBoostCount: stats.xpBoostCount,
       xpBoostUntil: stats.xpBoostUntil,
+      water: stats.water,
+      fertilizer: stats.fertilizer,
+      harvestPoints: stats.harvestPoints,
     };
   }
 
@@ -347,6 +350,10 @@ export class StatsService {
       dataToUpdate.streakFreezeCount = { increment: 1 };
     } else if (itemType === 'booster') {
       dataToUpdate.xpBoostCount = { increment: 1 };
+    } else if (itemType === 'water') {
+      dataToUpdate.water = { increment: 10 };
+    } else if (itemType === 'fertilizer') {
+      dataToUpdate.fertilizer = { increment: 5 };
     } else {
       throw new Error('Loại vật phẩm không hợp lệ.');
     }
@@ -360,6 +367,9 @@ export class StatsService {
       coins: updated.coins,
       streakFreezeCount: updated.streakFreezeCount,
       xpBoostCount: updated.xpBoostCount,
+      water: updated.water,
+      fertilizer: updated.fertilizer,
+      harvestPoints: updated.harvestPoints,
     };
   }
 
@@ -589,6 +599,9 @@ export class StatsService {
       canHarvest,
       harvestReward,
       lastHarvestDate: stats.lastGardenHarvestDate,
+      water: stats.water,
+      fertilizer: stats.fertilizer,
+      harvestPoints: stats.harvestPoints,
     };
   }
 
