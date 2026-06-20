@@ -367,14 +367,19 @@ export class StudyService {
     };
   }
 
-  async getAllCards(userId: number) {
-    const decks = await this.prisma.deck.findMany({
-      where: {
-        OR: [{ userId }, { isSystem: true }],
-      },
-      select: { id: true },
-    });
-    const deckIds = decks.map((d) => d.id);
+  async getAllCards(userId: number, deckId?: number) {
+    let deckIds: number[];
+    if (deckId !== undefined) {
+      deckIds = [deckId];
+    } else {
+      const decks = await this.prisma.deck.findMany({
+        where: {
+          OR: [{ userId }, { isSystem: true }],
+        },
+        select: { id: true },
+      });
+      deckIds = decks.map((d) => d.id);
+    }
     const cards = await this.prisma.flashcard.findMany({
       where: {
         deckId: { in: deckIds },

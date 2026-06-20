@@ -33,9 +33,14 @@ export class StudyController {
 
   @Get('all-cards')
   @UseGuards(AuthGuard('jwt'))
-  async getAllCards(@Req() req: any) {
+  async getAllCards(
+    @Req() req: any,
+    @Query('deckId') deckIdStr?: string,
+  ) {
     const userId = req.user.id;
-    return this.studyService.getAllCards(userId);
+    const deckId =
+      deckIdStr !== undefined ? parseInt(deckIdStr, 10) : undefined;
+    return this.studyService.getAllCards(userId, deckId);
   }
 
   @Post('review')
