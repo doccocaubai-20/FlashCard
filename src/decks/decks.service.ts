@@ -175,12 +175,12 @@ export class DecksService {
       // Lọc lấy các từ trong bộ bài mà người dùng chọn
       selectedWords = cards.filter(c => words.includes(c.hanzi));
       if (selectedWords.length === 0) {
-        // Fallback: Nếu không khớp từ nào thì lấy 20 từ đầu tiên
-        selectedWords = cards.slice(0, 20);
+        // Fallback: Nếu không khớp từ nào thì lấy tất cả các từ
+        selectedWords = cards;
       }
     } else {
-      // Mặc định lấy tối đa 20 từ đầu tiên
-      selectedWords = cards.slice(0, 20);
+      // Mặc định lấy tất cả từ
+      selectedWords = cards;
     }
     const wordsListStr = selectedWords
       .map(w => `- Từ: ${w.hanzi} (Phiên âm: ${w.pinyin}, Nghĩa: ${w.meaning})`)
