@@ -115,11 +115,7 @@ export class FlashcardsService {
       throw new ForbiddenException('Bạn không có quyền truy cập bộ thẻ này!');
     }
     const cards = await this.prisma.flashcard.findMany({
-      where: {
-        deck: {
-          id: deckId,
-        },
-      },
+      where: { deckId },
       orderBy: { id: 'desc' },
     });
     return cards.map(mapFlashcardToFrontend);

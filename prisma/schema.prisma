@@ -36,6 +36,7 @@ model User {
   chatMessages ChatMessage[]
   quests   UserQuest[]
   hskExamResults HskExamResult[]
+  savedParagraphs SavedParagraph[]
 }
 
 enum AuthProvider {
@@ -76,6 +77,7 @@ model Deck {
   user   User? @relation(fields: [userId], references: [id])
 
   flashcards Flashcard[]
+  savedParagraphs SavedParagraph[]
 }
 
 model Flashcard {
@@ -223,4 +225,22 @@ model HskExamResult {
   completedAt    DateTime @default(now())
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model SavedParagraph {
+  id        Int      @id @default(autoincrement())
+  deckId    Int
+  userId    Int
+  hanzi     String   @db.Text
+  pinyin    String   @db.Text
+  meaning   String   @db.Text
+  words     String[]
+  wordUsage Json     // Store wordUsage details as JSON array
+  createdAt DateTime @default(now())
+
+  deck      Deck     @relation(fields: [deckId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([deckId])
+  @@index([userId])
 }

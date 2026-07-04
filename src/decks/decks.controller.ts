@@ -108,4 +108,84 @@ export class DecksController {
   removeSystemDeck(@Param('id', ParseIntPipe) id: number) {
     return this.decksService.removeSystemDeck(id);
   }
+
+  @Post(':id/generate-paragraph')
+  async generateParagraph(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() body: { words?: string[] },
+    @Req() req: any,
+  ) {
+    const deck = await this.decksService.findOne(id);
+    if (!deck) {
+      throw new NotFoundException('Không tìm thấy bộ thẻ!');
+    }
+    if (
+      !deck.isSystem &&
+      deck.userId !== req.user.id &&
+      req.user.role !== 'ADMIN'
+    ) {
+      throw new ForbiddenException('Bạn không có quyền truy cập bộ thẻ này!');
+    }
+    return this.decksService.generateParagraph(id, body.words || [], req.user.id);
+  }
+
+  @Post(':id/paragraphs')
+  async saveParagraph(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() body: { hanzi: string; pinyin: string; meaning: string; words: string[]; wordUsage: any },
+    @Req() req: any,
+  ) {
+    const deck = await this.decksService.findOne(id);
+    if (!deck) {
+      throw new NotFoundException('Không tìm thấy bộ thẻ!');
+    }
+    if (
+      !deck.isSystem &&
+      deck.userId !== req.user.id &&
+      req.user.role !== 'ADMIN'
+    ) {
+      throw new ForbiddenException('Bạn không có quyền truy cập bộ thẻ này!');
+    }
+    return this.decksService.saveParagraph(id, req.user.id, body);
+  }
+
+  @Get(':id/paragraphs')
+  async getSavedParagraphs(
+    @Param('id', ParseIntPipe) id: number,
+    @Req() req: any,
+  ) {
+    const deck = await this.decksService.findOne(id);
+    if (!deck) {
+      throw new NotFoundException('Không tìm thấy bộ thẻ!');
+    }
+    if (
+      !deck.isSystem &&
+      deck.userId !== req.user.id &&
+      req.user.role !== 'ADMIN'
+    ) {
+      throw new ForbiddenException('Bạn không có quyền truy cập bộ thẻ này!');
+    }
+    return this.decksService.getSavedParagraphs(id, req.user.id);
+  }
+
+  @Delete(':id/paragraphs/:paragraphId')
+  async deleteSavedParagraph(
+    @Param('id', ParseIntPipe) id: number,
+    @Param('paragraphId', ParseIntPipe) paragraphId: number,
+    @Req() req: any,
+  ) {
+    const deck = await this.decksService.findOne(id);
+    if (!deck) {
+      throw new NotFoundException('Không tìm thấy bộ thẻ!');
+    }
+    if (
+      !deck.isSystem &&
+      deck.userId !== req.user.id &&
+      req.user.role !== 'ADMIN'
+    ) {
+      throw new ForbiddenException('Bạn không có quyền truy cập bộ thẻ này!');
+    }
+    return this.decksService.deleteSavedParagraph(paragraphId, req.user.id);
+  }
 }
+
