@@ -51,6 +51,7 @@ export class UsersService {
         avatarUrl: true,
         age: true,
         authProvider: true,
+        nativeLanguage: true,
         createdAt: true,
         role: true,
       },

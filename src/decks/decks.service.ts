@@ -186,8 +186,28 @@ export class DecksService {
       .map(w => `- Từ: ${w.hanzi} (Phiên âm: ${w.pinyin}, Nghĩa: ${w.meaning})`)
       .join('\n');
 
+    const user = await this.prisma.user.findUnique({
+      where: { id: userId },
+      select: { nativeLanguage: true },
+    });
+    const lang = user?.nativeLanguage || 'vi';
+    const langNames: Record<string, string> = {
+      vi: 'Vietnamese',
+      en: 'English',
+      zh: 'Chinese',
+      ja: 'Japanese',
+      ko: 'Korean',
+      fr: 'French',
+      de: 'German',
+      es: 'Spanish',
+      ru: 'Russian',
+    };
+    const targetLangName = langNames[lang] || 'Vietnamese';
+
     const prompt = `Bạn là một giáo viên tiếng Trung. Hãy viết một đoạn văn tiếng Trung khoảng 200 chữ, tự nhiên và mạch lạc, sử dụng các từ vựng sau đây:
 ${wordsListStr}
+
+CRITICAL INSTRUCTION: The user's native language is ${targetLangName}. You MUST provide the paragraphMeaning and all wordUsage explanations/meanings in ${targetLangName}.
 
 Bạn PHẢI trả về duy nhất một đối tượng JSON thuần túy (không có markdown code block, không có giải thích ngoài JSON) theo cấu trúc chính xác như sau:
 {
@@ -207,8 +227,8 @@ Bạn PHẢI trả về duy nhất một đối tượng JSON thuần túy (khô
 Trong đó:
 - "paragraphHanzi": Đoạn văn bằng chữ Hán giản thể.
 - "paragraphPinyin": Phiên âm Pinyin đầy đủ, có dấu thanh điệu của cả đoạn văn.
-- "paragraphMeaning": Bản dịch tiếng Việt trôi chảy của đoạn văn.
-- "wordUsage": Danh sách các từ đầu vào đã được dùng, kèm pinyin, nghĩa tiếng Việt và "explanation" là lời giải thích ngắn gọn bằng tiếng Việt về cách dùng từ đó trong ngữ cảnh của đoạn văn.`;
+- "paragraphMeaning": Bản dịch trôi chảy bằng ${targetLangName} của đoạn văn.
+- "wordUsage": Danh sách các từ đầu vào đã được dùng, kèm pinyin, nghĩa bằng ${targetLangName} và "explanation" là lời giải thích ngắn gọn bằng ${targetLangName} về cách dùng từ đó trong ngữ cảnh của đoạn văn.`;
 
     try {
       const response = await fetch(

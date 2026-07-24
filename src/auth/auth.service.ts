@@ -38,6 +38,7 @@ export class AuthService {
         role: user.role,
         avatarUrl: user.avatarUrl,
         age: user.age,
+        nativeLanguage: user.nativeLanguage || 'vi',
         authProvider: user.authProvider,
       },
     };
