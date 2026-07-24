@@ -153,6 +153,13 @@ export class DictionaryHistoryService {
       );
     }
 
+    // Fetch user nativeLanguage
+    const userObj = await this.prisma.user.findUnique({
+      where: { id: userId },
+      select: { nativeLanguage: true },
+    });
+    const userLang = userObj?.nativeLanguage === 'en' ? 'English' : 'Vietnamese';
+
     try {
       const briefMeaning = body.en
         ? (Array.isArray(body.en)
@@ -164,14 +171,16 @@ export class DictionaryHistoryService {
       const isSingleChar = body.hanzi.length === 1;
       const prompt = `Hãy đóng vai là một giáo viên tiếng Trung bản xứ chuyên nghiệp, am hiểu sâu sắc về từ nguyên học (etymology). Hãy phân tích ${isSingleChar ? 'chữ đơn' : 'từ ghép'} tiếng Trung: "${body.hanzi}" (Phồn thể: ${body.traditional || body.hanzi}, Bính âm: ${body.pinyin || ''}, Hán Việt: ${body.sv || ''}, Nghĩa định hướng: ${briefMeaning}).
 
+CRITICAL LANGUAGE INSTRUCTION: The user's native language is ${userLang}. You MUST provide all explanations, section titles, and sentence translations in ${userLang}.
+
 Yêu cầu tạo kết quả phân tích bằng mã HTML chuẩn, bọc gọn hoàn toàn trong một thẻ <div>. Tuyệt đối KHÔNG viết lời dẫn mở đầu hay kết luận dông dài, và KHÔNG bọc trong khối code markdown \`\`\`html.
 
 Cấu trúc yêu cầu như sau:
 
 1. Thẻ bao ngoài: <div class="space-y-4">
 
-2. Phần Phân tích cấu tạo chữ (Đặt tiêu đề: <h3 class="text-xs font-bold text-primary mb-2.5 uppercase tracking-wide">1. Phân tích chi tiết</h3>)
-${isSingleChar ? `   - Hãy giải thích chi tiết cấu tạo chữ "${body.hanzi}": thuộc loại chữ nào trong Lục thư (tượng hình, chỉ sự, hội ý, hình thanh,...), gồm bộ thủ chính nào cấu thành và ý nghĩa nguyên bản của chữ đơn này. Giải thích sâu sắc nhưng cô đọng (khoảng 3-4 câu).` : `   - Hãy lần lượt duyệt qua từng chữ đơn cấu thành từ ghép "${body.hanzi}". Với mỗi chữ đơn, giải thích cấu tạo (thuộc loại chữ nào trong Lục thư, bộ thủ chính cấu thành) và nghĩa cốt lõi của chữ đó. Giải thích cô đọng (khoảng 2-3 câu mỗi chữ).`}
+2. Phần Phân tích cấu tạo chữ (Đặt tiêu đề bằng ${userLang})
+${isSingleChar ? `   - Hãy giải thích chi tiết cấu tạo chữ "${body.hanzi}": thuộc loại chữ nào trong Lục thư, gồm bộ thủ chính nào cấu thành và ý nghĩa nguyên bản của chữ đơn này. Giải thích bằng ${userLang}.` : `   - Hãy lần lượt duyệt qua từng chữ đơn cấu thành từ ghép "${body.hanzi}". Với mỗi chữ đơn, giải thích cấu tạo và nghĩa cốt lõi của chữ đó bằng ${userLang}.`}
    - Định dạng mỗi chữ đơn phân tích nằm trong một khối:
      <div class="bg-surface-bone/30 dark:bg-black/10 p-3 rounded-md border border-hairline dark:border-divider-dark mb-2">
        <span class="font-bold text-ink dark:text-on-dark text-sm">[Chữ đơn]</span> - <span class="text-xs text-primary font-semibold">[Hán Việt / Bính âm]</span>: [Nội dung phân tích]
@@ -180,18 +189,18 @@ ${isSingleChar ? `   - Hãy giải thích chi tiết cấu tạo chữ "${body.h
 ${
   isSingleChar
     ? ''
-    : `3. Phần Giải nghĩa tổng hợp (Đặt tiêu đề: <h3 class="text-xs font-bold text-primary mt-4 mb-2 uppercase tracking-wide">2. Giải nghĩa tổng hợp</h3>)
-   - Giải thích cách kết hợp ý nghĩa của các chữ đơn để cấu thành nên nghĩa khái niệm hiện tại của từ ghép "${body.hanzi}". Viết cô đọng trong 2-3 câu.
+    : `3. Phần Giải nghĩa tổng hợp (Đặt tiêu đề bằng ${userLang})
+   - Giải thích cách kết hợp ý nghĩa của các chữ đơn để cấu thành nên nghĩa khái niệm hiện tại của từ ghép "${body.hanzi}" bằng ${userLang}.
 `
 }
 
-4. Phần Ví dụ thực tế (Đặt tiêu đề: <h3 class="text-xs font-bold text-primary mt-4 mb-2.5 uppercase tracking-wide">${isSingleChar ? '2' : '3'}. Ví dụ thực tế ngắn</h3>)
+4. Phần Ví dụ thực tế (Đặt tiêu đề bằng ${userLang})
    - Đưa ra đúng 3 ví dụ giao tiếp thực tế cực kỳ ngắn gọn (mỗi câu dưới 12 chữ Hán) sử dụng từ/chữ "${body.hanzi}".
    - Định dạng mỗi ví dụ nằm trong một thẻ <li> với đúng cấu trúc:
      <li class="bg-surface-bone/50 dark:bg-black/20 p-3 rounded border border-hairline dark:border-divider-dark mb-2 list-none text-xs">
        <div class="font-bold text-sm text-ink dark:text-on-dark mb-1">[Câu tiếng Trung]</div>
        <div class="text-xs text-amber-500 font-mono font-medium mb-1">[Phiên âm Pinyin]</div>
-       <div class="text-xs text-body dark:text-on-dark-mute italic">[Dịch nghĩa tiếng Việt tự nhiên, trôi chảy]</div>
+       <div class="text-xs text-body dark:text-on-dark-mute italic">[Dịch nghĩa bằng ${userLang}]</div>
      </li>`;
 
       const response = await fetch(
