@@ -353,8 +353,12 @@ export class StudyService {
     await this.statsService.updateXPAndCoins(userId, xpReward, coinReward);
 
     // Update daily quest progress for STUDY_CARDS
-    await this.statsService.incrementQuestProgress(userId, 'STUDY_CARDS', 1, tzOffset);
-
+    await this.statsService.incrementQuestProgress(
+      userId,
+      'STUDY_CARDS',
+      1,
+      tzOffset,
+    );
 
     // 6. Return mapped card progress
     return {

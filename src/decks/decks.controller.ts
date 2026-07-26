@@ -126,13 +126,24 @@ export class DecksController {
     ) {
       throw new ForbiddenException('Bạn không có quyền truy cập bộ thẻ này!');
     }
-    return this.decksService.generateParagraph(id, body.words || [], req.user.id);
+    return this.decksService.generateParagraph(
+      id,
+      body.words || [],
+      req.user.id,
+    );
   }
 
   @Post(':id/paragraphs')
   async saveParagraph(
     @Param('id', ParseIntPipe) id: number,
-    @Body() body: { hanzi: string; pinyin: string; meaning: string; words: string[]; wordUsage: any },
+    @Body()
+    body: {
+      hanzi: string;
+      pinyin: string;
+      meaning: string;
+      words: string[];
+      wordUsage: any;
+    },
     @Req() req: any,
   ) {
     const deck = await this.decksService.findOne(id);
@@ -188,4 +199,3 @@ export class DecksController {
     return this.decksService.deleteSavedParagraph(paragraphId, req.user.id);
   }
 }
-

@@ -70,7 +70,12 @@ export class FavoriteWordService {
       });
 
       // Update daily quest progress for FAVORITE_WORD
-      await this.statsService.incrementQuestProgress(userId, 'FAVORITE_WORD', 1, 420);
+      await this.statsService.incrementQuestProgress(
+        userId,
+        'FAVORITE_WORD',
+        1,
+        420,
+      );
 
       return favWord;
     } catch (error) {

@@ -25,7 +25,10 @@ export class ChatService {
 
   async sendMessage(userId: number, content: string) {
     if (!content || !content.trim()) {
-      throw new HttpException('Nội dung tin nhắn không được để trống.', HttpStatus.BAD_REQUEST);
+      throw new HttpException(
+        'Nội dung tin nhắn không được để trống.',
+        HttpStatus.BAD_REQUEST,
+      );
     }
 
     // 1. Lấy lịch sử 20 tin nhắn gần nhất làm context cho AI
@@ -34,7 +37,7 @@ export class ChatService {
       orderBy: { createdAt: 'desc' },
       take: 20,
     });
-    
+
     // Đảo ngược lại để đúng thứ tự thời gian tăng dần
     const sortedHistory = history.reverse();
 
@@ -54,7 +57,8 @@ export class ChatService {
       where: { id: userId },
       select: { nativeLanguage: true },
     });
-    const userLang = userObj?.nativeLanguage === 'en' ? 'English' : 'Vietnamese';
+    const userLang =
+      userObj?.nativeLanguage === 'en' ? 'English' : 'Vietnamese';
 
     // 3. Chuẩn bị system prompt đặc biệt định hướng vai trò AI
     const systemPrompt = `Bạn là ChongZi AI, một trợ lý học tiếng Trung và là tư vấn viên hỗ trợ website ChongZi. Hãy giúp người dùng giải đáp các thắc mắc về từ vựng, ngữ pháp HSK, luyện dịch, viết chữ Hán, phát âm.
@@ -87,11 +91,7 @@ Hãy trả lời thân thiện, mạch lạc, ngắn gọn và sử dụng Markd
         // 1. Lấy danh sách các bộ bài hiện có kèm số lượng từ (không lấy chi tiết flashcard để tiết kiệm token)
         const decks = await this.prisma.deck.findMany({
           where: {
-            OR: [
-              { userId },
-              { isPublic: true },
-              { isSystem: true },
-            ],
+            OR: [{ userId }, { isPublic: true }, { isSystem: true }],
           },
           include: {
             _count: {
@@ -139,8 +139,12 @@ Hãy trả lời thân thiện, mạch lạc, ngắn gọn và sử dụng Markd
                 })
                 .join(', ');
 
-              const totalCount = decks.find((x) => x.id === d.id)?._count?.flashcards || 0;
-              const limitText = totalCount > 50 ? ` (Đang nạp 50/${totalCount} từ tiêu biểu để tối ưu)` : '';
+              const totalCount =
+                decks.find((x) => x.id === d.id)?._count?.flashcards || 0;
+              const limitText =
+                totalCount > 50
+                  ? ` (Đang nạp 50/${totalCount} từ tiêu biểu để tối ưu)`
+                  : '';
               return `- Bộ bài "${d.title}" (ID: ${d.id})${limitText}: ${cardsInfo || 'Chưa có từ vựng nào'}`;
             })
             .join('\n');
@@ -208,7 +212,6 @@ Hãy trả lời thân thiện, mạch lạc, ngắn gọn và sử dụng Markd
       // Update daily quest progress for AI_CHAT
       await this.statsService.incrementQuestProgress(userId, 'AI_CHAT', 1, 420);
 
-
       const savedReply = await this.prisma.chatMessage.create({
         data: {
           userId,
@@ -221,7 +224,8 @@ Hãy trả lời thân thiện, mạch lạc, ngắn gọn và sử dụng Markd
     } catch (err) {
       console.error('Failed to communicate with DeepSeek in ChatService:', err);
       const error = err as any;
-      const isTimeout = error?.name === 'TimeoutError' || error?.name === 'AbortError';
+      const isTimeout =
+        error?.name === 'TimeoutError' || error?.name === 'AbortError';
       throw new HttpException(
         isTimeout
           ? 'AI đang bận, vui lòng thử lại sau vài giây!'

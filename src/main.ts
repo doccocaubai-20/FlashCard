@@ -19,10 +19,9 @@ async function bootstrap() {
         origin.endsWith('.vercel.app') ||
         origin === 'https://chongziapp.id.vn' ||
         origin === 'https://www.chongziapp.id.vn' ||
-        (process.env.FRONTEND_URL && (
-          origin === process.env.FRONTEND_URL ||
-          origin === process.env.FRONTEND_URL.replace('://', '://www.')
-        ));
+        (process.env.FRONTEND_URL &&
+          (origin === process.env.FRONTEND_URL ||
+            origin === process.env.FRONTEND_URL.replace('://', '://www.')));
 
       if (isAllowed) {
         callback(null, true);

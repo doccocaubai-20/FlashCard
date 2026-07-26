@@ -12,6 +12,10 @@ export class AppController {
 
   @Get('api/ping')
   ping() {
-    return { status: 'ok', message: 'pong', timestamp: new Date().toISOString() };
+    return {
+      status: 'ok',
+      message: 'pong',
+      timestamp: new Date().toISOString(),
+    };
   }
 }

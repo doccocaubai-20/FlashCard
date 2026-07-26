@@ -38,8 +38,16 @@ export class DictionaryService {
         ]);
 
         const combined = [
-          ...(Array.isArray(pinyinMatches) ? pinyinMatches : pinyinMatches ? [pinyinMatches] : []),
-          ...(Array.isArray(meaningMatches) ? meaningMatches : meaningMatches ? [meaningMatches] : []),
+          ...(Array.isArray(pinyinMatches)
+            ? pinyinMatches
+            : pinyinMatches
+              ? [pinyinMatches]
+              : []),
+          ...(Array.isArray(meaningMatches)
+            ? meaningMatches
+            : meaningMatches
+              ? [meaningMatches]
+              : []),
         ];
 
         const seen = new Set();
@@ -79,7 +87,7 @@ export class DictionaryService {
               { t: { startsWith: queryStr } },
             ],
           },
-          take: 30,
+          take: 150,
         });
       }
     } else if (type === 'pinyin') {
@@ -88,10 +96,10 @@ export class DictionaryService {
         where: {
           OR: [{ sp: cleanQ }, { p: cleanQ }, { pt: cleanQ }],
         },
-        take: 30,
+        take: 150,
       });
 
-      if (exactMatches.length >= 30) {
+      if (exactMatches.length >= 150) {
         results = exactMatches;
       } else {
         // 2. Prefix matches (startsWith) - case-sensitive to use B-tree index
@@ -106,7 +114,7 @@ export class DictionaryService {
               id: { in: exactMatches.map((m) => m.id) },
             },
           },
-          take: 30 - exactMatches.length,
+          take: 150 - exactMatches.length,
         });
         results = [...exactMatches, ...prefixMatches];
       }
@@ -114,10 +122,10 @@ export class DictionaryService {
       // 1. Exact sv match (case-sensitive)
       const exactSv = await this.prisma.dictionaryWord.findMany({
         where: { sv: cleanQ },
-        take: 30,
+        take: 150,
       });
 
-      if (exactSv.length >= 30) {
+      if (exactSv.length >= 150) {
         results = exactSv;
       } else {
         // 2. Prefix sv match (case-sensitive)
@@ -128,11 +136,11 @@ export class DictionaryService {
               id: { in: exactSv.map((m) => m.id) },
             },
           },
-          take: 30 - exactSv.length,
+          take: 150 - exactSv.length,
         });
 
         const currentMatches = [...exactSv, ...prefixSv];
-        if (currentMatches.length >= 30) {
+        if (currentMatches.length >= 150) {
           results = currentMatches;
         } else {
           // 3. Substring vi match (case-insensitive contains fallback)
@@ -143,12 +151,63 @@ export class DictionaryService {
                 id: { in: currentMatches.map((m) => m.id) },
               },
             },
-            take: 30 - currentMatches.length,
+            take: 150 - currentMatches.length,
           });
           results = [...currentMatches, ...containsVi];
         }
       }
     }
+
+    // Filter out highly obscure/unnecessary variants unless they are exact query matches on simplified 's'
+    results = results.filter((item) => {
+      if (item.vi) {
+        const lowerVi = item.vi.toLowerCase();
+        if (
+          lowerVi.includes('biến thể cổ') ||
+          lowerVi.includes('biến thể của')
+        ) {
+          // Only allow variant if it's the exact Simplified character they queried
+          if (item.s !== q.trim()) {
+            return false;
+          }
+        }
+      }
+      return true;
+    });
+
+    // Sort results
+    results.sort((a, b) => {
+      // 1. Prioritize exact matches on simplified character first
+      const aExactS = a.s === q.trim() ? 1 : 0;
+      const bExactS = b.s === q.trim() ? 1 : 0;
+      if (aExactS !== bExactS) return bExactS - aExactS;
+
+      // 2. Prioritize HSK levels (HSK 1, 2, 3... first, null/0 last)
+      const aHsk =
+        a.hsk === null || a.hsk === undefined || a.hsk === 0 ? 99 : a.hsk;
+      const bHsk =
+        b.hsk === null || b.hsk === undefined || b.hsk === 0 ? 99 : b.hsk;
+      if (aHsk !== bHsk) return aHsk - bHsk;
+
+      // 3. Prioritize common/standard characters (non-variant first)
+      const aIsVariant =
+        a.vi && (a.vi.includes('biến thể') || a.vi.includes('biến thể cổ'))
+          ? 1
+          : 0;
+      const bIsVariant =
+        b.vi && (b.vi.includes('biến thể') || b.vi.includes('biến thể cổ'))
+          ? 1
+          : 0;
+      if (aIsVariant !== bIsVariant) return aIsVariant - bIsVariant;
+
+      // 4. Prioritize shorter Simplified word length (e.g. single character first)
+      const aLen = a.s?.length || 0;
+      const bLen = b.s?.length || 0;
+      if (aLen !== bLen) return aLen - bLen;
+
+      // 5. Fallback to ID
+      return a.id - b.id;
+    });
 
     // Enrich compound words' Hán Việt reading
     const enriched = await this.enrichMultipleSv(results);
@@ -342,7 +401,9 @@ export class DictionaryService {
   }
 
   async segmentHanziSentence(text: string) {
-    const cleanText = text.replace(/[.,/#!$%^&*;:{}=\-_`~()?？。！，、；：\s]/g, '').trim();
+    const cleanText = text
+      .replace(/[.,/#!$%^&*;:{}=\-_`~()?？。！，、；：\s]/g, '')
+      .trim();
     if (!cleanText) return [];
 
     const chars = Array.from(cleanText);
@@ -352,7 +413,11 @@ export class DictionaryService {
 
     while (i < chars.length) {
       let matched = false;
-      for (let len = Math.min(maxWordLength, chars.length - i); len >= 1; len--) {
+      for (
+        let len = Math.min(maxWordLength, chars.length - i);
+        len >= 1;
+        len--
+      ) {
         const word = chars.slice(i, i + len).join('');
         const matches = await this.prisma.dictionaryWord.findMany({
           where: {

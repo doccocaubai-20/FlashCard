@@ -24,74 +24,6 @@ function getUtcEndOfDay(localDateStr: string, offsetMinutes: number): Date {
   return new Date(d.getTime() - offsetMinutes * 60 * 1000);
 }
 
-const QUEST_TEMPLATES = [
-  {
-    type: 'STUDY_CARDS',
-    title: 'Tưới nước học tập',
-    description: 'Tưới nước cho 10 cây bằng cách ôn tập thẻ SRS',
-    target: 10,
-    xpReward: 20,
-    coinReward: 20,
-  },
-  {
-    type: 'AI_CHAT',
-    title: 'Trò chuyện với AI Assistant',
-    description: 'Hỏi đáp hoặc thực hành hội thoại với AI 5 lần',
-    target: 5,
-    xpReward: 20,
-    coinReward: 10,
-  },
-  {
-    type: 'DICTIONARY_LOOKUP',
-    title: 'Tra cứu từ điển',
-    description: 'Tra cứu ý nghĩa hoặc âm Hán-Việt của 3 từ vựng',
-    target: 3,
-    xpReward: 15,
-    coinReward: 8,
-  },
-  {
-    type: 'FAVORITE_WORD',
-    title: 'Lưu từ vựng yêu thích',
-    description: 'Lưu thêm 2 từ mới vào Sổ tay từ vựng của bạn',
-    target: 2,
-    xpReward: 15,
-    coinReward: 8,
-  },
-  {
-    type: 'PLAY_GAME',
-    title: 'Dọn sạch cỏ dại',
-    description: 'Dọn dẹp cỏ dại bằng cách tham gia trò chơi HSK',
-    target: 1,
-    xpReward: 30,
-    coinReward: 30,
-  },
-  {
-    type: 'WRITE_PRACTICE',
-    title: 'Luyện viết chữ Hán',
-    description: 'Tập viết nét chữ Hán chuẩn xác 3 lần',
-    target: 3,
-    xpReward: 20,
-    coinReward: 10,
-  },
-  {
-    type: 'SPEAK_PRACTICE',
-    title: 'Thu hoạch cây tri thức',
-    description: 'Luyện nói 2 câu để thu hoạch năng lượng quả ngọt',
-    target: 2,
-    xpReward: 25,
-    coinReward: 25,
-  },
-];
-
-function shuffleArray<T>(array: T[]): T[] {
-  const arr = [...array];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-
 function createSeedRandom(seedStr: string) {
   let h = 1779033703 ^ seedStr.length;
   for (let i = 0; i < seedStr.length; i++) {
@@ -120,39 +52,22 @@ export class StatsService {
     }
 
     if (stats.lastStudyDate) {
-      const localLastStudyStr = getLocalDateString(stats.lastStudyDate, tzOffset);
+      const localLastStudyStr = getLocalDateString(
+        stats.lastStudyDate,
+        tzOffset,
+      );
       const localTodayStr = getLocalDateString(new Date(), tzOffset);
 
-      if (localTodayStr !== localLastStudyStr && !isConsecutiveDay(localLastStudyStr, localTodayStr)) {
+      if (
+        localTodayStr !== localLastStudyStr &&
+        !isConsecutiveDay(localLastStudyStr, localTodayStr)
+      ) {
         if (stats.currentStreak > 0) {
-          // Streak is broken! Let's check if they have a streak freeze.
-          const d1 = new Date(localLastStudyStr);
-          const d2 = new Date(localTodayStr);
-          const diffTime = Math.abs(d2.getTime() - d1.getTime());
-          const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
-          const neededFreezes = diffDays - 1;
-
-          if (neededFreezes > 0 && stats.streakFreezeCount >= neededFreezes) {
-            // Consume needed freezes and fake a study date on yesterday
-            const yesterdayLocal = new Date(localTodayStr);
-            yesterdayLocal.setDate(yesterdayLocal.getDate() - 1);
-            // Convert to UTC date at noon
-            const yesterdayUtc = new Date(yesterdayLocal.getTime() - tzOffset * 60 * 1000 + 12 * 60 * 60 * 1000);
-
-            stats = await this.prisma.userStats.update({
-              where: { userId },
-              data: {
-                streakFreezeCount: { decrement: neededFreezes },
-                lastStudyDate: yesterdayUtc,
-              },
-            });
-          } else {
-            // Reset streak
-            stats = await this.prisma.userStats.update({
-              where: { userId },
-              data: { currentStreak: 0 },
-            });
-          }
+          // Reset streak immediately since Streak Freeze is removed
+          stats = await this.prisma.userStats.update({
+            where: { userId },
+            data: { currentStreak: 0 },
+          });
         }
       }
     }
@@ -335,6 +250,10 @@ export class StatsService {
   }
 
   async buyItem(userId: number, itemPrice: number, itemType: string) {
+    if (itemType === 'freeze') {
+      throw new Error('Vật phẩm Bảo Mệnh Đan không còn khả dụng.');
+    }
+
     const stats = await this.prisma.userStats.findUnique({
       where: { userId },
     });
@@ -346,9 +265,7 @@ export class StatsService {
       coins: { decrement: itemPrice },
     };
 
-    if (itemType === 'freeze') {
-      dataToUpdate.streakFreezeCount = { increment: 1 };
-    } else if (itemType === 'booster') {
+    if (itemType === 'booster') {
       dataToUpdate.xpBoostCount = { increment: 1 };
     } else if (itemType === 'water') {
       dataToUpdate.water = { increment: 10 };
@@ -400,82 +317,19 @@ export class StatsService {
     };
   }
 
-  async getDailyQuests(userId: number, tzOffset: number) {
-    const localTodayStr = getLocalDateString(new Date(), tzOffset);
-
-    // 1. Check if user already has quests generated for today
-    let quests = await this.prisma.userQuest.findMany({
-      where: {
-        userId,
-        dateStr: localTodayStr,
-      },
-      orderBy: { id: 'asc' },
-    });
-
-    // 2. If no quests exist, generate exactly 3 random unique quests
-    if (quests.length === 0) {
-      const selected = shuffleArray(QUEST_TEMPLATES).slice(0, 3);
-      quests = [];
-      for (const t of selected) {
-        const q = await this.prisma.userQuest.create({
-          data: {
-            userId,
-            questType: t.type,
-            title: t.title,
-            description: t.description,
-            target: t.target,
-            xpReward: t.xpReward,
-            coinReward: t.coinReward,
-            dateStr: localTodayStr,
-          },
-        });
-        quests.push(q);
-      }
-    }
-
-    return quests;
+  async getDailyQuests(_userId: number, _tzOffset: number) {
+    // Return empty array since daily quests are removed
+    return [];
   }
 
   async incrementQuestProgress(
-    userId: number,
-    questType: string,
-    amount: number,
-    tzOffset: number,
+    _userId: number,
+    _questType: string,
+    _amount: number,
+    _tzOffset: number,
   ) {
-    const localTodayStr = getLocalDateString(new Date(), tzOffset);
-
-    // 1. Find the active quest of this type for today
-    const quest = await this.prisma.userQuest.findFirst({
-      where: {
-        userId,
-        questType,
-        dateStr: localTodayStr,
-        completed: false,
-      },
-    });
-
-    if (!quest) {
-      return null;
-    }
-
-    // 2. Increment progress and check completion
-    const newProgress = Math.min(quest.target, quest.progress + amount);
-    const completed = newProgress >= quest.target;
-
-    const updated = await this.prisma.userQuest.update({
-      where: { id: quest.id },
-      data: {
-        progress: newProgress,
-        completed,
-      },
-    });
-
-    // 3. If newly completed, award rewards
-    if (completed && !quest.completed) {
-      await this.updateXPAndCoins(userId, quest.xpReward, quest.coinReward);
-    }
-
-    return updated;
+    // Return success object as no-op to prevent breaking existing calls
+    return { success: true };
   }
 
   async getGardenState(userId: number, tzOffset: number, all = false) {
@@ -501,21 +355,16 @@ export class StatsService {
       const isOverdue = p.nextReviewDate <= now;
       if (isOverdue) overdueCount++;
 
-      let stage: 'seed' | 'sprout' | 'sapling' | 'golden';
       if (p.repetitions === 0) {
-        stage = 'seed';
         seedsCount++;
         seeds.push(p);
       } else if (p.interval < 7) {
-        stage = 'sprout';
         sproutsCount++;
         sprouts.push(p);
       } else if (p.interval < 30) {
-        stage = 'sapling';
         saplingsCount++;
         saplings.push(p);
       } else {
-        stage = 'golden';
         goldenTreesCount++;
         goldens.push(p);
       }
@@ -531,7 +380,10 @@ export class StatsService {
       return copy;
     };
 
-    const mapProgressToPlant = (p: any, stage: 'seed' | 'sprout' | 'sapling' | 'golden') => ({
+    const mapProgressToPlant = (
+      p: any,
+      stage: 'seed' | 'sprout' | 'sapling' | 'golden',
+    ) => ({
       id: p.id,
       hanzi: p.flashcard.hanzi,
       pinyin: p.flashcard.pinyin || '',
@@ -560,10 +412,18 @@ export class StatsService {
       const selectedSaplings = shuffle(saplings).slice(0, 3);
       const selectedGoldens = shuffle(goldens).slice(0, 3);
 
-      displayPlants.push(...selectedSeeds.map(p => mapProgressToPlant(p, 'seed')));
-      displayPlants.push(...selectedSprouts.map(p => mapProgressToPlant(p, 'sprout')));
-      displayPlants.push(...selectedSaplings.map(p => mapProgressToPlant(p, 'sapling')));
-      displayPlants.push(...selectedGoldens.map(p => mapProgressToPlant(p, 'golden')));
+      displayPlants.push(
+        ...selectedSeeds.map((p) => mapProgressToPlant(p, 'seed')),
+      );
+      displayPlants.push(
+        ...selectedSprouts.map((p) => mapProgressToPlant(p, 'sprout')),
+      );
+      displayPlants.push(
+        ...selectedSaplings.map((p) => mapProgressToPlant(p, 'sapling')),
+      );
+      displayPlants.push(
+        ...selectedGoldens.map((p) => mapProgressToPlant(p, 'golden')),
+      );
     }
 
     // Get user stats to check harvest date
@@ -577,14 +437,20 @@ export class StatsService {
     }
 
     let canHarvest = false;
-    const harvestReward = goldenTreesCount > 0 ? Math.min(20, Math.max(2, goldenTreesCount * 2)) : 0;
+    const harvestReward =
+      goldenTreesCount > 0
+        ? Math.min(20, Math.max(2, goldenTreesCount * 2))
+        : 0;
 
     if (goldenTreesCount > 0) {
       if (!stats.lastGardenHarvestDate) {
         canHarvest = true;
       } else {
         const localTodayStr = getLocalDateString(new Date(), tzOffset);
-        const localLastHarvestStr = getLocalDateString(stats.lastGardenHarvestDate, tzOffset);
+        const localLastHarvestStr = getLocalDateString(
+          stats.lastGardenHarvestDate,
+          tzOffset,
+        );
         canHarvest = localTodayStr !== localLastHarvestStr;
       }
     }
@@ -623,15 +489,22 @@ export class StatsService {
     });
 
     if (goldenTreesCount === 0) {
-      throw new Error('Bạn cần có ít nhất một Cây cổ thụ hoàng kim (ôn tập giãn cách >= 30 ngày) để thu hoạch!');
+      throw new Error(
+        'Bạn cần có ít nhất một Cây cổ thụ hoàng kim (ôn tập giãn cách >= 30 ngày) để thu hoạch!',
+      );
     }
 
     // Check harvest limit
     if (stats.lastGardenHarvestDate) {
       const localTodayStr = getLocalDateString(new Date(), tzOffset);
-      const localLastHarvestStr = getLocalDateString(stats.lastGardenHarvestDate, tzOffset);
+      const localLastHarvestStr = getLocalDateString(
+        stats.lastGardenHarvestDate,
+        tzOffset,
+      );
       if (localTodayStr === localLastHarvestStr) {
-        throw new Error('Hôm nay bạn đã thu hoạch rồi, hãy quay lại vào ngày mai nhé!');
+        throw new Error(
+          'Hôm nay bạn đã thu hoạch rồi, hãy quay lại vào ngày mai nhé!',
+        );
       }
     }
 
@@ -696,7 +569,7 @@ export class StatsService {
       const w = candidates[idx];
       if (
         w.id !== correctWord.id &&
-        !incorrectWords.some(x => x.id === w.id) &&
+        !incorrectWords.some((x) => x.id === w.id) &&
         w.s !== correctWord.s &&
         w.vi !== correctWord.vi
       ) {
@@ -729,9 +602,18 @@ export class StatsService {
       questionText = `Từ nào dưới đây mang ý nghĩa là "${correctWord.vi || 'Không rõ nghĩa'}"?`;
       options = [
         { text: `${correctWord.s} (${correctWord.p || ''})`, isCorrect: true },
-        { text: `${incorrectWords[0].s} (${incorrectWords[0].p || ''})`, isCorrect: false },
-        { text: `${incorrectWords[1].s} (${incorrectWords[1].p || ''})`, isCorrect: false },
-        { text: `${incorrectWords[2].s} (${incorrectWords[2].p || ''})`, isCorrect: false },
+        {
+          text: `${incorrectWords[0].s} (${incorrectWords[0].p || ''})`,
+          isCorrect: false,
+        },
+        {
+          text: `${incorrectWords[1].s} (${incorrectWords[1].p || ''})`,
+          isCorrect: false,
+        },
+        {
+          text: `${incorrectWords[2].s} (${incorrectWords[2].p || ''})`,
+          isCorrect: false,
+        },
       ];
     }
 

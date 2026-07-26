@@ -25,10 +25,7 @@ export class ChatController {
 
   @Throttle({ default: { limit: 15, ttl: 60000 } }) // Giới hạn tối đa 15 tin nhắn/phút
   @Post()
-  sendMessage(
-    @Req() req: any,
-    @Body() body: { message: string },
-  ) {
+  sendMessage(@Req() req: any, @Body() body: { message: string }) {
     if (!body || typeof body.message !== 'string') {
       throw new HttpException(
         'Nội dung tin nhắn không hợp lệ.',

@@ -9,7 +9,7 @@ import { Prisma } from '@prisma/client';
 import { PrismaService } from 'src/prisma/prisma.service';
 @Injectable()
 export class DecksService {
-  constructor(private readonly prisma: PrismaService) { }
+  constructor(private readonly prisma: PrismaService) {}
 
   async create(userId: number, data: any, role = 'USER') {
     const isSystem = data.isSystem === true && role === 'ADMIN';
@@ -170,10 +170,11 @@ export class DecksService {
       );
     }
 
-    let selectedWords: { hanzi: string; meaning: string; pinyin: string }[] = [];
+    let selectedWords: { hanzi: string; meaning: string; pinyin: string }[] =
+      [];
     if (words && words.length > 0) {
       // Lọc lấy các từ trong bộ bài mà người dùng chọn
-      selectedWords = cards.filter(c => words.includes(c.hanzi));
+      selectedWords = cards.filter((c) => words.includes(c.hanzi));
       if (selectedWords.length === 0) {
         // Fallback: Nếu không khớp từ nào thì lấy tất cả các từ
         selectedWords = cards;
@@ -183,7 +184,9 @@ export class DecksService {
       selectedWords = cards;
     }
     const wordsListStr = selectedWords
-      .map(w => `- Từ: ${w.hanzi} (Phiên âm: ${w.pinyin}, Nghĩa: ${w.meaning})`)
+      .map(
+        (w) => `- Từ: ${w.hanzi} (Phiên âm: ${w.pinyin}, Nghĩa: ${w.meaning})`,
+      )
       .join('\n');
 
     const user = await this.prisma.user.findUnique({
@@ -277,11 +280,13 @@ Trong đó:
     } catch (err) {
       console.error('Lỗi khi gọi DeepSeek trong DecksService:', err);
       const error = err as any;
-      const isTimeout = error?.name === 'TimeoutError' || error?.name === 'AbortError';
+      const isTimeout =
+        error?.name === 'TimeoutError' || error?.name === 'AbortError';
       throw new HttpException(
         isTimeout
           ? 'AI đang bận phản hồi chậm, vui lòng thử lại sau!'
-          : 'Lỗi khi kết nối với AI để tạo đoạn văn: ' + (error.message || error),
+          : 'Lỗi khi kết nối với AI để tạo đoạn văn: ' +
+              (error.message || error),
         HttpStatus.INTERNAL_SERVER_ERROR,
       );
     }
@@ -290,7 +295,13 @@ Trong đó:
   async saveParagraph(
     deckId: number,
     userId: number,
-    data: { hanzi: string; pinyin: string; meaning: string; words: string[]; wordUsage: any },
+    data: {
+      hanzi: string;
+      pinyin: string;
+      meaning: string;
+      words: string[];
+      wordUsage: any;
+    },
   ) {
     return this.prisma.savedParagraph.create({
       data: {
@@ -335,4 +346,3 @@ Trong đó:
     });
   }
 }
-

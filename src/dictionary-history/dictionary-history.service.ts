@@ -55,7 +55,12 @@ export class DictionaryHistoryService {
     });
 
     // Update daily quest progress for DICTIONARY_LOOKUP
-    await this.statsService.incrementQuestProgress(userId, 'DICTIONARY_LOOKUP', 1, 420);
+    await this.statsService.incrementQuestProgress(
+      userId,
+      'DICTIONARY_LOOKUP',
+      1,
+      420,
+    );
 
     return result;
   }
@@ -158,7 +163,8 @@ export class DictionaryHistoryService {
       where: { id: userId },
       select: { nativeLanguage: true },
     });
-    const userLang = userObj?.nativeLanguage === 'en' ? 'English' : 'Vietnamese';
+    const userLang =
+      userObj?.nativeLanguage === 'en' ? 'English' : 'Vietnamese';
 
     try {
       const briefMeaning = body.en

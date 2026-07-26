@@ -29,4 +29,3 @@ export class CreateFavoriteWordDto {
   @IsOptional()
   exampleMeaning?: string;
 }
-

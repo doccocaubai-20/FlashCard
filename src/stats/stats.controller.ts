@@ -59,7 +59,10 @@ export class StatsController {
 
   @Post('buy-item')
   @UseGuards(AuthGuard('jwt'))
-  async buyItem(@Req() req: any, @Body() body: { price: number; itemType: string }) {
+  async buyItem(
+    @Req() req: any,
+    @Body() body: { price: number; itemType: string },
+  ) {
     const userId = req.user.id;
     return this.statsService.buyItem(userId, body.price, body.itemType);
   }
