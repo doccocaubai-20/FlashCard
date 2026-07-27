@@ -386,7 +386,7 @@ Trong đó:
     };
     const targetLangName = langNames[lang] || 'Vietnamese';
 
-    const prompt = `Bạn là một chuyên gia ngôn ngữ tiếng Trung. Hãy phân tích đoạn văn sau và lọc ra tối đa 15 từ vựng tiếng Trung (bao gồm cả từ đơn và từ ghép) hữu ích nhất cho người học.
+    const prompt = `Bạn là một chuyên gia ngôn ngữ tiếng Trung. Hãy phân tích đoạn văn sau và lọc ra toàn bộ các từ vựng tiếng Trung (bao gồm cả từ đơn và từ ghép) xuất hiện trong văn bản mà hữu ích cho người học, không giới hạn số lượng từ được trích xuất.
 Đoạn văn cần phân tích:
 "${text}"
 
@@ -434,7 +434,7 @@ Trong đó:
               { role: 'user', content: prompt },
             ],
             temperature: 0.3,
-            max_tokens: 4000,
+            max_tokens: 12000,
           }),
           signal: AbortSignal.timeout(60000),
         },
