@@ -198,4 +198,17 @@ export class DecksController {
     }
     return this.decksService.deleteSavedParagraph(paragraphId, req.user.id);
   }
+
+  @Post('generate-from-text')
+  async generateFromText(
+    @Body() body: { text: string; deckTitle?: string },
+    @Req() req: any,
+  ) {
+    return this.decksService.generateDeckFromText(
+      req.user.id,
+      body.text,
+      body.deckTitle || 'Từ vựng trích xuất AI',
+      req.user.role,
+    );
+  }
 }

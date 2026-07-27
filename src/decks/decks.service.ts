@@ -345,4 +345,167 @@ Trong đó:
       where: { id: paragraphId },
     });
   }
+
+  async generateDeckFromText(
+    userId: number,
+    text: string,
+    deckTitle: string,
+    _role: string,
+  ) {
+    const apiKey = process.env.DEEPSEEK_API_KEY;
+    const model = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
+    if (!apiKey) {
+      throw new HttpException(
+        'DeepSeek API Key chưa được cấu hình trên máy chủ.',
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
+    }
+
+    if (!text || text.trim().length === 0) {
+      throw new HttpException(
+        'Văn bản đầu vào không được để trống.',
+        HttpStatus.BAD_REQUEST,
+      );
+    }
+
+    const user = await this.prisma.user.findUnique({
+      where: { id: userId },
+      select: { nativeLanguage: true },
+    });
+    const lang = user?.nativeLanguage || 'vi';
+    const langNames: Record<string, string> = {
+      vi: 'Vietnamese',
+      en: 'English',
+      zh: 'Chinese',
+      ja: 'Japanese',
+      ko: 'Korean',
+      fr: 'French',
+      de: 'German',
+      es: 'Spanish',
+      ru: 'Russian',
+    };
+    const targetLangName = langNames[lang] || 'Vietnamese';
+
+    const prompt = `Bạn là một chuyên gia ngôn ngữ tiếng Trung. Hãy phân tích đoạn văn sau và lọc ra tối đa 15 từ vựng tiếng Trung (bao gồm cả từ đơn và từ ghép) hữu ích nhất cho người học.
+Đoạn văn cần phân tích:
+"${text}"
+
+CRITICAL INSTRUCTION: The user's native language is ${targetLangName}. You MUST provide the meaning and exampleMeaning in ${targetLangName}.
+
+Bạn PHẢI trả về duy nhất một đối tượng JSON thuần túy (không có markdown code block, không có giải thích ngoài JSON) theo cấu trúc chính xác như sau:
+{
+  "words": [
+    {
+      "hanzi": "...",
+      "pinyin": "...",
+      "meaning": "...",
+      "exampleHanzi": "...",
+      "examplePinyin": "...",
+      "exampleMeaning": "..."
+    }
+  ]
 }
+
+Trong đó:
+- "hanzi": Từ vựng tiếng Trung chữ Hán giản thể được trích xuất.
+- "pinyin": Phiên âm bính âm đầy đủ kèm thanh điệu của từ vựng đó.
+- "meaning": Giải nghĩa ngắn gọn, chính xác của từ vựng đó bằng ${targetLangName}.
+- "exampleHanzi": Một câu ví dụ tiếng Trung cực kỳ ngắn gọn và dễ hiểu chứa từ vựng đó.
+- "examplePinyin": Phiên âm bính âm đầy đủ kèm thanh điệu của câu ví dụ.
+- "exampleMeaning": Bản dịch nghĩa trôi chảy bằng ${targetLangName} của câu ví dụ.`;
+
+    try {
+      const response = await fetch(
+        'https://api.deepseek.com/chat/completions',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${apiKey}`,
+          },
+          body: JSON.stringify({
+            model,
+            messages: [
+              {
+                role: 'system',
+                content:
+                  'You are a professional Chinese teacher. Always respond with a single valid JSON object only. No markdown formatting, no backticks, no wrap.',
+              },
+              { role: 'user', content: prompt },
+            ],
+            temperature: 0.3,
+            max_tokens: 4000,
+          }),
+          signal: AbortSignal.timeout(60000),
+        },
+      );
+
+      if (!response.ok) {
+        throw new HttpException(
+          `DeepSeek API Error: Lỗi kết nối máy chủ dịch vụ AI.`,
+          HttpStatus.BAD_GATEWAY,
+        );
+      }
+
+      const resBody = await response.json();
+      let contentStr = resBody?.choices?.[0]?.message?.content;
+      if (!contentStr) {
+        throw new HttpException(
+          'Không nhận được kết quả phân tích từ AI.',
+          HttpStatus.BAD_GATEWAY,
+        );
+      }
+
+      contentStr = contentStr.replace(/```json/g, '').replace(/```/g, '').trim();
+
+      const parsed = JSON.parse(contentStr);
+      if (!parsed || !Array.isArray(parsed.words)) {
+        throw new HttpException(
+          'Định dạng phản hồi từ AI không hợp lệ.',
+          HttpStatus.BAD_GATEWAY,
+        );
+      }
+
+      const deck = await this.prisma.deck.create({
+        data: {
+          title: deckTitle,
+          description: `Được trích xuất tự động từ văn bản bởi AI.`,
+          isSystem: false,
+          userId: userId,
+        },
+      });
+
+      const cardsData = parsed.words.map((item: any) => ({
+        deckId: deck.id,
+        hanzi: item.hanzi || '',
+        pinyin: item.pinyin || '',
+        meaning: item.meaning || '',
+        exampleHanzi: item.exampleHanzi || null,
+        examplePinyin: item.examplePinyin || null,
+        exampleMeaning: item.exampleMeaning || null,
+      }));
+
+      await this.prisma.flashcard.createMany({
+        data: cardsData,
+        skipDuplicates: true,
+      });
+
+      return {
+        success: true,
+        deckId: deck.id,
+        title: deck.title,
+        cardsCount: cardsData.length,
+      };
+    } catch (error) {
+      console.error('Failed to generate deck from text:', error);
+      if (error instanceof SyntaxError) {
+        throw new HttpException(
+          'AI phản hồi dữ liệu không chuẩn JSON. Vui lòng thử lại.',
+          HttpStatus.BAD_GATEWAY,
+        );
+      }
+      throw error;
+    }
+  }
+}
+
