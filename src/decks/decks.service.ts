@@ -386,8 +386,11 @@ Trong đó:
     };
     const targetLangName = langNames[lang] || 'Vietnamese';
 
-    const prompt = `Bạn là một chuyên gia ngôn ngữ tiếng Trung. Hãy phân tích đoạn văn sau và lọc ra toàn bộ các từ vựng tiếng Trung (bao gồm cả từ đơn và từ ghép) xuất hiện trong văn bản mà hữu ích cho người học, không giới hạn số lượng từ được trích xuất.
-Đoạn văn cần phân tích:
+    const prompt = `Bạn là một chuyên gia ngôn ngữ tiếng Trung và chuyên gia khôi phục dữ liệu OCR.
+Đoạn văn dưới đây có thể là kết quả quét ảnh sách giáo khoa (OCR) chứa nhiều lỗi chính tả, sai ký hiệu bính âm hoặc lẫn lộn các từ tiếng Việt bị biến dạng do góc chụp cong hoặc nhiễu.
+Hãy phân tích kỹ ngữ cảnh, sửa toàn bộ lỗi chính tả, nhận diện và khôi phục lại toàn bộ các từ vựng tiếng Trung chuẩn (bao gồm cả từ đơn và từ ghép) xuất hiện trong tài liệu đó kèm phiên âm bính âm đúng, giải nghĩa chính xác bằng ${targetLangName} và đặt câu ví dụ tương ứng.
+
+Văn bản cần phân tích:
 "${text}"
 
 CRITICAL INSTRUCTION: The user's native language is ${targetLangName}. You MUST provide the meaning and exampleMeaning in ${targetLangName}.
