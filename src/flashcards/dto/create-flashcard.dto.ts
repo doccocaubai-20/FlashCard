@@ -10,8 +10,8 @@ export class CreateFlashcardDto {
   hanzi!: string;
 
   @IsString()
-  @IsNotEmpty()
-  pinyin!: string;
+  @IsOptional()
+  pinyin?: string;
 
   @IsString()
   @IsNotEmpty()

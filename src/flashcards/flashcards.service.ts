@@ -39,6 +39,7 @@ export class FlashcardsService {
       const card = await this.prisma.flashcard.create({
         data: {
           ...data,
+          pinyin: data.pinyin || '',
         },
       });
       return mapFlashcardToFrontend(card);

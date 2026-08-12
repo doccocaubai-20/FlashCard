@@ -65,11 +65,15 @@ function lookupSV(hanzi: string): string {
 async function main() {
   console.log('Seeding Database...');
 
-  // Get all existing system decks to check against
-  console.log('Checking existing system decks in database...');
-  const existingDecks = await prisma.deck.findMany({
+  // Clean up all existing system decks and cards to synchronize HSK 3.0
+  console.log('Cleaning up existing system decks and flashcards to sync HSK 3.0...');
+  await prisma.flashcard.deleteMany({
+    where: { deck: { isSystem: true } }
+  });
+  await prisma.deck.deleteMany({
     where: { isSystem: true }
   });
+  console.log('Cleaned up existing system decks.');
 
   // 3. Define decks to seed
   const decksToSeed = [
@@ -112,12 +116,6 @@ async function main() {
 
   // 4. Loop through each deck config and seed
   for (const deckConfig of decksToSeed) {
-    const exists = existingDecks.some(d => d.title === deckConfig.title);
-    if (exists) {
-      console.log(`\nDeck "${deckConfig.title}" already exists in the database. Skipping to preserve progress.`);
-      continue;
-    }
-
     console.log(`\nCreating deck: ${deckConfig.title}...`);
     const deck = await prisma.deck.create({
       data: {

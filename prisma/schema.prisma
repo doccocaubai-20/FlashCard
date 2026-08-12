@@ -73,6 +73,7 @@ model Deck {
   isPublic    Boolean  @default(false)
   shareCode   String?  @unique
   createdAt   DateTime @default(now())
+  language    String   @default("ZH")
 
   userId Int?
   user   User? @relation(fields: [userId], references: [id])

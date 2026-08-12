@@ -19,6 +19,7 @@ export class DecksService {
         description: data.description,
         isSystem: isSystem,
         userId: isSystem ? null : userId,
+        language: data.language || 'ZH',
       },
     });
   }
@@ -28,24 +29,36 @@ export class DecksService {
       where: {
         OR: [{ userId: userId }, { isSystem: true }],
       },
-      include: {
-        flashcards: {
+      select: {
+        id: true,
+        title: true,
+        description: true,
+        isSystem: true,
+        createdAt: true,
+        userId: true,
+        language: true,
+        _count: {
           select: {
-            id: true,
-            progresses: {
-              where: { userId },
-              select: { repetitions: true },
-            },
+            flashcards: true,
           },
         },
       },
     });
-    return decks.map((deck) => {
-      const cardCount = deck.flashcards.length;
-      const studiedCount = deck.flashcards.filter(
-        (card) =>
-          card.progresses.length > 0 && card.progresses[0].repetitions > 0,
-      ).length;
+
+    const deckPromises = decks.map(async (deck) => {
+      const cardCount = deck._count.flashcards;
+      
+      // Fast index-optimized COUNT query for studied cards
+      const studiedCount = await this.prisma.userProgress.count({
+        where: {
+          userId: userId,
+          repetitions: { gt: 0 },
+          flashcard: {
+            deckId: deck.id,
+          },
+        },
+      });
+
       return {
         id: deck.id,
         title: deck.title,
@@ -55,8 +68,11 @@ export class DecksService {
         userId: deck.userId,
         cardCount,
         studiedCount,
+        language: deck.language || 'ZH',
       };
     });
+
+    return Promise.all(deckPromises);
   }
   async findOne(id: number) {
     return this.prisma.deck.findUnique({

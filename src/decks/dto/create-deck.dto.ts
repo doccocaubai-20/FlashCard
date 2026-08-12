@@ -8,4 +8,8 @@ export class CreateDeckDto {
   @IsString()
   @IsOptional()
   description?: string;
+
+  @IsString()
+  @IsOptional()
+  language?: string;
 }
