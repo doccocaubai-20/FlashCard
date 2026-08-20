@@ -3,6 +3,8 @@ import {
   NotFoundException,
   ConflictException,
   ForbiddenException,
+  HttpException,
+  HttpStatus,
 } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
 import { PrismaService } from 'src/prisma/prisma.service';
@@ -263,5 +265,150 @@ Yêu cầu:
     if (!Array.isArray(cards))
       throw new Error('AI không trả về mảng flashcard hợp lệ!');
     return cards.slice(0, count);
+  }
+
+  async generateExampleWithAI(userId: number, cardId: number) {
+    // 1. Find flashcard and deck
+    const flashcard = await this.prisma.flashcard.findUnique({
+      where: { id: cardId },
+      include: { deck: true },
+    });
+    if (!flashcard) {
+      throw new NotFoundException('Không tìm thấy thẻ bài!');
+    }
+
+    // 2. Count AI explanations/examples generated today (limit = 10, shared with dictionary AI explanation)
+    const todayStart = new Date();
+    todayStart.setHours(0, 0, 0, 0);
+
+    const todayCount = await this.prisma.dictionaryHistory.count({
+      where: {
+        userId,
+        aiGeneratedAt: {
+          gte: todayStart,
+        },
+      },
+    });
+
+    const limit = 10;
+    if (todayCount >= limit) {
+      throw new HttpException(
+        'Bạn đã vượt quá giới hạn 10 lượt giải thích bằng AI / tạo ví dụ mỗi ngày. Vui lòng quay lại vào ngày mai!',
+        HttpStatus.TOO_MANY_REQUESTS,
+      );
+    }
+
+    // 3. Call DeepSeek/OpenAI API
+    const apiKey = process.env.DEEPSEEK_API_KEY;
+    const model = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
+
+    if (!apiKey) {
+      throw new HttpException(
+        'DeepSeek API Key is not configured on the server.',
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
+    }
+
+    const isEnglish = flashcard.deck.language === 'EN';
+    const prompt = isEnglish
+      ? `You are a professional English teacher. Please create exactly 1 short, practical example sentence (under 15 words) using the English word/phrase: "${flashcard.hanzi}" (meaning: "${flashcard.meaning}").
+        Return the result as a JSON object with the following fields:
+        - "exampleHanzi": The English example sentence
+        - "examplePinyin": ""
+        - "exampleMeaning": The accurate and natural Vietnamese translation of the example sentence
+
+        The output format must be raw JSON only, with no markdown code blocks or additional text.`
+      : `Hãy đóng vai là một giáo viên tiếng Trung bản xứ chuyên nghiệp. Hãy tạo đúng 1 câu ví dụ minh họa giao tiếp thực tế cực kỳ ngắn gọn (dưới 15 chữ Hán) sử dụng từ/chữ Hán: "${flashcard.hanzi}" (nghĩa: "${flashcard.meaning}").
+        Trả về kết quả dưới dạng JSON có các trường:
+        - "exampleHanzi": Câu ví dụ bằng chữ Hán
+        - "examplePinyin": Phiên âm Bính âm (Pinyin) có dấu của câu ví dụ đó
+        - "exampleMeaning": Bản dịch nghĩa tiếng Việt chính xác và tự nhiên của câu ví dụ đó
+
+        Định dạng trả về duy nhất là JSON thô, không bọc trong khối code markdown hay bất kỳ văn bản nào khác.`;
+
+    try {
+      const response = await fetch(
+        'https://api.deepseek.com/chat/completions',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${apiKey}`,
+          },
+          body: JSON.stringify({
+            model,
+            messages: [
+              {
+                role: 'system',
+                content:
+                  'You are a helpful language assistant. Respond ONLY with a raw JSON object.',
+              },
+              { role: 'user', content: prompt },
+            ],
+            temperature: 0.2,
+            max_tokens: 300,
+          }),
+          signal: AbortSignal.timeout(15000),
+        },
+      );
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`API Error: ${response.status} - ${errorText}`);
+      }
+
+      const resJson: any = await response.json();
+      let content = resJson.choices[0].message.content.trim();
+
+      // Strip markdown code blocks if present
+      content = content
+        .replace(/^```json\s*/i, '')
+        .replace(/^```\s*/i, '')
+        .replace(/```$/i, '')
+        .trim();
+
+      const result = JSON.parse(content);
+      if (!result.exampleHanzi || !result.exampleMeaning) {
+        throw new Error('AI returned incomplete data structure');
+      }
+
+      // 4. Update the Flashcard database entry
+      const updatedCard = await this.prisma.flashcard.update({
+        where: { id: cardId },
+        data: {
+          exampleHanzi: result.exampleHanzi,
+          examplePinyin: result.examplePinyin || '',
+          exampleMeaning: result.exampleMeaning,
+        },
+      });
+
+      // 5. Upsert dictionary history to consume a daily AI limit token
+      await this.prisma.dictionaryHistory.upsert({
+        where: {
+          userId_hanzi: {
+            userId,
+            hanzi: flashcard.hanzi,
+          },
+        },
+        update: {
+          aiGeneratedAt: new Date(),
+        },
+        create: {
+          userId,
+          hanzi: flashcard.hanzi,
+          pinyin: flashcard.pinyin || '',
+          vi: flashcard.meaning || '',
+          aiGeneratedAt: new Date(),
+        },
+      });
+
+      return mapFlashcardToFrontend(updatedCard);
+    } catch (err) {
+      console.error('Failed to generate AI example:', err);
+      throw new HttpException(
+        err.message || 'Lỗi tạo câu ví dụ bằng AI!',
+        HttpStatus.BAD_GATEWAY,
+      );
+    }
   }
 }

@@ -226,27 +226,24 @@ export class StudyService {
     }
 
     // 2. SM-2 algorithm calculations
-    const quality = body.rating; // 1-4 rating mapped directly to quality
+    const quality = body.rating + 1; // Map 1-4 frontend rating to standard 2-5 SM-2 quality scale
     let easeFactor = progress.easeFactor;
     let repetitions = progress.repetitions;
     let interval = progress.interval;
 
-    if (quality === 4) {
-      easeFactor = Math.min(3.0, easeFactor + 0.15); // Boost ease factor for Easy words
-    } else {
-      easeFactor = Math.max(
-        1.3,
-        easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)),
-      );
-    }
+    easeFactor = Math.max(
+      1.3,
+      easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)),
+    );
 
     if (quality < 3) {
+      // quality < 3 means failed review (rating = 1, q = 2)
       repetitions = 0;
       interval = 1;
     } else {
       repetitions += 1;
-      if (quality === 4) {
-        // Easy cards get a larger initial interval (4 days instead of 1)
+      if (quality === 5) {
+        // Easy cards (rating = 4, q = 5) get a larger initial interval
         if (repetitions === 1) {
           interval = 4;
         } else if (repetitions === 2) {
@@ -254,8 +251,8 @@ export class StudyService {
         } else {
           interval = Math.round(progress.interval * easeFactor * 1.3) || 4;
         }
-      } else {
-        // Good cards (quality = 3)
+      } else if (quality === 4) {
+        // Good cards (rating = 3, q = 4)
         if (repetitions === 1) {
           interval = 1;
         } else if (repetitions === 2) {
@@ -263,11 +260,22 @@ export class StudyService {
         } else {
           interval = Math.round(progress.interval * easeFactor) || 1;
         }
+      } else {
+        // Hard cards (rating = 2, q = 3)
+        if (repetitions === 1) {
+          interval = 1;
+        } else if (repetitions === 2) {
+          interval = 3;
+        } else {
+          interval = Math.round(progress.interval * easeFactor * 0.8) || 1;
+        }
       }
     }
 
     const nextReviewDate = new Date();
     nextReviewDate.setDate(nextReviewDate.getDate() + interval);
+    const localDateStr = getLocalDateString(nextReviewDate, tzOffset);
+    const startOfReviewDay = getUtcStartOfDay(localDateStr, tzOffset);
 
     // 3. Save progress
     const updatedProgress = await this.prisma.userProgress.update({
@@ -276,7 +284,7 @@ export class StudyService {
         interval,
         easeFactor: Number(easeFactor.toFixed(2)),
         repetitions,
-        nextReviewDate,
+        nextReviewDate: startOfReviewDay,
       },
       include: {
         flashcard: true,

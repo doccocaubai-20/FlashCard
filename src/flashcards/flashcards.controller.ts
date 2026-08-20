@@ -115,4 +115,13 @@ export class FlashcardsController {
       );
     }
   }
+
+  @Post(':id/ai-example')
+  @UseGuards(AuthGuard('jwt'))
+  async generateExampleWithAI(
+    @Param('id', ParseIntPipe) id: number,
+    @Req() req: any,
+  ) {
+    return this.flashcardsService.generateExampleWithAI(req.user.id, id);
+  }
 }
