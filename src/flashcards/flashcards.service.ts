@@ -407,15 +407,23 @@ Yêu cầu:
     }
 
     const isEnglish = flashcard.deck.language === 'EN';
+    const avoidSentence = flashcard.exampleHanzi ? flashcard.exampleHanzi.trim() : '';
+    const avoidHintZH = avoidSentence 
+      ? `\nTUYỆT ĐỐI KHÔNG ĐƯỢC sử dụng hoặc trùng lặp với câu ví dụ hiện tại sau đây: "${avoidSentence}". Hãy tạo một câu ví dụ khác hoàn toàn mới.` 
+      : '';
+    const avoidHintEN = avoidSentence 
+      ? `\nDO NOT use or duplicate the following existing example sentence: "${avoidSentence}". Please generate a completely different and new sentence.` 
+      : '';
+
     const prompt = isEnglish
-      ? `You are a professional English teacher. Please create exactly 1 short, practical example sentence (under 15 words) using the English word/phrase: "${flashcard.hanzi}" (meaning: "${flashcard.meaning}").
+      ? `You are a professional English teacher. Please create exactly 1 short, practical example sentence (under 15 words) using the English word/phrase: "${flashcard.hanzi}" (meaning: "${flashcard.meaning}").${avoidHintEN}
         Return the result as a JSON object with the following fields:
         - "exampleHanzi": The English example sentence
         - "examplePinyin": ""
         - "exampleMeaning": The accurate and natural Vietnamese translation of the example sentence
 
         The output format must be raw JSON only, with no markdown code blocks or additional text.`
-      : `Hãy đóng vai là một giáo viên tiếng Trung bản xứ chuyên nghiệp. Hãy tạo đúng 1 câu ví dụ minh họa giao tiếp thực tế cực kỳ ngắn gọn (dưới 15 chữ Hán) sử dụng từ/chữ Hán: "${flashcard.hanzi}" (nghĩa: "${flashcard.meaning}").
+      : `Hãy đóng vai là một giáo viên tiếng Trung bản xứ chuyên nghiệp. Hãy tạo đúng 1 câu ví dụ minh họa giao tiếp thực tế cực kỳ ngắn gọn (dưới 15 chữ Hán) sử dụng từ/chữ Hán: "${flashcard.hanzi}" (nghĩa: "${flashcard.meaning}").${avoidHintZH}
         Trả về kết quả dưới dạng JSON có các trường:
         - "exampleHanzi": Câu ví dụ bằng chữ Hán
         - "examplePinyin": Phiên âm Bính âm (Pinyin) có dấu của câu ví dụ đó
@@ -442,7 +450,7 @@ Yêu cầu:
               },
               { role: 'user', content: prompt },
             ],
-            temperature: 0.2,
+            temperature: 0.6,
             max_tokens: 300,
           }),
           signal: AbortSignal.timeout(15000),

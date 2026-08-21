@@ -72,7 +72,42 @@ export class DecksService {
       };
     });
 
-    return Promise.all(deckPromises);
+    const result = await Promise.all(deckPromises);
+
+    return result.sort((a, b) => {
+      const langA = a.language || 'ZH';
+      const langB = b.language || 'ZH';
+      if (langA !== langB) {
+        return langA === 'ZH' ? -1 : 1;
+      }
+
+      if (a.isSystem !== b.isSystem) {
+        return a.isSystem ? -1 : 1;
+      }
+
+      if (a.isSystem) {
+        // HSK Level sorting
+        const matchHskA = a.title.match(/HSK\s*(\d+|7-9)/i);
+        const matchHskB = b.title.match(/HSK\s*(\d+|7-9)/i);
+        if (matchHskA && matchHskB) {
+          const valA = matchHskA[1] === '7-9' ? 7 : parseInt(matchHskA[1], 10);
+          const valB = matchHskB[1] === '7-9' ? 7 : parseInt(matchHskB[1], 10);
+          return valA - valB;
+        }
+
+        // TOEIC Target Score sorting
+        const matchToeicA = a.title.match(/TOEIC\s*(\d+)-(\d+)/i);
+        const matchToeicB = b.title.match(/TOEIC\s*(\d+)-(\d+)/i);
+        if (matchToeicA && matchToeicB) {
+          const valA = parseInt(matchToeicA[1], 10);
+          const valB = parseInt(matchToeicB[1], 10);
+          return valA - valB;
+        }
+      }
+
+      // Default alphabetical sorting
+      return a.title.localeCompare(b.title, 'vi');
+    });
   }
   async findOne(id: number) {
     return this.prisma.deck.findUnique({
