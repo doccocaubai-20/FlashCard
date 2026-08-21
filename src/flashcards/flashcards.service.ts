@@ -8,6 +8,9 @@ import {
 } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
 import { PrismaService } from 'src/prisma/prisma.service';
+import * as fs from 'fs';
+import * as path from 'path';
+
 function mapFlashcardToFrontend(card: any) {
   return {
     ...card,
@@ -23,6 +26,59 @@ function mapFlashcardToFrontend(card: any) {
   };
 }
 
+let cachedSentences: any[] | null = null;
+
+function findExampleInCorpus(word: string): { exampleHanzi: string; examplePinyin: string; exampleMeaning: string } | null {
+  if (!word) return null;
+
+  if (!cachedSentences) {
+    try {
+      const paths = [
+        path.join(process.cwd(), 'src', 'data', 'opusSentences.json'),
+        path.join(process.cwd(), 'dist', 'data', 'opusSentences.json'),
+        path.join(__dirname, '..', 'data', 'opusSentences.json'),
+        path.join(__dirname, '..', '..', 'src', 'data', 'opusSentences.json'),
+      ];
+      
+      let foundPath = '';
+      for (const p of paths) {
+        if (fs.existsSync(p)) {
+          foundPath = p;
+          break;
+        }
+      }
+
+      if (foundPath) {
+        const fileContent = fs.readFileSync(foundPath, 'utf8');
+        cachedSentences = JSON.parse(fileContent);
+      } else {
+        cachedSentences = [];
+      }
+    } catch (err) {
+      console.error('Failed to load example corpus:', err);
+      cachedSentences = [];
+    }
+  }
+
+  if (!cachedSentences) return null;
+
+  // Find a sentence that contains the target word (exact substring check)
+  const match = cachedSentences.find(
+    (item: any) => item.hanzi && item.hanzi.includes(word),
+  );
+
+  if (match) {
+    return {
+      exampleHanzi: match.hanzi,
+      examplePinyin: match.pinyin || '',
+      exampleMeaning: match.meaning || '',
+    };
+  }
+
+  return null;
+}
+
+
 @Injectable()
 export class FlashcardsService {
   constructor(private readonly prisma: PrismaService) {}
@@ -37,6 +93,17 @@ export class FlashcardsService {
     if (role !== 'ADMIN' && (deck.isSystem || deck.userId !== userId)) {
       throw new ForbiddenException('Bạn không có quyền thêm thẻ vào bộ này!');
     }
+
+    // Auto-fill example sentence from local corpus if not provided (only for Chinese decks)
+    if (deck.language === 'ZH' && !data.exampleHanzi) {
+      const match = findExampleInCorpus(data.hanzi);
+      if (match) {
+        data.exampleHanzi = match.exampleHanzi;
+        data.examplePinyin = match.examplePinyin;
+        data.exampleMeaning = match.exampleMeaning;
+      }
+    }
+
     try {
       const card = await this.prisma.flashcard.create({
         data: {
@@ -82,17 +149,32 @@ export class FlashcardsService {
           meaning = item.back.trim();
         }
       }
+
+      const word = item.hanzi || item.front || '';
+      let exampleHanzi = item.exampleHanzi || null;
+      let examplePinyin = item.examplePinyin || null;
+      let exampleMeaning = item.exampleMeaning || null;
+
+      if (deck.language === 'ZH' && !exampleHanzi) {
+        const match = findExampleInCorpus(word);
+        if (match) {
+          exampleHanzi = match.exampleHanzi;
+          examplePinyin = match.examplePinyin;
+          exampleMeaning = match.exampleMeaning;
+        }
+      }
+
       return {
         deckId: deckId,
-        hanzi: item.hanzi || item.front || '',
+        hanzi: word,
         pinyin: pinyin,
         meaning: meaning,
         radicals: item.radicals || null,
         strokeData: item.strokeData || null,
         audioUrl: item.audioUrl || null,
-        exampleHanzi: item.exampleHanzi || null,
-        examplePinyin: item.examplePinyin || null,
-        exampleMeaning: item.exampleMeaning || null,
+        exampleHanzi: exampleHanzi,
+        examplePinyin: examplePinyin,
+        exampleMeaning: exampleMeaning,
       };
     });
 
@@ -190,18 +272,54 @@ export class FlashcardsService {
     count: number,
     hskLevel?: number,
     excludeWords?: string[],
+    language?: string,
   ) {
     const apiKey = process.env.DEEPSEEK_API_KEY;
     const model = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
     if (!apiKey) throw new Error('DeepSeek API Key chưa được cấu hình!');
 
-    const hskHint = hskLevel ? ` ở cấp độ HSK ${hskLevel}` : '';
-    const excludeHint =
-      excludeWords && excludeWords.length > 0
-        ? `\n- TUYỆT ĐỐI KHÔNG ĐƯỢC chứa các từ vựng sau đây (tránh trùng lặp với thẻ đã có): ${excludeWords.join(', ')}`
-        : '';
+    const isEnglish = language === 'EN';
+    let systemContent = 'You are a Chinese language teacher. Always respond with valid JSON arrays only.';
+    let prompt = '';
 
-    const prompt = `Bạn là giáo viên tiếng Trung. Hãy tạo ${count} flashcard từ vựng tiếng Trung về chủ đề "${topic}"${hskHint}.${excludeHint}
+    if (isEnglish) {
+      systemContent = 'You are an English language teacher. Always respond with valid JSON arrays only.';
+      const excludeHint =
+        excludeWords && excludeWords.length > 0
+          ? `\n- TUYỆT ĐỐI KHÔNG ĐƯỢC chứa các từ vựng sau đây (tránh trùng lặp với thẻ đã có): ${excludeWords.join(', ')}`
+          : '';
+
+      prompt = `Bạn là giáo viên tiếng Anh. Hãy tạo ${count} từ vựng tiếng Anh thông dụng về chủ đề "${topic}".${excludeHint}
+
+TRẢ VỀ CHỈ MỘT MẢNG JSON THUẦN TÚY, không có markdown, không có giải thích, đúng format sau:
+[
+  {
+    "hanzi": "apple",
+    "pinyin": "/ˈæp.əl/",
+    "meaning": "quả táo",
+    "exampleHanzi": "She ate a red apple.",
+    "examplePinyin": "",
+    "exampleMeaning": "Cô ấy đã ăn một quả táo đỏ."
+  }
+]
+
+Yêu cầu:
+- Chọn từ thông dụng, đúng chủ đề
+- "hanzi" chứa từ vựng tiếng Anh
+- "pinyin" chứa phiên âm chuẩn IPA của từ đó (kẹp giữa hai dấu gạch chéo / /)
+- "meaning" chứa dịch nghĩa tiếng Việt ngắn gọn, chính xác
+- "exampleHanzi" chứa câu ví dụ tiếng Anh tự nhiên, ngắn (dưới 15 chữ)
+- "examplePinyin" luôn để chuỗi rỗng ""
+- "exampleMeaning" chứa dịch nghĩa tiếng Việt của câu ví dụ
+- Trả về đúng ${count} từ`;
+    } else {
+      const hskHint = hskLevel ? ` ở cấp độ HSK ${hskLevel}` : '';
+      const excludeHint =
+        excludeWords && excludeWords.length > 0
+          ? `\n- TUYỆT ĐỐI KHÔNG ĐƯỢC chứa các từ vựng sau đây (tránh trùng lặp với thẻ đã có): ${excludeWords.join(', ')}`
+          : '';
+
+      prompt = `Bạn là giáo viên tiếng Trung. Hãy tạo ${count} flashcard từ vựng tiếng Trung về chủ đề "${topic}"${hskHint}.${excludeHint}
 
 TRẢ VỀ CHỈ MỘT MẢNG JSON THUẦN TÚY, không có markdown, không có giải thích, đúng format sau:
 [
@@ -209,7 +327,7 @@ TRẢ VỀ CHỈ MỘT MẢNG JSON THUẦN TÚY, không có markdown, không có
     "hanzi": "你好",
     "pinyin": "nǐ hǎo",
     "meaning": "xin chào",
-    "exampleHanzi": "你好，我叫小明。",
+    "exampleHanzi": "你好，wǒ jiào Xiǎomíng.",
     "examplePinyin": "Nǐ hǎo, wǒ jiào Xiǎomíng.",
     "exampleMeaning": "Xin chào, tôi tên là Tiểu Minh."
   }
@@ -221,6 +339,7 @@ Yêu cầu:
 - Nghĩa tiếng Việt ngắn gọn, chính xác
 - Câu ví dụ tự nhiên, ngắn (dưới 15 chữ)
 - Trả về đúng ${count} từ`;
+    }
 
     const response = await fetch('https://api.deepseek.com/chat/completions', {
       method: 'POST',
@@ -233,8 +352,7 @@ Yêu cầu:
         messages: [
           {
             role: 'system',
-            content:
-              'You are a Chinese language teacher. Always respond with valid JSON arrays only.',
+            content: systemContent,
           },
           { role: 'user', content: prompt },
         ],
@@ -275,27 +393,6 @@ Yêu cầu:
     });
     if (!flashcard) {
       throw new NotFoundException('Không tìm thấy thẻ bài!');
-    }
-
-    // 2. Count AI explanations/examples generated today (limit = 10, shared with dictionary AI explanation)
-    const todayStart = new Date();
-    todayStart.setHours(0, 0, 0, 0);
-
-    const todayCount = await this.prisma.dictionaryHistory.count({
-      where: {
-        userId,
-        aiGeneratedAt: {
-          gte: todayStart,
-        },
-      },
-    });
-
-    const limit = 10;
-    if (todayCount >= limit) {
-      throw new HttpException(
-        'Bạn đã vượt quá giới hạn 10 lượt giải thích bằng AI / tạo ví dụ mỗi ngày. Vui lòng quay lại vào ngày mai!',
-        HttpStatus.TOO_MANY_REQUESTS,
-      );
     }
 
     // 3. Call DeepSeek/OpenAI API

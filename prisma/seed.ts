@@ -81,36 +81,91 @@ async function main() {
       title: 'Từ vựng HSK 1 (Hệ thống)',
       description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 1 được đồng bộ từ file tu_vung_hsk1.json.',
       fileName: 'tu_vung_hsk1.json',
+      language: 'ZH'
     },
     {
       title: 'Từ vựng HSK 2 (Hệ thống)',
       description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 2 được đồng bộ từ file tu_vung_hsk2.json.',
       fileName: 'tu_vung_hsk2.json',
+      language: 'ZH'
     },
     {
       title: 'Từ vựng HSK 3 (Hệ thống)',
       description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 3 được đồng bộ từ file tu_vung_hsk3.json.',
       fileName: 'tu_vung_hsk3.json',
+      language: 'ZH'
     },
     {
       title: 'Từ vựng HSK 4 (Hệ thống)',
       description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 4 được đồng bộ từ file tu_vung_hsk4.json.',
       fileName: 'tu_vung_hsk4.json',
+      language: 'ZH'
     },
     {
       title: 'Từ vựng HSK 5 (Hệ thống)',
       description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 5 được đồng bộ từ file tu_vung_hsk5.json.',
       fileName: 'tu_vung_hsk5.json',
+      language: 'ZH'
     },
     {
       title: 'Từ vựng HSK 6 (Hệ thống)',
       description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 6 được đồng bộ từ file tu_vung_hsk6.json.',
       fileName: 'tu_vung_hsk6.json',
+      language: 'ZH'
     },
     {
       title: 'Từ vựng HSK 7-9 (Hệ thống)',
       description: 'Toàn bộ từ vựng chính thức HSK Cấp độ 7-9 được đồng bộ từ file tu_vung_hsk7_9.json.',
       fileName: 'tu_vung_hsk7_9.json',
+      language: 'ZH'
+    },
+    {
+      title: 'Từ vựng Oxford A1-A2 (Hệ thống)',
+      description: '995 từ vựng Tiếng Anh cơ bản theo chuẩn Oxford A1-A2.',
+      fileName: 'tu_vung_english_oxford_a1_a2.json',
+      language: 'EN'
+    },
+    {
+      title: 'Từ vựng IELTS Academic (Hệ thống)',
+      description: '101 từ vựng học thuật cao cấp IELTS Academic.',
+      fileName: 'tu_vung_english_ielts_academic.json',
+      language: 'EN'
+    },
+    {
+      title: 'Từ vựng TOEIC Business (Hệ thống)',
+      description: '83 từ vựng chủ đề Kinh tế - Thương mại trong đề thi TOEIC.',
+      fileName: 'tu_vung_english_toeic_business.json',
+      language: 'EN'
+    },
+    {
+      title: 'Lộ trình TOEIC 0-250 (Hệ thống)',
+      description: 'Từ vựng TOEIC căn bản cho mục tiêu 0-250 điểm.',
+      fileName: 'tu_vung_english_toeic_0_250.json',
+      language: 'EN'
+    },
+    {
+      title: 'Lộ trình TOEIC 250-500 (Hệ thống)',
+      description: 'Từ vựng TOEIC sơ cấp cho mục tiêu 250-500 điểm.',
+      fileName: 'tu_vung_english_toeic_250_500.json',
+      language: 'EN'
+    },
+    {
+      title: 'Lộ trình TOEIC 500-700 (Hệ thống)',
+      description: 'Từ vựng TOEIC trung cấp cho mục tiêu 500-700 điểm.',
+      fileName: 'tu_vung_english_toeic_500_700.json',
+      language: 'EN'
+    },
+    {
+      title: 'Lộ trình TOEIC 700-850 (Hệ thống)',
+      description: 'Từ vựng TOEIC cận cao cấp cho mục tiêu 700-850 điểm.',
+      fileName: 'tu_vung_english_toeic_700_850.json',
+      language: 'EN'
+    },
+    {
+      title: 'Lộ trình TOEIC 850-990 (Hệ thống)',
+      description: 'Từ vựng TOEIC cao cấp cho mục tiêu 850-990 điểm.',
+      fileName: 'tu_vung_english_toeic_850_990.json',
+      language: 'EN'
     }
   ];
 
@@ -121,7 +176,8 @@ async function main() {
       data: {
         title: deckConfig.title,
         description: deckConfig.description,
-        isSystem: true
+        isSystem: true,
+        language: deckConfig.language
       }
     });
     console.log('Created deck:', deck.title);
@@ -143,7 +199,7 @@ async function main() {
     for (const item of vocabList) {
       if (!item) continue;
 
-      const rawHanzi = item['Tiếng Trung'] || '';
+      const rawHanzi = item['Tiếng Trung'] || item['Tiếng Anh'] || '';
       const rawPinyin = item['Pinyin'] || '';
       const rawMeaning = item['Dịch nghĩa'] || '';
 
@@ -151,7 +207,7 @@ async function main() {
       const pinyin = rawPinyin.replace(/\r/g, '').replace(/\n+/g, ' ').trim();
       const meaning = rawMeaning.trim();
 
-      const sv = lookupSV(hanzi);
+      const sv = deckConfig.language === 'ZH' ? lookupSV(hanzi) : '';
 
       cardsToInsert.push({
         deckId: deck.id,

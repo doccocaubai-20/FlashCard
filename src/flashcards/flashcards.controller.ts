@@ -91,9 +91,10 @@ export class FlashcardsController {
       count?: number;
       hskLevel?: number;
       excludeWords?: string[];
+      language?: string;
     },
   ) {
-    const { topic, count = 10, hskLevel, excludeWords } = body;
+    const { topic, count = 10, hskLevel, excludeWords, language = 'ZH' } = body;
     if (!topic || topic.trim().length === 0) {
       throw new HttpException('Vui lòng nhập chủ đề!', HttpStatus.BAD_REQUEST);
     }
@@ -105,6 +106,7 @@ export class FlashcardsController {
         safeCount,
         hskLevel,
         excludeWords,
+        language,
       );
       return { cards, topic: topic.trim(), count: cards.length };
     } catch (err) {
