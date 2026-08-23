@@ -211,6 +211,48 @@ export class DictionaryService {
 
     // Enrich compound words' Hán Việt reading
     const enriched = await this.enrichMultipleSv(results);
+
+    // Fetch example sentences from DictionaryExample for the matching results
+    if (enriched.length > 0) {
+      try {
+        const itemsToFetch = multiple ? enriched.slice(0, 5) : enriched.slice(0, 1);
+        const words = itemsToFetch.map((item) => item.s).filter(Boolean);
+        
+        if (words.length > 0) {
+          const examples = await this.prisma.dictionaryExample.findMany({
+            where: {
+              OR: [
+                { word: { in: words } },
+                ...words.map((w) => ({
+                  exampleHanzi: {
+                    contains: w,
+                  },
+                })),
+              ],
+              language: 'ZH',
+            },
+            take: 100,
+          });
+
+          for (const item of enriched) {
+            const matchingExamples = examples.filter(
+              (ex) =>
+                ex.word === item.s ||
+                (ex.exampleHanzi && ex.exampleHanzi.includes(item.s)),
+            );
+            item.examples = matchingExamples.map((ex) => ({
+              hanzi: ex.exampleHanzi,
+              pinyin: ex.examplePinyin || '',
+              meaning: ex.exampleMeaning,
+              source: ex.word ? 'AI thực tế' : 'Khẩu ngữ phim',
+            }));
+          }
+        }
+      } catch (err) {
+        console.error('Failed to enrich dictionary search with examples:', err);
+      }
+    }
+
     const finalResult = multiple
       ? enriched.slice(0, 30)
       : enriched.length > 0

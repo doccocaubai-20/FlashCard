@@ -246,3 +246,17 @@ model SavedParagraph {
   @@index([deckId])
   @@index([userId])
 }
+
+model DictionaryExample {
+  id             Int      @id @default(autoincrement())
+  word           String?  // Từ vựng gốc được liên kết cụ thể (ví dụ: "行")
+  pinyin         String?  // Phiên âm từ vựng gốc (ví dụ: "xíng")
+  exampleHanzi   String   // Câu ví dụ gốc (Ví dụ: "司机, 停车...?")
+  examplePinyin  String?  // Phiên âm câu ví dụ (cho Tiếng Trung)
+  exampleMeaning String   // Nghĩa Tiếng Việt
+  language       String   @default("ZH") // "ZH" hoặc "EN"
+  createdAt      DateTime @default(now())
+
+  @@index([word, pinyin])
+  @@index([language])
+}

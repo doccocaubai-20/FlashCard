@@ -84,7 +84,7 @@ export class DictionaryHistoryService {
       },
     });
 
-    return { count, limit: 99999 };
+    return { count, limit: 200 };
   }
 
   async explain(
@@ -137,8 +137,14 @@ export class DictionaryHistoryService {
       }
     }
 
-    // 2. Count AI explanations generated today (unlimited)
+    // 2. Count AI explanations generated today (limit 200)
     const usageInfo = await this.getTodayCount(userId);
+    if (usageInfo.count >= usageInfo.limit) {
+      throw new HttpException(
+        `Bạn đã đạt giới hạn ${usageInfo.limit} lượt sử dụng AI giải nghĩa trong ngày hôm nay!`,
+        HttpStatus.TOO_MANY_REQUESTS,
+      );
+    }
 
     // 3. Request DeepSeek API
     const apiKey = process.env.DEEPSEEK_API_KEY;

@@ -395,6 +395,70 @@ Yêu cầu:
       throw new NotFoundException('Không tìm thấy thẻ bài!');
     }
 
+    // 2. Check DictionaryExample for existing example sentences
+    const isEnglish = flashcard.deck.language === 'EN';
+    const lang = isEnglish ? 'EN' : 'ZH';
+    
+    // First layer: Exact match (word and pinyin)
+    let existingExamples = await this.prisma.dictionaryExample.findMany({
+      where: {
+        word: flashcard.hanzi,
+        pinyin: flashcard.pinyin || '',
+        language: lang,
+      },
+      take: 5,
+    });
+
+    // Second layer: Substring match (contains)
+    if (existingExamples.length === 0) {
+      existingExamples = await this.prisma.dictionaryExample.findMany({
+        where: {
+          exampleHanzi: {
+            contains: flashcard.hanzi,
+          },
+          language: lang,
+        },
+        take: 5,
+      });
+    }
+
+    if (existingExamples.length > 0) {
+      // Pick a random matching example
+      const randomIndex = Math.floor(Math.random() * existingExamples.length);
+      const chosenExample = existingExamples[randomIndex];
+      
+      const updatedCard = await this.prisma.flashcard.update({
+        where: { id: cardId },
+        data: {
+          exampleHanzi: chosenExample.exampleHanzi,
+          examplePinyin: chosenExample.examplePinyin || '',
+          exampleMeaning: chosenExample.exampleMeaning,
+        },
+      });
+
+      // Upsert dictionary history
+      await this.prisma.dictionaryHistory.upsert({
+        where: {
+          userId_hanzi: {
+            userId,
+            hanzi: flashcard.hanzi,
+          },
+        },
+        update: {
+          aiGeneratedAt: new Date(),
+        },
+        create: {
+          userId,
+          hanzi: flashcard.hanzi,
+          pinyin: flashcard.pinyin || '',
+          vi: flashcard.meaning || '',
+          aiGeneratedAt: new Date(),
+        },
+      });
+
+      return mapFlashcardToFrontend(updatedCard);
+    }
+
     // 3. Call DeepSeek/OpenAI API
     const apiKey = process.env.DEEPSEEK_API_KEY;
     const model = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
@@ -406,7 +470,6 @@ Yêu cầu:
       );
     }
 
-    const isEnglish = flashcard.deck.language === 'EN';
     const avoidSentence = flashcard.exampleHanzi ? flashcard.exampleHanzi.trim() : '';
     const avoidHintZH = avoidSentence 
       ? `\nTUYỆT ĐỐI KHÔNG ĐƯỢC sử dụng hoặc trùng lặp với câu ví dụ hiện tại sau đây: "${avoidSentence}". Hãy tạo một câu ví dụ khác hoàn toàn mới.` 
@@ -486,6 +549,22 @@ Yêu cầu:
           exampleMeaning: result.exampleMeaning,
         },
       });
+
+      // 4.5 Cache the generated example in DictionaryExample
+      try {
+        await this.prisma.dictionaryExample.create({
+          data: {
+            word: flashcard.hanzi,
+            pinyin: flashcard.pinyin || '',
+            exampleHanzi: result.exampleHanzi,
+            examplePinyin: result.examplePinyin || '',
+            exampleMeaning: result.exampleMeaning,
+            language: isEnglish ? 'EN' : 'ZH',
+          },
+        });
+      } catch (cacheErr) {
+        console.error('Failed to cache AI generated example:', cacheErr);
+      }
 
       // 5. Upsert dictionary history to consume a daily AI limit token
       await this.prisma.dictionaryHistory.upsert({
