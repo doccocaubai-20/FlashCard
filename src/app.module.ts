@@ -18,6 +18,7 @@ import { AdminModule } from './admin/admin.module';
 import { SocialModule } from './social/social.module';
 import { ChatModule } from './chat/chat.module';
 import { HskExamModule } from './hsk-exam/hsk-exam.module';
+import { TtsModule } from './tts/tts.module';
 
 @Module({
   imports: [
@@ -42,6 +43,7 @@ import { HskExamModule } from './hsk-exam/hsk-exam.module';
     SocialModule,
     ChatModule,
     HskExamModule,
+    TtsModule,
   ],
   controllers: [AppController],
   providers: [

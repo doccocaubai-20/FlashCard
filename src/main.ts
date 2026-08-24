@@ -6,6 +6,7 @@ import { json, urlencoded } from 'express';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableShutdownHooks();
 
   // Increase body limit to support base64 avatar images
   app.use(json({ limit: '10mb' }));
