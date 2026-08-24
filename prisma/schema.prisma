@@ -96,6 +96,7 @@ model Flashcard {
   exampleHanzi   String?
   examplePinyin  String?
   exampleMeaning String?
+  topicId        Int?
 
   deck       Deck           @relation(fields: [deckId], references: [id])
   progresses UserProgress[]
@@ -186,6 +187,7 @@ model DictionaryWord {
   sv  String?  // Âm Hán Việt
   en  String[] // Mảng nghĩa tiếng Anh
   hsk Int?     // Cấp độ HSK
+  topicId Int?
 
   @@index([s])
   @@index([sp])

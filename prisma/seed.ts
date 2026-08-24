@@ -64,6 +64,7 @@ function lookupSV(hanzi: string): string {
 
 async function main() {
   console.log('Seeding Database...');
+  const wordToTopicIdMap = new Map<string, number>();
 
   // Clean up all existing system decks and cards to synchronize HSK 3.0
   console.log('Cleaning up existing system decks and flashcards to sync HSK 3.0...');
@@ -208,6 +209,9 @@ async function main() {
       const meaning = rawMeaning.trim();
 
       const sv = deckConfig.language === 'ZH' ? lookupSV(hanzi) : '';
+      if (item.topicId) {
+        wordToTopicIdMap.set(hanzi, Number(item.topicId));
+      }
 
       cardsToInsert.push({
         deckId: deck.id,
@@ -218,6 +222,7 @@ async function main() {
         exampleHanzi: item.exampleHanzi || null,
         examplePinyin: item.examplePinyin || null,
         exampleMeaning: item.exampleMeaning || null,
+        topicId: item.topicId || null,
       });
     }
 
@@ -233,31 +238,32 @@ async function main() {
   }
 
   // 5. Seed DictionaryWord
-  const existingDictCount = await prisma.dictionaryWord.count();
-  if (existingDictCount > 0) {
-    console.log(`\nDictionary already has ${existingDictCount} words. Skipping Dictionary seeding.`);
-  } else {
-    if (fs.existsSync(dictPath)) {
-      console.log('\nSeeding DictionaryWord table...');
-      const rawDict = fs.readFileSync(dictPath, 'utf8');
-      const dictionary = JSON.parse(rawDict);
-      if (Array.isArray(dictionary)) {
-        const wordsToInsert: any[] = [];
-        for (const entry of dictionary) {
-          if (!entry || !entry.s) continue;
-          wordsToInsert.push({
-            s: entry.s,
-            t: entry.t || null,
-            p: entry.p || null,
-            pt: entry.pt || null,
-            sp: entry.sp || null,
-            b: entry.b ? Number(entry.b) : null,
-            vi: entry.vi || null,
-            sv: entry.sv || null,
-            en: Array.isArray(entry.en) ? entry.en : entry.en ? [entry.en] : [],
-            hsk: entry.hsk ? Number(entry.hsk) : null,
-          });
-        }
+  console.log('Cleaning up existing dictionary words...');
+  await prisma.dictionaryWord.deleteMany({});
+
+  if (fs.existsSync(dictPath)) {
+    console.log('\nSeeding DictionaryWord table...');
+    const rawDict = fs.readFileSync(dictPath, 'utf8');
+    const dictionary = JSON.parse(rawDict);
+    if (Array.isArray(dictionary)) {
+      const wordsToInsert: any[] = [];
+      for (const entry of dictionary) {
+        if (!entry || !entry.s) continue;
+        const matchedTopicId = wordToTopicIdMap.get(entry.s);
+        wordsToInsert.push({
+          s: entry.s,
+          t: entry.t || null,
+          p: entry.p || null,
+          pt: entry.pt || null,
+          sp: entry.sp || null,
+          b: entry.b ? Number(entry.b) : null,
+          vi: entry.vi || null,
+          sv: entry.sv || null,
+          en: Array.isArray(entry.en) ? entry.en : entry.en ? [entry.en] : [],
+          hsk: entry.hsk ? Number(entry.hsk) : null,
+          topicId: matchedTopicId || null,
+        });
+      }
         
         console.log(`Preparing to seed ${wordsToInsert.length} dictionary words...`);
         const batchSize = 5000;
@@ -276,7 +282,6 @@ async function main() {
     } else {
       console.log('\ndictionary.json not found. Skipping DictionaryWord seeding.');
     }
-  }
 
   console.log('\nAll decks seeded successfully!');
 }

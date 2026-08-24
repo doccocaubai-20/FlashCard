@@ -379,7 +379,7 @@ export class StudyService {
     };
   }
 
-  async getAllCards(userId: number, deckId?: number) {
+  async getAllCards(userId: number, deckId?: number, limit?: number, offset?: number) {
     let deckIds: number[];
     if (deckId !== undefined) {
       deckIds = [deckId];
@@ -392,6 +392,14 @@ export class StudyService {
       });
       deckIds = decks.map((d) => d.id);
     }
+
+    // Get total count matching the query
+    const totalCount = await this.prisma.flashcard.count({
+      where: {
+        deckId: { in: deckIds },
+      },
+    });
+
     const cards = await this.prisma.flashcard.findMany({
       where: {
         deckId: { in: deckIds },
@@ -401,8 +409,12 @@ export class StudyService {
           where: { userId },
         },
       },
+      orderBy: { id: 'desc' },
+      take: limit,
+      skip: offset,
     });
-    return cards.map((c) => {
+
+    const mappedCards = cards.map((c) => {
       const p = c.progresses[0];
       return {
         ...mapFlashcardToFrontend(c),
@@ -413,5 +425,10 @@ export class StudyService {
         nextReviewDate: p?.nextReviewDate,
       };
     });
+
+    if (limit !== undefined) {
+      return { cards: mappedCards, totalCount };
+    }
+    return mappedCards;
   }
 }
