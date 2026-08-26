@@ -21,6 +21,7 @@ export class StudyController {
     @Query('tzOffset') tzOffsetStr?: string,
     @Query('extra') extraStr?: string,
     @Query('deckId') deckIdStr?: string,
+    @Query('topicId') topicIdStr?: string,
   ) {
     const userId = req.user.id;
     const tzOffset =
@@ -28,7 +29,9 @@ export class StudyController {
     const extra = extraStr !== undefined ? parseInt(extraStr, 10) : undefined;
     const deckId =
       deckIdStr !== undefined ? parseInt(deckIdStr, 10) : undefined;
-    return this.studyService.getTodayCards(userId, tzOffset, extra, deckId);
+    const topicId =
+      topicIdStr !== undefined ? parseInt(topicIdStr, 10) : undefined;
+    return this.studyService.getTodayCards(userId, tzOffset, extra, deckId, topicId);
   }
 
   @Get('all-cards')
@@ -38,6 +41,7 @@ export class StudyController {
     @Query('deckId') deckIdStr?: string,
     @Query('limit') limitStr?: string,
     @Query('offset') offsetStr?: string,
+    @Query('topicId') topicIdStr?: string,
   ) {
     const userId = req.user.id;
     const deckId =
@@ -46,7 +50,9 @@ export class StudyController {
       limitStr !== undefined ? parseInt(limitStr, 10) : undefined;
     const offset =
       offsetStr !== undefined ? parseInt(offsetStr, 10) : undefined;
-    return this.studyService.getAllCards(userId, deckId, limit, offset);
+    const topicId =
+      topicIdStr !== undefined ? parseInt(topicIdStr, 10) : undefined;
+    return this.studyService.getAllCards(userId, deckId, limit, offset, topicId);
   }
 
   @Post('review')

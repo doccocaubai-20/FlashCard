@@ -1,30 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 
-const HSK_MAPPING = {
-  你: { hsk2: '1', hsk3: '1' },
-  好: { hsk2: '1', hsk3: '1' },
-  谢谢: { hsk2: '1', hsk3: '1' },
-  再见: { hsk2: '1', hsk3: '1' },
-  水: { hsk2: '1', hsk3: '1' },
-  学习: { hsk2: '2', hsk3: '1' },
-  高兴: { hsk2: '2', hsk3: '1' },
-  电脑: { hsk2: '3', hsk3: '2' },
-  简单: { hsk2: '3', hsk3: '2' },
-  经理: { hsk2: '4', hsk3: '3' },
-  会议: { hsk2: '4', hsk3: '3' },
-  环境: { hsk2: '5', hsk3: '4' },
-  贸易: { hsk2: '6', hsk3: '5' },
-  谈判: { hsk2: '6', hsk3: '6' },
-  儒家: { hsk2: '6', hsk3: '7-9' },
-};
-
-function getHskLevels(hanzi: string) {
-  return HSK_MAPPING[hanzi] || { hsk2: null, hsk3: null };
-}
-
 function mapFlashcardToFrontend(card: any) {
-  const levels = getHskLevels(card.hanzi);
   return {
     ...card,
     character: card.hanzi,
@@ -36,8 +13,6 @@ function mapFlashcardToFrontend(card: any) {
     example: card.exampleHanzi
       ? `${card.exampleHanzi}${card.examplePinyin ? ` (${card.examplePinyin})` : ''}${card.exampleMeaning ? ` - ${card.exampleMeaning}` : ''}`
       : undefined,
-    hsk2Level: levels.hsk2,
-    hsk3Level: levels.hsk3,
   };
 }
 
@@ -78,20 +53,46 @@ export class StudyService {
     tzOffset: number,
     extra?: number,
     deckId?: number,
+    topicId?: number,
   ) {
-    // 1. Get due progresses
-    const dueProgresses = await this.prisma.userProgress.findMany({
-      where: {
-        userId,
-        nextReviewDate: {
-          lte: new Date(),
+    const localTodayStr = getLocalDateString(new Date(), tzOffset);
+    const startOfLocalToday = getUtcStartOfDay(localTodayStr, tzOffset);
+    const endOfLocalToday = getUtcEndOfDay(localTodayStr, tzOffset);
+
+    // 1. Fetch due progresses, user stats (upserted to ensure exists), and completed today count in parallel to avoid network round-trip bottlenecks
+    const [dueProgresses, stats, completedTodayCount] = await Promise.all([
+      this.prisma.userProgress.findMany({
+        where: {
+          userId,
+          nextReviewDate: {
+            lte: new Date(),
+          },
+          flashcard: deckId 
+            ? { deckId, topicId: topicId ? topicId : undefined } 
+            : (topicId ? { topicId } : undefined),
         },
-        flashcard: deckId ? { deckId } : undefined,
-      },
-      include: {
-        flashcard: true,
-      },
-    });
+        include: {
+          flashcard: true,
+        },
+      }),
+      this.prisma.userStats.upsert({
+        where: { userId },
+        update: {},
+        create: { userId },
+      }),
+      this.prisma.studyLog.count({
+        where: {
+          userId,
+          createdAt: {
+            gte: startOfLocalToday,
+            lte: endOfLocalToday,
+          },
+          flashcard: deckId 
+            ? { deckId, topicId: topicId ? topicId : undefined } 
+            : (topicId ? { topicId } : undefined),
+        },
+      }),
+    ]);
 
     const mappedDueCards = dueProgresses.map((p) => ({
       ...mapFlashcardToFrontend(p.flashcard),
@@ -102,37 +103,10 @@ export class StudyService {
       nextReviewDate: p.nextReviewDate,
     }));
 
-    // 2. Fetch UserStats for goal target
-    let stats = await this.prisma.userStats.findUnique({
-      where: { userId },
-    });
-    if (!stats) {
-      stats = await this.prisma.userStats.create({
-        data: { userId },
-      });
-    }
-
     let newCardsCount = 0;
     if (extra !== undefined) {
       newCardsCount = extra;
     } else {
-      // Find local today dates
-      const localTodayStr = getLocalDateString(new Date(), tzOffset);
-      const startOfLocalToday = getUtcStartOfDay(localTodayStr, tzOffset);
-      const endOfLocalToday = getUtcEndOfDay(localTodayStr, tzOffset);
-
-      // Check how many cards already studied today from logs
-      const completedTodayCount = await this.prisma.studyLog.count({
-        where: {
-          userId,
-          createdAt: {
-            gte: startOfLocalToday,
-            lte: endOfLocalToday,
-          },
-          flashcard: deckId ? { deckId } : undefined,
-        },
-      });
-
       const remaining = stats.dailyTarget - completedTodayCount;
       if (remaining > 0 && mappedDueCards.length < remaining) {
         newCardsCount = remaining - mappedDueCards.length;
@@ -143,19 +117,23 @@ export class StudyService {
       return mappedDueCards;
     }
 
-    // 3. Fetch user or system decks to pull new cards from
-    const decks = await this.prisma.deck.findMany({
-      where: {
-        OR: [{ userId }, { isSystem: true }],
-      },
-      select: { id: true },
-    });
-    const deckIds = decks.map((d) => d.id);
+    // 2. Fetch user or system decks to pull new cards from only if deckId is not provided
+    let deckIds: number[] = [];
+    if (!deckId) {
+      const decks = await this.prisma.deck.findMany({
+        where: {
+          OR: [{ userId }, { isSystem: true }],
+        },
+        select: { id: true },
+      });
+      deckIds = decks.map((d) => d.id);
+    }
 
     // 4. Find cards that don't have progress yet for this user
     const newCards = await this.prisma.flashcard.findMany({
       where: {
         deckId: deckId ? deckId : { in: deckIds },
+        topicId: topicId ? topicId : undefined,
         progresses: {
           none: {
             userId: userId,
@@ -165,24 +143,31 @@ export class StudyService {
       take: newCardsCount,
     });
 
-    // 5. Create progresses for these new cards
-    const createdProgresses: any[] = [];
-    for (const card of newCards) {
-      const progress = await this.prisma.userProgress.create({
-        data: {
+    // 5. Create progresses for these new cards in a single batch query to avoid network round-trip overhead
+    if (newCards.length > 0) {
+      await this.prisma.userProgress.createMany({
+        data: newCards.map((card) => ({
           userId,
           flashcardId: card.id,
           interval: 0,
           easeFactor: 2.5,
           repetitions: 0,
-          nextReviewDate: new Date(), // due immediately
-        },
-        include: {
-          flashcard: true,
-        },
+          nextReviewDate: new Date(),
+        })),
+        skipDuplicates: true,
       });
-      createdProgresses.push(progress);
     }
+
+    // Fetch the newly created progresses along with their flashcard relations in 1 query
+    const createdProgresses = await this.prisma.userProgress.findMany({
+      where: {
+        userId,
+        flashcardId: { in: newCards.map((c) => c.id) },
+      },
+      include: {
+        flashcard: true,
+      },
+    });
 
     const mappedNewCards = createdProgresses.map((p) => ({
       ...mapFlashcardToFrontend(p.flashcard),
@@ -379,7 +364,7 @@ export class StudyService {
     };
   }
 
-  async getAllCards(userId: number, deckId?: number, limit?: number, offset?: number) {
+  async getAllCards(userId: number, deckId?: number, limit?: number, offset?: number, topicId?: number) {
     let deckIds: number[];
     if (deckId !== undefined) {
       deckIds = [deckId];
@@ -397,12 +382,14 @@ export class StudyService {
     const totalCount = await this.prisma.flashcard.count({
       where: {
         deckId: { in: deckIds },
+        topicId: topicId ? topicId : undefined,
       },
     });
 
     const cards = await this.prisma.flashcard.findMany({
       where: {
         deckId: { in: deckIds },
+        topicId: topicId ? topicId : undefined,
       },
       include: {
         progresses: {
