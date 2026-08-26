@@ -240,7 +240,13 @@ export class DictionaryService {
                 ex.word === item.s ||
                 (ex.exampleHanzi && ex.exampleHanzi.includes(item.s)),
             );
-            item.examples = matchingExamples.map((ex) => ({
+            
+            // Limit to a pool of 5 matching examples, shuffle them, and display up to 3 sentences
+            const pool = matchingExamples.slice(0, 5);
+            const shuffled = [...pool].sort(() => Math.random() - 0.5);
+            const selected = shuffled.slice(0, 3);
+
+            item.examples = selected.map((ex) => ({
               hanzi: ex.exampleHanzi,
               pinyin: ex.examplePinyin || '',
               meaning: ex.exampleMeaning,

@@ -77,24 +77,18 @@ export class TtsController {
         return;
       }
 
-      // Stream chunks in real-time using Chunked Transfer Encoding
-      res.set({
-        'Content-Type': 'audio/mpeg',
-        'Cache-Control': 'public, max-age=86400',
-        'Access-Control-Allow-Origin': '*',
-        'Transfer-Encoding': 'chunked',
-      });
-
-      await this.ttsService.generateSpeech(
+      const audioBuffer = await this.ttsService.generateSpeech(
         text,
         lang,
         gender,
-        (chunk) => {
-          res.write(chunk);
-        },
       );
-
-      res.end();
+      res.set({
+        'Content-Type': 'audio/mpeg',
+        'Content-Length': audioBuffer.length.toString(),
+        'Cache-Control': 'public, max-age=86400',
+        'Access-Control-Allow-Origin': '*',
+      });
+      res.send(audioBuffer);
     } catch (error) {
       if (!res.headersSent) {
         throw new HttpException(
