@@ -12,6 +12,7 @@ import {
   ParseIntPipe,
   NotFoundException,
   ForbiddenException,
+  Query,
 } from '@nestjs/common';
 import { DecksService } from './decks.service';
 import { AuthGuard } from '@nestjs/passport';
@@ -51,7 +52,14 @@ export class DecksController {
   }
 
   @Get(':id/flashcards')
-  async findFlashcards(@Param('id', ParseIntPipe) id: number, @Req() req: any) {
+  async findFlashcards(
+    @Param('id', ParseIntPipe) id: number,
+    @Req() req: any,
+    @Query('limit') limitStr?: string,
+    @Query('offset') offsetStr?: string,
+    @Query('topicId') topicIdStr?: string,
+    @Query('search') search?: string,
+  ) {
     const deck = await this.decksService.findOne(id);
     if (!deck) {
       throw new NotFoundException('Không tìm thấy bộ thẻ!');
@@ -63,7 +71,10 @@ export class DecksController {
     ) {
       throw new ForbiddenException('Bạn không có quyền truy cập bộ thẻ này!');
     }
-    return this.decksService.findFlashcardsByDeckId(id);
+    const limit = limitStr !== undefined ? parseInt(limitStr, 10) : undefined;
+    const offset = offsetStr !== undefined ? parseInt(offsetStr, 10) : undefined;
+    const topicId = topicIdStr !== undefined ? parseInt(topicIdStr, 10) : undefined;
+    return this.decksService.findFlashcardsByDeckId(id, limit, offset, topicId, search);
   }
 
   @Patch(':id')

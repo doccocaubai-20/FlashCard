@@ -110,23 +110,94 @@ export class DecksService {
     });
   }
   async findOne(id: number) {
-    return this.prisma.deck.findUnique({
+    const deck = await this.prisma.deck.findUnique({
       where: { id },
     });
+    if (!deck) return null;
+
+    // Fetch unique topicIds present in this deck
+    const flashcards = await this.prisma.flashcard.findMany({
+      where: { deckId: id },
+      select: { topicId: true },
+      distinct: ['topicId'],
+    });
+    const topicIds = flashcards
+      .map((f) => f.topicId)
+      .filter((tid) => tid !== null && tid !== undefined)
+      .sort((a, b) => a - b);
+
+    // Count total cards in the deck
+    const cardsCount = await this.prisma.flashcard.count({
+      where: { deckId: id },
+    });
+
+    // Count cards per topic in the deck
+    const topicGroup = await this.prisma.flashcard.groupBy({
+      by: ['topicId'],
+      where: { deckId: id },
+      _count: {
+        id: true,
+      },
+    });
+
+    const topicCounts = {};
+    topicGroup.forEach((g) => {
+      if (g.topicId !== null && g.topicId !== undefined) {
+        topicCounts[g.topicId] = g._count.id;
+      }
+    });
+
+    return {
+      ...deck,
+      topicIds,
+      cardsCount,
+      topicCounts,
+    };
   }
 
-  async findFlashcardsByDeckId(deckId: number) {
+  async findFlashcardsByDeckId(
+    deckId: number,
+    limit?: number,
+    offset?: number,
+    topicId?: number,
+    search?: string,
+  ) {
     const deck = await this.prisma.deck.findUnique({
       where: { id: deckId },
     });
     if (!deck) {
       throw new NotFoundException('Không tìm thấy bộ thẻ!');
     }
+
+    const whereClause: any = { deckId };
+    if (topicId !== undefined) {
+      whereClause.topicId = topicId;
+    }
+    if (search && search.trim() !== '') {
+      const q = search.trim();
+      whereClause.OR = [
+        { hanzi: { contains: q, mode: 'insensitive' } },
+        { pinyin: { contains: q, mode: 'insensitive' } },
+        { meaning: { contains: q, mode: 'insensitive' } },
+        { sinoVietnamese: { contains: q, mode: 'insensitive' } },
+      ];
+    }
+
+    let totalCount = 0;
+    if (limit !== undefined) {
+      totalCount = await this.prisma.flashcard.count({
+        where: whereClause,
+      });
+    }
+
     const cards = await this.prisma.flashcard.findMany({
-      where: { deckId },
+      where: whereClause,
       orderBy: { id: 'desc' },
+      take: limit,
+      skip: offset,
     });
-    return cards.map((card) => ({
+
+    const mappedCards = cards.map((card) => ({
       ...card,
       character: card.hanzi,
       front: card.hanzi,
@@ -138,6 +209,11 @@ export class DecksService {
         ? `${card.exampleHanzi}${card.examplePinyin ? ` (${card.examplePinyin})` : ''}${card.exampleMeaning ? ` - ${card.exampleMeaning}` : ''}`
         : undefined,
     }));
+
+    if (limit !== undefined) {
+      return { cards: mappedCards, totalCount };
+    }
+    return mappedCards;
   }
 
   async update(id: number, data: Prisma.DeckUpdateInput) {
