@@ -38,6 +38,10 @@ model User {
   quests   UserQuest[]
   hskExamResults HskExamResult[]
   savedParagraphs SavedParagraph[]
+  skillLogs UserSkillLog[]
+  grammarProgress UserGrammarProgress[]
+  gameRecords GameRecord[]
+  weakWords UserWeakWord[]
 }
 
 enum AuthProvider {
@@ -261,4 +265,82 @@ model DictionaryExample {
 
   @@index([word, pinyin])
   @@index([language])
+}
+
+// ═══════════════════════════════════════════
+// Nhật ký Kỹ năng Tổng hợp
+// Lưu kết quả: Ngữ pháp, Phát âm, Dịch câu, Viết chữ, Trắc nghiệm
+// ═══════════════════════════════════════════
+model UserSkillLog {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  skillType String   // "GRAMMAR" | "SPEAKING" | "TRANSLATION" | "WRITING" | "QUIZ" | "DICTATION"
+  targetId  String?  // ID bài/câu/cấu trúc cụ thể
+  level     String?  // "HSK 1" - "HSK 6"
+  score     Int      // Điểm 0-100
+  accuracy  Float?   // Tỷ lệ đúng 0.0-1.0
+  details   Json?    // Chi tiết: câu trả lời, lỗi sai, transcript...
+  duration  Int?     // Thời gian thực hiện (giây)
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, skillType])
+  @@index([userId, createdAt])
+}
+
+// ═══════════════════════════════════════════
+// Tiến độ Ngữ pháp (Mastery per Grammar Point)
+// ═══════════════════════════════════════════
+model UserGrammarProgress {
+  id              Int      @id @default(autoincrement())
+  userId          Int
+  grammarId       String   // Khớp với id trong grammarData.js
+  level           String   // "HSK 1" - "HSK 6"
+  masteryScore    Int      @default(0) // 0-100%
+  attempts        Int      @default(0)
+  correctCount    Int      @default(0)
+  lastPracticedAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, grammarId])
+}
+
+// ═══════════════════════════════════════════
+// Kỷ lục Game (Bảng điểm cao)
+// ═══════════════════════════════════════════
+model GameRecord {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  gameType  String   // "FALLING_WORDS" | "MATCHING" | "UNSCRAMBLE"
+  level     String?  // Cấp độ HSK hoặc ID bộ thẻ
+  score     Int
+  accuracy  Float?
+  duration  Int?     // giây
+  details   Json?    // missedWords, incorrectSentences...
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, gameType])
+  @@index([userId, createdAt])
+}
+
+// ═══════════════════════════════════════════
+// Ngân hàng Từ vựng Yếu (Từ hay sai từ Game/Quiz)
+// ═══════════════════════════════════════════
+model UserWeakWord {
+  id           Int      @id @default(autoincrement())
+  userId       Int
+  hanzi        String
+  pinyin       String?
+  meaning      String?
+  source       String   // "FALLING_GAME" | "DICTATION" | "QUIZ" | "MATCHING" | "UNSCRAMBLE"
+  mistakeCount Int      @default(1)
+  lastMistakeAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, hanzi])
 }

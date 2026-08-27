@@ -19,6 +19,10 @@ import { SocialModule } from './social/social.module';
 import { ChatModule } from './chat/chat.module';
 import { HskExamModule } from './hsk-exam/hsk-exam.module';
 import { TtsModule } from './tts/tts.module';
+import { SkillLogsModule } from './skill-logs/skill-logs.module';
+import { GrammarProgressModule } from './grammar-progress/grammar-progress.module';
+import { GameRecordsModule } from './game-records/game-records.module';
+import { WeakWordsModule } from './weak-words/weak-words.module';
 
 @Module({
   imports: [
@@ -44,6 +48,10 @@ import { TtsModule } from './tts/tts.module';
     ChatModule,
     HskExamModule,
     TtsModule,
+    SkillLogsModule,
+    GrammarProgressModule,
+    GameRecordsModule,
+    WeakWordsModule,
   ],
   controllers: [AppController],
   providers: [
