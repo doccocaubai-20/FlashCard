@@ -39,7 +39,7 @@ function findExampleInCorpus(word: string): { exampleHanzi: string; examplePinyi
         path.join(__dirname, '..', 'data', 'opusSentences.json'),
         path.join(__dirname, '..', '..', 'src', 'data', 'opusSentences.json'),
       ];
-      
+
       let foundPath = '';
       for (const p of paths) {
         if (fs.existsSync(p)) {
@@ -81,7 +81,7 @@ function findExampleInCorpus(word: string): { exampleHanzi: string; examplePinyi
 
 @Injectable()
 export class FlashcardsService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(private readonly prisma: PrismaService) { }
 
   async create(userId: number, role: string, data: any) {
     const deck = await this.prisma.deck.findUnique({
@@ -385,7 +385,7 @@ Yêu cầu:
     return cards.slice(0, count);
   }
 
-  async generateExampleWithAI(userId: number, cardId: number) {
+  async generateExampleWithAI(userId: number, cardId: number, refresh = false) {
     // 1. Find flashcard and deck
     const flashcard = await this.prisma.flashcard.findUnique({
       where: { id: cardId },
@@ -395,38 +395,43 @@ Yêu cầu:
       throw new NotFoundException('Không tìm thấy thẻ bài!');
     }
 
-    // 2. Check DictionaryExample for existing example sentences
+    // 2. Check DictionaryExample for existing example sentences (if not refreshing)
     const isEnglish = flashcard.deck.language === 'EN';
     const lang = isEnglish ? 'EN' : 'ZH';
-    
-    // First layer: Exact match (word and pinyin)
-    let existingExamples = await this.prisma.dictionaryExample.findMany({
-      where: {
-        word: flashcard.hanzi,
-        pinyin: flashcard.pinyin || '',
-        language: lang,
-      },
-      take: 5,
-    });
 
-    // Second layer: Substring match (contains)
-    if (existingExamples.length === 0) {
+    let existingExamples: any[] = [];
+    if (!refresh) {
+      // First layer: Exact match (word and pinyin), excluding current example
       existingExamples = await this.prisma.dictionaryExample.findMany({
         where: {
-          exampleHanzi: {
-            contains: flashcard.hanzi,
-          },
+          word: flashcard.hanzi,
+          pinyin: flashcard.pinyin || '',
           language: lang,
+          NOT: flashcard.exampleHanzi ? { exampleHanzi: flashcard.exampleHanzi } : undefined,
         },
         take: 5,
       });
+
+      // Second layer: Substring match (contains), excluding current example
+      if (existingExamples.length === 0) {
+        existingExamples = await this.prisma.dictionaryExample.findMany({
+          where: {
+            exampleHanzi: {
+              contains: flashcard.hanzi,
+            },
+            language: lang,
+            NOT: flashcard.exampleHanzi ? { exampleHanzi: flashcard.exampleHanzi } : undefined,
+          },
+          take: 5,
+        });
+      }
     }
 
     if (existingExamples.length > 0) {
       // Pick a random matching example
       const randomIndex = Math.floor(Math.random() * existingExamples.length);
       const chosenExample = existingExamples[randomIndex];
-      
+
       const updatedCard = await this.prisma.flashcard.update({
         where: { id: cardId },
         data: {
@@ -436,26 +441,7 @@ Yêu cầu:
         },
       });
 
-      // Upsert dictionary history
-      await this.prisma.dictionaryHistory.upsert({
-        where: {
-          userId_hanzi: {
-            userId,
-            hanzi: flashcard.hanzi,
-          },
-        },
-        update: {
-          aiGeneratedAt: new Date(),
-        },
-        create: {
-          userId,
-          hanzi: flashcard.hanzi,
-          pinyin: flashcard.pinyin || '',
-          vi: flashcard.meaning || '',
-          aiGeneratedAt: new Date(),
-        },
-      });
-
+      // Returning map to frontend (without dictionaryHistory upsert to avoid daily quota decrease for cached items)
       return mapFlashcardToFrontend(updatedCard);
     }
 
@@ -471,11 +457,11 @@ Yêu cầu:
     }
 
     const avoidSentence = flashcard.exampleHanzi ? flashcard.exampleHanzi.trim() : '';
-    const avoidHintZH = avoidSentence 
-      ? `\nTUYỆT ĐỐI KHÔNG ĐƯỢC sử dụng hoặc trùng lặp với câu ví dụ hiện tại sau đây: "${avoidSentence}". Hãy tạo một câu ví dụ khác hoàn toàn mới.` 
+    const avoidHintZH = avoidSentence
+      ? `\nTUYỆT ĐỐI KHÔNG ĐƯỢC sử dụng hoặc trùng lặp với câu ví dụ hiện tại sau đây: "${avoidSentence}". Hãy tạo một câu ví dụ khác hoàn toàn mới.`
       : '';
-    const avoidHintEN = avoidSentence 
-      ? `\nDO NOT use or duplicate the following existing example sentence: "${avoidSentence}". Please generate a completely different and new sentence.` 
+    const avoidHintEN = avoidSentence
+      ? `\nDO NOT use or duplicate the following existing example sentence: "${avoidSentence}". Please generate a completely different and new sentence.`
       : '';
 
     const prompt = isEnglish
@@ -486,7 +472,7 @@ Yêu cầu:
         - "exampleMeaning": The accurate and natural Vietnamese translation of the example sentence
 
         The output format must be raw JSON only, with no markdown code blocks or additional text.`
-      : `Hãy đóng vai là một giáo viên tiếng Trung bản xứ chuyên nghiệp. Hãy tạo đúng 1 câu ví dụ minh họa giao tiếp thực tế cực kỳ ngắn gọn (dưới 15 chữ Hán) sử dụng từ/chữ Hán: "${flashcard.hanzi}" (nghĩa: "${flashcard.meaning}").${avoidHintZH}
+      : `Hãy đóng vai là một giáo viên tiếng Trung bản xứ chuyên nghiệp. Hãy tạo đúng 1 câu ví dụ minh họa giao tiếp thực tế cực kỳ ngắn gọn (trên 5 chữ hán và dưới 15 chữ Hán) sử dụng từ/chữ Hán: "${flashcard.hanzi}" (nghĩa: "${flashcard.meaning}").${avoidHintZH}
         Trả về kết quả dưới dạng JSON có các trường:
         - "exampleHanzi": Câu ví dụ bằng chữ Hán
         - "examplePinyin": Phiên âm Bính âm (Pinyin) có dấu của câu ví dụ đó

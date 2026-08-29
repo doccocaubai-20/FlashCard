@@ -123,7 +123,9 @@ export class FlashcardsController {
   async generateExampleWithAI(
     @Param('id', ParseIntPipe) id: number,
     @Req() req: any,
+    @Query('refresh') refresh?: string,
   ) {
-    return this.flashcardsService.generateExampleWithAI(req.user.id, id);
+    const shouldRefresh = refresh === 'true';
+    return this.flashcardsService.generateExampleWithAI(req.user.id, id, shouldRefresh);
   }
 }

@@ -179,7 +179,6 @@ export class DecksService {
         { hanzi: { contains: q, mode: 'insensitive' } },
         { pinyin: { contains: q, mode: 'insensitive' } },
         { meaning: { contains: q, mode: 'insensitive' } },
-        { sinoVietnamese: { contains: q, mode: 'insensitive' } },
       ];
     }
 
