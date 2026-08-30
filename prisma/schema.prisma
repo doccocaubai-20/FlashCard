@@ -118,6 +118,12 @@ model UserProgress {
   repetitions    Int      @default(0)
   nextReviewDate DateTime @default(now())
 
+  stability      Float    @default(0.0)
+  difficulty     Float    @default(0.0)
+  lapses         Int      @default(0)
+  state          Int      @default(0)
+  lastReview     DateTime?
+
   user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   flashcard Flashcard @relation(fields: [flashcardId], references: [id], onDelete: Cascade)
 

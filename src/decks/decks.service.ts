@@ -7,6 +7,16 @@ import {
 } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
 import { PrismaService } from 'src/prisma/prisma.service';
+function removeDiacritics(str: string): string {
+  if (!str) return '';
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[đĐ]/g, (char) => (char === 'đ' ? 'd' : 'D'))
+    .toLowerCase()
+    .trim();
+}
+
 @Injectable()
 export class DecksService {
   constructor(private readonly prisma: PrismaService) {}
@@ -173,28 +183,43 @@ export class DecksService {
     if (topicId !== undefined) {
       whereClause.topicId = topicId;
     }
-    if (search && search.trim() !== '') {
-      const q = search.trim();
-      whereClause.OR = [
-        { hanzi: { contains: q, mode: 'insensitive' } },
-        { pinyin: { contains: q, mode: 'insensitive' } },
-        { meaning: { contains: q, mode: 'insensitive' } },
-      ];
-    }
 
+    let cards: any[] = [];
     let totalCount = 0;
-    if (limit !== undefined) {
+    const hasSearch = search && search.trim() !== '';
+
+    if (hasSearch) {
+      // Fetch all matching cards to filter in memory for diacritic-insensitive search
+      const allCards = await this.prisma.flashcard.findMany({
+        where: whereClause,
+        orderBy: { id: 'desc' },
+      });
+
+      const q = removeDiacritics(search.trim());
+      const filteredCards = allCards.filter((card) => {
+        const hanzi = removeDiacritics(card.hanzi || '');
+        const pinyin = removeDiacritics(card.pinyin || '');
+        const meaning = removeDiacritics(card.meaning || '');
+        return hanzi.includes(q) || pinyin.includes(q) || meaning.includes(q);
+      });
+
+      totalCount = filteredCards.length;
+      const start = offset !== undefined ? offset : 0;
+      const end = limit !== undefined ? start + limit : filteredCards.length;
+      cards = filteredCards.slice(start, end);
+    } else {
+      // Normal database pagination path
       totalCount = await this.prisma.flashcard.count({
         where: whereClause,
       });
-    }
 
-    const cards = await this.prisma.flashcard.findMany({
-      where: whereClause,
-      orderBy: { id: 'desc' },
-      take: limit,
-      skip: offset,
-    });
+      cards = await this.prisma.flashcard.findMany({
+        where: whereClause,
+        orderBy: { id: 'desc' },
+        take: limit,
+        skip: offset,
+      });
+    }
 
     const mappedCards = cards.map((card) => ({
       ...card,

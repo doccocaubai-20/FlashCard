@@ -40,6 +40,7 @@ function isConsecutiveDay(day1: string, day2: string): boolean {
 }
 
 import { StatsService } from '../stats/stats.service';
+import { FSRS, Card, Rating, State } from './fsrs.helper';
 
 @Injectable()
 export class StudyService {
@@ -101,6 +102,11 @@ export class StudyService {
       easeFactor: p.easeFactor,
       repetitions: p.repetitions,
       nextReviewDate: p.nextReviewDate,
+      stability: p.stability,
+      difficulty: p.difficulty,
+      lapses: p.lapses,
+      state: p.state,
+      lastReview: p.lastReview,
     }));
 
     let newCardsCount = 0;
@@ -143,7 +149,6 @@ export class StudyService {
       take: newCardsCount,
     });
 
-    // 5. Create progresses for these new cards in a single batch query to avoid network round-trip overhead
     if (newCards.length > 0) {
       await this.prisma.userProgress.createMany({
         data: newCards.map((card) => ({
@@ -153,6 +158,11 @@ export class StudyService {
           easeFactor: 2.5,
           repetitions: 0,
           nextReviewDate: new Date(),
+          stability: 0.0,
+          difficulty: 0.0,
+          lapses: 0,
+          state: 0,
+          lastReview: null,
         })),
         skipDuplicates: true,
       });
@@ -176,6 +186,11 @@ export class StudyService {
       easeFactor: p.easeFactor,
       repetitions: p.repetitions,
       nextReviewDate: p.nextReviewDate,
+      stability: p.stability,
+      difficulty: p.difficulty,
+      lapses: p.lapses,
+      state: p.state,
+      lastReview: p.lastReview,
     }));
 
     return [...mappedDueCards, ...mappedNewCards];
@@ -206,59 +221,59 @@ export class StudyService {
           easeFactor: 2.5,
           repetitions: 0,
           nextReviewDate: new Date(),
+          stability: 0.0,
+          difficulty: 0.0,
+          lapses: 0,
+          state: 0,
+          lastReview: null,
         },
       });
     }
 
-    // 2. SM-2 algorithm calculations
-    const quality = body.rating + 1; // Map 1-4 frontend rating to standard 2-5 SM-2 quality scale
-    let easeFactor = progress.easeFactor;
-    let repetitions = progress.repetitions;
-    let interval = progress.interval;
+    // 2. FSRS-4.5 algorithm calculations
+    const fsrs = new FSRS();
+    const now = new Date();
 
-    easeFactor = Math.max(
-      1.3,
-      easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)),
-    );
+    let cardState = progress.state;
+    let cardStability = progress.stability;
+    let cardDifficulty = progress.difficulty;
+    let cardLapses = progress.lapses;
+    let cardLastReview = progress.lastReview;
 
-    if (quality < 3) {
-      // quality < 3 means failed review (rating = 1, q = 2)
-      repetitions = 0;
-      interval = 1;
-    } else {
-      repetitions += 1;
-      if (quality === 5) {
-        // Easy cards (rating = 4, q = 5) get a larger initial interval
-        if (repetitions === 1) {
-          interval = 4;
-        } else if (repetitions === 2) {
-          interval = 8;
-        } else {
-          interval = Math.round(progress.interval * easeFactor * 1.3) || 4;
-        }
-      } else if (quality === 4) {
-        // Good cards (rating = 3, q = 4)
-        if (repetitions === 1) {
-          interval = 1;
-        } else if (repetitions === 2) {
-          interval = 6;
-        } else {
-          interval = Math.round(progress.interval * easeFactor) || 1;
-        }
-      } else {
-        // Hard cards (rating = 2, q = 3)
-        if (repetitions === 1) {
-          interval = 1;
-        } else if (repetitions === 2) {
-          interval = 3;
-        } else {
-          interval = Math.round(progress.interval * easeFactor * 0.8) || 1;
-        }
-      }
+    // Migration path: initialize values for existing SM-2 cards
+    if (progress.repetitions > 0 && progress.stability === 0 && progress.difficulty === 0) {
+      cardStability = progress.interval || 1;
+      cardDifficulty = Math.max(1, Math.min(10, 11 - (progress.easeFactor - 1.3) * 5));
+      cardLapses = 0;
+      cardState = State.Review;
+      cardLastReview = new Date(progress.nextReviewDate.getTime() - (progress.interval || 1) * 24 * 60 * 60 * 1000);
     }
 
+    let elapsedDays = 0;
+    if (cardLastReview) {
+      const diffTime = Math.max(0, now.getTime() - cardLastReview.getTime());
+      elapsedDays = diffTime / (1000 * 60 * 60 * 24);
+    }
+
+    const fsrsCard: Card = {
+      due: progress.nextReviewDate,
+      stability: cardStability,
+      difficulty: cardDifficulty,
+      elapsedDays,
+      reps: progress.repetitions,
+      lapses: cardLapses,
+      state: cardState as State,
+      lastReview: cardLastReview || undefined,
+    };
+
+    const schedulingInfo = fsrs.schedule(fsrsCard, body.rating as Rating, now);
+    const chosenInfo = schedulingInfo[body.rating as Rating];
+
+    const nextCard = chosenInfo.card;
+    const interval = chosenInfo.interval;
+
     const nextReviewDate = new Date();
-    nextReviewDate.setDate(nextReviewDate.getDate() + interval);
+    nextReviewDate.setDate(now.getDate() + interval);
     const localDateStr = getLocalDateString(nextReviewDate, tzOffset);
     const startOfReviewDay = getUtcStartOfDay(localDateStr, tzOffset);
 
@@ -267,9 +282,14 @@ export class StudyService {
       where: { id: progress.id },
       data: {
         interval,
-        easeFactor: Number(easeFactor.toFixed(2)),
-        repetitions,
+        easeFactor: Number(nextCard.difficulty.toFixed(2)), // compatibility map: store difficulty in easeFactor
+        repetitions: nextCard.reps,
         nextReviewDate: startOfReviewDay,
+        stability: nextCard.stability,
+        difficulty: nextCard.difficulty,
+        lapses: nextCard.lapses,
+        state: nextCard.state,
+        lastReview: now,
       },
       include: {
         flashcard: true,
@@ -286,7 +306,6 @@ export class StudyService {
     });
 
     // 5. Update user stats streak
-    const now = new Date();
     const localTodayStr = getLocalDateString(now, tzOffset);
 
     let stats = await this.prisma.userStats.findUnique({
@@ -361,6 +380,11 @@ export class StudyService {
       easeFactor: updatedProgress.easeFactor,
       repetitions: updatedProgress.repetitions,
       nextReviewDate: updatedProgress.nextReviewDate,
+      stability: updatedProgress.stability,
+      difficulty: updatedProgress.difficulty,
+      lapses: updatedProgress.lapses,
+      state: updatedProgress.state,
+      lastReview: updatedProgress.lastReview,
     };
   }
 
