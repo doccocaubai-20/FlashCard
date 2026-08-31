@@ -113,13 +113,30 @@ export class SocialService {
       throw new BadRequestException('Bộ từ vựng này không ở chế độ công khai!');
     }
 
+    if (originalDeck.userId === userId) {
+      throw new BadRequestException('Bạn không thể nhập lại bộ từ vựng do chính bạn tạo!');
+    }
+
+    // Check if user already imported this deck previously to prevent spam
+    const existingDeck = await this.prisma.deck.findFirst({
+      where: {
+        userId,
+        title: originalDeck.title,
+        description: { contains: cleanCode },
+      },
+    });
+
+    if (existingDeck) {
+      throw new BadRequestException('Bạn đã nhập bộ từ vựng này vào tài khoản rồi!');
+    }
+
     // 1. Create a copy of the deck for the importing user
     const newDeck = await this.prisma.deck.create({
       data: {
         title: originalDeck.title,
         description: originalDeck.description
-          ? `${originalDeck.description} (Nguồn: Bản chia sẻ)`
-          : 'Được nhập từ bản chia sẻ công khai.',
+          ? `${originalDeck.description} (Nguồn: ${cleanCode})`
+          : `Được nhập từ bản chia sẻ công khai (${cleanCode}).`,
         userId,
         isSystem: false,
         isPublic: false,
