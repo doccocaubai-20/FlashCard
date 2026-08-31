@@ -277,79 +277,85 @@ export class StudyService {
     const localDateStr = getLocalDateString(nextReviewDate, tzOffset);
     const startOfReviewDay = getUtcStartOfDay(localDateStr, tzOffset);
 
-    // 3. Save progress
-    const updatedProgress = await this.prisma.userProgress.update({
-      where: { id: progress.id },
-      data: {
-        interval,
-        easeFactor: Number(nextCard.difficulty.toFixed(2)), // compatibility map: store difficulty in easeFactor
-        repetitions: nextCard.reps,
-        nextReviewDate: startOfReviewDay,
-        stability: nextCard.stability,
-        difficulty: nextCard.difficulty,
-        lapses: nextCard.lapses,
-        state: nextCard.state,
-        lastReview: now,
-      },
-      include: {
-        flashcard: true,
-      },
-    });
+    // 3. Save progress, create study log, and update streak inside a Transaction
+    const { updatedProgress, currentStreak } = await this.prisma.$transaction(
+      async (tx) => {
+        const upProgress = await tx.userProgress.update({
+          where: { id: progress.id },
+          data: {
+            interval,
+            repetitions: nextCard.reps,
+            nextReviewDate: startOfReviewDay,
+            stability: nextCard.stability,
+            difficulty: nextCard.difficulty,
+            lapses: nextCard.lapses,
+            state: nextCard.state,
+            lastReview: now,
+          },
+          include: {
+            flashcard: true,
+          },
+        });
 
-    // 4. Create study log
-    await this.prisma.studyLog.create({
-      data: {
-        userId,
-        cardId: body.cardId,
-        rating: body.rating,
-      },
-    });
+        await tx.studyLog.create({
+          data: {
+            userId,
+            cardId: body.cardId,
+            rating: body.rating,
+          },
+        });
 
-    // 5. Update user stats streak
-    const localTodayStr = getLocalDateString(now, tzOffset);
+        const localTodayStr = getLocalDateString(now, tzOffset);
 
-    let stats = await this.prisma.userStats.findUnique({
-      where: { userId },
-    });
-    if (!stats) {
-      stats = await this.prisma.userStats.create({
-        data: { userId },
-      });
-    }
+        let stats = await tx.userStats.findUnique({
+          where: { userId },
+        });
+        if (!stats) {
+          stats = await tx.userStats.create({
+            data: { userId },
+          });
+        }
 
-    let currentStreak = stats.currentStreak;
-    let longestStreak = stats.longestStreak;
+        let cStreak = stats.currentStreak;
+        let lStreak = stats.longestStreak;
 
-    if (stats.lastStudyDate) {
-      const localLastStudyStr = getLocalDateString(
-        stats.lastStudyDate,
-        tzOffset,
-      );
+        if (stats.lastStudyDate) {
+          const localLastStudyStr = getLocalDateString(
+            stats.lastStudyDate,
+            tzOffset,
+          );
 
-      if (localTodayStr !== localLastStudyStr) {
-        const consecutive = isConsecutiveDay(localLastStudyStr, localTodayStr);
-        if (consecutive) {
-          currentStreak += 1;
-          if (currentStreak > longestStreak) {
-            longestStreak = currentStreak;
+          if (localTodayStr !== localLastStudyStr) {
+            const consecutive = isConsecutiveDay(
+              localLastStudyStr,
+              localTodayStr,
+            );
+            if (consecutive) {
+              cStreak += 1;
+              if (cStreak > lStreak) {
+                lStreak = cStreak;
+              }
+            } else {
+              cStreak = 1;
+            }
           }
         } else {
-          currentStreak = 1;
+          cStreak = 1;
+          lStreak = 1;
         }
-      }
-    } else {
-      currentStreak = 1;
-      longestStreak = 1;
-    }
 
-    await this.prisma.userStats.update({
-      where: { userId },
-      data: {
-        currentStreak,
-        longestStreak,
-        lastStudyDate: now,
+        await tx.userStats.update({
+          where: { userId },
+          data: {
+            currentStreak: cStreak,
+            longestStreak: lStreak,
+            lastStudyDate: now,
+          },
+        });
+
+        return { updatedProgress: upProgress, currentStreak: cStreak };
       },
-    });
+    );
 
     // Award XP and Coins based on Streak Combo Multiplier
     let xpReward = 5;

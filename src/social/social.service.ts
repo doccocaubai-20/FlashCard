@@ -10,58 +10,41 @@ export class SocialService {
   constructor(private readonly prisma: PrismaService) {}
 
   async getLeaderboard() {
-    const users = await this.prisma.user.findMany({
-      select: {
-        id: true,
-        name: true,
-        avatarUrl: true,
-        stats: {
+    const topStats = await this.prisma.userStats.findMany({
+      orderBy: [{ xp: 'desc' }, { currentStreak: 'desc' }],
+      take: 20,
+      include: {
+        user: {
           select: {
-            currentStreak: true,
-            longestStreak: true,
-          },
-        },
-        _count: {
-          select: {
-            progress: true,
-          },
-        },
-        progress: {
-          select: {
-            repetitions: true,
+            id: true,
+            name: true,
+            avatarUrl: true,
+            _count: {
+              select: {
+                progress: true,
+              },
+            },
           },
         },
       },
     });
 
-    const rankedUsers = users.map((u) => {
-      const totalRepetitions = u.progress.reduce(
-        (sum, p) => sum + p.repetitions,
-        0,
-      );
-      const currentStreak = u.stats?.currentStreak || 0;
-      // Score calculation: 100 points per streak day, 10 points per card repetition
-      const score = currentStreak * 100 + totalRepetitions * 10;
+    return topStats.map((st) => {
+      const currentStreak = st.currentStreak || 0;
+      const score = st.xp || (currentStreak * 100);
 
       return {
-        id: u.id,
-        name: u.name,
-        avatarUrl: u.avatarUrl,
+        id: st.user.id,
+        name: st.user.name,
+        avatarUrl: st.user.avatarUrl,
         currentStreak,
-        longestStreak: u.stats?.longestStreak || 0,
-        totalCardsLearned: u._count.progress,
-        totalRepetitions,
+        longestStreak: st.longestStreak || 0,
+        totalCardsLearned: st.user._count.progress,
+        totalRepetitions: 0,
         score,
+        xp: st.xp,
       };
     });
-
-    // Sort by score descending, then by repetitions descending
-    return rankedUsers
-      .sort((a, b) => {
-        if (b.score !== a.score) return b.score - a.score;
-        return b.totalRepetitions - a.totalRepetitions;
-      })
-      .slice(0, 20);
   }
 
   async shareDeck(deckId: number, userId: number) {

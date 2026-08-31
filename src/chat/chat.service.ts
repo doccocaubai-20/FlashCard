@@ -173,32 +173,69 @@ Hãy trả lời thân thiện, mạch lạc, ngắn gọn và sử dụng Markd
       { role: 'user', content: content.trim() },
     ];
 
-    try {
-      const response = await fetch(
-        'https://api.deepseek.com/chat/completions',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Bearer ${apiKey}`,
-          },
-          body: JSON.stringify({
-            model,
-            messages: apiMessages,
-            temperature: 0.6,
-            max_tokens: 2000,
-          }),
-          signal: AbortSignal.timeout(25000),
-        },
-      );
+    let response: any;
+    let retries = 3;
+    let lastError: any = null;
 
-      if (!response.ok) {
-        const errorText = await response.text();
-        throw new Error(`API Error: ${response.status} - ${errorText}`);
+    try {
+      while (retries > 0) {
+        try {
+          response = await fetch(
+            'https://api.deepseek.com/chat/completions',
+            {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${apiKey}`,
+              },
+              body: JSON.stringify({
+                model,
+                messages: apiMessages,
+                temperature: 0.6,
+                max_tokens: 2000,
+              }),
+              signal: AbortSignal.timeout(25000),
+            },
+          );
+
+          if (response.ok) {
+            break;
+          }
+
+          if (response.status === 429 || response.status >= 500) {
+            retries--;
+            if (retries > 0) {
+              const delayMs = (4 - retries) * 1500;
+              await new Promise((res) => setTimeout(res, delayMs));
+              continue;
+            }
+          }
+
+          const errorText = await response.text();
+          throw new Error(`API Error: ${response.status} - ${errorText}`);
+        } catch (err: any) {
+          lastError = err;
+          const isNetworkOrTimeout =
+            err?.name === 'TimeoutError' ||
+            err?.name === 'AbortError' ||
+            err?.code === 'ECONNRESET';
+          if (isNetworkOrTimeout && retries > 1) {
+            retries--;
+            await new Promise((res) => setTimeout(res, 1000));
+            continue;
+          }
+          throw err;
+        }
+      }
+
+      if (!response || !response.ok) {
+        throw lastError || new Error('Không thể nhận phản hồi từ AI.');
       }
 
       const resJson: any = await response.json();
-      const aiReply = resJson.choices[0].message.content || '';
+      const aiReply =
+        resJson?.choices?.[0]?.message?.content ||
+        'Xin lỗi, tôi không thể xử lý phản hồi lúc này.';
 
       // 5. Lưu cả tin nhắn của user và câu trả lời của AI vào DB
       await this.prisma.chatMessage.create({

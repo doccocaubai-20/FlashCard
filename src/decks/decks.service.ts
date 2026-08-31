@@ -11,6 +11,7 @@ function removeDiacritics(str: string): string {
   if (!str) return '';
   return str
     .normalize('NFD')
+    .replace(/[\u200b-\u200f\ufeff]/g, '') // Strip ZWSP and other invisible unicode characters
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/[đĐ]/g, (char) => (char === 'đ' ? 'd' : 'D'))
     .toLowerCase()

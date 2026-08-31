@@ -36,17 +36,19 @@ export class FavoriteWordService {
         if (dictWord && dictWord.sv) {
           sv = dictWord.sv;
         } else {
-          // Phân tách từ ghép thành chữ đơn để ghép âm Hán-Việt
+          // Phân tách từ ghép thành chữ đơn để ghép âm Hán-Việt (Batch Query)
           const chars = Array.from(dto.hanzi);
           if (chars.length > 1) {
-            const parts: string[] = [];
-            for (const char of chars) {
-              const charWord = await this.prisma.dictionaryWord.findFirst({
-                where: { s: char },
-                select: { sv: true },
-              });
-              parts.push(charWord?.sv || `[${char}]`);
-            }
+            const charWords = await this.prisma.dictionaryWord.findMany({
+              where: { s: { in: chars } },
+              select: { s: true, sv: true },
+            });
+            const svMap = new Map<string, string>();
+            charWords.forEach((cw) => {
+              if (cw.sv) svMap.set(cw.s, cw.sv);
+            });
+
+            const parts = chars.map((c) => svMap.get(c) || `[${c}]`);
             sv = parts.join(' ').replace(/\s+/g, ' ').trim();
           }
         }
