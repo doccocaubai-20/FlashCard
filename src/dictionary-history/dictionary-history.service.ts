@@ -11,11 +11,13 @@ export class DictionaryHistoryService {
     private readonly statsService: StatsService,
   ) {}
 
-  async findAll(userId: number) {
+  async findAll(userId: number, page = 1, limit = 20) {
+    const skip = Math.max(0, (page - 1) * limit);
     return this.prisma.dictionaryHistory.findMany({
       where: { userId },
       orderBy: { updatedAt: 'desc' },
-      take: 20,
+      skip,
+      take: limit,
     });
   }
 

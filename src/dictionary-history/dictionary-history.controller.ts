@@ -6,6 +6,7 @@ import {
   Body,
   UseGuards,
   Req,
+  Query,
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { Throttle } from '@nestjs/throttler';
@@ -20,8 +21,14 @@ export class DictionaryHistoryController {
   ) {}
 
   @Get()
-  findAll(@Req() req: any) {
-    return this.dictionaryHistoryService.findAll(req.user.id);
+  findAll(
+    @Req() req: any,
+    @Query('page') page?: string,
+    @Query('limit') limit?: string,
+  ) {
+    const pageNum = page ? parseInt(page, 10) : 1;
+    const limitNum = limit ? parseInt(limit, 10) : 20;
+    return this.dictionaryHistoryService.findAll(req.user.id, pageNum, limitNum);
   }
 
   @Get('today-count')
