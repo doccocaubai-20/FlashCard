@@ -158,56 +158,14 @@ export class DictionaryService {
       }
     }
 
-    // Filter out highly obscure/unnecessary variants unless they are exact query matches on simplified 's'
-    results = results.filter((item) => {
-      if (item.vi) {
-        const lowerVi = item.vi.toLowerCase();
-        if (
-          lowerVi.includes('biến thể cổ') ||
-          lowerVi.includes('biến thể của')
-        ) {
-          // Only allow variant if it's the exact Simplified character they queried
-          if (item.s !== q.trim()) {
-            return false;
-          }
-        }
-      }
-      return true;
-    });
+    // Score and filter results by relevance
+    const scoredResults = results
+      .map((item) => ({ item, score: this.calculateRelevanceScore(item, q) }))
+      .filter(({ score }) => score > 0)
+      .sort((a, b) => b.score - a.score)
+      .map(({ item }) => item);
 
-    // Sort results
-    results.sort((a, b) => {
-      // 1. Prioritize exact matches on simplified character first
-      const aExactS = a.s === q.trim() ? 1 : 0;
-      const bExactS = b.s === q.trim() ? 1 : 0;
-      if (aExactS !== bExactS) return bExactS - aExactS;
-
-      // 2. Prioritize HSK levels (HSK 1, 2, 3... first, null/0 last)
-      const aHsk =
-        a.hsk === null || a.hsk === undefined || a.hsk === 0 ? 99 : a.hsk;
-      const bHsk =
-        b.hsk === null || b.hsk === undefined || b.hsk === 0 ? 99 : b.hsk;
-      if (aHsk !== bHsk) return aHsk - bHsk;
-
-      // 3. Prioritize common/standard characters (non-variant first)
-      const aIsVariant =
-        a.vi && (a.vi.includes('biến thể') || a.vi.includes('biến thể cổ'))
-          ? 1
-          : 0;
-      const bIsVariant =
-        b.vi && (b.vi.includes('biến thể') || b.vi.includes('biến thể cổ'))
-          ? 1
-          : 0;
-      if (aIsVariant !== bIsVariant) return aIsVariant - bIsVariant;
-
-      // 4. Prioritize shorter Simplified word length (e.g. single character first)
-      const aLen = a.s?.length || 0;
-      const bLen = b.s?.length || 0;
-      if (aLen !== bLen) return aLen - bLen;
-
-      // 5. Fallback to ID
-      return a.id - b.id;
-    });
+    results = scoredResults;
 
     // Enrich compound words' Hán Việt reading
     const enriched = await this.enrichMultipleSv(results);
@@ -268,6 +226,93 @@ export class DictionaryService {
     // Cache final computed result
     this.searchCache.set(cacheKey, finalResult);
     return finalResult;
+  }
+
+  private calculateRelevanceScore(item: any, rawQ: string): number {
+    const q = rawQ.trim();
+    const qLower = q.toLowerCase();
+    const s = (item.s || '').toLowerCase();
+    const t = (item.t || '').toLowerCase();
+    const p = (item.p || '').toLowerCase();
+    const pt = (item.pt || '').toLowerCase();
+    const sp = (item.sp || '').toLowerCase();
+    const sv = (item.sv || '').toLowerCase();
+    const vi = (item.vi || '').toLowerCase();
+
+    let score = 0;
+
+    // 1. Exact Hanzi match (Highest priority)
+    if (s === qLower || t === qLower) {
+      score += 100000;
+    } else if (s.startsWith(qLower) || t.startsWith(qLower)) {
+      score += 40000;
+    } else if (s.includes(qLower) || t.includes(qLower)) {
+      score += 20000;
+    }
+
+    // 2. Exact Pinyin match
+    if (p === qLower || pt === qLower) {
+      score += 80000; // Exact tonal match e.g. "hái"
+    } else if (sp === qLower) {
+      score += 60000; // Exact tone-stripped match e.g. "hai"
+    } else if (p.startsWith(qLower) || pt.startsWith(qLower)) {
+      score += 30000;
+    } else if (sp.startsWith(qLower)) {
+      score += 20000;
+    } else if (sp.includes(` ${qLower}`) || sp.includes(`${qLower} `)) {
+      score += 10000;
+    }
+
+    // 3. Exact Hán-Việt reading match
+    if (sv === qLower) {
+      score += 50000;
+    } else if (sv.startsWith(qLower)) {
+      score += 25000;
+    } else if (sv.split(/[\s·-]+/).includes(qLower)) {
+      score += 15000;
+    }
+
+    // 4. Meaning matching (ONLY whole words or word-boundary matches in Vietnamese)
+    const cleanViFirstPart = vi.split(/[/;,()]/)[0].trim();
+    if (cleanViFirstPart === qLower || vi === qLower) {
+      score += 40000;
+    } else if (cleanViFirstPart.startsWith(qLower) || vi.startsWith(qLower)) {
+      score += 25000;
+    } else {
+      // Regex word-boundary match in Vietnamese to prevent matching inside other syllables (e.g. "thái" vs "hái")
+      const escapedQ = qLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const wordBoundaryRegex = new RegExp(`(^|[^a-zà-ỹ0-9])${escapedQ}([^a-zà-ỹ0-9]|$)`, 'i');
+      if (wordBoundaryRegex.test(vi)) {
+        score += 10000;
+      }
+    }
+
+    // If no match was found across Hanzi, Pinyin, SV, or word-boundary Vi, score remains 0 -> drop it
+    if (score === 0) {
+      return 0;
+    }
+
+    // 5. Common HSK boost (+250 to +1500, purely as tie-breaker among relevant matches)
+    if (item.hsk && item.hsk >= 1 && item.hsk <= 6) {
+      score += (7 - item.hsk) * 250;
+    }
+
+    // 6. Shorter word length boost (single characters / concise words first)
+    const len = item.s?.length || 1;
+    score += Math.max(0, (5 - len) * 100);
+
+    // 7. Penalties for obscure surname / variant items
+    if (
+      vi.includes('biến thể cổ') ||
+      vi.includes('biến thể của') ||
+      vi.includes('họ [') ||
+      vi.includes('họ ') ||
+      (item.p && item.p[0] === item.p[0].toUpperCase() && item.p[0] !== item.p[0].toLowerCase())
+    ) {
+      score -= 15000;
+    }
+
+    return score;
   }
 
   // Batch enrichment of Hán Việt readings for compound words
