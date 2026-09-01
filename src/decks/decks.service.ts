@@ -20,7 +20,7 @@ function removeDiacritics(str: string): string {
 
 @Injectable()
 export class DecksService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(private readonly prisma: PrismaService) { }
 
   async create(userId: number, data: any, role = 'USER') {
     const isSystem = data.isSystem === true && role === 'ADMIN';
@@ -58,7 +58,7 @@ export class DecksService {
 
     const deckPromises = decks.map(async (deck) => {
       const cardCount = deck._count.flashcards;
-      
+
       // Fast index-optimized COUNT query for studied cards
       const studiedCount = await this.prisma.userProgress.count({
         where: {
@@ -362,19 +362,21 @@ export class DecksService {
     const prompt = `Bạn là một giáo viên tiếng Trung. Hãy viết một đoạn văn tiếng Trung khoảng 200 chữ, tự nhiên và mạch lạc, sử dụng các từ vựng sau đây:
 ${wordsListStr}
 
+Có các từ cơ bản thông dụng chứ không cần tất cả đều là các từ trong danh sách.
+
 CRITICAL INSTRUCTION: The user's native language is ${targetLangName}. You MUST provide the paragraphMeaning and all wordUsage explanations/meanings in ${targetLangName}.
 
 Bạn PHẢI trả về duy nhất một đối tượng JSON thuần túy (không có markdown code block, không có giải thích ngoài JSON) theo cấu trúc chính xác như sau:
 {
-  "paragraphHanzi": "...",
-  "paragraphPinyin": "...",
-  "paragraphMeaning": "...",
+  "paragraphHanzi": ...,
+  "paragraphPinyin": ...,
+  "paragraphMeaning": ...,
   "wordUsage": [
     {
-      "word": "...",
-      "pinyin": "...",
-      "meaning": "...",
-      "explanation": "..."
+      "word": ...,
+      "pinyin": ...,
+      "meaning": ...,
+      "explanation": ...
     }
   ]
 }
@@ -405,9 +407,9 @@ Trong đó:
               { role: 'user', content: prompt },
             ],
             temperature: 0.5,
-            max_tokens: 20000,
+            max_tokens: 25000,
           }),
-          signal: AbortSignal.timeout(60000), // 60s timeout for longer context
+          signal: AbortSignal.timeout(60000),
         },
       );
 
@@ -438,7 +440,7 @@ Trong đó:
         isTimeout
           ? 'AI đang bận phản hồi chậm, vui lòng thử lại sau!'
           : 'Lỗi khi kết nối với AI để tạo đoạn văn: ' +
-              (error.message || error),
+          (error.message || error),
         HttpStatus.INTERNAL_SERVER_ERROR,
       );
     }

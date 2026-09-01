@@ -110,7 +110,7 @@ export class FavoriteWordService {
       },
     });
     if (!fav) {
-      throw new NotFoundException('Không tìm thấy từ yêu thích!');
+      return { success: true, message: 'Từ vựng không có trong mục yêu thích' };
     }
     await this.prisma.favoriteWord.delete({
       where: {
