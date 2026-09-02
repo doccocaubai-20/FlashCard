@@ -32,22 +32,17 @@ export class DictionaryService {
           results = await this.segmentHanziSentence(cleanQ);
         }
       } else {
-        const [pinyinMatches, meaningMatches] = await Promise.all([
+        // Query Pinyin, Vietnamese meaning, and English translations concurrently
+        const [pinyinMatches, meaningMatches, englishMatches] = await Promise.all([
           this.search('pinyin', q, true),
           this.search('meaning', q, true),
+          this.search('english', q, true),
         ]);
 
         const combined = [
-          ...(Array.isArray(pinyinMatches)
-            ? pinyinMatches
-            : pinyinMatches
-              ? [pinyinMatches]
-              : []),
-          ...(Array.isArray(meaningMatches)
-            ? meaningMatches
-            : meaningMatches
-              ? [meaningMatches]
-              : []),
+          ...(Array.isArray(pinyinMatches) ? pinyinMatches : pinyinMatches ? [pinyinMatches] : []),
+          ...(Array.isArray(meaningMatches) ? meaningMatches : meaningMatches ? [meaningMatches] : []),
+          ...(Array.isArray(englishMatches) ? englishMatches : englishMatches ? [englishMatches] : []),
         ];
 
         const seen = new Set();
@@ -64,17 +59,20 @@ export class DictionaryService {
       }
     } else if (type === 'hanzi') {
       const queryStr = q.trim();
-      // Check if query contains Chinese characters
       const isHanzi = /[\u4e00-\u9fa5]/.test(queryStr);
       if (!isHanzi) {
         return [];
       }
 
-      // Exact matches on Simplified or Traditional
+      // Exact matches on Simplified or Traditional first
       const exactMatches = await this.prisma.dictionaryWord.findMany({
         where: {
           OR: [{ s: queryStr }, { t: queryStr }],
         },
+        orderBy: [
+          { hsk: { sort: 'asc', nulls: 'last' } },
+          { id: 'asc' }
+        ],
       });
 
       if (exactMatches.length > 0) {
@@ -87,74 +85,89 @@ export class DictionaryService {
               { t: { startsWith: queryStr } },
             ],
           },
+          orderBy: [
+            { hsk: { sort: 'asc', nulls: 'last' } },
+            { s: 'asc' }
+          ],
           take: 150,
         });
       }
     } else if (type === 'pinyin') {
-      // 1. Exact matches (case-sensitive because sp/p/pt are saved in lowercase and cleanQ is lowercased)
-      const exactMatches = await this.prisma.dictionaryWord.findMany({
-        where: {
-          OR: [{ sp: cleanQ }, { p: cleanQ }, { pt: cleanQ }],
-        },
-        take: 150,
-      });
-
-      if (exactMatches.length >= 150) {
-        results = exactMatches;
-      } else {
-        // 2. Prefix matches (startsWith) - case-sensitive to use B-tree index
-        const prefixMatches = await this.prisma.dictionaryWord.findMany({
-          where: {
-            OR: [
-              { sp: { startsWith: cleanQ } },
-              { p: { startsWith: cleanQ } },
-              { pt: { startsWith: cleanQ } },
-            ],
-            NOT: {
-              id: { in: exactMatches.map((m) => m.id) },
-            },
-          },
-          take: 150 - exactMatches.length,
-        });
-        results = [...exactMatches, ...prefixMatches];
+      try {
+        // Exact matches with tonal, numeric or tone-free pinyin, prioritizing HSK 1-7 and shorter words
+        const matches = await this.prisma.$queryRawUnsafe<any[]>(`
+          SELECT id, s, t, p, pt, sp, vi, sv, en, hsk, "topicId"
+          FROM "DictionaryWord"
+          WHERE sp = $1 OR p = $1 OR pt = $1 OR sp LIKE $2
+          ORDER BY
+            CASE 
+              WHEN p = $1 OR pt = $1 THEN 1
+              WHEN sp = $1 THEN 2
+              WHEN sp LIKE $2 THEN 3
+              ELSE 4
+            END,
+            CASE WHEN hsk IS NOT NULL AND hsk > 0 THEN hsk ELSE 99 END ASC,
+            LENGTH(s) ASC,
+            id ASC
+          LIMIT 150
+        `, cleanQ, `${cleanQ}%`);
+        results = matches || [];
+      } catch (err) {
+        console.error('Pinyin search error:', err);
+        results = [];
       }
     } else if (type === 'meaning') {
-      // 1. Exact sv match (case-sensitive)
-      const exactSv = await this.prisma.dictionaryWord.findMany({
-        where: { sv: cleanQ },
-        take: 150,
-      });
-
-      if (exactSv.length >= 150) {
-        results = exactSv;
-      } else {
-        // 2. Prefix sv match (case-sensitive)
-        const prefixSv = await this.prisma.dictionaryWord.findMany({
-          where: {
-            sv: { startsWith: cleanQ },
-            NOT: {
-              id: { in: exactSv.map((m) => m.id) },
-            },
-          },
-          take: 150 - exactSv.length,
-        });
-
-        const currentMatches = [...exactSv, ...prefixSv];
-        if (currentMatches.length >= 150) {
-          results = currentMatches;
-        } else {
-          // 3. Substring vi match (case-insensitive contains fallback)
-          const containsVi = await this.prisma.dictionaryWord.findMany({
-            where: {
-              vi: { contains: cleanQ, mode: 'insensitive' },
-              NOT: {
-                id: { in: currentMatches.map((m) => m.id) },
-              },
-            },
-            take: 150 - currentMatches.length,
-          });
-          results = [...currentMatches, ...containsVi];
-        }
+      try {
+        // Query ordered intelligently so HSK words and exact matches are always in the candidate set
+        const matches = await this.prisma.$queryRawUnsafe<any[]>(`
+          SELECT id, s, t, p, pt, sp, vi, sv, en, hsk, "topicId"
+          FROM "DictionaryWord"
+          WHERE vi ILIKE $1 OR sv ILIKE $2
+          ORDER BY 
+            CASE 
+              WHEN sv = $3 THEN 1
+              WHEN vi ILIKE $4 OR vi ILIKE $5 OR vi ILIKE $6 THEN 2
+              WHEN vi ILIKE $7 THEN 3
+              ELSE 4
+            END,
+            CASE WHEN hsk IS NOT NULL AND hsk > 0 THEN hsk ELSE 99 END ASC,
+            LENGTH(s) ASC,
+            LENGTH(vi) ASC
+          LIMIT 150
+        `, 
+          `%${cleanQ}%`,
+          `%${cleanQ}%`,
+          cleanQ,
+          `${cleanQ}`,
+          `${cleanQ} /%`,
+          `${cleanQ}; %`,
+          `${cleanQ}%`,
+        );
+        results = matches || [];
+      } catch (err) {
+        console.error('Meaning search error:', err);
+        results = [];
+      }
+    } else if (type === 'english') {
+      try {
+        const enMatches = await this.prisma.$queryRawUnsafe<any[]>(`
+          SELECT id, s, t, p, pt, sp, vi, sv, en, hsk, "topicId"
+          FROM "DictionaryWord"
+          WHERE array_to_string(en, ' ') ILIKE $1
+          ORDER BY
+            CASE 
+              WHEN 'to ' || $2 = ANY(en) OR $2 = ANY(en) THEN 1
+              WHEN array_to_string(en, ' ') ILIKE $3 THEN 2
+              ELSE 3
+            END,
+            CASE WHEN hsk IS NOT NULL AND hsk > 0 THEN hsk ELSE 99 END ASC,
+            LENGTH(s) ASC
+          LIMIT 100
+        `, `%${cleanQ}%`, cleanQ, `%to ${cleanQ}%`);
+        results = enMatches || [];
+      } catch (err) {
+        console.error('English search error:', err);
+        results = [];
       }
     }
 
@@ -238,6 +251,7 @@ export class DictionaryService {
     const sp = (item.sp || '').toLowerCase();
     const sv = (item.sv || '').toLowerCase();
     const vi = (item.vi || '').toLowerCase();
+    const enStr = Array.isArray(item.en) ? item.en.join(' ').toLowerCase() : (item.en || '').toLowerCase();
 
     let score = 0;
 
@@ -252,9 +266,9 @@ export class DictionaryService {
 
     // 2. Exact Pinyin match
     if (p === qLower || pt === qLower) {
-      score += 80000; // Exact tonal match e.g. "hái"
+      score += 80000; // Exact tonal match e.g. "hē"
     } else if (sp === qLower) {
-      score += 60000; // Exact tone-stripped match e.g. "hai"
+      score += 65000; // Exact tone-stripped match e.g. "he"
     } else if (p.startsWith(qLower) || pt.startsWith(qLower)) {
       score += 30000;
     } else if (sp.startsWith(qLower)) {
@@ -272,44 +286,51 @@ export class DictionaryService {
       score += 15000;
     }
 
-    // 4. Meaning matching (ONLY whole words or word-boundary matches in Vietnamese)
+    // 4. Meaning matching (Vietnamese)
     const cleanViFirstPart = vi.split(/[/;,()]/)[0].trim();
     if (cleanViFirstPart === qLower || vi === qLower) {
-      score += 40000;
+      score += 50000;
     } else if (cleanViFirstPart.startsWith(qLower) || vi.startsWith(qLower)) {
-      score += 25000;
+      score += 35000;
     } else {
-      // Regex word-boundary match in Vietnamese to prevent matching inside other syllables (e.g. "thái" vs "hái")
       const escapedQ = qLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       const wordBoundaryRegex = new RegExp(`(^|[^a-zà-ỹ0-9])${escapedQ}([^a-zà-ỹ0-9]|$)`, 'i');
       if (wordBoundaryRegex.test(vi)) {
-        score += 10000;
+        score += 20000;
       }
     }
 
-    // If no match was found across Hanzi, Pinyin, SV, or word-boundary Vi, score remains 0 -> drop it
+    // 5. English matching
+    if (Array.isArray(item.en)) {
+      const enLower = item.en.map((e: string) => e.toLowerCase());
+      if (enLower.includes(qLower) || enLower.includes(`to ${qLower}`)) {
+        score += 50000;
+      } else if (enLower.some((e: string) => e.startsWith(qLower) || e.startsWith(`to ${qLower}`))) {
+        score += 30000;
+      } else if (enStr.includes(qLower)) {
+        score += 15000;
+      }
+    }
+
+    // If no match was found across Hanzi, Pinyin, SV, Vi, or English, drop it
     if (score === 0) {
       return 0;
     }
 
-    // 5. Common HSK boost (+250 to +1500, purely as tie-breaker among relevant matches)
-    if (item.hsk && item.hsk >= 1 && item.hsk <= 6) {
-      score += (7 - item.hsk) * 250;
+    // 6. Common HSK boost (HSK 1-7 gets significant boost)
+    if (item.hsk && item.hsk >= 1 && item.hsk <= 7) {
+      score += (8 - item.hsk) * 2000; // HSK 1 gets +14,000, HSK 2 gets +12,000, etc.
     }
 
-    // 6. Shorter word length boost (single characters / concise words first)
+    // 7. Shorter word length boost (single characters / concise words first)
     const len = item.s?.length || 1;
-    score += Math.max(0, (5 - len) * 100);
+    score += Math.max(0, (5 - len) * 500);
 
-    // 7. Penalties for obscure surname / variant items
-    if (
-      vi.includes('biến thể cổ') ||
-      vi.includes('biến thể của') ||
-      vi.includes('họ [') ||
-      vi.includes('họ ') ||
-      (item.p && item.p[0] === item.p[0].toUpperCase() && item.p[0] !== item.p[0].toLowerCase())
-    ) {
-      score -= 15000;
+    // 8. Penalties ONLY for pure surnames or pure variants
+    const isPureSurname = /^họ\s*\[/i.test(vi) || /^họ\s+[a-zà-ỹ]+/i.test(vi);
+    const isPureVariant = /^biến thể (của|cổ của)\b/i.test(vi);
+    if (isPureSurname || isPureVariant) {
+      score -= 25000;
     }
 
     return score;
