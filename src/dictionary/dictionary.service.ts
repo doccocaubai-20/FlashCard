@@ -317,9 +317,9 @@ export class DictionaryService {
       return 0;
     }
 
-    // 6. Common HSK boost (HSK 1-7 gets significant boost)
-    if (item.hsk && item.hsk >= 1 && item.hsk <= 7) {
-      score += (8 - item.hsk) * 2000; // HSK 1 gets +14,000, HSK 2 gets +12,000, etc.
+    // 6. Dominant HSK 1-6 boost (core everyday words always rank highest)
+    if (item.hsk && item.hsk >= 1 && item.hsk <= 6) {
+      score += (7 - item.hsk) * 5000; // HSK 1 gets +30,000, HSK 2 gets +25,000, etc.
     }
 
     // 7. Shorter word length boost (single characters / concise words first)
