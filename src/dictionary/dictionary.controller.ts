@@ -30,6 +30,12 @@ export class DictionaryController {
     return this.dictionaryService.search(type, q, isMultiple);
   }
 
+  @Get('clear-cache')
+  clearCache() {
+    this.dictionaryService.clearCache();
+    return { success: true, message: 'Dictionary cache cleared' };
+  }
+
   @Get('hsk')
   async getHskWords(
     @Query('level', ParseIntPipe) level: number,

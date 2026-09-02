@@ -13,6 +13,10 @@ export class DictionaryService {
   private readonly radicalCache = new Map<string, any[]>();
   private wordOfTheDayCache: { date: string; word: any } | null = null;
 
+  clearCache() {
+    this.searchCache.clear();
+  }
+
   async search(type: string, q: string, multiple = false) {
     if (!q) return multiple ? [] : null;
     const cleanQ = q.toLowerCase().trim();
