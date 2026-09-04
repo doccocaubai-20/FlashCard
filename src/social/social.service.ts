@@ -31,7 +31,7 @@ export class SocialService {
 
     return topStats.map((st) => {
       const currentStreak = st.currentStreak || 0;
-      const score = st.xp || (currentStreak * 100);
+      const score = st.xp || currentStreak * 100;
 
       return {
         id: st.user.id,
@@ -114,7 +114,9 @@ export class SocialService {
     }
 
     if (originalDeck.userId === userId) {
-      throw new BadRequestException('Bạn không thể nhập lại bộ từ vựng do chính bạn tạo!');
+      throw new BadRequestException(
+        'Bạn không thể nhập lại bộ từ vựng do chính bạn tạo!',
+      );
     }
 
     // Check if user already imported this deck previously to prevent spam
@@ -127,7 +129,9 @@ export class SocialService {
     });
 
     if (existingDeck) {
-      throw new BadRequestException('Bạn đã nhập bộ từ vựng này vào tài khoản rồi!');
+      throw new BadRequestException(
+        'Bạn đã nhập bộ từ vựng này vào tài khoản rồi!',
+      );
     }
 
     // 1. Create a copy of the deck for the importing user

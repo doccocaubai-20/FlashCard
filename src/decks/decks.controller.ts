@@ -17,8 +17,6 @@ import {
 import { DecksService } from './decks.service';
 import { AuthGuard } from '@nestjs/passport';
 import { CreateDeckDto } from './dto/create-deck.dto';
-import { SetMetadata } from '@nestjs/common';
-import { RolesGuard } from 'src/auth/guards/roles.guard';
 
 @Controller('api/decks')
 @UseGuards(AuthGuard('jwt'))
@@ -72,9 +70,17 @@ export class DecksController {
       throw new ForbiddenException('Bạn không có quyền truy cập bộ thẻ này!');
     }
     const limit = limitStr !== undefined ? parseInt(limitStr, 10) : undefined;
-    const offset = offsetStr !== undefined ? parseInt(offsetStr, 10) : undefined;
-    const topicId = topicIdStr !== undefined ? parseInt(topicIdStr, 10) : undefined;
-    return this.decksService.findFlashcardsByDeckId(id, limit, offset, topicId, search);
+    const offset =
+      offsetStr !== undefined ? parseInt(offsetStr, 10) : undefined;
+    const topicId =
+      topicIdStr !== undefined ? parseInt(topicIdStr, 10) : undefined;
+    return this.decksService.findFlashcardsByDeckId(
+      id,
+      limit,
+      offset,
+      topicId,
+      search,
+    );
   }
 
   @Patch(':id')
@@ -111,13 +117,6 @@ export class DecksController {
   remove(@Param('id', ParseIntPipe) id: number, @Req() req: any) {
     const currentUserId = req.user.id;
     return this.decksService.remove(+id, currentUserId, req.user.role);
-  }
-
-  @Delete('system/:id')
-  @UseGuards(RolesGuard)
-  @SetMetadata('roles', ['ADMIN'])
-  removeSystemDeck(@Param('id', ParseIntPipe) id: number) {
-    return this.decksService.removeSystemDeck(id);
   }
 
   @Post(':id/generate-paragraph')

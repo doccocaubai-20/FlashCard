@@ -71,10 +71,6 @@ export class UsersService {
     return result;
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} user`;
-  }
-
   async findOrCreateGoogleUser(data: {
     email: string;
     name: string;

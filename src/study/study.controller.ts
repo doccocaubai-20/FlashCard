@@ -31,7 +31,13 @@ export class StudyController {
       deckIdStr !== undefined ? parseInt(deckIdStr, 10) : undefined;
     const topicId =
       topicIdStr !== undefined ? parseInt(topicIdStr, 10) : undefined;
-    return this.studyService.getTodayCards(userId, tzOffset, extra, deckId, topicId);
+    return this.studyService.getTodayCards(
+      userId,
+      tzOffset,
+      extra,
+      deckId,
+      topicId,
+    );
   }
 
   @Get('all-cards')
@@ -46,13 +52,18 @@ export class StudyController {
     const userId = req.user.id;
     const deckId =
       deckIdStr !== undefined ? parseInt(deckIdStr, 10) : undefined;
-    const limit =
-      limitStr !== undefined ? parseInt(limitStr, 10) : undefined;
+    const limit = limitStr !== undefined ? parseInt(limitStr, 10) : undefined;
     const offset =
       offsetStr !== undefined ? parseInt(offsetStr, 10) : undefined;
     const topicId =
       topicIdStr !== undefined ? parseInt(topicIdStr, 10) : undefined;
-    return this.studyService.getAllCards(userId, deckId, limit, offset, topicId);
+    return this.studyService.getAllCards(
+      userId,
+      deckId,
+      limit,
+      offset,
+      topicId,
+    );
   }
 
   @Post('review')

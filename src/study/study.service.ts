@@ -68,9 +68,11 @@ export class StudyService {
           nextReviewDate: {
             lte: new Date(),
           },
-          flashcard: deckId 
-            ? { deckId, topicId: topicId ? topicId : undefined } 
-            : (topicId ? { topicId } : undefined),
+          flashcard: deckId
+            ? { deckId, topicId: topicId ? topicId : undefined }
+            : topicId
+              ? { topicId }
+              : undefined,
         },
         include: {
           flashcard: true,
@@ -88,9 +90,11 @@ export class StudyService {
             gte: startOfLocalToday,
             lte: endOfLocalToday,
           },
-          flashcard: deckId 
-            ? { deckId, topicId: topicId ? topicId : undefined } 
-            : (topicId ? { topicId } : undefined),
+          flashcard: deckId
+            ? { deckId, topicId: topicId ? topicId : undefined }
+            : topicId
+              ? { topicId }
+              : undefined,
         },
       }),
     ]);
@@ -241,12 +245,22 @@ export class StudyService {
     let cardLastReview = progress.lastReview;
 
     // Migration path: initialize values for existing SM-2 cards
-    if (progress.repetitions > 0 && progress.stability === 0 && progress.difficulty === 0) {
+    if (
+      progress.repetitions > 0 &&
+      progress.stability === 0 &&
+      progress.difficulty === 0
+    ) {
       cardStability = progress.interval || 1;
-      cardDifficulty = Math.max(1, Math.min(10, 11 - (progress.easeFactor - 1.3) * 5));
+      cardDifficulty = Math.max(
+        1,
+        Math.min(10, 11 - (progress.easeFactor - 1.3) * 5),
+      );
       cardLapses = 0;
       cardState = State.Review;
-      cardLastReview = new Date(progress.nextReviewDate.getTime() - (progress.interval || 1) * 24 * 60 * 60 * 1000);
+      cardLastReview = new Date(
+        progress.nextReviewDate.getTime() -
+          (progress.interval || 1) * 24 * 60 * 60 * 1000,
+      );
     }
 
     let elapsedDays = 0;
@@ -394,7 +408,13 @@ export class StudyService {
     };
   }
 
-  async getAllCards(userId: number, deckId?: number, limit?: number, offset?: number, topicId?: number) {
+  async getAllCards(
+    userId: number,
+    deckId?: number,
+    limit?: number,
+    offset?: number,
+    topicId?: number,
+  ) {
     let deckIds: number[];
     if (deckId !== undefined) {
       deckIds = [deckId];

@@ -13,10 +13,6 @@ export class DictionaryService {
   private readonly radicalCache = new Map<string, any[]>();
   private wordOfTheDayCache: { date: string; word: any } | null = null;
 
-  clearCache() {
-    this.searchCache.clear();
-  }
-
   async search(type: string, q: string, multiple = false) {
     if (!q) return multiple ? [] : null;
     const cleanQ = q.toLowerCase().trim();
@@ -37,16 +33,29 @@ export class DictionaryService {
         }
       } else {
         // Query Pinyin, Vietnamese meaning, and English translations concurrently
-        const [pinyinMatches, meaningMatches, englishMatches] = await Promise.all([
-          this.search('pinyin', q, true),
-          this.search('meaning', q, true),
-          this.search('english', q, true),
-        ]);
+        const [pinyinMatches, meaningMatches, englishMatches] =
+          await Promise.all([
+            this.search('pinyin', q, true),
+            this.search('meaning', q, true),
+            this.search('english', q, true),
+          ]);
 
         const combined = [
-          ...(Array.isArray(pinyinMatches) ? pinyinMatches : pinyinMatches ? [pinyinMatches] : []),
-          ...(Array.isArray(meaningMatches) ? meaningMatches : meaningMatches ? [meaningMatches] : []),
-          ...(Array.isArray(englishMatches) ? englishMatches : englishMatches ? [englishMatches] : []),
+          ...(Array.isArray(pinyinMatches)
+            ? pinyinMatches
+            : pinyinMatches
+              ? [pinyinMatches]
+              : []),
+          ...(Array.isArray(meaningMatches)
+            ? meaningMatches
+            : meaningMatches
+              ? [meaningMatches]
+              : []),
+          ...(Array.isArray(englishMatches)
+            ? englishMatches
+            : englishMatches
+              ? [englishMatches]
+              : []),
         ];
 
         const seen = new Set();
@@ -73,10 +82,7 @@ export class DictionaryService {
         where: {
           OR: [{ s: queryStr }, { t: queryStr }],
         },
-        orderBy: [
-          { hsk: { sort: 'asc', nulls: 'last' } },
-          { id: 'asc' }
-        ],
+        orderBy: [{ hsk: { sort: 'asc', nulls: 'last' } }, { id: 'asc' }],
       });
 
       if (exactMatches.length > 0) {
@@ -89,17 +95,15 @@ export class DictionaryService {
               { t: { startsWith: queryStr } },
             ],
           },
-          orderBy: [
-            { hsk: { sort: 'asc', nulls: 'last' } },
-            { s: 'asc' }
-          ],
+          orderBy: [{ hsk: { sort: 'asc', nulls: 'last' } }, { s: 'asc' }],
           take: 150,
         });
       }
     } else if (type === 'pinyin') {
       try {
         // Exact matches with tonal, numeric or tone-free pinyin, prioritizing HSK 1-7 and shorter words
-        const matches = await this.prisma.$queryRawUnsafe<any[]>(`
+        const matches = await this.prisma.$queryRawUnsafe<any[]>(
+          `
           SELECT id, s, t, p, pt, sp, vi, sv, en, hsk, "topicId"
           FROM "DictionaryWord"
           WHERE sp = $1 OR p = $1 OR pt = $1 OR sp LIKE $2
@@ -114,7 +118,10 @@ export class DictionaryService {
             LENGTH(s) ASC,
             id ASC
           LIMIT 150
-        `, cleanQ, `${cleanQ}%`);
+        `,
+          cleanQ,
+          `${cleanQ}%`,
+        );
         results = matches || [];
       } catch (err) {
         console.error('Pinyin search error:', err);
@@ -123,7 +130,8 @@ export class DictionaryService {
     } else if (type === 'meaning') {
       try {
         // Query ordered intelligently so HSK words and exact matches are always in the candidate set
-        const matches = await this.prisma.$queryRawUnsafe<any[]>(`
+        const matches = await this.prisma.$queryRawUnsafe<any[]>(
+          `
           SELECT id, s, t, p, pt, sp, vi, sv, en, hsk, "topicId"
           FROM "DictionaryWord"
           WHERE vi ILIKE $1 OR sv ILIKE $2
@@ -138,7 +146,7 @@ export class DictionaryService {
             LENGTH(s) ASC,
             LENGTH(vi) ASC
           LIMIT 150
-        `, 
+        `,
           `%${cleanQ}%`,
           `%${cleanQ}%`,
           cleanQ,
@@ -154,7 +162,8 @@ export class DictionaryService {
       }
     } else if (type === 'english') {
       try {
-        const enMatches = await this.prisma.$queryRawUnsafe<any[]>(`
+        const enMatches = await this.prisma.$queryRawUnsafe<any[]>(
+          `
           SELECT id, s, t, p, pt, sp, vi, sv, en, hsk, "topicId"
           FROM "DictionaryWord"
           WHERE array_to_string(en, ' ') ILIKE $1
@@ -167,7 +176,11 @@ export class DictionaryService {
             CASE WHEN hsk IS NOT NULL AND hsk > 0 THEN hsk ELSE 99 END ASC,
             LENGTH(s) ASC
           LIMIT 100
-        `, `%${cleanQ}%`, cleanQ, `%to ${cleanQ}%`);
+        `,
+          `%${cleanQ}%`,
+          cleanQ,
+          `%to ${cleanQ}%`,
+        );
         results = enMatches || [];
       } catch (err) {
         console.error('English search error:', err);
@@ -190,9 +203,11 @@ export class DictionaryService {
     // Fetch example sentences from DictionaryExample for the matching results
     if (enriched.length > 0) {
       try {
-        const itemsToFetch = multiple ? enriched.slice(0, 5) : enriched.slice(0, 1);
+        const itemsToFetch = multiple
+          ? enriched.slice(0, 5)
+          : enriched.slice(0, 1);
         const words = itemsToFetch.map((item) => item.s).filter(Boolean);
-        
+
         if (words.length > 0) {
           const examples = await this.prisma.dictionaryExample.findMany({
             where: {
@@ -215,7 +230,7 @@ export class DictionaryService {
                 ex.word === item.s ||
                 (ex.exampleHanzi && ex.exampleHanzi.includes(item.s)),
             );
-            
+
             // Limit to a pool of 5 matching examples, shuffle them, and display up to 3 sentences
             const pool = matchingExamples.slice(0, 5);
             const shuffled = [...pool].sort(() => Math.random() - 0.5);
@@ -255,7 +270,9 @@ export class DictionaryService {
     const sp = (item.sp || '').toLowerCase();
     const sv = (item.sv || '').toLowerCase();
     const vi = (item.vi || '').toLowerCase();
-    const enStr = Array.isArray(item.en) ? item.en.join(' ').toLowerCase() : (item.en || '').toLowerCase();
+    const enStr = Array.isArray(item.en)
+      ? item.en.join(' ').toLowerCase()
+      : (item.en || '').toLowerCase();
 
     let score = 0;
 
@@ -298,7 +315,10 @@ export class DictionaryService {
       score += 35000;
     } else {
       const escapedQ = qLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const wordBoundaryRegex = new RegExp(`(^|[^a-zà-ỹ0-9])${escapedQ}([^a-zà-ỹ0-9]|$)`, 'i');
+      const wordBoundaryRegex = new RegExp(
+        `(^|[^a-zà-ỹ0-9])${escapedQ}([^a-zà-ỹ0-9]|$)`,
+        'i',
+      );
       if (wordBoundaryRegex.test(vi)) {
         score += 20000;
       }
@@ -309,7 +329,11 @@ export class DictionaryService {
       const enLower = item.en.map((e: string) => e.toLowerCase());
       if (enLower.includes(qLower) || enLower.includes(`to ${qLower}`)) {
         score += 50000;
-      } else if (enLower.some((e: string) => e.startsWith(qLower) || e.startsWith(`to ${qLower}`))) {
+      } else if (
+        enLower.some(
+          (e: string) => e.startsWith(qLower) || e.startsWith(`to ${qLower}`),
+        )
+      ) {
         score += 30000;
       } else if (enStr.includes(qLower)) {
         score += 15000;

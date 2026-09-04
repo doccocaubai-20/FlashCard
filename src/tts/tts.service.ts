@@ -5,11 +5,11 @@ import * as crypto from 'crypto';
 // Voice mapping for high-quality Microsoft Neural voices
 const VOICE_MAP = {
   'zh-cn': { female: 'zh-CN-XiaoxiaoNeural', male: 'zh-CN-YunxiNeural' },
-  'zh': { female: 'zh-CN-XiaoxiaoNeural', male: 'zh-CN-YunxiNeural' },
+  zh: { female: 'zh-CN-XiaoxiaoNeural', male: 'zh-CN-YunxiNeural' },
   'en-us': { female: 'en-US-JennyNeural', male: 'en-US-GuyNeural' },
-  'en': { female: 'en-US-JennyNeural', male: 'en-US-GuyNeural' },
+  en: { female: 'en-US-JennyNeural', male: 'en-US-GuyNeural' },
   'vi-vn': { female: 'vi-VN-HoaiMyNeural', male: 'vi-VN-NamMinhNeural' },
-  'vi': { female: 'vi-VN-HoaiMyNeural', male: 'vi-VN-NamMinhNeural' },
+  vi: { female: 'vi-VN-HoaiMyNeural', male: 'vi-VN-NamMinhNeural' },
 };
 
 @Injectable()
@@ -35,7 +35,9 @@ export class TtsService {
       this.supabase = createClient(url, key);
       this.initializeBucket();
     } else {
-      this.logger.warn('Supabase credentials missing. TTS storage caching will be disabled.');
+      this.logger.warn(
+        'Supabase credentials missing. TTS storage caching will be disabled.',
+      );
     }
   }
 
@@ -45,21 +47,29 @@ export class TtsService {
   private async initializeBucket() {
     if (!this.supabase) return;
     try {
-      const { data: buckets, error: listError } = await this.supabase.storage.listBuckets();
+      const { data: buckets, error: listError } =
+        await this.supabase.storage.listBuckets();
       if (listError) throw listError;
 
-      const ttsBucket = buckets.find(b => b.name === 'tts');
+      const ttsBucket = buckets.find((b) => b.name === 'tts');
       if (!ttsBucket) {
-        this.logger.log('Supabase "tts" bucket not found. Creating public bucket...');
-        const { error: createError } = await this.supabase.storage.createBucket('tts', {
-          public: true,
-          allowedMimeTypes: ['audio/mpeg'],
-        });
+        this.logger.log(
+          'Supabase "tts" bucket not found. Creating public bucket...',
+        );
+        const { error: createError } = await this.supabase.storage.createBucket(
+          'tts',
+          {
+            public: true,
+            allowedMimeTypes: ['audio/mpeg'],
+          },
+        );
         if (createError) throw createError;
         this.logger.log('Created public "tts" bucket successfully.');
       }
     } catch (err) {
-      this.logger.error(`Failed to initialize Supabase "tts" bucket: ${err.message}`);
+      this.logger.error(
+        `Failed to initialize Supabase "tts" bucket: ${err.message}`,
+      );
     }
   }
 
@@ -113,16 +123,18 @@ export class TtsService {
     // 2. Check Supabase Storage Cache
     // Optimized: Attempt download directly to save 1 network round-trip (eliminating the HEAD check)
     if (this.supabase) {
-      const { data, error } = await this.supabase.storage.from('tts').download(fileName);
+      const { data, error } = await this.supabase.storage
+        .from('tts')
+        .download(fileName);
       if (!error && data) {
         this.logger.log(`TTS cache hit (Storage): "${cleanText.slice(0, 20)}"`);
         const arrayBuffer = await data.arrayBuffer();
         const buffer = Buffer.from(arrayBuffer);
-        
+
         if (onChunk) {
           onChunk(buffer);
         }
-        
+
         // Save to RAM cache
         if (this.cache.size >= this.MAX_CACHE_SIZE) {
           this.cache.delete(this.cache.keys().next().value);
@@ -137,7 +149,9 @@ export class TtsService {
     const voiceGroup = VOICE_MAP[langKey] || VOICE_MAP['zh'];
     const voice = gender === 'male' ? voiceGroup.male : voiceGroup.female;
 
-    this.logger.log(`TTS Cache Miss (Generating): "${cleanText.slice(0, 20)}..." voice=${voice}`);
+    this.logger.log(
+      `TTS Cache Miss (Generating): "${cleanText.slice(0, 20)}..." voice=${voice}`,
+    );
 
     try {
       const { Communicate } = await import('edge-tts-universal');
@@ -179,9 +193,13 @@ export class TtsService {
           })
           .then(({ error }) => {
             if (error) {
-              this.logger.error(`Failed to save TTS to Supabase Storage: ${error.message}`);
+              this.logger.error(
+                `Failed to save TTS to Supabase Storage: ${error.message}`,
+              );
             } else {
-              this.logger.log(`Saved TTS cache (Storage) for "${cleanText.slice(0, 20)}"`);
+              this.logger.log(
+                `Saved TTS cache (Storage) for "${cleanText.slice(0, 20)}"`,
+              );
             }
           });
       }

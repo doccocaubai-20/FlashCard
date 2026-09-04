@@ -126,6 +126,10 @@ export class FlashcardsController {
     @Query('refresh') refresh?: string,
   ) {
     const shouldRefresh = refresh === 'true';
-    return this.flashcardsService.generateExampleWithAI(req.user.id, id, shouldRefresh);
+    return this.flashcardsService.generateExampleWithAI(
+      req.user.id,
+      id,
+      shouldRefresh,
+    );
   }
 }

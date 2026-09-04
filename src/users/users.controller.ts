@@ -11,7 +11,6 @@ import {
   Body,
   Patch,
   Param,
-  Delete,
   ForbiddenException,
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
@@ -56,16 +55,6 @@ export class UsersController {
       );
     }
     return this.usersService.update(+id, updateUserDto);
-  }
-
-  @Delete(':id')
-  remove(@Param('id') id: string, @Req() req: any) {
-    if (req.user.id !== +id && req.user.role !== 'ADMIN') {
-      throw new ForbiddenException(
-        'Bạn không có quyền xóa tài khoản của người dùng khác!',
-      );
-    }
-    return this.usersService.remove(+id);
   }
 
   @Post('upload-avatar')

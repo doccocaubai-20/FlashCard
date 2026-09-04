@@ -11,7 +11,10 @@ const globalForPrisma = global as unknown as {
 };
 
 @Injectable()
-export class PrismaService extends PrismaClient implements OnModuleInit, OnModuleDestroy {
+export class PrismaService
+  extends PrismaClient
+  implements OnModuleInit, OnModuleDestroy
+{
   private pool: Pool;
 
   constructor() {
@@ -49,7 +52,9 @@ export class PrismaService extends PrismaClient implements OnModuleInit, OnModul
         });
       }
       if (!globalForPrisma.prismaAdapter) {
-        globalForPrisma.prismaAdapter = new PrismaPg(globalForPrisma.prismaPool);
+        globalForPrisma.prismaAdapter = new PrismaPg(
+          globalForPrisma.prismaPool,
+        );
       }
       pool = globalForPrisma.prismaPool;
       adapter = globalForPrisma.prismaAdapter;

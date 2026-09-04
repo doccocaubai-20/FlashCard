@@ -28,7 +28,11 @@ function mapFlashcardToFrontend(card: any) {
 
 let cachedSentences: any[] | null = null;
 
-function findExampleInCorpus(word: string): { exampleHanzi: string; examplePinyin: string; exampleMeaning: string } | null {
+function findExampleInCorpus(word: string): {
+  exampleHanzi: string;
+  examplePinyin: string;
+  exampleMeaning: string;
+} | null {
   if (!word) return null;
 
   if (!cachedSentences) {
@@ -78,10 +82,9 @@ function findExampleInCorpus(word: string): { exampleHanzi: string; examplePinyi
   return null;
 }
 
-
 @Injectable()
 export class FlashcardsService {
-  constructor(private readonly prisma: PrismaService) { }
+  constructor(private readonly prisma: PrismaService) {}
 
   async create(userId: number, role: string, data: any) {
     const deck = await this.prisma.deck.findUnique({
@@ -279,11 +282,13 @@ export class FlashcardsService {
     if (!apiKey) throw new Error('DeepSeek API Key chưa được cấu hình!');
 
     const isEnglish = language === 'EN';
-    let systemContent = 'You are a Chinese language teacher. Always respond with valid JSON arrays only.';
+    let systemContent =
+      'You are a Chinese language teacher. Always respond with valid JSON arrays only.';
     let prompt = '';
 
     if (isEnglish) {
-      systemContent = 'You are an English language teacher. Always respond with valid JSON arrays only.';
+      systemContent =
+        'You are an English language teacher. Always respond with valid JSON arrays only.';
       const excludeHint =
         excludeWords && excludeWords.length > 0
           ? `\n- TUYỆT ĐỐI KHÔNG ĐƯỢC chứa các từ vựng sau đây (tránh trùng lặp với thẻ đã có): ${excludeWords.join(', ')}`
@@ -407,7 +412,9 @@ Yêu cầu:
           word: flashcard.hanzi,
           pinyin: flashcard.pinyin || '',
           language: lang,
-          NOT: flashcard.exampleHanzi ? { exampleHanzi: flashcard.exampleHanzi } : undefined,
+          NOT: flashcard.exampleHanzi
+            ? { exampleHanzi: flashcard.exampleHanzi }
+            : undefined,
         },
         take: 5,
       });
@@ -420,7 +427,9 @@ Yêu cầu:
               contains: flashcard.hanzi,
             },
             language: lang,
-            NOT: flashcard.exampleHanzi ? { exampleHanzi: flashcard.exampleHanzi } : undefined,
+            NOT: flashcard.exampleHanzi
+              ? { exampleHanzi: flashcard.exampleHanzi }
+              : undefined,
           },
           take: 5,
         });
@@ -456,7 +465,9 @@ Yêu cầu:
       );
     }
 
-    const avoidSentence = flashcard.exampleHanzi ? flashcard.exampleHanzi.trim() : '';
+    const avoidSentence = flashcard.exampleHanzi
+      ? flashcard.exampleHanzi.trim()
+      : '';
     const avoidHintZH = avoidSentence
       ? `\nTUYỆT ĐỐI KHÔNG ĐƯỢC sử dụng hoặc trùng lặp với câu ví dụ hiện tại sau đây: "${avoidSentence}". Hãy tạo một câu ví dụ khác hoàn toàn mới.`
       : '';

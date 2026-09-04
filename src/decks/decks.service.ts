@@ -20,7 +20,7 @@ function removeDiacritics(str: string): string {
 
 @Injectable()
 export class DecksService {
-  constructor(private readonly prisma: PrismaService) { }
+  constructor(private readonly prisma: PrismaService) {}
 
   async create(userId: number, data: any, role = 'USER') {
     const isSystem = data.isSystem === true && role === 'ADMIN';
@@ -280,26 +280,6 @@ export class DecksService {
     });
   }
 
-  async removeSystemDeck(deckId: number) {
-    const deck = await this.prisma.deck.findUnique({
-      where: { id: deckId },
-    });
-
-    if (!deck) {
-      throw new NotFoundException('Không tìm thấy bộ thẻ!');
-    }
-
-    if (!deck.isSystem) {
-      throw new ForbiddenException(
-        'Chỉ có thể xóa bộ thẻ mặc định của hệ thống!',
-      );
-    }
-
-    return this.prisma.deck.delete({
-      where: { id: deckId },
-    });
-  }
-
   async generateParagraph(deckId: number, words: string[], userId: number) {
     const apiKey = process.env.DEEPSEEK_API_KEY;
     const model = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
@@ -440,7 +420,7 @@ Trong đó:
         isTimeout
           ? 'AI đang bận phản hồi chậm, vui lòng thử lại sau!'
           : 'Lỗi khi kết nối với AI để tạo đoạn văn: ' +
-          (error.message || error),
+              (error.message || error),
         HttpStatus.INTERNAL_SERVER_ERROR,
       );
     }
@@ -613,7 +593,10 @@ Trong đó:
         );
       }
 
-      contentStr = contentStr.replace(/```json/g, '').replace(/```/g, '').trim();
+      contentStr = contentStr
+        .replace(/```json/g, '')
+        .replace(/```/g, '')
+        .trim();
 
       const parsed = JSON.parse(contentStr);
       if (!parsed || !Array.isArray(parsed.words)) {
@@ -665,4 +648,3 @@ Trong đó:
     }
   }
 }
-

@@ -5,7 +5,10 @@ import { PrismaService } from 'src/prisma/prisma.service';
 export class WeakWordsService {
   constructor(private prisma: PrismaService) {}
 
-  upsert(userId: number, data: { hanzi: string; pinyin?: string; meaning?: string; source: string }) {
+  upsert(
+    userId: number,
+    data: { hanzi: string; pinyin?: string; meaning?: string; source: string },
+  ) {
     return this.prisma.userWeakWord.upsert({
       where: { userId_hanzi: { userId, hanzi: data.hanzi } },
       create: {

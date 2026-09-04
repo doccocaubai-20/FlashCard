@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Query, UseGuards, Req } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Query,
+  UseGuards,
+  Req,
+} from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { SkillLogsService } from './skill-logs.service';
 
@@ -18,7 +26,11 @@ export class SkillLogsController {
     @Query('skillType') skillType?: string,
     @Query('limit') limit?: string,
   ) {
-    return this.skillLogsService.findAll(req.user.id, skillType, limit ? parseInt(limit, 10) : 20);
+    return this.skillLogsService.findAll(
+      req.user.id,
+      skillType,
+      limit ? parseInt(limit, 10) : 20,
+    );
   }
 
   @Get('stats')

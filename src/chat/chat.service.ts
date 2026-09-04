@@ -180,23 +180,20 @@ Hãy trả lời thân thiện, mạch lạc, ngắn gọn và sử dụng Markd
     try {
       while (retries > 0) {
         try {
-          response = await fetch(
-            'https://api.deepseek.com/chat/completions',
-            {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-                Authorization: `Bearer ${apiKey}`,
-              },
-              body: JSON.stringify({
-                model,
-                messages: apiMessages,
-                temperature: 0.6,
-                max_tokens: 2000,
-              }),
-              signal: AbortSignal.timeout(25000),
+          response = await fetch('https://api.deepseek.com/chat/completions', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${apiKey}`,
             },
-          );
+            body: JSON.stringify({
+              model,
+              messages: apiMessages,
+              temperature: 0.6,
+              max_tokens: 2000,
+            }),
+            signal: AbortSignal.timeout(25000),
+          });
 
           if (response.ok) {
             break;

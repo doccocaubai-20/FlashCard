@@ -28,7 +28,11 @@ export class DictionaryHistoryController {
   ) {
     const pageNum = page ? parseInt(page, 10) : 1;
     const limitNum = limit ? parseInt(limit, 10) : 20;
-    return this.dictionaryHistoryService.findAll(req.user.id, pageNum, limitNum);
+    return this.dictionaryHistoryService.findAll(
+      req.user.id,
+      pageNum,
+      limitNum,
+    );
   }
 
   @Get('today-count')

@@ -104,7 +104,7 @@ export class HskExamService {
       }
 
       // Fetch answer key from /grade
-      let answerMap: Record<string, string> = {};
+      const answerMap: Record<string, string> = {};
       try {
         const gradeRes: any = await this.postJson(
           `https://api.xiehanzi.com/api/v1/hsk-tests/${testId}/grade`,
@@ -118,7 +118,9 @@ export class HskExamService {
           });
         }
       } catch (err) {
-        this.logger.warn(`Could not get grade key for ${testId}: ${err.message}`);
+        this.logger.warn(
+          `Could not get grade key for ${testId}: ${err.message}`,
+        );
       }
 
       // Format questions with imageUrls and correctAnswer
@@ -130,8 +132,12 @@ export class HskExamService {
             }
             if (q.images && q.images.length > 0) {
               q.imageUrls = q.images.map((imgRel: string) => {
-                const found = rawDetail.images?.find((item: any) => item.path === imgRel);
-                return found ? found.src : `https://static.xiehanzi.com/hsk-tests/${testId}/${imgRel}`;
+                const found = rawDetail.images?.find(
+                  (item: any) => item.path === imgRel,
+                );
+                return found
+                  ? found.src
+                  : `https://static.xiehanzi.com/hsk-tests/${testId}/${imgRel}`;
               });
             } else {
               q.imageUrls = [];
@@ -141,7 +147,18 @@ export class HskExamService {
       }
 
       rawDetail.answerMap = answerMap;
-      rawDetail.durationMinutes = level === 1 ? 35 : level === 2 ? 50 : level === 3 ? 85 : level === 4 ? 100 : level === 5 ? 125 : 140;
+      rawDetail.durationMinutes =
+        level === 1
+          ? 35
+          : level === 2
+            ? 50
+            : level === 3
+              ? 85
+              : level === 4
+                ? 100
+                : level === 5
+                  ? 125
+                  : 140;
 
       // Cache to disk
       try {
@@ -161,7 +178,9 @@ export class HskExamService {
       return rawDetail;
     } catch (e) {
       this.logger.error(`Failed to fetch exam ${testId}: ${e.message}`);
-      throw new NotFoundException(`Đề thi ${testId} không tồn tại hoặc lỗi tải.`);
+      throw new NotFoundException(
+        `Đề thi ${testId} không tồn tại hoặc lỗi tải.`,
+      );
     }
   }
 
@@ -182,7 +201,8 @@ export class HskExamService {
         secTotal++;
         totalQuestions++;
         const userChoice = answers[q.id] || null;
-        const expected = q.correctAnswer || (exam.answerMap && exam.answerMap[q.id]);
+        const expected =
+          q.correctAnswer || (exam.answerMap && exam.answerMap[q.id]);
 
         // Normalize comparison (handle True/False symbols vs boolean words)
         let isCorrect = false;
@@ -217,14 +237,23 @@ export class HskExamService {
 
       sectionsResult.push({
         id: sec.id,
-        title: sec.title || (sec.id === 'listening' ? 'Listening' : sec.id === 'reading' ? 'Reading' : 'Writing'),
+        title:
+          sec.title ||
+          (sec.id === 'listening'
+            ? 'Listening'
+            : sec.id === 'reading'
+              ? 'Reading'
+              : 'Writing'),
         correct: secCorrect,
         total: secTotal,
         questions: questionsResult,
       });
     });
 
-    const score = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
+    const score =
+      totalQuestions > 0
+        ? Math.round((correctCount / totalQuestions) * 100)
+        : 0;
 
     return {
       testId,
@@ -279,26 +308,28 @@ export class HskExamService {
   // Helper HTTP GET
   private fetchJson(url: string) {
     return new Promise((resolve, reject) => {
-      https.get(
-        url,
-        {
-          headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
-            Accept: 'application/json',
+      https
+        .get(
+          url,
+          {
+            headers: {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+              Accept: 'application/json',
+            },
           },
-        },
-        (res) => {
-          let body = '';
-          res.on('data', (c) => (body += c));
-          res.on('end', () => {
-            try {
-              resolve(JSON.parse(body));
-            } catch (e) {
-              reject(e);
-            }
-          });
-        },
-      ).on('error', reject);
+          (res) => {
+            let body = '';
+            res.on('data', (c) => (body += c));
+            res.on('end', () => {
+              try {
+                resolve(JSON.parse(body));
+              } catch (e) {
+                reject(e);
+              }
+            });
+          },
+        )
+        .on('error', reject);
     });
   }
 
@@ -322,7 +353,7 @@ export class HskExamService {
           res.on('end', () => {
             try {
               resolve(JSON.parse(body));
-            } catch (e) {
+            } catch (_e) {
               resolve(body);
             }
           });

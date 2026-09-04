@@ -15,8 +15,8 @@ export enum State {
 
 export interface Card {
   due: Date;
-  stability: number;   // S: Khả năng duy trì trí nhớ (tính bằng ngày)
-  difficulty: number;  // D: Độ khó của thẻ (1 -> 10)
+  stability: number; // S: Khả năng duy trì trí nhớ (tính bằng ngày)
+  difficulty: number; // D: Độ khó của thẻ (1 -> 10)
   elapsedDays: number; // t: Số ngày kể từ lần học gần nhất
   reps: number;
   lapses: number;
@@ -33,7 +33,7 @@ export class FSRS {
   // 17 tham số chuẩn của mô hình FSRS-4.5
   private w: number[] = [
     0.4072, 1.1829, 3.1262, 15.4722, 7.2102, 0.5316, 1.0651, 0.0234, 1.616,
-    0.1544, 1.0824, 1.9813, 0.0953, 0.2975, 2.2042, 0.2407, 2.9466
+    0.1544, 1.0824, 1.9813, 0.0953, 0.2975, 2.2042, 0.2407, 2.9466,
   ];
 
   private requestRetention: number; // Xác suất muốn nhớ lại (mặc định 90%)
@@ -69,15 +69,22 @@ export class FSRS {
   }
 
   // Tính Stability mới khi nhớ thành công (Good, Hard, Easy)
-  private nextRecallStability(d: number, s: number, r: number, rating: Rating): number {
+  private nextRecallStability(
+    d: number,
+    s: number,
+    r: number,
+    rating: Rating,
+  ): number {
     const hardPenalty = rating === Rating.Hard ? this.w[15] : 1;
     const easyBonus = rating === Rating.Easy ? this.w[16] : 1;
-    const modifier = 1 + Math.exp(this.w[8]) *
-      (11 - d) *
-      Math.pow(s, -this.w[9]) *
-      (Math.exp((1 - r) * this.w[10]) - 1) *
-      hardPenalty *
-      easyBonus;
+    const modifier =
+      1 +
+      Math.exp(this.w[8]) *
+        (11 - d) *
+        Math.pow(s, -this.w[9]) *
+        (Math.exp((1 - r) * this.w[10]) - 1) *
+        hardPenalty *
+        easyBonus;
     return s * modifier;
   }
 
@@ -93,12 +100,18 @@ export class FSRS {
 
   // Tính khoảng cách ngày ôn tập tiếp theo (Interval)
   private calculateInterval(stability: number): number {
-    const newInterval = (stability / this.factor) * (Math.pow(this.requestRetention, 1 / this.decay) - 1);
+    const newInterval =
+      (stability / this.factor) *
+      (Math.pow(this.requestRetention, 1 / this.decay) - 1);
     return Math.max(1, Math.round(newInterval));
   }
 
   // Hàm xử lý chính khi người dùng hoàn thành một lần ôn tập
-  public schedule(card: Card, rating: Rating, now: Date = new Date()): Record<Rating, SchedulingInfo> {
+  public schedule(
+    card: Card,
+    rating: Rating,
+    now: Date = new Date(),
+  ): Record<Rating, SchedulingInfo> {
     const result: Partial<Record<Rating, SchedulingInfo>> = {};
 
     const ratings = [Rating.Again, Rating.Hard, Rating.Good, Rating.Easy];
@@ -108,7 +121,7 @@ export class FSRS {
       let newDifficulty: number;
       let newState: State;
       let lapses = card.lapses;
-      let reps = card.reps + 1;
+      const reps = card.reps + 1;
 
       if (card.state === State.New) {
         const init = this.initCard(r);
@@ -116,20 +129,33 @@ export class FSRS {
         newDifficulty = init.difficulty;
         newState = r === Rating.Again ? State.Learning : State.Review;
       } else {
-        const retrievability = this.forgettingCurve(card.elapsedDays, card.stability);
+        const retrievability = this.forgettingCurve(
+          card.elapsedDays,
+          card.stability,
+        );
         newDifficulty = this.nextDifficulty(card.difficulty, r);
 
         if (r === Rating.Again) {
-          newStability = this.nextForgetStability(card.difficulty, card.stability, retrievability);
+          newStability = this.nextForgetStability(
+            card.difficulty,
+            card.stability,
+            retrievability,
+          );
           newState = State.Relearning;
           lapses += 1;
         } else {
-          newStability = this.nextRecallStability(card.difficulty, card.stability, retrievability, r);
+          newStability = this.nextRecallStability(
+            card.difficulty,
+            card.stability,
+            retrievability,
+            r,
+          );
           newState = State.Review;
         }
       }
 
-      const interval = newState === State.Review ? this.calculateInterval(newStability) : 1;
+      const interval =
+        newState === State.Review ? this.calculateInterval(newStability) : 1;
       const due = new Date(now.getTime() + interval * 24 * 60 * 60 * 1000);
 
       const nextCard: Card = {

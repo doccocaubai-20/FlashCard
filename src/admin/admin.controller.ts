@@ -26,11 +26,6 @@ export class AdminController {
     return this.adminService.getStats();
   }
 
-  @Get('users')
-  getAllUsers() {
-    return this.adminService.getAllUsers();
-  }
-
   @Patch('users/:id/role')
   updateUserRole(
     @Param('id', ParseIntPipe) id: number,

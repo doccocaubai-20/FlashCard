@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Query, UseGuards, Req } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Query,
+  UseGuards,
+  Req,
+} from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { GameRecordsService } from './game-records.service';
 
@@ -18,7 +26,11 @@ export class GameRecordsController {
     @Query('gameType') gameType?: string,
     @Query('limit') limit?: string,
   ) {
-    return this.gameRecordsService.findAll(req.user.id, gameType, limit ? parseInt(limit, 10) : 10);
+    return this.gameRecordsService.findAll(
+      req.user.id,
+      gameType,
+      limit ? parseInt(limit, 10) : 10,
+    );
   }
 
   @Get('best')
