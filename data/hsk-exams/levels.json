@@ -1,0 +1,28 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "count": 9
+    },
+    {
+      "level": 2,
+      "count": 7
+    },
+    {
+      "level": 3,
+      "count": 16
+    },
+    {
+      "level": 4,
+      "count": 6
+    },
+    {
+      "level": 5,
+      "count": 19
+    },
+    {
+      "level": 6,
+      "count": 22
+    }
+  ]
+}

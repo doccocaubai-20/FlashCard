@@ -1,0 +1,79 @@
+{
+  "items": [
+    {
+      "testId": "hsk4-1",
+      "title": "HSK 4 Test H41001",
+      "level": 4,
+      "questionCount": 100,
+      "listeningQuestionCount": 45,
+      "readingQuestionCount": 40,
+      "writingQuestionCount": 15,
+      "durationMinutes": 100,
+      "hasAudio": true,
+      "needsReview": true
+    },
+    {
+      "testId": "hsk4-2",
+      "title": "HSK 4 Test H41002",
+      "level": 4,
+      "questionCount": 100,
+      "listeningQuestionCount": 45,
+      "readingQuestionCount": 40,
+      "writingQuestionCount": 15,
+      "durationMinutes": 100,
+      "hasAudio": true,
+      "needsReview": true
+    },
+    {
+      "testId": "hsk4-3",
+      "title": "HSK 4 Test H41003",
+      "level": 4,
+      "questionCount": 100,
+      "listeningQuestionCount": 45,
+      "readingQuestionCount": 40,
+      "writingQuestionCount": 15,
+      "durationMinutes": 100,
+      "hasAudio": true,
+      "needsReview": true
+    },
+    {
+      "testId": "hsk4-4",
+      "title": "HSK 4 Test H41004",
+      "level": 4,
+      "questionCount": 100,
+      "listeningQuestionCount": 45,
+      "readingQuestionCount": 40,
+      "writingQuestionCount": 15,
+      "durationMinutes": 100,
+      "hasAudio": true,
+      "needsReview": true
+    },
+    {
+      "testId": "hsk4-5",
+      "title": "HSK 4 Test H41005",
+      "level": 4,
+      "questionCount": 100,
+      "listeningQuestionCount": 45,
+      "readingQuestionCount": 40,
+      "writingQuestionCount": 15,
+      "durationMinutes": 100,
+      "hasAudio": true,
+      "needsReview": true
+    },
+    {
+      "testId": "hsk4-6",
+      "title": "HSK 4 Test H41008",
+      "level": 4,
+      "questionCount": 100,
+      "listeningQuestionCount": 45,
+      "readingQuestionCount": 40,
+      "writingQuestionCount": 15,
+      "durationMinutes": 100,
+      "hasAudio": true,
+      "needsReview": true
+    }
+  ],
+  "page": 1,
+  "limit": 20,
+  "total": 6
+}

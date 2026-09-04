@@ -229,6 +229,7 @@ model UserQuest {
 model HskExamResult {
   id             Int      @id @default(autoincrement())
   userId         Int
+  testId         String?  // Mã đề thi, ví dụ: "hsk1-1"
   hskLevel       Int      // Cấp độ HSK (1-6)
   examTitle      String   // Tên đề thi (ví dụ: "Đề mô phỏng HSK 1 - Bộ đề 01")
   score          Int      // Điểm đạt được
@@ -236,6 +237,8 @@ model HskExamResult {
   correctAnswers Int      // Số câu đúng
   totalQuestions Int      // Tổng số câu hỏi
   duration       Int      // Thời gian làm bài (tính bằng giây)
+  sectionScores  Json?    // Chi tiết điểm từng kỹ năng
+  userAnswers    Json?    // Chi tiết câu trả lời của user
   completedAt    DateTime @default(now())
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
