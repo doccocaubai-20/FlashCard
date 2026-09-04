@@ -1,0 +1,1928 @@
+{
+  "testId": "hsk2-6",
+  "level": 2,
+  "title": "HSK 2 Test H21006",
+  "durationMinutes": 50,
+  "questionCount": 60,
+  "listeningQuestionCount": 35,
+  "readingQuestionCount": 25,
+  "writingQuestionCount": 0,
+  "audioUrl": "https://static.xiehanzi.com/hsk-audio/hsk2-6.mp3",
+  "sections": [
+    {
+      "id": "listening",
+      "title": "Listening",
+      "questions": [
+        {
+          "id": "hsk2-6-q001",
+          "number": 1,
+          "instruction": "一、听力\n第一部分\n第 1-10 题",
+          "prompt": null,
+          "options": [],
+          "images": [
+            "assets/image_p002_g03.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q001.mp3",
+          "needsReview": false,
+          "correctAnswer": "×",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p002_g03.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q002",
+          "number": 2,
+          "instruction": "一、听力\n第一部分\n第 1-10 题",
+          "prompt": null,
+          "options": [],
+          "images": [
+            "assets/image_p002_g04.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q002.mp3",
+          "needsReview": false,
+          "correctAnswer": "√",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p002_g04.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q003",
+          "number": 3,
+          "instruction": "一、听力\n第一部分\n第 1-10 题",
+          "prompt": null,
+          "options": [],
+          "images": [
+            "assets/image_003_xref_37.jpeg"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q003.mp3",
+          "needsReview": false,
+          "correctAnswer": "√",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_003_xref_37.jpeg"
+          ]
+        },
+        {
+          "id": "hsk2-6-q004",
+          "number": 4,
+          "instruction": "一、听力\n第一部分\n第 1-10 题",
+          "prompt": null,
+          "options": [],
+          "images": [
+            "assets/image_004_xref_36.jpeg"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q004.mp3",
+          "needsReview": false,
+          "correctAnswer": "×",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_004_xref_36.jpeg"
+          ]
+        },
+        {
+          "id": "hsk2-6-q005",
+          "number": 5,
+          "instruction": "一、听力\n第一部分\n第 1-10 题",
+          "prompt": null,
+          "options": [],
+          "images": [
+            "assets/image_p002_g07.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q005.mp3",
+          "needsReview": false,
+          "correctAnswer": "×",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p002_g07.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q006",
+          "number": 6,
+          "instruction": null,
+          "prompt": null,
+          "options": [],
+          "images": [
+            "assets/image_005_xref_54.jpeg"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q006.mp3",
+          "needsReview": false,
+          "correctAnswer": "×",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_005_xref_54.jpeg"
+          ]
+        },
+        {
+          "id": "hsk2-6-q007",
+          "number": 7,
+          "instruction": null,
+          "prompt": null,
+          "options": [],
+          "images": [
+            "assets/image_006_xref_53.jpeg"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q007.mp3",
+          "needsReview": false,
+          "correctAnswer": "×",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_006_xref_53.jpeg"
+          ]
+        },
+        {
+          "id": "hsk2-6-q008",
+          "number": 8,
+          "instruction": null,
+          "prompt": null,
+          "options": [],
+          "images": [
+            "assets/image_p003_g03.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q008.mp3",
+          "needsReview": false,
+          "correctAnswer": "√",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p003_g03.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q009",
+          "number": 9,
+          "instruction": null,
+          "prompt": null,
+          "options": [],
+          "images": [
+            "assets/image_p003_g04.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q009.mp3",
+          "needsReview": false,
+          "correctAnswer": "√",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p003_g04.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q010",
+          "number": 10,
+          "instruction": null,
+          "prompt": null,
+          "options": [],
+          "images": [
+            "assets/image_p003_g05.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q010.mp3",
+          "needsReview": false,
+          "correctAnswer": "√",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p003_g05.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q011",
+          "number": 11,
+          "instruction": "第二部分\n第 11-15 题",
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_007_xref_62.jpeg",
+            "assets/image_p004_g02.png",
+            "assets/image_p004_g04.png",
+            "assets/image_008_xref_68.jpeg",
+            "assets/image_p004_g05.png",
+            "assets/image_p004_g06.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q011.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_007_xref_62.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g02.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g04.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_008_xref_68.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g05.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g06.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q012",
+          "number": 12,
+          "instruction": "第二部分\n第 11-15 题",
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_007_xref_62.jpeg",
+            "assets/image_p004_g02.png",
+            "assets/image_p004_g04.png",
+            "assets/image_008_xref_68.jpeg",
+            "assets/image_p004_g05.png",
+            "assets/image_p004_g06.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q012.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_007_xref_62.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g02.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g04.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_008_xref_68.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g05.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g06.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q013",
+          "number": 13,
+          "instruction": "第二部分\n第 11-15 题",
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_007_xref_62.jpeg",
+            "assets/image_p004_g02.png",
+            "assets/image_p004_g04.png",
+            "assets/image_008_xref_68.jpeg",
+            "assets/image_p004_g05.png",
+            "assets/image_p004_g06.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q013.mp3",
+          "needsReview": false,
+          "correctAnswer": "E",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_007_xref_62.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g02.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g04.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_008_xref_68.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g05.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g06.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q014",
+          "number": 14,
+          "instruction": "第二部分\n第 11-15 题",
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_007_xref_62.jpeg",
+            "assets/image_p004_g02.png",
+            "assets/image_p004_g04.png",
+            "assets/image_008_xref_68.jpeg",
+            "assets/image_p004_g05.png",
+            "assets/image_p004_g06.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q014.mp3",
+          "needsReview": false,
+          "correctAnswer": "F",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_007_xref_62.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g02.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g04.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_008_xref_68.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g05.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g06.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q015",
+          "number": 15,
+          "instruction": "第二部分\n第 11-15 题",
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_007_xref_62.jpeg",
+            "assets/image_p004_g02.png",
+            "assets/image_p004_g04.png",
+            "assets/image_008_xref_68.jpeg",
+            "assets/image_p004_g05.png",
+            "assets/image_p004_g06.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q015.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_007_xref_62.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g02.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g04.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_008_xref_68.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g05.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p004_g06.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q016",
+          "number": 16,
+          "instruction": "第 16-20 题",
+          "prompt": "",
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_009_xref_88.jpeg",
+            "assets/image_p005_g01.png",
+            "assets/image_p005_g03.png",
+            "assets/image_010_xref_83.jpeg",
+            "assets/image_p005_g05.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q016.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_009_xref_88.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g01.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g03.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_010_xref_83.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g05.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q017",
+          "number": 17,
+          "instruction": "第 16-20 题",
+          "prompt": "",
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_009_xref_88.jpeg",
+            "assets/image_p005_g01.png",
+            "assets/image_p005_g03.png",
+            "assets/image_010_xref_83.jpeg",
+            "assets/image_p005_g05.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q017.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_009_xref_88.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g01.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g03.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_010_xref_83.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g05.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q018",
+          "number": 18,
+          "instruction": "第 16-20 题",
+          "prompt": "",
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_009_xref_88.jpeg",
+            "assets/image_p005_g01.png",
+            "assets/image_p005_g03.png",
+            "assets/image_010_xref_83.jpeg",
+            "assets/image_p005_g05.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q018.mp3",
+          "needsReview": false,
+          "correctAnswer": "E",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_009_xref_88.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g01.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g03.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_010_xref_83.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g05.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q019",
+          "number": 19,
+          "instruction": "第 16-20 题",
+          "prompt": "",
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_009_xref_88.jpeg",
+            "assets/image_p005_g01.png",
+            "assets/image_p005_g03.png",
+            "assets/image_010_xref_83.jpeg",
+            "assets/image_p005_g05.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q019.mp3",
+          "needsReview": false,
+          "correctAnswer": "D",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_009_xref_88.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g01.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g03.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_010_xref_83.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g05.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q020",
+          "number": 20,
+          "instruction": "第 16-20 题",
+          "prompt": "",
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_009_xref_88.jpeg",
+            "assets/image_p005_g01.png",
+            "assets/image_p005_g03.png",
+            "assets/image_010_xref_83.jpeg",
+            "assets/image_p005_g05.png"
+          ],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q020.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_009_xref_88.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g01.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g03.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_010_xref_83.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p005_g05.png"
+          ]
+        },
+        {
+          "id": "hsk2-6-q021",
+          "number": 21,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "太贵了"
+            },
+            {
+              "id": "B",
+              "text": "不好吃"
+            },
+            {
+              "id": "C",
+              "text": "已经好了"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q021.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q022",
+          "number": 22,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "找人"
+            },
+            {
+              "id": "B",
+              "text": "洗衣服"
+            },
+            {
+              "id": "C",
+              "text": "看电视"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q022.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q023",
+          "number": 23,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "阴"
+            },
+            {
+              "id": "B",
+              "text": "晴"
+            },
+            {
+              "id": "C",
+              "text": "下雨"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q023.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q024",
+          "number": 24,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "学生"
+            },
+            {
+              "id": "B",
+              "text": "妈妈"
+            },
+            {
+              "id": "C",
+              "text": "男朋友"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q024.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q025",
+          "number": 25,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "写字"
+            },
+            {
+              "id": "B",
+              "text": "唱歌"
+            },
+            {
+              "id": "C",
+              "text": "跳舞"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q025.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q026",
+          "number": 26,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "白"
+            },
+            {
+              "id": "B",
+              "text": "雪"
+            },
+            {
+              "id": "C",
+              "text": "张"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q026.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q027",
+          "number": 27,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "2007年"
+            },
+            {
+              "id": "B",
+              "text": "2008年"
+            },
+            {
+              "id": "C",
+              "text": "2009年"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q027.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q028",
+          "number": 28,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "800元"
+            },
+            {
+              "id": "B",
+              "text": "5000元"
+            },
+            {
+              "id": "C",
+              "text": "5800元"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q028.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q029",
+          "number": 29,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "坐船"
+            },
+            {
+              "id": "B",
+              "text": "坐飞机"
+            },
+            {
+              "id": "C",
+              "text": "坐出租车"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q029.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q030",
+          "number": 30,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "医院"
+            },
+            {
+              "id": "B",
+              "text": "学校"
+            },
+            {
+              "id": "C",
+              "text": "饭馆儿"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q030.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q031",
+          "number": 31,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "yǐzi shang 椅子 上"
+            },
+            {
+              "id": "B",
+              "text": "zhuōzi hòumiàn 桌子 后面"
+            },
+            {
+              "id": "C",
+              "text": "zhuōzi qiánmiàn 桌子 前面"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q031.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q032",
+          "number": 32,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "mǐfàn 米饭"
+            },
+            {
+              "id": "B",
+              "text": "shuǐguǒ 水果"
+            },
+            {
+              "id": "C",
+              "text": "yángròu 羊肉"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q032.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q033",
+          "number": 33,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "xiūxi 休息"
+            },
+            {
+              "id": "B",
+              "text": "lǚyóu 旅游"
+            },
+            {
+              "id": "C",
+              "text": "qù kàn xuésheng 去 看 学生"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q033.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q034",
+          "number": 34,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "gēge 哥哥"
+            },
+            {
+              "id": "B",
+              "text": "mèimei 妹妹"
+            },
+            {
+              "id": "C",
+              "text": "qīzi 妻子"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q034.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q035",
+          "number": 35,
+          "instruction": null,
+          "prompt": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "méi yìsi 没 意思"
+            },
+            {
+              "id": "B",
+              "text": "kàn shū tài shǎo 看 书 太 少"
+            },
+            {
+              "id": "C",
+              "text": "bié kàn tài kuài 别 看 太 快"
+            }
+          ],
+          "images": [],
+          "audio": "https://static.xiehanzi.com/hsk-audio/hsk2-6/q035.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": []
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "Reading",
+      "questions": [
+        {
+          "id": "hsk2-6-q036",
+          "number": 36,
+          "instruction": "二、阅 读\n\n第一部分\n\n第 36-40 题",
+          "prompt": "Zhè zhāng  bàozhǐ shang yǒu wǒmen gōngsī de jièshào．\n36． 这 张  报纸  上 有 我们 公司 的 介绍。",
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_011_xref_105.jpeg",
+            "assets/image_012_xref_104.jpeg",
+            "assets/image_p008_g04.png",
+            "assets/image_p008_g03.png",
+            "assets/image_014_xref_107.jpeg",
+            "assets/image_013_xref_106.jpeg"
+          ],
+          "needsReview": false,
+          "correctAnswer": "E",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_011_xref_105.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_012_xref_104.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p008_g04.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p008_g03.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_014_xref_107.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_013_xref_106.jpeg"
+          ]
+        },
+        {
+          "id": "hsk2-6-q037",
+          "number": 37,
+          "instruction": "二、阅 读\n\n第一部分\n\n第 36-40 题",
+          "prompt": "Zhèyàng kàn shū  duì  yǎnjing bù hǎo．\n37． 这样 看 书 对 眼睛 不 好。",
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_011_xref_105.jpeg",
+            "assets/image_012_xref_104.jpeg",
+            "assets/image_p008_g04.png",
+            "assets/image_p008_g03.png",
+            "assets/image_014_xref_107.jpeg",
+            "assets/image_013_xref_106.jpeg"
+          ],
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_011_xref_105.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_012_xref_104.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p008_g04.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p008_g03.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_014_xref_107.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_013_xref_106.jpeg"
+          ]
+        },
+        {
+          "id": "hsk2-6-q038",
+          "number": 38,
+          "instruction": "二、阅 读\n\n第一部分\n\n第 36-40 题",
+          "prompt": "Fúwùyuán，  nǐmen  zhèr yǒu shénme hǎochī de cài？\n38． 服务员 ， 你们 这儿 有 什么 好吃 的 菜？",
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_011_xref_105.jpeg",
+            "assets/image_012_xref_104.jpeg",
+            "assets/image_p008_g04.png",
+            "assets/image_p008_g03.png",
+            "assets/image_014_xref_107.jpeg",
+            "assets/image_013_xref_106.jpeg"
+          ],
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_011_xref_105.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_012_xref_104.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p008_g04.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p008_g03.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_014_xref_107.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_013_xref_106.jpeg"
+          ]
+        },
+        {
+          "id": "hsk2-6-q039",
+          "number": 39,
+          "instruction": "二、阅 读\n\n第一部分\n\n第 36-40 题",
+          "prompt": "Nǐ  yě  ài tiàowǔ？   Tài hǎo le．\n39． 你 也 爱 跳舞？ 太 好 了。",
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_011_xref_105.jpeg",
+            "assets/image_012_xref_104.jpeg",
+            "assets/image_p008_g04.png",
+            "assets/image_p008_g03.png",
+            "assets/image_014_xref_107.jpeg",
+            "assets/image_013_xref_106.jpeg"
+          ],
+          "needsReview": false,
+          "correctAnswer": "F",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_011_xref_105.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_012_xref_104.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p008_g04.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p008_g03.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_014_xref_107.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_013_xref_106.jpeg"
+          ]
+        },
+        {
+          "id": "hsk2-6-q040",
+          "number": 40,
+          "instruction": "二、阅 读\n\n第一部分\n\n第 36-40 题",
+          "prompt": "Míngtiān shàngwǔ  xuéxiào jiàn，   zàijiàn．\n40． 明天  上午  学校 见， 再见。",
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "images": [
+            "assets/image_011_xref_105.jpeg",
+            "assets/image_012_xref_104.jpeg",
+            "assets/image_p008_g04.png",
+            "assets/image_p008_g03.png",
+            "assets/image_014_xref_107.jpeg",
+            "assets/image_013_xref_106.jpeg"
+          ],
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": [
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_011_xref_105.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_012_xref_104.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p008_g04.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_p008_g03.png",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_014_xref_107.jpeg",
+            "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk2-6/image_013_xref_106.jpeg"
+          ]
+        },
+        {
+          "id": "hsk2-6-q041",
+          "number": 41,
+          "instruction": "第 41-45 题",
+          "prompt": "孩子做错了事情，你要让他（  ）错在哪儿了。\nHáizi zuòcuòle shìqing, nǐ yào ràng tā (  ) cuò zài nǎr le.",
+          "options": [
+            {
+              "id": "A",
+              "text": "大家 (dàjiā)"
+            },
+            {
+              "id": "B",
+              "text": "知道 (zhīdào)"
+            },
+            {
+              "id": "C",
+              "text": "手机 (shǒujī)"
+            },
+            {
+              "id": "D",
+              "text": "旁边 (pángbiān)"
+            },
+            {
+              "id": "E",
+              "text": "贵 (guì)"
+            },
+            {
+              "id": "F",
+              "text": "离 (lí)"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q042",
+          "number": 42,
+          "instruction": "第 41-45 题",
+          "prompt": "她家（  ）公司很近，每天中午都回家吃饭。\nTā jiā (  ) gōngsī hěn jìn, měi tiān zhōngwǔ dōu huí jiā chī fàn.",
+          "options": [
+            {
+              "id": "A",
+              "text": "大家 (dàjiā)"
+            },
+            {
+              "id": "B",
+              "text": "知道 (zhīdào)"
+            },
+            {
+              "id": "C",
+              "text": "手机 (shǒujī)"
+            },
+            {
+              "id": "D",
+              "text": "旁边 (pángbiān)"
+            },
+            {
+              "id": "E",
+              "text": "贵 (guì)"
+            },
+            {
+              "id": "F",
+              "text": "离 (lí)"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "F",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q043",
+          "number": 43,
+          "instruction": "第 41-45 题",
+          "prompt": "我住345房间，就在你（  ）。\nWǒ zhù 345 fángjiān, jiù zài nǐ (  ).",
+          "options": [
+            {
+              "id": "A",
+              "text": "大家 (dàjiā)"
+            },
+            {
+              "id": "B",
+              "text": "知道 (zhīdào)"
+            },
+            {
+              "id": "C",
+              "text": "手机 (shǒujī)"
+            },
+            {
+              "id": "D",
+              "text": "旁边 (pángbiān)"
+            },
+            {
+              "id": "E",
+              "text": "贵 (guì)"
+            },
+            {
+              "id": "F",
+              "text": "离 (lí)"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "D",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q044",
+          "number": 44,
+          "instruction": "第 41-45 题",
+          "prompt": "他的回答很有意思，（  ）都笑了。\nTā de huídá hěn yǒu yìsi, (  ) dōu xiào le.",
+          "options": [
+            {
+              "id": "A",
+              "text": "大家 (dàjiā)"
+            },
+            {
+              "id": "B",
+              "text": "知道 (zhīdào)"
+            },
+            {
+              "id": "C",
+              "text": "手机 (shǒujī)"
+            },
+            {
+              "id": "D",
+              "text": "旁边 (pángbiān)"
+            },
+            {
+              "id": "E",
+              "text": "贵 (guì)"
+            },
+            {
+              "id": "F",
+              "text": "离 (lí)"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q045",
+          "number": 45,
+          "instruction": "第 41-45 题",
+          "prompt": "女：这个（  ）还有什么颜色的？\nZhège (  ) hái yǒu shénme yánsè de?\n男：还有红色和黑色的。\nHái yǒu hóngsè hé hēisè de.",
+          "options": [
+            {
+              "id": "A",
+              "text": "大家 (dàjiā)"
+            },
+            {
+              "id": "B",
+              "text": "知道 (zhīdào)"
+            },
+            {
+              "id": "C",
+              "text": "手机 (shǒujī)"
+            },
+            {
+              "id": "D",
+              "text": "旁边 (pángbiān)"
+            },
+            {
+              "id": "E",
+              "text": "贵 (guì)"
+            },
+            {
+              "id": "F",
+              "text": "离 (lí)"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q046",
+          "number": 46,
+          "instruction": "第 46-50 题",
+          "prompt": "Wǒ xiànzài zài chūzūchē shang, hěn kuài jiù dào huǒchēzhàn le. Nǐ zhǎo wǒ shénme shì?\n我现在在出租车上，很快就到火车站了。你找我什么事？\nTā yǐjīng dào huǒchēzhàn le.\n★ 他已经到火车站了。",
+          "options": [],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "×",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q047",
+          "number": 47,
+          "instruction": "第 46-50 题",
+          "prompt": "Yì nián yǒu 365 tiān, měi tiān dōu huì yǒu gāoxìng de shì, měi tiān zhǎo yìdiǎnr kuàilè, wǒmen jiù huì yǒu hěn duō kuàilè.\n一年有365天，每天都会有高兴的事，每天找一点儿快乐，我们就会有很多快乐。\nKuàilè jiù zài wǒmen shēnbiān.\n★ 快乐就在我们身边。",
+          "options": [],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "√",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q048",
+          "number": 48,
+          "instruction": "第 46-50 题",
+          "prompt": "Nàr yǒu yì jiā xīn kāi de shāngdiàn, wǒ zuótiān qùle yí cì, yīfu hěn piányi, xiàbān hòu wǒmen qù kànkan?\n那儿有一家新开的商店，我昨天去了一次，衣服很便宜，下班后我们去看看？\nTāmen zhèngzài mǎi yīfu.\n★ 她们正在买衣服。",
+          "options": [],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "×",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q049",
+          "number": 49,
+          "instruction": null,
+          "prompt": "Wǒ xǐhuan hē kāfēi, dànshì jīntiān tài wǎn le, gěi wǒ lái yì bēi niúnǎi\n我 喜欢 喝 咖啡， 但是 今天 太 晚 了， 给 我 来 一 杯 牛奶\nhǎo le, xièxie.\n好 了， 谢谢。\n\n★ Tā yào hē kāfēi.\n★ 她 要 喝 咖啡。",
+          "options": [],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "×",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q050",
+          "number": 50,
+          "instruction": null,
+          "prompt": "Duìbuqǐ, nàge rén wǒ yě bú rènshi, nín kěyǐ wènwen xiǎo Zhāng, tā\n对不起， 那个 人 我 也 不 认识， 您 可以 问问 小 张 ， 他\nzài zhèr gōngzuò de shíjiān cháng, rènshi de rén duō.\n在 这儿 工作 的 时间 长 ， 认识 的 人 多。\n\n★ Xiǎo Zhāng kěnéng rènshi nàge rén.\n★ 小 张 可能 认识 那个 人。",
+          "options": [],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "√",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q051",
+          "number": 51,
+          "instruction": "第51-55 题",
+          "prompt": "Bú kèqi, huānyíng nín xià cì zài lái.\n不 客气， 欢迎 您 下 次 再 来。",
+          "options": [
+            {
+              "id": "A",
+              "text": "Zuò gōnggòngqìchē qù, fēnzhōng jiù néng dào.\n坐 公共汽车 去，20 分钟 就 能 到。"
+            },
+            {
+              "id": "B",
+              "text": "Méi wèntí, nín yǒu shénme shì?\n没 问题， 您 有 什么 事？"
+            },
+            {
+              "id": "C",
+              "text": "Méi guānxi, mànman lái.\n没 关系 ， 慢慢 来。"
+            },
+            {
+              "id": "D",
+              "text": "Jīntiān wánr de hěn gāoxìng. Xièxie.\n今天 玩儿 得 很 高兴 。 谢谢 。"
+            },
+            {
+              "id": "E",
+              "text": "Tā zài nǎr ne? Nǐ kànjiàn tā le ma?\n他 在 哪儿 呢？ 你 看见 他 了 吗？"
+            },
+            {
+              "id": "F",
+              "text": "Nà dǎ diànhuà gàosu tā bié qù tī zúqiú le, míngtiān zài qù.\n那 打 电话 告诉 他 别 去 踢 足球 了， 明天 再 去。"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "D",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q052",
+          "number": 52,
+          "instruction": "第51-55 题",
+          "prompt": "Yí ge xīngqī le, dìdi hái méi xué huì yóuyǒng ne.\n一 个 星期 了， 弟弟 还 没 学 会 游泳 呢。",
+          "options": [
+            {
+              "id": "A",
+              "text": "Zuò gōnggòngqìchē qù, fēnzhōng jiù néng dào.\n坐 公共汽车 去，20 分钟 就 能 到。"
+            },
+            {
+              "id": "B",
+              "text": "Méi wèntí, nín yǒu shénme shì?\n没 问题， 您 有 什么 事？"
+            },
+            {
+              "id": "C",
+              "text": "Méi guānxi, mànman lái.\n没 关系 ， 慢慢 来。"
+            },
+            {
+              "id": "D",
+              "text": "Jīntiān wánr de hěn gāoxìng. Xièxie.\n今天 玩儿 得 很 高兴 。 谢谢 。"
+            },
+            {
+              "id": "E",
+              "text": "Tā zài nǎr ne? Nǐ kànjiàn tā le ma?\n他 在 哪儿 呢？ 你 看见 他 了 吗？"
+            },
+            {
+              "id": "F",
+              "text": "Nà dǎ diànhuà gàosu tā bié qù tī zúqiú le, míngtiān zài qù.\n那 打 电话 告诉 他 别 去 踢 足球 了， 明天 再 去。"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q053",
+          "number": 53,
+          "instruction": "第51-55 题",
+          "prompt": "Cóng zhèr dào jīchǎng yuǎn ma?\n从 这儿 到 机场 远 吗？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Zuò gōnggòngqìchē qù, fēnzhōng jiù néng dào.\n坐 公共汽车 去，20 分钟 就 能 到。"
+            },
+            {
+              "id": "B",
+              "text": "Méi wèntí, nín yǒu shénme shì?\n没 问题， 您 有 什么 事？"
+            },
+            {
+              "id": "C",
+              "text": "Méi guānxi, mànman lái.\n没 关系 ， 慢慢 来。"
+            },
+            {
+              "id": "D",
+              "text": "Jīntiān wánr de hěn gāoxìng. Xièxie.\n今天 玩儿 得 很 高兴 。 谢谢 。"
+            },
+            {
+              "id": "E",
+              "text": "Tā zài nǎr ne? Nǐ kànjiàn tā le ma?\n他 在 哪儿 呢？ 你 看见 他 了 吗？"
+            },
+            {
+              "id": "F",
+              "text": "Nà dǎ diànhuà gàosu tā bié qù tī zúqiú le, míngtiān zài qù.\n那 打 电话 告诉 他 别 去 踢 足球 了， 明天 再 去。"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q054",
+          "number": 54,
+          "instruction": "第51-55 题",
+          "prompt": "Wǒ juéde jīntiān tiānqì bú tài hǎo, hěn kěnéng huì xià yǔ.\n我 觉得 今天 天气 不 太 好， 很 可能 会 下 雨。",
+          "options": [
+            {
+              "id": "A",
+              "text": "Zuò gōnggòngqìchē qù, fēnzhōng jiù néng dào.\n坐 公共汽车 去，20 分钟 就 能 到。"
+            },
+            {
+              "id": "B",
+              "text": "Méi wèntí, nín yǒu shénme shì?\n没 问题， 您 有 什么 事？"
+            },
+            {
+              "id": "C",
+              "text": "Méi guānxi, mànman lái.\n没 关系 ， 慢慢 来。"
+            },
+            {
+              "id": "D",
+              "text": "Jīntiān wánr de hěn gāoxìng. Xièxie.\n今天 玩儿 得 很 高兴 。 谢谢 。"
+            },
+            {
+              "id": "E",
+              "text": "Tā zài nǎr ne? Nǐ kànjiàn tā le ma?\n他 在 哪儿 呢？ 你 看见 他 了 吗？"
+            },
+            {
+              "id": "F",
+              "text": "Nà dǎ diànhuà gàosu tā bié qù tī zúqiú le, míngtiān zài qù.\n那 打 电话 告诉 他 别 去 踢 足球 了， 明天 再 去。"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "F",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q055",
+          "number": 55,
+          "instruction": "第51-55 题",
+          "prompt": "Wéi? Qǐng wèn, nǐ huì shuō Hànyǔ ma?\n喂？ 请 问， 你 会 说 汉语 吗？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Zuò gōnggòngqìchē qù, fēnzhōng jiù néng dào.\n坐 公共汽车 去，20 分钟 就 能 到。"
+            },
+            {
+              "id": "B",
+              "text": "Méi wèntí, nín yǒu shénme shì?\n没 问题， 您 有 什么 事？"
+            },
+            {
+              "id": "C",
+              "text": "Méi guānxi, mànman lái.\n没 关系 ， 慢慢 来。"
+            },
+            {
+              "id": "D",
+              "text": "Jīntiān wánr de hěn gāoxìng. Xièxie.\n今天 玩儿 得 很 高兴 。 谢谢 。"
+            },
+            {
+              "id": "E",
+              "text": "Tā zài nǎr ne? Nǐ kànjiàn tā le ma?\n他 在 哪儿 呢？ 你 看见 他 了 吗？"
+            },
+            {
+              "id": "F",
+              "text": "Nà dǎ diànhuà gàosu tā bié qù tī zúqiú le, míngtiān zài qù.\n那 打 电话 告诉 他 别 去 踢 足球 了， 明天 再 去。"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q056",
+          "number": 56,
+          "instruction": "第 56-60 题",
+          "prompt": "Bù, wǒ qùnián qùguo Běijīng.\n不，我 去年 去过 北京。",
+          "options": [
+            {
+              "id": "A",
+              "text": "Bié shuì le, qǐchuáng, wǒmen qù pǎobù.\n别 睡 了， 起床 ， 我们 去 跑步。"
+            },
+            {
+              "id": "B",
+              "text": "Tiānqì zhème rè, wǒmen chī kuàir xīguā ba.\n天气 这么 热， 我们 吃 块儿 西瓜 吧。"
+            },
+            {
+              "id": "C",
+              "text": "Nà shì wǒ zhàngfu hé nǚ'ér, wǒmen zhǔnbèi yìqǐ qù kàn diànyǐng.\n那 是 我 丈夫 和 女儿， 我们 准备 一起 去 看 电影。"
+            },
+            {
+              "id": "D",
+              "text": "Zhè mén kè shénme shíhou kǎoshì?\n这 门 课 什么 时候 考试？"
+            },
+            {
+              "id": "E",
+              "text": "Nín shì dì-yī cì lái Zhōngguó ma?\n您 是 第一 次 来 中国 吗？"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "E",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q057",
+          "number": 57,
+          "instruction": "第 56-60 题",
+          "prompt": "Tài lěng le, míngtiān zài shuō ba.\n太 冷 了， 明天 再 说 吧。",
+          "options": [
+            {
+              "id": "A",
+              "text": "Bié shuì le, qǐchuáng, wǒmen qù pǎobù.\n别 睡 了， 起床 ， 我们 去 跑步。"
+            },
+            {
+              "id": "B",
+              "text": "Tiānqì zhème rè, wǒmen chī kuàir xīguā ba.\n天气 这么 热， 我们 吃 块儿 西瓜 吧。"
+            },
+            {
+              "id": "C",
+              "text": "Nà shì wǒ zhàngfu hé nǚ'ér, wǒmen zhǔnbèi yìqǐ qù kàn diànyǐng.\n那 是 我 丈夫 和 女儿， 我们 准备 一起 去 看 电影。"
+            },
+            {
+              "id": "D",
+              "text": "Zhè mén kè shénme shíhou kǎoshì?\n这 门 课 什么 时候 考试？"
+            },
+            {
+              "id": "E",
+              "text": "Nín shì dì-yī cì lái Zhōngguó ma?\n您 是 第一 次 来 中国 吗？"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q058",
+          "number": 58,
+          "instruction": "第 56-60 题",
+          "prompt": "Wàimiàn yǒu liǎng ge rén, shì zài děng nǐ ma?\n外面 有 两 个 人， 是 在 等 你 吗？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Bié shuì le, qǐchuáng, wǒmen qù pǎobù.\n别 睡 了， 起床 ， 我们 去 跑步。"
+            },
+            {
+              "id": "B",
+              "text": "Tiānqì zhème rè, wǒmen chī kuàir xīguā ba.\n天气 这么 热， 我们 吃 块儿 西瓜 吧。"
+            },
+            {
+              "id": "C",
+              "text": "Nà shì wǒ zhàngfu hé nǚ'ér, wǒmen zhǔnbèi yìqǐ qù kàn diànyǐng.\n那 是 我 丈夫 和 女儿， 我们 准备 一起 去 看 电影。"
+            },
+            {
+              "id": "D",
+              "text": "Zhè mén kè shénme shíhou kǎoshì?\n这 门 课 什么 时候 考试？"
+            },
+            {
+              "id": "E",
+              "text": "Nín shì dì-yī cì lái Zhōngguó ma?\n您 是 第一 次 来 中国 吗？"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q059",
+          "number": 59,
+          "instruction": "第 56-60 题",
+          "prompt": "Tīngshuō  shì      yuè      hào.\n听说 是 6 月 7 号。",
+          "options": [
+            {
+              "id": "A",
+              "text": "Bié shuì le, qǐchuáng, wǒmen qù pǎobù.\n别 睡 了， 起床 ， 我们 去 跑步。"
+            },
+            {
+              "id": "B",
+              "text": "Tiānqì zhème rè, wǒmen chī kuàir xīguā ba.\n天气 这么 热， 我们 吃 块儿 西瓜 吧。"
+            },
+            {
+              "id": "C",
+              "text": "Nà shì wǒ zhàngfu hé nǚ'ér, wǒmen zhǔnbèi yìqǐ qù kàn diànyǐng.\n那 是 我 丈夫 和 女儿， 我们 准备 一起 去 看 电影。"
+            },
+            {
+              "id": "D",
+              "text": "Zhè mén kè shénme shíhou kǎoshì?\n这 门 课 什么 时候 考试？"
+            },
+            {
+              "id": "E",
+              "text": "Nín shì dì-yī cì lái Zhōngguó ma?\n您 是 第一 次 来 中国 吗？"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "D",
+          "imageUrls": []
+        },
+        {
+          "id": "hsk2-6-q060",
+          "number": 60,
+          "instruction": "第 56-60 题",
+          "prompt": "Nǐmen yàobuyào hē diǎnr chá?\n你们 要不要 喝 点儿 茶？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Bié shuì le, qǐchuáng, wǒmen qù pǎobù.\n别 睡 了， 起床 ， 我们 去 跑步。"
+            },
+            {
+              "id": "B",
+              "text": "Tiānqì zhème rè, wǒmen chī kuàir xīguā ba.\n天气 这么 热， 我们 吃 块儿 西瓜 吧。"
+            },
+            {
+              "id": "C",
+              "text": "Nà shì wǒ zhàngfu hé nǚ'ér, wǒmen zhǔnbèi yìqǐ qù kàn diànyǐng.\n那 是 我 丈夫 和 女儿， 我们 准备 一起 去 看 电影。"
+            },
+            {
+              "id": "D",
+              "text": "Zhè mén kè shénme shíhou kǎoshì?\n这 门 课 什么 时候 考试？"
+            },
+            {
+              "id": "E",
+              "text": "Nín shì dì-yī cì lái Zhōngguó ma?\n您 是 第一 次 来 中国 吗？"
+            }
+          ],
+          "images": [],
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": []
+        }
+      ]
+    }
+  ],
+  "answerMap": {
+    "hsk2-6-q001": "×",
+    "hsk2-6-q002": "√",
+    "hsk2-6-q003": "√",
+    "hsk2-6-q004": "×",
+    "hsk2-6-q005": "×",
+    "hsk2-6-q006": "×",
+    "hsk2-6-q007": "×",
+    "hsk2-6-q008": "√",
+    "hsk2-6-q009": "√",
+    "hsk2-6-q010": "√",
+    "hsk2-6-q011": "B",
+    "hsk2-6-q012": "A",
+    "hsk2-6-q013": "E",
+    "hsk2-6-q014": "F",
+    "hsk2-6-q015": "C",
+    "hsk2-6-q016": "A",
+    "hsk2-6-q017": "B",
+    "hsk2-6-q018": "E",
+    "hsk2-6-q019": "D",
+    "hsk2-6-q020": "C",
+    "hsk2-6-q021": "C",
+    "hsk2-6-q022": "A",
+    "hsk2-6-q023": "B",
+    "hsk2-6-q024": "C",
+    "hsk2-6-q025": "B",
+    "hsk2-6-q026": "A",
+    "hsk2-6-q027": "C",
+    "hsk2-6-q028": "C",
+    "hsk2-6-q029": "A",
+    "hsk2-6-q030": "B",
+    "hsk2-6-q031": "B",
+    "hsk2-6-q032": "A",
+    "hsk2-6-q033": "B",
+    "hsk2-6-q034": "A",
+    "hsk2-6-q035": "C",
+    "hsk2-6-q036": "E",
+    "hsk2-6-q037": "B",
+    "hsk2-6-q038": "C",
+    "hsk2-6-q039": "F",
+    "hsk2-6-q040": "A",
+    "hsk2-6-q041": "B",
+    "hsk2-6-q042": "F",
+    "hsk2-6-q043": "D",
+    "hsk2-6-q044": "A",
+    "hsk2-6-q045": "C",
+    "hsk2-6-q046": "×",
+    "hsk2-6-q047": "√",
+    "hsk2-6-q048": "×",
+    "hsk2-6-q049": "×",
+    "hsk2-6-q050": "√",
+    "hsk2-6-q051": "D",
+    "hsk2-6-q052": "C",
+    "hsk2-6-q053": "A",
+    "hsk2-6-q054": "F",
+    "hsk2-6-q055": "B",
+    "hsk2-6-q056": "E",
+    "hsk2-6-q057": "A",
+    "hsk2-6-q058": "C",
+    "hsk2-6-q059": "D",
+    "hsk2-6-q060": "B"
+  },
+  "syncedAt": "2026-09-04T10:15:34.720Z"
+}
