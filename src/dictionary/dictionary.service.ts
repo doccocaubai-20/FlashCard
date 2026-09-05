@@ -425,7 +425,7 @@ export class DictionaryService {
     return enriched;
   }
 
-  // Get Word of the Day (random HSK 1-3 word, cached per calendar day)
+  // Get Word of the Day (random HSK 1-7 word, cached per calendar day)
   async getWordOfTheDay() {
     const todayStr = new Date().toISOString().split('T')[0];
     if (this.wordOfTheDayCache && this.wordOfTheDayCache.date === todayStr) {
@@ -434,7 +434,7 @@ export class DictionaryService {
 
     const candidates = await this.prisma.dictionaryWord.findMany({
       where: {
-        hsk: { gte: 1, lte: 3 },
+        hsk: { gte: 1, lte: 7 },
       },
     });
     const shortCandidates = candidates.filter((c) => c.s && c.s.length <= 2);
