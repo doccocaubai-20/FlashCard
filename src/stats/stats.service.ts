@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, BadRequestException } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 
 function getLocalDateString(date: Date, offsetMinutes: number): string {
@@ -317,18 +317,185 @@ export class StatsService {
     };
   }
 
-  async getDailyQuests(_userId: number, _tzOffset: number) {
-    // Return empty array since daily quests are removed
-    return [];
+  async getDailyQuests(userId: number, tzOffset: number) {
+    const localTodayStr = getLocalDateString(new Date(), tzOffset);
+
+    // 1. Fetch user's quests for today
+    let quests = await this.prisma.userQuest.findMany({
+      where: {
+        userId,
+        dateStr: localTodayStr,
+      },
+      orderBy: { id: 'asc' },
+    });
+
+    // 2. If no quests exist for today, initialize default 4 quests
+    if (quests.length === 0) {
+      const defaultQuestsData = [
+        {
+          userId,
+          dateStr: localTodayStr,
+          questType: 'STUDY_CARDS',
+          title: 'Ôn tập 20 thẻ bài',
+          description: 'Hoàn thành lượt ôn thẻ định kỳ hôm nay',
+          target: 20,
+          progress: 0,
+          xpReward: 30,
+          coinReward: 10,
+          completed: false,
+        },
+        {
+          userId,
+          dateStr: localTodayStr,
+          questType: 'DICTIONARY_LOOKUP',
+          title: 'Tra cứu 3 từ vựng mới',
+          description: 'Tìm hiểu từ mới và xem chiết tự chữ Hán',
+          target: 3,
+          progress: 0,
+          xpReward: 15,
+          coinReward: 5,
+          completed: false,
+        },
+        {
+          userId,
+          dateStr: localTodayStr,
+          questType: 'WRITE_PRACTICE',
+          title: 'Luyện viết 5 chữ Hán',
+          description: 'Tập viết đúng quy tắc bút thuận trên canvas',
+          target: 5,
+          progress: 0,
+          xpReward: 25,
+          coinReward: 10,
+          completed: false,
+        },
+        {
+          userId,
+          dateStr: localTodayStr,
+          questType: 'PLAY_GAME',
+          title: 'Thử thách 1 ván Đấu trường',
+          description: 'Rèn luyện phản xạ với Falling Words hoặc Quiz',
+          target: 1,
+          progress: 0,
+          xpReward: 20,
+          coinReward: 5,
+          completed: false,
+        },
+      ];
+
+      await this.prisma.userQuest.createMany({
+        data: defaultQuestsData,
+      });
+
+      quests = await this.prisma.userQuest.findMany({
+        where: {
+          userId,
+          dateStr: localTodayStr,
+        },
+        orderBy: { id: 'asc' },
+      });
+    }
+
+    // 3. Sync live progress from real study log table for STUDY_CARDS
+    const startOfToday = getUtcStartOfDay(localTodayStr, tzOffset);
+    const endOfToday = getUtcEndOfDay(localTodayStr, tzOffset);
+
+    const studyCount = await this.prisma.studyLog.count({
+      where: {
+        userId,
+        createdAt: {
+          gte: startOfToday,
+          lte: endOfToday,
+        },
+      },
+    });
+
+    return quests.map((q) => {
+      let liveProgress = q.progress;
+      if (q.questType === 'STUDY_CARDS') {
+        liveProgress = studyCount;
+      }
+      return {
+        id: q.id,
+        questType: q.questType,
+        title: q.title,
+        description: q.description,
+        target: q.target,
+        progress: liveProgress,
+        xpReward: q.xpReward,
+        coinReward: q.coinReward,
+        completed: q.completed,
+      };
+    });
+  }
+
+  async claimQuestReward(userId: number, questId: number) {
+    const quest = await this.prisma.userQuest.findFirst({
+      where: {
+        id: questId,
+        userId,
+      },
+    });
+
+    if (!quest) {
+      throw new BadRequestException('Nhiệm vụ không tồn tại');
+    }
+
+    if (quest.completed) {
+      throw new BadRequestException('Nhiệm vụ này đã được nhận thưởng hôm nay rồi');
+    }
+
+    // Mark as completed (claimed) and give rewards atomically
+    const [updatedQuest, updatedStats] = await this.prisma.$transaction([
+      this.prisma.userQuest.update({
+        where: { id: quest.id },
+        data: { completed: true },
+      }),
+      this.prisma.userStats.upsert({
+        where: { userId },
+        update: {
+          xp: { increment: quest.xpReward },
+          coins: { increment: quest.coinReward },
+        },
+        create: {
+          userId,
+          xp: quest.xpReward,
+          coins: quest.coinReward,
+        },
+      }),
+    ]);
+
+    return {
+      success: true,
+      quest: updatedQuest,
+      xp: updatedStats.xp,
+      coins: updatedStats.coins,
+    };
   }
 
   async incrementQuestProgress(
-    _userId: number,
-    _questType: string,
-    _amount: number,
-    _tzOffset: number,
+    userId: number,
+    questType: string,
+    amount: number,
+    tzOffset: number,
   ) {
-    // Return success object as no-op to prevent breaking existing calls
+    const localTodayStr = getLocalDateString(new Date(), tzOffset);
+    const quest = await this.prisma.userQuest.findFirst({
+      where: {
+        userId,
+        questType,
+        dateStr: localTodayStr,
+      },
+    });
+
+    if (quest && !quest.completed) {
+      await this.prisma.userQuest.update({
+        where: { id: quest.id },
+        data: {
+          progress: { increment: amount },
+        },
+      });
+    }
+
     return { success: true };
   }
 

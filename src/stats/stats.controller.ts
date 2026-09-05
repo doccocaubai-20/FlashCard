@@ -5,6 +5,7 @@ import {
   Post,
   Body,
   Query,
+  Param,
   UseGuards,
   Req,
 } from '@nestjs/common';
@@ -81,6 +82,13 @@ export class StatsController {
     const tzOffset =
       tzOffsetStr !== undefined ? parseInt(tzOffsetStr, 10) : 420;
     return this.statsService.getDailyQuests(userId, tzOffset);
+  }
+
+  @Post('quests/:id/claim')
+  @UseGuards(AuthGuard('jwt'))
+  async claimQuest(@Req() req: any, @Param('id') id: string) {
+    const userId = req.user.id;
+    return this.statsService.claimQuestReward(userId, parseInt(id, 10));
   }
 
   @Put('quests/progress')
