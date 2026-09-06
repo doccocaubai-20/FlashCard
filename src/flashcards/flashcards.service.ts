@@ -3,6 +3,7 @@ import {
   NotFoundException,
   ConflictException,
   ForbiddenException,
+  BadRequestException,
   HttpException,
   HttpStatus,
 } from '@nestjs/common';
@@ -97,6 +98,41 @@ export class FlashcardsService {
       throw new ForbiddenException('Bạn không có quyền thêm thẻ vào bộ này!');
     }
 
+    const cleanHanzi = (data.hanzi || '').trim();
+    const cleanPinyin = (data.pinyin || '').trim();
+
+    if (!cleanHanzi) {
+      throw new BadRequestException('Hán tự không được để trống!');
+    }
+
+    // Check duplicate by hanzi and pinyin in this deck
+    const existingCards = await this.prisma.flashcard.findMany({
+      where: {
+        deckId: data.deckId,
+        hanzi: {
+          equals: cleanHanzi,
+          mode: 'insensitive',
+        },
+      },
+    });
+
+    if (existingCards.length > 0) {
+      const duplicate = existingCards.find((c) => {
+        const cPinyin = (c.pinyin || '').trim().toLowerCase();
+        const inputPinyin = cleanPinyin.toLowerCase();
+        // If neither has pinyin, or both have identical pinyin, or one is empty
+        if (!cPinyin || !inputPinyin) return true;
+        return cPinyin === inputPinyin;
+      });
+
+      if (duplicate) {
+        const pinyinDisplay = duplicate.pinyin ? ` (${duplicate.pinyin})` : '';
+        throw new ConflictException(
+          `Từ vựng "${duplicate.hanzi}"${pinyinDisplay} đã tồn tại trong bộ thẻ này với nghĩa: "${duplicate.meaning}".`,
+        );
+      }
+    }
+
     // Auto-fill example sentence from local corpus if not provided (only for Chinese decks)
     if (deck.language === 'ZH' && !data.exampleHanzi) {
       const match = findExampleInCorpus(data.hanzi);
@@ -111,14 +147,15 @@ export class FlashcardsService {
       const card = await this.prisma.flashcard.create({
         data: {
           ...data,
-          pinyin: data.pinyin || '',
+          hanzi: cleanHanzi,
+          pinyin: cleanPinyin,
         },
       });
       return mapFlashcardToFrontend(card);
     } catch (error) {
       if (error instanceof Prisma.PrismaClientKnownRequestError) {
         if (error.code === 'P2002') {
-          throw new ConflictException('Flashcard already exists');
+          throw new ConflictException('Thẻ bài này đã tồn tại trong bộ bài này!');
         }
       }
       throw error;
@@ -140,9 +177,25 @@ export class FlashcardsService {
       throw new ForbiddenException('Bạn không có quyền thêm thẻ vào bộ này!');
     }
 
-    const dataToInsert = items.map((item) => {
-      let pinyin = item.pinyin || '';
-      let meaning = item.meaning || '';
+    // Fetch existing cards in this deck to avoid importing duplicate words
+    const existingCards = await this.prisma.flashcard.findMany({
+      where: { deckId },
+      select: { hanzi: true, pinyin: true },
+    });
+
+    const existingKeySet = new Set(
+      existingCards.map(
+        (c) =>
+          `${c.hanzi.trim().toLowerCase()}|${(c.pinyin || '').trim().toLowerCase()}`,
+      ),
+    );
+
+    const batchSeenSet = new Set<string>();
+    const dataToInsert: any[] = [];
+
+    for (const item of items) {
+      let pinyin = (item.pinyin || '').trim();
+      let meaning = (item.meaning || '').trim();
       if (item.back && !pinyin && !meaning) {
         const parts = item.back.split('|');
         if (parts.length >= 2) {
@@ -153,7 +206,17 @@ export class FlashcardsService {
         }
       }
 
-      const word = item.hanzi || item.front || '';
+      const word = (item.hanzi || item.front || '').trim();
+      if (!word) continue;
+
+      const dedupeKey = `${word.toLowerCase()}|${pinyin.toLowerCase()}`;
+
+      // Skip if already exists in database for this deck or duplicate in current batch
+      if (existingKeySet.has(dedupeKey) || batchSeenSet.has(dedupeKey)) {
+        continue;
+      }
+      batchSeenSet.add(dedupeKey);
+
       let exampleHanzi = item.exampleHanzi || null;
       let examplePinyin = item.examplePinyin || null;
       let exampleMeaning = item.exampleMeaning || null;
@@ -167,7 +230,7 @@ export class FlashcardsService {
         }
       }
 
-      return {
+      dataToInsert.push({
         deckId: deckId,
         hanzi: word,
         pinyin: pinyin,
@@ -178,13 +241,15 @@ export class FlashcardsService {
         exampleHanzi: exampleHanzi,
         examplePinyin: examplePinyin,
         exampleMeaning: exampleMeaning,
-      };
-    });
+      });
+    }
 
-    await this.prisma.flashcard.createMany({
-      data: dataToInsert,
-      skipDuplicates: true,
-    });
+    if (dataToInsert.length > 0) {
+      await this.prisma.flashcard.createMany({
+        data: dataToInsert,
+        skipDuplicates: true,
+      });
+    }
 
     const cards = await this.prisma.flashcard.findMany({
       where: { deckId },
@@ -243,6 +308,43 @@ export class FlashcardsService {
     if (role !== 'ADMIN') {
       delete cleanData.deck;
       delete cleanData.deckId;
+    }
+
+    if (data.hanzi !== undefined || data.pinyin !== undefined) {
+      const cleanHanzi = (data.hanzi !== undefined ? data.hanzi : card.hanzi).trim();
+      const cleanPinyin = (data.pinyin !== undefined ? data.pinyin : card.pinyin || '').trim();
+
+      if (cleanHanzi) {
+        cleanData.hanzi = cleanHanzi;
+        cleanData.pinyin = cleanPinyin;
+
+        const existingCards = await this.prisma.flashcard.findMany({
+          where: {
+            deckId: card.deckId,
+            id: { not: id },
+            hanzi: {
+              equals: cleanHanzi,
+              mode: 'insensitive',
+            },
+          },
+        });
+
+        if (existingCards.length > 0) {
+          const duplicate = existingCards.find((c) => {
+            const cPinyin = (c.pinyin || '').trim().toLowerCase();
+            const inputPinyin = cleanPinyin.toLowerCase();
+            if (!cPinyin || !inputPinyin) return true;
+            return cPinyin === inputPinyin;
+          });
+
+          if (duplicate) {
+            const pinyinDisplay = duplicate.pinyin ? ` (${duplicate.pinyin})` : '';
+            throw new ConflictException(
+              `Từ vựng "${duplicate.hanzi}"${pinyinDisplay} đã tồn tại trong bộ thẻ này với nghĩa: "${duplicate.meaning}".`,
+            );
+          }
+        }
+      }
     }
 
     const updatedCard = await this.prisma.flashcard.update({

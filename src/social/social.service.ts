@@ -22,6 +22,7 @@ export class SocialService {
             _count: {
               select: {
                 progress: true,
+                studyLogs: true,
               },
             },
           },
@@ -29,22 +30,47 @@ export class SocialService {
       },
     });
 
-    return topStats.map((st) => {
-      const currentStreak = st.currentStreak || 0;
-      const score = st.xp || currentStreak * 100;
+    const userIds = topStats
+      .filter((st) => st.user)
+      .map((st) => st.user.id);
 
-      return {
-        id: st.user.id,
-        name: st.user.name,
-        avatarUrl: st.user.avatarUrl,
-        currentStreak,
-        longestStreak: st.longestStreak || 0,
-        totalCardsLearned: st.user._count.progress,
-        totalRepetitions: 0,
-        score,
-        xp: st.xp,
-      };
+    // Aggregate repetitions from UserProgress per user
+    const repsByUser = await this.prisma.userProgress.groupBy({
+      by: ['userId'],
+      _sum: {
+        repetitions: true,
+      },
+      where: {
+        userId: { in: userIds },
+      },
     });
+
+    const repsMap = new Map<number, number>(
+      repsByUser.map((r) => [r.userId, r._sum.repetitions || 0]),
+    );
+
+    return topStats
+      .filter((st) => st.user)
+      .map((st) => {
+        const currentStreak = st.currentStreak || 0;
+        const score = st.xp || currentStreak * 100;
+
+        const repsFromProgress = repsMap.get(st.user.id) || 0;
+        const repsFromLogs = st.user._count?.studyLogs || 0;
+        const totalRepetitions = Math.max(repsFromLogs, repsFromProgress);
+
+        return {
+          id: st.user.id,
+          name: st.user.name,
+          avatarUrl: st.user.avatarUrl,
+          currentStreak,
+          longestStreak: st.longestStreak || 0,
+          totalCardsLearned: st.user._count?.progress || 0,
+          totalRepetitions,
+          score,
+          xp: st.xp,
+        };
+      });
   }
 
   async shareDeck(deckId: number, userId: number) {
