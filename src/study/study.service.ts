@@ -371,15 +371,35 @@ export class StudyService {
       },
     );
 
-    // Award XP and Coins based on Streak Combo Multiplier
-    let xpReward = 5;
-    let coinReward = 2;
-    if (currentStreak >= 14) {
-      xpReward = 10;
-      coinReward = 4;
-    } else if (currentStreak >= 7) {
-      xpReward = 7;
+    // Award XP and Coins based on Card Rating Quality + Streak Multiplier
+    const ratingVal = Number(body.rating);
+    let xpReward = 2;
+    let coinReward = 1;
+    if (ratingVal === 4) {
+      // Easy (Nhớ xuất sắc)
+      xpReward = 8;
       coinReward = 3;
+    } else if (ratingVal === 3) {
+      // Good (Nhớ tốt)
+      xpReward = 6;
+      coinReward = 2;
+    } else if (ratingVal === 2) {
+      // Hard (Nhớ khó)
+      xpReward = 4;
+      coinReward = 1;
+    } else {
+      // Again (Quên)
+      xpReward = 2;
+      coinReward = 1;
+    }
+
+    // Streak bonus
+    if (currentStreak >= 14) {
+      xpReward += 4;
+      coinReward += 2;
+    } else if (currentStreak >= 7) {
+      xpReward += 2;
+      coinReward += 1;
     }
 
     await this.statsService.updateXPAndCoins(userId, xpReward, coinReward);
@@ -405,6 +425,8 @@ export class StudyService {
       lapses: updatedProgress.lapses,
       state: updatedProgress.state,
       lastReview: updatedProgress.lastReview,
+      xpAwarded: xpReward,
+      coinsAwarded: coinReward,
     };
   }
 

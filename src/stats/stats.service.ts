@@ -222,6 +222,10 @@ export class StatsService {
   }
 
   async updateXPAndCoins(userId: number, xpToAdd: number, coinsToAdd: number) {
+    // Sanity guard: Clamp allowable rewards per request to prevent client-side inflation or abuse
+    const safeXp = Math.min(30, Math.max(0, Math.floor(xpToAdd || 0)));
+    const safeCoins = Math.min(10, Math.max(0, Math.floor(coinsToAdd || 0)));
+
     let stats = await this.prisma.userStats.findUnique({
       where: { userId },
     });
@@ -231,16 +235,16 @@ export class StatsService {
       });
     }
 
-    let finalXpToAdd = xpToAdd;
+    let finalXpToAdd = safeXp;
     if (stats.xpBoostUntil && stats.xpBoostUntil > new Date()) {
-      finalXpToAdd = xpToAdd * 2;
+      finalXpToAdd = safeXp * 2;
     }
 
     const updated = await this.prisma.userStats.update({
       where: { userId },
       data: {
         xp: { increment: finalXpToAdd },
-        coins: { increment: coinsToAdd },
+        coins: { increment: safeCoins },
       },
     });
     return {
