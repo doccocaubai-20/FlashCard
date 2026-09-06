@@ -307,36 +307,39 @@ export class DictionaryService {
       score += 15000;
     }
 
-    // 4. Meaning matching (Vietnamese)
-    const cleanViFirstPart = vi.split(/[/;,()]/)[0].trim();
-    if (cleanViFirstPart === qLower || vi === qLower) {
-      score += 50000;
-    } else if (cleanViFirstPart.startsWith(qLower) || vi.startsWith(qLower)) {
-      score += 35000;
-    } else {
-      const escapedQ = qLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const wordBoundaryRegex = new RegExp(
-        `(^|[^a-zà-ỹ0-9])${escapedQ}([^a-zà-ỹ0-9]|$)`,
-        'i',
-      );
-      if (wordBoundaryRegex.test(vi)) {
-        score += 20000;
-      }
-    }
-
-    // 5. English matching
-    if (Array.isArray(item.en)) {
-      const enLower = item.en.map((e: string) => e.toLowerCase());
-      if (enLower.includes(qLower) || enLower.includes(`to ${qLower}`)) {
+    // 4. Meaning matching (Vietnamese) and English matching (Only if query is not pure Hanzi)
+    const isHanziQuery = /[\u4e00-\u9fa5]/.test(q);
+    if (!isHanziQuery) {
+      const cleanViFirstPart = vi.split(/[/;,()]/)[0].trim();
+      if (cleanViFirstPart === qLower || vi === qLower) {
         score += 50000;
-      } else if (
-        enLower.some(
-          (e: string) => e.startsWith(qLower) || e.startsWith(`to ${qLower}`),
-        )
-      ) {
-        score += 30000;
-      } else if (enStr.includes(qLower)) {
-        score += 15000;
+      } else if (cleanViFirstPart.startsWith(qLower) || vi.startsWith(qLower)) {
+        score += 35000;
+      } else {
+        const escapedQ = qLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const wordBoundaryRegex = new RegExp(
+          `(^|[^a-zà-ỹ0-9])${escapedQ}([^a-zà-ỹ0-9]|$)`,
+          'i',
+        );
+        if (wordBoundaryRegex.test(vi)) {
+          score += 20000;
+        }
+      }
+
+      // 5. English matching
+      if (Array.isArray(item.en)) {
+        const enLower = item.en.map((e: string) => e.toLowerCase());
+        if (enLower.includes(qLower) || enLower.includes(`to ${qLower}`)) {
+          score += 50000;
+        } else if (
+          enLower.some(
+            (e: string) => e.startsWith(qLower) || e.startsWith(`to ${qLower}`),
+          )
+        ) {
+          score += 30000;
+        } else if (enStr.includes(qLower)) {
+          score += 15000;
+        }
       }
     }
 
@@ -345,9 +348,9 @@ export class DictionaryService {
       return 0;
     }
 
-    // 6. Dominant HSK 1-6 boost (core everyday words always rank highest)
-    if (item.hsk && item.hsk >= 1 && item.hsk <= 6) {
-      score += (7 - item.hsk) * 5000; // HSK 1 gets +30,000, HSK 2 gets +25,000, etc.
+    // 6. Dominant HSK boost: ALL HSK 1-9 words MUST ALWAYS prioritize over CC-CEDICT fallback words!
+    if (item.hsk != null && item.hsk > 0) {
+      score += 200000 + (10 - item.hsk) * 10000;
     }
 
     // 7. Shorter word length boost (single characters / concise words first)
