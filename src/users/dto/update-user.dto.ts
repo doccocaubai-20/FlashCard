@@ -22,4 +22,8 @@ export class UpdateUserDto {
   @IsString()
   @IsOptional()
   nativeLanguage?: string;
+
+  @IsString()
+  @IsOptional()
+  scholarPath?: string;
 }
