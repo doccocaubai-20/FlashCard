@@ -19,6 +19,7 @@ export class SocialService {
             id: true,
             name: true,
             avatarUrl: true,
+            scholarPath: true,
             _count: {
               select: {
                 progress: true,
@@ -63,6 +64,7 @@ export class SocialService {
           id: st.user.id,
           name: st.user.name,
           avatarUrl: st.user.avatarUrl,
+          scholarPath: st.user.scholarPath || 'imperial',
           currentStreak,
           longestStreak: st.longestStreak || 0,
           totalCardsLearned: st.user._count?.progress || 0,

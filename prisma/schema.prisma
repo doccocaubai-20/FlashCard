@@ -27,6 +27,7 @@ model User {
   updatedAt    DateTime     @updatedAt
   role  String @default("USER")
   nativeLanguage String @default("vi")
+  scholarPath    String @default("imperial")
 
   progress UserProgress[]
   stats    UserStats?

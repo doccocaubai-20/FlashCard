@@ -39,6 +39,7 @@ export class AuthService {
         avatarUrl: user.avatarUrl,
         age: user.age,
         nativeLanguage: user.nativeLanguage || 'vi',
+        scholarPath: user.scholarPath || 'imperial',
         authProvider: user.authProvider,
       },
     };

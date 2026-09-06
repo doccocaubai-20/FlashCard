@@ -52,6 +52,7 @@ export class UsersService {
         age: true,
         authProvider: true,
         nativeLanguage: true,
+        scholarPath: true,
         createdAt: true,
         role: true,
       },
