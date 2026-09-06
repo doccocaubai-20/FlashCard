@@ -364,6 +364,7 @@ export class StudyService {
             currentStreak: cStreak,
             longestStreak: lStreak,
             lastStudyDate: now,
+            water: { increment: 1 },
           },
         });
 

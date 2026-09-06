@@ -503,11 +503,12 @@ export class StatsService {
     return { success: true };
   }
 
-  async getGardenState(userId: number, tzOffset: number, all = false) {
+  async getGardenState(userId: number, tzOffset: number, all = true) {
     // 1. Get all progresses for the user
     const progresses = await this.prisma.userProgress.findMany({
       where: { userId },
       include: { flashcard: true },
+      orderBy: { nextReviewDate: 'asc' },
     });
 
     const now = new Date();
@@ -517,87 +518,63 @@ export class StatsService {
     let goldenTreesCount = 0;
     let overdueCount = 0;
 
-    const seeds: any[] = [];
-    const sprouts: any[] = [];
-    const saplings: any[] = [];
-    const goldens: any[] = [];
+    const displayPlants: any[] = [];
 
     for (const p of progresses) {
       const isOverdue = p.nextReviewDate <= now;
       if (isOverdue) overdueCount++;
 
+      let stage: 'seed' | 'sprout' | 'sapling' | 'golden';
       if (p.repetitions === 0) {
+        stage = 'seed';
         seedsCount++;
-        seeds.push(p);
       } else if (p.interval < 7) {
+        stage = 'sprout';
         sproutsCount++;
-        sprouts.push(p);
       } else if (p.interval < 30) {
+        stage = 'sapling';
         saplingsCount++;
-        saplings.push(p);
       } else {
+        stage = 'golden';
         goldenTreesCount++;
-        goldens.push(p);
       }
+
+      const growthPercentage =
+        stage === 'golden'
+          ? 100
+          : stage === 'sapling'
+            ? Math.min(95, Math.round(50 + ((p.interval - 7) / 23) * 45))
+            : stage === 'sprout'
+              ? Math.min(49, Math.round(15 + (p.interval / 7) * 34))
+              : 5;
+
+      displayPlants.push({
+        id: p.id,
+        cardId: p.flashcard.id,
+        hanzi: p.flashcard.hanzi,
+        pinyin: p.flashcard.pinyin || '',
+        meaning: p.flashcard.meaning || '',
+        exampleHanzi: p.flashcard.exampleHanzi || '',
+        examplePinyin: p.flashcard.examplePinyin || '',
+        exampleMeaning: p.flashcard.exampleMeaning || '',
+        audioUrl: p.flashcard.audioUrl || '',
+        stage,
+        interval: p.interval,
+        repetitions: p.repetitions,
+        nextReviewDate: p.nextReviewDate,
+        isOverdue,
+        growthPercentage,
+      });
     }
 
-    // Helper to shuffle array in-place
-    const shuffle = (arr: any[]) => {
-      const copy = [...arr];
-      for (let i = copy.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [copy[i], copy[j]] = [copy[j], copy[i]];
-      }
-      return copy;
-    };
-
-    const mapProgressToPlant = (
-      p: any,
-      stage: 'seed' | 'sprout' | 'sapling' | 'golden',
-    ) => ({
-      id: p.id,
-      hanzi: p.flashcard.hanzi,
-      pinyin: p.flashcard.pinyin || '',
-      meaning: p.flashcard.meaning || '',
-      stage,
-      interval: p.interval,
-      nextReviewDate: p.nextReviewDate,
-      isOverdue: p.nextReviewDate <= now,
+    // Sort: Overdue plants first, then by growth percentage desc
+    displayPlants.sort((a, b) => {
+      if (a.isOverdue && !b.isOverdue) return -1;
+      if (!a.isOverdue && b.isOverdue) return 1;
+      return b.growthPercentage - a.growthPercentage;
     });
 
-    const displayPlants: any[] = [];
-    if (all) {
-      // Map all progresses
-      for (const p of progresses) {
-        let stage: 'seed' | 'sprout' | 'sapling' | 'golden';
-        if (p.repetitions === 0) stage = 'seed';
-        else if (p.interval < 7) stage = 'sprout';
-        else if (p.interval < 30) stage = 'sapling';
-        else stage = 'golden';
-        displayPlants.push(mapProgressToPlant(p, stage));
-      }
-    } else {
-      // Pick up to 3 cards from each category to display (max 12 plants)
-      const selectedSeeds = shuffle(seeds).slice(0, 3);
-      const selectedSprouts = shuffle(sprouts).slice(0, 3);
-      const selectedSaplings = shuffle(saplings).slice(0, 3);
-      const selectedGoldens = shuffle(goldens).slice(0, 3);
-
-      displayPlants.push(
-        ...selectedSeeds.map((p) => mapProgressToPlant(p, 'seed')),
-      );
-      displayPlants.push(
-        ...selectedSprouts.map((p) => mapProgressToPlant(p, 'sprout')),
-      );
-      displayPlants.push(
-        ...selectedSaplings.map((p) => mapProgressToPlant(p, 'sapling')),
-      );
-      displayPlants.push(
-        ...selectedGoldens.map((p) => mapProgressToPlant(p, 'golden')),
-      );
-    }
-
-    // Get user stats to check harvest date
+    // Get user stats to check harvest date and resources
     let stats = await this.prisma.userStats.findUnique({
       where: { userId },
     });
@@ -607,13 +584,20 @@ export class StatsService {
       });
     }
 
+    const totalProductive = goldenTreesCount + saplingsCount + sproutsCount;
     let canHarvest = false;
     const harvestReward =
-      goldenTreesCount > 0
-        ? Math.min(20, Math.max(2, goldenTreesCount * 2))
+      totalProductive > 0
+        ? Math.min(
+            35,
+            Math.max(
+              5,
+              goldenTreesCount * 5 + saplingsCount * 2 + sproutsCount * 1,
+            ),
+          )
         : 0;
 
-    if (goldenTreesCount > 0) {
+    if (totalProductive > 0) {
       if (!stats.lastGardenHarvestDate) {
         canHarvest = true;
       } else {
@@ -632,13 +616,160 @@ export class StatsService {
       saplingsCount,
       goldenTreesCount,
       overdueCount,
+      totalPlants: progresses.length,
       plants: displayPlants,
       canHarvest,
       harvestReward,
       lastHarvestDate: stats.lastGardenHarvestDate,
-      water: stats.water,
-      fertilizer: stats.fertilizer,
-      harvestPoints: stats.harvestPoints,
+      water: stats.water ?? 0,
+      fertilizer: stats.fertilizer ?? 0,
+      coins: stats.coins ?? 0,
+      xp: stats.xp ?? 0,
+    };
+  }
+
+  async waterGarden(
+    userId: number,
+    body: { plantId?: number; waterAll?: boolean; tzOffset?: number },
+  ) {
+    const stats = await this.prisma.userStats.findUnique({
+      where: { userId },
+    });
+    if (!stats) throw new Error('Không tìm thấy thông tin người dùng.');
+
+    if (stats.water <= 0) {
+      throw new Error(
+        'Bạn đã hết nước tưới! Hãy học thêm flashcard để nhận thêm nước nhé. 💧',
+      );
+    }
+
+    const now = new Date();
+
+    if (body.waterAll) {
+      // Find all overdue plants
+      const overduePlants = await this.prisma.userProgress.findMany({
+        where: {
+          userId,
+          nextReviewDate: { lte: now },
+        },
+      });
+
+      if (overduePlants.length === 0) {
+        return {
+          success: true,
+          message:
+            'Tất cả cây trong vườn đều đang xanh tươi, chưa cần tưới thêm!',
+          wateredCount: 0,
+          remainingWater: stats.water,
+        };
+      }
+
+      const waterNeeded = Math.min(stats.water, overduePlants.length);
+      const targetIds = overduePlants.slice(0, waterNeeded).map((p) => p.id);
+
+      // Hydrate targets: postpone nextReviewDate by 1 day as hydration bonus
+      const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+      await this.prisma.userProgress.updateMany({
+        where: { id: { in: targetIds } },
+        data: { nextReviewDate: tomorrow },
+      });
+
+      const xpEarned = waterNeeded * 5;
+      const updated = await this.prisma.userStats.update({
+        where: { userId },
+        data: {
+          water: { decrement: waterNeeded },
+          xp: { increment: xpEarned },
+        },
+      });
+
+      return {
+        success: true,
+        message: `Đã tưới thành công ${waterNeeded} cây! Nhận được +${xpEarned} XP! 🌱`,
+        wateredCount: waterNeeded,
+        xpEarned,
+        remainingWater: updated.water,
+      };
+    }
+
+    // Single plant water
+    if (body.plantId) {
+      const plant = await this.prisma.userProgress.findFirst({
+        where: { id: body.plantId, userId },
+      });
+      if (!plant) throw new Error('Không tìm thấy cây này trong vườn.');
+
+      // Hydrate: postpone review date by 1 day if overdue
+      const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+      await this.prisma.userProgress.update({
+        where: { id: plant.id },
+        data: {
+          nextReviewDate:
+            plant.nextReviewDate <= now ? tomorrow : plant.nextReviewDate,
+        },
+      });
+
+      const updated = await this.prisma.userStats.update({
+        where: { userId },
+        data: {
+          water: { decrement: 1 },
+          xp: { increment: 5 },
+        },
+      });
+
+      return {
+        success: true,
+        message:
+          'Tưới nước thành công! Cây đã xanh tốt trở lại và bạn nhận được +5 XP! 💧',
+        wateredCount: 1,
+        xpEarned: 5,
+        remainingWater: updated.water,
+      };
+    }
+
+    throw new Error('Vui lòng chọn cây cần tưới hoặc chọn tưới tất cả.');
+  }
+
+  async fertilizeGarden(userId: number, body: { plantId: number }) {
+    const stats = await this.prisma.userStats.findUnique({
+      where: { userId },
+    });
+    if (!stats) throw new Error('Không tìm thấy thông tin người dùng.');
+
+    if (stats.fertilizer <= 0) {
+      throw new Error(
+        'Bạn đã hết phân bón! Duy trì chuỗi Streak hoặc hoàn thành nhiệm vụ để nhận thêm.',
+      );
+    }
+
+    const plant = await this.prisma.userProgress.findFirst({
+      where: { id: body.plantId, userId },
+    });
+    if (!plant) throw new Error('Không tìm thấy cây này trong vườn.');
+
+    // Accelerate plant growth: increment interval by 3 and repetitions by 1
+    await this.prisma.userProgress.update({
+      where: { id: plant.id },
+      data: {
+        interval: { increment: 3 },
+        repetitions: { increment: 1 },
+      },
+    });
+
+    const updated = await this.prisma.userStats.update({
+      where: { userId },
+      data: {
+        fertilizer: { decrement: 1 },
+        xp: { increment: 15 },
+      },
+    });
+
+    return {
+      success: true,
+      message:
+        'Bón phân thành công! Cây tăng trưởng vượt bậc và bạn nhận +15 XP! 🌱✨',
+      xpEarned: 15,
+      remainingFertilizer: updated.fertilizer,
     };
   }
 
@@ -647,21 +778,28 @@ export class StatsService {
       where: { userId },
     });
     if (!stats) {
-      throw new Error('User stats not found');
+      throw new Error('Không tìm thấy thông tin người dùng.');
     }
 
-    // Count actual golden trees
-    const goldenTreesCount = await this.prisma.userProgress.count({
-      where: {
-        userId,
-        repetitions: { gt: 0 },
-        interval: { gte: 30 },
-      },
+    // Count productive trees
+    const progresses = await this.prisma.userProgress.findMany({
+      where: { userId, repetitions: { gt: 0 } },
     });
 
-    if (goldenTreesCount === 0) {
+    let goldenTreesCount = 0;
+    let saplingsCount = 0;
+    let sproutsCount = 0;
+
+    for (const p of progresses) {
+      if (p.interval >= 30) goldenTreesCount++;
+      else if (p.interval >= 7) saplingsCount++;
+      else sproutsCount++;
+    }
+
+    const totalProductive = goldenTreesCount + saplingsCount + sproutsCount;
+    if (totalProductive === 0) {
       throw new Error(
-        'Bạn cần có ít nhất một Cây cổ thụ hoàng kim (ôn tập giãn cách >= 30 ngày) để thu hoạch!',
+        'Bạn cần học và ôn tập ít nhất một từ vựng để cây sinh trưởng trước khi thu hoạch!',
       );
     }
 
@@ -679,7 +817,10 @@ export class StatsService {
       }
     }
 
-    const reward = Math.min(20, Math.max(2, goldenTreesCount * 2));
+    const reward = Math.min(
+      35,
+      Math.max(5, goldenTreesCount * 5 + saplingsCount * 2 + sproutsCount * 1),
+    );
 
     const updated = await this.prisma.userStats.update({
       where: { userId },
@@ -690,8 +831,10 @@ export class StatsService {
     });
 
     return {
+      success: true,
       harvestedCoins: reward,
       newBalance: updated.coins,
+      message: `Thu hoạch thành công! Bạn nhận được +${reward} Xu ChongZi! 🪙`,
     };
   }
 

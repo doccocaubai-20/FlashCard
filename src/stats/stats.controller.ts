@@ -130,6 +130,26 @@ export class StatsController {
     return this.statsService.getGardenState(userId, tzOffset, all);
   }
 
+  @Post('garden/water')
+  @UseGuards(AuthGuard('jwt'))
+  async waterGarden(
+    @Req() req: any,
+    @Body() body: { plantId?: number; waterAll?: boolean; tzOffset?: number },
+  ) {
+    const userId = req.user.id;
+    return this.statsService.waterGarden(userId, body);
+  }
+
+  @Post('garden/fertilize')
+  @UseGuards(AuthGuard('jwt'))
+  async fertilizeGarden(
+    @Req() req: any,
+    @Body() body: { plantId: number },
+  ) {
+    const userId = req.user.id;
+    return this.statsService.fertilizeGarden(userId, body);
+  }
+
   @Post('garden/harvest')
   @UseGuards(AuthGuard('jwt'))
   async harvestGarden(@Req() req: any, @Body() body: { tzOffset?: number }) {
@@ -138,3 +158,4 @@ export class StatsController {
     return this.statsService.harvestGarden(userId, tzOffset);
   }
 }
+
