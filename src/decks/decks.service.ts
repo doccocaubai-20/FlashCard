@@ -20,7 +20,7 @@ function removeDiacritics(str: string): string {
 
 @Injectable()
 export class DecksService {
-  constructor(private readonly prisma: PrismaService) { }
+  constructor(private readonly prisma: PrismaService) {}
 
   async create(userId: number, data: any, role = 'USER') {
     const isSystem = data.isSystem === true && role === 'ADMIN';
@@ -436,7 +436,7 @@ Trong đó:
         isTimeout
           ? 'AI đang bận phản hồi chậm, vui lòng thử lại sau!'
           : 'Lỗi khi kết nối với AI để tạo đoạn văn: ' +
-          (error.message || error),
+              (error.message || error),
         HttpStatus.INTERNAL_SERVER_ERROR,
       );
     }

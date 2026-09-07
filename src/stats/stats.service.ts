@@ -1,8 +1,14 @@
 import { Injectable, BadRequestException } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 
-function getLocalDateString(date: Date, offsetMinutes: number): string {
-  const localTime = new Date(date.getTime() + offsetMinutes * 60 * 1000);
+function getLocalDateString(
+  date: Date | string | number,
+  offsetMinutes: number,
+): string {
+  if (!date) return '';
+  const d = new Date(date);
+  if (isNaN(d.getTime())) return '';
+  const localTime = new Date(d.getTime() + (offsetMinutes || 0) * 60 * 1000);
   return localTime.toISOString().split('T')[0];
 }
 
@@ -445,7 +451,9 @@ export class StatsService {
     }
 
     if (quest.completed) {
-      throw new BadRequestException('Nhiệm vụ này đã được nhận thưởng hôm nay rồi');
+      throw new BadRequestException(
+        'Nhiệm vụ này đã được nhận thưởng hôm nay rồi',
+      );
     }
 
     // Mark as completed (claimed) and give rewards atomically
@@ -503,11 +511,19 @@ export class StatsService {
     return { success: true };
   }
 
-  async getGardenState(userId: number, tzOffset: number, all = true) {
-    // 1. Get all progresses for the user
+  async getGardenState(userId: number, tzOffset: number, _all = true) {
+    // 1. Get all progresses for the user with deck info
     const progresses = await this.prisma.userProgress.findMany({
       where: { userId },
-      include: { flashcard: true },
+      include: {
+        flashcard: {
+          include: {
+            deck: {
+              select: { id: true, title: true, description: true },
+            },
+          },
+        },
+      },
       orderBy: { nextReviewDate: 'asc' },
     });
 
@@ -519,6 +535,7 @@ export class StatsService {
     let overdueCount = 0;
 
     const displayPlants: any[] = [];
+    const deckMap = new Map<number, any>();
 
     for (const p of progresses) {
       const isOverdue = p.nextReviewDate <= now;
@@ -548,9 +565,36 @@ export class StatsService {
               ? Math.min(49, Math.round(15 + (p.interval / 7) * 34))
               : 5;
 
+      const deckId = p.flashcard.deckId;
+      const deckTitle = p.flashcard.deck?.title || 'Bộ thẻ mặc định';
+
+      // Aggregate deck plot metrics
+      if (!deckMap.has(deckId)) {
+        deckMap.set(deckId, {
+          id: deckId,
+          title: deckTitle,
+          description: p.flashcard.deck?.description || '',
+          totalPlants: 0,
+          overdueCount: 0,
+          goldenCount: 0,
+          saplingCount: 0,
+          sproutCount: 0,
+          seedCount: 0,
+        });
+      }
+      const deckSummary = deckMap.get(deckId);
+      deckSummary.totalPlants++;
+      if (isOverdue) deckSummary.overdueCount++;
+      if (stage === 'golden') deckSummary.goldenCount++;
+      else if (stage === 'sapling') deckSummary.saplingCount++;
+      else if (stage === 'sprout') deckSummary.sproutCount++;
+      else deckSummary.seedCount++;
+
       displayPlants.push({
         id: p.id,
         cardId: p.flashcard.id,
+        deckId,
+        deckTitle,
         hanzi: p.flashcard.hanzi,
         pinyin: p.flashcard.pinyin || '',
         meaning: p.flashcard.meaning || '',
@@ -566,6 +610,19 @@ export class StatsService {
         growthPercentage,
       });
     }
+
+    // Calculate health rates for decks and convert to array
+    const decks = Array.from(deckMap.values())
+      .map((d) => ({
+        ...d,
+        healthRate:
+          d.totalPlants > 0
+            ? Math.round(
+                ((d.totalPlants - d.overdueCount) / d.totalPlants) * 100,
+              )
+            : 100,
+      }))
+      .sort((a, b) => b.totalPlants - a.totalPlants);
 
     // Sort: Overdue plants first, then by growth percentage desc
     displayPlants.sort((a, b) => {
@@ -618,6 +675,7 @@ export class StatsService {
       overdueCount,
       totalPlants: progresses.length,
       plants: displayPlants,
+      decks,
       canHarvest,
       harvestReward,
       lastHarvestDate: stats.lastGardenHarvestDate,
@@ -630,20 +688,73 @@ export class StatsService {
 
   async waterGarden(
     userId: number,
-    body: { plantId?: number; waterAll?: boolean; tzOffset?: number },
+    body: {
+      plantId?: number;
+      waterAll?: boolean;
+      deckId?: number;
+      tzOffset?: number;
+    },
   ) {
     const stats = await this.prisma.userStats.findUnique({
       where: { userId },
     });
-    if (!stats) throw new Error('Không tìm thấy thông tin người dùng.');
+    if (!stats) {
+      throw new BadRequestException('Không tìm thấy thông tin người dùng.');
+    }
 
     if (stats.water <= 0) {
-      throw new Error(
+      throw new BadRequestException(
         'Bạn đã hết nước tưới! Hãy học thêm flashcard để nhận thêm nước nhé. 💧',
       );
     }
 
     const now = new Date();
+
+    // Water entire deck plot
+    if (body.deckId) {
+      const overduePlants = await this.prisma.userProgress.findMany({
+        where: {
+          userId,
+          nextReviewDate: { lte: now },
+          flashcard: { deckId: body.deckId },
+        },
+      });
+
+      if (overduePlants.length === 0) {
+        return {
+          success: true,
+          message: 'Tất cả cây trong mảnh vườn này đều đang xanh tươi!',
+          wateredCount: 0,
+          remainingWater: stats.water,
+        };
+      }
+
+      const waterNeeded = Math.min(stats.water, overduePlants.length);
+      const targetIds = overduePlants.slice(0, waterNeeded).map((p) => p.id);
+
+      const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+      await this.prisma.userProgress.updateMany({
+        where: { id: { in: targetIds } },
+        data: { nextReviewDate: tomorrow },
+      });
+
+      const xpEarned = waterNeeded * 5;
+      const updated = await this.prisma.userStats.update({
+        where: { userId },
+        data: {
+          water: { decrement: waterNeeded },
+          xp: { increment: xpEarned },
+        },
+      });
+
+      return {
+        success: true,
+        message: `Đã tưới thành công ${waterNeeded} cây trong mảnh vườn! Nhận được +${xpEarned} XP! 🌱`,
+        wateredCount: waterNeeded,
+        xpEarned,
+        remainingWater: updated.water,
+      };
+    }
 
     if (body.waterAll) {
       // Find all overdue plants
@@ -734,10 +845,12 @@ export class StatsService {
     const stats = await this.prisma.userStats.findUnique({
       where: { userId },
     });
-    if (!stats) throw new Error('Không tìm thấy thông tin người dùng.');
+    if (!stats) {
+      throw new BadRequestException('Không tìm thấy thông tin người dùng.');
+    }
 
     if (stats.fertilizer <= 0) {
-      throw new Error(
+      throw new BadRequestException(
         'Bạn đã hết phân bón! Duy trì chuỗi Streak hoặc hoàn thành nhiệm vụ để nhận thêm.',
       );
     }
@@ -745,7 +858,9 @@ export class StatsService {
     const plant = await this.prisma.userProgress.findFirst({
       where: { id: body.plantId, userId },
     });
-    if (!plant) throw new Error('Không tìm thấy cây này trong vườn.');
+    if (!plant) {
+      throw new BadRequestException('Không tìm thấy cây này trong vườn.');
+    }
 
     // Accelerate plant growth: increment interval by 3 and repetitions by 1
     await this.prisma.userProgress.update({
@@ -778,7 +893,7 @@ export class StatsService {
       where: { userId },
     });
     if (!stats) {
-      throw new Error('Không tìm thấy thông tin người dùng.');
+      throw new BadRequestException('Không tìm thấy thông tin người dùng.');
     }
 
     // Count productive trees
@@ -798,7 +913,7 @@ export class StatsService {
 
     const totalProductive = goldenTreesCount + saplingsCount + sproutsCount;
     if (totalProductive === 0) {
-      throw new Error(
+      throw new BadRequestException(
         'Bạn cần học và ôn tập ít nhất một từ vựng để cây sinh trưởng trước khi thu hoạch!',
       );
     }
@@ -811,7 +926,7 @@ export class StatsService {
         tzOffset,
       );
       if (localTodayStr === localLastHarvestStr) {
-        throw new Error(
+        throw new BadRequestException(
           'Hôm nay bạn đã thu hoạch rồi, hãy quay lại vào ngày mai nhé!',
         );
       }

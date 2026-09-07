@@ -142,10 +142,7 @@ export class StatsController {
 
   @Post('garden/fertilize')
   @UseGuards(AuthGuard('jwt'))
-  async fertilizeGarden(
-    @Req() req: any,
-    @Body() body: { plantId: number },
-  ) {
+  async fertilizeGarden(@Req() req: any, @Body() body: { plantId: number }) {
     const userId = req.user.id;
     return this.statsService.fertilizeGarden(userId, body);
   }
@@ -158,4 +155,3 @@ export class StatsController {
     return this.statsService.harvestGarden(userId, tzOffset);
   }
 }
-

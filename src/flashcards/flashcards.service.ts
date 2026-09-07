@@ -155,7 +155,9 @@ export class FlashcardsService {
     } catch (error) {
       if (error instanceof Prisma.PrismaClientKnownRequestError) {
         if (error.code === 'P2002') {
-          throw new ConflictException('Thẻ bài này đã tồn tại trong bộ bài này!');
+          throw new ConflictException(
+            'Thẻ bài này đã tồn tại trong bộ bài này!',
+          );
         }
       }
       throw error;
@@ -311,8 +313,12 @@ export class FlashcardsService {
     }
 
     if (data.hanzi !== undefined || data.pinyin !== undefined) {
-      const cleanHanzi = (data.hanzi !== undefined ? data.hanzi : card.hanzi).trim();
-      const cleanPinyin = (data.pinyin !== undefined ? data.pinyin : card.pinyin || '').trim();
+      const cleanHanzi = (
+        data.hanzi !== undefined ? data.hanzi : card.hanzi
+      ).trim();
+      const cleanPinyin = (
+        data.pinyin !== undefined ? data.pinyin : card.pinyin || ''
+      ).trim();
 
       if (cleanHanzi) {
         cleanData.hanzi = cleanHanzi;
@@ -338,7 +344,9 @@ export class FlashcardsService {
           });
 
           if (duplicate) {
-            const pinyinDisplay = duplicate.pinyin ? ` (${duplicate.pinyin})` : '';
+            const pinyinDisplay = duplicate.pinyin
+              ? ` (${duplicate.pinyin})`
+              : '';
             throw new ConflictException(
               `Từ vựng "${duplicate.hanzi}"${pinyinDisplay} đã tồn tại trong bộ thẻ này với nghĩa: "${duplicate.meaning}".`,
             );

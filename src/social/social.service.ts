@@ -31,9 +31,7 @@ export class SocialService {
       },
     });
 
-    const userIds = topStats
-      .filter((st) => st.user)
-      .map((st) => st.user.id);
+    const userIds = topStats.filter((st) => st.user).map((st) => st.user.id);
 
     // Aggregate repetitions from UserProgress per user
     const repsByUser = await this.prisma.userProgress.groupBy({
