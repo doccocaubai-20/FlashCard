@@ -199,9 +199,14 @@ export class SocialService {
 
   async getPublicDecks(page = 1, limit = 20) {
     const skip = (page - 1) * limit;
+    const whereClause = {
+      isPublic: true,
+      isSystem: false,
+      shareCode: { not: null },
+    };
     const [decks, total] = await Promise.all([
       this.prisma.deck.findMany({
-        where: { isPublic: true },
+        where: whereClause,
         select: {
           id: true,
           title: true,
@@ -215,7 +220,7 @@ export class SocialService {
         skip,
         take: limit,
       }),
-      this.prisma.deck.count({ where: { isPublic: true } }),
+      this.prisma.deck.count({ where: whereClause }),
     ]);
     return { decks, total, page, totalPages: Math.ceil(total / limit) };
   }
