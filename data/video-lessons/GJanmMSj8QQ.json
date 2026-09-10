@@ -1,0 +1,2210 @@
+{
+  "id": "GJanmMSj8QQ",
+  "youtubeId": "GJanmMSj8QQ",
+  "title": "Ẩm thực đường phố Trung Quốc",
+  "titleHanzi": "中国街头小吃",
+  "level": 2,
+  "topic": "Podcast",
+  "channel": "Chinese Podcast Station",
+  "durationSec": 829,
+  "thumbnailUrl": "https://i.ytimg.com/vi/GJanmMSj8QQ/hqdefault.jpg",
+  "totalSentences": 274,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.42,
+      "end": 3.93,
+      "hanzi": "大家好，欢迎来到今天的节目。",
+      "pinyin": "dà jiā hǎo ， huān yíng lái dào jīn tiān de jié mù 。",
+      "vi": "Xin chào mọi người, chào mừng đến với chương trình hôm nay."
+    },
+    {
+      "id": 2,
+      "start": 4.15,
+      "end": 7.34,
+      "hanzi": "希望你现在的心情是轻松的，",
+      "pinyin": "xī wàng nǐ xiàn zài de xīn qíng shì qīng sōng de ，",
+      "vi": "Tôi hy vọng lúc này bạn đang có tâm trạng thoải mái,"
+    },
+    {
+      "id": 3,
+      "start": 7.45,
+      "end": 10.41,
+      "hanzi": "也希望你在听这个节目的时候，",
+      "pinyin": "yě xī wàng nǐ zài tīng zhè ge jié mù dì shí hòu ，",
+      "vi": "và khi nghe chương trình này,"
+    },
+    {
+      "id": 4,
+      "start": 10.59,
+      "end": 12.79,
+      "hanzi": "可以一边学中文，",
+      "pinyin": "kě yǐ yì biān xué zhōng wén ，",
+      "vi": "bạn có thể vừa học tiếng Trung"
+    },
+    {
+      "id": 5,
+      "start": 13.09,
+      "end": 17.66,
+      "hanzi": "一边想象你真的在中国的街上走着，",
+      "pinyin": "yì biān xiǎng xiàng nǐ zhēn de zài zhōng guó de jiē shàng zǒu zhe ，",
+      "vi": "vừa tưởng tượng mình đang dạo bước trên phố ở Trung Quốc,"
+    },
+    {
+      "id": 6,
+      "start": 17.91,
+      "end": 20.31,
+      "hanzi": "闻到很多好吃的味道，",
+      "pinyin": "wén dào hěn duō hǎo chī de wèi dào ，",
+      "vi": "ngửi thấy mùi thơm ngon,"
+    },
+    {
+      "id": 7,
+      "start": 20.53,
+      "end": 22.4,
+      "hanzi": "听到人们的声音，",
+      "pinyin": "tīng dào rén men de shēng yīn ，",
+      "vi": "nghe thấy tiếng nói của mọi người,"
+    },
+    {
+      "id": 8,
+      "start": 22.49,
+      "end": 24.49,
+      "hanzi": "看到很多小吃摊，",
+      "pinyin": "kàn dào hěn duō xiǎo chī tān ，",
+      "vi": "nhìn thấy nhiều quầy hàng ẩm thực,"
+    },
+    {
+      "id": 9,
+      "start": 24.71,
+      "end": 26.71,
+      "hanzi": "一边走一边想：",
+      "pinyin": "yì biān zǒu yì biān xiǎng ：",
+      "vi": "vừa đi vừa nghĩ:"
+    },
+    {
+      "id": 10,
+      "start": 26.96,
+      "end": 31,
+      "hanzi": "“哇，我今天要吃点什么好吃的呢？”",
+      "pinyin": "“ wā ， wǒ jīn tiān yào chī diǎn shén me hǎo chī de ne ？”",
+      "vi": "\"Ồ, hôm nay mình nên ăn món gì ngon nhỉ?\""
+    },
+    {
+      "id": 11,
+      "start": 31.63,
+      "end": 34.1,
+      "hanzi": "今天我们要聊的主题是",
+      "pinyin": "jīn tiān wǒ men yào liáo de zhǔ tí shì",
+      "vi": "Chủ đề hôm nay là"
+    },
+    {
+      "id": 12,
+      "start": 34.1,
+      "end": 35.87,
+      "hanzi": "“买街边小吃”。",
+      "pinyin": "“ mǎi jiē biān xiǎo chī ”。",
+      "vi": "\"Mua đồ ăn đường phố\"."
+    },
+    {
+      "id": 13,
+      "start": 36.01,
+      "end": 39.57,
+      "hanzi": "这个主题很简单，也很有意思，",
+      "pinyin": "zhè ge zhǔ tí hěn jiǎn dān ， yě hěn yǒu yì sī ，",
+      "vi": "Chủ đề này rất đơn giản, cũng rất thú vị,"
+    },
+    {
+      "id": 14,
+      "start": 39.87,
+      "end": 41.28,
+      "hanzi": "因为在中国，",
+      "pinyin": "yīn wèi zài zhōng guó ，",
+      "vi": "bởi vì ở Trung Quốc,"
+    },
+    {
+      "id": 15,
+      "start": 41.37,
+      "end": 45.84,
+      "hanzi": "街边小吃是很多人每天都会吃的东西。",
+      "pinyin": "jiē biān xiǎo chī shì hěn duō rén měi tiān dōu huì chī de dōng xī 。",
+      "vi": "đồ ăn đường phố là thứ nhiều người ăn mỗi ngày."
+    },
+    {
+      "id": 16,
+      "start": 46.15,
+      "end": 50,
+      "hanzi": "而且，用中文买小吃很容易，",
+      "pinyin": "ér qiě ， yòng zhōng wén mǎi xiǎo chī hěn róng yì ，",
+      "vi": "Hơn nữa, việc mua đồ ăn đường phố bằng tiếng Trung rất dễ dàng"
+    },
+    {
+      "id": 17,
+      "start": 50.34,
+      "end": 51.53,
+      "hanzi": "也很好玩。",
+      "pinyin": "yě hěn hǎo wán 。",
+      "vi": "và thú vị."
+    },
+    {
+      "id": 18,
+      "start": 51.77,
+      "end": 54.09,
+      "hanzi": "你不需要很多难的词，",
+      "pinyin": "nǐ bù xū yào hěn duō nán de cí ，",
+      "vi": "Bạn không cần nhiều từ vựng khó;"
+    },
+    {
+      "id": 19,
+      "start": 54.09,
+      "end": 56.58,
+      "hanzi": "你只需要一些简单的句子",
+      "pinyin": "nǐ zhī xū yào yì xiē jiǎn dān de jù zi",
+      "vi": "chỉ cần một vài câu đơn giản"
+    },
+    {
+      "id": 20,
+      "start": 56.58,
+      "end": 58.31,
+      "hanzi": "和一点点勇气，",
+      "pinyin": "hé yì diǎn diǎn yǒng qì ，",
+      "vi": "và một chút can đảm"
+    },
+    {
+      "id": 21,
+      "start": 58.31,
+      "end": 61.32,
+      "hanzi": "你就可以吃到很好吃的东西，",
+      "pinyin": "nǐ jiù kě yǐ chī dào hěn hǎo chī de dōng xī ，",
+      "vi": "để thưởng thức những món ăn ngon"
+    },
+    {
+      "id": 22,
+      "start": 61.32,
+      "end": 63.21,
+      "hanzi": "也可以练习中文。",
+      "pinyin": "yě kě yǐ liàn xí zhōng wén 。",
+      "vi": "và luyện tập tiếng Trung."
+    },
+    {
+      "id": 23,
+      "start": 63.57,
+      "end": 67.36,
+      "hanzi": "所以今天我们就来慢慢说，慢慢练，",
+      "pinyin": "suǒ yǐ jīn tiān wǒ men jiù lái màn màn shuō ， màn màn liàn ，",
+      "vi": "Vậy nên hôm nay, chúng ta hãy nói chậm rãi và luyện tập dần dần,"
+    },
+    {
+      "id": 24,
+      "start": 67.49,
+      "end": 69.49,
+      "hanzi": "让你在听的时候，",
+      "pinyin": "ràng nǐ zài tīng de shí hòu ，",
+      "vi": "để khi nghe, bạn"
+    },
+    {
+      "id": 25,
+      "start": 69.49,
+      "end": 71.98,
+      "hanzi": "也像真的在街上走一样。",
+      "pinyin": "yě xiàng zhēn de zài jiē shàng zǒu yí yàng 。",
+      "vi": "có thể cảm thấy như mình đang thực sự dạo bước trên phố."
+    },
+    {
+      "id": 26,
+      "start": 72.23,
+      "end": 73.49,
+      "hanzi": "你可以想象，",
+      "pinyin": "nǐ kě yǐ xiǎng xiàng ，",
+      "vi": "Bạn có thể tưởng tượng"
+    },
+    {
+      "id": 27,
+      "start": 73.6,
+      "end": 76.68,
+      "hanzi": "你现在在中国的一条小街上。",
+      "pinyin": "nǐ xiàn zài zài zhōng guó de yì tiáo xiǎo jiē shàng 。",
+      "vi": "mình đang ở trên một con phố nhỏ ở Trung Quốc."
+    },
+    {
+      "id": 28,
+      "start": 77.11,
+      "end": 79.15,
+      "hanzi": "天气不冷也不热，",
+      "pinyin": "tiān qì bù lěng yě bú rè ，",
+      "vi": "Thời tiết không quá nóng cũng không quá lạnh;"
+    },
+    {
+      "id": 29,
+      "start": 79.33,
+      "end": 81.67,
+      "hanzi": "是一个很舒服的傍晚。",
+      "pinyin": "shì yí gè hěn shū fú de bàng wǎn 。",
+      "vi": "đó là một buổi tối rất dễ chịu."
+    },
+    {
+      "id": 30,
+      "start": 82.36,
+      "end": 87.36,
+      "hanzi": "街边有灯，有风，也有小吃的香味。",
+      "pinyin": "jiē biān yǒu dēng ， yǒu fēng ， yě yǒu xiǎo chī de xiāng wèi 。",
+      "vi": "Có đèn đường, gió nhẹ và hương thơm của đồ ăn đường phố."
+    },
+    {
+      "id": 31,
+      "start": 87.45,
+      "end": 92.32,
+      "hanzi": "有卖烤串的、卖臭豆腐的、卖饺子的、",
+      "pinyin": "yǒu mài kǎo chuàn de 、 mài chòu dòu fu de 、 mài jiǎo zǐ de 、",
+      "vi": "Có những người bán hàng rong bán thịt xiên nướng, đậu phụ thối, sủi cảo,"
+    },
+    {
+      "id": 32,
+      "start": 92.32,
+      "end": 95.57,
+      "hanzi": "卖煎饼果子的、卖凉皮的，",
+      "pinyin": "mài jiān bǐng guǒ zǐ de 、 mài liáng pí de ，",
+      "vi": "bánh xèo Trung Quốc, mì lạnh"
+    },
+    {
+      "id": 33,
+      "start": 95.66,
+      "end": 97.37,
+      "hanzi": "还有卖奶茶的。",
+      "pinyin": "hái yǒu mài nǎi chá de 。",
+      "vi": "và trà sữa."
+    },
+    {
+      "id": 34,
+      "start": 97.69,
+      "end": 101.41,
+      "hanzi": "每一个小吃摊前面，都站着几个人，",
+      "pinyin": "měi yí gè xiǎo chī tān qián miàn ， dōu zhàn zhe jǐ gè rén ，",
+      "vi": "Trước mỗi quầy hàng, vài người đang đứng"
+    },
+    {
+      "id": 35,
+      "start": 101.9,
+      "end": 104.13,
+      "hanzi": "他们在等自己的食物，",
+      "pinyin": "tā men zài děng zì jǐ de shí wù ，",
+      "vi": "chờ đồ ăn"
+    },
+    {
+      "id": 36,
+      "start": 104.13,
+      "end": 106.13,
+      "hanzi": "也在和朋友聊天。",
+      "pinyin": "yě zài hé péng yǒu liáo tiān 。",
+      "vi": "và trò chuyện với bạn bè."
+    },
+    {
+      "id": 37,
+      "start": 106.13,
+      "end": 110.23,
+      "hanzi": "你也慢慢走过去，看看每一个摊子，",
+      "pinyin": "nǐ yě màn màn zǒu guò qù ， kàn kàn měi yí gè tān zi ，",
+      "vi": "Bạn chậm rãi bước tới, nhìn từng quầy hàng và"
+    },
+    {
+      "id": 38,
+      "start": 110.35,
+      "end": 113.27,
+      "hanzi": "慢慢想：“我要吃什么呢？”",
+      "pinyin": "màn màn xiǎng ：“ wǒ yào chī shén me ne ？”",
+      "vi": "tự hỏi: \"Mình nên ăn gì đây?\"."
+    },
+    {
+      "id": 39,
+      "start": 113.4,
+      "end": 115.56,
+      "hanzi": "你先看到一个烤串摊。",
+      "pinyin": "nǐ xiān kàn dào yí gè kǎo chuàn tān 。",
+      "vi": "Đầu tiên, bạn nhìn thấy một quầy bán xiên nướng."
+    },
+    {
+      "id": 40,
+      "start": 115.92,
+      "end": 118.43,
+      "hanzi": "烤串的味道真的很香，",
+      "pinyin": "kǎo chuàn de wèi dào zhēn de hěn xiāng ，",
+      "vi": "Những xiên thịt có mùi thơm phức;"
+    },
+    {
+      "id": 41,
+      "start": 118.56,
+      "end": 121.33,
+      "hanzi": "空气里都是烤肉的味道。",
+      "pinyin": "kōng qì lǐ dōu shì kǎo ròu de wèi dào 。",
+      "vi": "không khí tràn ngập mùi thịt nướng."
+    },
+    {
+      "id": 42,
+      "start": 121.78,
+      "end": 124.16,
+      "hanzi": "烤串老板很热情，",
+      "pinyin": "kǎo chuàn lǎo bǎn hěn rè qíng ，",
+      "vi": "Chủ quán rất thân thiện;"
+    },
+    {
+      "id": 43,
+      "start": 124.42,
+      "end": 126.74,
+      "hanzi": "他看见你，就对你说：",
+      "pinyin": "tā kàn jiàn nǐ ， jiù duì nǐ shuō ：",
+      "vi": "nhìn thấy bạn, anh ấy hỏi:"
+    },
+    {
+      "id": 44,
+      "start": 126.85,
+      "end": 129.32,
+      "hanzi": "“你好，要吃点什么？”",
+      "pinyin": "“ nǐ hǎo ， yào chī diǎn shén me ？”",
+      "vi": "\"Chào bạn, bạn muốn ăn gì?\"."
+    },
+    {
+      "id": 45,
+      "start": 129.45,
+      "end": 131.16,
+      "hanzi": "你有一点紧张，",
+      "pinyin": "nǐ yǒu yì diǎn jǐn zhāng ，",
+      "vi": "Bạn hơi lo lắng"
+    },
+    {
+      "id": 46,
+      "start": 131.59,
+      "end": 135.99,
+      "hanzi": "因为你想用中文点餐，但你也怕说错。",
+      "pinyin": "yīn wèi nǐ xiǎng yòng zhōng wén diǎn cān ， dàn nǐ yě pà shuō cuò 。",
+      "vi": "vì muốn gọi món bằng tiếng Trung, nhưng lại sợ nói sai."
+    },
+    {
+      "id": 47,
+      "start": 136.16,
+      "end": 139.28,
+      "hanzi": "但是没关系，我们来试试。",
+      "pinyin": "dàn shì méi guān xì ， wǒ men lái shì shì 。",
+      "vi": "Nhưng đừng lo, hãy thử xem."
+    },
+    {
+      "id": 48,
+      "start": 139.57,
+      "end": 140.81,
+      "hanzi": "你可以说：",
+      "pinyin": "nǐ kě yǐ shuō ：",
+      "vi": "Bạn có thể nói:"
+    },
+    {
+      "id": 49,
+      "start": 140.92,
+      "end": 145.37,
+      "hanzi": "“老板，我要两串鸡肉，一串羊肉。”",
+      "pinyin": "“ lǎo bǎn ， wǒ yào liǎng chuàn jī ròu ， yí chuàn yáng ròu 。”",
+      "vi": "\"Ông chủ, tôi muốn hai xiên gà và một xiên cừu.\""
+    },
+    {
+      "id": 50,
+      "start": 145.72,
+      "end": 149.31,
+      "hanzi": "这句话很简单，都是基本词。",
+      "pinyin": "zhè jù huà hěn jiǎn dān ， dōu shì jī běn cí 。",
+      "vi": "Câu này rất đơn giản, chỉ sử dụng những từ ngữ cơ bản."
+    },
+    {
+      "id": 51,
+      "start": 149.56,
+      "end": 153.26,
+      "hanzi": "老板听见了，会说：“好，辣不辣？”",
+      "pinyin": "lǎo bǎn tīng jiàn le ， huì shuō ：“ hǎo ， là bu là ？”",
+      "vi": "Chủ quán nghe thấy bạn và hỏi: \"Được rồi, món này có cay không?\""
+    },
+    {
+      "id": 52,
+      "start": 153.6,
+      "end": 154.57,
+      "hanzi": "在中国，",
+      "pinyin": "zài zhōng guó ，",
+      "vi": "Ở Trung Quốc,"
+    },
+    {
+      "id": 53,
+      "start": 154.57,
+      "end": 158.41,
+      "hanzi": "小吃最常见的问题就是“辣不辣？”",
+      "pinyin": "xiǎo chī zuì cháng jiàn de wèn tí jiù shì “ là bu là ？”",
+      "vi": "câu hỏi phổ biến nhất về đồ ăn vặt là \"Có cay không?\"."
+    },
+    {
+      "id": 54,
+      "start": 158.72,
+      "end": 160.14,
+      "hanzi": "你如果想吃辣，",
+      "pinyin": "nǐ rú guǒ xiǎng chī là ，",
+      "vi": "Nếu bạn muốn ăn cay,"
+    },
+    {
+      "id": 55,
+      "start": 160.25,
+      "end": 162.7,
+      "hanzi": "你可以说：“要一点辣。”",
+      "pinyin": "nǐ kě yǐ shuō ：“ yào yì diǎn là 。”",
+      "vi": "bạn có thể nói: \"Cho một chút cay\"."
+    },
+    {
+      "id": 56,
+      "start": 162.81,
+      "end": 164.54,
+      "hanzi": "如果你不喜欢辣，",
+      "pinyin": "rú guǒ nǐ bù xǐ huan là ，",
+      "vi": "Nếu bạn không thích đồ cay,"
+    },
+    {
+      "id": 57,
+      "start": 164.65,
+      "end": 166.65,
+      "hanzi": "就说：“不要辣。”",
+      "pinyin": "jiù shuō ：“ bú yào là 。”",
+      "vi": "hãy nói \"Không cay\"."
+    },
+    {
+      "id": 58,
+      "start": 167.12,
+      "end": 170.53,
+      "hanzi": "老板会点点头，然后开始烤。",
+      "pinyin": "lǎo bǎn huì diǎn diǎn tóu ， rán hòu kāi shǐ kǎo 。",
+      "vi": "Chủ quán sẽ gật đầu và bắt đầu nướng."
+    },
+    {
+      "id": 59,
+      "start": 170.96,
+      "end": 173.54,
+      "hanzi": "你听到“滋滋滋”的声音，",
+      "pinyin": "nǐ tīng dào “ zī zī zī ” de shēng yīn ，",
+      "vi": "Bạn nghe thấy tiếng xèo xèo khi"
+    },
+    {
+      "id": 60,
+      "start": 173.54,
+      "end": 177.27,
+      "hanzi": "烤串在火上慢慢变得金黄色。",
+      "pinyin": "kǎo chuàn zài huǒ shàng màn màn biàn de jīn huáng sè 。",
+      "vi": "những xiên thịt từ từ chuyển sang màu nâu vàng trên lửa."
+    },
+    {
+      "id": 61,
+      "start": 177.56,
+      "end": 179.29,
+      "hanzi": "你继续往前走，",
+      "pinyin": "nǐ jì xù wǎng qián zǒu ，",
+      "vi": "Bạn tiếp tục đi và"
+    },
+    {
+      "id": 62,
+      "start": 179.42,
+      "end": 182.59,
+      "hanzi": "看到了卖煎饼果子的摊子。",
+      "pinyin": "kàn dào le mài jiān bǐng guǒ zǐ de tān zi 。",
+      "vi": "nhìn thấy một quầy hàng bán bánh xèo Jianbing guozi (bánh xèo mặn của Trung Quốc)."
+    },
+    {
+      "id": 63,
+      "start": 182.77,
+      "end": 186.09,
+      "hanzi": "煎饼果子在中国很有名，",
+      "pinyin": "jiān bǐng guǒ zǐ zài zhōng guó hěn yǒu míng ，",
+      "vi": "Bánh xèo Jianbing guozi rất nổi tiếng ở Trung Quốc và"
+    },
+    {
+      "id": 64,
+      "start": 186.22,
+      "end": 190.55,
+      "hanzi": "是很多人早上或晚上会吃的小吃。",
+      "pinyin": "shì hěn duō rén zǎo shàng huò wǎn shàng huì chī de xiǎo chī 。",
+      "vi": "là món ăn vặt được nhiều người ưa chuộng vào buổi sáng hoặc buổi tối."
+    },
+    {
+      "id": 65,
+      "start": 190.93,
+      "end": 193.63,
+      "hanzi": "老板正在做一个新的煎饼。",
+      "pinyin": "lǎo bǎn zhèng zài zuò yí gè xīn de jiān bǐng 。",
+      "vi": "Chủ quán đang làm một chiếc bánh xèo mới."
+    },
+    {
+      "id": 66,
+      "start": 193.76,
+      "end": 196.55,
+      "hanzi": "他把面糊放在铁板上，",
+      "pinyin": "tā bǎ miàn hù fàng zài tiě bǎn shàng ，",
+      "vi": "Anh ta đổ bột lên tấm sắt nóng,"
+    },
+    {
+      "id": 67,
+      "start": 196.66,
+      "end": 199.11,
+      "hanzi": "用一个刮子推得很圆，",
+      "pinyin": "yòng yí gè guā zǐ tuī dé hěn yuán ，",
+      "vi": "dùng que gạt dàn đều thành hình tròn,"
+    },
+    {
+      "id": 68,
+      "start": 199.22,
+      "end": 201.76,
+      "hanzi": "然后在上面打一个蛋。",
+      "pinyin": "rán hòu zài shàng miàn dǎ yí gè dàn 。",
+      "vi": "rồi đập một quả trứng lên trên."
+    },
+    {
+      "id": 69,
+      "start": 201.76,
+      "end": 204.07,
+      "hanzi": "你看着都觉得好吃。",
+      "pinyin": "nǐ kàn zhe dōu jué de hǎo chī 。",
+      "vi": "Trông nó thật ngon mắt."
+    },
+    {
+      "id": 70,
+      "start": 204.38,
+      "end": 206,
+      "hanzi": "老板看你在看，",
+      "pinyin": "lǎo bǎn kàn nǐ zài kàn ，",
+      "vi": "Thấy bạn đang nhìn, chủ quán"
+    },
+    {
+      "id": 71,
+      "start": 206,
+      "end": 208.32,
+      "hanzi": "就问：“要来一个吗？”",
+      "pinyin": "jiù wèn ：“ yào lái yí gè ma ？”",
+      "vi": "hỏi: \"Bạn muốn một cái không?\"."
+    },
+    {
+      "id": 72,
+      "start": 208.45,
+      "end": 209.55,
+      "hanzi": "你可以说：",
+      "pinyin": "nǐ kě yǐ shuō ：",
+      "vi": "Bạn có thể nói:"
+    },
+    {
+      "id": 73,
+      "start": 209.55,
+      "end": 212.94,
+      "hanzi": "“好，我要一个。不要太辣。”",
+      "pinyin": "“ hǎo ， wǒ yào yí gè 。 bú yào tài là 。”",
+      "vi": "\"Được, cho tôi một cái. Đừng cay quá.\""
+    },
+    {
+      "id": 74,
+      "start": 213.23,
+      "end": 214.43,
+      "hanzi": "老板会问：",
+      "pinyin": "lǎo bǎn huì wèn ：",
+      "vi": "Chủ quán sẽ hỏi:"
+    },
+    {
+      "id": 75,
+      "start": 214.43,
+      "end": 218.89,
+      "hanzi": "“要不要加火腿？要不要加香菜？”",
+      "pinyin": "“ yào bu yào jiā huǒ tuǐ ？ yào bu yào jiā xiāng cài ？”",
+      "vi": "\"Thêm giăm bông không? Thêm rau mùi không?\"."
+    },
+    {
+      "id": 76,
+      "start": 218.89,
+      "end": 223.18,
+      "hanzi": "你可以说：“要火腿，不要香菜。”",
+      "pinyin": "nǐ kě yǐ shuō ：“ yào huǒ tuǐ ， bú yào xiāng cài 。”",
+      "vi": "Bạn có thể nói: \"Thêm giăm bông, không rau mùi.\""
+    },
+    {
+      "id": 77,
+      "start": 223.33,
+      "end": 226.61,
+      "hanzi": "小吃的对话通常都很简单，",
+      "pinyin": "xiǎo chī de duì huà tōng cháng dōu hěn jiǎn dān ，",
+      "vi": "Hội thoại ở quầy đồ ăn đường phố thường rất đơn giản,"
+    },
+    {
+      "id": 78,
+      "start": 226.77,
+      "end": 229.6,
+      "hanzi": "就是“要不要”和“加不加”。",
+      "pinyin": "jiù shì “ yào bu yào ” hé “ jiā bu jiā ”。",
+      "vi": "chỉ là \"có muốn không\" và \"có thêm không\"."
+    },
+    {
+      "id": 79,
+      "start": 230.16,
+      "end": 232.16,
+      "hanzi": "你会感觉很轻松，",
+      "pinyin": "nǐ huì gǎn jué hěn qīng sōng ，",
+      "vi": "Bạn sẽ cảm thấy thoải mái và"
+    },
+    {
+      "id": 80,
+      "start": 232.47,
+      "end": 236.31,
+      "hanzi": "也会觉得中文真的可以用在生活里。",
+      "pinyin": "yě huì jué de zhōng wén zhēn de kě yǐ yòng zài shēng huó lǐ 。",
+      "vi": "nhận ra tiếng Trung thật sự dùng được trong đời sống hằng ngày."
+    },
+    {
+      "id": 81,
+      "start": 236.46,
+      "end": 237.68,
+      "hanzi": "你继续走，",
+      "pinyin": "nǐ jì xù zǒu ，",
+      "vi": "Tiếp tục đi bộ, bạn"
+    },
+    {
+      "id": 82,
+      "start": 238.08,
+      "end": 240.98,
+      "hanzi": "看到了一个卖凉皮的小摊。",
+      "pinyin": "kàn dào le yí gè mài liáng pí de xiǎo tān 。",
+      "vi": "nhìn thấy một quầy hàng bán liangpi (mì lạnh)."
+    },
+    {
+      "id": 83,
+      "start": 241.76,
+      "end": 243.81,
+      "hanzi": "凉皮是凉的食物，",
+      "pinyin": "liáng pí shì liáng de shí wù ，",
+      "vi": "Liangpi là một món ăn lạnh,"
+    },
+    {
+      "id": 84,
+      "start": 243.92,
+      "end": 247.38,
+      "hanzi": "有点酸，有点辣，很清爽。",
+      "pinyin": "yǒu diǎn suān ， yǒu diǎn là ， hěn qīng shuǎng 。",
+      "vi": "hơi chua, hơi cay, rất thanh mát."
+    },
+    {
+      "id": 85,
+      "start": 247.73,
+      "end": 251.28,
+      "hanzi": "你看见一个小哥在那吃得很开心，",
+      "pinyin": "nǐ kàn jiàn yí gè xiǎo gē zài nà chī dé hěn kāi xīn ，",
+      "vi": "Bạn thấy một chàng trai trẻ đang thưởng thức món ăn này,"
+    },
+    {
+      "id": 86,
+      "start": 251.39,
+      "end": 253.21,
+      "hanzi": "你也想试一下。",
+      "pinyin": "nǐ yě xiǎng shì yí xià 。",
+      "vi": "và bạn cũng muốn thử."
+    },
+    {
+      "id": 87,
+      "start": 253.21,
+      "end": 254.88,
+      "hanzi": "你走过去说：",
+      "pinyin": "nǐ zǒu guò qù shuō ：",
+      "vi": "Bạn đến gần và nói:"
+    },
+    {
+      "id": 88,
+      "start": 255.39,
+      "end": 258.24,
+      "hanzi": "“老板，我要一份凉皮。”",
+      "pinyin": "“ lǎo bǎn ， wǒ yào yí fèn liáng pí 。”",
+      "vi": "\"Ông chủ, tôi muốn một phần liangpi.\""
+    },
+    {
+      "id": 89,
+      "start": 258.6,
+      "end": 259.82,
+      "hanzi": "老板会问：",
+      "pinyin": "lǎo bǎn huì wèn ：",
+      "vi": "Chủ quán sẽ hỏi:"
+    },
+    {
+      "id": 90,
+      "start": 260.16,
+      "end": 261.75,
+      "hanzi": "“要不要黄瓜？",
+      "pinyin": "“ yào bu yào huáng guā ？",
+      "vi": "\"Cho dưa chuột không?"
+    },
+    {
+      "id": 91,
+      "start": 262,
+      "end": 265.28,
+      "hanzi": "要不要花生？要不要辣？”",
+      "pinyin": "yào bu yào huā shēng ？ yào bu yào là ？”",
+      "vi": "Cho đậu phộng không? Ăn cay không?\""
+    },
+    {
+      "id": 92,
+      "start": 265.64,
+      "end": 267.64,
+      "hanzi": "你都可以慢慢回答。",
+      "pinyin": "nǐ dōu kě yǐ màn màn huí dá 。",
+      "vi": "Bạn có thể trả lời chậm rãi."
+    },
+    {
+      "id": 93,
+      "start": 267.81,
+      "end": 271.18,
+      "hanzi": "你如果喜欢多一点味道，",
+      "pinyin": "nǐ rú guǒ xǐ huan duō yì diǎn wèi dào ，",
+      "vi": "Nếu muốn đậm đà hơn,"
+    },
+    {
+      "id": 94,
+      "start": 271.43,
+      "end": 274.59,
+      "hanzi": "你可以说：“都要。少辣。”",
+      "pinyin": "nǐ kě yǐ shuō ：“ dōu yào 。 shǎo là 。”",
+      "vi": "bạn có thể nói: \"Cho hết. Ít cay thôi.\""
+    },
+    {
+      "id": 95,
+      "start": 275.25,
+      "end": 277.76,
+      "hanzi": "你如果想吃清爽一点，",
+      "pinyin": "nǐ rú guǒ xiǎng chī qīng shuǎng yì diǎn ，",
+      "vi": "Nếu muốn ăn thanh mát hơn,"
+    },
+    {
+      "id": 96,
+      "start": 278.07,
+      "end": 280.23,
+      "hanzi": "就说：“不要辣。”",
+      "pinyin": "jiù shuō ：“ bú yào là 。”",
+      "vi": "hãy nói: \"Không cay.\""
+    },
+    {
+      "id": 97,
+      "start": 280.5,
+      "end": 283.42,
+      "hanzi": "老板很快就做好了一份。",
+      "pinyin": "lǎo bǎn hěn kuài jiù zuò hǎo le yí fèn 。",
+      "vi": "Chủ quán nhanh chóng làm xong một phần."
+    },
+    {
+      "id": 98,
+      "start": 283.53,
+      "end": 289.05,
+      "hanzi": "他把凉皮、黄瓜、花生放在碗里，",
+      "pinyin": "tā bǎ liáng pí 、 huáng guā 、 huā shēng fàng zài wǎn lǐ ，",
+      "vi": "Anh ta cho mì lạnh, dưa chuột và đậu phộng vào bát,"
+    },
+    {
+      "id": 99,
+      "start": 289.21,
+      "end": 292.21,
+      "hanzi": "加上调料，然后递给你。",
+      "pinyin": "jiā shàng tiáo liào ， rán hòu dì gěi nǐ 。",
+      "vi": "thêm gia vị rồi đưa cho bạn."
+    },
+    {
+      "id": 100,
+      "start": 292.21,
+      "end": 295.49,
+      "hanzi": "你吃一口，觉得好吃到想笑。",
+      "pinyin": "nǐ chī yì kǒu ， jué de hǎo chī dào xiǎng xiào 。",
+      "vi": "Bạn cắn một miếng và thấy ngon đến nỗi muốn mỉm cười."
+    },
+    {
+      "id": 101,
+      "start": 295.76,
+      "end": 300.2,
+      "hanzi": "你心里想：“哇，这么简单的中文，",
+      "pinyin": "nǐ xīn lǐ xiǎng ：“ wā ， zhè me jiǎn dān de zhōng wén ，",
+      "vi": "Bạn tự nhủ: \"Ồ, tiếng Trung đơn giản như vậy thôi,"
+    },
+    {
+      "id": 102,
+      "start": 300.43,
+      "end": 303.55,
+      "hanzi": "我也可以点到这么好吃的东西。”",
+      "pinyin": "wǒ yě kě yǐ diǎn dào zhè me hǎo chī de dōng xī 。”",
+      "vi": "mình có thể gọi được món ngon như vậy.\""
+    },
+    {
+      "id": 103,
+      "start": 303.68,
+      "end": 304.9,
+      "hanzi": "走着走着，",
+      "pinyin": "zǒu zhe zǒu zhe ，",
+      "vi": "Đang đi,"
+    },
+    {
+      "id": 104,
+      "start": 305,
+      "end": 308.17,
+      "hanzi": "你看到远处有一个臭豆腐摊。",
+      "pinyin": "nǐ kàn dào yuǎn chù yǒu yí gè chòu dòu fu tān 。",
+      "vi": "bạn nhìn thấy một quầy đậu phụ thối ở đằng xa."
+    },
+    {
+      "id": 105,
+      "start": 309.08,
+      "end": 312.45,
+      "hanzi": "臭豆腐的味道你可能不太习惯，",
+      "pinyin": "chòu dòu fu de wèi dào nǐ kě néng bú tài xí guàn ，",
+      "vi": "Có thể bạn không quen với mùi đậu phụ thối,"
+    },
+    {
+      "id": 106,
+      "start": 312.72,
+      "end": 314.52,
+      "hanzi": "但很多人说它",
+      "pinyin": "dàn hěn duō rén shuō tā",
+      "vi": "nhưng nhiều người nói rằng nó"
+    },
+    {
+      "id": 107,
+      "start": 314.52,
+      "end": 317.5,
+      "hanzi": "“闻起来臭，吃起来香”。",
+      "pinyin": "“ wén qǐ lái chòu ， chī qǐ lái xiāng ”。",
+      "vi": "\"mùi hôi nhưng vị rất ngon.\""
+    },
+    {
+      "id": 108,
+      "start": 317.93,
+      "end": 321.45,
+      "hanzi": "你在远一点的地方就闻到味道了。",
+      "pinyin": "nǐ zài yuǎn yì diǎn de dì fāng jiù wén dào wèi dào le 。",
+      "vi": "Từ xa bạn đã ngửi thấy mùi rồi."
+    },
+    {
+      "id": 109,
+      "start": 321.45,
+      "end": 323.45,
+      "hanzi": "你走过去的时候，",
+      "pinyin": "nǐ zǒu guò qù de shí hòu ，",
+      "vi": "Khi bạn bước tới,"
+    },
+    {
+      "id": 110,
+      "start": 323.45,
+      "end": 325.99,
+      "hanzi": "老板正在炸臭豆腐，",
+      "pinyin": "lǎo bǎn zhèng zài zhà chòu dòu fu ，",
+      "vi": "chủ quán đang chiên đậu phụ thối,"
+    },
+    {
+      "id": 111,
+      "start": 326.33,
+      "end": 329,
+      "hanzi": "一块一块、金黄色的。",
+      "pinyin": "yí kuài yi kuài 、 jīn huáng sè de 。",
+      "vi": "từng miếng một, vàng ươm."
+    },
+    {
+      "id": 112,
+      "start": 329.38,
+      "end": 332.81,
+      "hanzi": "他的声音很大，很开心：",
+      "pinyin": "tā de shēng yīn hěn dà ， hěn kāi xīn ：",
+      "vi": "Giọng ông ấy to và vui vẻ:"
+    },
+    {
+      "id": 113,
+      "start": 332.93,
+      "end": 336.49,
+      "hanzi": "“来来来，臭豆腐，好吃！”",
+      "pinyin": "“ lái lái lái ， chòu dòu fu ， hǎo chī ！”",
+      "vi": "\"Nào, nào, đậu phụ thối, ngon quá!\""
+    },
+    {
+      "id": 114,
+      "start": 337.28,
+      "end": 340.89,
+      "hanzi": "你有点想试，但又有点害怕。",
+      "pinyin": "nǐ yǒu diǎn xiǎng shì ， dàn yòu yǒu diǎn hài pà 。",
+      "vi": "Bạn vừa muốn thử, vừa hơi sợ."
+    },
+    {
+      "id": 115,
+      "start": 341,
+      "end": 343.54,
+      "hanzi": "你想一想，然后说：",
+      "pinyin": "nǐ xiǎng yi xiǎng ， rán hòu shuō ：",
+      "vi": "Bạn suy nghĩ một lúc rồi nói:"
+    },
+    {
+      "id": 116,
+      "start": 343.54,
+      "end": 346.46,
+      "hanzi": "“老板，我要一份小的。”",
+      "pinyin": "“ lǎo bǎn ， wǒ yào yí fèn xiǎo de 。”",
+      "vi": "\"Ông chủ, tôi muốn một miếng nhỏ.\""
+    },
+    {
+      "id": 117,
+      "start": 346.62,
+      "end": 350.48,
+      "hanzi": "老板听见你说中文，会很高兴。",
+      "pinyin": "lǎo bǎn tīng jiàn nǐ shuō zhōng wén ， huì hěn gāo xìng 。",
+      "vi": "Chủ quán rất vui khi nghe bạn nói tiếng Trung."
+    },
+    {
+      "id": 118,
+      "start": 350.9,
+      "end": 356.29,
+      "hanzi": "他说：“要辣吗？我们家的辣很好吃！”",
+      "pinyin": "tā shuō ：“ yào là ma ？ wǒ men jiā de là hěn hǎo chī ！”",
+      "vi": "Ông ấy nói: \"Ăn cay không? Ớt quán tôi ngon lắm!\""
+    },
+    {
+      "id": 119,
+      "start": 356.4,
+      "end": 360,
+      "hanzi": "你笑一下说：“一点点辣。”",
+      "pinyin": "nǐ xiào yí xià shuō ：“ yì diǎn diǎn là 。”",
+      "vi": "Bạn mỉm cười và nói: \"Cay một chút thôi.\""
+    },
+    {
+      "id": 120,
+      "start": 360.2,
+      "end": 363.9,
+      "hanzi": "他会放上一点辣，也会给你一点酱。",
+      "pinyin": "tā huì fàng shàng yì diǎn là ， yě huì gěi nǐ yì diǎn jiàng 。",
+      "vi": "Ông ấy sẽ thêm chút ớt và cho bạn một ít nước sốt."
+    },
+    {
+      "id": 121,
+      "start": 364.33,
+      "end": 368.42,
+      "hanzi": "你吃一块，觉得味道特别特别不一样，",
+      "pinyin": "nǐ chī yí kuài ， jué de wèi dào tè bié tè bié bù yí yàng ，",
+      "vi": "Bạn ăn một miếng và thấy hương vị rất, rất khác,"
+    },
+    {
+      "id": 122,
+      "start": 368.57,
+      "end": 371.96,
+      "hanzi": "有一点奇怪，但是又很好吃。",
+      "pinyin": "yǒu yì diǎn qí guài ， dàn shì yòu hěn hǎo chī 。",
+      "vi": "hơi lạ, nhưng cũng rất ngon."
+    },
+    {
+      "id": 123,
+      "start": 372.36,
+      "end": 373.78,
+      "hanzi": "你感觉自己",
+      "pinyin": "nǐ gǎn jué zì jǐ",
+      "vi": "Bạn cảm thấy mình"
+    },
+    {
+      "id": 124,
+      "start": 373.78,
+      "end": 377.55,
+      "hanzi": "好像真的变成一个在中国街头的",
+      "pinyin": "hǎo xiàng zhēn de biàn chéng yí gè zài zhōng guó jiē tóu de",
+      "vi": "như thể giữa phố phường Trung Quốc, đã thật sự thành một"
+    },
+    {
+      "id": 125,
+      "start": 377.55,
+      "end": 379.37,
+      "hanzi": "小吃探险家。",
+      "pinyin": "xiǎo chī tàn xiǎn jiā 。",
+      "vi": "nhà thám hiểm đồ ăn vặt."
+    },
+    {
+      "id": 126,
+      "start": 379.5,
+      "end": 383.16,
+      "hanzi": "你继续往前走，买到了糖葫芦。",
+      "pinyin": "nǐ jì xù wǎng qián zǒu ， mǎi dào le táng hú lu 。",
+      "vi": "Bạn tiếp tục đi bộ và mua được một xâu táo gai kẹo."
+    },
+    {
+      "id": 127,
+      "start": 383.72,
+      "end": 385.45,
+      "hanzi": "糖葫芦很简单，",
+      "pinyin": "táng hú lu hěn jiǎn dān ，",
+      "vi": "Quả táo gai kẹo rất đơn giản:"
+    },
+    {
+      "id": 128,
+      "start": 385.63,
+      "end": 389.51,
+      "hanzi": "就是山楂外面有一层甜甜的糖。",
+      "pinyin": "jiù shì shān zhā wài miàn yǒu yì céng tián tián de táng 。",
+      "vi": "quả táo gai bên ngoài phủ một lớp đường ngọt."
+    },
+    {
+      "id": 129,
+      "start": 389.81,
+      "end": 393.69,
+      "hanzi": "你可以跟老板说：“我要一个大的。”",
+      "pinyin": "nǐ kě yǐ gēn lǎo bǎn shuō ：“ wǒ yào yí gè dà de 。”",
+      "vi": "Bạn có thể nói với chủ quán: \"Tôi muốn một xâu lớn.\""
+    },
+    {
+      "id": 130,
+      "start": 393.8,
+      "end": 395.8,
+      "hanzi": "老板会对你笑笑，",
+      "pinyin": "lǎo bǎn huì duì nǐ xiào xiào ，",
+      "vi": "Chủ quán sẽ mỉm cười"
+    },
+    {
+      "id": 131,
+      "start": 395.8,
+      "end": 399.32,
+      "hanzi": "然后递给你一个亮亮的糖葫芦。",
+      "pinyin": "rán hòu dì gěi nǐ yí gè liàng liàng de táng hú lu 。",
+      "vi": "và đưa cho bạn một xâu táo gai kẹo sáng bóng."
+    },
+    {
+      "id": 132,
+      "start": 399.84,
+      "end": 401.5,
+      "hanzi": "你走在路上吃，",
+      "pinyin": "nǐ zǒu zài lù shang chī ，",
+      "vi": "Vừa đi trên đường vừa ăn,"
+    },
+    {
+      "id": 133,
+      "start": 401.61,
+      "end": 404.49,
+      "hanzi": "感觉像回到小时候一样。",
+      "pinyin": "gǎn jué xiàng huí dào xiǎo shí hòu yí yàng 。",
+      "vi": "mang lại cảm giác như được trở về tuổi thơ."
+    },
+    {
+      "id": 134,
+      "start": 404.64,
+      "end": 407.74,
+      "hanzi": "你看到旁边的小朋友也在吃，",
+      "pinyin": "nǐ kàn dào páng biān de xiǎo péng yǒu yě zài chī ，",
+      "vi": "Bạn thấy những đứa trẻ khác cũng ăn,"
+    },
+    {
+      "id": 135,
+      "start": 407.9,
+      "end": 410.77,
+      "hanzi": "好像大家都因为这个甜味",
+      "pinyin": "hǎo xiàng dà jiā dōu yīn wèi zhè ge tián wèi",
+      "vi": "dường như nhờ vị ngọt này"
+    },
+    {
+      "id": 136,
+      "start": 410.77,
+      "end": 412.91,
+      "hanzi": "而变得更开心一点。",
+      "pinyin": "ér biàn de gèng kāi xīn yì diǎn 。",
+      "vi": "mà ai cũng vui vẻ hơn một chút."
+    },
+    {
+      "id": 137,
+      "start": 413.2,
+      "end": 416.61,
+      "hanzi": "走着走着，你觉得有点渴了。",
+      "pinyin": "zǒu zhe zǒu zhe ， nǐ jué de yǒu diǎn kě le 。",
+      "vi": "Khi đang đi, bạn cảm thấy hơi khát."
+    },
+    {
+      "id": 138,
+      "start": 416.72,
+      "end": 419.62,
+      "hanzi": "你看到有一家奶茶小车。",
+      "pinyin": "nǐ kàn dào yǒu yì jiā nǎi chá xiǎo chē 。",
+      "vi": "Bạn nhìn thấy một xe đẩy trà sữa."
+    },
+    {
+      "id": 139,
+      "start": 419.8,
+      "end": 423.54,
+      "hanzi": "奶茶在中国非常非常常见，",
+      "pinyin": "nǎi chá zài zhōng guó fēi cháng fēi cháng cháng jiàn ，",
+      "vi": "Trà sữa rất phổ biến ở Trung Quốc;"
+    },
+    {
+      "id": 140,
+      "start": 423.86,
+      "end": 426.95,
+      "hanzi": "很多年轻人一天不喝奶茶",
+      "pinyin": "hěn duō nián qīng rén yì tiān bù hē nǎi chá",
+      "vi": "nhiều bạn trẻ mà một ngày không uống trà sữa"
+    },
+    {
+      "id": 141,
+      "start": 426.95,
+      "end": 429.36,
+      "hanzi": "会觉得少了点什么。",
+      "pinyin": "huì jué de shǎo le diǎn shén me 。",
+      "vi": "là thấy thiếu mất điều gì đó."
+    },
+    {
+      "id": 142,
+      "start": 429.49,
+      "end": 431.4,
+      "hanzi": "你走过去说：",
+      "pinyin": "nǐ zǒu guò qù shuō ：",
+      "vi": "Bạn đến gần và nói:"
+    },
+    {
+      "id": 143,
+      "start": 431.85,
+      "end": 434.59,
+      "hanzi": "“你好，我要一杯奶茶。”",
+      "pinyin": "“ nǐ hǎo ， wǒ yào yì bēi nǎi chá 。”",
+      "vi": "\"Chào anh, tôi muốn một ly trà sữa.\""
+    },
+    {
+      "id": 144,
+      "start": 434.72,
+      "end": 437.46,
+      "hanzi": "老板会问：“要多糖、",
+      "pinyin": "lǎo bǎn huì wèn ：“ yào duō táng 、",
+      "vi": "Chủ quán sẽ hỏi: \"Nhiều đường,"
+    },
+    {
+      "id": 145,
+      "start": 437.46,
+      "end": 440.69,
+      "hanzi": "半糖、少糖还是无糖？”",
+      "pinyin": "bàn táng 、 shǎo táng hái shì wú táng ？”",
+      "vi": "nửa đường, ít đường, hay không đường?\"."
+    },
+    {
+      "id": 146,
+      "start": 440.89,
+      "end": 444.75,
+      "hanzi": "你想健康一点，就说：“少糖。”",
+      "pinyin": "nǐ xiǎng jiàn kāng yì diǎn ， jiù shuō ：“ shǎo táng 。”",
+      "vi": "Vì muốn tốt cho sức khỏe, bạn nói: \"Ít đường.\""
+    },
+    {
+      "id": 147,
+      "start": 445.16,
+      "end": 448.21,
+      "hanzi": "老板又问：“要冰的吗？”",
+      "pinyin": "lǎo bǎn yòu wèn ：“ yào bīng de ma ？”",
+      "vi": "Chủ quán sau đó hỏi: \"Có đá không?\"."
+    },
+    {
+      "id": 148,
+      "start": 448.21,
+      "end": 450.52,
+      "hanzi": "你觉得现在有点凉，",
+      "pinyin": "nǐ jué de xiàn zài yǒu diǎn liáng ，",
+      "vi": "Cảm thấy hơi lạnh,"
+    },
+    {
+      "id": 149,
+      "start": 450.66,
+      "end": 454.05,
+      "hanzi": "就说：“不要冰，去冰。”",
+      "pinyin": "jiù shuō ：“ bú yào bīng ， qù bīng 。”",
+      "vi": "bạn nói: \"Không đá.\""
+    },
+    {
+      "id": 150,
+      "start": 454.85,
+      "end": 458.22,
+      "hanzi": "老板点点头，开始做奶茶。",
+      "pinyin": "lǎo bǎn diǎn diǎn tóu ， kāi shǐ zuò nǎi chá 。",
+      "vi": "Chủ quán gật đầu và bắt đầu pha trà sữa."
+    },
+    {
+      "id": 151,
+      "start": 458.4,
+      "end": 461.09,
+      "hanzi": "你看着珍珠在锅里跳，",
+      "pinyin": "nǐ kàn zhe zhēn zhū zài guō lǐ tiào ，",
+      "vi": "Bạn nhìn những hạt trân châu nhảy múa trong nồi,"
+    },
+    {
+      "id": 152,
+      "start": 461.27,
+      "end": 463.88,
+      "hanzi": "看着茶被倒进杯子里，",
+      "pinyin": "kàn zhe chá bèi dǎo jìn bēi zi lǐ ，",
+      "vi": "nhìn trà được rót vào cốc, và"
+    },
+    {
+      "id": 153,
+      "start": 464.21,
+      "end": 467.29,
+      "hanzi": "听到封口机“啪”的一声。",
+      "pinyin": "tīng dào fēng kǒu jī “ pā ” de yì shēng 。",
+      "vi": "nghe tiếng máy đóng nắp \"tách\"."
+    },
+    {
+      "id": 154,
+      "start": 467.29,
+      "end": 469.44,
+      "hanzi": "老板把奶茶递给你，",
+      "pinyin": "lǎo bǎn bǎ nǎi chá dì gěi nǐ ，",
+      "vi": "Chủ quán đưa trà sữa cho bạn,"
+    },
+    {
+      "id": 155,
+      "start": 469.56,
+      "end": 471.78,
+      "hanzi": "你说：“谢谢。”",
+      "pinyin": "nǐ shuō ：“ xiè xiè 。”",
+      "vi": "và bạn nói: \"Cảm ơn.\""
+    },
+    {
+      "id": 156,
+      "start": 472.25,
+      "end": 474.5,
+      "hanzi": "他会说：“不客气。”",
+      "pinyin": "tā huì shuō ：“ bú kè qì 。”",
+      "vi": "Anh ta sẽ trả lời: \"Không có gì.\""
+    },
+    {
+      "id": 157,
+      "start": 474.65,
+      "end": 479.03,
+      "hanzi": "你继续一边喝奶茶，一边看街上的人。",
+      "pinyin": "nǐ jì xù yì biān hē nǎi chá ， yì biān kàn jiē shàng de rén 。",
+      "vi": "Bạn tiếp tục uống trà sữa trong khi ngắm nhìn dòng người qua lại trên phố."
+    },
+    {
+      "id": 158,
+      "start": 479.34,
+      "end": 481.1,
+      "hanzi": "有人在买烤玉米，",
+      "pinyin": "yǒu rén zài mǎi kǎo yù mǐ ，",
+      "vi": "Người thì mua bắp nướng,"
+    },
+    {
+      "id": 159,
+      "start": 481.23,
+      "end": 483.23,
+      "hanzi": "有人在买烤冷面，",
+      "pinyin": "yǒu rén zài mǎi kǎo lěng miàn ，",
+      "vi": "người thì mua mì lạnh nướng,"
+    },
+    {
+      "id": 160,
+      "start": 483.36,
+      "end": 485.54,
+      "hanzi": "有人在买铁板鱿鱼，",
+      "pinyin": "yǒu rén zài mǎi tiě bǎn yóu yú ，",
+      "vi": "người thì mua mực nướng,"
+    },
+    {
+      "id": 161,
+      "start": 485.68,
+      "end": 487.83,
+      "hanzi": "有人在吃热干面。",
+      "pinyin": "yǒu rén zài chī rè gān miàn 。",
+      "vi": "người thì ăn mì khô nóng."
+    },
+    {
+      "id": 162,
+      "start": 487.97,
+      "end": 490.48,
+      "hanzi": "每一个人看起来都很平常，",
+      "pinyin": "měi yí gè rén kàn qǐ lái dōu hěn píng cháng ，",
+      "vi": "Trông ai cũng bình thường,"
+    },
+    {
+      "id": 163,
+      "start": 490.48,
+      "end": 493.65,
+      "hanzi": "但每个人都在享受一个很简单、",
+      "pinyin": "dàn měi gè rén dōu zài xiǎng shòu yí gè hěn jiǎn dān 、",
+      "vi": "nhưng ai cũng đang tận hưởng một khoảnh khắc rất giản dị,"
+    },
+    {
+      "id": 164,
+      "start": 493.76,
+      "end": 495.42,
+      "hanzi": "很温暖的时刻，",
+      "pinyin": "hěn wēn nuǎn de shí kè ，",
+      "vi": "rất ấm áp:"
+    },
+    {
+      "id": 165,
+      "start": 495.54,
+      "end": 497.45,
+      "hanzi": "那就是“吃东西”。",
+      "pinyin": "nà jiù shì “ chī dōng xī ”。",
+      "vi": "\"ăn uống\"."
+    },
+    {
+      "id": 166,
+      "start": 497.87,
+      "end": 499.76,
+      "hanzi": "你也在这个时刻里，",
+      "pinyin": "nǐ yě zài zhè ge shí kè lǐ ，",
+      "vi": "Trong khoảnh khắc ấy, bạn cũng"
+    },
+    {
+      "id": 167,
+      "start": 499.76,
+      "end": 503.15,
+      "hanzi": "感觉到生活的节奏慢下来一点，",
+      "pinyin": "gǎn jué dào shēng huó de jié zòu màn xià lái yì diǎn ，",
+      "vi": "cảm thấy nhịp sống chậm lại một chút,"
+    },
+    {
+      "id": 168,
+      "start": 503.26,
+      "end": 506.2,
+      "hanzi": "温柔一点，也简单一点。",
+      "pinyin": "wēn róu yì diǎn ， yě jiǎn dān yī diǎn 。",
+      "vi": "nhẹ nhàng và đơn giản hơn."
+    },
+    {
+      "id": 169,
+      "start": 506.31,
+      "end": 509.77,
+      "hanzi": "你发现，其实在街边买东西，",
+      "pinyin": "nǐ fā xiàn ， qí shí zài jiē biān mǎi dōng xī ，",
+      "vi": "Bạn nhận ra rằng mua sắm trên phố"
+    },
+    {
+      "id": 170,
+      "start": 509.9,
+      "end": 511.57,
+      "hanzi": "不只是为了吃，",
+      "pinyin": "bù zhǐ shì wèi le chī ，",
+      "vi": "không chỉ là để ăn,"
+    },
+    {
+      "id": 171,
+      "start": 511.93,
+      "end": 515.67,
+      "hanzi": "而是为了感觉自己在一个新地方生活，",
+      "pinyin": "ér shì wèi le gǎn jué zì jǐ zài yí gè xīn dì fāng shēng huó ，",
+      "vi": "mà còn là cảm giác như mình đang thực sự sống ở một nơi mới,"
+    },
+    {
+      "id": 172,
+      "start": 515.67,
+      "end": 517.43,
+      "hanzi": "真的融进去。",
+      "pinyin": "zhēn de róng jìn qù 。",
+      "vi": "thực sự hòa nhập."
+    },
+    {
+      "id": 173,
+      "start": 517.61,
+      "end": 522.16,
+      "hanzi": "你也发现，用简单的中文跟老板说话，",
+      "pinyin": "nǐ yě fā xiàn ， yòng jiǎn dān de zhōng wén gēn lǎo bǎn shuō huà ，",
+      "vi": "Bạn cũng khám phá ra rằng việc nói chuyện với chủ quán bằng tiếng Trung giản dị"
+    },
+    {
+      "id": 174,
+      "start": 522.3,
+      "end": 524.3,
+      "hanzi": "其实一点也不难，",
+      "pinyin": "qí shí yì diǎn yě bù nán ，",
+      "vi": "không hề khó khăn chút nào,"
+    },
+    {
+      "id": 175,
+      "start": 524.52,
+      "end": 526.83,
+      "hanzi": "因为大家都很友好，",
+      "pinyin": "yīn wèi dà jiā dōu hěn yǒu hǎo ，",
+      "vi": "bởi vì mọi người đều thân thiện"
+    },
+    {
+      "id": 176,
+      "start": 527.1,
+      "end": 529.66,
+      "hanzi": "而且他们听见你说中文",
+      "pinyin": "ér qiě tā men tīng jiàn nǐ shuō zhōng wén",
+      "vi": "và khi nghe bạn nói tiếng Trung,"
+    },
+    {
+      "id": 177,
+      "start": 529.66,
+      "end": 531.66,
+      "hanzi": "也会觉得很高兴。",
+      "pinyin": "yě huì jué de hěn gāo xìng 。",
+      "vi": "họ cũng thấy rất vui."
+    },
+    {
+      "id": 178,
+      "start": 531.66,
+      "end": 535.9,
+      "hanzi": "你继续走，看见一个阿姨在卖饺子。",
+      "pinyin": "nǐ jì xù zǒu ， kàn jiàn yí gè ā yí zài mài jiǎo zǐ 。",
+      "vi": "Bạn tiếp tục đi và thấy một cô bán sủi cảo."
+    },
+    {
+      "id": 179,
+      "start": 536.24,
+      "end": 539.47,
+      "hanzi": "饺子是中国非常重要的食物，",
+      "pinyin": "jiǎo zǐ shì zhōng guó fēi cháng zhòng yào de shí wù ，",
+      "vi": "Sủi cảo là một món ăn rất quan trọng ở Trung Quốc,"
+    },
+    {
+      "id": 180,
+      "start": 539.61,
+      "end": 543.35,
+      "hanzi": "不管是北方还是南方，到处都有。",
+      "pinyin": "bù guǎn shì běi fāng hái shì nán fāng ， dào chù dōu yǒu 。",
+      "vi": "có mặt ở khắp mọi nơi, cả miền Bắc lẫn miền Nam."
+    },
+    {
+      "id": 181,
+      "start": 543.76,
+      "end": 545.2,
+      "hanzi": "你走过去说：",
+      "pinyin": "nǐ zǒu guò qù shuō ：",
+      "vi": "Bạn đến gần và nói:"
+    },
+    {
+      "id": 182,
+      "start": 545.2,
+      "end": 547.93,
+      "hanzi": "“阿姨，我要一份饺子。”",
+      "pinyin": "“ ā yí ， wǒ yào yí fèn jiǎo zǐ 。”",
+      "vi": "\"Cô ơi, cho cháu một phần sủi cảo.\""
+    },
+    {
+      "id": 183,
+      "start": 548.05,
+      "end": 550.85,
+      "hanzi": "阿姨问：“要猪肉的？",
+      "pinyin": "ā yí wèn ：“ yào zhū ròu de ？",
+      "vi": "Cô hỏi: \"Thịt heo?"
+    },
+    {
+      "id": 184,
+      "start": 550.85,
+      "end": 553.55,
+      "hanzi": "鸡肉的？还是素的？”",
+      "pinyin": "jī ròu de ？ hái shì sù de ？”",
+      "vi": "Gà? Hay đồ chay?\""
+    },
+    {
+      "id": 185,
+      "start": 553.86,
+      "end": 556.04,
+      "hanzi": "你说：“猪肉的。”",
+      "pinyin": "nǐ shuō ：“ zhū ròu de 。”",
+      "vi": "Bạn nói: \"Thịt heo.\""
+    },
+    {
+      "id": 186,
+      "start": 556.33,
+      "end": 560.62,
+      "hanzi": "阿姨问：“要不要醋？要不要辣油？”",
+      "pinyin": "ā yí wèn ：“ yào bu yào cù ？ yào bu yào là yóu ？”",
+      "vi": "Cô hỏi: \"Thêm giấm không? Thêm dầu ớt không?\""
+    },
+    {
+      "id": 187,
+      "start": 560.93,
+      "end": 565,
+      "hanzi": "你可以说：“要一点醋，不要辣油。”",
+      "pinyin": "nǐ kě yǐ shuō ：“ yào yì diǎn cù ， bú yào là yóu 。”",
+      "vi": "Bạn có thể nói: \"Cho một ít giấm, không lấy dầu ớt.\""
+    },
+    {
+      "id": 188,
+      "start": 565,
+      "end": 567.36,
+      "hanzi": "饺子很快就上来了，",
+      "pinyin": "jiǎo zǐ hěn kuài jiù shàng lái le ，",
+      "vi": "Sủi cảo được mang ra nhanh chóng,"
+    },
+    {
+      "id": 189,
+      "start": 567.49,
+      "end": 570,
+      "hanzi": "热气从碗里飘出来。",
+      "pinyin": "rè qì cóng wǎn lǐ piāo chū lái 。",
+      "vi": "hơi nước bốc lên nghi ngút trong bát."
+    },
+    {
+      "id": 190,
+      "start": 570.2,
+      "end": 573.79,
+      "hanzi": "你吃一口，觉得温暖又舒服。",
+      "pinyin": "nǐ chī yì kǒu ， jué de wēn nuǎn yòu shū fú 。",
+      "vi": "Bạn cắn một miếng, cảm thấy ấm áp và dễ chịu."
+    },
+    {
+      "id": 191,
+      "start": 574.2,
+      "end": 576.04,
+      "hanzi": "阿姨看着你吃，",
+      "pinyin": "ā yí kàn zhe nǐ chī ，",
+      "vi": "Cô nhìn bạn ăn"
+    },
+    {
+      "id": 192,
+      "start": 576.04,
+      "end": 578.55,
+      "hanzi": "还会问：“好吃吗？”",
+      "pinyin": "hái huì wèn ：“ hǎo chī ma ？”",
+      "vi": "và hỏi: \"Ngon không?\"."
+    },
+    {
+      "id": 193,
+      "start": 578.69,
+      "end": 581.88,
+      "hanzi": "你点点头说：“很好吃。”",
+      "pinyin": "nǐ diǎn diǎn tóu shuō ：“ hěn hǎo chī 。”",
+      "vi": "Bạn gật đầu và nói: \"Ngon lắm.\""
+    },
+    {
+      "id": 194,
+      "start": 582.01,
+      "end": 584.52,
+      "hanzi": "阿姨会笑得很开心。",
+      "pinyin": "ā yí huì xiào dé hěn kāi xīn 。",
+      "vi": "Cô mỉm cười vui vẻ."
+    },
+    {
+      "id": 195,
+      "start": 584.61,
+      "end": 587.4,
+      "hanzi": "吃完饺子，你继续走，",
+      "pinyin": "chī wán jiǎo zǐ ， nǐ jì xù zǒu ，",
+      "vi": "Ăn xong sủi cảo, bạn tiếp tục đi bộ và"
+    },
+    {
+      "id": 196,
+      "start": 587.69,
+      "end": 590.47,
+      "hanzi": "看到一个卖红薯的小摊。",
+      "pinyin": "kàn dào yí gè mài hóng shǔ de xiǎo tān 。",
+      "vi": "thấy một quầy khoai lang."
+    },
+    {
+      "id": 197,
+      "start": 591.1,
+      "end": 595,
+      "hanzi": "冬天的时候，烤红薯特别特别香，",
+      "pinyin": "dōng tiān de shí hòu ， kǎo hóng shǔ tè bié tè bié xiāng ，",
+      "vi": "Mùa đông, khoai lang nướng đặc biệt thơm"
+    },
+    {
+      "id": 198,
+      "start": 595.13,
+      "end": 596.91,
+      "hanzi": "而且很温暖。",
+      "pinyin": "ér qiě hěn wēn nuǎn 。",
+      "vi": "và ấm."
+    },
+    {
+      "id": 199,
+      "start": 596.91,
+      "end": 601.11,
+      "hanzi": "你走过去说：“老板，这个多少钱？”",
+      "pinyin": "nǐ zǒu guò qù shuō ：“ lǎo bǎn ， zhè ge duō shǎo qián ？”",
+      "vi": "Bạn lại gần và hỏi: \"Ông chủ, cái này bao nhiêu tiền?\"."
+    },
+    {
+      "id": 200,
+      "start": 601.2,
+      "end": 604.12,
+      "hanzi": "老板会回答：“五块一个。”",
+      "pinyin": "lǎo bǎn huì huí dá ：“ wǔ kuài yí gè 。”",
+      "vi": "Chủ quán đáp: \"Năm tệ một cái.\""
+    },
+    {
+      "id": 201,
+      "start": 604.36,
+      "end": 606.63,
+      "hanzi": "你说：“给我一个。”",
+      "pinyin": "nǐ shuō ：“ gěi wǒ yí gè 。”",
+      "vi": "Bạn nói: \"Cho tôi một cái.\""
+    },
+    {
+      "id": 202,
+      "start": 607.24,
+      "end": 608.86,
+      "hanzi": "老板会从炉子里",
+      "pinyin": "lǎo bǎn huì cóng lú zǐ lǐ",
+      "vi": "Chủ quán lấy một củ khoai lang nóng hổi"
+    },
+    {
+      "id": 203,
+      "start": 608.86,
+      "end": 611.57,
+      "hanzi": "拿出一个热热的红薯给你，",
+      "pinyin": "ná chū yí gè rè rè de hóng shǔ gěi nǐ ，",
+      "vi": "từ bếp ra đưa cho bạn."
+    },
+    {
+      "id": 204,
+      "start": 611.82,
+      "end": 614.18,
+      "hanzi": "你拿在手里，特别暖。",
+      "pinyin": "nǐ ná zài shǒu lǐ ， tè bié nuǎn 。",
+      "vi": "Cầm trên tay, bạn cảm thấy ấm áp lạ thường."
+    },
+    {
+      "id": 205,
+      "start": 614.31,
+      "end": 617.07,
+      "hanzi": "你咬一口，觉得甜甜的，",
+      "pinyin": "nǐ yǎo yì kǒu ， jué de tián tián de ，",
+      "vi": "Bạn cắn một miếng và thấy ngọt,"
+    },
+    {
+      "id": 206,
+      "start": 617.32,
+      "end": 619.63,
+      "hanzi": "也觉得很有家的味道。",
+      "pinyin": "yě jué de hěn yǒu jiā de wèi dào 。",
+      "vi": "vị như ở nhà vậy."
+    },
+    {
+      "id": 207,
+      "start": 620,
+      "end": 621.6,
+      "hanzi": "街边的小吃，",
+      "pinyin": "jiē biān de xiǎo chī ，",
+      "vi": "Ẩm thực đường phố"
+    },
+    {
+      "id": 208,
+      "start": 621.69,
+      "end": 625.68,
+      "hanzi": "就是这样让人觉得简单又幸福。",
+      "pinyin": "jiù shì zhè yàng ràng rén jué de jiǎn dān yòu xìng fú 。",
+      "vi": "đơn giản như vậy mà lại khiến bạn thấy vui vẻ."
+    },
+    {
+      "id": 209,
+      "start": 625.97,
+      "end": 627.68,
+      "hanzi": "你继续慢慢走着，",
+      "pinyin": "nǐ jì xù màn màn zǒu zhe ，",
+      "vi": "Bạn tiếp tục đi bộ chậm rãi và"
+    },
+    {
+      "id": 210,
+      "start": 627.9,
+      "end": 631.23,
+      "hanzi": "看到了一个卖鸡蛋灌饼的小车。",
+      "pinyin": "kàn dào le yí gè mài jī dàn guàn bǐng de xiǎo chē 。",
+      "vi": "thấy một xe đẩy bán bánh trứng."
+    },
+    {
+      "id": 211,
+      "start": 631.59,
+      "end": 634.17,
+      "hanzi": "鸡蛋灌饼外面是脆的，",
+      "pinyin": "jī dàn guàn bǐng wài miàn shì cuì de ，",
+      "vi": "Bánh trứng giòn bên ngoài,"
+    },
+    {
+      "id": 212,
+      "start": 634.3,
+      "end": 636.17,
+      "hanzi": "里面是软软的，",
+      "pinyin": "lǐ miàn shì ruǎn ruǎn de ，",
+      "vi": "mềm bên trong,"
+    },
+    {
+      "id": 213,
+      "start": 636.39,
+      "end": 641.04,
+      "hanzi": "有鸡蛋，有青菜，有肉，有酱。",
+      "pinyin": "yǒu jī dàn ， yǒu qīng cài ， yǒu ròu ， yǒu jiàng 。",
+      "vi": "với trứng, rau, thịt và nước sốt."
+    },
+    {
+      "id": 214,
+      "start": 641.17,
+      "end": 644.2,
+      "hanzi": "你走过去点了一份，说：",
+      "pinyin": "nǐ zǒu guò qù diǎn le yí fèn ， shuō ：",
+      "vi": "Bạn lại gần và gọi một món, nói:"
+    },
+    {
+      "id": 215,
+      "start": 644.29,
+      "end": 645.82,
+      "hanzi": "“不要太辣。”",
+      "pinyin": "“ bú yào tài là 。”",
+      "vi": "\"Đừng cay quá.\""
+    },
+    {
+      "id": 216,
+      "start": 646.34,
+      "end": 649.3,
+      "hanzi": "老板问：“要不要加香菜？”",
+      "pinyin": "lǎo bǎn wèn ：“ yào bu yào jiā xiāng cài ？”",
+      "vi": "Chủ quán hỏi: \"Thêm rau mùi không?\""
+    },
+    {
+      "id": 217,
+      "start": 649.52,
+      "end": 651.52,
+      "hanzi": "你说：“不要。”",
+      "pinyin": "nǐ shuō ：“ bú yào 。”",
+      "vi": "Bạn nói: \"Không.\""
+    },
+    {
+      "id": 218,
+      "start": 651.63,
+      "end": 654.17,
+      "hanzi": "老板很快给你做好，",
+      "pinyin": "lǎo bǎn hěn kuài gěi nǐ zuò hǎo ，",
+      "vi": "Chủ quán nhanh chóng chuẩn bị cho bạn,"
+    },
+    {
+      "id": 219,
+      "start": 654.51,
+      "end": 657.27,
+      "hanzi": "你咬一口，说不出话，",
+      "pinyin": "nǐ yǎo yì kǒu ， shuō bù chū huà ，",
+      "vi": "và bạn cắn một miếng, không nói nên lời,"
+    },
+    {
+      "id": 220,
+      "start": 657.43,
+      "end": 660.19,
+      "hanzi": "因为真的太好吃了。",
+      "pinyin": "yīn wèi zhēn de tài hǎo chī le 。",
+      "vi": "vì nó quá ngon."
+    },
+    {
+      "id": 221,
+      "start": 660.19,
+      "end": 663.29,
+      "hanzi": "你慢慢吃着，慢慢走，",
+      "pinyin": "nǐ màn màn chī zhe ， màn màn zǒu ，",
+      "vi": "Bạn ăn chậm rãi, bước đi chậm rãi,"
+    },
+    {
+      "id": 222,
+      "start": 663.38,
+      "end": 666.61,
+      "hanzi": "觉得晚上的风也很舒服。",
+      "pinyin": "jué de wǎn shàng de fēng yě hěn shū fú 。",
+      "vi": "cảm nhận làn gió buổi tối cũng thật dễ chịu."
+    },
+    {
+      "id": 223,
+      "start": 666.88,
+      "end": 670.85,
+      "hanzi": "走着走着，你看到一家卖炒面的。",
+      "pinyin": "zǒu zhe zǒu zhe ， nǐ kàn dào yì jiā mài chǎo miàn de 。",
+      "vi": "Trên đường đi, bạn nhìn thấy một quầy bán mì xào."
+    },
+    {
+      "id": 224,
+      "start": 671.14,
+      "end": 675.29,
+      "hanzi": "你有一点饱了，但你还是想看看。",
+      "pinyin": "nǐ yǒu yì diǎn bǎo le ， dàn nǐ hái shì xiǎng kàn kàn 。",
+      "vi": "Bạn đã hơi no, nhưng vẫn muốn ghé vào xem."
+    },
+    {
+      "id": 225,
+      "start": 675.38,
+      "end": 679.65,
+      "hanzi": "老板在大火上炒面，动作很快，",
+      "pinyin": "lǎo bǎn zài dà huǒ shàng chǎo miàn ， dòng zuò hěn kuài ，",
+      "vi": "Chủ quán đang xào mì trên ngọn lửa lớn, động tác nhanh nhẹn,"
+    },
+    {
+      "id": 226,
+      "start": 679.8,
+      "end": 682.7,
+      "hanzi": "锅里的面条跳来跳去。",
+      "pinyin": "guō lǐ de miàn tiáo tiào lái tiào qù 。",
+      "vi": "mì nhảy nhót trong chảo."
+    },
+    {
+      "id": 227,
+      "start": 682.88,
+      "end": 686.11,
+      "hanzi": "有人在等着，有人在聊天。",
+      "pinyin": "yǒu rén zài děng zhe ， yǒu rén zài liáo tiān 。",
+      "vi": "Có người đang chờ, có người đang trò chuyện."
+    },
+    {
+      "id": 228,
+      "start": 686.22,
+      "end": 688.58,
+      "hanzi": "你站在那里看了一会儿，",
+      "pinyin": "nǐ zhàn zài nà lǐ kàn le yí huì er ，",
+      "vi": "Bạn đứng đó nhìn một lúc, và"
+    },
+    {
+      "id": 229,
+      "start": 688.58,
+      "end": 691.18,
+      "hanzi": "老板问你：“来一份吗？”",
+      "pinyin": "lǎo bǎn wèn nǐ ：“ lái yí fèn ma ？”",
+      "vi": "chủ quán hỏi: \"Ăn một phần không?\"."
+    },
+    {
+      "id": 230,
+      "start": 691.65,
+      "end": 693.05,
+      "hanzi": "你笑笑说：",
+      "pinyin": "nǐ xiào xiào shuō ：",
+      "vi": "Bạn mỉm cười và nói:"
+    },
+    {
+      "id": 231,
+      "start": 693.21,
+      "end": 695.72,
+      "hanzi": "“今天不吃了，下次来。”",
+      "pinyin": "“ jīn tiān bù chī le ， xià cì lái 。”",
+      "vi": "\"Hôm nay không ăn nữa, lần sau tôi đến.\""
+    },
+    {
+      "id": 232,
+      "start": 695.9,
+      "end": 699.34,
+      "hanzi": "老板说：“好，下次见。”",
+      "pinyin": "lǎo bǎn shuō ：“ hǎo ， xià cì jiàn 。”",
+      "vi": "Chủ quán nói: \"Được, hẹn gặp lại.\""
+    },
+    {
+      "id": 233,
+      "start": 699.43,
+      "end": 703.82,
+      "hanzi": "你继续走，看到一个卖水果的小车。",
+      "pinyin": "nǐ jì xù zǒu ， kàn dào yí gè mài shuǐ guǒ de xiǎo chē 。",
+      "vi": "Bạn tiếp tục đi và thấy một xe bán trái cây."
+    },
+    {
+      "id": 234,
+      "start": 704.16,
+      "end": 708.58,
+      "hanzi": "水果摊的灯很亮，草莓、葡萄、",
+      "pinyin": "shuǐ guǒ tān de dēng hěn liàng ， cǎo méi 、 pú táo 、",
+      "vi": "Quầy trái cây được thắp sáng rực rỡ, dâu tây, nho và"
+    },
+    {
+      "id": 235,
+      "start": 708.76,
+      "end": 711.12,
+      "hanzi": "橙子都很好看。",
+      "pinyin": "chéng zǐ dōu hěn hǎo kàn 。",
+      "vi": "cam trông thật đẹp."
+    },
+    {
+      "id": 236,
+      "start": 711.61,
+      "end": 715,
+      "hanzi": "你买了一小盒草莓，跟老板说：",
+      "pinyin": "nǐ mǎi le yì xiǎo hé cǎo méi ， gēn lǎo bǎn shuō ：",
+      "vi": "Bạn mua một hộp dâu tây nhỏ và nói với chủ quán:"
+    },
+    {
+      "id": 237,
+      "start": 715.09,
+      "end": 716.93,
+      "hanzi": "“要甜一点的。”",
+      "pinyin": "“ yào tián yì diǎn de 。”",
+      "vi": "\"Cho tôi loại ngọt một chút.\""
+    },
+    {
+      "id": 238,
+      "start": 717.07,
+      "end": 720.5,
+      "hanzi": "老板帮你挑好的，递给你。",
+      "pinyin": "lǎo bǎn bāng nǐ tiāo hǎo de ， dì gěi nǐ 。",
+      "vi": "Chủ quán giúp bạn chọn những quả ngon nhất và đưa cho bạn."
+    },
+    {
+      "id": 239,
+      "start": 720.66,
+      "end": 722.66,
+      "hanzi": "你说：“谢谢。”",
+      "pinyin": "nǐ shuō ：“ xiè xiè 。”",
+      "vi": "Bạn nói: \"Cảm ơn.\""
+    },
+    {
+      "id": 240,
+      "start": 722.9,
+      "end": 726.52,
+      "hanzi": "老板说：“不客气，慢走。”",
+      "pinyin": "lǎo bǎn shuō ：“ bú kè qì ， màn zǒu 。”",
+      "vi": "Chủ quán nói: \"Không có gì, đi thong thả nhé.\""
+    },
+    {
+      "id": 241,
+      "start": 726.63,
+      "end": 731.34,
+      "hanzi": "你继续往前走，街上的灯慢慢变少了，",
+      "pinyin": "nǐ jì xù wǎng qián zǒu ， jiē shàng de dēng màn màn biàn shǎo le ，",
+      "vi": "Bạn tiếp tục bước đi, đèn đường thưa dần,"
+    },
+    {
+      "id": 242,
+      "start": 731.43,
+      "end": 733.12,
+      "hanzi": "但你心里很暖。",
+      "pinyin": "dàn nǐ xīn lǐ hěn nuǎn 。",
+      "vi": "nhưng lòng bạn lại thấy ấm áp."
+    },
+    {
+      "id": 243,
+      "start": 733.61,
+      "end": 737.27,
+      "hanzi": "你今天吃了很多，也学了很多中文。",
+      "pinyin": "nǐ jīn tiān chī le hěn duō ， yě xué le hěn duō zhōng wén 。",
+      "vi": "Hôm nay bạn đã ăn rất nhiều và học được rất nhiều tiếng Trung."
+    },
+    {
+      "id": 244,
+      "start": 737.65,
+      "end": 741.01,
+      "hanzi": "你发现，原来最好的学习方法，",
+      "pinyin": "nǐ fā xiàn ， yuán lái zuì hǎo de xué xí fāng fǎ ，",
+      "vi": "Bạn nhận ra rằng cách học tốt nhất"
+    },
+    {
+      "id": 245,
+      "start": 741.1,
+      "end": 744.72,
+      "hanzi": "就是把中文和生活放在一起。",
+      "pinyin": "jiù shì bǎ zhōng wén hé shēng huó fàng zài yì qǐ 。",
+      "vi": "là lồng ghép tiếng Trung vào cuộc sống hàng ngày."
+    },
+    {
+      "id": 246,
+      "start": 744.81,
+      "end": 748.71,
+      "hanzi": "你用简单的句子就可以买食物，",
+      "pinyin": "nǐ yòng jiǎn dān de jù zi jiù kě yǐ mǎi shí wù ，",
+      "vi": "Bạn có thể mua đồ ăn bằng những câu đơn giản,"
+    },
+    {
+      "id": 247,
+      "start": 749.02,
+      "end": 753.33,
+      "hanzi": "你用简单的词就可以跟老板聊天，",
+      "pinyin": "nǐ yòng jiǎn dān de cí jiù kě yǐ gēn lǎo bǎn liáo tiān ，",
+      "vi": "trò chuyện với chủ quán bằng những từ ngữ đơn giản, và"
+    },
+    {
+      "id": 248,
+      "start": 753.76,
+      "end": 755.6,
+      "hanzi": "你用简单的表达",
+      "pinyin": "nǐ yòng jiǎn dān de biǎo dá",
+      "vi": "dùng những cách nói đơn giản"
+    },
+    {
+      "id": 249,
+      "start": 755.6,
+      "end": 760,
+      "hanzi": "就可以让一个普通的晚上变得很特别。",
+      "pinyin": "jiù kě yǐ ràng yí gè pǔ tōng de wǎn shàng biàn de hěn tè bié 。",
+      "vi": "là có thể khiến một buổi tối bình thường trở nên rất đặc biệt."
+    },
+    {
+      "id": 250,
+      "start": 760.25,
+      "end": 761.42,
+      "hanzi": "你也发现，",
+      "pinyin": "nǐ yě fā xiàn ，",
+      "vi": "Bạn cũng nhận ra"
+    },
+    {
+      "id": 251,
+      "start": 761.42,
+      "end": 765,
+      "hanzi": "其实中国人都很愿意帮助你，",
+      "pinyin": "qí shí zhōng guó rén dōu hěn yuàn yì bāng zhù nǐ ，",
+      "vi": "rằng người Trung Quốc rất sẵn lòng giúp đỡ bạn;"
+    },
+    {
+      "id": 252,
+      "start": 765.31,
+      "end": 768.64,
+      "hanzi": "他们会听你说，他们会笑，",
+      "pinyin": "tā men huì tīng nǐ shuō ， tā men huì xiào ，",
+      "vi": "họ lắng nghe bạn, họ cười và"
+    },
+    {
+      "id": 253,
+      "start": 768.97,
+      "end": 772.9,
+      "hanzi": "他们会说：“哎，你中文不错啊！”",
+      "pinyin": "tā men huì shuō ：“ āi ， nǐ zhōng wén bú cuò a ！”",
+      "vi": "họ nói, \"Này, tiếng Trung của bạn khá đấy!\""
+    },
+    {
+      "id": 254,
+      "start": 772.9,
+      "end": 775.35,
+      "hanzi": "你慢慢走到街的尽头，",
+      "pinyin": "nǐ màn màn zǒu dào jiē de jìn tóu ，",
+      "vi": "Bạn chậm rãi bước đến cuối phố,"
+    },
+    {
+      "id": 255,
+      "start": 775.46,
+      "end": 777.21,
+      "hanzi": "风也变小了，",
+      "pinyin": "fēng yě biàn xiǎo le ，",
+      "vi": "gió lặng dần,"
+    },
+    {
+      "id": 256,
+      "start": 777.48,
+      "end": 779.64,
+      "hanzi": "街边的灯慢慢变暗，",
+      "pinyin": "jiē biān de dēng màn màn biàn àn ，",
+      "vi": "đèn đường mờ dần."
+    },
+    {
+      "id": 257,
+      "start": 780.13,
+      "end": 781.78,
+      "hanzi": "你觉得有点累，",
+      "pinyin": "nǐ jué de yǒu diǎn lèi ，",
+      "vi": "Bạn cảm thấy hơi mệt,"
+    },
+    {
+      "id": 258,
+      "start": 781.91,
+      "end": 785.84,
+      "hanzi": "但这种累是温暖的，是开心的。",
+      "pinyin": "dàn zhè zhǒng lèi shì wēn nuǎn de ， shì kāi xīn de 。",
+      "vi": "nhưng sự mệt mỏi này thật ấm áp và hạnh phúc."
+    },
+    {
+      "id": 259,
+      "start": 786.08,
+      "end": 789.81,
+      "hanzi": "你心里想：“今天真的很不错。”",
+      "pinyin": "nǐ xīn lǐ xiǎng ：“ jīn tiān zhēn de hěn bú cuò 。”",
+      "vi": "Bạn tự nhủ, \"Hôm nay thật tuyệt vời.\""
+    },
+    {
+      "id": 260,
+      "start": 790,
+      "end": 791.24,
+      "hanzi": "你也知道，",
+      "pinyin": "nǐ yě zhī dào ，",
+      "vi": "Bạn cũng biết rằng"
+    },
+    {
+      "id": 261,
+      "start": 791.42,
+      "end": 794.31,
+      "hanzi": "将来你真的来到中国的时候，",
+      "pinyin": "jiāng lái nǐ zhēn de lái dào zhōng guó de shí hòu ，",
+      "vi": "khi bạn thực sự đến Trung Quốc trong tương lai,"
+    },
+    {
+      "id": 262,
+      "start": 794.45,
+      "end": 797.34,
+      "hanzi": "你一定能用中文点小吃，",
+      "pinyin": "nǐ yí dìng néng yòng zhōng wén diǎn xiǎo chī ，",
+      "vi": "bạn chắc chắn sẽ có thể gọi đồ ăn vặt bằng tiếng Trung,"
+    },
+    {
+      "id": 263,
+      "start": 797.77,
+      "end": 801.16,
+      "hanzi": "你一定可以和老板做小小的对话，",
+      "pinyin": "nǐ yí dìng kě yǐ hé lǎo bǎn zuò xiǎo xiǎo de duì huà ，",
+      "vi": "bạn chắc chắn sẽ có thể trò chuyện ngắn với chủ quán, và"
+    },
+    {
+      "id": 264,
+      "start": 801.43,
+      "end": 803.54,
+      "hanzi": "你一定会觉得很有趣，",
+      "pinyin": "nǐ yí dìng huì jué de hěn yǒu qù ，",
+      "vi": "bạn chắc chắn sẽ thấy rất thú vị và"
+    },
+    {
+      "id": 265,
+      "start": 803.65,
+      "end": 805.52,
+      "hanzi": "也会觉得很自由。",
+      "pinyin": "yě huì jué de hěn zì yóu 。",
+      "vi": "cảm thấy rất thoải mái."
+    },
+    {
+      "id": 266,
+      "start": 805.74,
+      "end": 808.55,
+      "hanzi": "节目到这里就要结束了。",
+      "pinyin": "jié mù dào zhè lǐ jiù yào jié shù le 。",
+      "vi": "Chương trình sắp kết thúc tại đây."
+    },
+    {
+      "id": 267,
+      "start": 808.66,
+      "end": 810.66,
+      "hanzi": "谢谢你听到这里，",
+      "pinyin": "xiè xiè nǐ tīng dào zhè lǐ ，",
+      "vi": "Cảm ơn bạn đã lắng nghe"
+    },
+    {
+      "id": 268,
+      "start": 810.84,
+      "end": 813.94,
+      "hanzi": "也谢谢你陪我一起走过这一条",
+      "pinyin": "yě xiè xiè nǐ péi wǒ yì qǐ zǒu guò zhè yì tiáo",
+      "vi": "và cảm ơn bạn đã cùng tôi dạo qua"
+    },
+    {
+      "id": 269,
+      "start": 813.94,
+      "end": 816.59,
+      "hanzi": "想象中的中国小吃街。",
+      "pinyin": "xiǎng xiàng zhōng de zhōng guó xiǎo chī jiē 。",
+      "vi": "con phố đồ ăn vặt Trung Quốc tưởng tượng này."
+    },
+    {
+      "id": 270,
+      "start": 816.88,
+      "end": 818.65,
+      "hanzi": "希望今天的故事",
+      "pinyin": "xī wàng jīn tiān de gù shì",
+      "vi": "Hy vọng câu chuyện hôm nay"
+    },
+    {
+      "id": 271,
+      "start": 818.65,
+      "end": 821.28,
+      "hanzi": "可以让你的心轻松一点，",
+      "pinyin": "kě yǐ ràng nǐ de xīn qīng sōng yì diǎn ，",
+      "vi": "có thể giúp bạn thư giãn"
+    },
+    {
+      "id": 272,
+      "start": 821.44,
+      "end": 825,
+      "hanzi": "也让你觉得学中文其实很简单，",
+      "pinyin": "yě ràng nǐ jué de xué zhōng wén qí shí hěn jiǎn dān ，",
+      "vi": "và nhận ra rằng học tiếng Trung thực ra rất đơn giản"
+    },
+    {
+      "id": 273,
+      "start": 825.11,
+      "end": 826.39,
+      "hanzi": "也很好玩。",
+      "pinyin": "yě hěn hǎo wán 。",
+      "vi": "và thú vị."
+    },
+    {
+      "id": 274,
+      "start": 826.51,
+      "end": 828.51,
+      "hanzi": "我们下次再见，",
+      "pinyin": "wǒ men xià cì zài jiàn ，",
+      "vi": "Hẹn gặp lại bạn lần sau!"
+    }
+  ],
+  "isSystem": true,
+  "isCommunity": false,
+  "contributorName": "Hệ thống",
+  "createdAt": "2026-09-10T01:27:16.163Z"
+}

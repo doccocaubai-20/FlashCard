@@ -1,0 +1,1010 @@
+{
+  "id": "frXeBd5lVfI",
+  "youtubeId": "frXeBd5lVfI",
+  "title": "Cà tím hấp trộn ớt nướng — món ăn kèm thanh mát",
+  "titleHanzi": "烧椒拌手撕茄子",
+  "level": 4,
+  "topic": "Ẩm thực / Nấu ăn",
+  "channel": "大厨阿斗 Chef Adou",
+  "durationSec": 180,
+  "thumbnailUrl": "https://i.ytimg.com/vi/frXeBd5lVfI/hqdefault.jpg",
+  "totalSentences": 124,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.03,
+      "end": 1.53,
+      "hanzi": "黑茄子紫茄子绿茄子",
+      "pinyin": "hēi qié zi zǐ qié zi lǜ qié zi",
+      "vi": "Cà tím đen, cà tím tím, cà tím xanh"
+    },
+    {
+      "id": 2,
+      "start": 1.53,
+      "end": 2.77,
+      "hanzi": "哪种茄子蒸熟后",
+      "pinyin": "nǎ zhǒng qié zi zhēng shú hòu",
+      "vi": "Loại cà tím nào sau khi hấp chín"
+    },
+    {
+      "id": 3,
+      "start": 2.77,
+      "end": 3.83,
+      "hanzi": "最不易变色呢",
+      "pinyin": "zuì bú yì biàn sè ne",
+      "vi": "ít bị đổi màu nhất nhỉ?"
+    },
+    {
+      "id": 4,
+      "start": 3.83,
+      "end": 5.07,
+      "hanzi": "答案是紫茄子",
+      "pinyin": "dá àn shì zǐ qié zi",
+      "vi": "Đáp án là cà tím tím"
+    },
+    {
+      "id": 5,
+      "start": 5.07,
+      "end": 6.13,
+      "hanzi": "第二是黑茄子",
+      "pinyin": "dì èr shì hēi qié zi",
+      "vi": "Thứ hai là cà tím đen"
+    },
+    {
+      "id": 6,
+      "start": 6.13,
+      "end": 8.2,
+      "hanzi": "最容易变色的反而是绿茄子",
+      "pinyin": "zuì róng yì biàn sè de fǎn ér shì lǜ qié zi",
+      "vi": "Dễ đổi màu nhất lại chính là cà tím xanh"
+    },
+    {
+      "id": 7,
+      "start": 8.23,
+      "end": 9.8,
+      "hanzi": "看上去都是变了色（容易发黑）",
+      "pinyin": "kàn shàng qù dōu shì biàn le sè （ róng yì fā hēi ）",
+      "vi": "Nhìn thì đều là đổi màu (dễ bị thâm đen)"
+    },
+    {
+      "id": 8,
+      "start": 9.8,
+      "end": 11.4,
+      "hanzi": "其实它是有两种变化",
+      "pinyin": "qí shí tā shì yǒu liǎng zhǒng biàn huà",
+      "vi": "Thực ra nó có hai kiểu biến đổi"
+    },
+    {
+      "id": 9,
+      "start": 11.4,
+      "end": 12.43,
+      "hanzi": "一个是褪色（花青素变少）",
+      "pinyin": "yí gè shì tuì sè （ huā qīng sù biàn shǎo ）",
+      "vi": "Một là phai màu (sắc tố anthocyanin giảm đi)"
+    },
+    {
+      "id": 10,
+      "start": 12.43,
+      "end": 13.53,
+      "hanzi": "一个是褐化（酚类物质被氧化发黑）",
+      "pinyin": "yí gè shì hè huà （ fēn lèi wù zhì bèi yǎng huà fā hēi ）",
+      "vi": "Hai là hóa nâu (hợp chất phenol bị oxy hóa thành màu đen)"
+    },
+    {
+      "id": 11,
+      "start": 13.53,
+      "end": 15.53,
+      "hanzi": "朋友们我们今天做烧椒茄子",
+      "pinyin": "péng yǒu men wǒ men jīn tiān zuò shāo jiāo qié zi",
+      "vi": "Các bạn ơi, hôm nay chúng ta làm món cà tím ớt nướng"
+    },
+    {
+      "id": 12,
+      "start": 15.53,
+      "end": 16.43,
+      "hanzi": "教您一招",
+      "pinyin": "jiào nín yì zhāo",
+      "vi": "Mách bạn một mẹo"
+    },
+    {
+      "id": 13,
+      "start": 16.43,
+      "end": 17.5,
+      "hanzi": "茄子不易变色",
+      "pinyin": "qié zi bú yì biàn sè",
+      "vi": "giúp cà tím không dễ bị đổi màu"
+    },
+    {
+      "id": 14,
+      "start": 17.53,
+      "end": 19.2,
+      "hanzi": "首先准备两根紫茄子",
+      "pinyin": "shǒu xiān zhǔn bèi liǎng gēn zǐ qié zi",
+      "vi": "Đầu tiên chuẩn bị hai trái cà tím tím"
+    },
+    {
+      "id": 15,
+      "start": 19.2,
+      "end": 20.2,
+      "hanzi": "先把根部切掉",
+      "pinyin": "xiān bǎ gēn bù qiè diào",
+      "vi": "Trước hết cắt bỏ phần cuống"
+    },
+    {
+      "id": 16,
+      "start": 20.2,
+      "end": 22.03,
+      "hanzi": "然后把它拦腰一分为二",
+      "pinyin": "rán hòu bǎ tā lán yāo yì fēn wéi èr",
+      "vi": "Rồi cắt ngang chia làm đôi"
+    },
+    {
+      "id": 17,
+      "start": 22.03,
+      "end": 23.8,
+      "hanzi": "再把茄子竖着对半切开",
+      "pinyin": "zài bǎ qié zi shù zhe duì bàn qiè kāi",
+      "vi": "Tiếp đó bổ dọc cà tím làm đôi"
+    },
+    {
+      "id": 18,
+      "start": 23.8,
+      "end": 25.47,
+      "hanzi": "把两个茄子快速切好后",
+      "pinyin": "bǎ liǎng gè qié zi kuài sù qiè hǎo hòu",
+      "vi": "Sau khi cắt nhanh hai trái cà tím xong"
+    },
+    {
+      "id": 19,
+      "start": 25.47,
+      "end": 27.03,
+      "hanzi": "迅速的放入水中泡着（隔绝空气）",
+      "pinyin": "xùn sù de fàng rù shuǐ zhōng pào zhe （ gé jué kōng qì ）",
+      "vi": "nhanh tay thả vào nước ngâm (cách ly không khí)"
+    },
+    {
+      "id": 20,
+      "start": 27.03,
+      "end": 28.07,
+      "hanzi": "浸泡个10分钟",
+      "pinyin": "jìn pào gè 10 fēn zhōng",
+      "vi": "Ngâm khoảng 10 phút"
+    },
+    {
+      "id": 21,
+      "start": 28.07,
+      "end": 29.07,
+      "hanzi": "可以加点白醋",
+      "pinyin": "kě yǐ jiā diǎn bái cù",
+      "vi": "Có thể cho thêm chút giấm trắng"
+    },
+    {
+      "id": 22,
+      "start": 29.07,
+      "end": 30.53,
+      "hanzi": "能够有效的防止变色",
+      "pinyin": "néng gòu yǒu xiào de fáng zhǐ biàn sè",
+      "vi": "giúp ngăn đổi màu hiệu quả"
+    },
+    {
+      "id": 23,
+      "start": 30.53,
+      "end": 33.33,
+      "hanzi": "因为花青素在酸性的环境下更稳定",
+      "pinyin": "yīn wèi huā qīng sù zài suān xìng de huán jìng xià gèng wěn dìng",
+      "vi": "vì anthocyanin ổn định hơn trong môi trường axit"
+    },
+    {
+      "id": 24,
+      "start": 33.37,
+      "end": 34.9,
+      "hanzi": "这个时间我们做烧椒",
+      "pinyin": "zhè ge shí jiān wǒ men zuò shāo jiāo",
+      "vi": "Trong lúc này chúng ta làm ớt nướng"
+    },
+    {
+      "id": 25,
+      "start": 34.9,
+      "end": 36.57,
+      "hanzi": "准备半斤二荆条辣椒",
+      "pinyin": "zhǔn bèi bàn jīn èr jīng tiáo là jiāo",
+      "vi": "Chuẩn bị 250g ớt nhị kinh điều"
+    },
+    {
+      "id": 26,
+      "start": 36.6,
+      "end": 37.87,
+      "hanzi": "先把它们清洗干净",
+      "pinyin": "xiān bǎ tā men qīng xǐ gān jìng",
+      "vi": "Trước tiên rửa sạch chúng"
+    },
+    {
+      "id": 27,
+      "start": 37.87,
+      "end": 39.4,
+      "hanzi": "这个烧椒可以做很多菜（还做了烧椒皮蛋）",
+      "pinyin": "zhè ge shāo jiāo kě yǐ zuò hěn duō cài （ hái zuò le shāo jiāo pí dàn ）",
+      "vi": "Ớt nướng này làm được nhiều món (còn làm cả trứng bắc thảo ớt nướng)"
+    },
+    {
+      "id": 28,
+      "start": 39.4,
+      "end": 40.6,
+      "hanzi": "一次可以多做一点",
+      "pinyin": "yí cì kě yǐ duō zuò yì diǎn",
+      "vi": "Mỗi lần có thể làm nhiều một chút"
+    },
+    {
+      "id": 29,
+      "start": 40.6,
+      "end": 41.53,
+      "hanzi": "清洗干净以后",
+      "pinyin": "qīng xǐ gān jìng yǐ hòu",
+      "vi": "Sau khi rửa sạch"
+    },
+    {
+      "id": 30,
+      "start": 41.53,
+      "end": 43.2,
+      "hanzi": "把它们放在案板上平铺开",
+      "pinyin": "bǎ tā men fàng zài àn bǎn shàng píng pū kāi",
+      "vi": "trải đều chúng ra trên thớt"
+    },
+    {
+      "id": 31,
+      "start": 43.2,
+      "end": 44.93,
+      "hanzi": "用电风扇吹干表面的水分",
+      "pinyin": "yòng diàn fēng shàn chuī gān biǎo miàn de shuǐ fèn",
+      "vi": "Dùng quạt điện thổi khô nước trên bề mặt"
+    },
+    {
+      "id": 32,
+      "start": 44.93,
+      "end": 47.23,
+      "hanzi": "或者用厨房用纸吸干表面的水分",
+      "pinyin": "huò zhě yòng chú fáng yòng zhǐ xī gān biǎo miàn de shuǐ fèn",
+      "vi": "hoặc dùng giấy bếp thấm khô nước bề mặt"
+    },
+    {
+      "id": 33,
+      "start": 47.27,
+      "end": 49.1,
+      "hanzi": "能够减少后期烹饪的时间",
+      "pinyin": "néng gòu jiǎn shǎo hòu qī pēng rèn de shí jiān",
+      "vi": "giúp giảm thời gian chế biến về sau"
+    },
+    {
+      "id": 34,
+      "start": 49.1,
+      "end": 50.1,
+      "hanzi": "吹干水分后",
+      "pinyin": "chuī gān shuǐ fèn hòu",
+      "vi": "Sau khi thổi khô nước"
+    },
+    {
+      "id": 35,
+      "start": 50.1,
+      "end": 51.43,
+      "hanzi": "先用刀切掉蒂部",
+      "pinyin": "xiān yòng dāo qiè diào dì bù",
+      "vi": "trước hết dùng dao cắt bỏ phần cuống"
+    },
+    {
+      "id": 36,
+      "start": 51.43,
+      "end": 52.6,
+      "hanzi": "再把它们切成段",
+      "pinyin": "zài bǎ tā men qiè chéng duàn",
+      "vi": "rồi cắt chúng thành khúc"
+    },
+    {
+      "id": 37,
+      "start": 52.6,
+      "end": 54.8,
+      "hanzi": "传统的做法就是把青椒用火烧一下",
+      "pinyin": "chuán tǒng de zuò fǎ jiù shì bǎ qīng jiāo yòng huǒ shāo yí xià",
+      "vi": "Cách làm truyền thống là đem ớt xanh nướng qua lửa"
+    },
+    {
+      "id": 38,
+      "start": 54.8,
+      "end": 56.53,
+      "hanzi": "现在嘛就用铁锅炙一下",
+      "pinyin": "xiàn zài ma jiù yòng tiě guō zhì yí xià",
+      "vi": "Còn bây giờ thì áp chảo gang một chút"
+    },
+    {
+      "id": 39,
+      "start": 56.53,
+      "end": 58.23,
+      "hanzi": "接着我们把青椒段拍扁",
+      "pinyin": "jiē zhe wǒ men bǎ qīng jiāo duàn pāi biǎn",
+      "vi": "Tiếp đó ta đập dẹp các khúc ớt xanh"
+    },
+    {
+      "id": 40,
+      "start": 58.23,
+      "end": 59.87,
+      "hanzi": "增加与铁锅的接触面积",
+      "pinyin": "zēng jiā yǔ tiě guō de jiē chù miàn jī",
+      "vi": "để tăng diện tích tiếp xúc với chảo gang"
+    },
+    {
+      "id": 41,
+      "start": 59.87,
+      "end": 61.13,
+      "hanzi": "全部处理完毕后",
+      "pinyin": "quán bù chǔ lǐ wán bì hòu",
+      "vi": "Sau khi xử lý xong tất cả"
+    },
+    {
+      "id": 42,
+      "start": 61.13,
+      "end": 63.47,
+      "hanzi": "准备一口无水无油干净的铁锅",
+      "pinyin": "zhǔn bèi yì kǒu wú shuǐ wú yóu gān jìng de tiě guō",
+      "vi": "chuẩn bị một chiếc chảo gang sạch, không nước không dầu"
+    },
+    {
+      "id": 43,
+      "start": 63.47,
+      "end": 65.53,
+      "hanzi": "烧热后放入全部的青椒",
+      "pinyin": "shāo rè hòu fàng rù quán bù de qīng jiāo",
+      "vi": "Đun nóng rồi cho toàn bộ ớt xanh vào"
+    },
+    {
+      "id": 44,
+      "start": 65.53,
+      "end": 66.93,
+      "hanzi": "一边开中火加热",
+      "pinyin": "yì biān kāi zhōng huǒ jiā rè",
+      "vi": "Bật lửa vừa để đun nóng"
+    },
+    {
+      "id": 45,
+      "start": 66.93,
+      "end": 68.27,
+      "hanzi": "一边用勺子按压",
+      "pinyin": "yì biān yòng sháo zǐ àn yā",
+      "vi": "đồng thời dùng thìa ấn xuống"
+    },
+    {
+      "id": 46,
+      "start": 68.27,
+      "end": 69.13,
+      "hanzi": "把青椒烫熟",
+      "pinyin": "bǎ qīng jiāo tàng shú",
+      "vi": "làm chín ớt xanh"
+    },
+    {
+      "id": 47,
+      "start": 69.13,
+      "end": 70.5,
+      "hanzi": "炒软炒出虎皮",
+      "pinyin": "chǎo ruǎn chǎo chū hǔ pí",
+      "vi": "Xào cho mềm, xào tới khi sém da hổ (vỏ nhăn)"
+    },
+    {
+      "id": 48,
+      "start": 70.5,
+      "end": 71.8,
+      "hanzi": "像这个样子就可以了",
+      "pinyin": "xiàng zhè ge yàng zi jiù kě yǐ le",
+      "vi": "Như thế này là được rồi"
+    },
+    {
+      "id": 49,
+      "start": 71.8,
+      "end": 72.5,
+      "hanzi": "然后关火",
+      "pinyin": "rán hòu guān huǒ",
+      "vi": "Rồi tắt lửa"
+    },
+    {
+      "id": 50,
+      "start": 72.5,
+      "end": 73.63,
+      "hanzi": "把它们拿出来放凉",
+      "pinyin": "bǎ tā men ná chū lái fàng liáng",
+      "vi": "Lấy chúng ra để nguội"
+    },
+    {
+      "id": 51,
+      "start": 73.63,
+      "end": 75.6,
+      "hanzi": "这个时间我们准备两个独蒜",
+      "pinyin": "zhè ge shí jiān wǒ men zhǔn bèi liǎng gè dú suàn",
+      "vi": "Trong lúc này ta chuẩn bị hai củ tỏi cô đơn"
+    },
+    {
+      "id": 52,
+      "start": 75.6,
+      "end": 76.8,
+      "hanzi": "把它们对半切开",
+      "pinyin": "bǎ tā men duì bàn qiè kāi",
+      "vi": "Bổ đôi chúng ra"
+    },
+    {
+      "id": 53,
+      "start": 76.8,
+      "end": 78.03,
+      "hanzi": "再撕去蒜衣",
+      "pinyin": "zài sī qù suàn yī",
+      "vi": "rồi bóc bỏ vỏ tỏi"
+    },
+    {
+      "id": 54,
+      "start": 78.03,
+      "end": 79.13,
+      "hanzi": "再切掉两头",
+      "pinyin": "zài qiè diào liǎng tóu",
+      "vi": "cắt bỏ hai đầu"
+    },
+    {
+      "id": 55,
+      "start": 79.13,
+      "end": 81.17,
+      "hanzi": "然后切成大小均匀的蒜末",
+      "pinyin": "rán hòu qiè chéng dà xiǎo jūn yún de suàn mò",
+      "vi": "rồi băm thành hạt tỏi đều nhau"
+    },
+    {
+      "id": 56,
+      "start": 81.17,
+      "end": 82.27,
+      "hanzi": "全部切好之后",
+      "pinyin": "quán bù qiè hǎo zhī hòu",
+      "vi": "Sau khi cắt xong tất cả"
+    },
+    {
+      "id": 57,
+      "start": 82.27,
+      "end": 83.1,
+      "hanzi": "准备一个碗",
+      "pinyin": "zhǔn bèi yí gè wǎn",
+      "vi": "chuẩn bị một cái bát"
+    },
+    {
+      "id": 58,
+      "start": 83.1,
+      "end": 84.13,
+      "hanzi": "加入一勺辣椒面",
+      "pinyin": "jiā rù yì sháo là jiāo miàn",
+      "vi": "cho vào một thìa bột ớt"
+    },
+    {
+      "id": 59,
+      "start": 84.13,
+      "end": 85.63,
+      "hanzi": "再加入切好的蒜末",
+      "pinyin": "zài jiā rù qiè hǎo de suàn mò",
+      "vi": "rồi cho chỗ tỏi băm vừa xong vào"
+    },
+    {
+      "id": 60,
+      "start": 85.63,
+      "end": 87.7,
+      "hanzi": "再加入少量的熟的白芝麻",
+      "pinyin": "zài jiā rù shǎo liàng de shú de bái zhī má",
+      "vi": "thêm một ít vừng trắng đã rang chín"
+    },
+    {
+      "id": 61,
+      "start": 87.7,
+      "end": 89.33,
+      "hanzi": "再把一半的烧椒剁成末",
+      "pinyin": "zài bǎ yí bàn de shāo jiāo duò chéng mò",
+      "vi": "rồi băm nhuyễn một nửa số ớt nướng"
+    },
+    {
+      "id": 62,
+      "start": 89.33,
+      "end": 90.23,
+      "hanzi": "全部剁好后",
+      "pinyin": "quán bù duò hǎo hòu",
+      "vi": "Sau khi băm xong tất cả"
+    },
+    {
+      "id": 63,
+      "start": 90.23,
+      "end": 91.23,
+      "hanzi": "和蒜末放一起",
+      "pinyin": "hé suàn mò fàng yì qǐ",
+      "vi": "cho chung với tỏi băm"
+    },
+    {
+      "id": 64,
+      "start": 91.23,
+      "end": 92.9,
+      "hanzi": "用筷子把它们翻拌一下",
+      "pinyin": "yòng kuài zi bǎ tā men fān bàn yí xià",
+      "vi": "Dùng đũa đảo trộn một chút"
+    },
+    {
+      "id": 65,
+      "start": 92.9,
+      "end": 93.63,
+      "hanzi": "拌匀",
+      "pinyin": "bàn yún",
+      "vi": "trộn đều"
+    },
+    {
+      "id": 66,
+      "start": 93.63,
+      "end": 95.1,
+      "hanzi": "下一步起锅烧油",
+      "pinyin": "xià yí bù qǐ guō shāo yóu",
+      "vi": "Bước tiếp theo bắc chảo đun dầu"
+    },
+    {
+      "id": 67,
+      "start": 95.1,
+      "end": 96.07,
+      "hanzi": "大约40克",
+      "pinyin": "dà yuē 40 kè",
+      "vi": "khoảng 40 gram"
+    },
+    {
+      "id": 68,
+      "start": 96.07,
+      "end": 97.83,
+      "hanzi": "加热到185度以上",
+      "pinyin": "jiā rè dào 185 dù yǐ shàng",
+      "vi": "đun nóng đến trên 185 độ"
+    },
+    {
+      "id": 69,
+      "start": 97.83,
+      "end": 99.5,
+      "hanzi": "当我们插入一双筷子",
+      "pinyin": "dāng wǒ men chā rù yì shuāng kuài zi",
+      "vi": "Khi ta cắm một đôi đũa vào"
+    },
+    {
+      "id": 70,
+      "start": 99.5,
+      "end": 100.93,
+      "hanzi": "筷子周围出现气泡",
+      "pinyin": "kuài zi zhōu wéi chū xiàn qì pào",
+      "vi": "quanh đũa xuất hiện bọt khí"
+    },
+    {
+      "id": 71,
+      "start": 100.93,
+      "end": 102.9,
+      "hanzi": "拿筷子手距离油面10厘米",
+      "pinyin": "ná kuài zi shǒu jù lí yóu miàn 10 lí mǐ",
+      "vi": "tay cầm đũa cách mặt dầu 10 phân"
+    },
+    {
+      "id": 72,
+      "start": 102.9,
+      "end": 104.03,
+      "hanzi": "感觉到特别烫手",
+      "pinyin": "gǎn jué dào tè bié tàng shǒu",
+      "vi": "cảm thấy đặc biệt nóng rát tay"
+    },
+    {
+      "id": 73,
+      "start": 104.03,
+      "end": 104.93,
+      "hanzi": "就说明油温到了",
+      "pinyin": "jiù shuō míng yóu wēn dào le",
+      "vi": "thì tức là dầu đã đủ nóng"
+    },
+    {
+      "id": 74,
+      "start": 104.93,
+      "end": 106.83,
+      "hanzi": "迅速把热油泼在烧椒上",
+      "pinyin": "xùn sù bǎ rè yóu pō zài shāo jiāo shàng",
+      "vi": "Nhanh tay rưới dầu nóng lên ớt nướng"
+    },
+    {
+      "id": 75,
+      "start": 106.83,
+      "end": 108.1,
+      "hanzi": "激发出它们的香味",
+      "pinyin": "jī fā chū tā men de xiāng wèi",
+      "vi": "để kích thích mùi thơm của chúng"
+    },
+    {
+      "id": 76,
+      "start": 108.1,
+      "end": 109.67,
+      "hanzi": "再用筷子把它们搅拌均匀",
+      "pinyin": "zài yòng kuài zi bǎ tā men jiǎo bàn jūn yún",
+      "vi": "rồi dùng đũa trộn đều chúng"
+    },
+    {
+      "id": 77,
+      "start": 109.67,
+      "end": 110.7,
+      "hanzi": "充分搅匀后",
+      "pinyin": "chōng fèn jiǎo yún hòu",
+      "vi": "Sau khi trộn thật đều"
+    },
+    {
+      "id": 78,
+      "start": 110.7,
+      "end": 111.8,
+      "hanzi": "加入3克盐",
+      "pinyin": "jiā rù 3 kè yán",
+      "vi": "cho vào 3 gram muối"
+    },
+    {
+      "id": 79,
+      "start": 111.8,
+      "end": 113.5,
+      "hanzi": "再加入3克白糖",
+      "pinyin": "zài jiā rù 3 kè bái táng",
+      "vi": "thêm 3 gram đường trắng"
+    },
+    {
+      "id": 80,
+      "start": 113.5,
+      "end": 114.63,
+      "hanzi": "一点点的味精",
+      "pinyin": "yì diǎn diǎn de wèi jīng",
+      "vi": "một chút xíu bột ngọt"
+    },
+    {
+      "id": 81,
+      "start": 114.63,
+      "end": 116.87,
+      "hanzi": "接着加入0.5克的胡椒粉",
+      "pinyin": "jiē zhe jiā rù 0.5 kè de hú jiāo fěn",
+      "vi": "tiếp đó cho vào 0,5 gram bột tiêu"
+    },
+    {
+      "id": 82,
+      "start": 116.87,
+      "end": 118.67,
+      "hanzi": "再加入生抽30克",
+      "pinyin": "zài jiā rù shēng chōu 30 kè",
+      "vi": "thêm 30 gram nước tương (xì dầu)"
+    },
+    {
+      "id": 83,
+      "start": 118.7,
+      "end": 120.13,
+      "hanzi": "加入香醋10克",
+      "pinyin": "jiā rù xiāng cù 10 kè",
+      "vi": "cho vào 10 gram giấm thơm"
+    },
+    {
+      "id": 84,
+      "start": 120.13,
+      "end": 121.5,
+      "hanzi": "还是用筷子拌匀",
+      "pinyin": "hái shì yòng kuài zi bàn yún",
+      "vi": "vẫn dùng đũa trộn đều"
+    },
+    {
+      "id": 85,
+      "start": 121.5,
+      "end": 123.4,
+      "hanzi": "我们的烧茄酱就做好了",
+      "pinyin": "wǒ men de shāo qié jiàng jiù zuò hǎo le",
+      "vi": "Vậy là sốt ớt nướng của chúng ta đã xong"
+    },
+    {
+      "id": 86,
+      "start": 123.4,
+      "end": 125.23,
+      "hanzi": "下一步我们开始蒸茄子",
+      "pinyin": "xià yí bù wǒ men kāi shǐ zhēng qié zi",
+      "vi": "Bước tiếp theo ta bắt đầu hấp cà tím"
+    },
+    {
+      "id": 87,
+      "start": 125.23,
+      "end": 126.07,
+      "hanzi": "准备一口蒸锅",
+      "pinyin": "zhǔn bèi yì kǒu zhēng guō",
+      "vi": "Chuẩn bị một cái nồi hấp"
+    },
+    {
+      "id": 88,
+      "start": 126.07,
+      "end": 126.87,
+      "hanzi": "起锅烧水",
+      "pinyin": "qǐ guō shāo shuǐ",
+      "vi": "Bắc nồi đun nước"
+    },
+    {
+      "id": 89,
+      "start": 126.87,
+      "end": 129.07,
+      "hanzi": "把茄子切面朝下放入锅中",
+      "pinyin": "bǎ qié zi qiē miàn cháo xià fàng rù guō zhōng",
+      "vi": "Đặt mặt cắt cà tím úp xuống cho vào nồi"
+    },
+    {
+      "id": 90,
+      "start": 129.07,
+      "end": 131.7,
+      "hanzi": "摆放的茄子尽量不要贴到蒸锅的壁",
+      "pinyin": "bǎi fàng de qié zi jǐn liàng bú yào tiē dào zhēng guō de bì",
+      "vi": "Xếp cà tím cố gắng đừng chạm vào thành nồi hấp"
+    },
+    {
+      "id": 91,
+      "start": 131.7,
+      "end": 133.07,
+      "hanzi": "因为它接触明火",
+      "pinyin": "yīn wèi tā jiē chù míng huǒ",
+      "vi": "vì chỗ đó tiếp xúc với lửa trực tiếp"
+    },
+    {
+      "id": 92,
+      "start": 133.07,
+      "end": 134.47,
+      "hanzi": "温度会比箅子高",
+      "pinyin": "wēn dù huì bǐ bì zǐ gāo",
+      "vi": "nhiệt độ sẽ cao hơn vỉ hấp"
+    },
+    {
+      "id": 93,
+      "start": 134.47,
+      "end": 135.13,
+      "hanzi": "铺上两层",
+      "pinyin": "pù shàng liǎng céng",
+      "vi": "Xếp thành hai lớp"
+    },
+    {
+      "id": 94,
+      "start": 135.13,
+      "end": 136,
+      "hanzi": "盖上盖子",
+      "pinyin": "gài shàng gài zi",
+      "vi": "Đậy nắp lại"
+    },
+    {
+      "id": 95,
+      "start": 136,
+      "end": 136.93,
+      "hanzi": "开最大火",
+      "pinyin": "kāi zuì dà huǒ",
+      "vi": "Bật lửa lớn nhất"
+    },
+    {
+      "id": 96,
+      "start": 136.93,
+      "end": 139.27,
+      "hanzi": "上汽后足气蒸8分钟的时间",
+      "pinyin": "shàng qì hòu zú qì zhēng 8 fēn zhōng de shí jiān",
+      "vi": "Sau khi lên hơi thì hấp đủ hơi 8 phút"
+    },
+    {
+      "id": 97,
+      "start": 139.27,
+      "end": 140.67,
+      "hanzi": "中途一定不能开盖",
+      "pinyin": "zhōng tú yí dìng bù néng kāi gài",
+      "vi": "Giữa chừng nhất định không được mở nắp"
+    },
+    {
+      "id": 98,
+      "start": 140.67,
+      "end": 142.8,
+      "hanzi": "这个时间我们清洗几根香菜",
+      "pinyin": "zhè ge shí jiān wǒ men qīng xǐ jǐ gēn xiāng cài",
+      "vi": "Trong lúc này ta rửa vài cọng rau mùi"
+    },
+    {
+      "id": 99,
+      "start": 142.8,
+      "end": 145.17,
+      "hanzi": "把它们切掉根部后改刀切成段",
+      "pinyin": "bǎ tā men qiè diào gēn bù hòu gǎi dāo qiè chéng duàn",
+      "vi": "Cắt bỏ gốc rồi thái thành khúc"
+    },
+    {
+      "id": 100,
+      "start": 145.23,
+      "end": 146.1,
+      "hanzi": "好了时间到",
+      "pinyin": "hǎo le shí jiān dào",
+      "vi": "Được rồi, hết giờ"
+    },
+    {
+      "id": 101,
+      "start": 146.1,
+      "end": 146.87,
+      "hanzi": "立刻关火",
+      "pinyin": "lì kè guān huǒ",
+      "vi": "Lập tức tắt lửa"
+    },
+    {
+      "id": 102,
+      "start": 146.87,
+      "end": 148.07,
+      "hanzi": "把茄子夹出来放凉",
+      "pinyin": "bǎ qié zi jiá chū lái fàng liáng",
+      "vi": "Gắp cà tím ra để nguội"
+    },
+    {
+      "id": 103,
+      "start": 148.07,
+      "end": 150.27,
+      "hanzi": "茄子的花青素还是有些褪色了",
+      "pinyin": "qié zi de huā qīng sù hái shì yǒu xiē tuì sè le",
+      "vi": "Anthocyanin của cà tím vẫn hơi phai màu một chút"
+    },
+    {
+      "id": 104,
+      "start": 150.3,
+      "end": 151.83,
+      "hanzi": "但是茄肉还是很白的",
+      "pinyin": "dàn shì qié ròu hái shì hěn bái de",
+      "vi": "nhưng thịt cà vẫn rất trắng"
+    },
+    {
+      "id": 105,
+      "start": 151.83,
+      "end": 153.63,
+      "hanzi": "说明没有发生褐化反应",
+      "pinyin": "shuō míng méi yǒu fā shēng hè huà fǎn yìng",
+      "vi": "chứng tỏ không xảy ra phản ứng hóa nâu"
+    },
+    {
+      "id": 106,
+      "start": 153.63,
+      "end": 155.07,
+      "hanzi": "等到茄子不烫手了",
+      "pinyin": "děng dào qié zi bú tàng shǒu le",
+      "vi": "Đợi đến khi cà tím hết nóng tay"
+    },
+    {
+      "id": 107,
+      "start": 155.07,
+      "end": 156.13,
+      "hanzi": "把手清洗干净",
+      "pinyin": "bǎ shǒu qīng xǐ gān jìng",
+      "vi": "Rửa tay cho sạch"
+    },
+    {
+      "id": 108,
+      "start": 156.13,
+      "end": 158.33,
+      "hanzi": "把它们撕成大小均匀的条",
+      "pinyin": "bǎ tā men sī chéng dà xiǎo jūn yún de tiáo",
+      "vi": "Xé chúng thành những dải đều nhau"
+    },
+    {
+      "id": 109,
+      "start": 158.33,
+      "end": 159.33,
+      "hanzi": "撕好的茄子",
+      "pinyin": "sī hǎo de qié zi",
+      "vi": "Cà tím đã xé"
+    },
+    {
+      "id": 110,
+      "start": 159.43,
+      "end": 160.97,
+      "hanzi": "我们顺便把水分挤一下",
+      "pinyin": "wǒ men shùn biàn bǎ shuǐ fèn jǐ yí xià",
+      "vi": "Ta tiện tay vắt bớt nước đi một chút"
+    },
+    {
+      "id": 111,
+      "start": 160.97,
+      "end": 162.37,
+      "hanzi": "再把它们放入一个碗中",
+      "pinyin": "zài bǎ tā men fàng rù yí gè wǎn zhōng",
+      "vi": "rồi cho chúng vào một cái bát"
+    },
+    {
+      "id": 112,
+      "start": 162.47,
+      "end": 164.47,
+      "hanzi": "按紧后倒扣在盘子里面",
+      "pinyin": "àn jǐn hòu dǎo kòu zài pán zi lǐ miàn",
+      "vi": "Ấn chặt rồi úp ngược ra đĩa"
+    },
+    {
+      "id": 113,
+      "start": 164.47,
+      "end": 166.3,
+      "hanzi": "旁边再围一圈香菜叶子",
+      "pinyin": "páng biān zài wéi yì quān xiāng cài yè zi",
+      "vi": "Bên cạnh xếp một vòng lá rau mùi"
+    },
+    {
+      "id": 114,
+      "start": 166.3,
+      "end": 167.8,
+      "hanzi": "再淋上一半的烧椒酱",
+      "pinyin": "zài lín shàng yí bàn de shāo jiāo jiàng",
+      "vi": "rồi rưới lên một nửa số sốt ớt nướng"
+    },
+    {
+      "id": 115,
+      "start": 167.8,
+      "end": 169.1,
+      "hanzi": "烧椒茄子就完成了",
+      "pinyin": "shāo jiāo qié zi jiù wán chéng le",
+      "vi": "Món cà tím ớt nướng thế là hoàn thành"
+    },
+    {
+      "id": 116,
+      "start": 169.1,
+      "end": 170.43,
+      "hanzi": "搅拌均匀就可以吃了",
+      "pinyin": "jiǎo bàn jūn yún jiù kě yǐ chī le",
+      "vi": "Trộn đều là có thể ăn được rồi"
+    },
+    {
+      "id": 117,
+      "start": 170.43,
+      "end": 171.8,
+      "hanzi": "这样摆盘并不好拌",
+      "pinyin": "zhè yàng bǎi pán bìng bù hǎo bàn",
+      "vi": "Bày đĩa kiểu này thật ra không dễ trộn"
+    },
+    {
+      "id": 118,
+      "start": 171.8,
+      "end": 174.23,
+      "hanzi": "我个人更喜欢用大盘搅拌均匀",
+      "pinyin": "wǒ gè rén gèng xǐ huan yòng dà pán jiǎo bàn jūn yún",
+      "vi": "Cá nhân tôi thích dùng đĩa to trộn đều hơn"
+    },
+    {
+      "id": 119,
+      "start": 174.23,
+      "end": 175.5,
+      "hanzi": "这样拌起来更方便一点",
+      "pinyin": "zhè yàng bàn qǐ lái gèng fāng biàn yì diǎn",
+      "vi": "Trộn kiểu này tiện hơn một chút"
+    },
+    {
+      "id": 120,
+      "start": 175.5,
+      "end": 176.3,
+      "hanzi": "味道均匀",
+      "pinyin": "wèi dào jūn yún",
+      "vi": "hương vị đều hơn"
+    },
+    {
+      "id": 121,
+      "start": 176.3,
+      "end": 177.13,
+      "hanzi": "吃起来更过瘾",
+      "pinyin": "chī qǐ lái gèng guò yǐn",
+      "vi": "ăn càng đã miệng"
+    },
+    {
+      "id": 122,
+      "start": 177.13,
+      "end": 178.03,
+      "hanzi": "我是大厨阿斗",
+      "pinyin": "wǒ shì dà chú ā dòu",
+      "vi": "Tôi là đầu bếp A Đẩu (Chef Adou)"
+    },
+    {
+      "id": 123,
+      "start": 178.03,
+      "end": 179,
+      "hanzi": "感谢您的观看",
+      "pinyin": "gǎn xiè nín de guān kàn",
+      "vi": "Cảm ơn các bạn đã theo dõi"
+    },
+    {
+      "id": 124,
+      "start": 179,
+      "end": 179.97,
+      "hanzi": "我们下个视频见",
+      "pinyin": "wǒ men xià gè shì pín jiàn",
+      "vi": "Hẹn gặp lại ở video sau"
+    }
+  ],
+  "isSystem": true,
+  "isCommunity": false,
+  "contributorName": "Hệ thống",
+  "createdAt": "2026-09-10T01:27:16.161Z"
+}

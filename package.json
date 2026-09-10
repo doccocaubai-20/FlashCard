@@ -8,6 +8,7 @@
   "scripts": {
     "build": "nest build",
     "build:prod": "prisma generate && nest build && prisma db push --accept-data-loss",
+    "seed:videos": "ts-node prisma/seed_videos.ts",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",

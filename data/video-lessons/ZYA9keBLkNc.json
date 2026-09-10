@@ -1,0 +1,938 @@
+{
+  "id": "ZYA9keBLkNc",
+  "youtubeId": "ZYA9keBLkNc",
+  "title": "Tôm say rượu hoa điêu — vì sao ngâm ra lại bị đắng?",
+  "titleHanzi": "花雕熟醉罗氏虾",
+  "level": 4,
+  "topic": "Ẩm thực / Nấu ăn",
+  "channel": "大厨阿斗 Chef Adou",
+  "durationSec": 210,
+  "thumbnailUrl": "https://i.ytimg.com/vi/ZYA9keBLkNc/hqdefault.jpg",
+  "totalSentences": 115,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 2.63,
+      "hanzi": "花雕熟醉虾最好吃的是大头虾",
+      "pinyin": "huā diāo shú zuì xiā zuì hǎo chī de shì dà tóu xiā",
+      "vi": "Món tôm say rượu hoa điêu ngon nhất là phần tôm càng đầu to"
+    },
+    {
+      "id": 2,
+      "start": 2.63,
+      "end": 3.8,
+      "hanzi": "虾黄太香了",
+      "pinyin": "xiā huáng tài xiāng le",
+      "vi": "Gạch tôm thơm ơi là thơm"
+    },
+    {
+      "id": 3,
+      "start": 3.8,
+      "end": 5.9,
+      "hanzi": "但是很多人关键一步做错",
+      "pinyin": "dàn shì hěn duō rén guān jiàn yí bù zuò cuò",
+      "vi": "Nhưng rất nhiều người làm sai một bước then chốt"
+    },
+    {
+      "id": 4,
+      "start": 5.9,
+      "end": 7.33,
+      "hanzi": "导致泡出来发苦",
+      "pinyin": "dǎo zhì pào chū lái fā kǔ",
+      "vi": "Khiến tôm ngâm ra bị đắng"
+    },
+    {
+      "id": 5,
+      "start": 7.37,
+      "end": 8.2,
+      "hanzi": "切记",
+      "pinyin": "qiè jì",
+      "vi": "Nhớ kỹ"
+    },
+    {
+      "id": 6,
+      "start": 8.2,
+      "end": 10.47,
+      "hanzi": "柠檬片最多泡四个小时",
+      "pinyin": "níng méng piàn zuì duō pào sì gè xiǎo shí",
+      "vi": "Lát chanh chỉ được ngâm nhiều nhất bốn tiếng"
+    },
+    {
+      "id": 7,
+      "start": 10.47,
+      "end": 13.03,
+      "hanzi": "超过时间一定苦得你怀疑人生",
+      "pinyin": "chāo guò shí jiān yí dìng kǔ dé nǐ huái yí rén shēng",
+      "vi": "Quá thời gian đó chắc chắn đắng đến mức bạn phải hoài nghi cuộc đời"
+    },
+    {
+      "id": 8,
+      "start": 13.03,
+      "end": 15.7,
+      "hanzi": "今天我们做年轻版冰醉罗氏虾（少酒少糖）",
+      "pinyin": "jīn tiān wǒ men zuò nián qīng bǎn bīng zuì luó shì xiā （ shǎo jiǔ shǎo táng ）",
+      "vi": "Hôm nay chúng ta làm phiên bản trẻ trung tôm càng say rượu lạnh (ít rượu, ít đường)"
+    },
+    {
+      "id": 9,
+      "start": 15.7,
+      "end": 17.3,
+      "hanzi": "在家也能吃遍全国（江浙沪最爱）",
+      "pinyin": "zài jiā yě néng chī biàn quán guó （ jiāng zhè hù zuì ài ）",
+      "vi": "Ở nhà cũng có thể thưởng thức món khắp cả nước (dân Giang - Chiết - Hộ mê nhất)"
+    },
+    {
+      "id": 10,
+      "start": 17.3,
+      "end": 18.4,
+      "hanzi": "先说大头虾",
+      "pinyin": "xiān shuō dà tóu xiā",
+      "vi": "Trước hết nói về tôm càng đầu to"
+    },
+    {
+      "id": 11,
+      "start": 18.4,
+      "end": 19.3,
+      "hanzi": "不管大小",
+      "pinyin": "bù guǎn dà xiǎo",
+      "vi": "Bất kể to hay nhỏ"
+    },
+    {
+      "id": 12,
+      "start": 19.3,
+      "end": 20.4,
+      "hanzi": "一定要是活的",
+      "pinyin": "yí dìng yào shi huó de",
+      "vi": "Nhất định phải là tôm sống"
+    },
+    {
+      "id": 13,
+      "start": 20.43,
+      "end": 22.93,
+      "hanzi": "最好买厂家养过三四天的",
+      "pinyin": "zuì hǎo mǎi chǎng jiā yǎng guò sān sì tiān de",
+      "vi": "Tốt nhất mua loại đã được trại nuôi giữ ba bốn ngày"
+    },
+    {
+      "id": 14,
+      "start": 22.93,
+      "end": 24.37,
+      "hanzi": "排空了更干净",
+      "pinyin": "pái kōng le gèng gān jìng",
+      "vi": "Đã thải sạch ruột nên sạch hơn"
+    },
+    {
+      "id": 15,
+      "start": 24.37,
+      "end": 26,
+      "hanzi": "下一步起锅烧水",
+      "pinyin": "xià yí bù qǐ guō shāo shuǐ",
+      "vi": "Bước tiếp theo bắc nồi đun nước"
+    },
+    {
+      "id": 16,
+      "start": 26,
+      "end": 27.47,
+      "hanzi": "水一定要多一点",
+      "pinyin": "shuǐ yí dìng yào duō yì diǎn",
+      "vi": "Nước nhất định phải nhiều một chút"
+    },
+    {
+      "id": 17,
+      "start": 27.47,
+      "end": 30.03,
+      "hanzi": "加入多一点的葱段和生姜丝",
+      "pinyin": "jiā rù duō yì diǎn de cōng duàn hé shēng jiāng sī",
+      "vi": "Cho vào nhiều một chút hành khúc và gừng thái sợi"
+    },
+    {
+      "id": 18,
+      "start": 30.03,
+      "end": 30.93,
+      "hanzi": "开大火煮沸",
+      "pinyin": "kāi dà huǒ zhǔ fèi",
+      "vi": "Bật lửa lớn đun sôi"
+    },
+    {
+      "id": 19,
+      "start": 30.93,
+      "end": 32.33,
+      "hanzi": "当水要沸腾时",
+      "pinyin": "dāng shuǐ yào fèi téng shí",
+      "vi": "Khi nước sắp sôi"
+    },
+    {
+      "id": 20,
+      "start": 32.33,
+      "end": 33.83,
+      "hanzi": "先淋入一圈料酒",
+      "pinyin": "xiān lín rù yì quān liào jiǔ",
+      "vi": "Trước tiên rưới một vòng rượu nấu ăn"
+    },
+    {
+      "id": 21,
+      "start": 33.83,
+      "end": 35.43,
+      "hanzi": "加早了去腥效果不好",
+      "pinyin": "jiā zǎo le qù xīng xiào guǒ bù hǎo",
+      "vi": "Cho sớm quá thì khử tanh không hiệu quả"
+    },
+    {
+      "id": 22,
+      "start": 35.43,
+      "end": 39.13,
+      "hanzi": "水开后迅速加入全部清洗干净的罗氏虾",
+      "pinyin": "shuǐ kāi hòu xùn sù jiā rù quán bù qīng xǐ gān jìng de luó shì xiā",
+      "vi": "Nước sôi rồi nhanh tay cho toàn bộ tôm càng đã rửa sạch vào"
+    },
+    {
+      "id": 23,
+      "start": 39.13,
+      "end": 41.37,
+      "hanzi": "最大火煮个3分钟左右的时间",
+      "pinyin": "zuì dà huǒ zhǔ gè 3 fēn zhōng zuǒ yòu de shí jiān",
+      "vi": "Đun lửa lớn nhất khoảng 3 phút"
+    },
+    {
+      "id": 24,
+      "start": 41.37,
+      "end": 43.33,
+      "hanzi": "水面会飘起白色的泡沫",
+      "pinyin": "shuǐ miàn huì piāo qǐ bái sè de pào mò",
+      "vi": "Trên mặt nước sẽ nổi lên bọt trắng"
+    },
+    {
+      "id": 25,
+      "start": 43.33,
+      "end": 46.6,
+      "hanzi": "主要是水溶性蛋白质、虾的血水和杂质",
+      "pinyin": "zhǔ yào shi shuǐ róng xìng dàn bái zhì 、 xiā de xuè shuǐ hé zá zhì",
+      "vi": "Chủ yếu là protein tan trong nước, huyết tương và tạp chất của tôm"
+    },
+    {
+      "id": 26,
+      "start": 46.6,
+      "end": 48.07,
+      "hanzi": "因为我的虾比较小",
+      "pinyin": "yīn wèi wǒ de xiā bǐ jiào xiǎo",
+      "vi": "Vì tôm của tôi khá nhỏ"
+    },
+    {
+      "id": 27,
+      "start": 48.07,
+      "end": 49.7,
+      "hanzi": "3分钟绝对能熟",
+      "pinyin": "3 fēn zhōng jué duì néng shú",
+      "vi": "3 phút chắc chắn chín"
+    },
+    {
+      "id": 28,
+      "start": 49.7,
+      "end": 51.47,
+      "hanzi": "大的虾煮个4到5分钟",
+      "pinyin": "dà de xiā zhǔ gè 4 dào 5 fēn zhōng",
+      "vi": "Tôm to thì đun khoảng 4 đến 5 phút"
+    },
+    {
+      "id": 29,
+      "start": 51.47,
+      "end": 53.27,
+      "hanzi": "好了时间到，迅速捞出",
+      "pinyin": "hǎo le shí jiān dào ， xùn sù lāo chū",
+      "vi": "Được rồi, hết giờ, nhanh tay vớt ra"
+    },
+    {
+      "id": 30,
+      "start": 53.27,
+      "end": 55.2,
+      "hanzi": "放入干净的凉白开里面",
+      "pinyin": "fàng rù gān jìng de liáng bái kāi lǐ miàn",
+      "vi": "Cho vào nước đun sôi để nguội sạch"
+    },
+    {
+      "id": 31,
+      "start": 55.2,
+      "end": 56.03,
+      "hanzi": "加入冰块",
+      "pinyin": "jiā rù bīng kuài",
+      "vi": "Thêm đá viên"
+    },
+    {
+      "id": 32,
+      "start": 56.03,
+      "end": 57.97,
+      "hanzi": "让虾肉更加的 Q 弹",
+      "pinyin": "ràng xiā ròu gèng jiā de  Q  tán",
+      "vi": "Để thịt tôm thêm dai giòn"
+    },
+    {
+      "id": 33,
+      "start": 57.97,
+      "end": 59.77,
+      "hanzi": "泡个3到5分钟就可以了",
+      "pinyin": "pào gè 3 dào 5 fēn zhōng jiù kě yǐ le",
+      "vi": "Ngâm khoảng 3 đến 5 phút là được"
+    },
+    {
+      "id": 34,
+      "start": 59.77,
+      "end": 61.1,
+      "hanzi": "千万不要泡太久",
+      "pinyin": "qiān wàn bú yào pào tài jiǔ",
+      "vi": "Tuyệt đối đừng ngâm quá lâu"
+    },
+    {
+      "id": 35,
+      "start": 61.1,
+      "end": 62.63,
+      "hanzi": "以免虾肉吸水之后",
+      "pinyin": "yǐ miǎn xiā ròu xī shuǐ zhī hòu",
+      "vi": "Kẻo thịt tôm hút nước vào"
+    },
+    {
+      "id": 36,
+      "start": 62.63,
+      "end": 63.87,
+      "hanzi": "就不方便入味了",
+      "pinyin": "jiù bù fāng biàn rù wèi le",
+      "vi": "Thì sẽ khó ngấm gia vị"
+    },
+    {
+      "id": 37,
+      "start": 63.87,
+      "end": 64.93,
+      "hanzi": "先把它们夹出来",
+      "pinyin": "xiān bǎ tā men jiá chū lái",
+      "vi": "Trước hết gắp chúng ra"
+    },
+    {
+      "id": 38,
+      "start": 64.93,
+      "end": 67.23,
+      "hanzi": "放入漏勺中沥干多余水分",
+      "pinyin": "fàng rù lòu sháo zhōng lì gān duō yú shuǐ fèn",
+      "vi": "Cho vào rổ lọc để ráo bớt nước thừa"
+    },
+    {
+      "id": 39,
+      "start": 67.23,
+      "end": 68.8,
+      "hanzi": "一斤活的罗氏虾",
+      "pinyin": "yì jīn huó de luó shì xiā",
+      "vi": "Nửa cân tôm càng sống"
+    },
+    {
+      "id": 40,
+      "start": 68.8,
+      "end": 70.97,
+      "hanzi": "煮熟后大约450克",
+      "pinyin": "zhǔ shú hòu dà yuē 450 kè",
+      "vi": "Sau khi luộc chín còn khoảng 450 gram"
+    },
+    {
+      "id": 41,
+      "start": 70.97,
+      "end": 72.73,
+      "hanzi": "这个时间准备一点香料",
+      "pinyin": "zhè ge shí jiān zhǔn bèi yì diǎn xiāng liào",
+      "vi": "Lúc này chuẩn bị một ít gia vị thơm"
+    },
+    {
+      "id": 42,
+      "start": 72.77,
+      "end": 73.87,
+      "hanzi": "八角3克",
+      "pinyin": "bā jiǎo 3 kè",
+      "vi": "Hoa hồi 3 gram"
+    },
+    {
+      "id": 43,
+      "start": 73.87,
+      "end": 74.9,
+      "hanzi": "桂皮2克",
+      "pinyin": "guì pí 2 kè",
+      "vi": "Quế 2 gram"
+    },
+    {
+      "id": 44,
+      "start": 74.9,
+      "end": 75.87,
+      "hanzi": "香叶两片",
+      "pinyin": "xiāng yè liǎng piàn",
+      "vi": "Lá nguyệt quế hai lá"
+    },
+    {
+      "id": 45,
+      "start": 75.9,
+      "end": 78.27,
+      "hanzi": "适量的干辣椒和花椒",
+      "pinyin": "shì liàng de gān là jiāo hé huā jiāo",
+      "vi": "Ớt khô và hoa tiêu lượng vừa đủ"
+    },
+    {
+      "id": 46,
+      "start": 78.27,
+      "end": 81.3,
+      "hanzi": "干辣椒我用的是特香微辣的二荆条",
+      "pinyin": "gān là jiāo wǒ yòng de shì tè xiāng wēi là de èr jīng tiáo",
+      "vi": "Ớt khô tôi dùng loại nhị kinh điều thơm đặc trưng, hơi cay"
+    },
+    {
+      "id": 47,
+      "start": 81.3,
+      "end": 83.7,
+      "hanzi": "还是先把它们加水清洗一遍",
+      "pinyin": "hái shì xiān bǎ tā men jiā shuǐ qīng xǐ yí biàn",
+      "vi": "Vẫn nên rửa qua chúng với nước một lần trước"
+    },
+    {
+      "id": 48,
+      "start": 83.7,
+      "end": 84.77,
+      "hanzi": "清洗干净后",
+      "pinyin": "qīng xǐ gān jìng hòu",
+      "vi": "Sau khi rửa sạch"
+    },
+    {
+      "id": 49,
+      "start": 84.77,
+      "end": 86.87,
+      "hanzi": "重新加入温水浸泡5分钟",
+      "pinyin": "chóng xīn jiā rù wēn shuǐ jìn pào 5 fēn zhōng",
+      "vi": "Cho vào ngâm lại trong nước ấm 5 phút"
+    },
+    {
+      "id": 50,
+      "start": 86.87,
+      "end": 88.83,
+      "hanzi": "这样做可以去苦留香",
+      "pinyin": "zhè yàng zuò kě yǐ qù kǔ liú xiāng",
+      "vi": "Làm vậy có thể khử đắng giữ lại hương thơm"
+    },
+    {
+      "id": 51,
+      "start": 88.87,
+      "end": 90.13,
+      "hanzi": "减少药味",
+      "pinyin": "jiǎn shǎo yào wèi",
+      "vi": "Giảm mùi thuốc"
+    },
+    {
+      "id": 52,
+      "start": 90.17,
+      "end": 92,
+      "hanzi": "5分钟后把水分沥干",
+      "pinyin": "5 fēn zhōng hòu bǎ shuǐ fèn lì gān",
+      "vi": "Sau 5 phút để ráo nước"
+    },
+    {
+      "id": 53,
+      "start": 92,
+      "end": 94.3,
+      "hanzi": "再把它们放入空气炸锅里面",
+      "pinyin": "zài bǎ tā men fàng rù kōng qì zhà guō lǐ miàn",
+      "vi": "Rồi cho chúng vào nồi chiên không dầu"
+    },
+    {
+      "id": 54,
+      "start": 94.3,
+      "end": 96.1,
+      "hanzi": "150度烤5分钟",
+      "pinyin": "150 dù kǎo 5 fēn zhōng",
+      "vi": "Nướng 150 độ trong 5 phút"
+    },
+    {
+      "id": 55,
+      "start": 96.1,
+      "end": 96.93,
+      "hanzi": "这一步呢",
+      "pinyin": "zhè yí bù ne",
+      "vi": "Bước này"
+    },
+    {
+      "id": 56,
+      "start": 96.93,
+      "end": 97.87,
+      "hanzi": "激活香味",
+      "pinyin": "jī huó xiāng wèi",
+      "vi": "Kích hoạt hương thơm"
+    },
+    {
+      "id": 57,
+      "start": 97.87,
+      "end": 98.8,
+      "hanzi": "去除杂味",
+      "pinyin": "qù chú zá wèi",
+      "vi": "Loại bỏ mùi tạp"
+    },
+    {
+      "id": 58,
+      "start": 98.8,
+      "end": 99.8,
+      "hanzi": "加速泡出",
+      "pinyin": "jiā sù pào chū",
+      "vi": "Giúp ngấm ra nhanh hơn"
+    },
+    {
+      "id": 59,
+      "start": 99.8,
+      "end": 100.7,
+      "hanzi": "减少生味",
+      "pinyin": "jiǎn shǎo shēng wèi",
+      "vi": "Giảm mùi sống"
+    },
+    {
+      "id": 60,
+      "start": 100.7,
+      "end": 103.3,
+      "hanzi": "也可以用铁锅煸炒一会儿代替",
+      "pinyin": "yě kě yǐ yòng tiě guō biān chǎo yí huì er dài tì",
+      "vi": "Cũng có thể thay bằng cách rang trên chảo sắt một lúc"
+    },
+    {
+      "id": 61,
+      "start": 103.3,
+      "end": 105.23,
+      "hanzi": "再准备一个黄柠檬",
+      "pinyin": "zài zhǔn bèi yí gè huáng níng méng",
+      "vi": "Chuẩn bị thêm một quả chanh vàng"
+    },
+    {
+      "id": 62,
+      "start": 105.23,
+      "end": 108.2,
+      "hanzi": "三片干的山楂片和两个话梅",
+      "pinyin": "sān piàn gān de shān zhā piàn hé liǎng gè huà méi",
+      "vi": "Ba lát táo gai khô và hai quả ô mai"
+    },
+    {
+      "id": 63,
+      "start": 108.2,
+      "end": 109.87,
+      "hanzi": "我用的陈皮话梅",
+      "pinyin": "wǒ yòng de chén pí huà méi",
+      "vi": "Tôi dùng ô mai vỏ quýt"
+    },
+    {
+      "id": 64,
+      "start": 109.87,
+      "end": 111.23,
+      "hanzi": "但是想要吃到陈皮味",
+      "pinyin": "dàn shì xiǎng yào chī dào chén pí wèi",
+      "vi": "Nhưng nếu muốn ăn có vị vỏ quýt"
+    },
+    {
+      "id": 65,
+      "start": 111.23,
+      "end": 113.2,
+      "hanzi": "还是需要单独加陈皮",
+      "pinyin": "hái shì xū yào dān dú jiā chén pí",
+      "vi": "Vẫn cần cho thêm vỏ quýt riêng"
+    },
+    {
+      "id": 66,
+      "start": 113.2,
+      "end": 115.13,
+      "hanzi": "下一步把它们放入锅中",
+      "pinyin": "xià yí bù bǎ tā men fàng rù guō zhōng",
+      "vi": "Bước tiếp theo cho chúng vào nồi"
+    },
+    {
+      "id": 67,
+      "start": 115.13,
+      "end": 117.17,
+      "hanzi": "加入纯净水500 ml",
+      "pinyin": "jiā rù chún jìng shuǐ 500 ml",
+      "vi": "Thêm 500 ml nước tinh khiết"
+    },
+    {
+      "id": 68,
+      "start": 117.17,
+      "end": 118.07,
+      "hanzi": "开大火煮沸",
+      "pinyin": "kāi dà huǒ zhǔ fèi",
+      "vi": "Bật lửa lớn đun sôi"
+    },
+    {
+      "id": 69,
+      "start": 118.07,
+      "end": 121.23,
+      "hanzi": "一边加热一边放入山楂和话梅",
+      "pinyin": "yì biān jiā rè yì biān fàng rù shān zhā hé huà méi",
+      "vi": "Vừa đun vừa cho táo gai và ô mai vào"
+    },
+    {
+      "id": 70,
+      "start": 121.23,
+      "end": 123.67,
+      "hanzi": "再加少量的小葱和生姜丝",
+      "pinyin": "zài jiā shǎo liàng de xiǎo cōng hé shēng jiāng sī",
+      "vi": "Thêm một ít hành lá nhỏ và gừng thái sợi"
+    },
+    {
+      "id": 71,
+      "start": 123.67,
+      "end": 125.13,
+      "hanzi": "水开后先不加盖",
+      "pinyin": "shuǐ kāi hòu xiān bù jiā gài",
+      "vi": "Nước sôi thì đừng đậy nắp trước"
+    },
+    {
+      "id": 72,
+      "start": 125.13,
+      "end": 126.03,
+      "hanzi": "煮3分钟",
+      "pinyin": "zhǔ 3 fēn zhōng",
+      "vi": "Đun 3 phút"
+    },
+    {
+      "id": 73,
+      "start": 126.03,
+      "end": 127.7,
+      "hanzi": "挥发带走最后一丝异味",
+      "pinyin": "huī fā dài zǒu zuì hòu yì sī yì wèi",
+      "vi": "Để bay hơi mang đi chút mùi lạ cuối cùng"
+    },
+    {
+      "id": 74,
+      "start": 127.7,
+      "end": 128.67,
+      "hanzi": "3分钟后",
+      "pinyin": "3 fēn zhōng hòu",
+      "vi": "Sau 3 phút"
+    },
+    {
+      "id": 75,
+      "start": 128.67,
+      "end": 130.53,
+      "hanzi": "盖盖小火焖煮7分钟",
+      "pinyin": "gài gài xiǎo huǒ mèn zhǔ 7 fēn zhōng",
+      "vi": "Đậy nắp hầm lửa nhỏ 7 phút"
+    },
+    {
+      "id": 76,
+      "start": 130.53,
+      "end": 132.4,
+      "hanzi": "把它们的味道都煮出来",
+      "pinyin": "bǎ tā men de wèi dào dōu zhǔ chū lái",
+      "vi": "Để đun ra hết hương vị của chúng"
+    },
+    {
+      "id": 77,
+      "start": 132.4,
+      "end": 136.43,
+      "hanzi": "再准备生抽200克、老抽20克、黄冰糖60克",
+      "pinyin": "zài zhǔn bèi shēng chōu 200 kè 、 lǎo chōu 20 kè 、 huáng bīng táng 60 kè",
+      "vi": "Chuẩn bị thêm 200 gram xì dầu, 20 gram xì dầu đen, 60 gram đường phèn vàng"
+    },
+    {
+      "id": 78,
+      "start": 136.43,
+      "end": 140.03,
+      "hanzi": "喜欢甜口的黄冰糖可以加到80到100克",
+      "pinyin": "xǐ huan tián kǒu de huáng bīng táng kě yǐ jiā dào 80 dào 100 kè",
+      "vi": "Ai thích vị ngọt thì đường phèn vàng có thể tăng lên 80 đến 100 gram"
+    },
+    {
+      "id": 79,
+      "start": 140.03,
+      "end": 140.9,
+      "hanzi": "好了，时间到",
+      "pinyin": "hǎo le ， shí jiān dào",
+      "vi": "Được rồi, hết giờ"
+    },
+    {
+      "id": 80,
+      "start": 140.93,
+      "end": 144.63,
+      "hanzi": "开盖加入全部的黄冰糖、老抽和生抽",
+      "pinyin": "kāi gài jiā rù quán bù de huáng bīng táng 、 lǎo chōu hé shēng chōu",
+      "vi": "Mở nắp cho toàn bộ đường phèn vàng, xì dầu đen và xì dầu vào"
+    },
+    {
+      "id": 81,
+      "start": 144.63,
+      "end": 146.13,
+      "hanzi": "一边搅拌一边加热",
+      "pinyin": "yì biān jiǎo bàn yì biān jiā rè",
+      "vi": "Vừa khuấy vừa đun"
+    },
+    {
+      "id": 82,
+      "start": 146.13,
+      "end": 147.43,
+      "hanzi": "让黄冰糖化开",
+      "pinyin": "ràng huáng bīng táng huà kāi",
+      "vi": "Để đường phèn vàng tan ra"
+    },
+    {
+      "id": 83,
+      "start": 147.43,
+      "end": 149.07,
+      "hanzi": "沸腾后再煮个20秒",
+      "pinyin": "fèi téng hòu zài zhǔ gè 20 miǎo",
+      "vi": "Sôi lên rồi đun thêm khoảng 20 giây"
+    },
+    {
+      "id": 84,
+      "start": 149.1,
+      "end": 149.6,
+      "hanzi": "关火",
+      "pinyin": "guān huǒ",
+      "vi": "Tắt bếp"
+    },
+    {
+      "id": 85,
+      "start": 149.6,
+      "end": 151.17,
+      "hanzi": "放一旁冷却到室温",
+      "pinyin": "fàng yì páng lěng què dào shì wēn",
+      "vi": "Để sang một bên nguội đến nhiệt độ phòng"
+    },
+    {
+      "id": 86,
+      "start": 151.17,
+      "end": 153.6,
+      "hanzi": "这个时间我们把黄柠檬切片",
+      "pinyin": "zhè ge shí jiān wǒ men bǎ huáng níng méng qiē piàn",
+      "vi": "Lúc này chúng ta thái lát chanh vàng"
+    },
+    {
+      "id": 87,
+      "start": 153.6,
+      "end": 154.93,
+      "hanzi": "切个一半就可以了",
+      "pinyin": "qiè gè yí bàn jiù kě yǐ le",
+      "vi": "Thái một nửa là được"
+    },
+    {
+      "id": 88,
+      "start": 154.97,
+      "end": 157.37,
+      "hanzi": "关键在于一定要去除柠檬籽",
+      "pinyin": "guān jiàn zài yú yí dìng yào qù chú níng méng zǐ",
+      "vi": "Điểm mấu chốt là nhất định phải bỏ hạt chanh"
+    },
+    {
+      "id": 89,
+      "start": 157.37,
+      "end": 158.83,
+      "hanzi": "因为柠檬籽会发苦",
+      "pinyin": "yīn wèi níng méng zǐ huì fā kǔ",
+      "vi": "Vì hạt chanh sẽ gây đắng"
+    },
+    {
+      "id": 90,
+      "start": 158.83,
+      "end": 160.5,
+      "hanzi": "再把罗氏虾剪掉",
+      "pinyin": "zài bǎ luó shì xiā jiǎn diào",
+      "vi": "Rồi dùng kéo cắt con tôm càng xanh"
+    },
+    {
+      "id": 91,
+      "start": 160.5,
+      "end": 162.27,
+      "hanzi": "虾枪、虾嘴和虾脚",
+      "pinyin": "xiā qiāng 、 xiā zuǐ hé xiā jiǎo",
+      "vi": "bỏ gai tôm, miệng tôm và chân tôm"
+    },
+    {
+      "id": 92,
+      "start": 162.27,
+      "end": 164.63,
+      "hanzi": "一定要完整保留最好吃的虾黄",
+      "pinyin": "yí dìng yào wán zhěng bǎo liú zuì hǎo chī de xiā huáng",
+      "vi": "Nhất định phải giữ nguyên vẹn phần gạch tôm ngon nhất"
+    },
+    {
+      "id": 93,
+      "start": 164.67,
+      "end": 167.03,
+      "hanzi": "剪的位置不要超过下的眼睛",
+      "pinyin": "jiǎn de wèi zhì bú yào chāo guò xià de yǎn jīng",
+      "vi": "Vị trí cắt đừng vượt quá mắt phía dưới"
+    },
+    {
+      "id": 94,
+      "start": 167.03,
+      "end": 169.07,
+      "hanzi": "处理完毕后放入大盆里面",
+      "pinyin": "chǔ lǐ wán bì hòu fàng rù dà pén lǐ miàn",
+      "vi": "Xử lý xong cho vào chậu lớn"
+    },
+    {
+      "id": 95,
+      "start": 169.07,
+      "end": 170.97,
+      "hanzi": "再把冷却好的料汁放进来",
+      "pinyin": "zài bǎ lěng què hǎo de liào zhī fàng jìn lái",
+      "vi": "Rồi cho nước sốt đã nguội vào"
+    },
+    {
+      "id": 96,
+      "start": 170.97,
+      "end": 173.23,
+      "hanzi": "这个时候才可以加入花雕酒",
+      "pinyin": "zhè ge shí hòu cái kě yǐ jiā rù huā diāo jiǔ",
+      "vi": "Lúc này mới được cho rượu hoa điêu vào"
+    },
+    {
+      "id": 97,
+      "start": 173.27,
+      "end": 175.5,
+      "hanzi": "加入250克到300克都可以",
+      "pinyin": "jiā rù 250 kè dào 300 kè dōu kě yǐ",
+      "vi": "Cho 250 gram đến 300 gram đều được"
+    },
+    {
+      "id": 98,
+      "start": 175.5,
+      "end": 177.43,
+      "hanzi": "最好是5到6年的陈酿",
+      "pinyin": "zuì hǎo shì 5 dào 6 nián de chén niàng",
+      "vi": "Tốt nhất là loại ủ lâu 5 đến 6 năm"
+    },
+    {
+      "id": 99,
+      "start": 177.47,
+      "end": 179.13,
+      "hanzi": "酒香浓郁又不辣口",
+      "pinyin": "jiǔ xiāng nóng yù yòu bú là kǒu",
+      "vi": "Hương rượu đậm đà mà không cay miệng"
+    },
+    {
+      "id": 100,
+      "start": 179.13,
+      "end": 181.43,
+      "hanzi": "把它们整理平整后放入柠檬片",
+      "pinyin": "bǎ tā men zhěng lǐ píng zhěng hòu fàng rù níng méng piàn",
+      "vi": "Sắp xếp chúng cho phẳng phiu rồi cho lát chanh vào"
+    },
+    {
+      "id": 101,
+      "start": 181.43,
+      "end": 184.4,
+      "hanzi": "最后放入适量的香菜茎、香菜叶",
+      "pinyin": "zuì hòu fàng rù shì liàng de xiāng cài jīng 、 xiāng cài yè",
+      "vi": "Cuối cùng cho lượng vừa đủ thân rau mùi và lá rau mùi"
+    },
+    {
+      "id": 102,
+      "start": 184.4,
+      "end": 185.7,
+      "hanzi": "把它们盖上保鲜膜",
+      "pinyin": "bǎ tā men gài shàng bǎo xiān mó",
+      "vi": "Đậy màng bọc thực phẩm lên"
+    },
+    {
+      "id": 103,
+      "start": 185.7,
+      "end": 188.37,
+      "hanzi": "放入冰箱冷藏至少四个小时",
+      "pinyin": "fàng rù bīng xiāng lěng cáng zhì shǎo sì gè xiǎo shí",
+      "vi": "Cho vào tủ lạnh ngăn mát ít nhất bốn tiếng"
+    },
+    {
+      "id": 104,
+      "start": 188.37,
+      "end": 189.67,
+      "hanzi": "泡的越久越入味",
+      "pinyin": "pào de yuè jiǔ yuè rù wèi",
+      "vi": "Ngâm càng lâu càng ngấm vị"
+    },
+    {
+      "id": 105,
+      "start": 189.7,
+      "end": 191.5,
+      "hanzi": "切记浸泡到四个小时",
+      "pinyin": "qiè jì jìn pào dào sì gè xiǎo shí",
+      "vi": "Nhớ kỹ ngâm đến bốn tiếng"
+    },
+    {
+      "id": 106,
+      "start": 191.53,
+      "end": 193.77,
+      "hanzi": "一定要先把柠檬片夹出来",
+      "pinyin": "yí dìng yào xiān bǎ níng méng piàn jiá chū lái",
+      "vi": "Nhất định phải gắp lát chanh ra trước"
+    },
+    {
+      "id": 107,
+      "start": 193.77,
+      "end": 194.97,
+      "hanzi": "然后继续泡",
+      "pinyin": "rán hòu jì xù pào",
+      "vi": "Sau đó tiếp tục ngâm"
+    },
+    {
+      "id": 108,
+      "start": 194.97,
+      "end": 197.07,
+      "hanzi": "可以通过看虾头颜色的深浅",
+      "pinyin": "kě yǐ tōng guò kàn xiā tóu yán sè de shēn qiǎn",
+      "vi": "Có thể nhìn độ đậm nhạt của màu đầu tôm"
+    },
+    {
+      "id": 109,
+      "start": 197.13,
+      "end": 198.5,
+      "hanzi": "看虾是否泡入味",
+      "pinyin": "kàn xiā shì fǒu pào rù wèi",
+      "vi": "Để xem tôm đã ngấm vị chưa"
+    },
+    {
+      "id": 110,
+      "start": 198.5,
+      "end": 199.93,
+      "hanzi": "建议泡12个小时",
+      "pinyin": "jiàn yì pào 12 gè xiǎo shí",
+      "vi": "Khuyến nghị ngâm 12 tiếng"
+    },
+    {
+      "id": 111,
+      "start": 199.93,
+      "end": 201.67,
+      "hanzi": "这个汁还可以泡一次",
+      "pinyin": "zhè ge zhī hái kě yǐ pào yí cì",
+      "vi": "Nước sốt này còn có thể ngâm thêm một lần nữa"
+    },
+    {
+      "id": 112,
+      "start": 201.67,
+      "end": 204.97,
+      "hanzi": "再泡大头虾、泡小龙虾、花螺、螃蟹都可以",
+      "pinyin": "zài pào dà tóu xiā 、 pào xiǎo lóng xiā 、 huā luó 、 páng xiè dōu kě yǐ",
+      "vi": "Ngâm tôm càng đầu to, tôm hùm đất, ốc hương, cua đều được"
+    },
+    {
+      "id": 113,
+      "start": 204.97,
+      "end": 207.93,
+      "hanzi": "补充适量的生抽、花雕酒、柠檬片即可",
+      "pinyin": "bǔ chōng shì liàng de shēng chōu 、 huā diāo jiǔ 、 níng méng piàn jí kě",
+      "vi": "Chỉ cần bổ sung lượng vừa đủ xì dầu, rượu hoa điêu và lát chanh là được"
+    },
+    {
+      "id": 114,
+      "start": 208,
+      "end": 208.83,
+      "hanzi": "我是大厨阿斗",
+      "pinyin": "wǒ shì dà chú ā dòu",
+      "vi": "Tôi là đầu bếp A Đẩu"
+    },
+    {
+      "id": 115,
+      "start": 208.83,
+      "end": 209.83,
+      "hanzi": "我们下个视频见",
+      "pinyin": "wǒ men xià gè shì pín jiàn",
+      "vi": "Hẹn gặp lại ở video sau"
+    }
+  ],
+  "isSystem": true,
+  "isCommunity": false,
+  "contributorName": "Hệ thống",
+  "createdAt": "2026-09-10T01:27:16.185Z"
+}

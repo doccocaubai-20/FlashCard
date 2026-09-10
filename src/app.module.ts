@@ -23,6 +23,7 @@ import { SkillLogsModule } from './skill-logs/skill-logs.module';
 import { GrammarProgressModule } from './grammar-progress/grammar-progress.module';
 import { GameRecordsModule } from './game-records/game-records.module';
 import { WeakWordsModule } from './weak-words/weak-words.module';
+import { VideoLessonsModule } from './video-lessons/video-lessons.module';
 
 @Module({
   imports: [
@@ -52,6 +53,7 @@ import { WeakWordsModule } from './weak-words/weak-words.module';
     GrammarProgressModule,
     GameRecordsModule,
     WeakWordsModule,
+    VideoLessonsModule,
   ],
   controllers: [AppController],
   providers: [

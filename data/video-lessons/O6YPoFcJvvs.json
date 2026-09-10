@@ -1,0 +1,1682 @@
+{
+  "id": "O6YPoFcJvvs",
+  "youtubeId": "O6YPoFcJvvs",
+  "title": "Vì sao bạn học mãi vẫn chưa nói được tiếng Trung?",
+  "titleHanzi": "为什么你还不会说中文？",
+  "level": 3,
+  "topic": "Podcast",
+  "channel": "Chinese Podcast",
+  "durationSec": 671,
+  "thumbnailUrl": "https://i.ytimg.com/vi/O6YPoFcJvvs/hqdefault.jpg",
+  "totalSentences": 208,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.3,
+      "end": 3.45,
+      "hanzi": "大家好，欢迎来到我们的中文播客。",
+      "pinyin": "dà jiā hǎo ， huān yíng lái dào wǒ men de zhōng wén bō kè 。",
+      "vi": "Xin chào mọi người, chào mừng đến với podcast tiếng Trung của chúng tôi."
+    },
+    {
+      "id": 2,
+      "start": 3.53,
+      "end": 5.66,
+      "hanzi": "谢谢你今天来听。",
+      "pinyin": "xiè xiè nǐ jīn tiān lái tīng 。",
+      "vi": "Cảm ơn các bạn đã lắng nghe hôm nay."
+    },
+    {
+      "id": 3,
+      "start": 6.12,
+      "end": 10.1,
+      "hanzi": "今天的主题特别真实，也特别重要，",
+      "pinyin": "jīn tiān de zhǔ tí tè bié zhēn shí ， yě tè bié zhòng yào ，",
+      "vi": "Chủ đề hôm nay rất thực tế và rất quan trọng:"
+    },
+    {
+      "id": 4,
+      "start": 10.18,
+      "end": 13.87,
+      "hanzi": "就是：为什么你学中文这么久了，",
+      "pinyin": "jiù shì ： wèi shén me nǐ xué zhōng wén zhè me jiǔ le ，",
+      "vi": "Tại sao, sau một thời gian dài học tiếng Trung,"
+    },
+    {
+      "id": 5,
+      "start": 13.96,
+      "end": 16.34,
+      "hanzi": "你还觉得自己不会说？",
+      "pinyin": "nǐ hái jué de zì jǐ bú huì shuō ？",
+      "vi": "bạn vẫn cảm thấy mình không thể nói được?"
+    },
+    {
+      "id": 6,
+      "start": 16.46,
+      "end": 20,
+      "hanzi": "你明明很努力，你买了好多书，",
+      "pinyin": "nǐ míng míng hěn nǔ lì ， nǐ mǎi le hǎo duō shū ，",
+      "vi": "Rõ ràng là bạn đã rất nỗ lực; bạn đã mua rất nhiều sách,"
+    },
+    {
+      "id": 7,
+      "start": 20.12,
+      "end": 22,
+      "hanzi": "你看了很多视频，",
+      "pinyin": "nǐ kàn le hěn duō shì pín ，",
+      "vi": "xem rất nhiều video và"
+    },
+    {
+      "id": 8,
+      "start": 22.34,
+      "end": 25.67,
+      "hanzi": "你每天背单词，可是一开口，",
+      "pinyin": "nǐ měi tiān bèi dān cí ， kě shì yì kāi kǒu ，",
+      "vi": "ghi nhớ từ vựng mỗi ngày, nhưng khi cố gắng nói,"
+    },
+    {
+      "id": 9,
+      "start": 25.75,
+      "end": 27.95,
+      "hanzi": "你就卡住，对吗？",
+      "pinyin": "nǐ jiù kǎ zhù ， duì ma ？",
+      "vi": "bạn lại bị mắc kẹt, phải không?"
+    },
+    {
+      "id": 10,
+      "start": 28.19,
+      "end": 31.06,
+      "hanzi": "别担心，你不是一个人。",
+      "pinyin": "bié dān xīn ， nǐ bú shì yí gè rén 。",
+      "vi": "Đừng lo, bạn không phải là người duy nhất."
+    },
+    {
+      "id": 11,
+      "start": 31.54,
+      "end": 34.23,
+      "hanzi": "好多外国朋友都会这样。",
+      "pinyin": "hǎo duō wài guó péng yǒu dōu huì zhè yàng 。",
+      "vi": "Nhiều bạn bè nước ngoài cũng cảm thấy như vậy."
+    },
+    {
+      "id": 12,
+      "start": 34.76,
+      "end": 37.68,
+      "hanzi": "所以今天我们一起聊一聊，",
+      "pinyin": "suǒ yǐ jīn tiān wǒ men yì qǐ liáo yi liáo ，",
+      "vi": "Vậy nên hôm nay chúng ta cùng nhau bàn về chuyện này,"
+    },
+    {
+      "id": 13,
+      "start": 37.8,
+      "end": 40,
+      "hanzi": "让你知道答案在哪里，",
+      "pinyin": "ràng nǐ zhī dào dá àn zài nǎ lǐ ，",
+      "vi": "để bạn biết câu trả lời nằm ở đâu,"
+    },
+    {
+      "id": 14,
+      "start": 40.12,
+      "end": 44.42,
+      "hanzi": "也让你可以更轻松、更开心地说中文。",
+      "pinyin": "yě ràng nǐ kě yǐ gèng qīng sōng 、 gèng kāi xīn dì shuō zhōng wén 。",
+      "vi": "và nói tiếng Trung dễ dàng và vui vẻ hơn."
+    },
+    {
+      "id": 15,
+      "start": 44.7,
+      "end": 48.27,
+      "hanzi": "你可能会说：“中文太难了吧！”",
+      "pinyin": "nǐ kě néng huì shuō ：“ zhōng wén tài nán le ba ！”",
+      "vi": "Bạn có thể nói, \"Tiếng Trung quá khó!\""
+    },
+    {
+      "id": 16,
+      "start": 48.87,
+      "end": 53.63,
+      "hanzi": "对，这句话你已经会说了，太好了！",
+      "pinyin": "duì ， zhè jù huà nǐ yǐ jīng huì shuō le ， tài hǎo le ！",
+      "vi": "Vâng, bạn đã có thể nói như vậy, thật tuyệt!"
+    },
+    {
+      "id": 17,
+      "start": 54.1,
+      "end": 56.9,
+      "hanzi": "但是，你有没有想过，",
+      "pinyin": "dàn shì ， nǐ yǒu méi yǒu xiǎng guò ，",
+      "vi": "Nhưng bạn đã bao giờ nghĩ về"
+    },
+    {
+      "id": 18,
+      "start": 57.14,
+      "end": 60,
+      "hanzi": "为什么你会说“太难了吧”，",
+      "pinyin": "wèi shén me nǐ huì shuō “ tài nán le ba ”，",
+      "vi": "lý do tại sao bạn lại nói \"Nó quá khó\""
+    },
+    {
+      "id": 19,
+      "start": 60.38,
+      "end": 62.38,
+      "hanzi": "却不会说更多？",
+      "pinyin": "què bú huì shuō gèng duō ？",
+      "vi": "mà không phải là khó hơn không?"
+    },
+    {
+      "id": 20,
+      "start": 62.52,
+      "end": 64.92,
+      "hanzi": "是因为你学的中文，",
+      "pinyin": "shì yīn wèi nǐ xué de zhōng wén ，",
+      "vi": "Đó là bởi vì những kiến thức tiếng Trung bạn học"
+    },
+    {
+      "id": 21,
+      "start": 65,
+      "end": 68.07,
+      "hanzi": "很多时候只是停在书本里，",
+      "pinyin": "hěn duō shí hòu zhǐ shì tíng zài shū běn lǐ ，",
+      "vi": "nhiều khi chỉ nằm lại trong sách,"
+    },
+    {
+      "id": 22,
+      "start": 68.58,
+      "end": 70.38,
+      "hanzi": "停在你的笔记本里，",
+      "pinyin": "tíng zài nǐ de bǐ jì běn lǐ ，",
+      "vi": "nằm lại trong quyển vở của bạn,"
+    },
+    {
+      "id": 23,
+      "start": 70.78,
+      "end": 73.84,
+      "hanzi": "可是没有走到你的生活里。",
+      "pinyin": "kě shì méi yǒu zǒu dào nǐ de shēng huó lǐ 。",
+      "vi": "chứ chưa được áp dụng vào cuộc sống."
+    },
+    {
+      "id": 24,
+      "start": 74,
+      "end": 76.27,
+      "hanzi": "我们先来说第一个原因：",
+      "pinyin": "wǒ men xiān lái shuō dì yī gè yuán yīn ：",
+      "vi": "Hãy cùng tìm hiểu lý do đầu tiên:"
+    },
+    {
+      "id": 25,
+      "start": 76.99,
+      "end": 78.93,
+      "hanzi": "你太害怕说中文。",
+      "pinyin": "nǐ tài hài pà shuō zhōng wén 。",
+      "vi": "bạn quá sợ nói tiếng Trung."
+    },
+    {
+      "id": 26,
+      "start": 78.93,
+      "end": 82.18,
+      "hanzi": "你怕说错，你怕别人听不懂，",
+      "pinyin": "nǐ pà shuō cuò ， nǐ pà bié rén tīng bù dǒng ，",
+      "vi": "Bạn sợ mắc lỗi, sợ người khác không hiểu,"
+    },
+    {
+      "id": 27,
+      "start": 82.54,
+      "end": 84.32,
+      "hanzi": "你怕别人笑你。",
+      "pinyin": "nǐ pà bié rén xiào nǐ 。",
+      "vi": "sợ người khác cười nhạo bạn."
+    },
+    {
+      "id": 28,
+      "start": 84.6,
+      "end": 88.21,
+      "hanzi": "所以，你宁愿安静，不说话。",
+      "pinyin": "suǒ yǐ ， nǐ nìng yuàn ān jìng ， bù shuō huà 。",
+      "vi": "Vậy nên, bạn thà im lặng, không nói gì."
+    },
+    {
+      "id": 29,
+      "start": 89.39,
+      "end": 91.39,
+      "hanzi": "可是，你知道吗？",
+      "pinyin": "kě shì ， nǐ zhī dào ma ？",
+      "vi": "Nhưng bạn biết không?"
+    },
+    {
+      "id": 30,
+      "start": 91.93,
+      "end": 94.51,
+      "hanzi": "中国人真的不会笑你。",
+      "pinyin": "zhōng guó rén zhēn de bú huì xiào nǐ 。",
+      "vi": "Người Trung Quốc thực sự sẽ không cười bạn đâu."
+    },
+    {
+      "id": 31,
+      "start": 94.63,
+      "end": 97.03,
+      "hanzi": "中国人听到你说中文，",
+      "pinyin": "zhōng guó rén tīng dào nǐ shuō zhōng wén ，",
+      "vi": "Khi người Trung Quốc nghe bạn nói tiếng Trung,"
+    },
+    {
+      "id": 32,
+      "start": 97.03,
+      "end": 101.69,
+      "hanzi": "他们会说：“哇，你中文说得很好！”",
+      "pinyin": "tā men huì shuō ：“ wā ， nǐ zhōng wén shuō dé hěn hǎo ！”",
+      "vi": "họ sẽ nói, \"Ồ, tiếng Trung của bạn tốt quá!\""
+    },
+    {
+      "id": 33,
+      "start": 101.83,
+      "end": 103.29,
+      "hanzi": "他们会帮你。",
+      "pinyin": "tā men huì bāng nǐ 。",
+      "vi": "Họ sẽ giúp bạn."
+    },
+    {
+      "id": 34,
+      "start": 103.85,
+      "end": 106.98,
+      "hanzi": "他们听到你说一个简单句子，",
+      "pinyin": "tā men tīng dào nǐ shuō yí gè jiǎn dān jù zi ，",
+      "vi": "Khi họ nghe bạn nói một câu đơn giản,"
+    },
+    {
+      "id": 35,
+      "start": 107.08,
+      "end": 109.32,
+      "hanzi": "比如：“我想喝水。”",
+      "pinyin": "bǐ rú ：“ wǒ xiǎng hē shuǐ 。”",
+      "vi": "chẳng hạn như, \"Tôi muốn uống nước\","
+    },
+    {
+      "id": 36,
+      "start": 109.63,
+      "end": 113.33,
+      "hanzi": "他们都会觉得：“你可以说中文！”",
+      "pinyin": "tā men dōu huì jué de ：“ nǐ kě yǐ shuō zhōng wén ！”",
+      "vi": "họ sẽ nghĩ, \"Bạn nói được tiếng Trung đấy!\""
+    },
+    {
+      "id": 37,
+      "start": 113.96,
+      "end": 115.8,
+      "hanzi": "所以，不要怕。",
+      "pinyin": "suǒ yǐ ， bú yào pà 。",
+      "vi": "Vì vậy, đừng sợ."
+    },
+    {
+      "id": 38,
+      "start": 115.93,
+      "end": 119.16,
+      "hanzi": "你说得不完美也没问题。",
+      "pinyin": "nǐ shuō dé bù wán měi yě méi wèn tí 。",
+      "vi": "Không sao cả nếu bạn không nói hoàn hảo."
+    },
+    {
+      "id": 39,
+      "start": 119.53,
+      "end": 122.35,
+      "hanzi": "每个人学语言都会错，",
+      "pinyin": "měi gè rén xué yǔ yán dōu huì cuò ，",
+      "vi": "Ai cũng mắc lỗi khi học ngoại ngữ;"
+    },
+    {
+      "id": 40,
+      "start": 122.8,
+      "end": 125.9,
+      "hanzi": "中国人自己也经常说错。",
+      "pinyin": "zhōng guó rén zì jǐ yě jīng cháng shuō cuò 。",
+      "vi": "ngay cả người Trung Quốc cũng thường mắc lỗi."
+    },
+    {
+      "id": 41,
+      "start": 126.08,
+      "end": 129.6,
+      "hanzi": "第二个原因：你只学习单词，",
+      "pinyin": "dì èr gè yuán yīn ： nǐ zhī xué xí dān cí ，",
+      "vi": "Lý do thứ hai: Bạn chỉ học từ"
+    },
+    {
+      "id": 42,
+      "start": 129.6,
+      "end": 131.1,
+      "hanzi": "不学习句子。",
+      "pinyin": "bù xué xí jù zi 。",
+      "vi": "chứ không học câu."
+    },
+    {
+      "id": 43,
+      "start": 131.46,
+      "end": 136.08,
+      "hanzi": "比如，你知道“喝”，“水”，“想”，",
+      "pinyin": "bǐ rú ， nǐ zhī dào “ hē ”，“ shuǐ ”，“ xiǎng ”，",
+      "vi": "Ví dụ, bạn biết \"uống\", \"nước\" và \"muốn\","
+    },
+    {
+      "id": 44,
+      "start": 136.35,
+      "end": 140.55,
+      "hanzi": "但是你不知道怎么把它们放在一起。",
+      "pinyin": "dàn shì nǐ bù zhī dào zěn me bǎ tā men fàng zài yì qǐ 。",
+      "vi": "nhưng bạn không biết cách ghép chúng lại với nhau."
+    },
+    {
+      "id": 45,
+      "start": 140.9,
+      "end": 143.36,
+      "hanzi": "你每天背十个单词，",
+      "pinyin": "nǐ měi tiān bèi shí gè dān cí ，",
+      "vi": "Bạn học thuộc mười từ mỗi ngày,"
+    },
+    {
+      "id": 46,
+      "start": 143.44,
+      "end": 146.23,
+      "hanzi": "可是你一句话都说不出来。",
+      "pinyin": "kě shì nǐ yí jù huà dōu shuō bù chū lái 。",
+      "vi": "nhưng bạn không thể nói được một câu nào."
+    },
+    {
+      "id": 47,
+      "start": 146.46,
+      "end": 148.17,
+      "hanzi": "你有没有这样过？",
+      "pinyin": "nǐ yǒu méi yǒu zhè yàng guò ？",
+      "vi": "Bạn đã bao giờ trải qua điều này chưa?"
+    },
+    {
+      "id": 48,
+      "start": 148.29,
+      "end": 151.5,
+      "hanzi": "你背完单词就忘，越背越累，",
+      "pinyin": "nǐ bèi wán dān cí jiù wàng ， yuè bèi yuè lèi ，",
+      "vi": "Bạn học thuộc từ rồi quên chúng, ngày càng mệt mỏi,"
+    },
+    {
+      "id": 49,
+      "start": 151.74,
+      "end": 155.11,
+      "hanzi": "然后你告诉自己：“我记性不好。”",
+      "pinyin": "rán hòu nǐ gào sù zì jǐ ：“ wǒ jì xìng bù hǎo 。”",
+      "vi": "và rồi bạn tự nhủ, \"Trí nhớ của mình kém.\""
+    },
+    {
+      "id": 50,
+      "start": 155.38,
+      "end": 160.4,
+      "hanzi": "其实不是你记性不好，是方法不对。",
+      "pinyin": "qí shí bú shì nǐ jì xìng bù hǎo ， shì fāng fǎ bú duì 。",
+      "vi": "Thực ra, không phải trí nhớ của bạn kém; mà là phương pháp của bạn sai."
+    },
+    {
+      "id": 51,
+      "start": 161.21,
+      "end": 165.43,
+      "hanzi": "学语言像做菜，你不能只有很多菜，",
+      "pinyin": "xué yǔ yán xiàng zuò cài ， nǐ bù néng zhǐ yǒu hěn duō cài ，",
+      "vi": "Học ngoại ngữ cũng giống như nấu ăn; Bạn không thể chỉ có nhiều nguyên liệu;"
+    },
+    {
+      "id": 52,
+      "start": 165.86,
+      "end": 168.64,
+      "hanzi": "你还要知道怎么做一盘饭。",
+      "pinyin": "nǐ hái yào zhī dào zěn me zuò yì pán fàn 。",
+      "vi": "bạn cũng cần biết cách nấu một món ăn."
+    },
+    {
+      "id": 53,
+      "start": 168.96,
+      "end": 173.63,
+      "hanzi": "所以，从今天开始，不要只背单词，",
+      "pinyin": "suǒ yǐ ， cóng jīn tiān kāi shǐ ， bú yào zhī bèi dān cí ，",
+      "vi": "Vì vậy, bắt đầu từ hôm nay, đừng chỉ học thuộc lòng từ vựng;"
+    },
+    {
+      "id": 54,
+      "start": 173.78,
+      "end": 178.84,
+      "hanzi": "要背句子，背你生活里真的会说的话。",
+      "pinyin": "yào bèi jù zi ， bèi nǐ shēng huó lǐ zhēn de huì shuō de huà 。",
+      "vi": "hãy học thuộc lòng câu - những từ bạn thực sự sử dụng trong cuộc sống hàng ngày."
+    },
+    {
+      "id": 55,
+      "start": 179.4,
+      "end": 183.66,
+      "hanzi": "第三个原因：你没有在生活中用中文。",
+      "pinyin": "dì sān gè yuán yīn �� nǐ méi yǒu zài shēng huó zhōng yòng zhōng wén 。",
+      "vi": "Lý do thứ ba: Bạn không sử dụng tiếng Trung trong cuộc sống hàng ngày."
+    },
+    {
+      "id": 56,
+      "start": 184.14,
+      "end": 188.09,
+      "hanzi": "你学习中文的时候，你坐在桌子前，",
+      "pinyin": "nǐ xué xí zhōng wén de shí hòu ， nǐ zuò zài zhuō zi qián ，",
+      "vi": "Khi học tiếng Trung, bạn ngồi vào bàn,"
+    },
+    {
+      "id": 57,
+      "start": 188.2,
+      "end": 192.9,
+      "hanzi": "你写字，你做练习，你听老师说。",
+      "pinyin": "nǐ xiě zì ， nǐ zuò liàn xí ， nǐ tīng lǎo shī shuō 。",
+      "vi": "viết, làm bài tập, nghe giáo viên giảng bài."
+    },
+    {
+      "id": 58,
+      "start": 193.28,
+      "end": 195.47,
+      "hanzi": "但是当你走出教室，",
+      "pinyin": "dàn shì dāng nǐ zǒu chū jiào shì ，",
+      "vi": "Nhưng khi rời khỏi lớp học,"
+    },
+    {
+      "id": 59,
+      "start": 195.65,
+      "end": 198.15,
+      "hanzi": "你又变回说英语的人。",
+      "pinyin": "nǐ yòu biàn huí shuō yīng yǔ de rén 。",
+      "vi": "bạn lại trở thành người nói tiếng Anh."
+    },
+    {
+      "id": 60,
+      "start": 198.68,
+      "end": 200.41,
+      "hanzi": "你知道“多少钱？”，",
+      "pinyin": "nǐ zhī dào “ duō shǎo qián ？”，",
+      "vi": "Bạn biết \"Bao nhiêu tiền?\","
+    },
+    {
+      "id": 61,
+      "start": 200.5,
+      "end": 204.11,
+      "hanzi": "可是在商店里，你还是问英文。",
+      "pinyin": "kě shì zài shāng diàn lǐ ， nǐ hái shì wèn yīng wén 。",
+      "vi": "nhưng trong cửa hàng, bạn vẫn hỏi bằng tiếng Anh."
+    },
+    {
+      "id": 62,
+      "start": 204.44,
+      "end": 206.32,
+      "hanzi": "你知道“这个在哪里？”，",
+      "pinyin": "nǐ zhī dào “ zhè ge zài nǎ lǐ ？”，",
+      "vi": "Bạn biết \"Cái này ở đâu?\","
+    },
+    {
+      "id": 63,
+      "start": 206.44,
+      "end": 209.25,
+      "hanzi": "可是一着急，你就忘光了。",
+      "pinyin": "kě shì yī zháo jí ， nǐ jiù wàng guāng le 。",
+      "vi": "nhưng vội quá, bạn quên hết."
+    },
+    {
+      "id": 64,
+      "start": 209.43,
+      "end": 213.47,
+      "hanzi": "所以，中文没有变成你的生活习惯。",
+      "pinyin": "suǒ yǐ ， zhōng wén méi yǒu biàn chéng nǐ de shēng huó xí guàn 。",
+      "vi": "Do đó, tiếng Trung chưa trở thành một phần trong cuộc sống hàng ngày của bạn."
+    },
+    {
+      "id": 65,
+      "start": 213.89,
+      "end": 218,
+      "hanzi": "学会一个新句子，你就应该马上用它。",
+      "pinyin": "xué huì yí gè xīn jù zi ， nǐ jiù yīng gāi mǎ shàng yòng tā 。",
+      "vi": "Khi học một câu mới, bạn nên sử dụng ngay lập tức."
+    },
+    {
+      "id": 66,
+      "start": 218.81,
+      "end": 221.81,
+      "hanzi": "比如，给自己一个小任务：",
+      "pinyin": "bǐ rú ， gěi zì jǐ yí gè xiǎo rèn wu ：",
+      "vi": "Ví dụ, hãy tự giao cho mình một nhiệm vụ nhỏ:"
+    },
+    {
+      "id": 67,
+      "start": 222.32,
+      "end": 226.03,
+      "hanzi": "今天出去的时候，我要说一句中文。",
+      "pinyin": "jīn tiān chū qù de shí hòu ， wǒ yào shuō yí jù zhōng wén 。",
+      "vi": "Khi ra ngoài hôm nay, tôi sẽ nói một câu bằng tiếng Trung."
+    },
+    {
+      "id": 68,
+      "start": 226.58,
+      "end": 228.34,
+      "hanzi": "哪怕只说一句。",
+      "pinyin": "nǎ pà zhī shuō yí jù 。",
+      "vi": "Dù chỉ một câu."
+    },
+    {
+      "id": 69,
+      "start": 228.62,
+      "end": 230.92,
+      "hanzi": "比如：“我要这个”，",
+      "pinyin": "bǐ rú ：“ wǒ yào zhè ge ”，",
+      "vi": "Ví dụ: \"Tôi muốn cái này\","
+    },
+    {
+      "id": 70,
+      "start": 231,
+      "end": 234.13,
+      "hanzi": "“我想买面包”，“你能帮我吗？”",
+      "pinyin": "“ wǒ xiǎng mǎi miàn bāo ”，“ nǐ néng bāng wǒ ma ？”",
+      "vi": "\"Tôi muốn mua bánh mì\", \"Bạn có thể giúp tôi không?\"."
+    },
+    {
+      "id": 71,
+      "start": 234.77,
+      "end": 239.01,
+      "hanzi": "你说了，就记住了，你不用，就会忘。",
+      "pinyin": "nǐ shuō le ， jiù jì zhù le ， nǐ bú yòng ， jiù huì wàng 。",
+      "vi": "Nếu bạn nói ra, bạn sẽ nhớ; nếu bạn không sử dụng, bạn sẽ quên mất."
+    },
+    {
+      "id": 72,
+      "start": 239.4,
+      "end": 240.71,
+      "hanzi": "第四个原因：",
+      "pinyin": "dì sì gè yuán yīn ：",
+      "vi": "Lý do thứ tư:"
+    },
+    {
+      "id": 73,
+      "start": 240.83,
+      "end": 244.83,
+      "hanzi": "你学习的中文太书面，不够生活化。",
+      "pinyin": "nǐ xué xí de zhōng wén tài shū miàn ， bú gòu shēng huó huà 。",
+      "vi": "Tiếng Trung bạn học quá trang trọng, không đủ gần gũi."
+    },
+    {
+      "id": 74,
+      "start": 245.36,
+      "end": 248.73,
+      "hanzi": "你可能会说：“你好，我叫……，",
+      "pinyin": "nǐ kě néng huì shuō ：“ nǐ hǎo ， wǒ jiào ……，",
+      "vi": "Bạn có thể nói, \"Xin chào, tôi tên là...,"
+    },
+    {
+      "id": 75,
+      "start": 248.81,
+      "end": 252.13,
+      "hanzi": "我来自……，很高兴认识你。”",
+      "pinyin": "wǒ lái zì ……， hěn gāo xìng rèn shi nǐ 。”",
+      "vi": "tôi đến từ..., rất vui được gặp bạn.\""
+    },
+    {
+      "id": 76,
+      "start": 252.32,
+      "end": 255.38,
+      "hanzi": "很好，这些句子你会了。",
+      "pinyin": "hěn hǎo ， zhè xiē jù zi nǐ huì le 。",
+      "vi": "Tuyệt, bạn biết những câu này."
+    },
+    {
+      "id": 77,
+      "start": 255.5,
+      "end": 260.38,
+      "hanzi": "可是，当你真的去中国，朋友跟你说：",
+      "pinyin": "kě shì ， dāng nǐ zhēn de qù zhōng guó ， péng yǒu gēn nǐ shuō ：",
+      "vi": "Nhưng khi bạn thực sự đến Trung Quốc, và một người bạn nói với bạn,"
+    },
+    {
+      "id": 78,
+      "start": 260.71,
+      "end": 263.48,
+      "hanzi": "“诶，晚上出来吃饭吗？”",
+      "pinyin": "“ ēi ， wǎn shàng chū lái chī fàn ma ？”",
+      "vi": "\"Này, tối nay đi ăn tối không?\","
+    },
+    {
+      "id": 79,
+      "start": 264.1,
+      "end": 265.76,
+      "hanzi": "你可能就懵了：",
+      "pinyin": "nǐ kě néng jiù měng le ：",
+      "vi": "bạn có thể bối rối:"
+    },
+    {
+      "id": 80,
+      "start": 266.83,
+      "end": 270.87,
+      "hanzi": "“什么？吃饭？出来？晚上？”",
+      "pinyin": "“ shén me ？ chī fàn ？ chū lái ？ wǎn shàng ？”",
+      "vi": "\"Cái gì? Ăn tối? Đi ăn tối? Tối nay à?\""
+    },
+    {
+      "id": 81,
+      "start": 271.19,
+      "end": 274.7,
+      "hanzi": "你学习的中文像考试用的中文，",
+      "pinyin": "nǐ xué xí de zhōng wén xiàng kǎo shì yòng de zhōng wén ，",
+      "vi": "Tiếng Trung bạn học được giống như tiếng Trung dùng trong thi cử,"
+    },
+    {
+      "id": 82,
+      "start": 274.8,
+      "end": 277.5,
+      "hanzi": "不是朋友之间说的中文。",
+      "pinyin": "bú shì péng yǒu zhī jiān shuō de zhōng wén 。",
+      "vi": "chứ không phải tiếng Trung bạn nói chuyện với bạn bè."
+    },
+    {
+      "id": 83,
+      "start": 278.06,
+      "end": 280.85,
+      "hanzi": "你需要的不是更多语法，",
+      "pinyin": "nǐ xū yào de bú shì gèng duō yǔ fǎ ，",
+      "vi": "Điều bạn cần không phải là ngữ pháp,"
+    },
+    {
+      "id": 84,
+      "start": 280.93,
+      "end": 283.45,
+      "hanzi": "而是更多生活中文。",
+      "pinyin": "ér shì gèng duō shēng huó zhōng wén 。",
+      "vi": "mà là tiếng Trung giao tiếp hàng ngày."
+    },
+    {
+      "id": 85,
+      "start": 283.73,
+      "end": 286.18,
+      "hanzi": "比如：“这个怎么说？”",
+      "pinyin": "bǐ rú ：“ zhè ge zěn me shuō ？”",
+      "vi": "Ví dụ: \"Bạn nói câu này như thế nào?\""
+    },
+    {
+      "id": 86,
+      "start": 286.44,
+      "end": 288.12,
+      "hanzi": "“可以便宜一点吗？”",
+      "pinyin": "“ kě yǐ pián yi yì diǎn ma ？”",
+      "vi": "\"Bạn có thể giảm giá cho tôi được không?\""
+    },
+    {
+      "id": 87,
+      "start": 288.22,
+      "end": 289.45,
+      "hanzi": "“你在干嘛？”",
+      "pinyin": "“ nǐ zài gān ma ？”",
+      "vi": "\"Bạn đang làm gì vậy?\""
+    },
+    {
+      "id": 88,
+      "start": 289.75,
+      "end": 290.61,
+      "hanzi": "“等一下。”",
+      "pinyin": "“ děng yí xià 。”",
+      "vi": "\"Chờ một chút.\""
+    },
+    {
+      "id": 89,
+      "start": 290.83,
+      "end": 294.41,
+      "hanzi": "“我不明白，你可以再说一遍吗？”",
+      "pinyin": "“ wǒ bù míng bái ， nǐ kě yǐ zài shuō yí biàn ma ？”",
+      "vi": "\"Tôi không hiểu, bạn có thể nói lại được không?\""
+    },
+    {
+      "id": 90,
+      "start": 294.53,
+      "end": 296.79,
+      "hanzi": "“好吃！” “真的假的？”",
+      "pinyin": "“ hǎo chī ！” “ zhēn de jiǎ de ？”",
+      "vi": "\"Ngon quá!\" \"Thật sao?\""
+    },
+    {
+      "id": 91,
+      "start": 297.26,
+      "end": 302.12,
+      "hanzi": "这些句子简单，但非常非常有用。",
+      "pinyin": "zhè xiē jù zi jiǎn dān ， dàn fēi cháng fēi cháng yǒu yòng 。",
+      "vi": "Những câu này tuy đơn giản nhưng lại cực kỳ hữu ích."
+    },
+    {
+      "id": 92,
+      "start": 302.54,
+      "end": 305.27,
+      "hanzi": "第五个原因：你总是在听、",
+      "pinyin": "dì wǔ gè yuán yīn ： nǐ zǒng shì zài tīng 、",
+      "vi": "Lý do thứ năm: Bạn luôn nghe,"
+    },
+    {
+      "id": 93,
+      "start": 305.37,
+      "end": 307.89,
+      "hanzi": "看、读，但是你不说。",
+      "pinyin": "kàn 、 dú ， dàn shì nǐ bù shuō 。",
+      "vi": "xem và đọc, nhưng lại không nói."
+    },
+    {
+      "id": 94,
+      "start": 308.32,
+      "end": 311.29,
+      "hanzi": "很多人学中文很长时间，",
+      "pinyin": "hěn duō rén xué zhōng wén hěn cháng shí jiān ，",
+      "vi": "Nhiều người học tiếng Trung trong một thời gian dài,"
+    },
+    {
+      "id": 95,
+      "start": 311.43,
+      "end": 314.58,
+      "hanzi": "但是说中文的时间，非常少。",
+      "pinyin": "dàn shì shuō zhōng wén de shí jiān ， fēi cháng shǎo 。",
+      "vi": "nhưng lại nói rất ít."
+    },
+    {
+      "id": 96,
+      "start": 315.1,
+      "end": 317.26,
+      "hanzi": "一天可能只说三句。",
+      "pinyin": "yì tiān kě néng zhī shuō sān jù 。",
+      "vi": "Họ có thể chỉ nói được ba câu mỗi ngày."
+    },
+    {
+      "id": 97,
+      "start": 317.5,
+      "end": 321.25,
+      "hanzi": "听、读、写当然重要，",
+      "pinyin": "tīng 、 dú 、 xiě dāng rán zhòng yào ，",
+      "vi": "Nghe, đọc và viết đều quan trọng,"
+    },
+    {
+      "id": 98,
+      "start": 321.65,
+      "end": 324.7,
+      "hanzi": "可是说才是最重要的。",
+      "pinyin": "kě shì shuō cái shì zuì zhòng yào de 。",
+      "vi": "nhưng nói mới là quan trọng nhất."
+    },
+    {
+      "id": 99,
+      "start": 325.14,
+      "end": 328.29,
+      "hanzi": "你想学会游泳，你要下水；",
+      "pinyin": "nǐ xiǎng xué huì yóu yǒng ， nǐ yào xià shuǐ ；",
+      "vi": "Nếu bạn muốn học bơi, bạn phải xuống nước;"
+    },
+    {
+      "id": 100,
+      "start": 328.56,
+      "end": 331.33,
+      "hanzi": "你想会说中文，你要开口。",
+      "pinyin": "nǐ xiǎng huì shuō zhōng wén ， nǐ yào kāi kǒu 。",
+      "vi": "nếu bạn muốn nói tiếng Trung, bạn phải mở miệng."
+    },
+    {
+      "id": 101,
+      "start": 331.86,
+      "end": 334.26,
+      "hanzi": "不要等“我准备好了”。",
+      "pinyin": "bú yào děng “ wǒ zhǔn bèi hǎo le ”。",
+      "vi": "Đừng đợi đến khi \"Tôi sẵn sàng\"."
+    },
+    {
+      "id": 102,
+      "start": 334.79,
+      "end": 337.79,
+      "hanzi": "等“准备好”，永远不会开始。",
+      "pinyin": "děng “ zhǔn bèi hǎo ”， yǒng yuǎn bú huì kāi shǐ 。",
+      "vi": "Chờ đến khi \"sẵn sàng\" nghĩa là bạn sẽ không bao giờ bắt đầu."
+    },
+    {
+      "id": 103,
+      "start": 338.15,
+      "end": 340.42,
+      "hanzi": "我们来想一个生活场景。",
+      "pinyin": "wǒ men lái xiǎng yí gè shēng huó chǎng jǐng 。",
+      "vi": "Hãy nghĩ về một tình huống trong cuộc sống."
+    },
+    {
+      "id": 104,
+      "start": 340.72,
+      "end": 345.38,
+      "hanzi": "比如，你在中国餐厅，你拿到菜单，",
+      "pinyin": "bǐ rú ， nǐ zài zhōng guó cān tīng ， nǐ ná dào cài dān ，",
+      "vi": "Ví dụ, bạn đang ở trong một nhà hàng Trung Quốc, bạn nhận được thực đơn,"
+    },
+    {
+      "id": 105,
+      "start": 345.63,
+      "end": 348.83,
+      "hanzi": "你看到很多字，你害怕点菜。",
+      "pinyin": "nǐ kàn dào hěn duō zì ， nǐ hài pà diǎn cài 。",
+      "vi": "bạn thấy rất nhiều chữ, và bạn sợ phải gọi món."
+    },
+    {
+      "id": 106,
+      "start": 349.22,
+      "end": 352.59,
+      "hanzi": "你想说英文，但是你告诉自己：",
+      "pinyin": "nǐ xiǎng shuō yīng wén ， dàn shì nǐ gào sù zì jǐ ：",
+      "vi": "Bạn muốn nói tiếng Anh, nhưng bạn tự nhủ:"
+    },
+    {
+      "id": 107,
+      "start": 352.87,
+      "end": 355.57,
+      "hanzi": "“不，我今天要练中文。”",
+      "pinyin": "“ bù ， wǒ jīn tiān yào liàn zhōng wén 。”",
+      "vi": "\"Không, hôm nay mình sẽ luyện tiếng Trung\"."
+    },
+    {
+      "id": 108,
+      "start": 355.73,
+      "end": 360.9,
+      "hanzi": "于是你叫服务员：“你好，我想吃饺子。”",
+      "pinyin": "yú shì nǐ jiào fú wù yuán ：“ nǐ hǎo ， wǒ xiǎng chī jiǎo zǐ 。”",
+      "vi": "Vậy là bạn gọi bồi bàn: \"Chào anh, tôi muốn ăn sủi cảo.\""
+    },
+    {
+      "id": 109,
+      "start": 361.38,
+      "end": 365.3,
+      "hanzi": "你的中文不完美，可是你说了。",
+      "pinyin": "nǐ de zhōng wén bù wán měi ， kě shì nǐ shuō le 。",
+      "vi": "Tiếng Trung của bạn không hoàn hảo, nhưng bạn đã nói được."
+    },
+    {
+      "id": 110,
+      "start": 365.6,
+      "end": 368.79,
+      "hanzi": "服务员会笑着说：“好的。”",
+      "pinyin": "fú wù yuán huì xiào zhe shuō ：“ hǎo de 。”",
+      "vi": "Bồi bàn sẽ mỉm cười và nói: \"Được thôi.\""
+    },
+    {
+      "id": 111,
+      "start": 369.4,
+      "end": 371.62,
+      "hanzi": "然后，你就成功了！",
+      "pinyin": "rán hòu ， nǐ jiù chéng gōng le ！",
+      "vi": "Và rồi, bạn đã thành công!"
+    },
+    {
+      "id": 112,
+      "start": 371.97,
+      "end": 374.77,
+      "hanzi": "你会觉得：“原来可以！”",
+      "pinyin": "nǐ huì jué de ：“ yuán lái kě yǐ ！”",
+      "vi": "Bạn sẽ nghĩ: \"Ồ, mình làm được!\""
+    },
+    {
+      "id": 113,
+      "start": 375.68,
+      "end": 378.29,
+      "hanzi": "你下一次会说得更好。",
+      "pinyin": "nǐ xià yí cì huì shuō dé gèng hǎo 。",
+      "vi": "Lần sau bạn sẽ nói tốt hơn nữa."
+    },
+    {
+      "id": 114,
+      "start": 378.9,
+      "end": 381.78,
+      "hanzi": "再比如，你想交朋友。",
+      "pinyin": "zài bǐ rú ， nǐ xiǎng jiāo péng yǒu 。",
+      "vi": "Một ví dụ khác: bạn muốn kết bạn."
+    },
+    {
+      "id": 115,
+      "start": 382.11,
+      "end": 385.9,
+      "hanzi": "你去公园，你看到一个人带着狗，",
+      "pinyin": "nǐ qù gōng yuán ， nǐ kàn dào yí gè rén dài zhe gǒu ，",
+      "vi": "Bạn đến công viên và thấy một người nuôi chó."
+    },
+    {
+      "id": 116,
+      "start": 386.32,
+      "end": 390.44,
+      "hanzi": "你想说话，但不知道中文怎么说。",
+      "pinyin": "nǐ xiǎng shuō huà ， dàn bù zhī dào zhōng wén zěn me shuō 。",
+      "vi": "Bạn muốn nói chuyện, nhưng bạn không biết nói tiếng Trung như thế nào."
+    },
+    {
+      "id": 117,
+      "start": 391.1,
+      "end": 393.96,
+      "hanzi": "其实很简单，你可以说：",
+      "pinyin": "qí shí hěn jiǎn dān ， nǐ kě yǐ shuō ：",
+      "vi": "Thực ra, nó khá đơn giản. Bạn có thể nói,"
+    },
+    {
+      "id": 118,
+      "start": 394.24,
+      "end": 396.24,
+      "hanzi": "“你的狗很可爱！”",
+      "pinyin": "“ nǐ de gǒu hěn kě ài ！”",
+      "vi": "\"Chú chó của bạn dễ thương quá!\""
+    },
+    {
+      "id": 119,
+      "start": 396.57,
+      "end": 398.7,
+      "hanzi": "你已经会这个句子。",
+      "pinyin": "nǐ yǐ jīng huì zhè ge jù zi 。",
+      "vi": "Bạn đã biết nói câu này rồi."
+    },
+    {
+      "id": 120,
+      "start": 398.82,
+      "end": 401.76,
+      "hanzi": "对方可能会说：“谢谢！”",
+      "pinyin": "duì fāng kě néng huì shuō ：“ xiè xiè ！”",
+      "vi": "Người kia có thể nói, \"Cảm ơn bạn!\""
+    },
+    {
+      "id": 121,
+      "start": 402.85,
+      "end": 405.77,
+      "hanzi": "然后你就有了第一句中文对话。",
+      "pinyin": "rán hòu nǐ jiù yǒu le dì yī jù zhōng wén duì huà 。",
+      "vi": "Và rồi bạn có cuộc trò chuyện tiếng Trung đầu tiên."
+    },
+    {
+      "id": 122,
+      "start": 406.32,
+      "end": 410.27,
+      "hanzi": "生活中文，就是这样一点一点来。",
+      "pinyin": "shēng huó zhōng wén ， jiù shì zhè yàng yì diǎn yi diǎn lái 。",
+      "vi": "Học tiếng Trung trong cuộc sống hàng ngày cũng giống như vậy - đó là một quá trình dần dần."
+    },
+    {
+      "id": 123,
+      "start": 410.57,
+      "end": 412.2,
+      "hanzi": "还有一个原因：",
+      "pinyin": "hái yǒu yí gè yuán yīn ：",
+      "vi": "Một lý do khác là"
+    },
+    {
+      "id": 124,
+      "start": 412.62,
+      "end": 415.33,
+      "hanzi": "你总是跟比你强很多的人比。",
+      "pinyin": "nǐ zǒng shì gēn bǐ nǐ qiáng hěn duō de rén bǐ 。",
+      "vi": "bạn luôn so sánh mình với những người giỏi hơn mình rất nhiều."
+    },
+    {
+      "id": 125,
+      "start": 415.85,
+      "end": 418.94,
+      "hanzi": "你看到别人说中文说得很好，",
+      "pinyin": "nǐ kàn dào bié rén shuō zhōng wén shuō dé hěn hǎo ，",
+      "vi": "Bạn thấy người khác nói tiếng Trung rất giỏi, và"
+    },
+    {
+      "id": 126,
+      "start": 419.32,
+      "end": 421.06,
+      "hanzi": "你觉得自己不行。",
+      "pinyin": "nǐ jué de zì jǐ bù xíng 。",
+      "vi": "bạn cảm thấy mình kém cỏi."
+    },
+    {
+      "id": 127,
+      "start": 421.4,
+      "end": 424.27,
+      "hanzi": "你忘了他们也从零开始。",
+      "pinyin": "nǐ wàng le tā men yě cóng líng kāi shǐ 。",
+      "vi": "Bạn quên mất rằng họ cũng bắt đầu từ con số 0."
+    },
+    {
+      "id": 128,
+      "start": 424.69,
+      "end": 427.29,
+      "hanzi": "你只看到他们现在的样子，",
+      "pinyin": "nǐ zhī kàn dào tā men xiàn zài de yàng zi ，",
+      "vi": "Bạn chỉ nhìn thấy trạng thái hiện tại của họ,"
+    },
+    {
+      "id": 129,
+      "start": 427.62,
+      "end": 430,
+      "hanzi": "却没看到他们每天的练习。",
+      "pinyin": "què méi kàn dào tā men měi tiān de liàn xí 。",
+      "vi": "chứ không phải quá trình luyện tập hàng ngày của họ."
+    },
+    {
+      "id": 130,
+      "start": 430.66,
+      "end": 433.33,
+      "hanzi": "所以，你不要跟别人比，",
+      "pinyin": "suǒ yǐ ， nǐ bú yào gēn bié rén bǐ ，",
+      "vi": "Vì vậy, đừng so sánh mình với người khác."
+    },
+    {
+      "id": 131,
+      "start": 434.08,
+      "end": 437.31,
+      "hanzi": "你只要比昨天的自己好一点点，",
+      "pinyin": "nǐ zhǐ yào bǐ zuó tiān de zì jǐ hǎo yì diǎn diǎn ，",
+      "vi": "Chỉ cần giỏi hơn chính mình của ngày hôm qua một chút"
+    },
+    {
+      "id": 132,
+      "start": 437.8,
+      "end": 439.62,
+      "hanzi": "你就是成功的。",
+      "pinyin": "nǐ jiù shì chéng gōng de 。",
+      "vi": "đã là thành công rồi."
+    },
+    {
+      "id": 133,
+      "start": 439.8,
+      "end": 443.39,
+      "hanzi": "你还要知道说中文不是背语法，",
+      "pinyin": "nǐ hái yào zhī dào shuō zhōng wén bú shì bèi yǔ fǎ ，",
+      "vi": "Bạn cũng cần hiểu rằng nói tiếng Trung không phải là học thuộc ngữ pháp"
+    },
+    {
+      "id": 134,
+      "start": 443.53,
+      "end": 444.83,
+      "hanzi": "不是考试。",
+      "pinyin": "bú shì kǎo shì 。",
+      "vi": "hay thi cử."
+    },
+    {
+      "id": 135,
+      "start": 445.62,
+      "end": 449.07,
+      "hanzi": "语言是为了连接，是为了交流。",
+      "pinyin": "yǔ yán shì wèi le lián jiē ， shì wèi le jiāo liú 。",
+      "vi": "Ngôn ngữ là để kết nối, để giao tiếp."
+    },
+    {
+      "id": 136,
+      "start": 449.59,
+      "end": 454.57,
+      "hanzi": "你说错也能交流，你说慢也能交流。",
+      "pinyin": "nǐ shuō cuò yě néng jiāo liú ， nǐ shuō màn yě néng jiāo liú 。",
+      "vi": "Bạn nói sai vẫn giao tiếp được, nói chậm vẫn giao tiếp được."
+    },
+    {
+      "id": 137,
+      "start": 455,
+      "end": 457.54,
+      "hanzi": "最重要的是你想说，",
+      "pinyin": "zuì zhòng yào de shì nǐ xiǎng shuō ，",
+      "vi": "Điều quan trọng nhất là bạn muốn nói,"
+    },
+    {
+      "id": 138,
+      "start": 457.67,
+      "end": 460.17,
+      "hanzi": "你愿意说，你敢说。",
+      "pinyin": "nǐ yuàn yì shuō ， nǐ gǎn shuō 。",
+      "vi": "bạn sẵn sàng nói và bạn dám nói."
+    },
+    {
+      "id": 139,
+      "start": 460.57,
+      "end": 462.03,
+      "hanzi": "有些人说：",
+      "pinyin": "yǒu xiē rén shuō ：",
+      "vi": "Một số người nói,"
+    },
+    {
+      "id": 140,
+      "start": 462.03,
+      "end": 465,
+      "hanzi": "“我听得懂，但我说不出来。”",
+      "pinyin": "“ wǒ tīng dé dǒng ， dàn wǒ shuō bù chū lái 。”",
+      "vi": "\"Tôi hiểu, nhưng tôi không thể nói.\""
+    },
+    {
+      "id": 141,
+      "start": 465.3,
+      "end": 467.4,
+      "hanzi": "这种情况非常多。",
+      "pinyin": "zhè zhǒng qíng kuàng fēi cháng duō 。",
+      "vi": "Điều này rất phổ biến."
+    },
+    {
+      "id": 142,
+      "start": 467.62,
+      "end": 472.9,
+      "hanzi": "原因是你的大脑只在输入，没有输出。",
+      "pinyin": "yuán yīn shì nǐ de dà nǎo zhī zài shū rù ， méi yǒu shū chū 。",
+      "vi": "Lý do là vì não bạn chỉ tiếp nhận thông tin chứ không phải đưa ra thông tin."
+    },
+    {
+      "id": 143,
+      "start": 473.2,
+      "end": 475.77,
+      "hanzi": "所以，从现在开始，",
+      "pinyin": "suǒ yǐ ， cóng xiàn zài kāi shǐ ，",
+      "vi": "Vậy nên, ngay từ bây giờ,"
+    },
+    {
+      "id": 144,
+      "start": 475.89,
+      "end": 478.49,
+      "hanzi": "每天给自己一个小计划。",
+      "pinyin": "měi tiān gěi zì jǐ yí gè xiǎo jì huà 。",
+      "vi": "hãy tự đặt cho mình một kế hoạch nhỏ mỗi ngày."
+    },
+    {
+      "id": 145,
+      "start": 478.97,
+      "end": 482.4,
+      "hanzi": "比如：— 每天说5句中文",
+      "pinyin": "bǐ rú ：—  měi tiān shuō 5 jù zhōng wén",
+      "vi": "Ví dụ: — Nói năm câu tiếng Trung mỗi ngày,"
+    },
+    {
+      "id": 146,
+      "start": 482.74,
+      "end": 485.25,
+      "hanzi": "每天问一个中文问题",
+      "pinyin": "měi tiān wèn yí gè zhōng wén wèn tí",
+      "vi": "hỏi một câu tiếng Trung mỗi ngày"
+    },
+    {
+      "id": 147,
+      "start": 485.47,
+      "end": 490,
+      "hanzi": "每天听一个中文播客，并复述一句话",
+      "pinyin": "měi tiān tīng yí gè zhōng wén bō kè ， bìng fù shù yí jù huà",
+      "vi": "mỗi ngày nghe một podcast tiếng Trung rồi nhắc lại một câu,"
+    },
+    {
+      "id": 148,
+      "start": 490.23,
+      "end": 492.84,
+      "hanzi": "每天学一个生活表达",
+      "pinyin": "měi tiān xué yí gè shēng huó biǎo dá",
+      "vi": "mỗi ngày học một cách nói đời thường."
+    },
+    {
+      "id": 149,
+      "start": 493.1,
+      "end": 496.68,
+      "hanzi": "小小的计划，也能大大改变你。",
+      "pinyin": "xiǎo xiǎo de jì huà ， yě néng dà dà gǎi biàn nǐ 。",
+      "vi": "Kế hoạch nhỏ thôi cũng thay đổi bạn rất nhiều."
+    },
+    {
+      "id": 150,
+      "start": 496.82,
+      "end": 500.23,
+      "hanzi": "比如你可以每天练这些句子：",
+      "pinyin": "bǐ rú nǐ kě yǐ měi tiān liàn zhè xiē jù zi ：",
+      "vi": "Ví dụ, bạn có thể luyện tập những câu sau mỗi ngày:"
+    },
+    {
+      "id": 151,
+      "start": 500.33,
+      "end": 501.59,
+      "hanzi": "“可以吗？”",
+      "pinyin": "“ kě yǐ ma ？”",
+      "vi": "\"Tôi có thể không?\""
+    },
+    {
+      "id": 152,
+      "start": 502,
+      "end": 504.28,
+      "hanzi": "“在哪里？” “怎么去？”",
+      "pinyin": "“ zài nǎ lǐ ？” “ zěn me qù ？”",
+      "vi": "\"Nó ở đâu?\" \"Tôi đến đó bằng cách nào?\""
+    },
+    {
+      "id": 153,
+      "start": 504.4,
+      "end": 507.25,
+      "hanzi": "“我不会。” “你能帮我吗？”",
+      "pinyin": "“ wǒ bú huì 。” “ nǐ néng bāng wǒ ma ？”",
+      "vi": "\"Tôi không biết.\" \"Bạn có thể giúp tôi không?\""
+    },
+    {
+      "id": 154,
+      "start": 507.43,
+      "end": 508.79,
+      "hanzi": "“这个是什么？”",
+      "pinyin": "“ zhè ge shì shén me ？”",
+      "vi": "\"Đây là cái gì?\""
+    },
+    {
+      "id": 155,
+      "start": 508.89,
+      "end": 510.39,
+      "hanzi": "“太贵了吧！”",
+      "pinyin": "“ tài guì le ba ！”",
+      "vi": "\"Đắt quá!\""
+    },
+    {
+      "id": 156,
+      "start": 510.53,
+      "end": 512.35,
+      "hanzi": "“我喜欢这个。”",
+      "pinyin": "“ wǒ xǐ huan zhè ge 。”",
+      "vi": "\"Tôi thích cái này.\""
+    },
+    {
+      "id": 157,
+      "start": 512.47,
+      "end": 514.25,
+      "hanzi": "“可以给我一个吗？”",
+      "pinyin": "“ kě yǐ gěi wǒ yí gè ma ？”",
+      "vi": "\"Tôi có thể lấy một cái không?\""
+    },
+    {
+      "id": 158,
+      "start": 514.39,
+      "end": 516,
+      "hanzi": "“我明天还要来！”",
+      "pinyin": "“ wǒ míng tiān hái yào lái ！”",
+      "vi": "\"Tôi sẽ quay lại vào ngày mai!\""
+    },
+    {
+      "id": 159,
+      "start": 516.38,
+      "end": 518.19,
+      "hanzi": "这些句子简单，",
+      "pinyin": "zhè xiē jù zi jiǎn dān ，",
+      "vi": "Những câu này rất đơn giản,"
+    },
+    {
+      "id": 160,
+      "start": 518.98,
+      "end": 521.7,
+      "hanzi": "但是你生活中一定会用。",
+      "pinyin": "dàn shì nǐ shēng huó zhōng yí dìng huì yòng 。",
+      "vi": "nhưng bạn chắc chắn sẽ sử dụng chúng trong cuộc sống."
+    },
+    {
+      "id": 161,
+      "start": 522.28,
+      "end": 526.69,
+      "hanzi": "用得越多，你说得越快，说得越自然。",
+      "pinyin": "yòng dé yuè duō ， nǐ shuō dé yuè kuài ， shuō dé yuè zì rán 。",
+      "vi": "Càng sử dụng nhiều, bạn sẽ nói càng nhanh và tự nhiên hơn."
+    },
+    {
+      "id": 162,
+      "start": 527.09,
+      "end": 529.67,
+      "hanzi": "你还可以找一个中文朋友。",
+      "pinyin": "nǐ hái kě yǐ zhǎo yí gè zhōng wén péng yǒu 。",
+      "vi": "Bạn cũng có thể tìm một người bạn nói tiếng Trung."
+    },
+    {
+      "id": 163,
+      "start": 530,
+      "end": 532.89,
+      "hanzi": "你们不需要聊天两个小时，",
+      "pinyin": "nǐ men bù xū yào liáo tiān liǎng gè xiǎo shí ，",
+      "vi": "Bạn không cần phải nói chuyện suốt hai tiếng,"
+    },
+    {
+      "id": 164,
+      "start": 533.16,
+      "end": 535.3,
+      "hanzi": "只要五分钟也可以。",
+      "pinyin": "zhǐ yào wǔ fēn zhōng yě kě yǐ 。",
+      "vi": "chỉ cần năm phút là đủ."
+    },
+    {
+      "id": 165,
+      "start": 536.02,
+      "end": 537.53,
+      "hanzi": "你可以告诉他：",
+      "pinyin": "nǐ kě yǐ gào sù tā ：",
+      "vi": "Bạn có thể nói với anh ấy:"
+    },
+    {
+      "id": 166,
+      "start": 537.88,
+      "end": 541,
+      "hanzi": "“我中文不好，你说慢一点。”",
+      "pinyin": "“ wǒ zhōng wén bù hǎo ， nǐ shuō màn yì diǎn 。”",
+      "vi": "\"Tiếng Trung của tôi không tốt, hãy nói chậm lại.\""
+    },
+    {
+      "id": 167,
+      "start": 541.26,
+      "end": 542.58,
+      "hanzi": "他会帮你。",
+      "pinyin": "tā huì bāng nǐ 。",
+      "vi": "Anh ấy sẽ giúp bạn."
+    },
+    {
+      "id": 168,
+      "start": 542.8,
+      "end": 544.09,
+      "hanzi": "你可以说：",
+      "pinyin": "nǐ kě yǐ shuō ：",
+      "vi": "Bạn có thể nói:"
+    },
+    {
+      "id": 169,
+      "start": 544.3,
+      "end": 547.81,
+      "hanzi": "“我先说简单的，你帮我说对的。”",
+      "pinyin": "“ wǒ xiān shuō jiǎn dān de ， nǐ bāng wǒ shuō duì de 。”",
+      "vi": "\"Tôi sẽ nói những câu đơn giản trước, và bạn có thể nói những câu đúng cho tôi.\""
+    },
+    {
+      "id": 170,
+      "start": 548.21,
+      "end": 550.61,
+      "hanzi": "你会进步得非常快。",
+      "pinyin": "nǐ huì jìn bù dé fēi cháng kuài 。",
+      "vi": "Bạn sẽ tiến bộ rất nhanh."
+    },
+    {
+      "id": 171,
+      "start": 550.79,
+      "end": 554.33,
+      "hanzi": "或者，你也可以跟自己说中文。",
+      "pinyin": "huò zhě ， nǐ yě kě yǐ gēn zì jǐ shuō zhōng wén 。",
+      "vi": "Hoặc bạn cũng có thể tự nói tiếng Trung với chính mình."
+    },
+    {
+      "id": 172,
+      "start": 555,
+      "end": 557.99,
+      "hanzi": "每天早上，你对自己说：",
+      "pinyin": "měi tiān zǎo shàng ， nǐ duì zì jǐ shuō ：",
+      "vi": "Mỗi sáng, bạn có thể tự nhủ:"
+    },
+    {
+      "id": 173,
+      "start": 558.22,
+      "end": 562.07,
+      "hanzi": "“今天会很好，我会说中文。”",
+      "pinyin": "“ jīn tiān huì hěn hǎo ， wǒ huì shuō zhōng wén 。”",
+      "vi": "\"Hôm nay sẽ tốt thôi, mình sẽ nói tiếng Trung\"."
+    },
+    {
+      "id": 174,
+      "start": 563.02,
+      "end": 565.76,
+      "hanzi": "出门的时候，你可以说：",
+      "pinyin": "chū mén de shí hòu ， nǐ kě yǐ shuō ：",
+      "vi": "Khi ra ngoài, bạn có thể nói:"
+    },
+    {
+      "id": 175,
+      "start": 566.1,
+      "end": 571.13,
+      "hanzi": "“我要去超市，我要买牛奶，我要买面包。”",
+      "pinyin": "“ wǒ yào qù chāo shì ， wǒ yào mǎi niú nǎi ， wǒ yào mǎi miàn bāo 。”",
+      "vi": "\"Mình sẽ đi siêu thị, mình sẽ mua sữa, mình sẽ mua bánh mì\"."
+    },
+    {
+      "id": 176,
+      "start": 571.32,
+      "end": 573.11,
+      "hanzi": "回家你可以说：",
+      "pinyin": "huí jiā nǐ kě yǐ shuō ：",
+      "vi": "Khi về nhà, bạn có thể nói:"
+    },
+    {
+      "id": 177,
+      "start": 573.38,
+      "end": 576.64,
+      "hanzi": "“我有点累，但是我很开心。”",
+      "pinyin": "“ wǒ yǒu diǎn lèi ， dàn shì wǒ hěn kāi xīn 。”",
+      "vi": "\"Mình hơi mệt, nhưng mình vui\"."
+    },
+    {
+      "id": 178,
+      "start": 577.32,
+      "end": 580.25,
+      "hanzi": "你跟自己说，也是在练习，",
+      "pinyin": "nǐ gēn zì jǐ shuō ， yě shì zài liàn xí ，",
+      "vi": "Tự nói chuyện với chính mình cũng là một hình thức luyện tập, và"
+    },
+    {
+      "id": 179,
+      "start": 580.46,
+      "end": 583.08,
+      "hanzi": "你大脑会记住这些句子。",
+      "pinyin": "nǐ dà nǎo huì jì zhù zhè xiē jù zi 。",
+      "vi": "não bạn sẽ ghi nhớ những câu này."
+    },
+    {
+      "id": 180,
+      "start": 583.49,
+      "end": 586.78,
+      "hanzi": "其实，说中文不需要完美，",
+      "pinyin": "qí shí ， shuō zhōng wén bù xū yào wán měi ，",
+      "vi": "Thực ra, nói tiếng Trung không đòi hỏi sự hoàn hảo,"
+    },
+    {
+      "id": 181,
+      "start": 586.93,
+      "end": 588.41,
+      "hanzi": "只需要真实。",
+      "pinyin": "zhī xū yào zhēn shí 。",
+      "vi": "chỉ cần sự chân thực."
+    },
+    {
+      "id": 182,
+      "start": 589.07,
+      "end": 593.63,
+      "hanzi": "你不会说长句没关系，你可以说短句。",
+      "pinyin": "nǐ bú huì shuō cháng jù méi guān xì ， nǐ kě yǐ shuō duǎn jù 。",
+      "vi": "Không sao cả nếu bạn không thể nói những câu dài; bạn có thể nói những câu ngắn."
+    },
+    {
+      "id": 183,
+      "start": 593.91,
+      "end": 597.47,
+      "hanzi": "你不会说“因为…所以…”，",
+      "pinyin": "nǐ bú huì shuō “ yīn wèi … suǒ yǐ …”，",
+      "vi": "Bạn sẽ không nói \"Bởi vì...do đó...\","
+    },
+    {
+      "id": 184,
+      "start": 597.47,
+      "end": 599.07,
+      "hanzi": "你可以说：",
+      "pinyin": "nǐ kě yǐ shuō ：",
+      "vi": "bạn có thể nói:"
+    },
+    {
+      "id": 185,
+      "start": 599.07,
+      "end": 602.22,
+      "hanzi": "“我喜欢中文。中文好听。",
+      "pinyin": "“ wǒ xǐ huan zhōng wén 。 zhōng wén hǎo tīng 。",
+      "vi": "\"Tôi thích tiếng Trung. Tiếng Trung nghe hay đấy."
+    },
+    {
+      "id": 186,
+      "start": 602.56,
+      "end": 604.2,
+      "hanzi": "我想说中文。”",
+      "pinyin": "wǒ xiǎng shuō zhōng wén 。”",
+      "vi": "Tôi muốn nói tiếng Trung.\""
+    },
+    {
+      "id": 187,
+      "start": 604.3,
+      "end": 605.87,
+      "hanzi": "这也是中文。",
+      "pinyin": "zhè yě shì zhōng wén 。",
+      "vi": "Đó cũng là tiếng Trung."
+    },
+    {
+      "id": 188,
+      "start": 606.49,
+      "end": 609.22,
+      "hanzi": "最重要的是，你愿意用。",
+      "pinyin": "zuì zhòng yào de shì ， nǐ yuàn yì yòng 。",
+      "vi": "Quan trọng nhất là bạn sẵn sàng sử dụng nó."
+    },
+    {
+      "id": 189,
+      "start": 609.51,
+      "end": 612.4,
+      "hanzi": "如果你每天只进步一点点，",
+      "pinyin": "rú guǒ nǐ měi tiān zhī jìn bù yì diǎn diǎn ，",
+      "vi": "Nếu bạn tiến bộ mỗi ngày một chút,"
+    },
+    {
+      "id": 190,
+      "start": 612.52,
+      "end": 615.63,
+      "hanzi": "一年以后，你会说很多。",
+      "pinyin": "yì nián yǐ hòu ， nǐ huì shuō hěn duō 。",
+      "vi": "một năm sau, bạn sẽ nói được rất nhiều."
+    },
+    {
+      "id": 191,
+      "start": 615.92,
+      "end": 619.35,
+      "hanzi": "相信我，你已经开始说中文了。",
+      "pinyin": "xiāng xìn wǒ ， nǐ yǐ jīng kāi shǐ shuō zhōng wén le 。",
+      "vi": "Tin tôi đi, bạn đã bắt đầu nói tiếng Trung rồi đấy."
+    },
+    {
+      "id": 192,
+      "start": 619.63,
+      "end": 624.21,
+      "hanzi": "好，今天你听到这里，我真的很开心。",
+      "pinyin": "hǎo ， jīn tiān nǐ tīng dào zhè lǐ ， wǒ zhēn de hěn kāi xīn 。",
+      "vi": "Được rồi, tôi rất vui vì bạn đã nghe được đến đây hôm nay."
+    },
+    {
+      "id": 193,
+      "start": 625,
+      "end": 628.67,
+      "hanzi": "谢谢你愿意花时间一起学习中文。",
+      "pinyin": "xiè xiè nǐ yuàn yì huā shí jiān yì qǐ xué xí zhōng wén 。",
+      "vi": "Cảm ơn bạn đã dành thời gian cùng học tiếng Trung."
+    },
+    {
+      "id": 194,
+      "start": 628.97,
+      "end": 632.58,
+      "hanzi": "你已经在努力，你已经在前进，",
+      "pinyin": "nǐ yǐ jīng zài nǔ lì ， nǐ yǐ jīng zài qián jìn ，",
+      "vi": "Bạn đã rất nỗ lực, bạn đã tiến bộ,"
+    },
+    {
+      "id": 195,
+      "start": 633.07,
+      "end": 635.96,
+      "hanzi": "你已经比很多人走得更远。",
+      "pinyin": "nǐ yǐ jīng bǐ hěn duō rén zǒu dé gèng yuǎn 。",
+      "vi": "bạn đã tiến xa hơn rất nhiều người."
+    },
+    {
+      "id": 196,
+      "start": 636.24,
+      "end": 640,
+      "hanzi": "你要相信自己，你真的可以说中文，",
+      "pinyin": "nǐ yào xiāng xìn zì jǐ ， nǐ zhēn de kě yǐ shuō zhōng wén ，",
+      "vi": "Hãy tin vào bản thân, bạn thực sự có thể nói tiếng Trung,"
+    },
+    {
+      "id": 197,
+      "start": 640.14,
+      "end": 642.34,
+      "hanzi": "而且会说得越来越好。",
+      "pinyin": "ér qiě huì shuō dé yuè lái yuè hǎo 。",
+      "vi": "và bạn sẽ nói ngày càng tốt hơn."
+    },
+    {
+      "id": 198,
+      "start": 642.9,
+      "end": 644.82,
+      "hanzi": "当你下次去中国，",
+      "pinyin": "dāng nǐ xià cì qù zhōng guó ，",
+      "vi": "Lần tới khi bạn đến Trung Quốc"
+    },
+    {
+      "id": 199,
+      "start": 644.82,
+      "end": 647.08,
+      "hanzi": "或者和中国朋友聊天，",
+      "pinyin": "huò zhě hé zhōng guó péng yǒu liáo tiān ，",
+      "vi": "hoặc trò chuyện với bạn bè Trung Quốc,"
+    },
+    {
+      "id": 200,
+      "start": 647.44,
+      "end": 650.29,
+      "hanzi": "你会发现，你可以开口说，",
+      "pinyin": "nǐ huì fā xiàn ， nǐ kě yǐ kāi kǒu shuō ，",
+      "vi": "bạn sẽ thấy mình nói được tiếng Trung"
+    },
+    {
+      "id": 201,
+      "start": 650.73,
+      "end": 653.04,
+      "hanzi": "而且你说得非常自然。",
+      "pinyin": "ér qiě nǐ shuō dé fēi cháng zì rán 。",
+      "vi": "và nói rất tự nhiên."
+    },
+    {
+      "id": 202,
+      "start": 653.24,
+      "end": 655.38,
+      "hanzi": "那一天一定会来！",
+      "pinyin": "nà yì tiān yí dìng huì lái ！",
+      "vi": "Ngày đó chắc chắn sẽ đến!"
+    },
+    {
+      "id": 203,
+      "start": 655.6,
+      "end": 657.74,
+      "hanzi": "谢谢你今天的收听。",
+      "pinyin": "xiè xiè nǐ jīn tiān de shōu tīng 。",
+      "vi": "Cảm ơn bạn đã lắng nghe hôm nay."
+    },
+    {
+      "id": 204,
+      "start": 658.03,
+      "end": 660.03,
+      "hanzi": "如果你喜欢这个节目，",
+      "pinyin": "rú guǒ nǐ xǐ huan zhè ge jié mù ，",
+      "vi": "Nếu bạn thích chương trình này,"
+    },
+    {
+      "id": 205,
+      "start": 660.36,
+      "end": 664.45,
+      "hanzi": "记得继续来和我一起用中文聊天。",
+      "pinyin": "jì de jì xù lái hé wǒ yì qǐ yòng zhōng wén liáo tiān 。",
+      "vi": "hãy nhớ tiếp tục trò chuyện với tôi bằng tiếng Trung nhé."
+    },
+    {
+      "id": 206,
+      "start": 664.78,
+      "end": 666.6,
+      "hanzi": "我会一直陪着你。",
+      "pinyin": "wǒ huì yì zhí péi zhe nǐ 。",
+      "vi": "Tôi sẽ luôn ở đây vì bạn."
+    },
+    {
+      "id": 207,
+      "start": 666.78,
+      "end": 668.72,
+      "hanzi": "我们下一期再见。",
+      "pinyin": "wǒ men xià yì qī zài jiàn 。",
+      "vi": "Hẹn gặp lại bạn lần sau."
+    },
+    {
+      "id": 208,
+      "start": 669.03,
+      "end": 671.03,
+      "hanzi": "加油！再见～",
+      "pinyin": "jiā yóu ！ zài jiàn ～",
+      "vi": "Cố gắng lên nhé! Tạm biệt~"
+    }
+  ],
+  "isSystem": true,
+  "isCommunity": false,
+  "contributorName": "Hệ thống",
+  "createdAt": "2026-09-10T01:27:16.174Z"
+}

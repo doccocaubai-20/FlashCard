@@ -500,10 +500,11 @@ export class StatsService {
     });
 
     if (quest && !quest.completed) {
+      const newProgress = Math.min(quest.target, (quest.progress || 0) + amount);
       await this.prisma.userQuest.update({
         where: { id: quest.id },
         data: {
-          progress: { increment: amount },
+          progress: newProgress,
         },
       });
     }

@@ -43,6 +43,7 @@ model User {
   grammarProgress UserGrammarProgress[]
   gameRecords GameRecord[]
   weakWords UserWeakWord[]
+  videoLessons VideoLesson[]
 }
 
 enum AuthProvider {
@@ -353,4 +354,33 @@ model UserWeakWord {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, hanzi])
+}
+
+// ═══════════════════════════════════════════
+// Bài học Video (YouTube Video Lessons)
+// ═══════════════════════════════════════════
+model VideoLesson {
+  id              String   @id
+  youtubeId       String
+  title           String
+  titleHanzi      String?
+  level           Int?
+  topic           String?  @default("Khác")
+  channel         String?  @default("YouTube")
+  durationSec     Int?
+  thumbnailUrl    String?
+  totalSentences  Int?
+  segments        Json     // Danh sách câu phụ đề [{ id, start, end, hanzi, pinyin, vi }]
+  isSystem        Boolean  @default(true)
+  isCommunity     Boolean  @default(false)
+  contributorName String?  @default("Hệ thống")
+  contributorId   Int?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  contributor     User?    @relation(fields: [contributorId], references: [id], onDelete: SetNull)
+
+  @@index([level])
+  @@index([isCommunity])
+  @@index([createdAt])
 }

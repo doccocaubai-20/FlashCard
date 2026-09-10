@@ -1,0 +1,1818 @@
+{
+  "id": "qvJxQNMvCRI",
+  "youtubeId": "qvJxQNMvCRI",
+  "title": "Chữ Hán hoạt động như thế nào?",
+  "titleHanzi": "汉字是怎么工作的",
+  "level": 3,
+  "topic": "Podcast",
+  "channel": "Chinese Podcast Station",
+  "durationSec": 714,
+  "thumbnailUrl": "https://i.ytimg.com/vi/qvJxQNMvCRI/hqdefault.jpg",
+  "totalSentences": 225,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.21,
+      "end": 3.56,
+      "hanzi": "大家好，欢迎你来到今天的节目。",
+      "pinyin": "dà jiā hǎo ， huān yíng nǐ lái dào jīn tiān de jié mù 。",
+      "vi": "Chào mọi người, chào mừng đến với chương trình hôm nay."
+    },
+    {
+      "id": 2,
+      "start": 3.66,
+      "end": 5.46,
+      "hanzi": "今天我们聊一个",
+      "pinyin": "jīn tiān wǒ men liáo yí gè",
+      "vi": "Hôm nay chúng ta sẽ thảo luận về một"
+    },
+    {
+      "id": 3,
+      "start": 5.46,
+      "end": 9.18,
+      "hanzi": "很多学习中文的人都会想的问题：",
+      "pinyin": "hěn duō xué xí zhōng wén de rén dōu huì xiǎng de wèn tí ：",
+      "vi": "câu hỏi mà nhiều người học tiếng Trung thường băn khoăn:"
+    },
+    {
+      "id": 4,
+      "start": 9.28,
+      "end": 11.53,
+      "hanzi": "汉字真的很难吗？",
+      "pinyin": "hàn zì zhēn de hěn nán ma ？",
+      "vi": "Chữ Hán có thực sự khó đến vậy không?"
+    },
+    {
+      "id": 5,
+      "start": 11.74,
+      "end": 14.12,
+      "hanzi": "汉字到底有没有道理？",
+      "pinyin": "hàn zì dào dǐ yǒu méi yǒu dào lǐ ？",
+      "vi": "Chúng có logic gì không?"
+    },
+    {
+      "id": 6,
+      "start": 14.22,
+      "end": 16.3,
+      "hanzi": "为什么这么多笔画，",
+      "pinyin": "wèi shén me zhè me duō bǐ huà ，",
+      "vi": "Tại sao lại nhiều nét đến thế,"
+    },
+    {
+      "id": 7,
+      "start": 16.45,
+      "end": 18.97,
+      "hanzi": "看起来却好像有意思？",
+      "pinyin": "kàn qǐ lái què hǎo xiàng yǒu yì sī ？",
+      "vi": "mà nhìn lại như có ý nghĩa?"
+    },
+    {
+      "id": 8,
+      "start": 19.18,
+      "end": 24.52,
+      "hanzi": "今天我想用很简单、很生活化的方式，",
+      "pinyin": "jīn tiān wǒ xiǎng yòng hěn jiǎn dān 、 hěn shēng huó huà de fāng shì ，",
+      "vi": "Hôm nay, tôi muốn dùng một cách thật đơn giản, đời thường,"
+    },
+    {
+      "id": 9,
+      "start": 24.52,
+      "end": 26.88,
+      "hanzi": "陪你慢慢看一看，",
+      "pinyin": "péi nǐ màn màn kàn yi kàn ，",
+      "vi": "để hướng dẫn các bạn hiểu"
+    },
+    {
+      "id": 10,
+      "start": 26.88,
+      "end": 30.91,
+      "hanzi": "为什么汉字其实是“讲得通的”。",
+      "pinyin": "wèi shén me hàn zì qí shí shì “ jiǎng dé tōng de ”。",
+      "vi": "tại sao chữ Hán thực ra lại \"dễ hiểu\"."
+    },
+    {
+      "id": 11,
+      "start": 30.91,
+      "end": 34.16,
+      "hanzi": "很多人第一次看到汉字的时候，",
+      "pinyin": "hěn duō rén dì yī cì kàn dào hàn zì de shí hòu ，",
+      "vi": "Nhiều người khi lần đầu nhìn thấy chữ Hán,"
+    },
+    {
+      "id": 12,
+      "start": 34.16,
+      "end": 35.85,
+      "hanzi": "都会有一点怕。",
+      "pinyin": "dōu huì yǒu yì diǎn pà 。",
+      "vi": "đều thấy hơi e ngại."
+    },
+    {
+      "id": 13,
+      "start": 36.47,
+      "end": 39.34,
+      "hanzi": "因为你会觉得，字太多了，",
+      "pinyin": "yīn wèi nǐ huì jué de ， zì tài duō le ，",
+      "vi": "Vì bạn sẽ thấy chữ nhiều quá,"
+    },
+    {
+      "id": 14,
+      "start": 39.34,
+      "end": 41.51,
+      "hanzi": "好像每一个都要背。",
+      "pinyin": "hǎo xiàng měi yí gè dōu yào bèi 。",
+      "vi": "và bạn phải học thuộc lòng tất cả."
+    },
+    {
+      "id": 15,
+      "start": 41.82,
+      "end": 44.76,
+      "hanzi": "可是慢慢学，你会发现，",
+      "pinyin": "kě shì màn màn xué ， nǐ huì fā xiàn ，",
+      "vi": "Nhưng khi học, bạn sẽ khám phá ra rằng"
+    },
+    {
+      "id": 16,
+      "start": 44.86,
+      "end": 47.24,
+      "hanzi": "汉字不是乱来的。",
+      "pinyin": "hàn zì bú shì luàn lái de 。",
+      "vi": "chữ Hán không phải ngẫu nhiên."
+    },
+    {
+      "id": 17,
+      "start": 47.61,
+      "end": 49.88,
+      "hanzi": "它们不是随便画的。",
+      "pinyin": "tā men bú shì suí biàn huà de 。",
+      "vi": "Chúng không chỉ được vẽ một cách tùy tiện."
+    },
+    {
+      "id": 18,
+      "start": 50,
+      "end": 54.68,
+      "hanzi": "很多汉字，其实和生活、和人的经验、",
+      "pinyin": "hěn duō hàn zì ， qí shí hé shēng huó 、 hé rén de jīng yàn 、",
+      "vi": "Nhiều chữ Hán thực sự liên quan đến cuộc sống, kinh nghiệm của con người"
+    },
+    {
+      "id": 19,
+      "start": 54.91,
+      "end": 58.49,
+      "hanzi": "和你每天看到的东西有关系。",
+      "pinyin": "hé nǐ měi tiān kàn dào de dōng xī yǒu guān xì 。",
+      "vi": "và những thứ bạn thấy mỗi ngày."
+    },
+    {
+      "id": 20,
+      "start": 58.49,
+      "end": 62.26,
+      "hanzi": "我们先从一个很简单的字开始，",
+      "pinyin": "wǒ men xiān cóng yí gè hěn jiǎn dān de zì kāi shǐ ，",
+      "vi": "Hãy bắt đầu với một chữ rất đơn giản,"
+    },
+    {
+      "id": 21,
+      "start": 62.4,
+      "end": 64.03,
+      "hanzi": "比如“人”。",
+      "pinyin": "bǐ rú “ rén ”。",
+      "vi": "như \"人\" (rén)."
+    },
+    {
+      "id": 22,
+      "start": 64.13,
+      "end": 67.05,
+      "hanzi": "这个字你一定认识。",
+      "pinyin": "zhè ge zì nǐ yí dìng rèn shi 。",
+      "vi": "Chắc chắn bạn sẽ nhận ra chữ này."
+    },
+    {
+      "id": 23,
+      "start": 67.28,
+      "end": 69.17,
+      "hanzi": "“人”只有两笔，",
+      "pinyin": "“ rén ” zhǐ yǒu liǎng bǐ ，",
+      "vi": "\"人\" chỉ có hai nét,"
+    },
+    {
+      "id": 24,
+      "start": 69.38,
+      "end": 72.4,
+      "hanzi": "看起来就像一个人站着，",
+      "pinyin": "kàn qǐ lái jiù xiàng yí gè rén zhàn zhe ，",
+      "vi": "và nó trông giống như một người đứng với"
+    },
+    {
+      "id": 25,
+      "start": 72.4,
+      "end": 76.21,
+      "hanzi": "腿打开，身体向前一点。",
+      "pinyin": "tuǐ dǎ kāi ， shēn tǐ xiàng qián yì diǎn 。",
+      "vi": "hai chân dang rộng và thân người hơi hướng về phía trước."
+    },
+    {
+      "id": 26,
+      "start": 76.21,
+      "end": 80,
+      "hanzi": "以前的人，就是这样看人、画人的。",
+      "pinyin": "yǐ qián de rén ， jiù shì zhè yàng kàn rén 、 huà rén de 。",
+      "vi": "Đây là cách người ta từng nhìn và vẽ người."
+    },
+    {
+      "id": 27,
+      "start": 80.19,
+      "end": 83.68,
+      "hanzi": "你站着的时候，是不是也是这样？",
+      "pinyin": "nǐ zhàn zhe de shí hòu ， shì bu shì yě shì zhè yàng ？",
+      "vi": "Khi bạn đứng, chẳng phải bạn cũng trông như vậy sao?"
+    },
+    {
+      "id": 28,
+      "start": 84.12,
+      "end": 87.81,
+      "hanzi": "所以这个字一看，就知道是人。",
+      "pinyin": "suǒ yǐ zhè ge zì yí kàn ， jiù zhī dào shì rén 。",
+      "vi": "Thoạt nhìn, bạn biết rằng chữ Hán này đại diện cho một người."
+    },
+    {
+      "id": 29,
+      "start": 88.35,
+      "end": 90.74,
+      "hanzi": "它不是一个随便的形状。",
+      "pinyin": "tā bú shì yí gè suí biàn de xíng zhuàng 。",
+      "vi": "Nó không chỉ là một hình dạng ngẫu nhiên."
+    },
+    {
+      "id": 30,
+      "start": 90.87,
+      "end": 92.22,
+      "hanzi": "再看“口”。",
+      "pinyin": "zài kàn “ kǒu ”。",
+      "vi": "Bây giờ hãy nhìn vào chữ \"口\" (kǒu)."
+    },
+    {
+      "id": 31,
+      "start": 92.33,
+      "end": 94.85,
+      "hanzi": "“口”就是一个嘴。",
+      "pinyin": "“ kǒu ” jiù shì yí gè zuǐ 。",
+      "vi": "\"口\" là miệng."
+    },
+    {
+      "id": 32,
+      "start": 95,
+      "end": 99.64,
+      "hanzi": "一个方方的形状，像不像张开的嘴？",
+      "pinyin": "yí gè fāng fāng de xíng zhuàng ， xiàng bu xiàng zhāng kāi de zuǐ ？",
+      "vi": "Một hình vuông, chẳng phải nó giống như một cái miệng đang mở sao?"
+    },
+    {
+      "id": 33,
+      "start": 100,
+      "end": 103.72,
+      "hanzi": "我们每天都用嘴说话、吃饭，",
+      "pinyin": "wǒ men měi tiān dōu yòng zuǐ shuō huà 、 chī fàn ，",
+      "vi": "Chúng ta dùng miệng để nói và ăn mỗi ngày,"
+    },
+    {
+      "id": 34,
+      "start": 103.91,
+      "end": 107.39,
+      "hanzi": "所以这个字很早就有了。",
+      "pinyin": "suǒ yǐ zhè ge zì hěn zǎo jiù yǒu le 。",
+      "vi": "vì vậy chữ Hán này đã tồn tại từ rất lâu rồi."
+    },
+    {
+      "id": 35,
+      "start": 107.49,
+      "end": 109.08,
+      "hanzi": "你看到“口”，",
+      "pinyin": "nǐ kàn dào “ kǒu ”，",
+      "vi": "Khi bạn nhìn thấy \"miệng\","
+    },
+    {
+      "id": 36,
+      "start": 109.16,
+      "end": 113.13,
+      "hanzi": "大脑就会想到说话、吃东西。",
+      "pinyin": "dà nǎo jiù huì xiǎng dào shuō huà 、 chī dōng xī 。",
+      "vi": "não bạn ngay lập tức nghĩ đến việc nói và ăn."
+    },
+    {
+      "id": 37,
+      "start": 113.13,
+      "end": 115.13,
+      "hanzi": "是不是很直接？",
+      "pinyin": "shì bu shì hěn zhí jiē ？",
+      "vi": "Thật dễ hiểu phải không?"
+    },
+    {
+      "id": 38,
+      "start": 115.22,
+      "end": 117.17,
+      "hanzi": "“日”也是这样。",
+      "pinyin": "“ rì ” yě shì zhè yàng 。",
+      "vi": "Tương tự với chữ \"mặt trời\"."
+    },
+    {
+      "id": 39,
+      "start": 117.48,
+      "end": 119.13,
+      "hanzi": "“日”是太阳。",
+      "pinyin": "“ rì ” shì tài yáng 。",
+      "vi": "\"Mặt trời\" đại diện cho mặt trời."
+    },
+    {
+      "id": 40,
+      "start": 119.13,
+      "end": 123.58,
+      "hanzi": "以前写得更像一个圆，中间有一点。",
+      "pinyin": "yǐ qián xiě dé gèng xiàng yí gè yuán ， zhōng jiān yǒu yì diǎn 。",
+      "vi": "Trước đây nó được viết giống như một vòng tròn có một chấm ở giữa."
+    },
+    {
+      "id": 41,
+      "start": 123.69,
+      "end": 126.77,
+      "hanzi": "后来慢慢变成现在这样。",
+      "pinyin": "hòu lái màn màn biàn chéng xiàn zài zhè yàng 。",
+      "vi": "Sau này, nó dần dần phát triển thành hình dạng hiện tại."
+    },
+    {
+      "id": 42,
+      "start": 127.14,
+      "end": 131.03,
+      "hanzi": "太阳每天出来，给我们光和热，",
+      "pinyin": "tài yáng měi tiān chū lái ， gěi wǒ men guāng hé rè ，",
+      "vi": "Mặt trời mọc mỗi ngày, mang đến cho chúng ta ánh sáng và hơi ấm,"
+    },
+    {
+      "id": 43,
+      "start": 131.2,
+      "end": 136.26,
+      "hanzi": "所以“日”和时间、和白天也有关系。",
+      "pinyin": "suǒ yǐ “ rì ” hé shí jiān 、 hé bái tiān yě yǒu guān xì 。",
+      "vi": "vì vậy \"mặt trời\" cũng liên quan đến thời gian và ban ngày."
+    },
+    {
+      "id": 44,
+      "start": 136.36,
+      "end": 140,
+      "hanzi": "你会看到，“今天”“明天”",
+      "pinyin": "nǐ huì kàn dào ，“ jīn tiān ”“ míng tiān ”",
+      "vi": "Bạn sẽ thấy \"hôm nay\", \"ngày mai\","
+    },
+    {
+      "id": 45,
+      "start": 140.08,
+      "end": 144.08,
+      "hanzi": "“昨天”，很多词里面都有“日”。",
+      "pinyin": "“ zuó tiān ”， hěn duō cí lǐ miàn dōu yǒu “ rì ”。",
+      "vi": "\"hôm qua\", rất nhiều từ đều có chữ \"mặt trời\"."
+    },
+    {
+      "id": 46,
+      "start": 144.16,
+      "end": 145.33,
+      "hanzi": "“月”呢？",
+      "pinyin": "“ yuè ” ne ？",
+      "vi": "Còn chữ \"mặt trăng\" thì sao?"
+    },
+    {
+      "id": 47,
+      "start": 145.44,
+      "end": 146.79,
+      "hanzi": "“月”是月亮。",
+      "pinyin": "“ yuè ” shì yuè liàng 。",
+      "vi": "\"Mặt trăng\" đại diện cho mặt trăng."
+    },
+    {
+      "id": 48,
+      "start": 147.15,
+      "end": 150.1,
+      "hanzi": "以前也画得很像月亮的样子。",
+      "pinyin": "yǐ qián yě huà dé hěn xiàng yuè liàng de yàng zi 。",
+      "vi": "Trước đây nó được vẽ rất giống mặt trăng."
+    },
+    {
+      "id": 49,
+      "start": 150.1,
+      "end": 153.53,
+      "hanzi": "后来简化了，但意思还在。",
+      "pinyin": "hòu lái jiǎn huà le ， dàn yì sī hái zài 。",
+      "vi": "Sau này, nó được đơn giản hóa, nhưng ý nghĩa vẫn giữ nguyên."
+    },
+    {
+      "id": 50,
+      "start": 153.53,
+      "end": 157.43,
+      "hanzi": "月亮和夜晚、和时间也有关系。",
+      "pinyin": "yuè liàng hé yè wǎn 、 hé shí jiān yě yǒu guān xì 。",
+      "vi": "Mặt trăng cũng liên quan đến đêm và thời gian."
+    },
+    {
+      "id": 51,
+      "start": 157.51,
+      "end": 160.53,
+      "hanzi": "所以你会看到，“月”",
+      "pinyin": "suǒ yǐ nǐ huì kàn dào ，“ yuè ”",
+      "vi": "Vậy nên bạn sẽ thấy rằng \"mặt trăng,\""
+    },
+    {
+      "id": 52,
+      "start": 160.53,
+      "end": 164.63,
+      "hanzi": "“明月”“每个月”，都和时间有关。",
+      "pinyin": "“ míng yuè ”“ měi gè yuè ”， dōu hé shí jiān yǒu guān 。",
+      "vi": "\"trăng sáng,\" và \"mỗi tháng\" đều liên quan đến thời gian."
+    },
+    {
+      "id": 53,
+      "start": 164.71,
+      "end": 168.73,
+      "hanzi": "当你发现这些字不是随便写的，",
+      "pinyin": "dāng nǐ fā xiàn zhè xiē zì bú shì suí biàn xiě de ，",
+      "vi": "Khi bạn nhận ra rằng những chữ Hán này không chỉ được viết một cách ngẫu nhiên,"
+    },
+    {
+      "id": 54,
+      "start": 168.94,
+      "end": 172.25,
+      "hanzi": "你的心会慢慢放松一点。",
+      "pinyin": "nǐ de xīn huì màn màn fàng sōng yì diǎn 。",
+      "vi": "tâm trí bạn sẽ dần dần thư giãn."
+    },
+    {
+      "id": 55,
+      "start": 172.37,
+      "end": 173.6,
+      "hanzi": "你会发现，",
+      "pinyin": "nǐ huì fā xiàn ，",
+      "vi": "Bạn sẽ thấy rằng"
+    },
+    {
+      "id": 56,
+      "start": 173.68,
+      "end": 177.16,
+      "hanzi": "你不是在记一个没有意义的符号，",
+      "pinyin": "nǐ bú shì zài jì yí gè méi yǒu yì yì de fú hào ，",
+      "vi": "bạn không chỉ đang ghi nhớ một biểu tượng vô nghĩa,"
+    },
+    {
+      "id": 57,
+      "start": 177.28,
+      "end": 180.93,
+      "hanzi": "而是在认识一个“画出来的意思”。",
+      "pinyin": "ér shì zài rèn shi yí gè “ huà chū lái de yì sī ”。",
+      "vi": "mà là đang nhận ra một \"ý nghĩa được thể hiện.\""
+    },
+    {
+      "id": 58,
+      "start": 181.2,
+      "end": 185.49,
+      "hanzi": "我们再看一个生活中常用的字，“木”。",
+      "pinyin": "wǒ men zài kàn yí gè shēng huó zhōng cháng yòng de zì ，“ mù ”。",
+      "vi": "Hãy xem xét một chữ Hán thông dụng khác trong cuộc sống hàng ngày, đó là \"gỗ.\""
+    },
+    {
+      "id": 59,
+      "start": 185.98,
+      "end": 187.86,
+      "hanzi": "“木”就是树。",
+      "pinyin": "“ mù ” jiù shì shù 。",
+      "vi": "\"Gỗ\" tượng trưng cho một cái cây."
+    },
+    {
+      "id": 60,
+      "start": 188.21,
+      "end": 191.96,
+      "hanzi": "一竖是树干，两边是树枝。",
+      "pinyin": "yí shù shì shù gàn ， liǎng biān shì shù zhī 。",
+      "vi": "Đường thẳng đứng là thân cây, và hai bên là cành cây."
+    },
+    {
+      "id": 61,
+      "start": 192.29,
+      "end": 195.23,
+      "hanzi": "你如果闭上眼睛想一棵树，",
+      "pinyin": "nǐ rú guǒ bì shàng yǎn jīng xiǎng yì kē shù ，",
+      "vi": "Nếu bạn nhắm mắt lại và tưởng tượng một cái cây,"
+    },
+    {
+      "id": 62,
+      "start": 195.39,
+      "end": 198.14,
+      "hanzi": "是不是也差不多这个样子？",
+      "pinyin": "shì bu shì yě chà bù duō zhè ge yàng zi ？",
+      "vi": "chẳng phải nó trông gần giống như thế này sao?"
+    },
+    {
+      "id": 63,
+      "start": 198.14,
+      "end": 201.91,
+      "hanzi": "所以“木”不是一个奇怪的字，",
+      "pinyin": "suǒ yǐ “ mù ” bú shì yí gè qí guài de zì ，",
+      "vi": "Vì vậy, \"mỗ\" (mù, gỗ) không phải là một chữ Hán xa lạ;"
+    },
+    {
+      "id": 64,
+      "start": 202.22,
+      "end": 203.91,
+      "hanzi": "它很像一棵树。",
+      "pinyin": "tā hěn xiàng yì kē shù 。",
+      "vi": "nó trông rất giống một cái cây."
+    },
+    {
+      "id": 65,
+      "start": 203.99,
+      "end": 206.32,
+      "hanzi": "那如果有两棵树呢？",
+      "pinyin": "nà rú guǒ yǒu liǎng kē shù ne ？",
+      "vi": "Nếu có hai cây thì sao?"
+    },
+    {
+      "id": 66,
+      "start": 206.41,
+      "end": 207.8,
+      "hanzi": "就变成“林”。",
+      "pinyin": "jiù biàn chéng “ lín ”。",
+      "vi": "Nó trở thành \"rừng\""
+    },
+    {
+      "id": 67,
+      "start": 207.8,
+      "end": 209.39,
+      "hanzi": "三棵树呢？",
+      "pinyin": "sān kē shù ne ？",
+      "vi": "Còn ba cây thì sao?"
+    },
+    {
+      "id": 68,
+      "start": 209.39,
+      "end": 210.62,
+      "hanzi": "就是“森”。",
+      "pinyin": "jiù shì “ sēn ”。",
+      "vi": "Nó là \"rừng\" (sēn, rừng)."
+    },
+    {
+      "id": 69,
+      "start": 210.72,
+      "end": 213.93,
+      "hanzi": "你看，这是不是很有意思？",
+      "pinyin": "nǐ kàn ， zhè shì bu shì hěn yǒu yì sī ？",
+      "vi": "Thấy chưa? Thật thú vị phải không?"
+    },
+    {
+      "id": 70,
+      "start": 214.09,
+      "end": 216.14,
+      "hanzi": "一棵树是“木”，",
+      "pinyin": "yì kē shù shì “ mù ”，",
+      "vi": "Một cây là \"mỗ,\""
+    },
+    {
+      "id": 71,
+      "start": 216.37,
+      "end": 219.24,
+      "hanzi": "树多一点，就变成树林，",
+      "pinyin": "shù duō yì diǎn ， jiù biàn chéng shù lín ，",
+      "vi": "nhiều cây tạo thành rừng, và"
+    },
+    {
+      "id": 72,
+      "start": 219.47,
+      "end": 222.53,
+      "hanzi": "树非常多，就是森林。",
+      "pinyin": "shù fēi cháng duō ， jiù shì sēn lín 。",
+      "vi": "rất nhiều cây tạo thành rừng."
+    },
+    {
+      "id": 73,
+      "start": 222.76,
+      "end": 225.88,
+      "hanzi": "你不用背，你一看就懂。",
+      "pinyin": "nǐ bú yòng bèi ， nǐ yí kàn jiù dǒng 。",
+      "vi": "Bạn không cần phải ghi nhớ nó; bạn hiểu nó ngay lập tức."
+    },
+    {
+      "id": 74,
+      "start": 225.98,
+      "end": 227.5,
+      "hanzi": "再看“火”。",
+      "pinyin": "zài kàn “ huǒ ”。",
+      "vi": "Bây giờ hãy nhìn vào chữ \"火\" (huǒ, lửa)."
+    },
+    {
+      "id": 75,
+      "start": 227.61,
+      "end": 230.21,
+      "hanzi": "“火”像不像火在跳？",
+      "pinyin": "“ huǒ ” xiàng bu xiàng huǒ zài tiào ？",
+      "vi": "Chữ \"火\" có trông giống như ngọn lửa đang nhảy không?"
+    },
+    {
+      "id": 76,
+      "start": 230.54,
+      "end": 233.27,
+      "hanzi": "下面的点，像火花。",
+      "pinyin": "xià miàn de diǎn ， xiàng huǒ huā 。",
+      "vi": "Dấu chấm ở dưới trông giống như tia lửa."
+    },
+    {
+      "id": 77,
+      "start": 233.6,
+      "end": 238.95,
+      "hanzi": "火和热、和做饭、和危险都有关系。",
+      "pinyin": "huǒ hé rè 、 hé zuò fàn 、 hé wēi xiǎn dōu yǒu guān xì 。",
+      "vi": "Lửa liên quan đến nhiệt, nấu nướng và nguy hiểm."
+    },
+    {
+      "id": 78,
+      "start": 239.57,
+      "end": 243.53,
+      "hanzi": "所以“火车”“火山”“生火”，",
+      "pinyin": "suǒ yǐ “ huǒ chē ”“ huǒ shān ”“ shēng huǒ ”，",
+      "vi": "Vì vậy, \"火车\" (chēhuǒ, tàu hỏa), \"火山\" (huǒshān, núi lửa)"
+    },
+    {
+      "id": 79,
+      "start": 243.61,
+      "end": 245.61,
+      "hanzi": "都和这个字有关。",
+      "pinyin": "dōu hé zhè ge zì yǒu guān 。",
+      "vi": "và \"生火\" (shēnghuǒ, nhóm lửa) đều liên quan đến chữ này."
+    },
+    {
+      "id": 80,
+      "start": 245.76,
+      "end": 248.67,
+      "hanzi": "如果火太大，会怎么样？",
+      "pinyin": "rú guǒ huǒ tài dà ， huì zěn me yàng ？",
+      "vi": "Điều gì xảy ra nếu ngọn lửa quá lớn?"
+    },
+    {
+      "id": 81,
+      "start": 248.8,
+      "end": 250.4,
+      "hanzi": "可能会“烧”。",
+      "pinyin": "kě néng huì “ shāo ”。",
+      "vi": "Nó có thể \"烧\" (shāo, cháy)."
+    },
+    {
+      "id": 82,
+      "start": 250.61,
+      "end": 253.53,
+      "hanzi": "“烧”这个字里面有“火”。",
+      "pinyin": "“ shāo ” zhè ge zì lǐ miàn yǒu “ huǒ ”。",
+      "vi": "Chữ \"烧\" chứa chữ \"火\"."
+    },
+    {
+      "id": 83,
+      "start": 253.71,
+      "end": 257,
+      "hanzi": "因为烧一定和火有关系。",
+      "pinyin": "yīn wèi shāo yí dìng hé huǒ yǒu guān xì 。",
+      "vi": "Bởi vì cháy chắc chắn liên quan đến lửa."
+    },
+    {
+      "id": 84,
+      "start": 257.46,
+      "end": 260.21,
+      "hanzi": "你看到一个字里面有“火”，",
+      "pinyin": "nǐ kàn dào yí gè zì lǐ miàn yǒu “ huǒ ”，",
+      "vi": "Khi bạn nhìn thấy một chữ có chữ \"火\","
+    },
+    {
+      "id": 85,
+      "start": 260.21,
+      "end": 261.61,
+      "hanzi": "你就可以猜，",
+      "pinyin": "nǐ jiù kě yǐ cāi ，",
+      "vi": "bạn có thể đoán rằng"
+    },
+    {
+      "id": 86,
+      "start": 261.69,
+      "end": 264.85,
+      "hanzi": "它可能和热、和火有关。",
+      "pinyin": "tā kě néng hé rè 、 hé huǒ yǒu guān 。",
+      "vi": "nó có thể liên quan đến nhiệt hoặc lửa."
+    },
+    {
+      "id": 87,
+      "start": 265,
+      "end": 268.7,
+      "hanzi": "这就是汉字很有意思的地方。",
+      "pinyin": "zhè jiù shì hàn zì hěn yǒu yì sī de dì fāng 。",
+      "vi": "Đó là điều làm cho chữ Hán trở nên thú vị."
+    },
+    {
+      "id": 88,
+      "start": 268.89,
+      "end": 272.51,
+      "hanzi": "它常常会告诉你一点点线索。",
+      "pinyin": "tā cháng cháng huì gào sù nǐ yì diǎn diǎn xiàn suǒ 。",
+      "vi": "Chúng thường cho bạn những manh mối nhỏ."
+    },
+    {
+      "id": 89,
+      "start": 272.62,
+      "end": 276.38,
+      "hanzi": "再说一个很常见的部分，“水”。",
+      "pinyin": "zài shuō yí gè hěn cháng jiàn de bù fen ，“ shuǐ ”。",
+      "vi": "Hãy nói về một phần rất phổ biến khác, \"水\" (shuǐ, nước)."
+    },
+    {
+      "id": 90,
+      "start": 277.07,
+      "end": 279.11,
+      "hanzi": "“水”像水在流。",
+      "pinyin": "“ shuǐ ” xiàng shuǐ zài liú 。",
+      "vi": "Chữ \"水\" trông giống như nước đang chảy."
+    },
+    {
+      "id": 91,
+      "start": 279.19,
+      "end": 281.13,
+      "hanzi": "以前写得更像，",
+      "pinyin": "yǐ qián xiě dé gèng xiàng ，",
+      "vi": "Trước đây cách viết thường như vậy,"
+    },
+    {
+      "id": 92,
+      "start": 281.32,
+      "end": 285.86,
+      "hanzi": "现在变简单了，但感觉还在。",
+      "pinyin": "xiàn zài biàn jiǎn dān le ， dàn gǎn jué hái zài 。",
+      "vi": "nhưng bây giờ đơn giản hơn, dù ý nghĩa vẫn còn đó."
+    },
+    {
+      "id": 93,
+      "start": 286.33,
+      "end": 289.92,
+      "hanzi": "和水有关的字，常常都有这个部分。",
+      "pinyin": "hé shuǐ yǒu guān de zì ， cháng cháng dōu yǒu zhè ge bù fen 。",
+      "vi": "Các chữ Hán liên quan đến nước thường có phần này."
+    },
+    {
+      "id": 94,
+      "start": 290,
+      "end": 293.68,
+      "hanzi": "比如“河”“海”“洗”“酒”。",
+      "pinyin": "bǐ rú “ hé ”“ hǎi ”“ xǐ ”“ jiǔ ”。",
+      "vi": "Ví dụ, các chữ như \"河\" (sông), \"海\" (biển), \"洗\" (rửa), và \"酒\" (rượu)."
+    },
+    {
+      "id": 95,
+      "start": 293.77,
+      "end": 297.72,
+      "hanzi": "这些字一看，就知道和水有关系。",
+      "pinyin": "zhè xiē zì yí kàn ， jiù zhī dào hé shuǐ yǒu guān xì 。",
+      "vi": "Những chữ này ngay lập tức gợi lên mối liên hệ với nước."
+    },
+    {
+      "id": 96,
+      "start": 297.87,
+      "end": 300.26,
+      "hanzi": "你洗手，用水。",
+      "pinyin": "nǐ xǐ shǒu ， yòng shuǐ 。",
+      "vi": "Bạn rửa tay bằng nước."
+    },
+    {
+      "id": 97,
+      "start": 300.35,
+      "end": 301.49,
+      "hanzi": "你喝水。",
+      "pinyin": "nǐ hē shuǐ 。",
+      "vi": "Bạn uống nước."
+    },
+    {
+      "id": 98,
+      "start": 301.49,
+      "end": 303.62,
+      "hanzi": "你看到河流。",
+      "pinyin": "nǐ kàn dào hé liú 。",
+      "vi": "Bạn nhìn thấy sông."
+    },
+    {
+      "id": 99,
+      "start": 304.28,
+      "end": 307.99,
+      "hanzi": "生活里的经验，慢慢变成了字。",
+      "pinyin": "shēng huó lǐ de jīng yàn ， màn màn biàn chéng le zì 。",
+      "vi": "Kinh nghiệm sống dần dần được chuyển hóa thành chữ Hán."
+    },
+    {
+      "id": 100,
+      "start": 308.09,
+      "end": 310.09,
+      "hanzi": "我们再看“女”。",
+      "pinyin": "wǒ men zài kàn “ nǚ ”。",
+      "vi": "Hãy xem chữ \"女\" (phụ nữ)."
+    },
+    {
+      "id": 101,
+      "start": 310.32,
+      "end": 314.75,
+      "hanzi": "“女”像一个人坐着，双手放在前面。",
+      "pinyin": "“ nǚ ” xiàng yí gè rén zuò zhe ， shuāng shǒu fàng zài qián miàn 。",
+      "vi": "\"女\" giống như một người đang ngồi với hai tay đặt trước mặt."
+    },
+    {
+      "id": 102,
+      "start": 315,
+      "end": 318.56,
+      "hanzi": "很多和家庭、和关系有关的字，",
+      "pinyin": "hěn duō hé jiā tíng 、 hé guān xì yǒu guān de zì ，",
+      "vi": "Nhiều chữ Hán liên quan đến gia đình và các mối quan hệ"
+    },
+    {
+      "id": 103,
+      "start": 318.56,
+      "end": 319.81,
+      "hanzi": "都有“女”。",
+      "pinyin": "dōu yǒu “ nǚ ”。",
+      "vi": "đều chứa \"女\"."
+    },
+    {
+      "id": 104,
+      "start": 320,
+      "end": 322.17,
+      "hanzi": "比如“好”。",
+      "pinyin": "bǐ rú “ hǎo ”。",
+      "vi": "Ví dụ, \"好\" (tốt)."
+    },
+    {
+      "id": 105,
+      "start": 322.77,
+      "end": 326.16,
+      "hanzi": "“好”是一个女人，一个孩子。",
+      "pinyin": "“ hǎo ” shì yí gè nǚ rén ， yí gè hái zi 。",
+      "vi": "\"好\" miêu tả một người phụ nữ và một đứa trẻ."
+    },
+    {
+      "id": 106,
+      "start": 326.16,
+      "end": 329.28,
+      "hanzi": "以前的人觉得，家里有女人、",
+      "pinyin": "yǐ qián de rén jué de ， jiā lǐ yǒu nǚ rén 、",
+      "vi": "Người xưa tin rằng có phụ nữ và"
+    },
+    {
+      "id": 107,
+      "start": 329.28,
+      "end": 331.6,
+      "hanzi": "有孩子，就是好。",
+      "pinyin": "yǒu hái zi ， jiù shì hǎo 。",
+      "vi": "trẻ em trong nhà là điềm lành."
+    },
+    {
+      "id": 108,
+      "start": 332.16,
+      "end": 335.68,
+      "hanzi": "现在我们可以用自己的方式理解，",
+      "pinyin": "xiàn zài wǒ men kě yǐ yòng zì jǐ de fāng shì lǐ jiě ，",
+      "vi": "Bây giờ chúng ta có thể hiểu theo cách riêng của mình,"
+    },
+    {
+      "id": 109,
+      "start": 336.03,
+      "end": 339.8,
+      "hanzi": "但你可以看见，字背后有生活。",
+      "pinyin": "dàn nǐ kě yǐ kàn jiàn ， zì bèi hòu yǒu shēng huó 。",
+      "vi": "nhưng bạn có thể thấy cuộc sống đằng sau chữ Hán đó."
+    },
+    {
+      "id": 110,
+      "start": 339.8,
+      "end": 341.11,
+      "hanzi": "再看“男”。",
+      "pinyin": "zài kàn “ nán ”。",
+      "vi": "Tiếp theo, hãy xem chữ \"男\" (đàn ông)."
+    },
+    {
+      "id": 111,
+      "start": 341.19,
+      "end": 345,
+      "hanzi": "“男”上面是“田”，下面是“力”。",
+      "pinyin": "“ nán ” shàng miàn shì “ tián ”， xià miàn shì “ lì ”。",
+      "vi": "Chữ \"男\" (nam) được cấu tạo từ chữ \"田\" (cánh đồng) ở trên và chữ \"力\" (sức mạnh) ở dưới."
+    },
+    {
+      "id": 112,
+      "start": 345.67,
+      "end": 350.33,
+      "hanzi": "以前的人觉得，男人在田里用力工作，",
+      "pinyin": "yǐ qián de rén jué de ， nán rén zài tián lǐ yòng lì gōng zuò ，",
+      "vi": "Người xưa tin rằng đàn ông làm việc vất vả trên đồng ruộng,"
+    },
+    {
+      "id": 113,
+      "start": 350.41,
+      "end": 352.26,
+      "hanzi": "所以是“男”。",
+      "pinyin": "suǒ yǐ shì “ nán ”。",
+      "vi": "vì vậy mới có chữ \"男\"."
+    },
+    {
+      "id": 114,
+      "start": 352.66,
+      "end": 355.45,
+      "hanzi": "你不用同意以前的想法，",
+      "pinyin": "nǐ bú yòng tóng yì yǐ qián de xiǎng fǎ ，",
+      "vi": "Bạn không nhất thiết phải đồng ý với quan niệm cũ,"
+    },
+    {
+      "id": 115,
+      "start": 355.66,
+      "end": 359.82,
+      "hanzi": "但你可以理解这个字是怎么来的。",
+      "pinyin": "dàn nǐ kě yǐ lǐ jiě zhè ge zì shì zěn me lái de 。",
+      "vi": "nhưng bạn có thể hiểu nguồn gốc của chữ này."
+    },
+    {
+      "id": 116,
+      "start": 360,
+      "end": 361.11,
+      "hanzi": "还有“家”。",
+      "pinyin": "hái yǒu “ jiā ”。",
+      "vi": "Tiếp theo là chữ \"家\" (nhà)."
+    },
+    {
+      "id": 117,
+      "start": 361.11,
+      "end": 365.56,
+      "hanzi": "“家”上面是屋顶，下面是“猪”。",
+      "pinyin": "“ jiā ” shàng miàn shì wū dǐng ， xià miàn shì “ zhū ”。",
+      "vi": "Chữ \"家\" được cấu tạo từ mái nhà ở trên và chữ \"猪\" (lợn) ở dưới."
+    },
+    {
+      "id": 118,
+      "start": 365.98,
+      "end": 368.87,
+      "hanzi": "以前的人，家里有房子，",
+      "pinyin": "yǐ qián de rén ， jiā lǐ yǒu fáng zi ，",
+      "vi": "Trong quá khứ, một ngôi nhà bao gồm"
+    },
+    {
+      "id": 119,
+      "start": 368.95,
+      "end": 371.68,
+      "hanzi": "有养的动物，就是家。",
+      "pinyin": "yǒu yǎng de dòng wù ， jiù shì jiā 。",
+      "vi": "nhà ở và vật nuôi."
+    },
+    {
+      "id": 120,
+      "start": 372.2,
+      "end": 374.28,
+      "hanzi": "现在不一定这样，",
+      "pinyin": "xiàn zài bù yí dìng zhè yàng ，",
+      "vi": "Điều này không nhất thiết đúng trong hiện tại,"
+    },
+    {
+      "id": 121,
+      "start": 374.39,
+      "end": 376.39,
+      "hanzi": "但这个字告诉你，",
+      "pinyin": "dàn zhè ge zì gào sù nǐ ，",
+      "vi": "nhưng chữ này cho bạn biết rằng"
+    },
+    {
+      "id": 122,
+      "start": 376.39,
+      "end": 380.51,
+      "hanzi": "家是一个有生活、有温度的地方。",
+      "pinyin": "jiā shì yí gè yǒu shēng huó 、 yǒu wēn dù de dì fāng 。",
+      "vi": "nhà là nơi có sự sống và ấm áp."
+    },
+    {
+      "id": 123,
+      "start": 380.61,
+      "end": 385.21,
+      "hanzi": "你会发现，很多汉字都在说故事。",
+      "pinyin": "nǐ huì fā xiàn ， hěn duō hàn zì dōu zài shuō gù shì 。",
+      "vi": "Bạn sẽ thấy rằng nhiều chữ Hán kể những câu chuyện."
+    },
+    {
+      "id": 124,
+      "start": 385.65,
+      "end": 389.31,
+      "hanzi": "它们在说以前的人怎么看世界，",
+      "pinyin": "tā men zài shuō yǐ qián de rén zěn me kàn shì jiè ，",
+      "vi": "Chúng kể về cách người xưa nhìn nhận thế giới"
+    },
+    {
+      "id": 125,
+      "start": 389.41,
+      "end": 391.04,
+      "hanzi": "怎么看生活。",
+      "pinyin": "zěn me kàn shēng huó 。",
+      "vi": "và cuộc sống."
+    },
+    {
+      "id": 126,
+      "start": 391.56,
+      "end": 394.02,
+      "hanzi": "我们再看“休息”的“休”。",
+      "pinyin": "wǒ men zài kàn “ xiū xi ” de “ xiū ”。",
+      "vi": "Hãy xem chữ \"休\" (nghỉ ngơi). Chữ"
+    },
+    {
+      "id": 127,
+      "start": 394.39,
+      "end": 397.93,
+      "hanzi": "“休”是一个人，靠在一棵树旁边。",
+      "pinyin": "“ xiū ” shì yí gè rén ， kào zài yì kē shù páng biān 。",
+      "vi": "\"休\" miêu tả một người đang tựa vào một cái cây."
+    },
+    {
+      "id": 128,
+      "start": 398.03,
+      "end": 399.45,
+      "hanzi": "你累的时候，",
+      "pinyin": "nǐ lèi de shí hòu ，",
+      "vi": "Khi mệt mỏi,"
+    },
+    {
+      "id": 129,
+      "start": 399.45,
+      "end": 402.9,
+      "hanzi": "是不是也想靠着什么休息一下？",
+      "pinyin": "shì bu shì yě xiǎng kào zhe shén me xiū xi yí xià ？",
+      "vi": "bạn có muốn tựa vào thứ gì đó để nghỉ ngơi không?"
+    },
+    {
+      "id": 130,
+      "start": 403.07,
+      "end": 405.2,
+      "hanzi": "所以这个字一看，",
+      "pinyin": "suǒ yǐ zhè ge zì yí kàn ，",
+      "vi": "Vì vậy, chữ này ngay lập tức"
+    },
+    {
+      "id": 131,
+      "start": 405.2,
+      "end": 407.72,
+      "hanzi": "就有一种“放松”的感觉。",
+      "pinyin": "jiù yǒu yì zhǒng “ fàng sōng ” de gǎn jué 。",
+      "vi": "gợi lên cảm giác thư giãn."
+    },
+    {
+      "id": 132,
+      "start": 407.82,
+      "end": 410.65,
+      "hanzi": "“看”这个字也很有意思。",
+      "pinyin": "“ kàn ” zhè ge zì yě hěn yǒu yì sī 。",
+      "vi": "Chữ Hán \"看\" (kàn, nhìn) cũng rất thú vị."
+    },
+    {
+      "id": 133,
+      "start": 411.07,
+      "end": 414.63,
+      "hanzi": "“看”上面像手，下面像眼睛。",
+      "pinyin": "“ kàn ” shàng miàn xiàng shǒu ， xià miàn xiàng yǎn jīng 。",
+      "vi": "Phần trên giống như bàn tay, phần dưới giống như con mắt."
+    },
+    {
+      "id": 134,
+      "start": 414.92,
+      "end": 418.5,
+      "hanzi": "以前没有手机，没有远的东西，",
+      "pinyin": "yǐ qián méi yǒu shǒu jī ， méi yǒu yuǎn de dōng xī ，",
+      "vi": "Trước khi có điện thoại di động và các vật thể ở xa,"
+    },
+    {
+      "id": 135,
+      "start": 418.6,
+      "end": 420.37,
+      "hanzi": "人要看远一点，",
+      "pinyin": "rén yào kàn yuǎn yì diǎn ，",
+      "vi": "người ta"
+    },
+    {
+      "id": 136,
+      "start": 420.48,
+      "end": 423.83,
+      "hanzi": "就用手放在眼睛上挡太阳。",
+      "pinyin": "jiù yòng shǒu fàng zài yǎn jīng shàng dǎng tài yáng 。",
+      "vi": "thường dùng tay che mắt khỏi ánh nắng mặt trời để nhìn xa hơn."
+    },
+    {
+      "id": 137,
+      "start": 423.93,
+      "end": 426.89,
+      "hanzi": "这个动作，就变成了“看”。",
+      "pinyin": "zhè ge dòng zuò ， jiù biàn chéng le “ kàn ”。",
+      "vi": "Hành động này trở thành chữ \"看\"."
+    },
+    {
+      "id": 138,
+      "start": 427.01,
+      "end": 431.74,
+      "hanzi": "你发现了吗？很多字，其实是动作。",
+      "pinyin": "nǐ fā xiàn le ma ？ hěn duō zì ， qí shí shì dòng zuò 。",
+      "vi": "Bạn có để ý không? Nhiều chữ Hán thực chất là hành động."
+    },
+    {
+      "id": 139,
+      "start": 431.82,
+      "end": 435.71,
+      "hanzi": "“走”。“走”像一个人在动。",
+      "pinyin": "“ zǒu ”。“ zǒu ” xiàng yí gè rén zài dòng 。",
+      "vi": "\"走\" (zǒu, đi bộ). \"走\" giống như một người đang di chuyển."
+    },
+    {
+      "id": 140,
+      "start": 435.96,
+      "end": 438.79,
+      "hanzi": "和走有关的字，",
+      "pinyin": "hé zǒu yǒu guān de zì ，",
+      "vi": "Các chữ Hán liên quan đến việc đi bộ,"
+    },
+    {
+      "id": 141,
+      "start": 438.94,
+      "end": 442.06,
+      "hanzi": "比如“跑”“路”“进”，",
+      "pinyin": "bǐ rú “ pǎo ”“ lù ”“ jìn ”，",
+      "vi": "như \"跑\" (pǎo, chạy), \"路\" (lù, đường), và \"进\" (jìn, vào),"
+    },
+    {
+      "id": 142,
+      "start": 442.52,
+      "end": 443.75,
+      "hanzi": "你慢慢看，",
+      "pinyin": "nǐ màn màn kàn ，",
+      "vi": "nếu bạn quan sát kỹ,"
+    },
+    {
+      "id": 143,
+      "start": 443.75,
+      "end": 447.29,
+      "hanzi": "会发现都有一点“动”的感觉。",
+      "pinyin": "huì fā xiàn dōu yǒu yì diǎn “ dòng ” de gǎn jué 。",
+      "vi": "bạn sẽ thấy tất cả đều mang ý nghĩa chuyển động."
+    },
+    {
+      "id": 144,
+      "start": 447.29,
+      "end": 450.64,
+      "hanzi": "再说一个很常用的字，“想”。",
+      "pinyin": "zài shuō yí gè hěn cháng yòng de zì ，“ xiǎng ”。",
+      "vi": "Hãy nói về một chữ Hán thông dụng khác, \"想\" (xiǎng, nghĩ)."
+    },
+    {
+      "id": 145,
+      "start": 450.74,
+      "end": 454.69,
+      "hanzi": "“想”上面是“相”，下面是“心”。",
+      "pinyin": "“ xiǎng ” shàng miàn shì “ xiāng ”， xià miàn shì “ xīn ”。",
+      "vi": "Phần trên là \"相\" (xiāng, vẻ bề ngoài), và phần dưới là \"心\" (xīn, trái tim)."
+    },
+    {
+      "id": 146,
+      "start": 454.88,
+      "end": 458.23,
+      "hanzi": "想事情，是不是和心有关？",
+      "pinyin": "xiǎng shì qíng ， shì bu shì hé xīn yǒu guān ？",
+      "vi": "Suy nghĩ về mọi thứ, chẳng phải nó liên quan đến trái tim sao?"
+    },
+    {
+      "id": 147,
+      "start": 458.56,
+      "end": 462.81,
+      "hanzi": "你心里在动，你在想人、想事。",
+      "pinyin": "nǐ xīn lǐ zài dòng ， nǐ zài xiǎng rén 、 xiǎng shì 。",
+      "vi": "Trái tim bạn đang chuyển động; bạn đang nghĩ về người và sự vật."
+    },
+    {
+      "id": 148,
+      "start": 462.81,
+      "end": 466.33,
+      "hanzi": "所以“想”不是一个乱写的字。",
+      "pinyin": "suǒ yǐ “ xiǎng ” bú shì yí gè luàn xiě de zì 。",
+      "vi": "Vậy nên, chữ \"想\" không phải là một chữ Hán được viết ngẫu nhiên."
+    },
+    {
+      "id": 149,
+      "start": 466.53,
+      "end": 467.99,
+      "hanzi": "“忙”也是。",
+      "pinyin": "“ máng ” yě shì 。",
+      "vi": "\"忙\" (máng, bận rộn) cũng vậy."
+    },
+    {
+      "id": 150,
+      "start": 468.08,
+      "end": 470.85,
+      "hanzi": "“忙”是“心”加上“亡”。",
+      "pinyin": "“ máng ” shì “ xīn ” jiā shàng “ wáng ”。",
+      "vi": "\"忙\" là sự kết hợp của bộ thủ \"心\" (xīn, tim) và bộ thủ \"亡\" (wáng, chết)."
+    },
+    {
+      "id": 151,
+      "start": 471.55,
+      "end": 473.45,
+      "hanzi": "心没有时间了，",
+      "pinyin": "xīn méi yǒu shí jiān le ，",
+      "vi": "Trái tim không có thời gian;"
+    },
+    {
+      "id": 152,
+      "start": 473.53,
+      "end": 476.57,
+      "hanzi": "心快要“没了”，就是忙。",
+      "pinyin": "xīn kuài yào “ méi le ”， jiù shì máng 。",
+      "vi": "trái tim sắp \"biến mất\", đó chính là sự bận rộn."
+    },
+    {
+      "id": 153,
+      "start": 476.78,
+      "end": 480.3,
+      "hanzi": "是不是很像你忙的时候的感觉？",
+      "pinyin": "shì bu shì hěn xiàng nǐ máng de shí hòu de gǎn jué ？",
+      "vi": "Nghe có giống cảm giác của bạn khi bận rộn không?"
+    },
+    {
+      "id": 154,
+      "start": 480.52,
+      "end": 481.44,
+      "hanzi": "“忘”呢？",
+      "pinyin": "“ wàng ” ne ？",
+      "vi": "Còn chữ \"忘\" (wàng, quên) thì sao?"
+    },
+    {
+      "id": 155,
+      "start": 481.44,
+      "end": 486.21,
+      "hanzi": "“忘”也是“心”加上一个部分。",
+      "pinyin": "“ wàng ” yě shì “ xīn ” jiā shàng yí gè bù fen 。",
+      "vi": "Chữ \"quên\" (忘) cũng được cấu tạo từ bộ thủ \"tim\" (心) cộng với một thành phần khác."
+    },
+    {
+      "id": 156,
+      "start": 486.5,
+      "end": 489.43,
+      "hanzi": "心不在了，就忘了。",
+      "pinyin": "xīn bú zài le ， jiù wàng le 。",
+      "vi": "Khi trái tim không còn, bạn sẽ quên."
+    },
+    {
+      "id": 157,
+      "start": 489.56,
+      "end": 492.93,
+      "hanzi": "你会发现，很多和感觉、",
+      "pinyin": "nǐ huì fā xiàn ， hěn duō hé gǎn jué 、",
+      "vi": "Bạn sẽ thấy nhiều"
+    },
+    {
+      "id": 158,
+      "start": 492.93,
+      "end": 497.05,
+      "hanzi": "和情绪有关的字，都有“心”。",
+      "pinyin": "hé qíng xù yǒu guān de zì ， dōu yǒu “ xīn ”。",
+      "vi": "chữ Hán liên quan đến cảm xúc đều chứa bộ thủ \"tim\"."
+    },
+    {
+      "id": 159,
+      "start": 497.13,
+      "end": 501.25,
+      "hanzi": "比如“怕”“快”“慢”“情”。",
+      "pinyin": "bǐ rú “ pà ”“ kuài ”“ màn ”“ qíng ”。",
+      "vi": "Ví dụ: \"sợ hãi\" (怕), \"nhanh\" (快), \"chậm\" (慢), và \"cảm xúc\" (情)."
+    },
+    {
+      "id": 160,
+      "start": 501.25,
+      "end": 502.67,
+      "hanzi": "心在里面。",
+      "pinyin": "xīn zài lǐ miàn 。",
+      "vi": "Trái tim nằm bên trong."
+    },
+    {
+      "id": 161,
+      "start": 502.75,
+      "end": 505.55,
+      "hanzi": "这对学习中文很重要。",
+      "pinyin": "zhè duì xué xí zhōng wén hěn zhòng yào 。",
+      "vi": "Điều này rất quan trọng trong việc học tiếng Trung"
+    },
+    {
+      "id": 162,
+      "start": 506.02,
+      "end": 509.92,
+      "hanzi": "因为你不用一个字一个字死记。",
+      "pinyin": "yīn wèi nǐ bú yòng yí gè zì yí gè zì sǐ jì 。",
+      "vi": "vì bạn không cần phải ghi nhớ từng chữ Hán riêng lẻ."
+    },
+    {
+      "id": 163,
+      "start": 510.1,
+      "end": 512.21,
+      "hanzi": "你可以看它的“样子”，",
+      "pinyin": "nǐ kě yǐ kàn tā de “ yàng zi ”，",
+      "vi": "Bạn có thể nhìn vào \"hình thức\" của nó và"
+    },
+    {
+      "id": 164,
+      "start": 512.29,
+      "end": 514.25,
+      "hanzi": "看它里面有什么。",
+      "pinyin": "kàn tā lǐ miàn yǒu shén me 。",
+      "vi": "xem bên trong có gì."
+    },
+    {
+      "id": 165,
+      "start": 514.62,
+      "end": 516.56,
+      "hanzi": "当你看到一个新字，",
+      "pinyin": "dāng nǐ kàn dào yí gè xīn zì ，",
+      "vi": "Khi bạn thấy một chữ Hán mới,"
+    },
+    {
+      "id": 166,
+      "start": 516.56,
+      "end": 519.27,
+      "hanzi": "你可以问自己一个问题：",
+      "pinyin": "nǐ kě yǐ wèn zì jǐ yí gè wèn tí ：",
+      "vi": "bạn c�� thể tự hỏi:"
+    },
+    {
+      "id": 167,
+      "start": 519.37,
+      "end": 523.24,
+      "hanzi": "这个字里面，有没有我认识的部分？",
+      "pinyin": "zhè ge zì lǐ miàn ， yǒu méi yǒu wǒ rèn shi de bù fen ？",
+      "vi": "Có phần nào của chữ Hán này mà tôi nhận ra không?"
+    },
+    {
+      "id": 168,
+      "start": 523.56,
+      "end": 525.95,
+      "hanzi": "它可能和什么有关？",
+      "pinyin": "tā kě néng hé shén me yǒu guān ？",
+      "vi": "Nó có thể liên quan đến cái gì?"
+    },
+    {
+      "id": 169,
+      "start": 525.95,
+      "end": 527.83,
+      "hanzi": "比如你看到“喝”。",
+      "pinyin": "bǐ rú nǐ kàn dào “ hē ”。",
+      "vi": "Ví dụ, khi bạn thấy chữ \"uống\" (喝),"
+    },
+    {
+      "id": 170,
+      "start": 527.83,
+      "end": 529.39,
+      "hanzi": "你会看到“口”。",
+      "pinyin": "nǐ huì kàn dào “ kǒu ”。",
+      "vi": "bạn sẽ thấy bộ thủ của \"miệng\" (口)."
+    },
+    {
+      "id": 171,
+      "start": 529.62,
+      "end": 532.89,
+      "hanzi": "你就知道，这个字和嘴有关，",
+      "pinyin": "nǐ jiù zhī dào ， zhè ge zì hé zuǐ yǒu guān ，",
+      "vi": "Bạn biết rằng chữ Hán này liên quan đến miệng, và"
+    },
+    {
+      "id": 172,
+      "start": 533.01,
+      "end": 536.99,
+      "hanzi": "很可能是吃、喝、说话。",
+      "pinyin": "hěn kě néng shì chī 、 hē 、 shuō huà 。",
+      "vi": "có thể liên quan đến ăn, uống hoặc nói."
+    },
+    {
+      "id": 173,
+      "start": 536.99,
+      "end": 541.96,
+      "hanzi": "你再看另外一边，慢慢你就能记住。",
+      "pinyin": "nǐ zài kàn lìng wài yì biān ， màn màn nǐ jiù néng jì zhù 。",
+      "vi": "Nhìn nó từ một góc độ khác, và bạn sẽ dần dần nhớ được nó."
+    },
+    {
+      "id": 174,
+      "start": 542.08,
+      "end": 545.64,
+      "hanzi": "这就是为什么很多学习中文的人，",
+      "pinyin": "zhè jiù shì wèi shén me hěn duō xué xí zhōng wén de rén ，",
+      "vi": "Đó là lý do tại sao nhiều người học tiếng Trung"
+    },
+    {
+      "id": 175,
+      "start": 545.75,
+      "end": 549.83,
+      "hanzi": "学到后面，会觉得越来越有意思。",
+      "pinyin": "xué dào hòu miàn ， huì jué de yuè lái yuè yǒu yì sī 。",
+      "vi": "thấy nó ngày càng thú vị hơn khi họ tiến bộ."
+    },
+    {
+      "id": 176,
+      "start": 550,
+      "end": 553.77,
+      "hanzi": "因为你不是在背，你是在“看懂”。",
+      "pinyin": "yīn wèi nǐ bú shì zài bèi ， nǐ shì zài “ kàn dǒng ”。",
+      "vi": "Bởi vì bạn không chỉ ghi nhớ; bạn đang \"hiểu\"."
+    },
+    {
+      "id": 177,
+      "start": 554.04,
+      "end": 558.22,
+      "hanzi": "当然，也不是每一个字都这么简单。",
+      "pinyin": "dāng rán ， yě bú shì měi yí gè zì dōu zhè me jiǎn dān 。",
+      "vi": "Tất nhiên, không phải chữ Hán nào cũng đơn giản như vậy."
+    },
+    {
+      "id": 178,
+      "start": 558.41,
+      "end": 560.97,
+      "hanzi": "有些字，变化很久，",
+      "pinyin": "yǒu xiē zì ， biàn huà hěn jiǔ ，",
+      "vi": "Một số chữ Hán đã thay đổi theo thời gian và"
+    },
+    {
+      "id": 179,
+      "start": 561.07,
+      "end": 563.57,
+      "hanzi": "看起来不那么明显。",
+      "pinyin": "kàn qǐ lái bú nà me míng xiǎn 。",
+      "vi": "không còn dễ nhận biết nữa."
+    },
+    {
+      "id": 180,
+      "start": 564.05,
+      "end": 569.02,
+      "hanzi": "但就算这样，很多字还是有一点线索。",
+      "pinyin": "dàn jiù suàn zhè yàng ， hěn duō zì hái shì yǒu yì diǎn xiàn suǒ 。",
+      "vi": "Nhưng ngay cả như vậy, nhiều chữ Hán vẫn có những manh mối."
+    },
+    {
+      "id": 181,
+      "start": 569.13,
+      "end": 571.02,
+      "hanzi": "学习中文的时候，",
+      "pinyin": "xué xí zhōng wén de shí hòu ，",
+      "vi": "Khi học tiếng Trung,"
+    },
+    {
+      "id": 182,
+      "start": 571.02,
+      "end": 574.33,
+      "hanzi": "你可以把汉字当成一个朋友。",
+      "pinyin": "nǐ kě yǐ bǎ hàn zì dàng chéng yí gè péng yǒu 。",
+      "vi": "bạn có thể coi chữ Hán như một người bạn."
+    },
+    {
+      "id": 183,
+      "start": 574.56,
+      "end": 575.9,
+      "hanzi": "不要怕它。",
+      "pinyin": "bú yào pà tā 。",
+      "vi": "Đừng sợ chúng."
+    },
+    {
+      "id": 184,
+      "start": 576.19,
+      "end": 578.5,
+      "hanzi": "你可以慢慢认识它。",
+      "pinyin": "nǐ kě yǐ màn màn rèn shi tā 。",
+      "vi": "Bạn có thể dần dần làm quen với chúng."
+    },
+    {
+      "id": 185,
+      "start": 578.61,
+      "end": 581.69,
+      "hanzi": "你不需要一下子懂全部。",
+      "pinyin": "nǐ bù xū yào yí xià zǐ dǒng quán bù 。",
+      "vi": "Bạn không cần phải hiểu tất cả cùng một lúc."
+    },
+    {
+      "id": 186,
+      "start": 581.87,
+      "end": 585.12,
+      "hanzi": "你今天懂一个，明天懂一个，",
+      "pinyin": "nǐ jīn tiān dǒng yí gè ， míng tiān dǒng yí gè ，",
+      "vi": "Nếu hôm nay bạn hiểu được một chữ Hán và ngày mai lại hiểu được chữ khác,"
+    },
+    {
+      "id": 187,
+      "start": 585.12,
+      "end": 587.12,
+      "hanzi": "就已经很好了。",
+      "pinyin": "jiù yǐ jīng hěn hǎo le 。",
+      "vi": "thế là đã rất tốt rồi."
+    },
+    {
+      "id": 188,
+      "start": 587.12,
+      "end": 591.99,
+      "hanzi": "比如你今天认识“木”“林”“森”。",
+      "pinyin": "bǐ rú nǐ jīn tiān rèn shi “ mù ”“ lín ”“ sēn ”。",
+      "vi": "Ví dụ, nếu hôm nay bạn học được chữ \"mộc\" (木), \"rừng\" (林) và \"rừng rậm\" (森),"
+    },
+    {
+      "id": 189,
+      "start": 592.36,
+      "end": 594.86,
+      "hanzi": "你走在路上，看到树，",
+      "pinyin": "nǐ zǒu zài lù shang ， kàn dào shù ，",
+      "vi": "khi đi trên đường và nhìn thấy cây cối,"
+    },
+    {
+      "id": 190,
+      "start": 594.86,
+      "end": 597.01,
+      "hanzi": "你就会想到这些字。",
+      "pinyin": "nǐ jiù huì xiǎng dào zhè xiē zì 。",
+      "vi": "bạn sẽ nghĩ đến những chữ Hán này."
+    },
+    {
+      "id": 191,
+      "start": 597.13,
+      "end": 599.51,
+      "hanzi": "语言就进了生活。",
+      "pinyin": "yǔ yán jiù jìn le shēng huó 。",
+      "vi": "Ngôn ngữ trở thành một phần của cuộc sống bạn."
+    },
+    {
+      "id": 192,
+      "start": 599.63,
+      "end": 602.86,
+      "hanzi": "你在做饭的时候，看到“火”。",
+      "pinyin": "nǐ zài zuò fàn de shí hòu ， kàn dào “ huǒ ”。",
+      "vi": "Khi nấu ăn, bạn thấy chữ \"lửa\" (火)."
+    },
+    {
+      "id": 193,
+      "start": 603,
+      "end": 606.07,
+      "hanzi": "你喝水的时候，想到“水”。",
+      "pinyin": "nǐ hē shuǐ de shí hòu ， xiǎng dào “ shuǐ ”。",
+      "vi": "Khi uống nước, bạn nghĩ đến chữ \"nước\" (水)."
+    },
+    {
+      "id": 194,
+      "start": 606.19,
+      "end": 609.17,
+      "hanzi": "你休息的时候，想到“休”。",
+      "pinyin": "nǐ xiū xi de shí hòu ， xiǎng dào “ xiū ”。",
+      "vi": "Khi nghỉ ngơi, bạn nghĩ đến chữ \"nghỉ ngơi\" (休)."
+    },
+    {
+      "id": 195,
+      "start": 609.29,
+      "end": 614.28,
+      "hanzi": "语言不是只在书里，它在你的生活里。",
+      "pinyin": "yǔ yán bú shì zhī zài shū lǐ ， tā zài nǐ de shēng huó lǐ 。",
+      "vi": "Ngôn ngữ không chỉ có trong sách vở; nó ở trong cuộc sống của bạn."
+    },
+    {
+      "id": 196,
+      "start": 614.28,
+      "end": 615.68,
+      "hanzi": "很多人问，",
+      "pinyin": "hěn duō rén wèn ，",
+      "vi": "Nhiều người hỏi"
+    },
+    {
+      "id": 197,
+      "start": 615.79,
+      "end": 619.64,
+      "hanzi": "为什么中国人可以记住这么多汉字。",
+      "pinyin": "wèi shén me zhōng guó rén kě yǐ jì zhù zhè me duō hàn zì 。",
+      "vi": "tại sao người Trung Quốc có thể nhớ được nhiều chữ Hán như vậy."
+    },
+    {
+      "id": 198,
+      "start": 619.82,
+      "end": 622.84,
+      "hanzi": "其实不是记，是习惯。",
+      "pinyin": "qí shí bú shì jì ， shì xí guàn 。",
+      "vi": "Thực ra, đó không phải là do ghi nhớ, mà là do thói quen."
+    },
+    {
+      "id": 199,
+      "start": 623.55,
+      "end": 627.88,
+      "hanzi": "是每天用，每天看，每天写一点点。",
+      "pinyin": "shì měi tiān yòng ， měi tiān kàn ， měi tiān xiě yì diǎn diǎn 。",
+      "vi": "Đó là việc sử dụng nó mỗi ngày, nhìn thấy nó mỗi ngày, viết một chút mỗi ngày."
+    },
+    {
+      "id": 200,
+      "start": 628,
+      "end": 632,
+      "hanzi": "你现在在听中文，在认识汉字，",
+      "pinyin": "nǐ xiàn zài zài tīng zhōng wén ， zài rèn shi hàn zì ，",
+      "vi": "Bạn đang nghe tiếng Trung và học chữ Hán ngay bây giờ,"
+    },
+    {
+      "id": 201,
+      "start": 632.1,
+      "end": 635.16,
+      "hanzi": "这本身就是一件很好的事。",
+      "pinyin": "zhè běn shēn jiù shì yí jiàn hěn hǎo de shì 。",
+      "vi": "và bản thân điều đó đã là một điều tốt."
+    },
+    {
+      "id": 202,
+      "start": 635.16,
+      "end": 637.43,
+      "hanzi": "你不需要和别人比。",
+      "pinyin": "nǐ bù xū yào hé bié rén bǐ 。",
+      "vi": "Bạn không cần phải so sánh mình với người khác."
+    },
+    {
+      "id": 203,
+      "start": 637.95,
+      "end": 641.51,
+      "hanzi": "有人学得快，有人学得慢。",
+      "pinyin": "yǒu rén xué dé kuài ， yǒu rén xué dé màn 。",
+      "vi": "Có người học nhanh, có người học chậm."
+    },
+    {
+      "id": 204,
+      "start": 641.99,
+      "end": 644.57,
+      "hanzi": "慢一点，也没关系。",
+      "pinyin": "màn yì diǎn ， yě méi guān xì 。",
+      "vi": "Chậm hơn một chút cũng không sao."
+    },
+    {
+      "id": 205,
+      "start": 644.7,
+      "end": 646.18,
+      "hanzi": "重要的是，",
+      "pinyin": "zhòng yào de shì ，",
+      "vi": "Điều quan trọng là"
+    },
+    {
+      "id": 206,
+      "start": 646.18,
+      "end": 649.53,
+      "hanzi": "你开始看见汉字的“意思”，",
+      "pinyin": "nǐ kāi shǐ kàn jiàn hàn zì de “ yì sī ”，",
+      "vi": "bạn bắt đầu nhận ra \"ý nghĩa\" của chữ Hán,"
+    },
+    {
+      "id": 207,
+      "start": 649.76,
+      "end": 651.9,
+      "hanzi": "不是只看到笔画。",
+      "pinyin": "bú shì zhī kàn dào bǐ huà 。",
+      "vi": "chứ không chỉ là các nét chữ."
+    },
+    {
+      "id": 208,
+      "start": 652.01,
+      "end": 655.86,
+      "hanzi": "当你觉得汉字有一点点意思的时候，",
+      "pinyin": "dāng nǐ jué de hàn zì yǒu yì diǎn diǎn yì sī de shí hòu ，",
+      "vi": "Khi bạn cảm thấy chữ Hán có dù chỉ một chút ý nghĩa,"
+    },
+    {
+      "id": 209,
+      "start": 656.06,
+      "end": 658.38,
+      "hanzi": "你的害怕会少一点，",
+      "pinyin": "nǐ de hài pà huì shǎo yì diǎn ，",
+      "vi": "nỗi sợ hãi của bạn sẽ giảm đi và"
+    },
+    {
+      "id": 210,
+      "start": 658.88,
+      "end": 661.44,
+      "hanzi": "你的好奇会多一点。",
+      "pinyin": "nǐ de hào qí huì duō yì diǎn 。",
+      "vi": "sự tò mò sẽ tăng lên."
+    },
+    {
+      "id": 211,
+      "start": 661.56,
+      "end": 666.64,
+      "hanzi": "你会开始觉得，哦，原来它不是敌人，",
+      "pinyin": "nǐ huì kāi shǐ jué de ， ò ， yuán lái tā bú shì dí rén ，",
+      "vi": "Bạn sẽ bắt đầu nghĩ, \"Ồ, nó không phải là kẻ thù;"
+    },
+    {
+      "id": 212,
+      "start": 666.76,
+      "end": 670.49,
+      "hanzi": "它只是另一种表达世界的方式。",
+      "pinyin": "tā zhǐ shì lìng yì zhǒng biǎo dá shì jiè de fāng shì 。",
+      "vi": "nó chỉ là một cách khác để diễn đạt thế giới.\""
+    },
+    {
+      "id": 213,
+      "start": 670.49,
+      "end": 674.29,
+      "hanzi": "你学中文，不只是学语言，",
+      "pinyin": "nǐ xué zhōng wén ， bù zhǐ shì xué yǔ yán ，",
+      "vi": "Học tiếng Trung không chỉ là học một ngôn ngữ;"
+    },
+    {
+      "id": 214,
+      "start": 674.59,
+      "end": 678.12,
+      "hanzi": "也是认识另一种看世界的方法。",
+      "pinyin": "yě shì rèn shi lìng yì zhǒng kàn shì jiè de fāng fǎ 。",
+      "vi": "nó còn là hiểu một cách nhìn thế giới khác."
+    },
+    {
+      "id": 215,
+      "start": 678.12,
+      "end": 680,
+      "hanzi": "好啦，今天",
+      "pinyin": "hǎo lā ， jīn tiān",
+      "vi": "Được rồi, hôm nay"
+    },
+    {
+      "id": 216,
+      "start": 680,
+      "end": 683.52,
+      "hanzi": "我们聊了很多关于汉字的小故事。",
+      "pinyin": "wǒ men liáo le hěn duō guān yú hàn zì de xiǎo gù shì 。",
+      "vi": "chúng ta đã nói rất nhiều về những câu chuyện nhỏ liên quan đến chữ Hán."
+    },
+    {
+      "id": 217,
+      "start": 683.95,
+      "end": 687.97,
+      "hanzi": "如果你现在觉得汉字没有那么可怕了，",
+      "pinyin": "rú guǒ nǐ xiàn zài jué de hàn zì méi yǒu nà me kě pà le ，",
+      "vi": "Nếu bây giờ bạn cảm thấy chữ Hán không còn đáng sợ nữa,"
+    },
+    {
+      "id": 218,
+      "start": 687.97,
+      "end": 692.28,
+      "hanzi": "哪怕只有一点点，那就已经很好了。",
+      "pinyin": "nǎ pà zhǐ yǒu yì diǎn diǎn ， nà jiù yǐ jīng hěn hǎo le 。",
+      "vi": "dù chỉ một chút thôi, thì đó đã là một điều tuyệt vời rồi."
+    },
+    {
+      "id": 219,
+      "start": 692.38,
+      "end": 696.58,
+      "hanzi": "你不需要一次学会，你只需要继续走。",
+      "pinyin": "nǐ bù xū yào yí cì xué huì ， nǐ zhī xū yào jì xù zǒu 。",
+      "vi": "Bạn không cần phải học tất cả cùng một lúc; bạn chỉ cần tiếp tục cố gắng."
+    },
+    {
+      "id": 220,
+      "start": 696.71,
+      "end": 698.81,
+      "hanzi": "谢谢你今天的时间，",
+      "pinyin": "xiè xiè nǐ jīn tiān de shí jiān ，",
+      "vi": "Cảm ơn các bạn đã dành thời gian hôm nay"
+    },
+    {
+      "id": 221,
+      "start": 698.81,
+      "end": 702.68,
+      "hanzi": "谢谢你愿意听这些简单的中文。",
+      "pinyin": "xiè xiè nǐ yuàn yì tīng zhè xiē jiǎn dān de zhōng wén 。",
+      "vi": "và cảm ơn các bạn đã lắng nghe những từ tiếng Trung đơn giản này."
+    },
+    {
+      "id": 222,
+      "start": 703.01,
+      "end": 706.51,
+      "hanzi": "希望下次你看到一个汉字的时候，",
+      "pinyin": "xī wàng xià cì nǐ kàn dào yí gè hàn zì de shí hòu ，",
+      "vi": "Tôi hy vọng lần sau khi các bạn nhìn thấy một chữ Hán,"
+    },
+    {
+      "id": 223,
+      "start": 706.51,
+      "end": 709.47,
+      "hanzi": "可以停一下，看一看它，",
+      "pinyin": "kě yǐ tíng yí xià ， kàn yi kàn tā ，",
+      "vi": "các bạn có thể dừng lại, nhìn vào nó"
+    },
+    {
+      "id": 224,
+      "start": 709.57,
+      "end": 711.57,
+      "hanzi": "和它打个招呼。",
+      "pinyin": "hé tā dǎ gè zhāo hū 。",
+      "vi": "và chào hỏi."
+    },
+    {
+      "id": 225,
+      "start": 712.28,
+      "end": 714.28,
+      "hanzi": "我们下次再见。",
+      "pinyin": "wǒ men xià cì zài jiàn 。",
+      "vi": "Hẹn gặp lại lần sau."
+    }
+  ],
+  "isSystem": true,
+  "isCommunity": false,
+  "contributorName": "Hệ thống",
+  "createdAt": "2026-09-10T01:27:16.178Z"
+}
