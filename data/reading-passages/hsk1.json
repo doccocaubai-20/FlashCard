@@ -1,0 +1,3398 @@
+[
+  {
+    "id": "reading_hsk1_t01_01",
+    "hskLevel": 1,
+    "topicId": 1,
+    "topicName": "Cơ thể & Sinh học",
+    "subTheme": "Cơ thể khỏe mạnh và rèn luyện mỗi ngày (身体健康)",
+    "title": {
+      "hanzi": "每天动一动",
+      "pinyin": "Měitiān dòng yī dòng",
+      "meaning": "Vận động mỗi ngày"
+    },
+    "contextDescription": "Câu chuyện về một gia đình ba người cùng nhau đi bộ buổi sáng, qua đó nhắc nhở mỗi người nên vận động đều đặn để cơ thể khỏe mạnh và gắn bó với người thân.",
+    "content": {
+      "hanzi": "早上七点，我家三口人都在厨房里。爸爸身上背着小书包，妈妈的手里拿着苹果。我的身体有点不好，常常早上起不来。爸爸笑着说：“今天天气好，我们去公园走走吧。”我揉揉眼睛，轻声说：“我还想睡觉。”妈妈摸摸我的头，说：“每天动一动，人也会更高兴。”\n\n到了公园，门口已经有很多人了。爸爸把手伸给妈妈，他们慢慢地走。我也背起书包，跟在他们身后。风吹在身上，凉凉的，很舒服。前面有一个小湖，湖边有几位朋友在打拳。他们的动作很好看，我心里想：我也要每天运动。\n\n妈妈走到我身边，笑着问：“你现在觉得怎么样？”我抬起手，擦擦脸上的汗，说：“身上有一点热，但是身体很轻。”爸爸点点头，说：“每天动一动，心情也会变好。”我们三个人坐在椅子上，喝了一点水。旁边的小狗也跑过来，用鼻子碰碰我的手。我轻轻摸摸它，笑了。\n\n回家的路上，太阳已经升高了。爸爸的手上拿着一个苹果，妈妈的身上背着我的包。我走在他们中间，觉得身体比早上舒服多了。我轻声说：“以后，我每天早上都要和你们一起运动。”爸爸和妈妈一起说：“好，我们是一家人，要一起走。”那天，我心里很高兴。原来，身体好不只是一个人的事，也是和家人一起走过的快乐。",
+      "pinyin": "Zǎoshang qī diǎn, wǒ jiā sān kǒu rén dōu zài chúfáng lǐ. Bàba shēnshang bēi zhe xiǎo shūbāo, māma de shǒulǐ ná zhe píngguǒ. Wǒ de shēntǐ yǒu diǎn bù hǎo, chángcháng zǎoshang qǐ bù lái. Bàba xiàozhe shuō: “Jīntiān tiānqì hǎo, wǒmen qù gōngyuán zǒuzou ba.” Wǒ róu róu yǎnjing, qīngshēng shuō: “Wǒ hái xiǎng shuìjiào.” Māma mō mō wǒ de tóu, shuō: “Měitiān dòng yi dòng, rén yě huì gèng gāoxìng.”\n\nDào le gōngyuán, ménkǒu yǐjīng yǒu hěn duō rén le. Bàba bǎ shǒu shēn gěi māma, tāmen mànmàn de zǒu. Wǒ yě bēi qǐ shūbāo, gēn zài tāmen shēnhòu. Fēng chuī zài shēnshang, liángliáng de, hěn shūfu. Qiánmiàn yǒu yī gè xiǎo hú, húbiān yǒu jǐ wèi péngyou zài dǎ quán. Tāmen de dòngzuò hěn hǎokàn, wǒ xīnli xiǎng: wǒ yě yào měitiān yùndòng.\n\nMāma zǒu dào wǒ shēnbiān, xiàozhe wèn: “Nǐ xiànzài juéde zěnmeyàng?” Wǒ tái qǐ shǒu, cā cā liǎnshang de hàn, shuō: “Shēnshang yǒu yī diǎn rè, dànshì shēntǐ hěn qīng.” Bàba diǎn diǎn tóu, shuō: “Měitiān dòng yi dòng, xīnqíng yě huì biàn hǎo.” Wǒmen sān gè rén zuò zài yǐzi shang, hē le yī diǎn shuǐ. Pángbiān de xiǎo gǒu yě pǎo guòlái, yòng bízi pèng pèng wǒ de shǒu. Wǒ qīngqīng mō mō tā, xiàole.\n\nHuíjiā de lùshang, tàiyáng yǐjīng shēng gāo le. Bàba de shǒushang ná zhe yī gè píngguǒ, māma de shēnshang bēi zhe wǒ de bāo. Wǒ zǒu zài tāmen zhōngjiān, juéde shēntǐ bǐ zǎoshang shūfu duō le. Wǒ qīngshēng shuō: “Yǐhòu, wǒ měitiān zǎoshang dōu yào hé nǐmen yìqǐ yùndòng.” Bàba hé māma yìqǐ shuō: “Hǎo, wǒmen shì yī jiā rén, yào yìqǐ zǒu.” Nà tiān, wǒ xīnli hěn gāoxìng. Yuánlái, shēntǐ hǎo bù zhǐ shì yī gè rén de shì, yě shì hé jiārén yìqǐ zǒu guò de kuàilè.",
+      "meaning": "Sáng bảy giờ, ba người trong gia đình tôi đều ở trong bếp. Trên người bố đeo chiếc cặp nhỏ, trong tay mẹ cầm quả táo. Cơ thể tôi hơi không được khỏe, sáng nào cũng khó dậy. Bố cười nói: “Hôm nay thời tiết đẹp, chúng ta đi công viên dạo một vòng nhé.” Tôi dụi mắt, khẽ nói: “Con còn muốn ngủ.” Mẹ vuốt đầu tôi, nói: “Mỗi ngày vận động một chút, người ta cũng sẽ vui hơn.”\n\nĐến công viên, trước cổng đã có rất nhiều người. Bố đưa tay cho mẹ, hai người từ từ đi. Tôi cũng đeo cặp lên, theo sau họ. Gió thổi trên người, mát mát, rất dễ chịu. Phía trước có một hồ nhỏ, bên hồ có mấy người bạn đang tập quyền. Động tác của họ rất đẹp, tôi thầm nghĩ: mình cũng phải vận động mỗi ngày.\n\nMẹ đi đến bên tôi, cười hỏi: “Con bây giờ thấy thế nào?” Tôi giơ tay, lau mồ hôi trên mặt, nói: “Trên người hơi nóng, nhưng cơ thể rất nhẹ.” Bố gật đầu, nói: “Mỗi ngày vận động một chút, tâm trạng cũng sẽ tốt hơn.” Ba người chúng tôi ngồi trên ghế, uống một chút nước. Chú chó nhỏ bên cạnh cũng chạy tới, dùng mũi chạm vào tay tôi. Tôi nhẹ nhàng vuốt nó, cười.\n\nTrên đường về nhà, mặt trời đã lên cao. Trên tay bố cầm một quả táo, trên người mẹ đeo cái cặp của tôi. Tôi đi giữa hai người, cảm thấy cơ thể dễ chịu hơn buổi sáng nhiều. Tôi khẽ nói: “Sau này, mỗi sáng con đều muốn cùng bố mẹ vận động.” Bố và mẹ cùng nói: “Được, chúng ta là một nhà, phải cùng nhau bước đi.” Hôm đó, trong lòng tôi rất vui. Thì ra, cơ thể khỏe không chỉ là chuyện của một người, mà còn là niềm vui cùng người nhà bước đi."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "口",
+        "pinyin": "kǒu",
+        "meaning": "gia đình (lượng từ); miệng; bộ phận",
+        "usageInSentence": "我家三口人都在厨房里。"
+      },
+      {
+        "hanzi": "人",
+        "pinyin": "rén",
+        "meaning": "người",
+        "usageInSentence": "我们三个人坐在椅子上。"
+      },
+      {
+        "hanzi": "身上",
+        "pinyin": "shēnshang",
+        "meaning": "trên người, bên mình, trong người",
+        "usageInSentence": "爸爸身上背着小书包。"
+      },
+      {
+        "hanzi": "身体",
+        "pinyin": "shēntǐ",
+        "meaning": "cơ thể, thân thể",
+        "usageInSentence": "我的身体有点不好。"
+      },
+      {
+        "hanzi": "手",
+        "pinyin": "shǒu",
+        "meaning": "tay",
+        "usageInSentence": "妈妈的手里拿着苹果。"
+      },
+      {
+        "hanzi": "小",
+        "pinyin": "xiǎo",
+        "meaning": "nhỏ",
+        "usageInSentence": "前面有一个小湖。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要想告诉我们什么？ (Bài viết này chủ yếu muốn nói với chúng ta điều gì?)",
+        "options": {
+          "A": "每天和家人一起运动，身体会更舒服 (Mỗi ngày vận động cùng gia đình, cơ thể sẽ dễ chịu hơn)",
+          "B": "公园里的苹果最好吃 (Táo trong công viên ngon nhất)",
+          "C": "早上起床是最难的事 (Dậy sớm là việc khó nhất)",
+          "D": "小狗也可以帮助人 (Chó nhỏ cũng có thể giúp người)"
+        },
+        "answer": "A",
+        "explanation": "Đáp án A đúng vì bài kể chuyện một gia đình cùng đi bộ buổi sáng, và kết thúc bằng ý rằng cơ thể khỏe mạnh là niềm vui cùng người nhà bước đi. Các đáp án còn lại chỉ là chi tiết phụ hoặc không đúng nội dung chính."
+      },
+      {
+        "id": "q2",
+        "question": "为什么“我”早上还想睡觉？ (Tại sao “tôi” buổi sáng vẫn còn muốn ngủ?)",
+        "options": {
+          "A": "因为身体有点不好，常常起不来 (Vì cơ thể hơi không được khỏe, thường khó dậy)",
+          "B": "因为爸爸不让他去公园 (Vì bố không cho cậu ấy đi công viên)",
+          "C": "因为公园里没有朋友 (Vì trong công viên không có bạn)",
+          "D": "因为妈妈的手里没有苹果 (Vì trong tay mẹ không có táo)"
+        },
+        "answer": "A",
+        "explanation": "Đáp án A đúng vì ngay đầu bài có câu cho biết cơ thể của bạn nhỏ hơi không được khỏe và buổi sáng thường khó dậy, nên bạn ấy vẫn muốn ngủ."
+      },
+      {
+        "id": "q3",
+        "question": "妈妈问“你现在觉得怎么样？”时，“我”的回答是什么意思？ (Khi mẹ hỏi “Con bây giờ thấy thế nào?”, câu trả lời của “tôi” có nghĩa là gì?)",
+        "options": {
+          "A": "运动后虽然有点热，但感觉身体很舒服 (Sau khi vận động tuy hơi nóng, nhưng cảm thấy cơ thể rất thoải mái)",
+          "B": "运动后身体更累了，不想再运动 (Sau khi vận động cơ thể mệt hơn, không muốn vận động nữa)",
+          "C": "公园里的风吹得太冷，身上很疼 (Gió trong công viên thổi quá lạnh, trên người rất đau)",
+          "D": "小狗碰了手，所以身体变重了 (Chó nhỏ chạm tay, nên cơ thể trở nên nặng)"
+        },
+        "answer": "A",
+        "explanation": "Đáp án A đúng vì trong câu trả lời của bạn nhỏ có ý nói trên người hơi nóng nhưng cơ thể rất nhẹ, cho thấy sau khi vận động bạn ấy cảm thấy dễ chịu hơn."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t02_01",
+    "hskLevel": 1,
+    "topicId": 2,
+    "topicName": "Sức khỏe & Y tế",
+    "subTheme": "Đi bệnh viện khám sức khỏe và uống thuốc (去医院看病)",
+    "title": {
+      "hanzi": "去医院看病",
+      "pinyin": "Qù yīyuàn kàn bìng",
+      "meaning": "Đi bệnh viện khám bệnh"
+    },
+    "contextDescription": "Một bạn nhỏ bị mệt, được mẹ đưa đi khám bệnh, uống thuốc và nghỉ ngơi, rồi cảm nhận tình yêu thương của mẹ.",
+    "content": {
+      "hanzi": "今天早上，我有点不舒服。我觉得头很疼，身体很累，也不想吃饭。妈妈很担心，她说：“你是不是生病了？我们去医院看病吧。”我点点头，跟着她出门。路上，我看见很多病人。有的人在咳嗽，有的人在休息，还有的人在等医生。妈妈给我拿水，我喝了一点，还是觉得渴。我有点怕。\n\n到了医院，护士让我们先休息。我坐在椅子上，觉得又饿又渴。医生来了，他问我：“你哪里不舒服？”我说：“我头疼，也咳嗽。”医生让我张开嘴，看了看我的喉咙。他说：“你生病了，需要吃药，也要多喝水。”我小声问：“什么时候能好？”他说：“好好睡觉，按时吃药，三天就好。”\n\n从医院出来，妈妈带我去买药。药店里很安静。她轻声对店员说：“请给我这个药。”店员笑着把药递给我们。回家的路上，我慢慢走路，不想说话。妈妈扶着我，让我靠在她肩上。我觉得很温暖，也很安心。有妈妈在，我不怕。\n\n晚上，我吃了药，躺在床上睡觉。第二天早上，我感觉好多了。医生说得对，生病的时候要休息，不能太累。现在，我每天喝水，早睡早起，也不吃太多冷东西。我希望大家都健健康康，少去医院，少当病人。健康就是幸福。",
+      "pinyin": "Jīntiān zǎoshang, wǒ yǒudiǎn bù shūfu. Wǒ juéde tóu hěn téng, shēntǐ hěn lèi, yě bù xiǎng chī fàn. Māma hěn dānxīn, tā shuō: “Nǐ shì bù shì shēng bìng le? Wǒmen qù yīyuàn kàn bìng ba.” Wǒ diǎn diǎn tóu, gēnzhe tā chūmén. Lùshang, wǒ kànjiàn hěn duō bìngrén. Yǒu de rén zài késou, yǒu de rén zài xiūxi, hái yǒu de rén zài děng yīshēng. Māma gěi wǒ ná shuǐ, wǒ hē le yì diǎn, háishì juéde kě. Wǒ yǒudiǎn pà.\n\nDàole yīyuàn, hùshi ràng wǒmen xiān xiūxi. Wǒ zuò zài yǐzi shang, juéde yòu è yòu kě. Yīshēng lái le, tā wèn wǒ: “Nǐ nǎlǐ bù shūfu?” Wǒ shuō: “Wǒ tóu téng, yě késou.” Yīshēng ràng wǒ zhāngkāi zuǐ, kànle kàn wǒ de hóulóng. Tā shuō: “Nǐ shēng bìng le, xūyào chī yào, yě yào duō hē shuǐ.” Wǒ xiǎoshēng wèn: “Shénme shíhou néng hǎo?” Tā shuō: “Hǎohǎo shuìjiào, ànshí chī yào, sāntiān jiù hǎo.”\n\nCóng yīyuàn chūlái, māma dài wǒ qù mǎi yào. Yàodiàn lǐ hěn ānjìng. Tā qīngshēng duì diànyuán shuō: “Qǐng gěi wǒ zhège yào.” Diànyuán xiàozhe bǎ yào dì gěi wǒmen. Huíjiā de lùshang, wǒ mànmàn zǒulù, bù xiǎng shuōhuà. Māma fúzhe wǒ, ràng wǒ kào zài tā jiānshang. Wǒ juéde hěn wēnnuǎn, yě hěn ānxīn. Yǒu māma zài, wǒ bù pà.\n\nWǎnshang, wǒ chī le yào, tǎng zài chuángshang shuìjiào. Dì èr tiān zǎoshang, wǒ gǎnjué hǎo duō le. Yīshēng shuō de duì, shēng bìng de shíhou yào xiūxi, bù néng tài lèi. Xiànzài, wǒ měitiān hē shuǐ, zǎo shuì zǎo qǐ, yě bù chī tài duō lěng dōngxi. Wǒ xīwàng dàjiā dōu jiànjiànkāngkāng, shǎo qù yīyuàn, shǎo dāng bìngrén. Jiànkāng jiùshì xìngfú.",
+      "meaning": "Sáng nay, tôi cảm thấy hơi khó chịu. Tôi thấy đầu rất đau, người mệt lắm, cũng chẳng muốn ăn cơm. Mẹ rất lo lắng, mẹ nói: “Con có phải bị ốm không? Mình đến bệnh viện khám bệnh nhé.” Tôi gật đầu, theo mẹ ra ngoài. Trên đường, tôi thấy rất nhiều bệnh nhân. Có người đang ho, có người đang nghỉ ngơi, còn có người đang chờ bác sĩ. Mẹ đưa nước cho tôi, tôi uống một chút, vẫn thấy khát. Tôi hơi sợ.\n\nĐến bệnh viện, y tá bảo chúng tôi nghỉ ngơi trước. Tôi ngồi trên ghế, vừa đói vừa khát. Bác sĩ đến, ông hỏi tôi: “Em thấy không khỏe ở đâu?” Tôi nói: “Đầu em đau, cũng ho.” Bác sĩ bảo tôi há miệng ra, xem cổ họng của tôi. Ông nói: “Em bị bệnh rồi, cần uống thuốc, cũng phải uống nhiều nước.” Tôi hỏi nhỏ: “Bao giờ thì khỏi ạ?” Ông nói: “Ngủ cho tốt, uống thuốc đúng giờ, ba ngày là khỏi.”\n\nTừ bệnh viện ra, mẹ dẫn tôi đi mua thuốc. Trong hiệu thuốc rất yên tĩnh. Mẹ nhẹ nhàng nói với nhân viên: “Xin đưa cho tôi loại thuốc này.” Nhân viên cười và đưa thuốc cho chúng tôi. Trên đường về nhà, tôi đi chậm chạp, không muốn nói chuyện. Mẹ đỡ tôi, để tôi tựa vào vai mẹ. Tôi thấy rất ấm áp, cũng rất yên tâm. Có mẹ ở bên, tôi không sợ nữa.\n\nBuổi tối, tôi uống thuốc, nằm trên giường ngủ. Sáng hôm sau, tôi cảm thấy đỡ hơn nhiều. Bác sĩ nói đúng, khi bị bệnh cần nghỉ ngơi, không được quá mệt. Bây giờ, mỗi ngày tôi đều uống nước, ngủ sớm dậy sớm, cũng không ăn quá nhiều đồ lạnh. Tôi mong mọi người đều khỏe mạnh, ít đến bệnh viện, ít làm bệnh nhân. Sức khỏe chính là hạnh phúc."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "病",
+        "pinyin": "bìng",
+        "meaning": "bệnh, ốm đau; bị ốm, bị bệnh",
+        "usageInSentence": "“你是不是生病了？”"
+      },
+      {
+        "hanzi": "病人",
+        "pinyin": "bìngrén",
+        "meaning": "bệnh nhân",
+        "usageInSentence": "“我看见很多病人。”"
+      },
+      {
+        "hanzi": "饿",
+        "pinyin": "è",
+        "meaning": "đói; bỏ đói, để đói",
+        "usageInSentence": "“觉得又饿又渴。”"
+      },
+      {
+        "hanzi": "看病",
+        "pinyin": "kàn bìng",
+        "meaning": "khám bệnh",
+        "usageInSentence": "“我们去医院看病吧。”"
+      },
+      {
+        "hanzi": "渴",
+        "pinyin": "kě",
+        "meaning": "khát",
+        "usageInSentence": "“还是觉得渴。”"
+      },
+      {
+        "hanzi": "累",
+        "pinyin": "lèi",
+        "meaning": "mệt",
+        "usageInSentence": "“身体很累。”"
+      },
+      {
+        "hanzi": "生病",
+        "pinyin": "shēng bìng",
+        "meaning": "bị bệnh",
+        "usageInSentence": "“你是不是生病了？”"
+      },
+      {
+        "hanzi": "睡",
+        "pinyin": "shuì",
+        "meaning": "ngủ, nằm dài",
+        "usageInSentence": "“好好睡觉，按时吃药，三天就好。”"
+      },
+      {
+        "hanzi": "睡觉",
+        "pinyin": "shuìjiào",
+        "meaning": "ngủ, đi ngủ, ngủ nghê",
+        "usageInSentence": "“躺在床上睡觉。”"
+      },
+      {
+        "hanzi": "休息",
+        "pinyin": "xiūxi",
+        "meaning": "nghỉ ngơi",
+        "usageInSentence": "“有的人在休息。”"
+      },
+      {
+        "hanzi": "医生",
+        "pinyin": "yīshēng",
+        "meaning": "bác sĩ",
+        "usageInSentence": "“还有的人在等医生。”"
+      },
+      {
+        "hanzi": "医院",
+        "pinyin": "yīyuàn",
+        "meaning": "bệnh viện",
+        "usageInSentence": "“我们去医院看病吧。”"
+      },
+      {
+        "hanzi": "病",
+        "pinyin": "bìng",
+        "meaning": "bệnh, ốm đau; bị ốm, bị bệnh",
+        "usageInSentence": "“生病的时候要休息。”"
+      },
+      {
+        "hanzi": "累",
+        "pinyin": "lèi",
+        "meaning": "mệt",
+        "usageInSentence": "“不能太累。”"
+      },
+      {
+        "hanzi": "医生",
+        "pinyin": "yīshēng",
+        "meaning": "bác sĩ",
+        "usageInSentence": "“医生来了。”"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲什么？（Bài văn này chủ yếu kể về điều gì？）",
+        "options": {
+          "A": "去医院看病和慢慢恢复（Đi bệnh viện khám bệnh và dần hồi phục）",
+          "B": "在学校考试（Ở trường thi cử）",
+          "C": "和朋友去公园（Đi công viên cùng bạn）",
+          "D": "妈妈做饭（Mẹ nấu cơm）"
+        },
+        "answer": "A",
+        "explanation": "Bài văn bắt đầu bằng việc tôi không khỏe, mẹ nói “我们去医院看病吧”, sau đó đi khám, mua thuốc, nghỉ ngơi, hôm sau đỡ hơn. Nội dung cốt lõi là quá trình khám bệnh và hồi phục."
+      },
+      {
+        "id": "q2",
+        "question": "医生让病人做什么？（Bác sĩ bảo bệnh nhân làm gì？）",
+        "options": {
+          "A": "张开嘴，多喝水，按时吃药（Há miệng, uống nhiều nước, uống thuốc đúng giờ）",
+          "B": "马上回学校（Lập tức về trường）",
+          "C": "不吃药，不喝水（Không uống thuốc, không uống nước）",
+          "D": "大声说话（Nói to）"
+        },
+        "answer": "A",
+        "explanation": "Trong bài có câu “医生让我张开嘴，看了看我的喉咙。” và “你生病了，需要吃药，也要多喝水。” Bác sĩ còn dặn “按时吃药，三天就好。”"
+      },
+      {
+        "id": "q3",
+        "question": "“有妈妈在，我不怕。”这句话说明什么？（Câu “有妈妈在，我不怕。” cho thấy điều gì？）",
+        "options": {
+          "A": "妈妈的陪伴让病人感到安心（Sự đồng hành của mẹ khiến bệnh nhân cảm thấy yên tâm）",
+          "B": "病人不需要吃药（Bệnh nhân không cần uống thuốc）",
+          "C": "妈妈是医生（Mẹ là bác sĩ）",
+          "D": "病人想去学校（Bệnh nhân muốn đi học）"
+        },
+        "answer": "A",
+        "explanation": "Trước câu này, bài viết có “妈妈扶着我，让我靠在她肩上。我觉得很温暖，也很安心。” Vì vậy câu “有妈妈在，我不怕。” thể hiện sự yên tâm khi có mẹ bên cạnh."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t03_01",
+    "hskLevel": 1,
+    "topicId": 3,
+    "topicName": "Tâm lý & Nhận thức",
+    "subTheme": "Cảm xúc và suy nghĩ về cuộc sống (心里的想法)",
+    "title": {
+      "hanzi": "心里的想法",
+      "pinyin": "Xīn lǐ de xiǎngfǎ",
+      "meaning": "Những suy nghĩ trong lòng"
+    },
+    "contextDescription": "Một lần ở công viên, tôi gặp thầy Vương và cô Lý, nghe những lời nhỏ nhẹ và cảm nhận niềm vui từ việc được nhớ đến.",
+    "content": {
+      "hanzi": "每个周末，我都去公园。那里的人很多，有老人，有孩子，还有我的老师王先生。他喜欢笑，说话很慢。我觉得和他在一起，心里很舒服。我喜欢公园。这里很好。我常想，快乐是什么？也许，快乐就是有人听我说话。\n\n有一天，我问王先生：“你干什么这么认真？”他说：“我在听小鸟说话。小鸟很高兴，它想告诉我们，今天是个好日子。”我笑了：“真的吗？我什么也没听见。”他点点头：“你慢慢听，就会明白。别急，好事常常很小。”\n\n我试了试，闭上眼睛。风很轻，树叶在响。我好像听到有人叫我。回头一看，是朋友李阿姨。她手里拿着一个本子，对我说：“昨天我忘记给你。这是你写的故事，我读了很久。你写得真好，别的人都要记住你的名字。”我有点想哭，因为她还记得我。\n\n我有点不好意思，心里却非常高兴。原来，爱不是大声说出来的，它藏在小事里。王先生知道我喜欢写故事，李阿姨也记得我的名字。我觉得，认识他们，是我生活里最重要的事。以后，我还要认真听，认真说，认真爱。也许，最好的爱，就是记住别人。我真的很高兴。",
+      "pinyin": "Měi gè zhōumò, wǒ dōu qù gōngyuán. Nàlǐ de rén hěn duō, yǒu lǎorén, yǒu háizi, hái yǒu wǒ de lǎoshī Wáng xiānsheng. Tā xǐhuan xiào, shuōhuà hěn màn. Wǒ juéde hé tā zài yìqǐ, xīnlǐ hěn shūfu. Wǒ xǐhuan gōngyuán. Zhèlǐ hěn hǎo. Wǒ cháng xiǎng, kuàilè shì shénme? Yěxǔ, kuàilè jiù shì yǒu rén tīng wǒ shuōhuà.\n\nYǒu yì tiān, wǒ wèn Wáng xiānsheng: “Nǐ gàn shénme zhème rènzhēn?” Tā shuō: “Wǒ zài tīng xiǎo niǎo shuōhuà. Xiǎo niǎo hěn gāoxìng, tā xiǎng gàosu wǒmen, jīntiān shì gè hǎo rìzi.” Wǒ xiào le: “Zhēn de ma? Wǒ shénme yě méi tīngjiàn.” Tā diǎn diǎn tóu: “Nǐ màn man tīng, jiù huì míngbai. Bié jí, hǎo shì chángcháng hěn xiǎo.”\n\nWǒ shì le shì, bì shàng yǎnjing. Fēng hěn qīng, shùyè zài xiǎng. Wǒ hǎoxiàng tīngdào yǒu rén jiào wǒ. Huí tóu yí kàn, shì péngyou Lǐ Āyí. Tā shǒu lǐ ná zhe yí gè běnzi, duì wǒ shuō: “Zuótiān wǒ wàngjì gěi nǐ. Zhè shì nǐ xiě de gùshi, wǒ dú le hěn jiǔ. Nǐ xiě de zhēn hǎo, bié de rén dōu yào jìzhù nǐ de míngzi.” Wǒ yǒu diǎn xiǎng kū, yīnwèi tā hái jìde wǒ.\n\nWǒ yǒu diǎn bù hǎo yìsi, xīnlǐ què fēicháng gāoxìng. Yuánlái, ài bú shì dàshēng shuō chūlái de, tā cáng zài xiǎo shì lǐ. Wáng xiānsheng zhīdào wǒ xǐhuan xiě gùshi, Lǐ Āyí yě jìde wǒ de míngzi. Wǒ juéde, rènshi tāmen, shì wǒ shēnghuó lǐ zuì zhòngyào de shì. Yǐhòu, wǒ hái yào rènzhēn tīng, rènzhēn shuō, rènzhēn ài. Yěxǔ, zuì hǎo de ài, jiù shì jìzhù biérén. Wǒ zhēn de hěn gāoxìng.",
+      "meaning": "Mỗi cuối tuần, tôi đều đến công viên. Ở đó rất đông người, có người già, có trẻ em, còn có thầy giáo của tôi, thầy Vương. Thầy thích cười, nói chuyện rất chậm. Tôi cảm thấy khi ở bên thầy, lòng mình rất thoải mái. Tôi thích công viên. Nơi này rất tốt. Tôi thường nghĩ, niềm vui là gì? Có lẽ, niềm vui là có người lắng nghe tôi nói.\n\nMột hôm, tôi hỏi thầy Vương: “Thầy làm gì mà nghiêm túc vậy?” Thầy nói: “Thầy đang nghe chim nói chuyện. Chim rất vui, nó muốn nói với chúng ta rằng hôm nay là một ngày đẹp trời.” Tôi cười: “Thật sao? Con chẳng nghe thấy gì cả.” Thầy gật đầu: “Con hãy lắng nghe thật chậm, rồi sẽ hiểu. Đừng vội, những điều tốt đẹp thường rất nhỏ.”\n\nTôi thử nhắm mắt lại. Gió rất nhẹ, lá cây đang reo. Tôi dường như nghe thấy có người gọi mình. Quay đầu nhìn, là cô Lý, một người bạn của tôi. Tay cô cầm một quyển vở, cô nói với tôi: “Hôm qua cô quên đưa cho con. Đây là câu chuyện con viết, cô đã đọc rất lâu. Con viết thật hay, mọi người đều phải nhớ tên con.” Tôi hơi muốn khóc, vì cô ấy vẫn còn nhớ tôi.\n\nTôi hơi ngại ngùng, nhưng trong lòng lại rất vui. Thì ra, yêu thương không phải là nói thật to, nó ẩn trong những chuyện nhỏ. Thầy Vương biết tôi thích viết chuyện, cô Lý cũng nhớ tên tôi. Tôi cảm thấy, quen biết họ là chuyện quan trọng nhất trong cuộc sống của tôi. Sau này, tôi còn phải lắng nghe thật nghiêm túc, nói chuyện thật nghiêm túc, yêu thương thật nghiêm túc. Có lẽ, tình yêu thương tốt nhất chính là nhớ đến người khác. Tôi thật sự rất vui."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "爱",
+        "pinyin": "ài",
+        "meaning": "yêu; yêu thương",
+        "usageInSentence": "认真爱。"
+      },
+      {
+        "hanzi": "别的",
+        "pinyin": "biéde",
+        "meaning": "khác; những người khác",
+        "usageInSentence": "别的人都要记住你的名字。"
+      },
+      {
+        "hanzi": "别人",
+        "pinyin": "biérén",
+        "meaning": "người khác",
+        "usageInSentence": "就是记住别人。"
+      },
+      {
+        "hanzi": "非常",
+        "pinyin": "fēicháng",
+        "meaning": "rất; cực kỳ",
+        "usageInSentence": "心里却非常高兴。"
+      },
+      {
+        "hanzi": "干什么",
+        "pinyin": "gàn shénme",
+        "meaning": "làm gì; tại sao",
+        "usageInSentence": "你干什么这么认真？"
+      },
+      {
+        "hanzi": "高兴",
+        "pinyin": "gāoxìng",
+        "meaning": "vui vẻ; cao hứng",
+        "usageInSentence": "小鸟很高兴。"
+      },
+      {
+        "hanzi": "还",
+        "pinyin": "hái",
+        "meaning": "còn; vẫn",
+        "usageInSentence": "我还要认真听。"
+      },
+      {
+        "hanzi": "还有",
+        "pinyin": "hái yǒu",
+        "meaning": "còn có",
+        "usageInSentence": "还有我的老师王先生。"
+      },
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "meaning": "tốt; hay; ổn",
+        "usageInSentence": "这里很好。"
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "hěn",
+        "meaning": "rất",
+        "usageInSentence": "说话很慢。"
+      },
+      {
+        "hanzi": "会",
+        "pinyin": "huì",
+        "meaning": "sẽ; biết; có thể",
+        "usageInSentence": "就会明白。"
+      },
+      {
+        "hanzi": "记得",
+        "pinyin": "jìde",
+        "meaning": "nhớ; nhớ được",
+        "usageInSentence": "李阿姨也记得我的名字。"
+      },
+      {
+        "hanzi": "记住",
+        "pinyin": "jìzhù",
+        "meaning": "nhớ kỹ; ghi nhớ",
+        "usageInSentence": "别的人都要记住你的名字。"
+      },
+      {
+        "hanzi": "觉得",
+        "pinyin": "juéde",
+        "meaning": "cảm thấy; nghĩ",
+        "usageInSentence": "我觉得和他在一起，心里很舒服。"
+      },
+      {
+        "hanzi": "明白",
+        "pinyin": "míngbai",
+        "meaning": "hiểu; rõ ràng",
+        "usageInSentence": "就会明白。"
+      },
+      {
+        "hanzi": "认真",
+        "pinyin": "rènzhēn",
+        "meaning": "nghiêm túc; cẩn thận",
+        "usageInSentence": "你干什么这么认真？"
+      },
+      {
+        "hanzi": "什么",
+        "pinyin": "shénme",
+        "meaning": "gì; cái gì",
+        "usageInSentence": "快乐是什么？"
+      },
+      {
+        "hanzi": "事",
+        "pinyin": "shì",
+        "meaning": "việc; chuyện",
+        "usageInSentence": "好事常常很小。"
+      },
+      {
+        "hanzi": "试",
+        "pinyin": "shì",
+        "meaning": "thử",
+        "usageInSentence": "我试了试。"
+      },
+      {
+        "hanzi": "是",
+        "pinyin": "shì",
+        "meaning": "là",
+        "usageInSentence": "今天是个好日子。"
+      },
+      {
+        "hanzi": "说话",
+        "pinyin": "shuōhuà",
+        "meaning": "nói chuyện",
+        "usageInSentence": "有人听我说话。"
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "yào",
+        "meaning": "muốn; phải; cần",
+        "usageInSentence": "我还要认真听。"
+      },
+      {
+        "hanzi": "他",
+        "pinyin": "tā",
+        "meaning": "anh ấy; ông ấy",
+        "usageInSentence": "他喜欢笑。"
+      },
+      {
+        "hanzi": "她",
+        "pinyin": "tā",
+        "meaning": "cô ấy; bà ấy",
+        "usageInSentence": "她手里拿着一个本子。"
+      },
+      {
+        "hanzi": "喜欢",
+        "pinyin": "xǐhuan",
+        "meaning": "thích",
+        "usageInSentence": "他喜欢笑。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲什么？（Bài viết chủ yếu kể về điều gì？）",
+        "options": {
+          "A": "我在公园听小鸟说话。（Tôi nghe chim nói ở công viên。）",
+          "B": "我在公园遇到老师和朋友，感到被记得和被理解。（Tôi gặp thầy và người bạn ở công viên, cảm thấy được nhớ đến và thấu hiểu。）",
+          "C": "我学习写故事，想成为老师。（Tôi học viết chuyện, muốn trở thành giáo viên。）",
+          "D": "小鸟告诉我今天天气很好。（Chim bảo tôi hôm nay thời tiết rất tốt。）"
+        },
+        "answer": "B",
+        "explanation": "Bài viết không chỉ kể chuyện nghe chim hót, mà tập trung vào cảm nhận của tôi khi có người lắng nghe và nhớ đến mình. Câu chốt “我觉得，认识他们，是我生活里最重要的事。” cho thấy ý chính là cảm giác được thấu hiểu và trân trọng."
+      },
+      {
+        "id": "q2",
+        "question": "李阿姨为什么来找我？（Cô Lý vì sao đến tìm tôi？）",
+        "options": {
+          "A": "她要给我看小鸟。（Cô ấy muốn cho tôi xem chim。）",
+          "B": "她忘记给我故事本子。（Cô ấy quên đưa cho tôi quyển vở câu chuyện。）",
+          "C": "她想问我去哪里。（Cô ấy muốn hỏi tôi đi đâu。）",
+          "D": "她要教我认真听。（Cô ấy muốn dạy tôi lắng nghe nghiêm túc。）"
+        },
+        "answer": "B",
+        "explanation": "Trong lời thoại của cô Lý có câu “昨天我忘记给你。这是你写的故事，我读了很久。” cho thấy cô ấy đến vì hôm qua quên đưa cho tôi quyển vở chứa câu chuyện tôi viết."
+      },
+      {
+        "id": "q3",
+        "question": "“别急，好事常常很小。”王先生想告诉我什么？（“Đừng vội, điều tốt thường rất nhỏ.” Thầy Vương muốn nói với tôi điều gì？）",
+        "options": {
+          "A": "今天没有好事。（Hôm nay không có điều tốt。）",
+          "B": "好事来得很慢。（Điều tốt đến rất chậm。）",
+          "C": "应该慢慢感受生活中的小事。（Nên từ từ cảm nhận những chuyện nhỏ trong cuộc sống。）",
+          "D": "不要听小鸟说话。（Đừng nghe chim nói。）"
+        },
+        "answer": "C",
+        "explanation": "Thầy Vương bảo “你慢慢听，就会明白。别急，好事常常很小。” Ý của thầy là phải lắng nghe chậm rãi, cảm nhận những điều nhỏ bé, vì niềm vui thường ẩn trong những chuyện rất giản dị."
+      },
+      {
+        "id": "q4",
+        "question": "我为什么“有点想哭”？（Vì sao tôi “hơi muốn khóc”？）",
+        "options": {
+          "A": "因为我忘记了名字。（Vì tôi quên mất tên。）",
+          "B": "因为风太大。（Vì gió quá lớn。）",
+          "C": "因为李阿姨还记得我，我感动。（Vì cô Lý vẫn nhớ tôi, tôi xúc động。）",
+          "D": "因为我不会写故事。（Vì tôi không biết viết chuyện。）"
+        },
+        "answer": "C",
+        "explanation": "Câu văn trực tiếp giải thích cảm xúc của tôi là “我有点想哭，因为她还记得我。” Tôi xúc động vì cô Lý vẫn nhớ đến tôi và trân trọng câu chuyện tôi viết."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t04_01",
+    "hskLevel": 1,
+    "topicId": 4,
+    "topicName": "Thời trang & Chăm sóc",
+    "subTheme": "Thời trang, quần áo và giữ ấm ngày lạnh",
+    "title": {
+      "hanzi": "冬天的新衣服",
+      "pinyin": "Dōngtiān de xīn yīfu",
+      "meaning": "Chiếc áo mới mùa đông"
+    },
+    "contextDescription": "Một buổi sáng mùa đông lạnh, hai chị em mặc quần áo mới, giữ ấm và cảm nhận tình yêu của mẹ.",
+    "content": {
+      "hanzi": "冬天的早上很冷。我坐在桌子旁边，看见妈妈拿着一件新衣服。衣服是白的，很好看。桌子上还有一个包，包里放着手套和围巾。妈妈说：“今天风大，你要多穿一点。”我点点头，把衣服穿好。妹妹还在洗手间洗手，水声很轻。屋里开着灯，桌上有热牛奶。\n\n妹妹从洗手间出来，手上都是水。她说：“姐姐，我的衣服不干净，我要洗一洗。”我带她去桌子旁，给她一条干毛巾。妹妹擦擦手，笑着说：“谢谢姐姐。”我说：“不客气。你先把东西放好，再穿衣服。”她又把小书包放在椅子上，书包是蓝色的，也很新。\n\n妈妈把白衣服洗好，放在阳台上。过了一会儿，衣服干了。妹妹跑过去，轻轻摸一摸，说：“好舒服，真好看！”我给她穿上外套，又把包递给她。包里有一个小杯子，妈妈让我们带着热水。外面很冷，可是屋里很暖。杯子是白的，杯子上画着一只小鸟。妹妹看见小鸟，马上笑了。\n\n出门前，我照照镜子，看见自己穿着新衣服，白白的，很干净。妹妹也穿得整整齐齐，像一朵小小的云。我们手拉手，一起走进冬天的风里。我觉得，衣服不只是好看，还能保护我们，带来温暖。妈妈的爱，也藏在每一件衣服、每一个包里。我想，以后我要自己洗衣服，把桌子擦干净，把东西放好，不让妈妈太累。",
+      "pinyin": "Dōngtiān de zǎoshang hěn lěng. Wǒ zuò zài zhuōzi pángbiān, kànjiàn māma ná zhe yí jiàn xīn yīfu. Yīfu shì bái de, hěn hǎokàn. Zhuōzi shàng hái yǒu yí gè bāo, bāo lǐ fàng zhe shǒutào hé wéijīn. Māma shuō: “Jīntiān fēng dà, nǐ yào duō chuān yìdiǎn.” Wǒ diǎn diǎn tóu, bǎ yīfu chuān hǎo. Mèimei hái zài xǐshǒujiān xǐshǒu, shuǐshēng hěn qīng. Wūli kāi zhe dēng, zhuō shàng yǒu rè niúnǎi.\n\nMèimei cóng xǐshǒujiān chūlái, shǒu shàng dōu shì shuǐ. Tā shuō: “Jiějie, wǒ de yīfu bù gānjìng, wǒ yào xǐ yi xǐ.” Wǒ dài tā qù zhuōzi páng, gěi tā yì tiáo gān máojīn. Mèimei cā cā shǒu, xiào zhe shuō: “Xièxie jiějie.” Wǒ shuō: “Bú kèqi. Nǐ xiān bǎ dōngxi fàng hǎo, zài chuān yīfu.” Tā yòu bǎ xiǎo shūbāo fàng zài yǐzi shàng, shūbāo shì lánsè de, yě hěn xīn.\n\nMāma bǎ bái yīfu xǐ hǎo, fàng zài yángtái shàng. Guò le yíhuìr, yīfu gān le. Mèimei pǎo guòqù, qīngqīng mō yi mō, shuō: “Hǎo shūfu, zhēn hǎokàn!” Wǒ gěi tā chuān shàng wàitào, yòu bǎ bāo dì gěi tā. Bāo lǐ yǒu yí gè xiǎo bēizi, māma ràng wǒmen dài zhe rèshuǐ. Wàimiàn hěn lěng, kěshì wūli hěn nuǎn. Bēizi shì bái de, bēizi shàng huà zhe yì zhī xiǎo niǎo. Mèimei kànjiàn xiǎo niǎo, mǎshàng xiào le.\n\nChūmén qián, wǒ zhào zhào jìngzi, kànjiàn zìjǐ chuān zhe xīn yīfu, bái bái de, hěn gānjìng. Mèimei yě chuān de zhěngzhěngqíqí, xiàng yì duǒ xiǎoxiǎo de yún. Wǒmen shǒu lā shǒu, yìqǐ zǒu jìn dōngtiān de fēng lǐ. Wǒ juéde, yīfu bù zhǐ shì hǎokàn, hái néng bǎohù wǒmen, dài lái wēnnuǎn. Māma de ài, yě cáng zài měi yí jiàn yīfu, měi yí gè bāo lǐ. Wǒ xiǎng, yǐhòu wǒ yào zìjǐ xǐ yīfu, bǎ zhuōzi cā gānjìng, bǎ dōngxi fàng hǎo, bú ràng māma tài lèi.",
+      "meaning": "Sáng mùa đông rất lạnh. Tôi ngồi bên bàn, nhìn thấy mẹ cầm một chiếc áo mới. Áo màu trắng, rất đẹp. Trên bàn còn có một cái túi, trong túi có găng tay và khăn quàng cổ. Mẹ nói: “Hôm nay gió lớn, con phải mặc nhiều một chút.” Tôi gật đầu, mặc áo vào. Em gái vẫn đang rửa tay trong nhà vệ sinh, tiếng nước rất nhẹ. Trong nhà bật đèn, trên bàn có sữa nóng.\n\nEm gái từ nhà vệ sinh đi ra, trên tay đều là nước. Em nói: “Chị ơi, quần áo của em không sạch, em phải giặt một chút.” Tôi dẫn em đến bên bàn, đưa cho em một chiếc khăn khô. Em gái lau lau tay, cười nói: “Cảm ơn chị.” Tôi nói: “Không có gì. Em cất đồ đạc trước, rồi mặc quần áo.” Em lại đặt cặp sách nhỏ lên ghế, cặp sách màu xanh, cũng rất mới.\n\nMẹ giặt xong chiếc áo trắng, phơi trên ban công. Một lát sau, áo đã khô. Em gái chạy lại, nhẹ nhàng sờ một cái, nói: “Thật thoải mái, đẹp quá!” Tôi mặc áo khoác cho em, rồi đưa túi cho em. Trong túi có một chiếc cốc nhỏ, mẹ bảo chúng tôi mang theo nước nóng. Bên ngoài rất lạnh, nhưng trong nhà rất ấm. Cốc màu trắng, trên cốc vẽ một chú chim nhỏ. Em gái nhìn thấy chú chim, liền cười ngay.\n\nTrước khi ra khỏi cửa, tôi soi gương, nhìn thấy mình mặc quần áo mới, trắng trẻo, rất sạch sẽ. Em gái cũng mặc đồ chỉnh tề, giống như một đám mây nhỏ. Chúng tôi nắm tay nhau, cùng bước vào gió mùa đông. Tôi cảm thấy, quần áo không chỉ đẹp, còn có thể bảo vệ chúng tôi, mang lại sự ấm áp. Tình yêu của mẹ cũng ẩn trong mỗi chiếc áo, mỗi chiếc túi. Tôi nghĩ, sau này tôi muốn tự giặt quần áo, lau bàn sạch sẽ, cất đồ đạc, không để mẹ quá mệt."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "白",
+        "pinyin": "bái",
+        "meaning": "trắng",
+        "usageInSentence": "衣服是白的，很好看。"
+      },
+      {
+        "hanzi": "包",
+        "pinyin": "bāo",
+        "meaning": "túi, bao, ví",
+        "usageInSentence": "桌子上还有一个包。"
+      },
+      {
+        "hanzi": "穿",
+        "pinyin": "chuān",
+        "meaning": "mặc, đi, mang, đeo",
+        "usageInSentence": "你要多穿一点。"
+      },
+      {
+        "hanzi": "东西",
+        "pinyin": "dōngxi",
+        "meaning": "đồ vật, thứ",
+        "usageInSentence": "你先把东西放好。"
+      },
+      {
+        "hanzi": "干",
+        "pinyin": "gān",
+        "meaning": "khô, cạn",
+        "usageInSentence": "衣服干了。"
+      },
+      {
+        "hanzi": "干净",
+        "pinyin": "gānjìng",
+        "meaning": "sạch sẽ, gọn gàng",
+        "usageInSentence": "我的衣服不干净。"
+      },
+      {
+        "hanzi": "好看",
+        "pinyin": "hǎokàn",
+        "meaning": "đẹp, xinh, hay, thú vị",
+        "usageInSentence": "真好看！"
+      },
+      {
+        "hanzi": "洗",
+        "pinyin": "xǐ",
+        "meaning": "rửa, giặt",
+        "usageInSentence": "我要洗一洗。"
+      },
+      {
+        "hanzi": "洗手间",
+        "pinyin": "xǐshǒujiān",
+        "meaning": "nhà vệ sinh",
+        "usageInSentence": "妹妹从洗手间出来。"
+      },
+      {
+        "hanzi": "新",
+        "pinyin": "xīn",
+        "meaning": "mới",
+        "usageInSentence": "看见妈妈拿着一件新衣服。"
+      },
+      {
+        "hanzi": "衣服",
+        "pinyin": "yīfu",
+        "meaning": "quần áo",
+        "usageInSentence": "把衣服穿好。"
+      },
+      {
+        "hanzi": "桌子",
+        "pinyin": "zhuōzi",
+        "meaning": "bàn",
+        "usageInSentence": "我坐在桌子旁边。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "文章主要讲了什么？ (Bài đọc chủ yếu nói về điều gì?)",
+        "options": {
+          "A": "冬天的早上，家人一起穿衣服、准备出门，感受温暖。 (Sáng mùa đông, gia đình cùng mặc quần áo, chuẩn bị ra ngoài và cảm nhận sự ấm áp.)",
+          "B": "妹妹在桌子上吃饭，妈妈给她买玩具。 (Em gái ăn cơm trên bàn, mẹ mua đồ chơi cho em.)",
+          "C": "姐姐和妹妹在洗手间洗衣服，水很冷。 (Chị và em gái giặt quần áo trong nhà vệ sinh, nước rất lạnh.)",
+          "D": "妈妈把包放在椅子上，自己出门买衣服。 (Mẹ đặt túi lên ghế rồi tự đi mua quần áo.)"
+        },
+        "answer": "A",
+        "explanation": "Bài đọc kể chuyện hai chị em mặc quần áo mới trong buổi sáng mùa đông, được mẹ chuẩn bị đồ giữ ấm và kết thúc bằng cảm nhận tình yêu của mẹ. Câu chốt ý chính là “我觉得，衣服不只是好看，还能保护我们，带来温暖。妈妈的爱，也藏在每一件衣服、每一个包里。”"
+      },
+      {
+        "id": "q2",
+        "question": "为什么妹妹说她要洗衣服？ (Tại sao em gái nói phải giặt quần áo?)",
+        "options": {
+          "A": "因为衣服不干净。 (Vì quần áo không sạch.)",
+          "B": "因为衣服太小。 (Vì quần áo quá nhỏ.)",
+          "C": "因为衣服太冷。 (Vì quần áo quá lạnh.)",
+          "D": "因为衣服是新的。 (Vì quần áo là mới.)"
+        },
+        "answer": "A",
+        "explanation": "Trong lời thoại của em gái có câu “姐姐，我的衣服不干净，我要洗一洗。”, nghĩa là em muốn giặt vì quần áo không sạch."
+      },
+      {
+        "id": "q3",
+        "question": "在“过了一会儿，衣服干了。”中，“干”是什么意思？ (Trong câu “Một lát sau, áo đã khô.”, “干” nghĩa là gì?)",
+        "options": {
+          "A": "干（gān）: khô (không còn nước) (khô, cạn)",
+          "B": "净（jìng）: sạch (không bẩn) (sạch sẽ)",
+          "C": "白（bái）: trắng (màu trắng) (trắng)",
+          "D": "新（xīn）: mới (không cũ) (mới)"
+        },
+        "answer": "A",
+        "explanation": "Câu trước đó là “妈妈把白衣服洗好，放在阳台上。” rồi “过了一会儿，衣服干了。” cho thấy quần áo sau khi giặt đã khô, nên “干” ở đây có nghĩa là khô."
+      },
+      {
+        "id": "q4",
+        "question": "文章最后，“我”想以后做什么？ (Cuối bài, “tôi” muốn sau này làm gì?)",
+        "options": {
+          "A": "自己洗衣服、擦桌子、放好东西，不让妈妈太累。 (Tự giặt quần áo, lau bàn, cất đồ gọn gàng, không để mẹ quá mệt.)",
+          "B": "买很多新衣服和包。 (Mua nhiều quần áo và túi mới.)",
+          "C": "每天去洗手间洗手。 (Mỗi ngày đến nhà vệ sinh rửa tay.)",
+          "D": "把桌子搬到外面。 (Kê bàn ra ngoài.)"
+        },
+        "answer": "A",
+        "explanation": "Câu cuối bài ghi rõ “我想，以后我要自己洗衣服，把桌子擦干净，把东西放好，不让妈妈太累。”, nghĩa là “tôi” muốn tự làm việc nhà để mẹ không mệt."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t05_01",
+    "hskLevel": 1,
+    "topicId": 5,
+    "topicName": "Gia đình & Vòng đời",
+    "subTheme": "Ngày sinh nhật vui vẻ của em gái cùng gia đình (妹妹的生日)",
+    "title": {
+      "hanzi": "妹妹的生日",
+      "pinyin": "Mèimei de shēngrì",
+      "meaning": "Sinh nhật của em gái"
+    },
+    "contextDescription": "Câu chuyện ấm áp về ngày sinh nhật của em gái, cả gia đình cùng chuẩn bị, chúc mừng và tận hưởng những khoảnh khắc sum vầy.",
+    "content": {
+      "hanzi": "今天是妹妹的生日。我们一家在家给她庆祝。爸爸在厨房做长寿面，妈妈在客厅摆蛋糕。哥哥和姐姐坐在床上，把礼物放在小桌子旁边。爷爷和奶奶也来了，他们笑得很开心。妹妹住在二楼，今天她不想出去，只想和家里人在一起。\n\n妹妹从学校回家，背着书包，站在门口。她看见家里的灯，听见大家唱生日歌，眼睛马上亮了。我跑过去说：“妹妹，生日快乐！”她笑着问：“今天真的是我的生日吗？”奶奶拉着她的手说：“当然啦！你是我们家里的小太阳。”门外还有几个小朋友，他们是妹妹班里的男生和女生，也来送祝福。\n\n爸爸端来一碗长寿面，妈妈点蜡烛。妹妹闭上眼睛，小声许愿。哥哥递给她一个男孩儿喜欢的玩具，姐姐送她一本女孩儿爱看的书。妹妹打开礼物，高兴得跳起来。她说：“谢谢大家，也谢谢爸爸妈妈。”妈妈笑着说：“爸爸的儿子和女儿都长大了。”爷爷摸摸胡子，笑着说：“爷爷老了，可是看见你们，我一点也不老。”\n\n晚上，妹妹坐在床边，抱着朋友送的小熊，慢慢睡着了。爷爷轻轻给她盖被子，奶奶坐在旁边，看着她笑。家里很安静，也很温暖。我想，家人在一起，就是最好的生日。",
+      "pinyin": "Jīntiān shì mèimei de shēngrì. Wǒmen yì jiā zài jiā gěi tā qìngzhù. Bàba zài chúfáng zuò chángshòumiàn, māmā zài kètīng bǎi dàngāo. Gēge hé jiějie zuò zài chuáng shàng, bǎ lǐwù fàng zài xiǎo zhuōzi pángbiān. Yéye hé nǎinai yě lái le, tāmen xiào de hěn kāixīn. Mèimei zhù zài èr lóu, jīntiān tā bù xiǎng chūqù, zhǐ xiǎng hé jiāli rén zài yìqǐ.\n\nMèimei cóng xuéxiào huí jiā, bēizhe shūbāo, zhàn zài ménkǒu. Tā kànjiàn jiāli de dēng, tīngjiàn dàjiā chàng shēngrì gē, yǎnjing mǎshàng liàng le. Wǒ pǎo guòqù shuō: “Mèimei, shēngrì kuàilè!” Tā xiàozhe wèn: “Jīntiān zhēnde shì wǒ de shēngrì ma?” Nǎinai lāzhe tā de shǒu shuō: “Dāngrán la! Nǐ shì wǒmen jiāli de xiǎo tàiyáng.” Ménwài hái yǒu jǐ ge xiǎopéngyou, tāmen shì mèimei bānlǐ de nánshēng hé nǚshēng, yě lái sòng zhùfú.\n\nBàba duān lái yì wǎn chángshòumiàn, māmā diǎn làzhú. Mèimei bìshàng yǎnjing, xiǎoshēng xǔyuàn. Gēge dì gěi tā yí ge nánháir xǐhuan de wánjù, jiějie sòng tā yì běn nǚháir ài kàn de shū. Mèimei dǎkāi lǐwù, gāoxìng de tiào qǐlái. Tā shuō: “Xièxie dàjiā, yě xièxie bàba māmā.” Māmā xiàozhe shuō: “Bàba de érzi hé nǚ'ér dōu zhǎngdà le.” Yéye mōmō húzi, xiàozhe shuō: “Yéye lǎo le, kěshì kànjiàn nǐmen, wǒ yìdiǎn yě bù lǎo.”\n\nWǎnshang, mèimei zuò zài chuángbiān, bàozhe péngyou sòng de xiǎoxióng, mànman shuìzháo le. Yéye qīngqīng gěi tā gài bèizi, nǎinai zuò zài pángbiān, kànzhe tā xiào. Jiāli hěn ānjìng, yě hěn wēnnuǎn. Wǒ xiǎng, jiārén zài yìqǐ, jiù shì zuìhǎo de shēngrì.",
+      "meaning": "Hôm nay là sinh nhật của em gái. Cả nhà ở nhà tổ chức cho em. Bố làm mì trường thọ trong bếp, mẹ bày bánh kem trong phòng khách. Anh trai và chị gái ngồi trên giường, đặt quà bên cạnh chiếc bàn nhỏ. Ông nội và bà nội cũng đến, mọi người cười rất vui. Em gái ở tầng hai, hôm nay em không muốn ra ngoài, chỉ muốn ở bên người nhà.\n\nEm gái từ trường về nhà, đeo cặp sách, đứng ở cửa. Em nhìn thấy đèn trong nhà, nghe thấy mọi người hát bài hát sinh nhật, mắt sáng lên ngay. Tôi chạy ra nói: “Em gái, chúc mừng sinh nhật!” Em cười hỏi: “Hôm nay thật là sinh nhật của em sao?” Bà nội nắm tay em nói: “Đương nhiên rồi! Em là mặt trời nhỏ của gia đình mình.” Ngoài cửa còn có vài bạn nhỏ, họ là nam sinh và nữ sinh trong lớp của em gái, cũng đến chúc mừng.\n\nBố bưng đến một bát mì trường thọ, mẹ thắp nến. Em gái nhắm mắt, nhỏ giọng ước nguyện. Anh trai đưa cho em một món đồ chơi mà con trai thích, chị gái tặng em một cuốn sách mà con gái thích đọc. Em gái mở quà, vui đến nhảy cẫng lên. Em nói: “Cảm ơn mọi người, cũng cảm ơn bố mẹ.” Mẹ cười nói: “Con trai và con gái của bố đều đã lớn rồi.” Ông nội vuốt râu, cười nói: “Ông đã già rồi, nhưng nhìn thấy các cháu, ông không già một chút nào.”\n\nBuổi tối, em gái ngồi bên giường, ôm con gấu nhỏ mà bạn tặng, từ từ chìm vào giấc ngủ. Ông nội nhẹ nhàng đắp chăn cho em, bà nội ngồi bên cạnh, nhìn em cười. Trong nhà rất yên tĩnh, cũng rất ấm áp. Tôi nghĩ, người nhà ở bên nhau, chính là sinh nhật tuyệt vời nhất."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "爸爸",
+        "pinyin": "bàba",
+        "meaning": "bố",
+        "usageInSentence": "爸爸在厨房做长寿面，妈妈在客厅摆蛋糕。"
+      },
+      {
+        "hanzi": "床",
+        "pinyin": "chuáng",
+        "meaning": "giường",
+        "usageInSentence": "哥哥和姐姐坐在床上，把礼物放在小桌子旁边。"
+      },
+      {
+        "hanzi": "儿子",
+        "pinyin": "érzi",
+        "meaning": "con trai",
+        "usageInSentence": "妈妈笑着说：“爸爸的儿子和女儿都长大了。”"
+      },
+      {
+        "hanzi": "哥哥",
+        "pinyin": "gēge",
+        "meaning": "anh trai",
+        "usageInSentence": "哥哥和姐姐坐在床上，把礼物放在小桌子旁边。"
+      },
+      {
+        "hanzi": "回家",
+        "pinyin": "huí jiā",
+        "meaning": "về nhà",
+        "usageInSentence": "妹妹从学校回家，背着书包，站在门口。"
+      },
+      {
+        "hanzi": "家",
+        "pinyin": "jiā",
+        "meaning": "nhà, gia đình",
+        "usageInSentence": "我们一家在家给她庆祝。"
+      },
+      {
+        "hanzi": "家里",
+        "pinyin": "jiāli",
+        "meaning": "trong nhà, trong gia đình",
+        "usageInSentence": "她看见家里的灯，听见大家唱生日歌，眼睛马上亮了。"
+      },
+      {
+        "hanzi": "家人",
+        "pinyin": "jiārén",
+        "meaning": "người nhà",
+        "usageInSentence": "我想，家人在一起，就是最好的生日。"
+      },
+      {
+        "hanzi": "姐姐",
+        "pinyin": "jiějie",
+        "meaning": "chị gái",
+        "usageInSentence": "哥哥和姐姐坐在床上，把礼物放在小桌子旁边。"
+      },
+      {
+        "hanzi": "老",
+        "pinyin": "lǎo",
+        "meaning": "già",
+        "usageInSentence": "爷爷摸摸胡子，笑着说：“爷爷老了，可是看见你们，我一点也不老。”"
+      },
+      {
+        "hanzi": "妈妈",
+        "pinyin": "māma",
+        "meaning": "mẹ",
+        "usageInSentence": "爸爸在厨房做长寿面，妈妈在客厅摆蛋糕。"
+      },
+      {
+        "hanzi": "妹妹",
+        "pinyin": "mèimei",
+        "meaning": "em gái",
+        "usageInSentence": "今天是妹妹的生日。"
+      },
+      {
+        "hanzi": "奶奶",
+        "pinyin": "nǎinai",
+        "meaning": "bà nội",
+        "usageInSentence": "爷爷和奶奶也来了，他们笑得很开心。"
+      },
+      {
+        "hanzi": "男孩儿",
+        "pinyin": "nánháir",
+        "meaning": "bé trai",
+        "usageInSentence": "哥哥递给她一个男孩儿喜欢的玩具，姐姐送她一本女孩儿爱看的书。"
+      },
+      {
+        "hanzi": "男生",
+        "pinyin": "nánshēng",
+        "meaning": "học sinh nam",
+        "usageInSentence": "门外还有几个小朋友，他们是妹妹班里的男生和女生，也来送祝福。"
+      },
+      {
+        "hanzi": "女孩儿",
+        "pinyin": "nǚháir",
+        "meaning": "bé gái",
+        "usageInSentence": "哥哥递给她一个男孩儿喜欢的玩具，姐姐送她一本女孩儿爱看的书。"
+      },
+      {
+        "hanzi": "女生",
+        "pinyin": "nǚshēng",
+        "meaning": "nữ sinh",
+        "usageInSentence": "门外还有几个小朋友，他们是妹妹班里的男生和女生，也来送祝福。"
+      },
+      {
+        "hanzi": "朋友",
+        "pinyin": "péngyou",
+        "meaning": "bạn bè",
+        "usageInSentence": "晚上，妹妹坐在床边，抱着朋友送的小熊，慢慢睡着了。"
+      },
+      {
+        "hanzi": "生日",
+        "pinyin": "shēngrì",
+        "meaning": "sinh nhật",
+        "usageInSentence": "今天是妹妹的生日。"
+      },
+      {
+        "hanzi": "小朋友",
+        "pinyin": "xiǎopéngyou",
+        "meaning": "trẻ em, bạn nhỏ",
+        "usageInSentence": "门外还有几个小朋友，他们是妹妹班里的男生和女生，也来送祝福。"
+      },
+      {
+        "hanzi": "爷爷",
+        "pinyin": "yéye",
+        "meaning": "ông nội",
+        "usageInSentence": "爷爷和奶奶也来了，他们笑得很开心。"
+      },
+      {
+        "hanzi": "在家",
+        "pinyin": "zàijiā",
+        "meaning": "ở nhà",
+        "usageInSentence": "我们一家在家给她庆祝。"
+      },
+      {
+        "hanzi": "住",
+        "pinyin": "zhù",
+        "meaning": "ở, cư trú",
+        "usageInSentence": "妹妹住在二楼，今天她不想出去，只想和家里人在一起。"
+      },
+      {
+        "hanzi": "女儿",
+        "pinyin": "nǚ'ér",
+        "meaning": "con gái",
+        "usageInSentence": "妈妈笑着说：“爸爸的儿子和女儿都长大了。”"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲什么？(Bài viết chủ yếu kể về điều gì?)",
+        "options": {
+          "A": "妹妹的生日聚会 (Bữa tiệc sinh nhật của em gái)",
+          "B": "爷爷的生日 (Sinh nhật của ông nội)",
+          "C": "妈妈做长寿面 (Mẹ làm mì trường thọ)",
+          "D": "妹妹去学校 (Em gái đi học)"
+        },
+        "answer": "A",
+        "explanation": "Bài mở đầu nói “今天是妹妹的生日”, toàn bộ nội dung xoay quanh việc cả nhà tổ chức sinh nhật cho em gái, mọi người chuẩn bị quà, bánh, mì và chúc mừng em."
+      },
+      {
+        "id": "q2",
+        "question": "谁问“今天真的是我的生日吗？” (Ai hỏi “Hôm nay thật là sinh nhật của em sao?”?)",
+        "options": {
+          "A": "妹妹 (Em gái)",
+          "B": "姐姐 (Chị gái)",
+          "C": "奶奶 (Bà nội)",
+          "D": "妈妈 (Mẹ)"
+        },
+        "answer": "A",
+        "explanation": "Trong đoạn hai, em gái về nhà, “她笑着问” rồi nói câu hỏi, vì vậy người hỏi là em gái."
+      },
+      {
+        "id": "q3",
+        "question": "奶奶说“你是我们家里的小太阳”，这句话是什么意思？ (Bà nội nói “Em là mặt trời nhỏ của gia đình mình”, câu này có ý nghĩa gì?)",
+        "options": {
+          "A": "妹妹很重要，能给家里带来温暖 (Em gái rất quan trọng, có thể mang lại ấm áp cho gia đình)",
+          "B": "妹妹喜欢太阳 (Em gái thích mặt trời)",
+          "C": "妹妹要去外面玩 (Em gái muốn ra ngoài chơi)",
+          "D": "妹妹害怕黑暗 (Em gái sợ bóng tối)"
+        },
+        "answer": "A",
+        "explanation": "Câu nói của bà nội dùng hình ảnh “小太阳” để thể hiện em gái là người quan trọng, mang lại niềm vui và hơi ấm cho gia đình."
+      },
+      {
+        "id": "q4",
+        "question": "爷爷为什么说“我一点也不老”？ (Tại sao ông nội nói “ông không già một chút nào”?)",
+        "options": {
+          "A": "因为他看见家人很开心 (Bởi vì ông thấy gia đình rất vui)",
+          "B": "因为他不喜欢生日 (Bởi vì ông không thích sinh nhật)",
+          "C": "因为他不想睡觉 (Bởi vì ông không muốn ngủ)",
+          "D": "因为他想收礼物 (Bởi vì ông muốn nhận quà)"
+        },
+        "answer": "A",
+        "explanation": "Ông nội nói “爷爷老了，可是看见你们，我一点也不老”, ý nói khi nhìn thấy các cháu và gia đình, ông rất vui nên cảm thấy trẻ lại."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t06_01",
+    "hskLevel": 1,
+    "topicId": 6,
+    "topicName": "Giao tiếp & Tương tác",
+    "subTheme": "Gặp gỡ và trò chuyện cùng bạn mới (和新朋友聊天)",
+    "title": {
+      "hanzi": "和新朋友聊天",
+      "pinyin": "Hé xīn péngyou liáotiān",
+      "meaning": "Trò chuyện cùng bạn mới"
+    },
+    "contextDescription": "Chiều Chủ nhật ở thư viện trường, một bạn học gặp và trò chuyện với bạn mới; hai bạn giúp nhau tìm sách, giới thiệu thư viện và hẹn gặp lại.",
+    "content": {
+      "hanzi": "星期天的下午，我在学校图书馆里看书。我正在准备中文考试，也找一本有名的书。这时候，一个男生走进来，他看见我，笑着问：“你好，请问这儿有人吗？”我抬头看，说：“没有，你可以坐下。”\n\n他坐下后，小声说：“我叫李华，是新来的学生。我想跟你说说话，可以吗？”我说：“行，你慢慢说。”我们正聊着，他的手机响了。他不好意思地说：“对不起，我开会的时候不能接电话。”我说：“没关系，你先接吧。”他打完电话，对我说：“谢谢你，我刚才有点着急。”我说：“不用谢，不客气。”\n\n李华告诉我，他有时候找不到教室，也不知道怎么跟老师说话。他问我：“你能帮忙吗？”我回答：“当然行。我可以给你介绍图书馆，也可以告诉你怎么找书。”他一听就笑了，高兴地说：“太好了！这些对我很有用。”我们一边看书，一边聊天。他看到我的笔记，问：“这是你做的吗？”我说：“是的。如果你愿意，我还可以帮你准备考试。”\n\n时间过得很快，图书馆要关门了。李华站起来，说：“今天见到你，我很开心。再见吧！”我也站起来，说：“再见！明天我们可以在这里见面。”我和李华一起走。他回头说：“你真是我的好朋友。”我心里暖暖的。",
+      "pinyin": "Xīngqītiān de xiàwǔ, wǒ zài xuéxiào túshūguǎn lǐ kàn shū. Wǒ zhèngzài zhǔnbèi Zhōngwén kǎoshì, yě zhǎo yì běn yǒumíng de shū. Zhè shíhou, yí gè nánshēng zǒu jìn lái, tā kànjiàn wǒ, xiàozhe wèn: “Nǐ hǎo, qǐngwèn zhèr yǒu rén ma?” Wǒ táitóu kàn, shuō: “Méiyǒu, nǐ kěyǐ zuòxià.”\n\nTā zuòxià hòu, xiǎoshēng shuō: “Wǒ jiào Lǐ Huá, shì xīn lái de xuésheng. Wǒ xiǎng gēn nǐ shuō shuōhuà, kěyǐ ma?” Wǒ shuō: “Xíng, nǐ mànman shuō.” Wǒmen zhèng liáozhe, tā de shǒujī xiǎng le. Tā bù hǎoyìsi de shuō: “Duìbuqǐ, wǒ kāihuì de shíhou bùnéng jiē diànhuà.” Wǒ shuō: “Méi guānxi, nǐ xiān jiē ba.” Tā dǎ wán diànhuà, duì wǒ shuō: “Xièxie nǐ, wǒ gāngcái yǒudiǎn zháojí.” Wǒ shuō: “Búyòng xiè, bú kèqì.”\n\nLǐ Huá gàosu wǒ, tā yǒushíhou zhǎo bú dào jiàoshì, yě bù zhīdào zěnme gēn lǎoshī shuōhuà. Tā wèn wǒ: “Nǐ néng bāngmáng ma?” Wǒ huídá: “Dāngrán xíng. Wǒ kěyǐ gěi nǐ jièshào túshūguǎn, yě kěyǐ gàosu nǐ zěnme zhǎo shū.” Tā yì tīng jiù xiào le, gāoxìng de shuō: “Tài hǎo le! Zhèxiē duì wǒ hěn yǒuyòng.” Wǒmen yìbiān kàn shū, yìbiān liáo tiān. Tā kàndào wǒ de bǐjì, wèn: “Zhè shì nǐ zuò de ma?” Wǒ shuō: “Shì de. Rúguǒ nǐ yuànyì, wǒ hái kěyǐ bāng nǐ zhǔnbèi kǎoshì.”\n\nShíjiān guò de hěn kuài, túshūguǎn yào guān mén le. Lǐ Huá zhàn qǐlái, shuō: “Jīntiān jiàndào nǐ, wǒ hěn kāixīn. Zàijiàn ba!” Wǒ yě zhàn qǐlái, shuō: “Zàijiàn! Míngtiān wǒmen kěyǐ zài zhèlǐ jiànmiàn.” Wǒ hé Lǐ Huá yìqǐ zǒu. Tā huítóu shuō: “Nǐ zhēn shì wǒ de hǎo péngyou.” Wǒ xīnlǐ nuǎnnuǎn de.",
+      "meaning": "Chiều Chủ nhật, tôi đang xem sách ở thư viện trường. Tôi đang chuẩn bị cho kỳ thi tiếng Trung, cũng đang tìm một cuốn sách nổi tiếng. Lúc này, một bạn nam đi vào, nhìn thấy tôi thì cười hỏi: “Chào bạn, chỗ này có ai ngồi không?” Tôi ngẩng đầu lên nhìn, nói: “Không có, bạn ngồi xuống đi.”\n\nSau khi bạn ấy ngồi xuống, bạn ấy nói nhỏ: “Mình tên là Lý Hoa, là học sinh mới. Mình muốn nói chuyện với bạn một chút, được không?” Tôi nói: “Được, bạn cứ từ từ nói.” Chúng tôi đang trò chuyện thì điện thoại của bạn ấy đổ chuông. Bạn ấy ngại ngùng nói: “Xin lỗi, lúc họp mình không thể nghe điện thoại.” Tôi nói: “Không sao, bạn cứ nghe đi.” Sau khi bạn ấy gọi xong, bạn ấy nói với tôi: “Cảm ơn bạn, lúc nãy mình hơi vội.” Tôi nói: “Không cần cảm ơn, không có gì.”\n\nLý Hoa kể cho tôi nghe rằng có lúc bạn ấy không tìm thấy phòng học, cũng không biết nói chuyện với thầy cô như thế nào. Bạn ấy hỏi tôi: “Bạn có thể giúp mình một tay không?” Tôi trả lời: “Đương nhiên được. Mình có thể giới thiệu thư viện với bạn, cũng có thể nói cho bạn biết cách tìm sách.” Bạn ấy nghe xong liền cười, vui vẻ nói: “Tốt quá! Những điều này đối với mình rất hữu ích.” Chúng tôi vừa xem sách, vừa trò chuyện. Bạn ấy nhìn thấy vở ghi chép của tôi, hỏi: “Đây là bạn làm phải không?” Tôi nói: “Đúng vậy. Nếu bạn muốn, mình còn có thể giúp bạn chuẩn bị thi.”\n\nThời gian trôi qua rất nhanh, thư viện sắp đóng cửa. Lý Hoa đứng dậy, nói: “Hôm nay gặp được bạn, mình rất vui. Tạm biệt nhé!” Tôi cũng đứng dậy, nói: “Tạm biệt! Ngày mai chúng ta có thể gặp nhau ở đây.” Tôi cùng Lý Hoa đi ra. Bạn ấy quay đầu lại nói: “Bạn thật sự là người bạn tốt của mình.” Trong lòng tôi ấm áp."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "吧",
+        "pinyin": "ba",
+        "meaning": "đi, nhé, nhỉ (đứng cuối câu)",
+        "usageInSentence": "再见吧！"
+      },
+      {
+        "hanzi": "帮",
+        "pinyin": "bāng",
+        "meaning": "giúp đỡ",
+        "usageInSentence": "你能帮忙吗？"
+      },
+      {
+        "hanzi": "帮忙",
+        "pinyin": "bāngmáng",
+        "meaning": "giúp đỡ",
+        "usageInSentence": "你能帮忙吗？"
+      },
+      {
+        "hanzi": "不客气",
+        "pinyin": "bú kèqì",
+        "meaning": "không có gì (đáp lại lời cảm ơn)",
+        "usageInSentence": "不用谢，不客气。"
+      },
+      {
+        "hanzi": "不用",
+        "pinyin": "búyòng",
+        "meaning": "không cần",
+        "usageInSentence": "不用谢，不客气。"
+      },
+      {
+        "hanzi": "不",
+        "pinyin": "bù",
+        "meaning": "không",
+        "usageInSentence": "也不知道怎么跟老师说话。"
+      },
+      {
+        "hanzi": "打",
+        "pinyin": "dǎ",
+        "meaning": "gõ, đánh, gọi (điện thoại)",
+        "usageInSentence": "他打完电话，对我说"
+      },
+      {
+        "hanzi": "地",
+        "pinyin": "de",
+        "meaning": "một cách (đứng sau trạng ngữ)",
+        "usageInSentence": "他不好意思地说。"
+      },
+      {
+        "hanzi": "的",
+        "pinyin": "de",
+        "meaning": "của, trợ từ kết cấu",
+        "usageInSentence": "是新来的学生。"
+      },
+      {
+        "hanzi": "对不起",
+        "pinyin": "duìbuqǐ",
+        "meaning": "xin lỗi",
+        "usageInSentence": "对不起，我开会的时候不能接电话。"
+      },
+      {
+        "hanzi": "告诉",
+        "pinyin": "gàosu",
+        "meaning": "kể, bảo, nói cho",
+        "usageInSentence": "李华告诉我"
+      },
+      {
+        "hanzi": "给",
+        "pinyin": "gěi",
+        "meaning": "cho, đưa cho",
+        "usageInSentence": "我可以给你介绍图书馆"
+      },
+      {
+        "hanzi": "跟",
+        "pinyin": "gēn",
+        "meaning": "với, cùng",
+        "usageInSentence": "我想跟你说说话"
+      },
+      {
+        "hanzi": "和",
+        "pinyin": "hé",
+        "meaning": "và, cùng",
+        "usageInSentence": "我和李华一起走。"
+      },
+      {
+        "hanzi": "话",
+        "pinyin": "huà",
+        "meaning": "lời nói, câu nói",
+        "usageInSentence": "我想跟你说说话"
+      },
+      {
+        "hanzi": "还",
+        "pinyin": "hái",
+        "meaning": "còn, lại",
+        "usageInSentence": "我还可以帮你准备考试。"
+      },
+      {
+        "hanzi": "回答",
+        "pinyin": "huídá",
+        "meaning": "trả lời",
+        "usageInSentence": "我回答：“当然行。”"
+      },
+      {
+        "hanzi": "见面",
+        "pinyin": "jiànmiàn",
+        "meaning": "gặp mặt",
+        "usageInSentence": "明天我们可以在这里见面。"
+      },
+      {
+        "hanzi": "叫",
+        "pinyin": "jiào",
+        "meaning": "gọi, tên là",
+        "usageInSentence": "我叫李华"
+      },
+      {
+        "hanzi": "介绍",
+        "pinyin": "jièshào",
+        "meaning": "giới thiệu",
+        "usageInSentence": "我可以给你介绍图书馆"
+      },
+      {
+        "hanzi": "就",
+        "pinyin": "jiù",
+        "meaning": "liền, thì",
+        "usageInSentence": "他一听就笑了"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲什么？(Bài văn chủ yếu nói về điều gì?)",
+        "options": {
+          "A": "我在图书馆认识新朋友 (Tôi quen một người bạn mới ở thư viện)",
+          "B": "我准备中文考试 (Tôi chuẩn bị thi tiếng Trung)",
+          "C": "李华去开会 (Lý Hoa đi họp)",
+          "D": "图书馆关门了 (Thư viện đóng cửa)"
+        },
+        "answer": "A",
+        "explanation": "Bài văn kể về việc tôi gặp Lý Hoa ở thư viện, hai bạn trò chuyện và giúp đỡ nhau. Câu kết thể hiện ý chính: “今天见到你，我很开心。”"
+      },
+      {
+        "id": "q2",
+        "question": "李华为什么说对不起？(Lý Hoa vì sao nói xin lỗi?)",
+        "options": {
+          "A": "他找不到教室 (Bạn ấy không tìm thấy phòng học)",
+          "B": "他开会的时候不能接电话 (Lúc họp bạn ấy không thể nghe điện thoại)",
+          "C": "他不想跟朋友说话 (Bạn ấy không muốn nói chuyện với bạn)",
+          "D": "他打错了电话 (Bạn ấy gọi nhầm điện thoại)"
+        },
+        "answer": "B",
+        "explanation": "Trong bài có câu: “他不好意思地说：‘对不起，我开会的时候不能接电话。’” Vì vậy Lý Hoa nói xin lỗi."
+      },
+      {
+        "id": "q3",
+        "question": "“你能帮忙吗？” 中 “帮忙” 是什么意思？(Trong câu “你能帮忙吗？”, “帮忙” có nghĩa là gì?)",
+        "options": {
+          "A": "帮助 (giúp đỡ)",
+          "B": "道歉 (xin lỗi)",
+          "C": "介绍 (giới thiệu)",
+          "D": "告别 (tạm biệt)"
+        },
+        "answer": "A",
+        "explanation": "Lý Hoa nhờ tôi giúp đỡ việc tìm phòng học và tìm sách. Câu trả lời của tôi là: “当然行。我可以给你介绍图书馆……” cho thấy “帮忙” có nghĩa là giúp đỡ."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t07_01",
+    "hskLevel": 1,
+    "topicId": 7,
+    "topicName": "Giáo dục & Học thuật",
+    "subTheme": "Một ngày học tập thú vị ở trường học (在学校学汉语)",
+    "title": {
+      "hanzi": "在学校学汉语",
+      "pinyin": "Zài xuéxiào xué Hànyǔ",
+      "meaning": "Học tiếng Trung ở trường"
+    },
+    "contextDescription": "Câu chuyện kể về một ngày học tiếng Trung ở trường của một học sinh, từ sáng đến tối, với thầy cô, bạn bè và những hoạt động học tập gần gũi.",
+    "content": {
+      "hanzi": "每天早上，我背着书包去学校上学。我的学校不大，但是很好。教学楼前面有一棵大树，树下有桌子。我的班在二楼，班里有二十多个同学。老师教我们中文，也教我们学习知识。\n\n上课了，王老师打开课本，让我们读课文。她问：“你们喜欢中文吗？”同学们说：“喜欢！”王老师笑了，说：“中文很有意思，汉字也很美。”今天我们要听写汉字，还要考试。我有点怕，因为我的名字很难写。王老师走到我桌子前，教我一笔一笔地写。\n\n下课以后，我和同学去图书馆读书。图书馆很安静，有很多书，也有外语课本。我找到一个本子，把不会写的字写下来。同学小明说：“你写得很好，别急。”我说：“谢谢你，我想学习知识。”放学了，我们去书店买书，书店里有很多中文故事书。\n\n晚上，我在家里读书。哥哥教我中文。妈妈问我：“今天在学校开心吗？”我说：“很开心。老师教我们学汉语，同学也帮我。我知道，学习中文不容易，但是只要好好读、好好写，就会很好。”我打开书包，把课本和本子放好。明天我还要上学，还要考听写。我想做一个好学生。",
+      "pinyin": "Měitiān zǎoshang, wǒ bēizhe shūbāo qù xuéxiào shàngxué. Wǒ de xuéxiào bú dà, dànshì hěn hǎo. Jiàoxuélóu qiánmiàn yǒu yì kē dà shù, shù xià yǒu zhuōzi. Wǒ de bān zài èr lóu, bān lǐ yǒu èrshí duō gè tóngxué. Lǎoshī jiāo wǒmen Zhōngwén, yě jiāo wǒmen xuéxí zhīshi.\n\nShàngkè le, Wáng lǎoshī dǎkāi kèběn, ràng wǒmen dú kèwén. Tā wèn: “Nǐmen xǐhuan Zhōngwén ma?” Tóngxuémen shuō: “Xǐhuan!” Wáng lǎoshī xiào le, shuō: “Zhōngwén hěn yǒu yìsi, Hànzì yě hěn měi.” Jīntiān wǒmen yào tīngxiě Hànzì, hái yào kǎoshì. Wǒ yǒu diǎn pà, yīnwèi wǒ de míngzi hěn nán xiě. Wáng lǎoshī zǒu dào wǒ zhuōzi qián, jiāo wǒ yì bǐ yì bǐ de xiě.\n\nXiàkè yǐhòu, wǒ hé tóngxué qù túshūguǎn dúshū. Túshūguǎn hěn ānjìng, yǒu hěn duō shū, yě yǒu wàiyǔ kèběn. Wǒ zhǎo dào yí gè běnzi, bǎ bú huì xiě de zì xiě xiàlái. Tóngxué Xiǎomíng shuō: “Nǐ xiě de hěn hǎo, bié jí.” Wǒ shuō: “Xièxie nǐ, wǒ xiǎng xuéxí zhīshi.” Fàngxué le, wǒmen qù shūdiàn mǎi shū. Shūdiàn lǐ yǒu hěn duō Zhōngwén gùshi shū.\n\nWǎnshang, wǒ zài jiālǐ dúshū. Gēge jiāo wǒ Zhōngwén. Māma wèn wǒ: “Jīntiān zài xuéxiào kāixīn ma?” Wǒ shuō: “Hěn kāixīn. Lǎoshī jiāo wǒmen xué Hànyǔ, tóngxué yě bāng wǒ. Wǒ zhīdào, xuéxí Zhōngwén bù róngyì, dànshì zhǐyào hǎohǎo dú, hǎohǎo xiě, jiù huì hěn hǎo.” Wǒ dǎkāi shūbāo, bǎ kèběn hé běnzi fàng hǎo. Míngtiān wǒ hái yào shàngxué, hái yào kǎo tīngxiě. Wǒ xiǎng zuò yí gè hǎo xuésheng.",
+      "meaning": "Mỗi sáng, tôi đeo cặp sách đến trường đi học. Trường tôi không lớn, nhưng rất tốt. Phía trước tòa nhà giảng dạy có một cây cổ thụ, dưới cây có bàn. Lớp tôi ở tầng hai, trong lớp có hơn hai mươi bạn học. Cô giáo dạy chúng tôi tiếng Trung, cũng dạy chúng tôi học kiến thức.\n\nVào lớp, cô Vương mở sách giáo khoa, bảo chúng tôi đọc bài khóa. Cô hỏi: “Các em có thích tiếng Trung không?” Các bạn đồng thanh: “Thích ạ!” Cô Vương cười, nói: “Tiếng Trung rất thú vị, chữ Hán cũng rất đẹp.” Hôm nay chúng tôi phải nghe viết chữ Hán, còn phải thi. Tôi hơi sợ, vì tên của tôi rất khó viết. Cô Vương đi đến trước bàn tôi, dạy tôi viết từng nét một.\n\nSau khi tan học, tôi cùng bạn học đến thư viện đọc sách. Thư viện rất yên tĩnh, có nhiều sách, cũng có sách giáo khoa ngoại ngữ. Tôi tìm được một cuốn vở, chép lại những chữ mình chưa biết viết. Bạn Tiểu Minh nói: “Bạn viết rất đẹp, đừng vội.” Tôi nói: “Cảm ơn bạn, mình muốn học thêm kiến thức.” Tan trường, chúng tôi đi hiệu sách mua sách, trong hiệu sách có rất nhiều sách truyện tiếng Trung.\n\nBuổi tối, tôi ở nhà đọc sách. Anh trai dạy tôi tiếng Trung. Mẹ hỏi tôi: “Hôm nay ở trường có vui không?” Tôi nói: “Vui lắm ạ. Cô giáo dạy chúng con học tiếng Trung, bạn bè cũng giúp con. Con biết, học tiếng Trung không dễ, nhưng chỉ cần đọc thật tốt, viết thật tốt, thì sẽ rất tốt.” Tôi mở cặp sách, cất sách giáo khoa và vở cho gọn. Ngày mai tôi còn phải đi học, còn phải kiểm tra nghe viết. Tôi muốn trở thành một học sinh giỏi."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "学校",
+        "pinyin": "xuéxiào",
+        "meaning": "trường học",
+        "usageInSentence": "我的学校不大，但是很好。"
+      },
+      {
+        "hanzi": "书包",
+        "pinyin": "shūbāo",
+        "meaning": "cặp sách",
+        "usageInSentence": "我背着书包去学校上学。"
+      },
+      {
+        "hanzi": "上学",
+        "pinyin": "shàngxué",
+        "meaning": "đi học",
+        "usageInSentence": "我背着书包去学校上学。"
+      },
+      {
+        "hanzi": "教学楼",
+        "pinyin": "jiàoxuélóu",
+        "meaning": "tòa nhà giảng dạy",
+        "usageInSentence": "教学楼前面有一棵大树，树下有桌子。"
+      },
+      {
+        "hanzi": "桌子",
+        "pinyin": "zhuōzi",
+        "meaning": "bàn",
+        "usageInSentence": "教学楼前面有一棵大树，树下有桌子。"
+      },
+      {
+        "hanzi": "班",
+        "pinyin": "bān",
+        "meaning": "lớp học",
+        "usageInSentence": "我的班在二楼，班里有二十多个同学。"
+      },
+      {
+        "hanzi": "同学",
+        "pinyin": "tóngxué",
+        "meaning": "bạn học",
+        "usageInSentence": "班里有二十多个同学。"
+      },
+      {
+        "hanzi": "老师",
+        "pinyin": "lǎoshī",
+        "meaning": "giáo viên",
+        "usageInSentence": "老师教我们中文，也教我们学习知识。"
+      },
+      {
+        "hanzi": "中文",
+        "pinyin": "Zhōngwén",
+        "meaning": "tiếng Trung",
+        "usageInSentence": "老师教我们中文，也教我们学习知识。"
+      },
+      {
+        "hanzi": "学习",
+        "pinyin": "xuéxí",
+        "meaning": "học tập",
+        "usageInSentence": "老师教我们中文，也教我们学习知识。"
+      },
+      {
+        "hanzi": "知识",
+        "pinyin": "zhīshi",
+        "meaning": "kiến thức",
+        "usageInSentence": "老师教我们中文，也教我们学习知识。"
+      },
+      {
+        "hanzi": "上课",
+        "pinyin": "shàngkè",
+        "meaning": "vào lớp, lên lớp",
+        "usageInSentence": "上课了，王老师打开课本，让我们读课文。"
+      },
+      {
+        "hanzi": "课本",
+        "pinyin": "kèběn",
+        "meaning": "sách giáo khoa",
+        "usageInSentence": "王老师打开课本，让我们读课文。"
+      },
+      {
+        "hanzi": "读",
+        "pinyin": "dú",
+        "meaning": "đọc",
+        "usageInSentence": "王老师打开课本，让我们读课文。"
+      },
+      {
+        "hanzi": "课文",
+        "pinyin": "kèwén",
+        "meaning": "bài khóa",
+        "usageInSentence": "王老师打开课本，让我们读课文。"
+      },
+      {
+        "hanzi": "汉语",
+        "pinyin": "Hànyǔ",
+        "meaning": "tiếng Hán",
+        "usageInSentence": "老师教我们学汉语，同学也帮我。"
+      },
+      {
+        "hanzi": "汉字",
+        "pinyin": "Hànzì",
+        "meaning": "chữ Hán",
+        "usageInSentence": "今天我们要听写汉字，还要考试。"
+      },
+      {
+        "hanzi": "听写",
+        "pinyin": "tīngxiě",
+        "meaning": "nghe viết",
+        "usageInSentence": "今天我们要听写汉字，还要考试。"
+      },
+      {
+        "hanzi": "考试",
+        "pinyin": "kǎoshì",
+        "meaning": "kỳ thi",
+        "usageInSentence": "今天我们要听写汉字，还要考试。"
+      },
+      {
+        "hanzi": "名字",
+        "pinyin": "míngzi",
+        "meaning": "tên",
+        "usageInSentence": "我有点怕，因为我的名字很难写。"
+      },
+      {
+        "hanzi": "写",
+        "pinyin": "xiě",
+        "meaning": "viết",
+        "usageInSentence": "我有点怕，因为我的名字很难写。"
+      },
+      {
+        "hanzi": "下课",
+        "pinyin": "xiàkè",
+        "meaning": "tan học",
+        "usageInSentence": "下课以后，我和同学去图书馆读书。"
+      },
+      {
+        "hanzi": "图书馆",
+        "pinyin": "túshūguǎn",
+        "meaning": "thư viện",
+        "usageInSentence": "下课以后，我和同学去图书馆读书。"
+      },
+      {
+        "hanzi": "外语",
+        "pinyin": "wàiyǔ",
+        "meaning": "ngoại ngữ",
+        "usageInSentence": "图书馆很安静，有很多书，也有外语课本。"
+      },
+      {
+        "hanzi": "本子",
+        "pinyin": "běnzi",
+        "meaning": "vở, cuốn vở",
+        "usageInSentence": "我找到一个本子，把不会写的字写下来。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲什么？ (Bài viết này chủ yếu nói về điều gì?)",
+        "options": {
+          "A": "一个学生在学校学习中文的一天 (Một ngày học tiếng Trung ở trường của một học sinh)",
+          "B": "妈妈去书店买书 (Mẹ đi hiệu sách mua sách)",
+          "C": "大学生在图书馆考试 (Sinh viên đại học thi ở thư viện)",
+          "D": "老师在家里教中文 (Giáo viên dạy tiếng Trung ở nhà)"
+        },
+        "answer": "A",
+        "explanation": "Bài đọc kể về một ngày học tiếng Trung của “tôi” ở trường, từ sáng đến tối. Câu mở đầu “每天早上，我背着书包去学校上学。” và câu cuối “晚上，我在家里读书。” cho thấy mạch thời gian của một ngày học tập, trọng tâm là học tiếng Trung ở trường."
+      },
+      {
+        "id": "q2",
+        "question": "王老师为什么走到“我”的桌子前？ (Cô Vương vì sao đi đến trước bàn của “tôi”?)",
+        "options": {
+          "A": "因为“我”的名字很难写 (Vì tên của “tôi” rất khó viết)",
+          "B": "因为“我”喜欢中文 (Vì “tôi” thích tiếng Trung)",
+          "C": "因为“我”要去图书馆 (Vì “tôi” muốn đi thư viện)",
+          "D": "因为“我”买了很多书 (Vì “tôi” mua nhiều sách)"
+        },
+        "answer": "A",
+        "explanation": "Trong bài có câu: “我有点怕，因为我的名字很难写。王老师走到我桌子前，教我一笔一笔地写。” Điều này cho thấy cô Vương đến bên bàn “tôi” để dạy “tôi” viết tên, vì tên của “tôi” khó viết."
+      },
+      {
+        "id": "q3",
+        "question": "“我”觉得学习中文怎么样？ (“Tôi” thấy việc học tiếng Trung thế nào?)",
+        "options": {
+          "A": "很容易，不用写 (Rất dễ, không cần viết)",
+          "B": "不容易，但是好好读、好好写就会很好 (Không dễ, nhưng chỉ cần đọc thật tốt, viết thật tốt thì sẽ rất tốt)",
+          "C": "没有意思，不喜欢 (Không thú vị, không thích)",
+          "D": "只能听，不能写 (Chỉ nghe được, không viết được)"
+        },
+        "answer": "B",
+        "explanation": "Câu nói của “tôi” thể hiện rõ quan điểm: “我知道，学习中文不容易，但是只要好好读、好好写，就会很好。” Vì vậy, “tôi” thấy học tiếng Trung không dễ, nhưng nếu cố gắng đọc và viết thì sẽ học tốt."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t08_01",
+    "hskLevel": 1,
+    "topicId": 8,
+    "topicName": "Tôn giáo & Triết học",
+    "subTheme": "Những bài học nhỏ về cuộc sống (生活的小道理)",
+    "title": {
+      "hanzi": "新年的小道理",
+      "pinyin": "Xīnnián de xiǎo dàolǐ",
+      "meaning": "Bài học nhỏ của năm mới"
+    },
+    "contextDescription": "Sáng năm mới, ông cháu cùng trồng cây; qua lời nói của ông bà, người kể chuyện hiểu rằng sống chậm, nỗ lực và yêu thương gia đình là bài học nhỏ của cuộc sống.",
+    "content": {
+      "hanzi": "今天是新年。新年一到，院子里很热闹。早上，我和爷爷在院子里种一棵小树。爷爷年纪很大，但是他的眼睛很亮。他一边浇水，一边笑着对我说：“新年好。新年种树，一年都有希望。”我点点头，把小树苗轻轻放进土里。风很轻，阳光很好。我想，新年真的很好。\n\n我问爷爷：“为什么新年要种树？”爷爷想了想，说：“树慢慢长大，人也要慢慢变好。不要急，不要怕。”这时，奶奶端来两杯热茶，她说：“喝茶吧。新年第一天，心要安静。”我接过茶，茶很香，心里很暖。奶奶又说：“新年喝茶，心情很好。”\n\n下午，邻居小明来找我。他拿着新年礼物，但是脸上不高兴。他说：“我考试不好，妈妈生气。”爷爷摸摸他的头，说：“新年不是只看分数。看你是不是愿意再努力。明天还可以重新开始。”小明点点头，眼睛红了。他和我们一起给小树挂上红卡片。卡片上写着：“慢慢来，会好的。”\n\n晚上，我们坐在灯下。外面很安静，新年真的来了。爷爷说：“今天的小树明天会长高，今天的孩子明天会懂事。”奶奶笑着说：“只要一家人在一起，每天都是新年。”我小声说：“新年真好。”我觉得，新年不只是热闹，也是一个小道理：慢慢长大，好好做人。这个新年，我记住了爷爷的话。",
+      "pinyin": "Jīntiān shì xīnnián. Xīnnián yí dào, yuànzi lǐ hěn rènao. Zǎoshang, wǒ hé yéye zài yuànzi lǐ zhòng yì kē xiǎo shù. Yéye niánjì hěn dà, dànshì tā de yǎnjing hěn liàng. Tā yìbiān jiāo shuǐ, yìbiān xiàozhe duì wǒ shuō: “Xīnnián hǎo. Xīnnián zhòng shù, yì nián dōu yǒu xīwàng.” Wǒ diǎndiǎn tóu, bǎ xiǎo shùmiáo qīngqīng fàng jìn tǔ lǐ. Fēng hěn qīng, yángguāng hěn hǎo. Wǒ xiǎng, xīnnián zhēnde hěn hǎo.\n\nWǒ wèn yéye: “Wèishénme xīnnián yào zhòng shù?” Yéye xiǎng le xiǎng, shuō: “Shù mànman zhǎng dà, rén yě yào mànman biàn hǎo. Bú yào jí, bú yào pà.” Zhè shí, nǎinai duān lái liǎng bēi rè chá, tā shuō: “Hē chá ba. Xīnnián dì yī tiān, xīn yào ānjìng.” Wǒ jiē guò chá, chá hěn xiāng, xīnli hěn nuǎn. Nǎinai yòu shuō: “Xīnnián hē chá, xīnqíng hěn hǎo.”\n\nXiàwǔ, línjū Xiǎo Míng lái zhǎo wǒ. Tā ná zhe xīnnián lǐwù, dànshì liǎn shang bù gāoxìng. Tā shuō: “Wǒ kǎoshì bù hǎo, māma shēngqì.” Yéye mōmo tā de tóu, shuō: “Xīnnián bú shì zhǐ kàn fēnshù. Kàn nǐ shì bú shì yuànyì zài nǔlì. Míngtiān hái kěyǐ chóngxīn kāishǐ.” Xiǎo Míng diǎndiǎn tóu, yǎnjing hóng le. Tā hé wǒmen yìqǐ gěi xiǎo shù guà shàng hóng kǎpiàn. Kǎpiàn shang xiě zhe: “Mànman lái, huì hǎo de.”\n\nWǎnshang, wǒmen zuò zài dēng xià. Wàimiàn hěn ānjìng, xīnnián zhēnde lái le. Yéye shuō: “Jīntiān de xiǎo shù míngtiān huì zhǎng gāo, jīntiān de háizi míngtiān huì dǒngshì.” Nǎinai xiàozhe shuō: “Zhǐyào yì jiā rén zài yìqǐ, měitiān dōu shì xīnnián.” Wǒ xiǎoshēng shuō: “Xīnnián zhēn hǎo.” Wǒ juéde, xīnnián bù zhǐ shì rènao, yě shì yí gè xiǎo dàolǐ: mànman zhǎng dà, hǎohǎo zuò rén. Zhège xīnnián, wǒ jìzhù le yéye de huà.",
+      "meaning": "Hôm nay là năm mới. Năm mới vừa đến, trong sân rất náo nhiệt. Buổi sáng, tôi cùng ông trồng một cây nhỏ trong sân. Ông đã lớn tuổi, nhưng đôi mắt ông vẫn sáng. Ông vừa tưới nước, vừa cười nói với tôi: “Năm mới tốt lành. Năm mới trồng cây, cả năm đều có hy vọng.” Tôi gật đầu, nhẹ nhàng đặt cây giống nhỏ vào đất. Gió rất nhẹ, ánh nắng rất đẹp. Tôi nghĩ, năm mới thật sự rất tốt.\n\nTôi hỏi ông: “Tại sao năm mới phải trồng cây?” Ông suy nghĩ một lát rồi nói: “Cây lớn lên từ từ, người cũng phải tốt lên từ từ. Đừng vội, đừng sợ.” Lúc này, bà bưng đến hai chén trà nóng, bà nói: “Uống trà đi. Ngày đầu năm mới, lòng cần yên tĩnh.” Tôi nhận lấy trà, trà rất thơm, lòng rất ấm. Bà lại nói: “Năm mới uống trà, tâm trạng rất tốt.”\n\nBuổi chiều, hàng xóm Tiểu Minh đến tìm tôi. Cậu ấy cầm quà năm mới, nhưng trên mặt không vui. Cậu ấy nói: “Tớ thi không tốt, mẹ giận.” Ông xoa đầu cậu ấy, nói: “Năm mới không chỉ nhìn điểm số. Hãy xem con có muốn nỗ lực thêm hay không. Ngày mai vẫn có thể bắt đầu lại.” Tiểu Minh gật đầu, mắt đỏ hoe. Cậu ấy cùng chúng tôi treo lên cây nhỏ những tấm thẻ đỏ. Trên thẻ viết: “Cứ từ từ, rồi sẽ ổn.”\n\nBuổi tối, chúng tôi ngồi dưới ánh đèn. Bên ngoài rất yên tĩnh, năm mới thật sự đã đến. Ông nói: “Cây nhỏ hôm nay ngày mai sẽ cao hơn, đứa trẻ hôm nay ngày mai sẽ hiểu chuyện.” Bà cười nói: “Chỉ cần cả nhà ở bên nhau, mỗi ngày đều là năm mới.” Tôi khẽ nói: “Năm mới thật tốt.” Tôi cảm thấy, năm mới không chỉ là náo nhiệt, mà còn là một bài học nhỏ: lớn lên từ từ, làm người thật tốt. Năm mới này, tôi đã ghi nhớ lời ông."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "今天是新年。"
+      },
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "新年一到，院子里很热闹。"
+      },
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "新年好。"
+      },
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "新年种树，一年都有希望。"
+      },
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "新年真的很好。"
+      },
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "为什么新年要种树？"
+      },
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "新年第一天，心要安静。"
+      },
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "新年喝茶，心情很好。"
+      },
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "他拿着新年礼物，但是脸上不高兴。"
+      },
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "新年不是只看分数。"
+      },
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "新年真的来了。"
+      },
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "每天都是新年。"
+      },
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "新年真好。"
+      },
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "新年不只是热闹，也是一个小道理。"
+      },
+      {
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "năm mới",
+        "usageInSentence": "这个新年，我记住了爷爷的话。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲什么？(Bài đọc này chủ yếu nói về điều gì?)",
+        "options": {
+          "A": "新年种树，慢慢长大，好好做人。(Năm mới trồng cây, lớn lên từ từ, làm người tốt.)",
+          "B": "新年只要考试好，妈妈才高兴。(Năm mới chỉ cần thi tốt thì mẹ mới vui.)",
+          "C": "新年应该去院子里玩。(Năm mới nên ra sân chơi.)",
+          "D": "新年只是喝热茶。(Năm mới chỉ là uống trà nóng.)"
+        },
+        "answer": "A",
+        "explanation": "Bài đọc kết thúc bằng câu “我觉得，新年不只是热闹，也是一个小道理：慢慢长大，好好做人.” nên ý chính là năm mới gắn với bài học lớn lên từ từ và làm người tốt."
+      },
+      {
+        "id": "q2",
+        "question": "小明为什么拿着新年礼物却不高兴？(Vì sao Tiểu Minh cầm quà năm mới mà không vui?)",
+        "options": {
+          "A": "他找不到爷爷。(Cậu ấy không tìm thấy ông.)",
+          "B": "他考试不好，妈妈生气。(Cậu ấy thi không tốt, mẹ giận.)",
+          "C": "他不喜欢喝茶。(Cậu ấy không thích uống trà.)",
+          "D": "他忘了种树。(Cậu ấy quên trồng cây.)"
+        },
+        "answer": "B",
+        "explanation": "Trong bài có câu “他说：“我考试不好，妈妈生气.”” nên lý do Tiểu Minh không vui là cậu ấy thi không tốt và mẹ giận."
+      },
+      {
+        "id": "q3",
+        "question": "爷爷说“新年不是只看分数”想表达什么？(Ông nói “năm mới không chỉ nhìn điểm số” muốn nói điều gì?)",
+        "options": {
+          "A": "分数不重要，也不用学习。(Điểm số không quan trọng, cũng không cần học.)",
+          "B": "只要过年，就可以不努力。(Chỉ cần ăn Tết thì có thể không nỗ lực.)",
+          "C": "要看是否愿意再努力，明天可以重新开始。(Phải xem có muốn nỗ lực thêm không, ngày mai có thể bắt đầu lại.)",
+          "D": "新年礼物比分数更重要。(Quà năm mới quan trọng hơn điểm số.)"
+        },
+        "answer": "C",
+        "explanation": "Ông tiếp tục nói “看你是不是愿意再努力。明天还可以重新开始.” nên câu này nhấn mạnh sự sẵn sàng nỗ lực và có thể bắt đầu lại vào ngày mai."
+      },
+      {
+        "id": "q4",
+        "question": "奶奶说“只要一家人在一起，每天都是新年”是什么意思？(Bà nói “chỉ cần cả nhà ở bên nhau, mỗi ngày đều là năm mới” có nghĩa là gì?)",
+        "options": {
+          "A": "每天都可以种树。(Mỗi ngày đều có thể trồng cây.)",
+          "B": "家人在一起，生活就有新年般的温暖。(Gia đình ở bên nhau thì cuộc sống có sự ấm áp như năm mới.)",
+          "C": "新年必须喝很多茶。(Năm mới phải uống nhiều trà.)",
+          "D": "每天都是考试日。(Mỗi ngày đều là ngày thi.)"
+        },
+        "answer": "B",
+        "explanation": "Câu “只要一家人在一起，每天都是新年.” cho thấy giá trị của năm mới không chỉ ở thời điểm, mà ở tình cảm gia đình và sự yên ấm bên nhau."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t09_01",
+    "hskLevel": 1,
+    "topicId": 9,
+    "topicName": "Địa lý & Cảnh quan",
+    "subTheme": "Dạo chơi thành phố và ngắm cảnh (城市与风景)",
+    "title": {
+      "hanzi": "北京的白天",
+      "pinyin": "Běijīng de báitiān",
+      "meaning": "Một ngày ở Bắc Kinh"
+    },
+    "contextDescription": "Hai bạn trẻ đi dạo ở Bắc Kinh vào ban ngày, ngắm hồ, núi, hỏi đường một cụ ông và cảm nhận vẻ đẹp thành phố.",
+    "content": {
+      "hanzi": "白天，阳光很好。我和朋友在北京玩。北京是中国的首都。我们从酒店的房间出来，手里拿着一张地图。朋友说：“这里真漂亮！那边是山，中间是湖。”我说：“中国的地方很多，这个地方很安静。我们想去一个远一点的地方。”\n\n我们沿着湖边慢慢走。左边是一间小房子，右边是几棵大树。房子前边有花，后边有鸟。旁边还有几个人在拍照。风很轻，水很清。朋友问：“你看，那栋楼上面是什么？”我抬头说：“是白云。楼下有人，楼上有风。”朋友又说：“外边真好看，里边的房间一定也很好。”\n\n我们走进一间咖啡店。门口有一位老人。他笑着说：“你们从国外来吗？”朋友说：“不是，我们从中国南方来。”老人说：“北京北边有山，东边有公园，西边有商场，南边有湖。你们可以去那些地方。”朋友问：“这里离山远吗？”老人说：“不远。从门口出去，往左边走，前边就是山。你们可以回来，也可以回去。”\n\n下午，我们回到酒店。房间里很干净，地上有阳光。窗外有树，门边有花。我想：出去玩不只是看，也是听人说话。明天，我们还想出去走走。这里真美，中国真大。朋友说：“下次，我们一起去外国看看。”我笑着点头。我们都很高兴。",
+      "pinyin": "Báitiān, yángguāng hěn hǎo. Wǒ hé péngyou zài Běijīng wán. Běijīng shì Zhōngguó de shǒudū. Wǒmen cóng jiǔdiàn de fángjiān chūlái, shǒulǐ ná zhe yì zhāng dìtú. Péngyou shuō: “Zhèlǐ zhēn piàoliang! Nàbiān shì shān, zhōngjiān shì hú.” Wǒ shuō: “Zhōngguó de dìfang hěn duō, zhège dìfang hěn ānjìng. Wǒmen xiǎng qù yí gè yuǎn yìdiǎn de dìfang.”\n\nWǒmen yánzhe húbiān mànmàn zǒu. Zuǒbian shì yì jiān xiǎo fángzi, yòubian shì jǐ kē dàshù. Fángzi qiánbian yǒu huā, hòubian yǒu niǎo. Pángbian hái yǒu jǐ gè rén zài pāizhào. Fēng hěn qīng, shuǐ hěn qīng. Péngyou wèn: “Nǐ kàn, nà dòng lóu shàngmiàn shì shénme?” Wǒ táitóu shuō: “Shì báiyún. Lóuxià yǒu rén, lóushàng yǒu fēng.” Péngyou yòu shuō: “Wàibian zhēn hǎokàn, lǐbian de fángjiān yídìng yě hěn hǎo.”\n\nWǒmen zǒu jìn yì jiān kāfēidiàn. Ménkǒu yǒu yí wèi lǎorén. Tā xiào zhe shuō: “Nǐmen cóng guówài lái ma?” Péngyou shuō: “Bú shì, wǒmen cóng Zhōngguó nánfāng lái.” Lǎorén shuō: “Běijīng běibian yǒu shān, dōngbian yǒu gōngyuán, xībian yǒu shāngchǎng, nánbian yǒu hú. Nǐmen kěyǐ qù nàxiē dìfang.” Péngyou wèn: “Zhèlǐ lí shān yuǎn ma?” Lǎorén shuō: “Bù yuǎn. Cóng ménkǒu chūqù, wǎng zuǒbian zǒu, qiánbian jiù shì shān. Nǐmen kěyǐ huílai, yě kěyǐ huíqù.”\n\nXiàwǔ, wǒmen huídào jiǔdiàn. Fángjiān lǐ hěn gānjìng, dìshang yǒu yángguāng. Chuāngwài yǒu shù, ménbiān yǒu huā. Wǒ xiǎng: Chūqù wán bù zhǐ shì kàn, yě shì tīng rén shuōhuà. Míngtiān, wǒmen hái xiǎng chūqù zǒuzou. Zhèlǐ zhēn měi, Zhōngguó zhēn dà. Péngyou shuō: “Xiàcì, wǒmen yìqǐ qù wàiguó kankan.” Wǒ xiào zhe diǎntóu. Wǒmen dōu hěn gāoxìng.",
+      "meaning": "Ban ngày, nắng rất đẹp. Tôi cùng bạn đi chơi ở Bắc Kinh. Bắc Kinh là thủ đô của Trung Quốc. Chúng tôi ra khỏi phòng khách sạn, tay cầm một tấm bản đồ. Bạn tôi nói: “Chỗ này thật đẹp! Phía kia là núi, ở giữa là hồ.” Tôi nói: “Trung Quốc có nhiều nơi, nơi này rất yên tĩnh. Chúng tôi muốn đến một nơi hơi xa hơn.”\n\nChúng tôi dọc theo bờ hồ từ từ bước đi. Bên trái là một căn nhà nhỏ, bên phải là vài cây to. Trước nhà có hoa, sau nhà có chim. Bên cạnh còn có mấy người đang chụp ảnh. Gió rất nhẹ, nước rất trong. Bạn tôi hỏi: “Bạn xem, phía trên tòa nhà kia là gì?” Tôi ngẩng đầu nói: “Là mây trắng. Dưới lầu có người, trên lầu có gió.” Bạn tôi lại nói: “Bên ngoài đẹp quá, căn phòng bên trong chắc cũng rất đẹp.”\n\nChúng tôi bước vào một quán cà phê. Trước cửa có một cụ ông. Cụ cười nói: “Các cháu từ nước ngoài đến à?” Bạn tôi nói: “Không phải, chúng cháu từ phương Nam Trung Quốc đến.” Cụ nói: “Phía bắc Bắc Kinh có núi, phía đông có công viên, phía tây có trung tâm thương mại, phía nam có hồ. Các cháu có thể đến những nơi ấy.” Bạn tôi hỏi: “Nơi này cách núi có xa không?” Cụ nói: “Không xa. Ra khỏi cửa, đi về bên trái, phía trước chính là núi. Các cháu có thể quay lại, cũng có thể quay về.”\n\nBuổi chiều, chúng tôi trở về khách sạn. Trong phòng rất sạch, trên sàn có nắng. Ngoài cửa sổ có cây, bên cửa có hoa. Tôi nghĩ: Đi chơi không chỉ là xem, mà còn là nghe mọi người nói chuyện. Ngày mai, chúng tôi vẫn muốn ra ngoài đi dạo. Nơi này thật đẹp, Trung Quốc thật rộng lớn. Bạn tôi nói: “Lần sau, chúng mình cùng đi nước ngoài xem.” Tôi cười gật đầu. Chúng tôi đều rất vui."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "白天",
+        "pinyin": "báitiān",
+        "meaning": "ban ngày",
+        "usageInSentence": "白天，阳光很好。"
+      },
+      {
+        "hanzi": "北京",
+        "pinyin": "Běijīng",
+        "meaning": "Bắc Kinh",
+        "usageInSentence": "我和朋友在北京玩。"
+      },
+      {
+        "hanzi": "中国",
+        "pinyin": "Zhōngguó",
+        "meaning": "Trung Quốc",
+        "usageInSentence": "北京是中国的首都。"
+      },
+      {
+        "hanzi": "从",
+        "pinyin": "cóng",
+        "meaning": "từ, theo",
+        "usageInSentence": "我们从酒店的房间出来。"
+      },
+      {
+        "hanzi": "地图",
+        "pinyin": "dìtú",
+        "meaning": "bản đồ",
+        "usageInSentence": "手里拿着一张地图。"
+      },
+      {
+        "hanzi": "房间",
+        "pinyin": "fángjiān",
+        "meaning": "căn phòng",
+        "usageInSentence": "我们从酒店的房间出来。"
+      },
+      {
+        "hanzi": "房子",
+        "pinyin": "fángzi",
+        "meaning": "nhà, nhà cửa",
+        "usageInSentence": "左边是一间小房子。"
+      },
+      {
+        "hanzi": "门口",
+        "pinyin": "ménkǒu",
+        "meaning": "cửa, cổng",
+        "usageInSentence": "门口有一位老人。"
+      },
+      {
+        "hanzi": "楼上",
+        "pinyin": "lóushàng",
+        "meaning": "tầng trên, lầu trên",
+        "usageInSentence": "楼上有风。"
+      },
+      {
+        "hanzi": "楼下",
+        "pinyin": "lóuxià",
+        "meaning": "tầng dưới, lầu dưới",
+        "usageInSentence": "楼下有人。"
+      },
+      {
+        "hanzi": "前边",
+        "pinyin": "qiánbian",
+        "meaning": "phía trước",
+        "usageInSentence": "房子前边有花。"
+      },
+      {
+        "hanzi": "后边",
+        "pinyin": "hòubian",
+        "meaning": "phía sau",
+        "usageInSentence": "后边有鸟。"
+      },
+      {
+        "hanzi": "左边",
+        "pinyin": "zuǒbian",
+        "meaning": "bên trái",
+        "usageInSentence": "左边是一间小房子。"
+      },
+      {
+        "hanzi": "右边",
+        "pinyin": "yòubian",
+        "meaning": "bên phải",
+        "usageInSentence": "右边是几棵大树。"
+      },
+      {
+        "hanzi": "中间",
+        "pinyin": "zhōngjiān",
+        "meaning": "ở giữa, trung tâm",
+        "usageInSentence": "中间是湖。"
+      },
+      {
+        "hanzi": "那边",
+        "pinyin": "nàbiān",
+        "meaning": "bên đó",
+        "usageInSentence": "那边是山。"
+      },
+      {
+        "hanzi": "这里",
+        "pinyin": "zhèlǐ",
+        "meaning": "ở đây, chỗ này",
+        "usageInSentence": "这里真漂亮！"
+      },
+      {
+        "hanzi": "那些",
+        "pinyin": "nàxiē",
+        "meaning": "những... ấy",
+        "usageInSentence": "你们可以去那些地方。"
+      },
+      {
+        "hanzi": "地上",
+        "pinyin": "dìshang",
+        "meaning": "mặt đất, dưới đất",
+        "usageInSentence": "地上有阳光。"
+      },
+      {
+        "hanzi": "外边",
+        "pinyin": "wàibian",
+        "meaning": "bên ngoài",
+        "usageInSentence": "外边真好看，里边的房间一定也很好。"
+      },
+      {
+        "hanzi": "里边",
+        "pinyin": "lǐbian",
+        "meaning": "bên trong",
+        "usageInSentence": "外边真好看，里边的房间一定也很好。"
+      },
+      {
+        "hanzi": "旁边",
+        "pinyin": "pángbian",
+        "meaning": "bên cạnh",
+        "usageInSentence": "旁边还有几个人在拍照。"
+      },
+      {
+        "hanzi": "国外",
+        "pinyin": "guówài",
+        "meaning": "nước ngoài",
+        "usageInSentence": "你们从国外来吗？"
+      },
+      {
+        "hanzi": "外国",
+        "pinyin": "wàiguó",
+        "meaning": "nước ngoài",
+        "usageInSentence": "我们一起去外国看看。"
+      },
+      {
+        "hanzi": "远",
+        "pinyin": "yuǎn",
+        "meaning": "xa",
+        "usageInSentence": "我们想去一个远一点的地方。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲了什么？(Bài viết này chủ yếu kể về điều gì?)",
+        "options": {
+          "A": "在北京玩和问路 (Đi chơi và hỏi đường ở Bắc Kinh)",
+          "B": "在外国旅行 (Du lịch ở nước ngoài)",
+          "C": "在房间里学习 (Học bài trong phòng)",
+          "D": "在咖啡店工作 (Làm việc ở quán cà phê)"
+        },
+        "answer": "A",
+        "explanation": "Bài mở đầu nói: “白天，阳光很好。我和朋友在北京玩。” Sau đó hai bạn đi dạo, hỏi đường và ngắm cảnh, nên nội dung chính là đi chơi và hỏi đường ở Bắc Kinh."
+      },
+      {
+        "id": "q2",
+        "question": "老人说从门口出去，往左边走，前边是什么？(Cụ ông nói ra khỏi cửa, đi về bên trái, phía trước là gì?)",
+        "options": {
+          "A": "山 (Núi)",
+          "B": "湖 (Hồ)",
+          "C": "公园 (Công viên)",
+          "D": "商场 (Trung tâm thương mại)"
+        },
+        "answer": "A",
+        "explanation": "Trong bài có câu: “从门口出去，往左边走，前边就是山。” Vì vậy đáp án đúng là “山”."
+      },
+      {
+        "id": "q3",
+        "question": "“这里离山远吗？”这句话是什么意思？(Câu “这里离山远吗?” có nghĩa là gì?)",
+        "options": {
+          "A": "问山是不是很远 (Hỏi núi có xa không)",
+          "B": "问山是不是很高 (Hỏi núi có cao không)",
+          "C": "问山是不是有很多树 (Hỏi núi có nhiều cây không)",
+          "D": "问山是不是有水 (Hỏi núi có nước không)"
+        },
+        "answer": "A",
+        "explanation": "Câu hỏi dùng từ “远”, hỏi khoảng cách. Trong bài có câu: “这里离山远吗？” nghĩa là nơi này cách núi có xa không."
+      },
+      {
+        "id": "q4",
+        "question": "为什么文章最后说“我们都很高兴”？(Vì sao cuối bài nói “我们都很高兴”?)",
+        "options": {
+          "A": "因为他们看到了风景，也听到了故事 (Vì họ đã ngắm cảnh và nghe được câu chuyện)",
+          "B": "因为他们回到了外国 (Vì họ đã trở về nước ngoài)",
+          "C": "因为老人送他们礼物 (Vì cụ ông tặng họ quà)",
+          "D": "因为房间很便宜 (Vì căn phòng rất rẻ)"
+        },
+        "answer": "A",
+        "explanation": "Bài viết kết bằng cảm nghĩ: “出去玩不只是看，也是听人说话。” Hai bạn vừa ngắm cảnh, vừa nghe cụ ông kể về các nơi, nên cuối cùng “我们都很高兴。”"
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t10_01",
+    "hskLevel": 1,
+    "topicId": 10,
+    "topicName": "Khí hậu & Thời tiết",
+    "subTheme": "Thời tiết hôm nay thật đẹp (今天天气真好)",
+    "title": {
+      "hanzi": "今天天气真好",
+      "pinyin": "Jīntiān tiānqì zhēn hǎo",
+      "meaning": "Thời tiết hôm nay thật đẹp"
+    },
+    "contextDescription": "Hai bạn trẻ đi công viên vào buổi sáng, gặp thời tiết thay đổi từ nắng sang mưa rồi tạnh, qua đó cảm nhận tình bạn ấm áp.",
+    "content": {
+      "hanzi": "今天天气真好。早上，太阳出来了，风很小，天气不冷也不热。我和朋友小明去公园。我们看见花儿很红，草很绿，小鸟在树上唱歌。小明说：“今天真舒服，我们慢慢走。”我说：“是啊，真好。”\n\n我们走了一会儿，天上忽然有云。风大了，凉凉的，吹在脸上很舒服。小明说：“要下雨了吗？”我说：“可能吧。我们带伞了吗？”小明摇头。我们不想马上回家，因为公园很美。可是，雨点落下来了。雨不大，但很急。我们跑到一棵大树下面。\n\n大树下面很安静。小明有点冷，他抱着手臂，轻轻跺脚。我把外套给他。他说：“谢谢你，我暖和多了。”我看着雨，觉得天气真奇怪：刚才还热，现在就冷。风一吹，树叶就斜了，很好看。小明笑着说：“虽然下雨，但我们一起躲雨，也挺有意思。”\n\n过了一会儿，雨停了。太阳又出来，空气很新鲜。地上有水，树叶更绿了。小明说：“今天天气真会变，一会儿晴，一会儿暗，一会儿又晴。”我说：“是啊，不过有风、有水，也有阳光，这一天才快乐。”我们慢慢回家，路上还看见小鸟。小明说：“下次还一起出来吧。”我说：“好。”我们心里很温暖。我觉得，时间会走，天气会变，但朋友在身边，冷和热都不怕。",
+      "pinyin": "Jīntiān tiānqì zhēn hǎo. Zǎoshang, tàiyáng chūlái le, fēng hěn xiǎo, tiānqì bù lěng yě bù rè. Wǒ hé péngyǒu Xiǎomíng qù gōngyuán. Wǒmen kànjiàn huā er hěn hóng, cǎo hěn lǜ, xiǎoniǎo zài shùshàng chànggē. Xiǎomíng shuō: “Jīntiān zhēn shūfu, wǒmen mànman zǒu.” Wǒ shuō: “Shì a, zhēn hǎo.”\n\nWǒmen zǒu le yīhuìr, tiānshang hūrán yǒu yún. Fēng dà le, liángliáng de, chuī zài liǎnshàng hěn shūfu. Xiǎomíng shuō: “Yào xiàyǔ le ma?” Wǒ shuō: “Kěnéng ba. Wǒmen dài sǎn le ma?” Xiǎomíng yáotóu. Wǒmen bùxiǎng mǎshàng huíjiā, yīnwèi gōngyuán hěn měi. Kěshì, yǔdiǎn luòxiàlái le. Yǔ bù dà, dàn hěn jí. Wǒmen pǎo dào yī kē dàshù xiàmiàn.\n\nDàshù xiàmiàn hěn ānjìng. Xiǎomíng yǒudiǎn lěng, tā bào zhe shǒubì, qīngqīng duò jiǎo. Wǒ bǎ wàitào gěi tā. Tā shuō: “Xièxie nǐ, wǒ nuǎnhuo duō le.” Wǒ kàn zhe yǔ, juéde tiānqì zhēn qíguài: gāngcái hái rè, xiànzài jiù lěng. Fēng yī chuī, shùyè jiù xié le, hěn hǎokàn. Xiǎomíng xiào zhe shuō: “Suīrán xiàyǔ, dàn wǒmen yìqǐ duǒyǔ, yě tǐng yǒu yìsi.”\n\nGuò le yīhuìr, yǔ tíng le. Tàiyáng yòu chūlái, kōngqì hěn xīnxiān. Dìshàng yǒu shuǐ, shùyè gèng lǜ le. Xiǎomíng shuō: “Jīntiān tiānqì zhēn huì biàn, yīhuìr qíng, yīhuìr àn, yīhuìr yòu qíng.” Wǒ shuō: “Shì a, bùguò yǒu fēng, yǒu shuǐ, yě yǒu yángguāng, zhè yītiān cái kuàilè.” Wǒmen mànman huíjiā, lùshàng hái kànjiàn xiǎoniǎo. Xiǎomíng shuō: “Xiàcì hái yìqǐ chūlái ba.” Wǒ shuō: “Hǎo.” Wǒmen xīnlǐ hěn wēnnuǎn. Wǒ juéde, shíjiān huì zǒu, tiānqì huì biàn, dàn péngyǒu zài shēnbiān, lěng hé rè dōu bú pà.",
+      "meaning": "Hôm nay thời tiết thật đẹp. Buổi sáng, mặt trời đã lên, gió rất nhỏ, thời tiết không lạnh cũng không nóng. Tôi cùng bạn Tiểu Minh đi công viên. Chúng tôi nhìn thấy hoa rất đỏ, cỏ rất xanh, chim nhỏ hót trên cây. Tiểu Minh nói: “Hôm nay thật dễ chịu, chúng ta cứ từ từ đi.” Tôi nói: “Đúng vậy, thật đẹp quá.”\n\nChúng tôi đi được một lúc thì trên trời bỗng có mây. Gió lớn hơn, mát mát, thổi trên mặt rất dễ chịu. Tiểu Minh nói: “Sắp mưa rồi à?” Tôi nói: “Có lẽ vậy. Chúng ta mang ô chưa?” Tiểu Minh lắc đầu. Chúng tôi không muốn về nhà ngay, vì công viên rất đẹp. Nhưng rồi những giọt mưa rơi xuống. Mưa không to, nhưng rất gấp. Chúng tôi chạy đến dưới một cây lớn.\n\nDưới cây lớn rất yên tĩnh. Tiểu Minh hơi lạnh, cậu ấy ôm cánh tay, khẽ giậm chân. Tôi đưa áo khoác cho cậu ấy. Cậu ấy nói: “Cảm ơn bạn, mình ấm hơn nhiều rồi.” Tôi nhìn mưa, thấy thời tiết thật kỳ lạ: vừa nãy còn nóng, bây giờ đã lạnh. Gió thổi một cái, lá cây liền nghiêng, trông rất đẹp. Tiểu Minh cười nói: “Tuy là trời mưa, nhưng chúng ta cùng tránh mưa, cũng khá thú vị.”\n\nMột lát sau, mưa tạnh. Mặt trời lại lên, không khí rất trong lành. Trên mặt đất có nước, lá cây càng xanh hơn. Tiểu Minh nói: “Thời tiết hôm nay thật biết đổi, một lúc thì nắng, một lúc thì tối, một lúc lại nắng.” Tôi nói: “Đúng vậy, nhưng có gió, có nước, cũng có ánh nắng, ngày hôm nay mới vui.” Chúng tôi từ từ về nhà, trên đường còn nhìn thấy chim nhỏ. Tiểu Minh nói: “Lần sau lại cùng ra ngoài nhé.” Tôi nói: “Được.” Chúng tôi trong lòng rất ấm áp. Tôi cảm thấy, thời gian sẽ trôi, thời tiết sẽ đổi, nhưng bạn bè ở bên cạnh, lạnh hay nóng đều không sợ."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "风",
+        "pinyin": "fēng",
+        "meaning": "gió",
+        "usageInSentence": "风很小。"
+      },
+      {
+        "hanzi": "冷",
+        "pinyin": "lěng",
+        "meaning": "lạnh",
+        "usageInSentence": "天气不冷也不热。"
+      },
+      {
+        "hanzi": "热",
+        "pinyin": "rè",
+        "meaning": "nóng",
+        "usageInSentence": "刚才还热，现在就冷。"
+      },
+      {
+        "hanzi": "天气",
+        "pinyin": "tiānqì",
+        "meaning": "thời tiết",
+        "usageInSentence": "今天天气真好。"
+      },
+      {
+        "hanzi": "下雨",
+        "pinyin": "xiàyǔ",
+        "meaning": "mưa",
+        "usageInSentence": "要下雨了吗？"
+      },
+      {
+        "hanzi": "雨",
+        "pinyin": "yǔ",
+        "meaning": "mưa",
+        "usageInSentence": "雨点落下来了。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲什么？ (Bài viết này chủ yếu nói về điều gì?)",
+        "options": {
+          "A": "天气变化和朋友的陪伴 (Sự thay đổi của thời tiết và sự đồng hành của bạn bè)",
+          "B": "如何买雨伞 (Cách mua ô)",
+          "C": "公园里的花儿 (Hoa trong công viên)",
+          "D": "学习中文的方法 (Phương pháp học tiếng Trung)"
+        },
+        "answer": "A",
+        "explanation": "Bài viết kể về một buổi đi công viên, thời tiết thay đổi từ nắng sang mưa rồi tạnh, và kết thúc bằng cảm nghĩ về tình bạn. Câu chốt là “我觉得，时间会走，天气会变，但朋友在身边，冷和热都不怕。” cho thấy nội dung chính là thời tiết thay đổi và sự đồng hành của bạn bè."
+      },
+      {
+        "id": "q2",
+        "question": "他们为什么跑到大树下面？ (Tại sao họ chạy đến dưới cây lớn?)",
+        "options": {
+          "A": "因为雨点落下来了 (Vì những giọt mưa đã rơi xuống)",
+          "B": "因为他们想唱歌 (Vì họ muốn hát)",
+          "C": "因为他们饿了 (Vì họ đói)",
+          "D": "因为小明要回家 (Vì Tiểu Minh muốn về nhà)"
+        },
+        "answer": "A",
+        "explanation": "Trong bài có câu “可是，雨点落下来了。雨不大，但很急。我们跑到一棵大树下面。” cho thấy họ chạy đến dưới cây lớn vì mưa rơi xuống và mưa rất gấp."
+      },
+      {
+        "id": "q3",
+        "question": "作者为什么说“天气真奇怪”？ (Tại sao tác giả nói “thời tiết thật kỳ lạ”? )",
+        "options": {
+          "A": "因为刚才还热，现在就冷 (Vì vừa nãy còn nóng, bây giờ đã lạnh)",
+          "B": "因为小明丢了外套 (Vì Tiểu Minh làm mất áo khoác)",
+          "C": "因为公园没有树 (Vì công viên không có cây)",
+          "D": "因为他们不想说话 (Vì họ không muốn nói chuyện)"
+        },
+        "answer": "A",
+        "explanation": "Tác giả nói thời tiết kỳ lạ vì sự thay đổi nhanh từ nóng sang lạnh. Câu trong bài là “我看着雨，觉得天气真奇怪：刚才还热，现在就冷。”"
+      },
+      {
+        "id": "q4",
+        "question": "从“谢谢你，我暖和多了”可以看出什么？ (Từ câu “Cảm ơn bạn, mình ấm hơn nhiều rồi” có thể thấy điều gì?)",
+        "options": {
+          "A": "小明感到温暖，并感谢朋友 (Tiểu Minh cảm thấy ấm áp và cảm ơn bạn)",
+          "B": "小明很生气 (Tiểu Minh rất tức giận)",
+          "C": "小明不喜欢外套 (Tiểu Minh không thích áo khoác)",
+          "D": "小明觉得很热 (Tiểu Minh cảm thấy rất nóng)"
+        },
+        "answer": "A",
+        "explanation": "Trước đó, “我把外套给他。” rồi Tiểu Minh nói “谢谢你，我暖和多了。” cho thấy cậu ấy nhận áo, cảm thấy ấm hơn và đang cảm ơn bạn."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t11_01",
+    "hskLevel": 1,
+    "topicId": 11,
+    "topicName": "Hệ sinh thái Động - Thực vật",
+    "subTheme": "Những con vật nhỏ đáng yêu quanh ta (可爱的小动物)",
+    "title": {
+      "hanzi": "可爱的小动物",
+      "pinyin": "Kě'ài de xiǎo dòngwù",
+      "meaning": "Những con vật nhỏ đáng yêu"
+    },
+    "contextDescription": "Một buổi sáng trong sân, bạn nhỏ chứng kiến cuộc trò chuyện giữa mèo con và chim nhỏ quanh cây và hoa, rồi học cách yêu thương các sinh vật nhỏ.",
+    "content": {
+      "hanzi": "春天来了，院子里的树长出了新叶，花也开了。早晨，阳光很轻，风吹过草地，发出好听的声音。我坐在树下，看一只花猫在树影里走来走去。它的名字叫花花，眼睛亮亮的，尾巴高高的。空气里有草香，泥土软软的，像给大地盖了一层薄被。\n\n小鸟飞到树上，对小猫说：“你为什么要追我？花丛里有蝴蝶，你可以去看花。”我屏住呼吸，眼睛跟着它移动。它不害怕，因为知道我没有恶意。小猫抬头，小声说：“我不是想伤害你，我只是想和你玩。树下有果子，我们可以一起吃。”小猫停了一下，耳朵动了动。\n\n我笑着对它们说：“树是鸟的家，花是蝴蝶的家，花花也是我们的朋友。”小鸟轻轻点头，花花慢慢坐下。它们一起看花，一起听风声，院子里很安静。风又吹过来，草轻轻摇，阳光落在我的手上，很温柔。我拿出一个小本子，画下它们的样子。小鸟看看我，好像也笑了。\n\n太阳升高了，花花回到树下，小鸟飞回枝头。我摸摸花花的头，心里暖暖的。回家以后，我把这件事告诉妈妈。妈妈摸摸我的头，说我是有爱心的孩子。这一天，我没有大声说话，也没有乱跑。我只想安静地陪它们一会儿。原来，小小的动物、花和树，都能让春天变得这么可爱。",
+      "pinyin": "Chūntiān lái le, yuànzi lǐ de shù zhǎng chū le xīn yè, huā yě kāi le. Zǎochén, yángguāng hěn qīng, fēng chuī guò cǎodì, fāchū hǎotīng de shēngyīn. Wǒ zuò zài shùxià, kàn yì zhī huā māo zài shùyǐng lǐ zǒu lái zǒu qù. Tā de míngzi jiào Huāhuā, yǎnjing liàng liàng de, wěiba gāo gāo de. Kōngqì lǐ yǒu cǎoxiāng, nítǔ ruǎn ruǎn de, xiàng gěi dàdì gài le yì céng báo bèi.\n\nXiǎoniǎo fēi dào shùshàng, duì xiǎo māo shuō: “Nǐ wèi shénme yào zhuī wǒ? Huācóng lǐ yǒu húdié, nǐ kěyǐ qù kàn huā.” Wǒ bǐng zhù hūxī, yǎnjing gēn zhe tā yídòng. Tā bú hàipà, yīnwèi zhīdào wǒ méiyǒu èyì. Xiǎo māo táitóu, xiǎoshēng shuō: “Wǒ búshì xiǎng shānghài nǐ, wǒ zhǐshì xiǎng hé nǐ wán. Shùxià yǒu guǒzi, wǒmen kěyǐ yìqǐ chī.” Xiǎo māo tíng le yíxià, ěrduo dòng le dòng.\n\nWǒ xiàozhe duì tāmen shuō: “Shù shì niǎo de jiā, huā shì húdié de jiā, Huāhuā yě shì wǒmen de péngyou.” Xiǎoniǎo qīngqīng diǎntóu, Huāhuā mànman zuòxià. Tāmen yìqǐ kàn huā, yìqǐ tīng fēngshēng, yuànzi lǐ hěn ānjìng. Fēng yòu chuī guòlái, cǎo qīngqīng yáo, yángguāng luò zài wǒ de shǒushàng, hěn wēnróu. Wǒ ná chū yí gè xiǎo běnzi, huà xià tāmen de yàngzi. Xiǎoniǎo kànkan wǒ, hǎoxiàng yě xiào le.\n\nTàiyáng shēng gāo le, Huāhuā huí dào shùxià, xiǎoniǎo fēi huí zhītóu. Wǒ mō mō Huāhuā de tóu, xīnli nuǎn nuǎn de. Huíjiā yǐhòu, wǒ bǎ zhè jiàn shì gàosù māma. Māma mō mō wǒ de tóu, shuō wǒ shì yǒu àixīn de háizi. Zhè yìtiān, wǒ méiyǒu dàshēng shuōhuà, yě méiyǒu luàn pǎo. Wǒ zhǐ xiǎng ānjìng de péi tāmen yíhuìr. Yuánlái, xiǎoxiǎo de dòngwù, huā hé shù, dōu néng ràng chūntiān biàn de zhème kě'ài.",
+      "meaning": "Mùa xuân đến rồi, cây trong sân đâm chồi non, hoa cũng nở. Buổi sáng, ánh nắng nhẹ nhàng, gió thổi qua bãi cỏ, phát ra âm thanh dễ nghe. Tôi ngồi dưới cây, nhìn một chú mèo hoa đi lại trong bóng cây. Nó tên là Hoa Hoa, mắt sáng long lanh, đuôi cao cao. Trong không khí có mùi cỏ, đất mềm mại, như đắp cho mặt đất một lớp chăn mỏng.\n\nChim nhỏ bay lên cây, nói với mèo con: “Sao cậu lại đuổi theo tôi? Trong bụi hoa có bướm, cậu có thể đi xem hoa.” Tôi nín thở, mắt dõi theo nó. Nó không sợ, vì biết tôi không có ác ý. Mèo con ngẩng đầu, nói nhỏ: “Tôi không muốn làm hại bạn, tôi chỉ muốn chơi cùng bạn. Dưới cây có quả, chúng ta có thể cùng ăn.” Mèo con dừng lại một lúc, tai động đậy.\n\nTôi cười nói với chúng: “Cây là nhà của chim, hoa là nhà của bướm, Hoa Hoa cũng là bạn của chúng ta.” Chim nhỏ khẽ gật đầu, Hoa Hoa chậm rãi ngồi xuống. Chúng cùng xem hoa, cùng nghe tiếng gió, trong sân rất yên tĩnh. Gió lại thổi qua, cỏ khẽ lay, ánh nắng rơi trên tay tôi, thật dịu dàng. Tôi lấy ra một cuốn sổ nhỏ, vẽ lại hình dáng của chúng. Chim nhỏ nhìn tôi, dường như cũng mỉm cười.\n\nMặt trời lên cao, Hoa Hoa quay về dưới cây, chim nhỏ bay về đầu cành. Tôi vuốt đầu Hoa Hoa, lòng ấm áp. Về nhà sau đó, tôi kể chuyện này cho mẹ. Mẹ vuốt đầu tôi, nói tôi là đứa trẻ có lòng yêu thương. Ngày hôm ấy, tôi không nói to, cũng không chạy lung tung. Tôi chỉ muốn yên tĩnh ở bên chúng một lát. Hóa ra, những con vật nhỏ, hoa và cây đều có thể khiến mùa xuân trở nên đáng yêu như vậy."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "树",
+        "pinyin": "shù",
+        "meaning": "cây",
+        "usageInSentence": "院子里的树长出了新叶"
+      },
+      {
+        "hanzi": "花",
+        "pinyin": "huā",
+        "meaning": "hoa",
+        "usageInSentence": "花也开了"
+      },
+      {
+        "hanzi": "树",
+        "pinyin": "shù",
+        "meaning": "cây",
+        "usageInSentence": "我坐在树下"
+      },
+      {
+        "hanzi": "花",
+        "pinyin": "huā",
+        "meaning": "hoa",
+        "usageInSentence": "看一只花猫"
+      },
+      {
+        "hanzi": "树",
+        "pinyin": "shù",
+        "meaning": "cây",
+        "usageInSentence": "在树影里走来走去"
+      },
+      {
+        "hanzi": "花",
+        "pinyin": "huā",
+        "meaning": "hoa",
+        "usageInSentence": "它的名字叫花花"
+      },
+      {
+        "hanzi": "树",
+        "pinyin": "shù",
+        "meaning": "cây",
+        "usageInSentence": "小鸟飞到树上"
+      },
+      {
+        "hanzi": "花",
+        "pinyin": "huā",
+        "meaning": "hoa",
+        "usageInSentence": "花丛里有蝴蝶"
+      },
+      {
+        "hanzi": "花",
+        "pinyin": "huā",
+        "meaning": "hoa",
+        "usageInSentence": "你可以去看花"
+      },
+      {
+        "hanzi": "树",
+        "pinyin": "shù",
+        "meaning": "cây",
+        "usageInSentence": "树下有果子"
+      },
+      {
+        "hanzi": "树",
+        "pinyin": "shù",
+        "meaning": "cây",
+        "usageInSentence": "树是鸟的家"
+      },
+      {
+        "hanzi": "花",
+        "pinyin": "huā",
+        "meaning": "hoa",
+        "usageInSentence": "花是蝴蝶的家"
+      },
+      {
+        "hanzi": "花",
+        "pinyin": "huā",
+        "meaning": "hoa",
+        "usageInSentence": "花花也是我们的朋友"
+      },
+      {
+        "hanzi": "花",
+        "pinyin": "huā",
+        "meaning": "hoa",
+        "usageInSentence": "它们一起看花"
+      },
+      {
+        "hanzi": "花",
+        "pinyin": "huā",
+        "meaning": "hoa",
+        "usageInSentence": "花和树"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲了什么？(Bài văn này chủ yếu kể về điều gì?)",
+        "options": {
+          "A": "春天来了，我去上学。(Mùa xuân đến, tôi đi học.)",
+          "B": "我在院子里看小猫和小鸟，心里很温暖。(Tôi ở trong sân nhìn mèo con và chim nhỏ, lòng rất ấm áp.)",
+          "C": "小猫伤害了小鸟。(Mèo con làm hại chim nhỏ.)",
+          "D": "妈妈带我去买花。(Mẹ dẫn tôi đi mua hoa.)"
+        },
+        "answer": "B",
+        "explanation": "Bài đọc kể buổi sáng trong sân, bạn nhỏ nhìn mèo con và chim nhỏ nói chuyện với nhau, rồi vẽ chúng và kể cho mẹ. Câu kết nói những con vật nhỏ, hoa và cây đều làm mùa xuân đáng yêu, nên nội dung chính là tình cảm ấm áp với các sinh vật quanh ta."
+      },
+      {
+        "id": "q2",
+        "question": "小鸟为什么不害怕？(Vì sao chim nhỏ không sợ?)",
+        "options": {
+          "A": "因为它知道我没有恶意。(Vì nó biết tôi không có ác ý.)",
+          "B": "因为花丛里有蝴蝶。(Vì trong bụi hoa có bướm.)",
+          "C": "因为小猫停了一下。(Vì mèo con dừng lại một lúc.)",
+          "D": "因为太阳升高了。(Vì mặt trời lên cao.)"
+        },
+        "answer": "A",
+        "explanation": "Bài có câu cho biết chim nhỏ không sợ vì nó biết bạn nhỏ không có ác ý."
+      },
+      {
+        "id": "q3",
+        "question": "“花花”在文中指的是什么？(“Hoa Hoa” trong bài chỉ điều gì?)",
+        "options": {
+          "A": "鸟的名字。(Tên của chim.)",
+          "B": "猫的名字。(Tên của mèo.)",
+          "C": "花的名字。(Tên của hoa.)",
+          "D": "树的名字。(Tên của cây.)"
+        },
+        "answer": "B",
+        "explanation": "Trước đó bài giới thiệu một chú mèo hoa, rồi nói tên của nó là Hoa Hoa, vì vậy Hoa Hoa chỉ mèo con."
+      },
+      {
+        "id": "q4",
+        "question": "为什么“我”没有大声说话，也没有乱跑？(Vì sao “tôi” không nói to, cũng không chạy lung tung?)",
+        "options": {
+          "A": "因为妈妈不让。(Vì mẹ không cho.)",
+          "B": "因为想安静地陪它们一会儿。(Vì muốn yên tĩnh ở bên chúng một lát.)",
+          "C": "因为怕小猫。(Vì sợ mèo con.)",
+          "D": "因为想追蝴蝶。(Vì muốn đuổi bướm.)"
+        },
+        "answer": "B",
+        "explanation": "Bài có câu cho biết bạn nhỏ không nói to và không chạy lung tung vì muốn yên tĩnh ở bên chúng một lát."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t13_01",
+    "hskLevel": 1,
+    "topicId": 13,
+    "topicName": "Thương mại & Tài chính",
+    "subTheme": "Đi cửa hàng mua sắm đồ dùng (去商店买东西)",
+    "title": {
+      "hanzi": "买礼物",
+      "pinyin": "Mǎi lǐwù",
+      "meaning": "Mua quà"
+    },
+    "contextDescription": "Một buổi sáng Chủ nhật, em nhỏ cùng mẹ đi trung tâm thương mại mua quà tặng bà. Qua việc chọn ví và trả tiền, em học được cách yêu thương và chia sẻ.",
+    "content": {
+      "hanzi": "星期日上午，阳光很好。我和妈妈去商场买东西。商场里人很多，商店很干净。我想给奶奶买一个小礼物。她的旧东西坏了，我想让她高兴。妈妈笑着说：“你真懂事。”\n\n我们走进一家商店。柜台上有红钱包和蓝钱包。我问：“这个多少钱？”店员阿姨说：“这个六十元。”我又问：“那个呢？”她说：“那个五十元，但是小一点。”我看了看，它很漂亮，可是有点贵。\n\n我打开自己的小钱包，数了数钱。我有五十元，还有十毛，一共五十一元。它还差一点。我有点难过。妈妈看见了，轻轻拿出钱，帮我付了。店员阿姨笑着说：“小朋友，你真爱奶奶。”我点点头，说：“这是送给奶奶的。”\n\n走出商场，风吹得很舒服。我抱着新钱包，心里很高兴。我想，奶奶收到它，一定会笑。买一个小小的礼物，让我学会了爱。妈妈摸摸我的头，说：“今天你长大了。”我听了，觉得比吃糖还甜。回家的路上，我们看见一只小猫。它很可爱，可是没有家。我轻轻摸了摸它，心里暖暖的。太阳很红，小鸟在唱歌，我们慢慢走，心情真的很好。以后我要多买有用的东西，把快乐送给家人。",
+      "pinyin": "Xīngqīrì shàngwǔ, yángguāng hěn hǎo. Wǒ hé māma qù shāngchǎng mǎi dōngxi. Shāngchǎng lǐ rén hěn duō, shāngdiàn hěn gānjìng. Wǒ xiǎng gěi nǎinai mǎi yí gè xiǎo lǐwù. Tā de jiù dōngxi huài le, wǒ xiǎng ràng tā gāoxìng. Māma xiàozhe shuō: “Nǐ zhēn dǒngshì.”\n\nWǒmen zǒujìn yì jiā shāngdiàn. Guìtái shàng yǒu hóng qiánbāo hé lán qiánbāo. Wǒ wèn: “Zhège duōshao qián?” Diànyuán āyí shuō: “Zhège liùshí yuán.” Wǒ yòu wèn: “Nàge ne?” Tā shuō: “Nàge wǔshí yuán, dànshì xiǎo yìdiǎn.” Wǒ kànlekan, tā hěn piàoliang, kěshì yǒudiǎn guì.\n\nWǒ dǎkāi zìjǐ de xiǎo qiánbāo, shǔle shǔ qián. Wǒ yǒu wǔshí yuán, hái yǒu shí máo, yígòng wǔshíyī yuán. Tā hái chà yìdiǎn. Wǒ yǒudiǎn nánguò. Māma kànjiàn le, qīngqīng ná chū qián, bāng wǒ fù le. Diànyuán āyí xiàozhe shuō: “Xiǎo péngyǒu, nǐ zhēn ài nǎinai.” Wǒ diǎndiǎn tóu, shuō: “Zhè shì sòng gěi nǎinai de.”\n\nZǒuchū shāngchǎng, fēng chuī de hěn shūfu. Wǒ bào zhe xīn qiánbāo, xīnlǐ hěn gāoxìng. Wǒ xiǎng, nǎinai shōudào tā, yídìng huì xiào. Mǎi yí gè xiǎoxiǎo de lǐwù, ràng wǒ xuéhuì le ài. Māma mōmo wǒ de tóu, shuō: “Jīntiān nǐ zhǎngdà le.” Wǒ tīng le, juéde bǐ chī táng hái tián. Huíjiā de lùshang, wǒmen kànjiàn yì zhī xiǎo māo. Tā hěn kě'ài, kěshì méiyǒu jiā. Wǒ qīngqīng mōle mō tā, xīnlǐ nuǎnnuǎn de. Tàiyáng hěn hóng, xiǎoniǎo zài chànggē, wǒmen mànmàn zǒu, xīnqíng zhēn de hěn hǎo. Yǐhòu wǒ yào duō mǎi yǒuyòng de dōngxi, bǎ kuàilè sòng gěi jiārén.",
+      "meaning": "Sáng Chủ nhật, nắng rất đẹp. Tôi cùng mẹ đi trung tâm thương mại mua sắm. Trong trung tâm thương mại có rất nhiều người, cửa hàng sạch sẽ. Tôi muốn mua cho bà một món quà nhỏ. Đồ cũ của bà đã hỏng, tôi muốn bà vui. Mẹ cười nói: 'Con thật hiểu chuyện.'\n\nChúng tôi bước vào một cửa hàng. Trên quầy có ví đỏ và ví xanh. Tôi hỏi: 'Cái này bao nhiêu tiền?' Cô nhân viên nói: 'Cái này sáu mươi đồng.' Tôi lại hỏi: 'Cái kia thì sao?' Cô nói: 'Cái kia năm mươi đồng, nhưng nhỏ hơn một chút.' Tôi xem xét, nó rất đẹp, nhưng hơi đắt.\n\nTôi mở chiếc ví nhỏ của mình, đếm tiền. Tôi có năm mươi đồng, còn có mười hào, tổng cộng năm mươi mốt đồng. Nó vẫn còn thiếu một chút. Tôi hơi buồn. Mẹ nhìn thấy, nhẹ nhàng lấy tiền ra, trả giúp tôi. Cô nhân viên cười nói: 'Bạn nhỏ, cháu thật yêu bà.' Tôi gật đầu, nói: 'Đây là để tặng bà.'\n\nBước ra khỏi trung tâm thương mại, gió thổi rất dễ chịu. Tôi ôm chiếc ví mới, trong lòng rất vui. Tôi nghĩ, bà nhận được nó, chắc chắn sẽ cười. Mua một món quà nhỏ, khiến tôi học được cách yêu thương. Mẹ xoa đầu tôi, nói: 'Hôm nay con đã lớn rồi.' Tôi nghe xong, cảm thấy còn ngọt hơn ăn đường. Trên đường về nhà, chúng tôi nhìn thấy một chú mèo nhỏ. Nó rất đáng yêu, nhưng không có nhà. Tôi nhẹ nhàng vuốt nó, trong lòng ấm áp. Mặt trời rất đỏ, chim nhỏ đang hót, chúng tôi đi chậm rãi, tâm trạng thật sự rất tốt. Sau này tôi sẽ mua nhiều thứ hữu ích, mang niềm vui tặng cho gia đình."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "贵",
+        "pinyin": "guì",
+        "meaning": "đắt, quý giá",
+        "usageInSentence": "可是有点贵。"
+      },
+      {
+        "hanzi": "买",
+        "pinyin": "mǎi",
+        "meaning": "mua",
+        "usageInSentence": "我想给奶奶买一个小礼物。"
+      },
+      {
+        "hanzi": "毛",
+        "pinyin": "máo",
+        "meaning": "hào (tiền)",
+        "usageInSentence": "我有五十元，还有十毛。"
+      },
+      {
+        "hanzi": "钱",
+        "pinyin": "qián",
+        "meaning": "tiền",
+        "usageInSentence": "这个多少钱？"
+      },
+      {
+        "hanzi": "钱包",
+        "pinyin": "qiánbāo",
+        "meaning": "ví tiền",
+        "usageInSentence": "柜台上有红钱包和蓝钱包。"
+      },
+      {
+        "hanzi": "商场",
+        "pinyin": "shāngchǎng",
+        "meaning": "trung tâm thương mại",
+        "usageInSentence": "我和妈妈去商场买东西。"
+      },
+      {
+        "hanzi": "商店",
+        "pinyin": "shāngdiàn",
+        "meaning": "cửa hàng",
+        "usageInSentence": "我们走进一家商店。"
+      },
+      {
+        "hanzi": "送",
+        "pinyin": "sòng",
+        "meaning": "đưa, giao, tặng, tiễn",
+        "usageInSentence": "这是送给奶奶的。"
+      },
+      {
+        "hanzi": "元",
+        "pinyin": "yuán",
+        "meaning": "đồng (đơn vị tiền tệ)",
+        "usageInSentence": "这个六十元。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲什么？(Bài văn này chủ yếu nói về điều gì?)",
+        "options": {
+          "A": "我和妈妈去商店给奶奶买礼物。(Mẹ con tôi đi cửa hàng mua quà cho bà.)",
+          "B": "奶奶在商场里卖钱包。(Bà bán ví tiền trong trung tâm thương mại.)",
+          "C": "我在商店里丢了钱包。(Tôi làm mất ví tiền trong cửa hàng.)",
+          "D": "妈妈送我一个贵钱包。(Mẹ tặng tôi một chiếc ví đắt tiền.)"
+        },
+        "answer": "A",
+        "explanation": "Giải thích: Ý chính của bài là hai mẹ con đi cửa hàng để mua một món quà nhỏ cho bà. Nhân vật chính nói rõ mục đích là mua quà cho bà, và cuối bài cũng nhắc lại việc tặng quà cho bà."
+      },
+      {
+        "id": "q2",
+        "question": "为什么“我”有点难过？(Vì sao “tôi” hơi buồn?)",
+        "options": {
+          "A": "奶奶不喜欢红钱包。(Bà không thích ví đỏ.)",
+          "B": "钱不够买红钱包。(Tiền không đủ để mua ví đỏ.)",
+          "C": "商店关门了。(Cửa hàng đã đóng cửa.)",
+          "D": "妈妈不让我买。(Mẹ không cho tôi mua.)"
+        },
+        "answer": "B",
+        "explanation": "Giải thích: Nhân vật buồn vì đã mở ví nhỏ đếm tiền, thấy tổng số tiền vẫn còn thiếu một chút so với giá món quà. Sau đó mẹ nhẹ nhàng lấy tiền trả giúp."
+      },
+      {
+        "id": "q3",
+        "question": "“这是送给奶奶的”中“送”的意思是什么？(Trong câu “Đây là để tặng bà”, từ “送” có nghĩa là gì?)",
+        "options": {
+          "A": "给 (đưa/tặng)",
+          "B": "买 (mua)",
+          "C": "花 (tiêu)",
+          "D": "找 (tìm)"
+        },
+        "answer": "A",
+        "explanation": "Giải thích: Trong câu nói của nhân vật chính, từ được hỏi diễn tả việc đưa một món quà cho người khác để tặng, cụ thể là tặng bà. Vì vậy nghĩa phù hợp nhất là 'đưa/tặng'."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t14_01",
+    "hskLevel": 1,
+    "topicId": 14,
+    "topicName": "Nghề nghiệp & Việc làm",
+    "subTheme": "Ước mơ nghề nghiệp tương lai (老师和医生)",
+    "title": {
+      "hanzi": "我的梦想",
+      "pinyin": "Wǒ de mèngxiǎng",
+      "meaning": "Ước mơ của tôi"
+    },
+    "contextDescription": "Câu chuyện của một cậu bé tên Tiểu Minh, quan sát bố mẹ và thầy cô, nuôi ước mơ làm giáo viên và bác sĩ.",
+    "content": {
+      "hanzi": "我的名字叫小明。我的家在一个小城市。爸爸是工人，在工厂工作。妈妈是医生，在医院工作。他们每天都很忙。早上，爸爸七点上班，妈妈六点上班。晚上，爸爸六点下班，妈妈常常八点下班。他们爱我，我也爱他们。\n\n有一天，我问妈妈：“妈妈，你每天干那么多工作，你不累吗？”妈妈笑着说：“累，但是我喜欢。医生能帮助病人，这是很好的工作。”我又问爸爸：“爸爸，你是工人，你上班的时候想什么？”爸爸说：“我想着你们，所以我不怕忙。我们干工作，是为了家，也是为了梦想。”\n\n那天，妈妈请假一天，带我去医院。医院很大。我看见医生和病人说话，看见护士跑着工作。我问妈妈：“我可以像你一样当医生吗？”妈妈摸摸我的头，说：“你可以。但是你要先好好学习。”\n\n放学以后，我看见一位老师在教室。她下班很晚，但是脸上有笑。我心里想：我长大以后，想当老师，也想当医生。我想干有意义的工作。虽然工作忙，上班早，下班晚，但是只要帮助别人，我就快乐。我喜欢老师和医生。他们都很棒。我也要这样。我的梦想不远，我要每天努力。",
+      "pinyin": "Wǒ de míngzi jiào Xiǎomíng. Wǒ de jiā zài yí ge xiǎo chéngshì. Bàba shì gōngrén, zài gōngchǎng gōngzuò. Māma shì yīshēng, zài yīyuàn gōngzuò. Tāmen měitiān dōu hěn máng. Zǎoshang, bàba qī diǎn shàngbān, māma liù diǎn shàngbān. Wǎnshang, bàba liù diǎn xiàbān, māma chángcháng bā diǎn xiàbān. Tāmen ài wǒ, wǒ yě ài tāmen.\n\nYǒu yì tiān, wǒ wèn māma: “Māma, nǐ měitiān gàn nàme duō gōngzuò, nǐ bú lèi ma?” Māma xiào zhe shuō: “Lèi, dànshì wǒ xǐhuan. Yīshēng néng bāngzhù bìngrén, zhè shì hěn hǎo de gōngzuò.” Wǒ yòu wèn bàba: “Bàba, nǐ shì gōngrén, nǐ shàngbān de shíhou xiǎng shénme?” Bàba shuō: “Wǒ xiǎng zhe nǐmen, suǒyǐ wǒ bú pà máng. Wǒmen gàn gōngzuò, shì wèile jiā, yě shì wèile mèngxiǎng.”\n\nNà tiān, māma qǐngjià yì tiān, dài wǒ qù yīyuàn. Yīyuàn hěn dà. Wǒ kànjiàn yīshēng hé bìngrén shuōhuà, kànjiàn hùshi pǎo zhe gōngzuò. Wǒ wèn māma: “Wǒ kěyǐ xiàng nǐ yíyàng dāng yīshēng ma?” Māma mō mō wǒ de tóu, shuō: “Nǐ kěyǐ. Dànshì nǐ yào xiān hǎohao xuéxí.”\n\nFàngxué yǐhòu, wǒ kànjiàn yí wèi lǎoshī zài jiàoshì. Tā xiàbān hěn wǎn, dànshì liǎnshang yǒu xiào. Wǒ xīnli xiǎng: Wǒ zhǎngdà yǐhòu, xiǎng dāng lǎoshī, yě xiǎng dāng yīshēng. Wǒ xiǎng gàn yǒu yìyì de gōngzuò. Suīrán gōngzuò máng, shàngbān zǎo, xiàbān wǎn, dànshì zhǐyào bāngzhù biérén, wǒ jiù kuàilè. Wǒ xǐhuan lǎoshī hé yīshēng. Tāmen dōu hěn bàng. Wǒ yě yào zhèyàng. Wǒ de mèngxiǎng bù yuǎn, wǒ yào měitiān nǔlì.",
+      "meaning": "Tôi tên là Tiểu Minh. Nhà tôi ở một thành phố nhỏ. Bố tôi là công nhân, làm việc ở nhà máy. Mẹ tôi là bác sĩ, làm việc ở bệnh viện. Họ ngày nào cũng rất bận. Buổi sáng, bố bảy giờ đi làm, mẹ sáu giờ đi làm. Buổi tối, bố sáu giờ tan làm, mẹ thường tám giờ mới tan làm. Họ yêu thương tôi, tôi cũng yêu thương họ.\n\nMột ngày nọ, tôi hỏi mẹ: “Mẹ ơi, mỗi ngày mẹ làm nhiều việc như thế, mẹ không mệt ạ?” Mẹ cười nói: “Mệt, nhưng mẹ thích. Bác sĩ có thể giúp đỡ người bệnh, đây là một công việc rất tốt.” Tôi lại hỏi bố: “Bố ơi, bố là công nhân, khi đi làm bố nghĩ điều gì?” Bố nói: “Bố nghĩ về các con, nên bố không sợ bận. Chúng ta làm việc, là vì gia đình, cũng là vì ước mơ.”\n\nHôm đó, mẹ xin nghỉ một ngày, dẫn tôi đến bệnh viện. Bệnh viện rất lớn. Tôi thấy bác sĩ nói chuyện với người bệnh, thấy y tá chạy đi làm việc. Tôi hỏi mẹ: “Con có thể làm bác sĩ giống mẹ không?” Mẹ vuốt đầu tôi, nói: “Con có thể. Nhưng con phải học hành thật tốt trước đã.”\n\nSau khi tan học, tôi thấy một cô giáo ở trong lớp học. Cô tan làm rất muộn, nhưng trên mặt vẫn có nụ cười. Tôi thầm nghĩ: sau khi lớn lên, tôi muốn làm giáo viên, cũng muốn làm bác sĩ. Tôi muốn làm một công việc có ý nghĩa. Tuy công việc bận, đi làm sớm, tan làm muộn, nhưng chỉ cần giúp đỡ người khác, tôi sẽ vui vẻ. Tôi thích giáo viên và bác sĩ. Họ đều rất giỏi. Tôi cũng muốn như vậy. Ước mơ của tôi không xa, tôi phải cố gắng mỗi ngày."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "工人",
+        "pinyin": "gōngrén",
+        "meaning": "công nhân",
+        "usageInSentence": "爸爸是工人，在工厂工作。"
+      },
+      {
+        "hanzi": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "công việc; làm việc",
+        "usageInSentence": "爸爸是工人，在工厂工作。"
+      },
+      {
+        "hanzi": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "công việc; làm việc",
+        "usageInSentence": "妈妈是医生，在医院工作。"
+      },
+      {
+        "hanzi": "忙",
+        "pinyin": "máng",
+        "meaning": "bận",
+        "usageInSentence": "他们每天都很忙。"
+      },
+      {
+        "hanzi": "上班",
+        "pinyin": "shàngbān",
+        "meaning": "đi làm",
+        "usageInSentence": "早上，爸爸七点上班，妈妈六点上班。"
+      },
+      {
+        "hanzi": "上班",
+        "pinyin": "shàngbān",
+        "meaning": "đi làm",
+        "usageInSentence": "早上，爸爸七点上班，妈妈六点上班。"
+      },
+      {
+        "hanzi": "下班",
+        "pinyin": "xiàbān",
+        "meaning": "tan làm",
+        "usageInSentence": "晚上，爸爸六点下班，妈妈常常八点下班。"
+      },
+      {
+        "hanzi": "下班",
+        "pinyin": "xiàbān",
+        "meaning": "tan làm",
+        "usageInSentence": "晚上，爸爸六点下班，妈妈常常八点下班。"
+      },
+      {
+        "hanzi": "干",
+        "pinyin": "gàn",
+        "meaning": "làm, làm việc",
+        "usageInSentence": "妈妈，你每天干那么多工作，你不累吗？"
+      },
+      {
+        "hanzi": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "công việc; làm việc",
+        "usageInSentence": "妈妈，你每天干那么多工作，你不累吗？"
+      },
+      {
+        "hanzi": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "công việc; làm việc",
+        "usageInSentence": "医生能帮助病人，这是很好的工作。"
+      },
+      {
+        "hanzi": "工人",
+        "pinyin": "gōngrén",
+        "meaning": "công nhân",
+        "usageInSentence": "爸爸，你是工人，你上班的时候想什么？"
+      },
+      {
+        "hanzi": "上班",
+        "pinyin": "shàngbān",
+        "meaning": "đi làm",
+        "usageInSentence": "爸爸，你是工人，你上班的时候想什么？"
+      },
+      {
+        "hanzi": "忙",
+        "pinyin": "máng",
+        "meaning": "bận",
+        "usageInSentence": "我想着你们，所以我不怕忙。"
+      },
+      {
+        "hanzi": "干",
+        "pinyin": "gàn",
+        "meaning": "làm, làm việc",
+        "usageInSentence": "我们干工作，是为了家，也是为了梦想。"
+      },
+      {
+        "hanzi": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "công việc; làm việc",
+        "usageInSentence": "我们干工作，是为了家，也是为了梦想。"
+      },
+      {
+        "hanzi": "请假",
+        "pinyin": "qǐngjià",
+        "meaning": "xin nghỉ",
+        "usageInSentence": "那天，妈妈请假一天，带我去医院。"
+      },
+      {
+        "hanzi": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "công việc; làm việc",
+        "usageInSentence": "我看见医生和病人说话，看见护士跑着工作。"
+      },
+      {
+        "hanzi": "干",
+        "pinyin": "gàn",
+        "meaning": "làm, làm việc",
+        "usageInSentence": "我想干有意义的工作。"
+      },
+      {
+        "hanzi": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "công việc; làm việc",
+        "usageInSentence": "我想干有意义的工作。"
+      },
+      {
+        "hanzi": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "công việc; làm việc",
+        "usageInSentence": "虽然工作忙，上班早，下班晚，但是只要帮助别人，我就快乐。"
+      },
+      {
+        "hanzi": "忙",
+        "pinyin": "máng",
+        "meaning": "bận",
+        "usageInSentence": "虽然工作忙，上班早，下班晚，但是只要帮助别人，我就快乐。"
+      },
+      {
+        "hanzi": "上班",
+        "pinyin": "shàngbān",
+        "meaning": "đi làm",
+        "usageInSentence": "虽然工作忙，上班早，下班晚，但是只要帮助别人，我就快乐。"
+      },
+      {
+        "hanzi": "下班",
+        "pinyin": "xiàbān",
+        "meaning": "tan làm",
+        "usageInSentence": "虽然工作忙，上班早，下班晚，但是只要帮助别人，我就快乐。"
+      },
+      {
+        "hanzi": "下班",
+        "pinyin": "xiàbān",
+        "meaning": "tan làm",
+        "usageInSentence": "她下班很晚，但是脸上有笑。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲什么？(Bài đọc chủ yếu nói về điều gì?)",
+        "options": {
+          "A": "小明的梦想和家人的工作 (Ước mơ của Tiểu Minh và công việc của gia đình)",
+          "B": "医院和工厂很大 (Bệnh viện và nhà máy rất lớn)",
+          "C": "妈妈请假一天 (Mẹ xin nghỉ một ngày)",
+          "D": "老师下班很晚 (Cô giáo tan làm muộn)"
+        },
+        "answer": "A",
+        "explanation": "Đáp án A đúng vì bài kể về công việc hằng ngày của bố mẹ Tiểu Minh và ước mơ của cậu: “我长大以后，想当老师，也想当医生。”"
+      },
+      {
+        "id": "q2",
+        "question": "妈妈为什么请假一天？(Mẹ tại sao xin nghỉ một ngày?)",
+        "options": {
+          "A": "她想休息。 (Mẹ muốn nghỉ ngơi.)",
+          "B": "她带小明去医院。 (Mẹ dẫn Tiểu Minh đến bệnh viện.)",
+          "C": "她要去工厂。 (Mẹ muốn đến nhà máy.)",
+          "D": "她不想上班。 (Mẹ không muốn đi làm.)"
+        },
+        "answer": "B",
+        "explanation": "Đáp án B đúng vì bài có câu: “那天，妈妈请假一天，带我去医院。”"
+      },
+      {
+        "id": "q3",
+        "question": "“医生能帮助病人，这是很好的工作。”这句话想说明什么？(Câu “医生能帮助病人，这是很好的工作。” muốn nói điều gì?)",
+        "options": {
+          "A": "医生的工作很轻松。 (Công việc bác sĩ rất nhẹ nhàng.)",
+          "B": "医生的工作有意义。 (Công việc bác sĩ có ý nghĩa.)",
+          "C": "医生不喜欢上班。 (Bác sĩ không thích đi làm.)",
+          "D": "医生常常请假。 (Bác sĩ thường xin nghỉ.)"
+        },
+        "answer": "B",
+        "explanation": "Đáp án B đúng vì lời mẹ nói cho thấy bác sĩ giúp người bệnh và đó là công việc tốt, tức là có ý nghĩa: “医生能帮助病人，这是很好的工作。”"
+      },
+      {
+        "id": "q4",
+        "question": "爸爸说“我想着你们，所以我不怕忙”，爸爸不怕忙的原因是什么？(Bố nói “我想着你们，所以我不怕忙”, bố không sợ bận vì lý do gì?)",
+        "options": {
+          "A": "爸爸喜欢工厂。 (Bố thích nhà máy.)",
+          "B": "爸爸爱家人。 (Bố yêu gia đình.)",
+          "C": "爸爸想当医生。 (Bố muốn làm bác sĩ.)",
+          "D": "爸爸想请假。 (Bố muốn xin nghỉ.)"
+        },
+        "answer": "B",
+        "explanation": "Đáp án B đúng vì bố nói bố nghĩ về các con, nên bố không sợ bận: “我想着你们，所以我不怕忙。”"
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t15_01",
+    "hskLevel": 1,
+    "topicId": 15,
+    "topicName": "Chính trị & Pháp luật",
+    "subTheme": "Trật tự và quy định trong đời sống (遵守规则)",
+    "title": {
+      "hanzi": "遵守规则，爱国家",
+      "pinyin": "Zūnshǒu guīzé, ài guójiā",
+      "meaning": "Tuân thủ quy tắc, yêu đất nước"
+    },
+    "contextDescription": "Câu chuyện về một buổi học ngoài trời ở công viên, nơi các bạn nhỏ tìm hiểu và thực hiện quy tắc chung của đất nước, thành phố.",
+    "content": {
+      "hanzi": "今天是学校“国家规则日”。早上，我和同学小明去城市公园。公园门口有一面国旗。小明说：“这是我们的国旗，代表国家。”老师告诉我们：“国家有规则，城市有秩序。每个人都要遵守规则。”我很爱中国，也爱这个国家。老师说，规则让国家更美丽，让城市更文明。小明说，我也要爱国家。\n\n在公园里，我们看见一只小狗在草地上。一个男孩想进去。保安叔叔说：“这里不能进。这是国家规定的公园规则。”男孩问：“为什么？”保安叔叔说：“因为草地要保护，国家也要保护公共环境。”男孩说：“对不起，我不知道。”小明说：“没关系，我们一起看规则牌。”\n\n后来，我们在规则牌上看见很多字：不乱扔，不吵闹，不踩草地。小明说：“国家规则不是限制，是保护。”我说：“对。中国有国家规则，我们的生活更干净，更安全。”老师笑着说：“你们很懂事。爱国家，就要从遵守规则开始。”\n\n回家的路上，我想：国家很大，规则很小。可是，小规则连着大国家。今天，我不仅看见国旗，也看见了国家的秩序。我还想：每个中国人都要爱国家，也要守规则。中国是我们的国，也是我们的家。我很高兴，也很爱我的国家。",
+      "pinyin": "Jīntiān shì xuéxiào “Guójiā guīzé rì”. Zǎoshang, wǒ hé tóngxué Xiǎomíng qù chéngshì gōngyuán. Gōngyuán ménkǒu yǒu yī miàn guóqí. Xiǎomíng shuō: “Zhè shì wǒmen de guóqí, dàibiǎo guójiā.” Lǎoshī gàosu wǒmen: “Guójiā yǒu guīzé, chéngshì yǒu zhìxù. Měi ge rén dōu yào zūnshǒu guīzé.” Wǒ hěn ài Zhōngguó, yě ài zhège guójiā. Lǎoshī shuō, guīzé ràng guójiā gèng měilì, ràng chéngshì gèng wénmíng. Xiǎomíng shuō, wǒ yě yào ài guójiā.\n\nZài gōngyuán lǐ, wǒmen kànjiàn yī zhī xiǎo gǒu zài cǎodì shàng. Yī gè nánhái xiǎng jìnqù. Bǎo'ān shūshu shuō: “Zhèlǐ bù néng jìn. Zhè shì guójiā guīdìng de gōngyuán guīzé.” Nánhái wèn: “Wèishénme?” Bǎo'ān shūshu shuō: “Yīnwèi cǎodì yào bǎohù, guójiā yě yào bǎohù gōnggòng huánjìng.” Nánhái shuō: “Duìbuqǐ, wǒ bù zhīdào.” Xiǎomíng shuō: “Méi guānxi, wǒmen yīqǐ kàn guīzépái.”\n\nHòulái, wǒmen zài guīzépái shàng kànjiàn hěnduō zì: bù luànrēng, bù chǎonào, bù cǎi cǎodì. Xiǎomíng shuō: “Guójiā guīzé bù shì xiànzhì, shì bǎohù.” Wǒ shuō: “Duì. Zhōngguó yǒu guójiā guīzé, wǒmen de shēnghuó gèng gānjìng, gèng ānquán.” Lǎoshī xiào zhe shuō: “Nǐmen hěn dǒngshì. Ài guójiā, jiù yào cóng zūnshǒu guīzé kāishǐ.”\n\nHuíjiā de lùshang, wǒ xiǎng: Guójiā hěn dà, guīzé hěn xiǎo. Kěshì, xiǎo guīzé lián zhe dà guójiā. Jīntiān, wǒ bùjǐn kànjiàn guóqí, yě kànjiàn le guójiā de zhìxù. Wǒ hái xiǎng: Měi gè Zhōngguó rén dōu yào ài guójiā, yě yào shǒu guīzé. Zhōngguó shì wǒmen de guó, yě shì wǒmen de jiā. Wǒ hěn gāoxìng, yě hěn ài wǒ de guójiā.",
+      "meaning": "Hôm nay là “Ngày quy tắc quốc gia” của trường. Buổi sáng, tôi cùng bạn Tiểu Minh đi đến công viên thành phố. Trước cửa công viên có một lá cờ Tổ quốc. Tiểu Minh nói: “Đây là cờ Tổ quốc của chúng ta, đại diện cho đất nước.” Cô giáo bảo chúng tôi: “Đất nước có quy tắc, thành phố có trật tự. Mỗi người đều phải tuân thủ quy tắc.” Tôi rất yêu Trung Quốc, cũng yêu đất nước này. Cô giáo nói, quy tắc làm cho đất nước thêm tươi đẹp, làm cho thành phố thêm văn minh. Tiểu Minh nói, em cũng muốn yêu đất nước.\n\nTrong công viên, chúng tôi nhìn thấy một chú chó nhỏ trên bãi cỏ. Một cậu bé muốn đi vào. Chú bảo vệ nói: “Chỗ này không được vào. Đây là quy tắc công viên do đất nước quy định.” Cậu bé hỏi: “Tại sao?” Chú bảo vệ nói: “Bởi vì bãi cỏ cần được bảo vệ, đất nước cũng cần bảo vệ môi trường công cộng.” Cậu bé nói: “Xin lỗi, em không biết.” Tiểu Minh nói: “Không sao, chúng ta cùng xem bảng quy tắc.”\n\nSau đó, trên bảng quy tắc, chúng tôi nhìn thấy rất nhiều chữ: không vứt bừa bãi, không ồn ào, không giẫm lên bãi cỏ. Tiểu Minh nói: “Quy tắc của đất nước không phải là hạn chế, mà là bảo vệ.” Tôi nói: “Đúng vậy. Trung Quốc có quy tắc của đất nước, cuộc sống của chúng ta sạch sẽ hơn, an toàn hơn.” Cô giáo cười nói: “Các em rất hiểu chuyện. Yêu đất nước, thì phải bắt đầu từ việc tuân thủ quy tắc.”\n\nTrên đường về nhà, tôi nghĩ: đất nước rất lớn, quy tắc rất nhỏ. Nhưng quy tắc nhỏ lại gắn liền với đất nước lớn. Hôm nay, tôi không chỉ nhìn thấy cờ Tổ quốc, mà còn nhìn thấy trật tự của đất nước. Tôi còn nghĩ: mỗi người Trung Quốc đều phải yêu đất nước, cũng phải tuân thủ quy tắc. Trung Quốc là nước của chúng ta, cũng là nhà của chúng ta. Tôi rất vui, cũng rất yêu đất nước của mình."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "国家",
+        "pinyin": "guójiā",
+        "meaning": "đất nước, nhà nước, quốc gia",
+        "usageInSentence": "国家有规则，城市有秩序。"
+      },
+      {
+        "hanzi": "国家",
+        "pinyin": "guójiā",
+        "meaning": "đất nước, nhà nước, quốc gia",
+        "usageInSentence": "这是国家规定的公园规则。"
+      },
+      {
+        "hanzi": "国家",
+        "pinyin": "guójiā",
+        "meaning": "đất nước, nhà nước, quốc gia",
+        "usageInSentence": "国家也要保护公共环境。"
+      },
+      {
+        "hanzi": "国家",
+        "pinyin": "guójiā",
+        "meaning": "đất nước, nhà nước, quốc gia",
+        "usageInSentence": "国家规则不是限制，是保护。"
+      },
+      {
+        "hanzi": "国家",
+        "pinyin": "guójiā",
+        "meaning": "đất nước, nhà nước, quốc gia",
+        "usageInSentence": "中国有国家规则，我们的生活更干净，更安全。"
+      },
+      {
+        "hanzi": "国家",
+        "pinyin": "guójiā",
+        "meaning": "đất nước, nhà nước, quốc gia",
+        "usageInSentence": "爱国家，就要从遵守规则开始。"
+      },
+      {
+        "hanzi": "国家",
+        "pinyin": "guójiā",
+        "meaning": "đất nước, nhà nước, quốc gia",
+        "usageInSentence": "国家很大，规则很小。"
+      },
+      {
+        "hanzi": "国家",
+        "pinyin": "guójiā",
+        "meaning": "đất nước, nhà nước, quốc gia",
+        "usageInSentence": "我很高兴，也很爱我的国家。"
+      },
+      {
+        "hanzi": "国",
+        "pinyin": "guó",
+        "meaning": "nước, quốc",
+        "usageInSentence": "公园门口有一面国旗。"
+      },
+      {
+        "hanzi": "国",
+        "pinyin": "guó",
+        "meaning": "nước, quốc",
+        "usageInSentence": "这是我们的国旗，代表国家。"
+      },
+      {
+        "hanzi": "国",
+        "pinyin": "guó",
+        "meaning": "nước, quốc",
+        "usageInSentence": "我很爱中国，也爱这个国家。"
+      },
+      {
+        "hanzi": "国",
+        "pinyin": "guó",
+        "meaning": "nước, quốc",
+        "usageInSentence": "中国是我们的国，也是我们的家。"
+      },
+      {
+        "hanzi": "国",
+        "pinyin": "guó",
+        "meaning": "nước, quốc",
+        "usageInSentence": "今天，我不仅看见国旗，也看见了国家的秩序。"
+      },
+      {
+        "hanzi": "国",
+        "pinyin": "guó",
+        "meaning": "nước, quốc",
+        "usageInSentence": "每个中国人都要爱国家，也要守规则。"
+      },
+      {
+        "hanzi": "国",
+        "pinyin": "guó",
+        "meaning": "nước, quốc",
+        "usageInSentence": "小规则连着大国家。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要想告诉我们什么？(Bài đọc này chủ yếu muốn cho chúng ta biết điều gì?)",
+        "options": {
+          "A": "公园很漂亮。(Công viên rất đẹp.)",
+          "B": "要遵守规则，爱国家。(Phải tuân thủ quy tắc và yêu đất nước.)",
+          "C": "不要养小狗。(Không nên nuôi chó con.)",
+          "D": "每天去学校。(Mỗi ngày đều đi học.)"
+        },
+        "answer": "B",
+        "explanation": "Đáp án đúng là B, vì bài kể về Ngày quy tắc quốc gia ở công viên, trong đó có câu nói rằng đất nước có quy tắc, thành phố có trật tự, mỗi người đều phải tuân thủ, và cuối bài nhấn mạnh yêu đất nước phải bắt đầu từ việc tuân thủ quy tắc."
+      },
+      {
+        "id": "q2",
+        "question": "保安叔叔为什么不让男孩进草地？(Chú bảo vệ vì sao không cho cậu bé vào bãi cỏ?)",
+        "options": {
+          "A": "因为男孩太小。(Vì cậu bé còn quá nhỏ.)",
+          "B": "因为草地要保护，这是公园规则。(Vì bãi cỏ cần được bảo vệ, đây là quy tắc công viên.)",
+          "C": "因为小狗很凶。(Vì chú chó rất dữ.)",
+          "D": "因为小明不认识男孩。(Vì Tiểu Minh không quen cậu bé.)"
+        },
+        "answer": "B",
+        "explanation": "Đáp án đúng là B, vì chú bảo vệ giải thích chỗ này không được vào, đây là quy tắc do đất nước quy định, và bãi cỏ cần được bảo vệ."
+      },
+      {
+        "id": "q3",
+        "question": "Câu “国家规则不是限制，是保护。” cho thấy quy tắc có ý nghĩa gì? (Câu “Quy tắc của đất nước không phải là hạn chế, mà là bảo vệ.” cho thấy quy tắc có ý nghĩa gì?)",
+        "options": {
+          "A": "规则只是管住人。(Quy tắc chỉ là quản lý con người.)",
+          "B": "规则保护环境和公共生活。(Quy tắc bảo vệ môi trường và đời sống công cộng.)",
+          "C": "规则没有用。(Quy tắc không có tác dụng.)",
+          "D": "规则只属于保安叔叔。(Quy tắc chỉ thuộc về chú bảo vệ.)"
+        },
+        "answer": "B",
+        "explanation": "Đáp án đúng là B, vì câu nói trong bài được hiểu là quy tắc không chỉ để ngăn cản, mà để giữ cho môi trường và đời sống chung an toàn, sạch đẹp; các chi tiết về bảo vệ bãi cỏ và môi trường công cộng cũng thể hiện ý đó."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t17_01",
+    "hskLevel": 1,
+    "topicId": 17,
+    "topicName": "Nghệ thuật & Biểu diễn",
+    "subTheme": "Xem phim và thưởng thức nghệ thuật (看电影与听音乐)",
+    "title": {
+      "hanzi": "星期六下午",
+      "pinyin": "Xīngqīliù xiàwǔ",
+      "meaning": "Chiều thứ Bảy"
+    },
+    "contextDescription": "Chiều thứ Bảy, tôi cùng Tiểu Hồng đi xem phim, sau đó đến công viên nghe chim hót và cùng hát, tận hưởng một buổi chiều ấm áp.",
+    "content": {
+      "hanzi": "今天是星期六下午，我和小红去电影院。电影院很大，里面的人很多。我们买了两张票，坐在前面看一部电影。电影里有一个女孩，她喜欢唱歌。她的声音很轻，很好听。\n\n看完电影，小红说：“这部电影真好，她唱的歌很好听。”我说：“我也喜欢这首歌。我们去公园吧，那里很安静。”小红笑着说：“好呀，我们可以一起唱。”\n\n公园里很安静，有树、花和小鸟。我们坐在长椅上，听鸟唱歌。小红拿出一本小书，读了一首歌。我也唱了一首歌。我们的声音不高，但是很轻呀。旁边一位爷爷说：“你们的歌很好听。”\n\n天慢慢黑了，路灯亮了。我们回家，路上风轻轻吹，花也轻轻摇。小红说，明天还想来。我说，好呀。我们看见天上的星星，一颗一颗很亮。今天没有买很多东西，但是我们有笑声。和好朋友在一起，简单的下午也变成开心的事呀。我们慢慢地走，不急着回家。小红讲了一个小故事，我听了以后笑了。路边的小狗也看着我们，它也很开心呀。我觉得，高兴有时候很简单。明天见吧，真开心。我们笑着挥手，心里很高兴，真开心。",
+      "pinyin": "Jīntiān shì xīngqīliù xiàwǔ, wǒ hé Xiǎohóng qù diànyǐngyuàn. Diànyǐngyuàn hěn dà, lǐmiàn de rén hěn duō. Wǒmen mǎi le liǎng zhāng piào, zuò zài qiánmiàn kàn yī bù diànyǐng. Diànyǐng lǐ yǒu yī gè nǚhái, tā xǐhuan chànggē. Tā de shēngyīn hěn qīng, hěn hǎotīng.\n\nKàn wán diànyǐng, Xiǎohóng shuō: “Zhè bù diànyǐng zhēn hǎo, tā chàng de gē hěn hǎotīng.” Wǒ shuō: “Wǒ yě xǐhuan zhè shǒu gē. Wǒmen qù gōngyuán ba, nàlǐ hěn ānjìng.” Xiǎohóng xiàozhe shuō: “Hǎo ya, wǒmen kěyǐ yìqǐ chàng.”\n\nGōngyuán lǐ hěn ānjìng, yǒu shù, huā hé xiǎoniǎo. Wǒmen zuò zài chángyǐ shàng, tīng niǎo chànggē. Xiǎohóng ná chū yī běn xiǎo shū, dú le yī shǒu gē. Wǒ yě chàng le yī shǒu gē. Wǒmen de shēngyīn bù gāo, dànshì hěn qīng ya. Pángbiān yī wèi yéye shuō: “Nǐmen de gē hěn hǎotīng.”\n\nTiān mànmàn hēi le, lùdēng liàng le. Wǒmen huí jiā, lùshang fēng qīngqīng chuī, huā yě qīngqīng yáo. Xiǎohóng shuō, míngtiān hái xiǎng lái. Wǒ shuō, hǎo ya. Wǒmen kànjiàn tiānshang de xīngxing, yī kē yī kē hěn liàng. Jīntiān méiyǒu mǎi hěn duō dōngxi, dànshì wǒmen yǒu xiàoshēng. Hé hǎo péngyou zài yìqǐ, jiǎndān de xiàwǔ yě biàn chéng kāixīn de shì ya. Wǒmen màn man de zǒu, bù jí zhe huí jiā. Xiǎohóng jiǎng le yī gè xiǎo gùshi, wǒ tīng le yǐhòu xiào le. Lùbiān de xiǎo gǒu yě kàn zhe wǒmen, tā yě hěn kāixīn ya. Wǒ juéde, gāoxìng yǒu shíhou hěn jiǎndān. Míngtiān jiàn ba, zhēn kāixīn. Wǒmen xiàozhe huī shǒu, xīnli hěn gāoxìng, zhēn kāixīn.",
+      "meaning": "Hôm nay là chiều thứ Bảy, tôi cùng Tiểu Hồng đi đến rạp chiếu phim. Rạp chiếu phim rất lớn, bên trong có rất nhiều người. Chúng tôi mua hai vé, ngồi ở phía trước xem một bộ phim. Trong phim có một cô gái, cô ấy thích hát. Giọng của cô ấy rất nhẹ, rất hay.\n\nXem xong phim, Tiểu Hồng nói: “Bộ phim này thật hay, bài hát cô ấy hát rất hay.” Tôi nói: “Tôi cũng thích bài hát này. Chúng ta đi công viên nhé, ở đó rất yên tĩnh.” Tiểu Hồng cười nói: “Được thôi, chúng ta có thể cùng hát.”\n\nTrong công viên rất yên tĩnh, có cây, hoa và chim nhỏ. Chúng tôi ngồi trên ghế dài, nghe chim hót. Tiểu Hồng lấy ra một cuốn sách nhỏ, đọc một bài hát. Tôi cũng hát một bài hát. Giọng của chúng tôi không cao, nhưng rất nhẹ. Một ông lão bên cạnh nói: “Bài hát của các cháu rất hay.”\n\nTrời dần tối, đèn đường sáng lên. Chúng tôi về nhà, trên đường gió nhẹ thổi, hoa cũng nhẹ nhàng lay động. Tiểu Hồng nói, ngày mai còn muốn đến. Tôi nói, được thôi. Chúng tôi nhìn thấy những ngôi sao trên trời, từng cái từng cái rất sáng. Hôm nay không mua nhiều thứ, nhưng chúng tôi có tiếng cười. Ở cùng người bạn tốt, buổi chiều đơn giản cũng trở thành một việc vui. Chúng tôi chậm rãi bước đi, không vội về nhà. Tiểu Hồng kể một câu chuyện nhỏ, tôi nghe xong rồi cười. Chú chó nhỏ bên đường cũng nhìn chúng tôi, nó cũng rất vui. Tôi cảm thấy, vui đôi khi rất đơn giản. Hẹn gặp lại nhé, thật vui. Chúng tôi cười và vẫy tay, trong lòng rất vui, thật vui."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "唱",
+        "pinyin": "chàng",
+        "meaning": "hát, ca, kêu",
+        "usageInSentence": "我们可以一起唱。"
+      },
+      {
+        "hanzi": "唱歌",
+        "pinyin": "chàng gē",
+        "meaning": "hát",
+        "usageInSentence": "她喜欢唱歌。"
+      },
+      {
+        "hanzi": "电影",
+        "pinyin": "diàn yǐng",
+        "meaning": "điện ảnh, phim",
+        "usageInSentence": "坐在前面看一部电影。"
+      },
+      {
+        "hanzi": "电影院",
+        "pinyin": "diàn yǐng yuàn",
+        "meaning": "rạp chiếu phim",
+        "usageInSentence": "我和小红去电影院。"
+      },
+      {
+        "hanzi": "歌",
+        "pinyin": "gē",
+        "meaning": "ca khúc, bài hát",
+        "usageInSentence": "我也喜欢这首歌。"
+      },
+      {
+        "hanzi": "好听",
+        "pinyin": "hǎo tīng",
+        "meaning": "hay, êm tai, dễ nghe",
+        "usageInSentence": "她的声音很好听。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲什么？ (Bài đọc chủ yếu nói về điều gì?)",
+        "options": {
+          "A": "我和小红在星期六下午看电影、去公园，享受艺术和友谊。 (Tôi và Tiểu Hồng chiều thứ Bảy xem phim, đi công viên, tận hưởng nghệ thuật và tình bạn.)",
+          "B": "我和小红去公园买票，没有看电影。 (Tôi và Tiểu Hồng đi công viên mua vé, không xem phim.)",
+          "C": "小红是电影里的女孩，她喜欢唱歌。 (Tiểu Hồng là cô gái trong phim, cô ấy thích hát.)",
+          "D": "我们每天下午都在电影院唱歌。 (Chúng tôi mỗi chiều đều ở rạp chiếu phim hát.)"
+        },
+        "answer": "A",
+        "explanation": "Bài kể một buổi chiều thứ Bảy: “今天是星期六下午，我和小红去电影院。” Sau đó “我们去公园吧，那里很安静。” và “我们可以一起唱.” cho thấy nội dung chính là xem phim, nghe hát và đi công viên cùng bạn, tức là trải nghiệm nghệ thuật và tình bạn."
+      },
+      {
+        "id": "q2",
+        "question": "他们为什么去公园？ (Họ vì sao đi công viên?)",
+        "options": {
+          "A": "公园很安静，他们可以一起唱。 (Công viên rất yên tĩnh, họ có thể cùng hát.)",
+          "B": "公园里有一部新电影。 (Trong công viên có một bộ phim mới.)",
+          "C": "小红要在公园里买票。 (Tiểu Hồng muốn mua vé trong công viên.)",
+          "D": "爷爷在公园里等他们。 (Ông lão đang đợi họ trong công viên.)"
+        },
+        "answer": "A",
+        "explanation": "Trong bài có câu: “我们去公园吧，那里很安静。” và “我们可以一起唱.” Vì vậy họ đi công viên vì nơi đó yên tĩnh và có thể cùng hát."
+      },
+      {
+        "id": "q3",
+        "question": "“她唱的歌很好听”是什么意思？ (Câu “她唱的歌很好听” có nghĩa là gì?)",
+        "options": {
+          "A": "女孩的声音让人喜欢。 (Giọng của cô gái khiến người ta yêu thích.)",
+          "B": "女孩不喜欢电影。 (Cô gái không thích phim.)",
+          "C": "电影很贵。 (Phim rất đắt.)",
+          "D": "小红唱得不好。 (Tiểu Hồng hát không hay.)"
+        },
+        "answer": "A",
+        "explanation": "Câu gốc “她唱的歌很好听.” dùng tính từ “好听” để nói giọng hát dễ nghe, hay. Vì vậy đáp án A đúng."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t18_01",
+    "hskLevel": 1,
+    "topicId": 18,
+    "topicName": "Ẩm thực & Đồ uống",
+    "subTheme": "Bữa sáng ấm áp tại quán ăn nhỏ (早饭在小饭店)",
+    "title": {
+      "hanzi": "早饭在小饭店",
+      "pinyin": "Zǎofàn zài xiǎo fàndiàn",
+      "meaning": "Bữa sáng ở quán ăn nhỏ"
+    },
+    "contextDescription": "Một buổi sáng mùa đông lạnh giá, nhân vật tôi ghé quán ăn nhỏ gần nhà để ăn sáng và cảm nhận hơi ấm từ đồ ăn, lời chào và sự thân thiện của mọi người.",
+    "content": {
+      "hanzi": "冬天的早晨很冷，风从窗外吹进来。我裹着围巾，走进家附近的小饭店。门口挂着红灯笼，空气里有茶和米面的香味。饭店不大，但是灯光暖暖的，桌上有面包、米饭和一杯水。王阿姨看见我，笑着问：“今天早饭吃什么？还是老样子吗？”\n\n我说：“来一个包子、一个鸡蛋，还要一碗面条儿。如果有肉菜，就加一点。天冷，我想再喝一杯牛奶。”她点点头：“好，您坐。杯子在桌上，茶可以自己喝。今天的面条儿特别好吃。”\n\n很快，热气来了。包子软软的，鸡蛋香香的，面条儿里有青菜和一点肉。我喝了一口热茶，又用干净的杯子倒了一点水。旁边的小朋友吃米饭，还带了一小盒水果。他妈妈对他说：“慢慢吃，别着急。”\n\n我慢慢吃饭，心里很安静。小饭店不大，可是每个人都很友好。王阿姨给我送来水果，说：“吃饱了，一天都有精神。”她总给我多放一点菜。我想起小时候，妈妈常带我来这里吃饭。那时候，饭店的灯也是暖暖的。现在，我长大了，还是喜欢这里。这里真温暖。吃完早饭，我觉得这个冬天不再冷了。明天，我还想来这里吃一碗好吃的面条儿。",
+      "pinyin": "Dōngtiān de zǎochén hěn lěng, fēng cóng chuāngwài chuī jìnlái. Wǒ guǒ zhe wéijīn, zǒu jìn jiā fùjìn de xiǎo fàndiàn. Ménkǒu guà zhe hóng dēnglóng, kōngqì lǐ yǒu chá hé mǐmiàn de xiāngwèi. Fàndiàn bù dà, dànshì dēngguāng nuǎnnuǎn de, zhuōshang yǒu miànbāo, mǐfàn hé yì bēi shuǐ. Wáng āyí kànjiàn wǒ, xiàozhe wèn: “Jīntiān zǎofàn chī shénme? Háishi lǎoyàngzi ma?”\n\nWǒ shuō: “Lái yí gè bāozi, yí gè jīdàn, hái yào yì wǎn miàntiáor. Rúguǒ yǒu ròucài, jiù jiā yìdiǎn. Tiān lěng, wǒ xiǎng zài hē yì bēi niúnǎi.” Tā diǎndiǎn tóu: “Hǎo, nín zuò. Bēizi zài zhuōshang, chá kěyǐ zìjǐ hē. Jīntiān de miàntiáor tèbié hǎochī.”\n\nHěn kuài, rèqì lái le. Bāozi ruǎnruǎn de, jīdàn xiāngxiāng de, miàntiáor lǐ yǒu qīngcài hé yìdiǎn ròu. Wǒ hē le yì kǒu rèchá, yòu yòng gānjìng de bēizi dào le yìdiǎn shuǐ. Pángbiān de xiǎo péngyou chī mǐfàn, hái dài le yì xiǎo hé shuǐguǒ. Tā māma duì tā shuō: “Mànmàn chī, bié zháojí.”\n\nWǒ mànmàn chīfàn, xīnlǐ hěn ānjìng. Xiǎo fàndiàn bù dà, kěshì měi gè rén dōu hěn yǒuhǎo. Wáng āyí gěi wǒ sòng lái shuǐguǒ, shuō: “Chī bǎo le, yì tiān dōu yǒu jīngshén.” Tā zǒng gěi wǒ duō fàng yìdiǎn cài. Wǒ xiǎngqǐ xiǎoshíhou, māma cháng dài wǒ lái zhèlǐ chīfàn. Nàshíhou, fàndiàn de dēng yě shì nuǎnnuǎn de. Xiànzài, wǒ zhǎngdà le, háishi xǐhuan zhèlǐ. Zhèlǐ zhēn wēnnuǎn. Chī wán zǎofàn, wǒ juéde zhège dōngtiān bù zài lěng le. Míngtiān, wǒ hái xiǎng lái zhèlǐ chī yì wǎn hǎochī de miàntiáor.",
+      "meaning": "Sáng mùa đông rất lạnh, gió thổi vào từ ngoài cửa sổ. Tôi quàng khăn, bước vào quán ăn nhỏ gần nhà. Trước cửa treo đèn lồng đỏ, trong không khí có mùi thơm của trà và mì gạo. Quán không lớn, nhưng ánh đèn ấm áp, trên bàn có bánh mì, cơm và một cốc nước. Cô Vương nhìn thấy tôi, cười hỏi: “Hôm nay ăn sáng gì? Vẫn như mọi khi chứ?”\n\nTôi nói: “Cho một cái bánh bao, một quả trứng, thêm một bát mì sợi. Nếu có món thịt rau, cho thêm một chút. Trời lạnh, tôi muốn uống thêm một ly sữa bò.” Cô gật đầu: “Được, cô ngồi đi. Cốc ở trên bàn, trà có thể tự uống. Mì sợi hôm nay đặc biệt ngon.”\n\nRất nhanh, hơi nóng đã tới. Bánh bao mềm mềm, trứng gà thơm thơm, mì sợi có rau xanh và một chút thịt. Tôi uống một ngụm trà nóng, lại dùng chiếc cốc sạch rót thêm một chút nước. Bé trai bên cạnh ăn cơm, còn mang theo một hộp nhỏ hoa quả. Mẹ bé nói với bé: “Ăn chậm thôi, đừng vội.”\n\nTôi ăn từ tốn, trong lòng rất yên tĩnh. Quán ăn nhỏ không rộng, nhưng ai cũng thân thiện. Cô Vương mang hoa quả đến cho tôi, nói: “Ăn no rồi, cả ngày đều có tinh thần.” Cô luôn cho tôi thêm một chút rau. Tôi nhớ hồi nhỏ, mẹ thường đưa tôi đến đây ăn cơm. Lúc đó, đèn trong quán cũng ấm áp. Bây giờ, tôi đã lớn, vẫn thích nơi này. Nơi này thật ấm áp. Ăn xong bữa sáng, tôi cảm thấy mùa đông này không còn lạnh nữa. Ngày mai, tôi vẫn muốn đến đây ăn một bát mì sợi ngon."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "包子",
+        "pinyin": "bāozi",
+        "meaning": "bánh bao",
+        "usageInSentence": "来一个包子、一个鸡蛋，还要一碗面条儿。"
+      },
+      {
+        "hanzi": "杯",
+        "pinyin": "bēi",
+        "meaning": "cốc, ly",
+        "usageInSentence": "我想再喝一杯牛奶。"
+      },
+      {
+        "hanzi": "杯子",
+        "pinyin": "bēizi",
+        "meaning": "chiếc cốc, ly",
+        "usageInSentence": "杯子在桌上。"
+      },
+      {
+        "hanzi": "菜",
+        "pinyin": "cài",
+        "meaning": "món ăn, rau củ",
+        "usageInSentence": "她总给我多放一点菜。"
+      },
+      {
+        "hanzi": "茶",
+        "pinyin": "chá",
+        "meaning": "trà",
+        "usageInSentence": "茶可以自己喝。"
+      },
+      {
+        "hanzi": "吃",
+        "pinyin": "chī",
+        "meaning": "ăn",
+        "usageInSentence": "今天早饭吃什么？"
+      },
+      {
+        "hanzi": "吃饭",
+        "pinyin": "chī fàn",
+        "meaning": "ăn cơm",
+        "usageInSentence": "我慢慢吃饭。"
+      },
+      {
+        "hanzi": "饭",
+        "pinyin": "fàn",
+        "meaning": "cơm, bữa",
+        "usageInSentence": "桌上有面包、米饭和一杯水。"
+      },
+      {
+        "hanzi": "饭店",
+        "pinyin": "fàndiàn",
+        "meaning": "nhà hàng, quán ăn",
+        "usageInSentence": "走进家附近的小饭店。"
+      },
+      {
+        "hanzi": "好吃",
+        "pinyin": "hǎochī",
+        "meaning": "ngon",
+        "usageInSentence": "今天的面条儿特别好吃。"
+      },
+      {
+        "hanzi": "喝",
+        "pinyin": "hē",
+        "meaning": "uống",
+        "usageInSentence": "茶可以自己喝。"
+      },
+      {
+        "hanzi": "鸡蛋",
+        "pinyin": "jīdàn",
+        "meaning": "trứng gà",
+        "usageInSentence": "来一个包子、一个鸡蛋，还要一碗面条儿。"
+      },
+      {
+        "hanzi": "米饭",
+        "pinyin": "mǐfàn",
+        "meaning": "cơm",
+        "usageInSentence": "旁边的小朋友吃米饭。"
+      },
+      {
+        "hanzi": "面包",
+        "pinyin": "miànbāo",
+        "meaning": "bánh mì",
+        "usageInSentence": "桌上有面包、米饭和一杯水。"
+      },
+      {
+        "hanzi": "面条儿",
+        "pinyin": "miàntiáor",
+        "meaning": "mì sợi",
+        "usageInSentence": "今天的面条儿特别好吃。"
+      },
+      {
+        "hanzi": "牛奶",
+        "pinyin": "niúnǎi",
+        "meaning": "sữa bò",
+        "usageInSentence": "我想再喝一杯牛奶。"
+      },
+      {
+        "hanzi": "肉",
+        "pinyin": "ròu",
+        "meaning": "thịt",
+        "usageInSentence": "面条儿里有青菜和一点肉。"
+      },
+      {
+        "hanzi": "水",
+        "pinyin": "shuǐ",
+        "meaning": "nước",
+        "usageInSentence": "桌上有面包、米饭和一杯水。"
+      },
+      {
+        "hanzi": "水果",
+        "pinyin": "shuǐguǒ",
+        "meaning": "hoa quả, trái cây",
+        "usageInSentence": "王阿姨给我送来水果。"
+      },
+      {
+        "hanzi": "早饭",
+        "pinyin": "zǎofàn",
+        "meaning": "bữa sáng",
+        "usageInSentence": "今天早饭吃什么？"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲什么？（Bài viết chủ yếu kể về điều gì?）",
+        "options": {
+          "A": "作者在小饭店吃早饭，感到温暖（Tác giả ăn sáng ở quán nhỏ và cảm thấy ấm áp）",
+          "B": "作者中午买面包和水果（Tác giả mua bánh mì và hoa quả vào buổi trưa）",
+          "C": "作者晚上在家喝茶看红灯笼（Tác giả uống trà và xem đèn lồng đỏ ở nhà vào buổi tối）",
+          "D": "作者教小朋友吃米饭和肉（Tác giả dạy bé trai ăn cơm và thịt）"
+        },
+        "answer": "A",
+        "explanation": "Bài viết mở đầu bằng việc tác giả bước vào quán ăn nhỏ gần nhà trong buổi sáng mùa đông lạnh, qua câu “我裹着围巾，走进家附近的小饭店”, và kết thúc bằng cảm nhận “吃完早饭，我觉得这个冬天不再冷了”, nên nội dung chính là bữa sáng ấm áp ở quán nhỏ."
+      },
+      {
+        "id": "q2",
+        "question": "王阿姨给“我”做了什么？（Cô Vương đã làm gì cho “tôi”?）",
+        "options": {
+          "A": "送来水果，并多放一点菜（Mang hoa quả đến và cho thêm một chút rau）",
+          "B": "把杯子收走（Thu chiếc cốc đi）",
+          "C": "让“我”自己买面包（Để “tôi” tự mua bánh mì）",
+          "D": "给“我”一杯晚饭（Cho “tôi” một cốc bữa tối）"
+        },
+        "answer": "A",
+        "explanation": "Trong bài có hai chi tiết trực tiếp: “王阿姨给我送来水果，说：“吃饱了，一天都有精神。”” và “她总给我多放一点菜。”, cho thấy cô Vương quan tâm đến “tôi” bằng cách mang hoa quả và cho thêm rau."
+      },
+      {
+        "id": "q3",
+        "question": "“还是老样子吗？”这句话是什么意思？（Câu “还是老样子吗？” có nghĩa là gì?）",
+        "options": {
+          "A": "问是否继续吃以前常吃的东西（Hỏi có tiếp tục ăn món thường ăn trước đây không）",
+          "B": "问今天冷不冷（Hỏi hôm nay có lạnh không）",
+          "C": "问饭店大不大（Hỏi quán ăn có lớn không）",
+          "D": "问杯子干净不干净（Hỏi chiếc cốc có sạch không）"
+        },
+        "answer": "A",
+        "explanation": "Câu hỏi xuất hiện trong lời thoại “王阿姨看见我，笑着问：“今天早饭吃什么？还是老样子吗？””, cho thấy cô Vương quen mặt khách và hỏi xem hôm nay “tôi” có muốn ăn giống như mọi khi không."
+      },
+      {
+        "id": "q4",
+        "question": "为什么“我”觉得这个冬天不再冷了？（Vì sao “tôi” cảm thấy mùa đông này không còn lạnh nữa?）",
+        "options": {
+          "A": "因为饭店有红灯笼（Vì quán ăn có đèn lồng đỏ）",
+          "B": "因为早饭好吃和人们友好让“我”温暖（Vì bữa sáng ngon và mọi người thân thiện khiến “tôi” ấm áp）",
+          "C": "因为明天不用上班（Vì ngày mai không phải đi làm）",
+          "D": "因为小朋友带水果（Vì bé trai mang hoa quả）"
+        },
+        "answer": "B",
+        "explanation": "Bài viết nhấn mạnh sự ấm áp đến từ con người và bữa ăn: “小饭店不大，可是每个人都很友好”, “王阿姨给我送来水果...她总给我多放一点菜”, rồi kết bằng “吃完早饭，我觉得这个冬天不再冷了”."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t19_01",
+    "hskLevel": 1,
+    "topicId": 19,
+    "topicName": "Thể thao & Trò chơi",
+    "subTheme": "Chơi thể thao rèn luyện thân thể (一起运动)",
+    "title": {
+      "hanzi": "一起运动",
+      "pinyin": "Yìqǐ yùndòng",
+      "meaning": "Cùng nhau vận động"
+    },
+    "contextDescription": "Sáng Chủ nhật, hai anh em Tiểu Minh đi công viên chơi bóng, gặp một chú chó nhỏ và cùng vận động vui vẻ.",
+    "content": {
+      "hanzi": "星期天的早上，天气很好。小明和妹妹走路去公园。公园里的人很多，有的在看花，有的在说话。小明说：“妹妹，我们玩儿什么？”妹妹笑着说：“我们去打球吧，打球好玩儿！”\n\n他们来到草地。小明拿出一个红色的球。球很大，也很漂亮。小明把球给妹妹，说：“你先跑，我来追你。”妹妹抱着它，慢慢地走。小明在后面笑，一边笑一边拍手。妹妹说：“哥哥，你跑得太快了！”小明说：“没关系，我们慢慢玩儿。”\n\n这时，一只小狗跑过来。它看见球，很高兴，抱着它不放。小明和妹妹都笑了。妹妹说：“小狗也想玩儿。”小明想了想，说：“我们和它一起运动吧！”他们轻轻拍手，小狗也摇尾巴。公园里的风很轻，阳光很暖。小草绿绿的，空气也很新鲜。小明觉得，走路、运动、游戏，都很快乐。\n\n中午，他们坐在树下吃苹果。妹妹说：“今天真好玩儿。”小明点头：“对，运动以后，身体更好，心情也好。”公园里的小鸟也在唱歌，好像在为他们加油。回家的路上，他们还是走路。妹妹抱着它，小明跑在前面。夕阳把他们的影子拉得很长。小明说：“明天，我们还来公园打球！”妹妹大声说：“好！一起运动，一起快乐！”",
+      "pinyin": "Xīngqītiān de zǎoshang, tiānqì hěn hǎo. Xiǎomíng hé mèimei zǒulù qù gōngyuán. Gōngyuán lǐ de rén hěn duō, yǒu de zài kàn huā, yǒu de zài shuōhuà. Xiǎomíng shuō: “Mèimei, wǒmen wánr shénme?” Mèimei xiào zhe shuō: “Wǒmen qù dǎqiú ba, dǎqiú hǎowánr!”\n\nTāmen lái dào cǎodì. Xiǎomíng ná chū yí gè hóngsè de qiú. Qiú hěn dà, yě hěn piàoliang. Xiǎomíng bǎ qiú gěi mèimei, shuō: “Nǐ xiān pǎo, wǒ lái zhuī nǐ.” Mèimei bào zhe tā, mànmàn de zǒu. Xiǎomíng zài hòumiàn xiào, yìbiān xiào yìbiān pāi shǒu. Mèimei shuō: “Gēge, nǐ pǎo de tài kuài le!” Xiǎomíng shuō: “Méi guānxi, wǒmen mànmàn wánr.”\n\nZhè shí, yì zhī xiǎo gǒu pǎo guòlái. Tā kànjiàn qiú, hěn gāoxìng, bào zhe tā bú fàng. Xiǎomíng hé mèimei dōu xiào le. Mèimei shuō: “Xiǎo gǒu yě xiǎng wánr.” Xiǎomíng xiǎng le xiǎng, shuō: “Wǒmen hé tā yìqǐ yùndòng ba!” Tāmen qīngqīng pāi shǒu, xiǎo gǒu yě yáo wěiba. Gōngyuán lǐ de fēng hěn qīng, yángguāng hěn nuǎn. Xiǎo cǎo lǜ lǜ de, kōngqì yě hěn xīnxiān. Xiǎomíng juéde, zǒulù, yùndòng, yóuxì, dōu hěn kuàilè.\n\nZhōngwǔ, tāmen zuò zài shù xià chī píngguǒ. Mèimei shuō: “Jīntiān zhēn hǎowánr.” Xiǎomíng diǎn tóu: “Duì, yùndòng yǐhòu, shēntǐ gèng hǎo, xīnqíng yě hǎo.” Gōngyuán lǐ de xiǎo niǎo yě zài chàng gē, hǎoxiàng zài wèi tāmen jiāyóu. Huí jiā de lù shàng, tāmen háishi zǒulù. Mèimei bào zhe tā, Xiǎomíng pǎo zài qiánmiàn. Xīyáng bǎ tāmen de yǐngzi lā de hěn cháng. Xiǎomíng shuō: “Míngtiān, wǒmen hái lái gōngyuán dǎqiú!” Mèimei dà shēng shuō: “Hǎo! Yìqǐ yùndòng, yìqǐ kuàilè!”",
+      "meaning": "Sáng Chủ nhật, thời tiết rất đẹp. Tiểu Minh cùng em gái đi bộ đến công viên. Trong công viên có rất nhiều người, người thì đang ngắm hoa, người thì đang trò chuyện. Tiểu Minh nói: “Em gái, chúng ta chơi gì đây?” Em gái cười nói: “Chúng ta đi đánh bóng nhé, đánh bóng thật thú vị!”\n\nHọ đến bãi cỏ. Tiểu Minh lấy ra một quả bóng màu đỏ. Quả bóng rất lớn, cũng rất đẹp. Tiểu Minh đưa bóng cho em gái, nói: “Em chạy trước đi, anh đuổi theo em.” Em gái ôm nó, từ từ đi bộ. Tiểu Minh ở phía sau cười, vừa cười vừa vỗ tay. Em gái nói: “Anh ơi, anh chạy nhanh quá!” Tiểu Minh nói: “Không sao, chúng ta cứ từ từ chơi.”\n\nLúc này, một chú chó nhỏ chạy đến. Nó nhìn thấy bóng, rất vui, ôm nó không buông. Tiểu Minh và em gái đều cười. Em gái nói: “Chó nhỏ cũng muốn chơi.” Tiểu Minh suy nghĩ một lát, nói: “Chúng ta cùng nó vận động nhé!” Họ nhẹ nhàng vỗ tay, chó nhỏ cũng vẫy đuôi. Gió trong công viên rất nhẹ, ánh nắng rất ấm. Cỏ xanh mướt, không khí cũng rất trong lành. Tiểu Minh cảm thấy, đi bộ, vận động, trò chơi, đều rất vui.\n\nBuổi trưa, họ ngồi dưới gốc cây ăn táo. Em gái nói: “Hôm nay thật vui.” Tiểu Minh gật đầu: “Đúng vậy, sau khi vận động, cơ thể tốt hơn, tâm trạng cũng tốt.” Những chú chim nhỏ trong công viên cũng đang hót, như đang cổ vũ cho họ. Trên đường về nhà, họ vẫn đi bộ. Em gái ôm nó, Tiểu Minh chạy phía trước. Nắng chiều kéo dài bóng của họ. Tiểu Minh nói: “Ngày mai, chúng ta lại đến công viên đánh bóng nhé!” Em gái nói to: “Được! Cùng vận động, cùng vui vẻ!”"
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "打球",
+        "pinyin": "dǎ qiú",
+        "meaning": "đánh bóng",
+        "usageInSentence": "我们去打球吧，打球好玩儿！"
+      },
+      {
+        "hanzi": "好玩儿",
+        "pinyin": "hǎowánr",
+        "meaning": "hay, thú vị, thích thú",
+        "usageInSentence": "我们去打球吧，打球好玩儿！"
+      },
+      {
+        "hanzi": "跑",
+        "pinyin": "pǎo",
+        "meaning": "chạy",
+        "usageInSentence": "你先跑，我来追你。"
+      },
+      {
+        "hanzi": "球",
+        "pinyin": "qiú",
+        "meaning": "quả bóng, hình cầu, quả, nắm",
+        "usageInSentence": "小明拿出一个红色的球。"
+      },
+      {
+        "hanzi": "玩儿",
+        "pinyin": "wánr",
+        "meaning": "chơi",
+        "usageInSentence": "妹妹，我们玩儿什么？"
+      },
+      {
+        "hanzi": "走路",
+        "pinyin": "zǒu lù",
+        "meaning": "đi bộ",
+        "usageInSentence": "小明和妹妹走路去公园。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲什么？(Bài đọc chủ yếu nói về điều gì?)",
+        "options": {
+          "A": "小明和妹妹去公园打球、走路和运动。(Tiểu Minh và em gái đi công viên đánh bóng, đi bộ và vận động.)",
+          "B": "小明在商店买了一个红色的球。(Tiểu Minh mua một quả bóng màu đỏ ở cửa hàng.)",
+          "C": "妹妹和小狗比赛跑步，赢了小狗。(Em gái thi chạy với chó nhỏ và thắng chó nhỏ.)",
+          "D": "他们中午在树下吃苹果，然后睡觉。(Trưa họ ăn táo dưới gốc cây rồi đi ngủ.)"
+        },
+        "answer": "A",
+        "explanation": "Bài đọc mở đầu bằng “小明和妹妹走路去公园”, sau đó hai anh em nói “我们去打球吧”, và kết thúc bằng “一起运动，一起快乐”. Nội dung chính là hai anh em cùng nhau đi bộ, đánh bóng và vận động ở công viên."
+      },
+      {
+        "id": "q2",
+        "question": "小狗看见球以后做了什么？(Sau khi nhìn thấy bóng, chú chó nhỏ đã làm gì?)",
+        "options": {
+          "A": "抱着它不放。(Ôm nó không buông.)",
+          "B": "跑回家。(Chạy về nhà.)",
+          "C": "唱歌。(Hát.)",
+          "D": "吃苹果。(Ăn táo.)"
+        },
+        "answer": "A",
+        "explanation": "Trong bài có câu “它看见球，很高兴，抱着它不放.”, vì vậy đáp án đúng là ôm bóng không buông."
+      },
+      {
+        "id": "q3",
+        "question": "小明为什么说“没关系，我们慢慢玩儿。”? (Vì sao Tiểu Minh nói “Không sao, chúng ta cứ từ từ chơi.”?)",
+        "options": {
+          "A": "因为妹妹说他跑得太快，他想安慰妹妹。(Vì em gái nói anh chạy quá nhanh, anh muốn an ủi em.)",
+          "B": "因为球破了，不能打了。(Vì bóng vỡ, không đánh được.)",
+          "C": "因为小狗来了，他们要回家。(Vì chó nhỏ đến, họ phải về nhà.)",
+          "D": "因为天黑了，看不见路。(Vì trời tối, không nhìn thấy đường.)"
+        },
+        "answer": "A",
+        "explanation": "Trước đó, em gái nói “哥哥，你跑得太快了！”, sau đó Tiểu Minh đáp “没关系，我们慢慢玩儿.” Câu nói thể hiện sự an ủi và đề nghị chơi từ từ, không phải vì bóng vỡ hay trời tối."
+      },
+      {
+        "id": "q4",
+        "question": "从“走路、运动、游戏，都很快乐”可以知道“快乐”是什么意思？(Từ câu “走路、运动、游戏，都很快乐”, có thể biết “快乐” nghĩa là gì?)",
+        "options": {
+          "A": "开心，高兴。(Vui, hạnh phúc.)",
+          "B": "很累，不想动。(Rất mệt, không muốn vận động.)",
+          "C": "很冷，想回家。(Rất lạnh, muốn về nhà.)",
+          "D": "很饿，想吃苹果。(Rất đói, muốn ăn táo.)"
+        },
+        "answer": "A",
+        "explanation": "Trong bài, hai anh em cười, chơi bóng, gặp chó nhỏ, và cảm nhận “阳光很暖”, “空气也很新鲜”, sau đó “小明觉得，走路、运动、游戏，都很快乐.” Tất cả đều là cảm giác tích cực, nên “快乐” có nghĩa là vui, hạnh phúc."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t20_01",
+    "hskLevel": 1,
+    "topicId": 20,
+    "topicName": "Du lịch & Khách sạn",
+    "subTheme": "Chuyến du lịch khám phá thú vị (去旅游)",
+    "title": {
+      "hanzi": "一次快乐的旅行",
+      "pinyin": "Yīcì kuàilè de lǚxíng",
+      "meaning": "Một chuyến du lịch vui vẻ"
+    },
+    "contextDescription": "Hai người bạn đi du lịch trong kỳ nghỉ, cùng nhau ra bến xe, đón bạn ở sân bay, mua vé vào công viên và nghỉ tại khách sạn.",
+    "content": {
+      "hanzi": "放假了，我和朋友去旅游。早上七点，我们来到车站，这个站很热闹，准备上车。朋友说：“车票和机票在这里。”我说：“我们先出去买水，再回来。”我们出了车站，看见一辆车。我们打车到机场，因为今天有朋友从北京来。\n\n到了机场，我们下车，走进大厅。朋友从里面出来，笑着说：“你们来得真早！”我说：“我们也很高兴见到你。你的机票买好了吗？”朋友拿出机票，说：“买好了。”我们一起去买门票，准备去一个有名的公园。工作人员说：“请出示票。”朋友把票给她看。她笑着说：“好，你们可以进去了。”\n\n公园里很安静。我们坐在长椅上休息。朋友说：“这次旅游真有意思。”我说：“是啊，我本来只想去车站看看，没想到能一起出来玩。”我们拿出手机，拍了几张照片。后来，我们上车回酒店。车上，我靠着窗户，看见车站、机场和远处的山。\n\n到了酒店，我们给家人打电话。妈妈说：“你们玩得开心吗？”朋友说：“很开心，我们还去了机场和公园。”我说：“明天我们去一个更远的地方，好吗？”妈妈笑着说：“好，但你们要早点回来。”那天晚上，我躺在床上，想着车票、机票、门票和路上的风景。虽然只有短短一天，但这次旅行让我明白了：和朋友一起出去，世界就变得更温暖、更有趣。",
+      "pinyin": "Fàngjià le, wǒ hé péngyou qù lǚyóu. Zǎoshang qī diǎn, wǒmen lái dào chēzhàn, zhège zhàn hěn rènao, zhǔnbèi shàngchē. Péngyou shuō: “Chēpiào hé jīpiào zài zhèlǐ.” Wǒ shuō: “Wǒmen xiān chūqù mǎi shuǐ, zài huílái.” Wǒmen chū le chēzhàn, kànjiàn yī liàng chē. Wǒmen dǎchē dào jīchǎng, yīnwèi jīntiān yǒu péngyou cóng Běijīng lái.\n\nDào le jīchǎng, wǒmen xiàchē, zǒu jìn dàtīng. Péngyou cóng lǐmiàn chūlái, xiào zhe shuō: “Nǐmen lái de zhēn zǎo!” Wǒ shuō: “Wǒmen yě hěn gāoxìng jiàndào nǐ. Nǐ de jīpiào mǎi hǎo le ma?” Péngyou ná chū jīpiào, shuō: “Mǎi hǎo le.” Wǒmen yìqǐ qù mǎi ménpiào, zhǔnbèi qù yī gè yǒumíng de gōngyuán. Gōngzuò rényuán shuō: “Qǐng chūshì piào.” Péngyou bǎ piào gěi tā kàn. Tā xiào zhe shuō: “Hǎo, nǐmen kěyǐ jìnqù le.”\n\nGōngyuán lǐ hěn ānjìng. Wǒmen zuò zài chángyǐ shàng xiūxi. Péngyou shuō: “Zhè cì lǚyóu zhēn yǒu yìsi.” Wǒ shuō: “Shì a, wǒ běnlái zhǐ xiǎng qù chēzhàn kànkan, méi xiǎng dào néng yìqǐ chūlái wán.” Wǒmen ná chū shǒujī, pāi le jǐ zhāng zhàopiàn. Hòulái, wǒmen shàngchē huí jiǔdiàn. Chē shang, wǒ kào zhe chuānghu, kànjiàn chēzhàn, jīchǎng hé yuǎnchù de shān.\n\nDào le jiǔdiàn, wǒmen gěi jiārén dǎ diànhuà. Māma shuō: “Nǐmen wán de kāixīn ma?” Péngyou shuō: “Hěn kāixīn, wǒmen hái qù le jīchǎng hé gōngyuán.” Wǒ shuō: “Míngtiān wǒmen qù yī gè gèng yuǎn de dìfang, hǎo ma?” Māma xiào zhe shuō: “Hǎo, dàn nǐmen yào zǎo diǎn huílái.” Nà tiān wǎnshang, wǒ tǎng zài chuáng shàng, xiǎng zhe chēpiào, jīpiào, ménpiào hé lù shàng de fēngjǐng. Suīrán zhǐ yǒu duǎnduǎn yī tiān, dàn zhè cì lǚxíng ràng wǒ míngbai le: hé péngyou yìqǐ chūqù, shìjiè jiù biàn de gèng wēnnuǎn, gèng yǒuqù.",
+      "meaning": "Nghỉ lễ rồi, tôi cùng bạn đi du lịch. Bảy giờ sáng, chúng tôi đến bến xe, bến xe này rất náo nhiệt, chuẩn bị lên xe. Bạn nói: “Vé xe và vé máy bay ở đây.” Tôi nói: “Chúng ta ra ngoài mua nước trước rồi quay lại.” Chúng tôi ra khỏi bến xe, nhìn thấy một chiếc xe. Chúng tôi bắt taxi đến sân bay, vì hôm nay có một người bạn từ Bắc Kinh đến.\n\nĐến sân bay, chúng tôi xuống xe, bước vào sảnh lớn. Người bạn từ bên trong đi ra, cười nói: “Các cậu đến sớm thật!” Tôi nói: “Chúng tôi cũng rất vui khi gặp cậu. Vé máy bay của cậu mua xong chưa?” Bạn lấy vé máy bay ra, nói: “Mua xong rồi.” Chúng tôi cùng đi mua vé vào cửa, chuẩn bị đến một công viên nổi tiếng. Nhân viên nói: “Vui lòng xuất trình vé.” Bạn đưa vé cho cô ấy xem. Cô ấy cười nói: “Được rồi, các bạn có thể vào.”\n\nTrong công viên rất yên tĩnh. Chúng tôi ngồi trên ghế dài nghỉ ngơi. Bạn nói: “Chuyến du lịch này thật thú vị.” Tôi nói: “Đúng vậy, ban đầu tôi chỉ muốn đến bến xe xem thôi, không ngờ có thể cùng nhau ra ngoài chơi.” Chúng tôi lấy điện thoại ra, chụp vài tấm ảnh. Sau đó, chúng tôi lên xe về khách sạn. Trên xe, tôi tựa vào cửa sổ, nhìn thấy bến xe, sân bay và những ngọn núi ở phía xa.\n\nĐến khách sạn, chúng tôi gọi điện cho gia đình. Mẹ nói: “Các con chơi có vui không?” Bạn nói: “Rất vui, chúng con còn đi sân bay và công viên nữa.” Tôi nói: “Ngày mai chúng ta đi một nơi xa hơn, được không?” Mẹ cười nói: “Được, nhưng các con phải về sớm.” Tối hôm đó, tôi nằm trên giường, nghĩ về vé xe, vé máy bay, vé vào cửa và cảnh đẹp trên đường. Tuy chỉ là một ngày ngắn ngủi, nhưng chuyến du lịch này khiến tôi hiểu ra: cùng bạn bè ra ngoài, thế giới trở nên ấm áp và thú vị hơn."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "车",
+        "pinyin": "chē",
+        "meaning": "xe",
+        "usageInSentence": "我们看见一辆车。"
+      },
+      {
+        "hanzi": "车票",
+        "pinyin": "chēpiào",
+        "meaning": "vé xe",
+        "usageInSentence": "车票和机票在这里。"
+      },
+      {
+        "hanzi": "车上",
+        "pinyin": "chē shang",
+        "meaning": "trên xe",
+        "usageInSentence": "车上，我靠着窗户。"
+      },
+      {
+        "hanzi": "车站",
+        "pinyin": "chēzhàn",
+        "meaning": "ga, bến xe",
+        "usageInSentence": "我们来到车站。"
+      },
+      {
+        "hanzi": "出",
+        "pinyin": "chū",
+        "meaning": "ra, xuất",
+        "usageInSentence": "我们出了车站。"
+      },
+      {
+        "hanzi": "出来",
+        "pinyin": "chūlái",
+        "meaning": "đi ra, ra đây",
+        "usageInSentence": "朋友从里面出来。"
+      },
+      {
+        "hanzi": "出去",
+        "pinyin": "chūqù",
+        "meaning": "ra ngoài",
+        "usageInSentence": "我们先出去买水。"
+      },
+      {
+        "hanzi": "打车",
+        "pinyin": "dǎchē",
+        "meaning": "bắt xe, gọi taxi",
+        "usageInSentence": "我们打车到机场。"
+      },
+      {
+        "hanzi": "到",
+        "pinyin": "dào",
+        "meaning": "đến",
+        "usageInSentence": "我们来到车站。"
+      },
+      {
+        "hanzi": "放假",
+        "pinyin": "fàngjià",
+        "meaning": "nghỉ, nghỉ định kỳ",
+        "usageInSentence": "放假了，我和朋友去旅游。"
+      },
+      {
+        "hanzi": "机场",
+        "pinyin": "jīchǎng",
+        "meaning": "sân bay",
+        "usageInSentence": "我们打车到机场。"
+      },
+      {
+        "hanzi": "机票",
+        "pinyin": "jīpiào",
+        "meaning": "vé máy bay",
+        "usageInSentence": "车票和机票在这里。"
+      },
+      {
+        "hanzi": "来",
+        "pinyin": "lái",
+        "meaning": "đến, tới",
+        "usageInSentence": "今天有朋友从北京来。"
+      },
+      {
+        "hanzi": "来到",
+        "pinyin": "láidào",
+        "meaning": "đến, đạt đến",
+        "usageInSentence": "我们来到车站。"
+      },
+      {
+        "hanzi": "门票",
+        "pinyin": "ménpiào",
+        "meaning": "vé vào cửa",
+        "usageInSentence": "我们一起去买门票。"
+      },
+      {
+        "hanzi": "票",
+        "pinyin": "piào",
+        "meaning": "vé, phiếu, thẻ",
+        "usageInSentence": "请出示票。"
+      },
+      {
+        "hanzi": "去",
+        "pinyin": "qù",
+        "meaning": "đi",
+        "usageInSentence": "我和朋友去旅游。"
+      },
+      {
+        "hanzi": "上车",
+        "pinyin": "shàngchē",
+        "meaning": "lên xe",
+        "usageInSentence": "准备上车。"
+      },
+      {
+        "hanzi": "下车",
+        "pinyin": "xiàchē",
+        "meaning": "xuống xe",
+        "usageInSentence": "我们下车。"
+      },
+      {
+        "hanzi": "站",
+        "pinyin": "zhàn",
+        "meaning": "trạm, ga",
+        "usageInSentence": "这个站很热闹。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "短文主要讲什么？(Bài viết chủ yếu kể về điều gì?)",
+        "options": {
+          "A": "一次和朋友一起出去旅行的经历 (Một chuyến du lịch cùng bạn bè)",
+          "B": "在酒店工作的快乐 (Niềm vui khi làm việc ở khách sạn)",
+          "C": "学习买火车票的方法 (Học cách mua vé tàu)",
+          "D": "介绍北京的交通 (Giới thiệu giao thông ở Bắc Kinh)"
+        },
+        "answer": "A",
+        "explanation": "Bài viết mở đầu bằng việc nhân vật chính cùng bạn đi du lịch trong kỳ nghỉ, sau đó kể các hoạt động liên tiếp từ bến xe, sân bay, công viên đến khách sạn. Câu dịch tương ứng ở đoạn mở đầu là: “Nghỉ lễ rồi, tôi cùng bạn đi du lịch.” Vì vậy ý chính là một chuyến du lịch cùng bạn bè."
+      },
+      {
+        "id": "q2",
+        "question": "他们在机场做了什么？(Họ đã làm gì ở sân bay?)",
+        "options": {
+          "A": "他们买了门票，准备去公园 (Họ mua vé vào cửa, chuẩn bị đi công viên)",
+          "B": "他们打电话给妈妈 (Họ gọi điện cho mẹ)",
+          "C": "他们上车回酒店 (Họ lên xe về khách sạn)",
+          "D": "他们去了一个更远的地方 (Họ đi đến một nơi xa hơn)"
+        },
+        "answer": "A",
+        "explanation": "Sau khi đến sân bay, hai người gặp bạn từ Bắc Kinh rồi cùng đi mua vé vào cửa để chuẩn bị đến một công viên nổi tiếng. Câu dịch tương ứng trong bài là: “Chúng tôi cùng đi mua vé vào cửa, chuẩn bị đến một công viên nổi tiếng.”"
+      },
+      {
+        "id": "q3",
+        "question": "“车上，我靠着窗户，看见车站、机场和远处的山。”这句话里的“车上”是什么意思？(Trong câu “Trên xe, tôi tựa vào cửa sổ, nhìn thấy bến xe, sân bay và những ngọn núi ở phía xa.”, cụm từ chỉ vị trí có nghĩa là gì?)",
+        "options": {
+          "A": "在车里面 (ở trên xe)",
+          "B": "在车站旁边 (ở bên cạnh bến xe)",
+          "C": "在机场大厅 (ở sảnh sân bay)",
+          "D": "在酒店床上 (ở trên giường khách sạn)"
+        },
+        "answer": "A",
+        "explanation": "Câu văn này xuất hiện sau khi hai người lên xe về khách sạn. Nhân vật chính tựa vào cửa sổ và nhìn thấy cảnh bên ngoài, vì vậy cụm từ chỉ vị trí trong câu có nghĩa là ở trên xe. Câu dịch tương ứng là: “Trên xe, tôi tựa vào cửa sổ...”"
+      },
+      {
+        "id": "q4",
+        "question": "朋友为什么说“你们来得真早！”？(Vì sao người bạn nói “Các cậu đến sớm thật!”?)",
+        "options": {
+          "A": "因为“我”和朋友到机场时，朋友已经在那里了 (Vì khi hai người đến sân bay, người bạn kia đã có mặt ở đó)",
+          "B": "因为“我”和朋友迟到了 (Vì hai người đã đến muộn)",
+          "C": "因为机场要关门 (Vì sân bay sắp đóng cửa)",
+          "D": "因为妈妈让他们早点回来 (Vì mẹ bảo họ phải về sớm)"
+        },
+        "answer": "A",
+        "explanation": "Hai người ra sân bay để đón một người bạn từ Bắc Kinh. Khi họ đến, người bạn đó đã đi ra từ bên trong và nói rằng họ đến sớm. Điều này cho thấy người bạn từ Bắc Kinh đã có mặt ở sân bay trước. Câu dịch tương ứng là: “Người bạn từ bên trong đi ra, cười nói: ‘Các cậu đến sớm thật!’”"
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t21_01",
+    "hskLevel": 1,
+    "topicId": 21,
+    "topicName": "Khoa học tự nhiên & Đo lường",
+    "subTheme": "Thời gian, ngày tháng và các con số (时间与数字)",
+    "title": {
+      "hanzi": "一天的时间",
+      "pinyin": "Yìtiān de shíjiān",
+      "meaning": "Thời gian của một ngày"
+    },
+    "contextDescription": "Hai học sinh cùng nhau đo thời gian trong một ngày ở lớp học, từ sáng đến tối, qua các con số và hoạt động nhỏ.",
+    "content": {
+      "hanzi": "今天是三月五日，星期一。早上七点，我起床。八点半，我和朋友李明在教室。我们今年十二岁。李明说：“请问，现在几点了？”我说：“八点半。昨天九点，今天八点半，快了半小时。”李明说：“时间很重要。我们做一百次动作，每次半分钟，要多少时间？”我说：“五十分钟。”他说：“好，马上开始。”\n\n我们先拿一个钟。钟放在桌子上。它走得慢，比昨天慢一点儿。李明说：“没关系，没事儿。”我说：“对，先关上门，再开始。”我们开始做。李明拿一块表，我拿一页纸。我们一边看，一边写。他常常说：“慢一点儿，别差。”我说：“好，没关系。”十分钟后，李明说：“我差一点错了。”我说：“没关系，下次小心。”最后，我们做对了一半。\n\n中午十二点，我们吃午饭。下午三点，我们再看日期。日期在第三页，上面写着：五月十号，六月八号。李明说：“去年三月五日，我们在这里。今年，我们长大了。”我说：“明年，我们还能一起吗？”他说：“能。明天上午九点，你在这儿等一会儿。”\n\n晚上六点，我们回家。今天很快乐。时间像一条小河，它很快，也很少。我们要用每一分每一秒。我们说：“明年再见。”今天真高兴啊。",
+      "pinyin": "Jīntiān shì sānyuè wǔrì, xīngqīyī. Zǎoshang qī diǎn, wǒ qǐchuáng. Bā bàn diǎn, wǒ hé péngyou Lǐ Míng zài jiàoshì. Wǒmen jīnnián shí èr suì. Lǐ Míng shuō: “Qǐngwèn, xiànzài jǐ diǎn le?” Wǒ shuō: “Bā bàn diǎn. Zuótiān jiǔ diǎn, jīntiān bā bàn diǎn, kuài le bàn xiǎoshí.” Lǐ Míng shuō: “Shíjiān hěn zhòngyào. Wǒmen zuò yìbǎi cì dòngzuò, měi cì bàn fēnzhōng, yào duōshao shíjiān?” Wǒ shuō: “Wǔshí fēnzhōng.” Tā shuō: “Hǎo, mǎshàng kāishǐ.”\n\nWǒmen xiān ná yí gè zhōng. Zhōng fàng zài zhuōzi shàng. Tā zǒu de màn, bǐ zuótiān màn yìdiǎnr. Lǐ Míng shuō: “Méi guānxi, méi shìr.” Wǒ shuō: “Duì, xiān guān shàng mén, zài kāishǐ.” Wǒmen kāishǐ zuò. Lǐ Míng ná yíkuài biǎo, wǒ ná yí yè zhǐ. Wǒmen yìbiān kàn, yìbiān xiě. Tā chángcháng shuō: “Màn yìdiǎnr, bié chà.” Wǒ shuō: “Hǎo, méi guānxi.” Shí fēnzhōng hòu, Lǐ Míng shuō: “Wǒ chà yìdiǎn cuò le.” Wǒ shuō: “Méi guānxi, xià cì xiǎoxīn.” Zuìhòu, wǒmen zuò duì le yíbàn.\n\nZhōngwǔ shí èr diǎn, wǒmen chī wǔfàn. Xiàwǔ sān diǎn, wǒmen zài kàn rìqī. Rìqī zài dì sān yè, shàngmiàn xiě zhe: wǔyuè shí hào, liùyuè bā hào. Lǐ Míng shuō: “Qùnián sānyuè wǔrì, wǒmen zài zhèlǐ. Jīnnián, wǒmen zhǎng dà le.” Wǒ shuō: “Míngnián, wǒmen hái néng yìqǐ ma?” Tā shuō: “Néng. Míngtiān shàngwǔ jiǔ diǎn, nǐ zài zhèr děng yíhuìr.”\n\nWǎnshang liù diǎn, wǒmen huí jiā. Jīntiān hěn kuàilè. Shíjiān xiàng yì tiáo xiǎo hé, tā hěn kuài, yě hěn shǎo. Wǒmen yào yòng měi yì fēn měi yì miǎo. Wǒmen shuō: “Míngnián zàijiàn.” Jīntiān zhēn gāoxìng a.",
+      "meaning": "Hôm nay là ngày mùng năm tháng Ba, thứ Hai. Bảy giờ sáng, tôi thức dậy. Tám giờ rưỡi, tôi và bạn Lý Minh ở trong lớp học. Năm nay chúng tôi mười hai tuổi. Lý Minh nói: “Xin hỏi, bây giờ mấy giờ rồi?” Tôi nói: “Tám giờ rưỡi. Hôm qua chín giờ, hôm nay tám giờ rưỡi, đã nhanh hơn nửa tiếng.” Lý Minh nói: “Thời gian rất quan trọng. Chúng ta làm một trăm động tác, mỗi lần nửa phút, cần bao nhiêu thời gian?” Tôi nói: “Năm mươi phút.” Anh ấy nói: “Được, bắt đầu ngay.”\n\nChúng tôi lấy một chiếc đồng hồ trước. Đặt đồng hồ trên bàn. Nó chạy chậm, chậm hơn hôm qua một chút. Lý Minh nói: “Không sao, không có gì.” Tôi nói: “Đúng, trước tiên đóng cửa lại, rồi bắt đầu.” Chúng tôi bắt đầu làm. Lý Minh cầm một chiếc đồng hồ, tôi cầm một trang giấy. Chúng tôi vừa xem vừa viết. Anh ấy thường nói: “Chậm một chút, đừng sai.” Tôi nói: “Được, không sao.” Mười phút sau, Lý Minh nói: “Tôi suýt làm sai rồi.” Tôi nói: “Không sao, lần sau cẩn thận.” Cuối cùng, chúng tôi làm đúng một nửa.\n\nMười hai giờ trưa, chúng tôi ăn cơm trưa. Ba giờ chiều, chúng tôi lại xem ngày tháng. Ngày tháng ở trang thứ ba, trên đó ghi: ngày mười tháng Năm, ngày mùng tám tháng Sáu. Lý Minh nói: “Ngày mùng năm tháng Ba năm ngoái, chúng ta ở đây. Năm nay, chúng ta lớn rồi.” Tôi nói: “Năm sau, chúng ta vẫn có thể cùng nhau không?” Anh ấy nói: “Có thể. Chín giờ sáng mai, cậu ở đây đợi mình một lát.”\n\nSáu giờ tối, chúng tôi về nhà. Hôm nay rất vui. Thời gian giống như một dòng sông nhỏ, nó trôi rất nhanh, cũng chẳng còn nhiều. Chúng ta phải dùng từng phút từng giây. Chúng tôi nói: “Năm sau gặp lại.” Hôm nay thật vui quá."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "今天",
+        "pinyin": "jīntiān",
+        "meaning": "hôm nay",
+        "usageInSentence": "今天是三月五日，星期一。"
+      },
+      {
+        "hanzi": "早上",
+        "pinyin": "zǎoshang",
+        "meaning": "buổi sáng",
+        "usageInSentence": "早上七点，我起床。"
+      },
+      {
+        "hanzi": "起床",
+        "pinyin": "qǐchuáng",
+        "meaning": "thức dậy",
+        "usageInSentence": "早上七点，我起床。"
+      },
+      {
+        "hanzi": "八",
+        "pinyin": "bā",
+        "meaning": "tám",
+        "usageInSentence": "八点半，我和朋友李明在教室。"
+      },
+      {
+        "hanzi": "半",
+        "pinyin": "bàn",
+        "meaning": "một nửa",
+        "usageInSentence": "八点半，我和朋友李明在教室。"
+      },
+      {
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "meaning": "giờ",
+        "usageInSentence": "八点半，我和朋友李明在教室。"
+      },
+      {
+        "hanzi": "昨天",
+        "pinyin": "zuótiān",
+        "meaning": "hôm qua",
+        "usageInSentence": "昨天九点，今天八点半，快了半小时。"
+      },
+      {
+        "hanzi": "九",
+        "pinyin": "jiǔ",
+        "meaning": "chín",
+        "usageInSentence": "昨天九点，今天八点半，快了半小时。"
+      },
+      {
+        "hanzi": "快",
+        "pinyin": "kuài",
+        "meaning": "nhanh",
+        "usageInSentence": "昨天九点，今天八点半，快了半小时。"
+      },
+      {
+        "hanzi": "小时",
+        "pinyin": "xiǎoshí",
+        "meaning": "giờ",
+        "usageInSentence": "昨天九点，今天八点半，快了半小时。"
+      },
+      {
+        "hanzi": "时间",
+        "pinyin": "shíjiān",
+        "meaning": "thời gian",
+        "usageInSentence": "时间很重要。"
+      },
+      {
+        "hanzi": "百",
+        "pinyin": "bǎi",
+        "meaning": "trăm",
+        "usageInSentence": "我们做一百次动作，每次半分钟，要多少时间？"
+      },
+      {
+        "hanzi": "次",
+        "pinyin": "cì",
+        "meaning": "lần",
+        "usageInSentence": "我们做一百次动作，每次半分钟，要多少时间？"
+      },
+      {
+        "hanzi": "动作",
+        "pinyin": "dòngzuò",
+        "meaning": "động tác",
+        "usageInSentence": "我们做一百次动作，每次半分钟，要多少时间？"
+      },
+      {
+        "hanzi": "分",
+        "pinyin": "fēn",
+        "meaning": "phút",
+        "usageInSentence": "每次半分钟，要多少时间？"
+      },
+      {
+        "hanzi": "多少",
+        "pinyin": "duōshao",
+        "meaning": "bao nhiêu",
+        "usageInSentence": "每次半分钟，要多少时间？"
+      },
+      {
+        "hanzi": "五",
+        "pinyin": "wǔ",
+        "meaning": "năm",
+        "usageInSentence": "我说：“五十分钟。”"
+      },
+      {
+        "hanzi": "十",
+        "pinyin": "shí",
+        "meaning": "mười",
+        "usageInSentence": "我说：“五十分钟。”"
+      },
+      {
+        "hanzi": "马上",
+        "pinyin": "mǎshàng",
+        "meaning": "ngay lập tức",
+        "usageInSentence": "他说：“好，马上开始。”"
+      },
+      {
+        "hanzi": "先",
+        "pinyin": "xiān",
+        "meaning": "trước tiên",
+        "usageInSentence": "我们先拿一个钟。"
+      },
+      {
+        "hanzi": "拿",
+        "pinyin": "ná",
+        "meaning": "cầm, lấy",
+        "usageInSentence": "我们先拿一个钟。"
+      },
+      {
+        "hanzi": "放",
+        "pinyin": "fàng",
+        "meaning": "đặt",
+        "usageInSentence": "钟放在桌子上。"
+      },
+      {
+        "hanzi": "比",
+        "pinyin": "bǐ",
+        "meaning": "so với",
+        "usageInSentence": "它走得慢，比昨天慢一点儿。"
+      },
+      {
+        "hanzi": "慢",
+        "pinyin": "màn",
+        "meaning": "chậm",
+        "usageInSentence": "它走得慢，比昨天慢一点儿。"
+      },
+      {
+        "hanzi": "日期",
+        "pinyin": "rìqī",
+        "meaning": "ngày tháng",
+        "usageInSentence": "下午三点，我们再看日期。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲了什么？ (Bài đọc này chủ yếu kể về điều gì?)",
+        "options": {
+          "A": "两个朋友在教室里一起看时间、做动作 (Hai người bạn cùng nhau xem thời gian và làm động tác trong lớp học)",
+          "B": "一个学生去买一块表 (Một học sinh đi mua đồng hồ)",
+          "C": "去年和今年的日期完全一样 (Ngày tháng năm ngoái và năm nay hoàn toàn giống nhau)",
+          "D": "明天上午九点，大家回家 (Chín giờ sáng mai, mọi người về nhà)"
+        },
+        "answer": "A",
+        "explanation": "Bài đọc mở đầu giới thiệu hôm nay là ngày mùng năm tháng Ba, hai bạn ở lớp học và cùng nhau xem thời gian để làm động tác. Câu gốc “八点半，我和朋友李明在教室。” và “我们做一百次动作，每次半分钟，要多少时间？” cho thấy nội dung chính là hai bạn cùng nhau xem thời gian và làm động tác."
+      },
+      {
+        "id": "q2",
+        "question": "他们要做多少次动作？ (Họ phải làm bao nhiêu lần động tác?)",
+        "options": {
+          "A": "五十次 (năm mươi lần)",
+          "B": "一百次 (một trăm lần)",
+          "C": "十次 (mười lần)",
+          "D": "两次 (hai lần)"
+        },
+        "answer": "B",
+        "explanation": "Trong bài có câu “我们做一百次动作，每次半分钟，要多少时间？” nên số lần động tác là một trăm lần, đáp án đúng là B."
+      },
+      {
+        "id": "q3",
+        "question": "“没关系，没事儿”在这里是什么意思？ (“没关系，没事儿” ở đây có nghĩa là gì?)",
+        "options": {
+          "A": "不要担心，没有问题 (Đừng lo lắng, không có vấn đề gì)",
+          "B": "时间很重要 (Thời gian rất quan trọng)",
+          "C": "下次小心一点 (Lần sau cẩn thận một chút)",
+          "D": "我错了 (Tôi sai rồi)"
+        },
+        "answer": "A",
+        "explanation": "Khi đồng hồ chạy chậm, Lý Minh nói câu “它走得慢，比昨天慢一点儿。李明说：“没关系，没事儿。”” để trấn an bạn, nghĩa là không sao, không có vấn đề gì."
+      },
+      {
+        "id": "q4",
+        "question": "明天上午九点，他们要做什么？ (Chín giờ sáng mai, họ sẽ làm gì?)",
+        "options": {
+          "A": "一起吃饭 (cùng ăn cơm)",
+          "B": "在教室里等一会儿 (đợi một lát ở lớp học)",
+          "C": "回家 (về nhà)",
+          "D": "看日期 (xem ngày tháng)"
+        },
+        "answer": "B",
+        "explanation": "Cuối bài có lời thoại “明天上午九点，你在这儿等一会儿。” nên sáng mai họ sẽ đợi một lát ở nơi đó, tức là lớp học."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t22_01",
+    "hskLevel": 1,
+    "topicId": 22,
+    "topicName": "Công nghệ thông tin & Viễn thông",
+    "subTheme": "Sử dụng điện thoại và máy tính (打电话与用电脑)",
+    "title": {
+      "hanzi": "打电话和用电脑",
+      "pinyin": "Dǎ diànhuà hé yòng diànnǎo",
+      "meaning": "Gọi điện thoại và dùng máy tính"
+    },
+    "contextDescription": "Sáng thứ bảy, một bạn nhỏ dùng điện thoại di động và máy tính để lên mạng, gọi cho bà, rồi cảm nhận công nghệ giúp kết nối gia đình và bạn bè.",
+    "content": {
+      "hanzi": "今天是星期六，早上八点。我在家里，妈妈在厨房做饭，爸爸坐在客厅看电视机。我的手机在桌子上，电话也在旁边。我想上网，就打开电脑。可是电脑没有电，我马上打电话问爸爸。爸爸笑着说：“孩子，电插上了，你打开电脑吧。”我打开电脑，开始上网。\n\n网上有很多朋友，也有我的网友。网友叫小明，他在北京。他给我发消息：“你好，今天天气好吗？”我马上回：“很好，我在家里。”我们聊了一会儿，妈妈也过来看手机。她说：“电话响了，是你奶奶打来的。”我接电话，奶奶在电话里说：“宝贝，周末快乐。”我说：“奶奶，谢谢您。我用电脑给您看照片。”\n\n我用手机给奶奶照了客厅和电视机。奶奶很高兴。她说：“你长大了，会用电脑了。”爸爸也说：“上网要少一点，眼睛要休息。”我点点头。后来，我关了电脑，和爸妈一起吃饭。我觉得，手机和电话能让我们和朋友、家人说话，电脑能让我们学习，但是最幸福的是在一起。\n\n晚上，我和网友又在网上说话。他说他想来我家看电脑。我笑了。手机、电话、电视和电脑都是好朋友，但是爱最重要。今天真开心。",
+      "pinyin": "Jīntiān shì xīngqīliù, zǎoshang bā diǎn. Wǒ zài jiālǐ, māma zài chúfáng zuòfàn, bàba zuò zài kètīng kàn diànshìjī. Wǒ de shǒujī zài zhuōzi shang, diànhuà yě zài pángbiān. Wǒ xiǎng shàngwǎng, jiù dǎ kāi diànnǎo. Kěshì diànnǎo méiyǒu diàn, wǒ mǎshàng dǎ diànhuà wèn bàba. Bàba xiào zhe shuō: “Háizi, diàn chā shàng le, nǐ dǎ kāi diànnǎo ba.” Wǒ dǎ kāi diànnǎo, kāishǐ shàngwǎng.\n\nWǎng shang yǒu hěn duō péngyou, yě yǒu wǒ de wǎngyǒu. Wǎngyǒu jiào Xiǎomíng, tā zài Běijīng. Tā gěi wǒ fā xiāoxi: “Nǐ hǎo, jīntiān tiānqì hǎo ma?” Wǒ mǎshàng huí: “Hěn hǎo, wǒ zài jiālǐ.” Wǒmen liáo le yī huìr, māma yě guòlái kàn shǒujī. Tā shuō: “Diànhuà xiǎng le, shì nǐ nǎinai dǎ lái de.” Wǒ jiē diànhuà, nǎinai zài diànhuà lǐ shuō: “Bǎobèi, zhōumò kuàilè.” Wǒ shuō: “Nǎinai, xièxie nín. Wǒ yòng diànnǎo gěi nín kàn zhàopiàn.”\n\nWǒ yòng shǒujī gěi nǎinai zhào le kètīng hé diànshìjī. Nǎinai hěn gāoxìng. Tā shuō: “Nǐ zhǎng dà le, huì yòng diànnǎo le.” Bàba yě shuō: “Shàngwǎng yào shǎo yīdiǎn, yǎnjing yào xiūxi.” Wǒ diǎn diǎn tóu. Hòulái, wǒ guān le diànnǎo, hé bà mā yìqǐ chīfàn. Wǒ juéde, shǒujī hé diànhuà néng ràng wǒmen hé péngyou, jiārén shuōhuà, diànnǎo néng ràng wǒmen xuéxí, dànshì zuì xìngfú de shì zài yìqǐ.\n\nWǎnshang, wǒ hé wǎngyǒu yòu zài wǎng shang shuōhuà. Tā shuō tā xiǎng lái wǒ jiā kàn diànnǎo. Wǒ xiào le. Shǒujī, diànhuà, diànshì hé diànnǎo dōu shì hǎo péngyou, dànshì ài zuì zhòngyào. Jīntiān zhēn kāixīn.",
+      "meaning": "Hôm nay là thứ bảy, tám giờ sáng. Tôi ở nhà, mẹ đang nấu ăn trong bếp, bố ngồi xem tivi trong phòng khách. Điện thoại di động của tôi ở trên bàn, điện thoại bàn cũng ở bên cạnh. Tôi muốn lên mạng, liền mở máy tính. Nhưng máy tính không có điện, tôi vội gọi điện hỏi bố. Bố cười nói: “Con ơi, điện đã cắm rồi, con mở máy tính đi.” Tôi mở máy tính, bắt đầu lên mạng.\n\nTrên mạng có rất nhiều bạn, cũng có bạn trên mạng của tôi. Bạn mạng tên là Tiểu Minh, cậu ấy ở Bắc Kinh. Cậu ấy gửi tin nhắn cho tôi: “Chào bạn, hôm nay thời tiết có tốt không?” Tôi vội trả lời: “Rất tốt, mình ở nhà.” Chúng tôi trò chuyện một lát, mẹ cũng lại xem điện thoại di động. Mẹ nói: “Điện thoại reo rồi, là bà gọi đến.” Tôi nghe điện thoại, bà nói trong điện thoại: “Cháu yêu, cuối tuần vui vẻ.” Tôi nói: “Bà ơi, cảm ơn bà. Cháu dùng máy tính cho bà xem ảnh.”\n\nTôi dùng điện thoại di động chụp cho bà xem phòng khách và tivi. Bà rất vui. Bà nói: “Cháu lớn rồi, biết dùng máy tính rồi.” Bố cũng nói: “Lên mạng nên ít một chút, mắt cần nghỉ ngơi.” Tôi gật đầu. Sau đó, tôi tắt máy tính, cùng bố mẹ ăn cơm. Tôi cảm thấy, điện thoại di động và điện thoại có thể giúp chúng ta nói chuyện với bạn bè, người thân, máy tính có thể giúp chúng ta học tập, nhưng hạnh phúc nhất là được ở bên nhau.\n\nBuổi tối, tôi lại nói chuyện với bạn trên mạng. Cậu ấy nói muốn đến nhà tôi xem máy tính. Tôi cười. Điện thoại di động, điện thoại, tivi và máy tính đều là những người bạn tốt, nhưng tình yêu thương là quan trọng nhất. Hôm nay thật vui."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "打电话",
+        "pinyin": "dǎ diànhuà",
+        "meaning": "gọi điện thoại",
+        "usageInSentence": "我马上打电话问爸爸。"
+      },
+      {
+        "hanzi": "打开",
+        "pinyin": "dǎ kāi",
+        "meaning": "mở ra",
+        "usageInSentence": "我想上网，就打开电脑。"
+      },
+      {
+        "hanzi": "电",
+        "pinyin": "diàn",
+        "meaning": "điện",
+        "usageInSentence": "可是电脑没有电。"
+      },
+      {
+        "hanzi": "电话",
+        "pinyin": "diànhuà",
+        "meaning": "điện thoại",
+        "usageInSentence": "电话也在旁边。"
+      },
+      {
+        "hanzi": "电脑",
+        "pinyin": "diànnǎo",
+        "meaning": "máy tính",
+        "usageInSentence": "我打开电脑，开始上网。"
+      },
+      {
+        "hanzi": "电视",
+        "pinyin": "diànshì",
+        "meaning": "tivi",
+        "usageInSentence": "手机、电话、电视和电脑都是好朋友。"
+      },
+      {
+        "hanzi": "电视机",
+        "pinyin": "diànshìjī",
+        "meaning": "máy thu hình",
+        "usageInSentence": "爸爸坐在客厅看电视机。"
+      },
+      {
+        "hanzi": "上网",
+        "pinyin": "shàngwǎng",
+        "meaning": "lên mạng",
+        "usageInSentence": "我想上网，就打开电脑。"
+      },
+      {
+        "hanzi": "手机",
+        "pinyin": "shǒujī",
+        "meaning": "điện thoại di động",
+        "usageInSentence": "我的手机在桌子上。"
+      },
+      {
+        "hanzi": "网上",
+        "pinyin": "wǎng shang",
+        "meaning": "trên mạng",
+        "usageInSentence": "网上有很多朋友。"
+      },
+      {
+        "hanzi": "网友",
+        "pinyin": "wǎngyǒu",
+        "meaning": "bạn trên mạng",
+        "usageInSentence": "网友叫小明。"
+      },
+      {
+        "hanzi": "打开",
+        "pinyin": "dǎ kāi",
+        "meaning": "mở ra",
+        "usageInSentence": "你打开电脑吧。"
+      },
+      {
+        "hanzi": "电话",
+        "pinyin": "diànhuà",
+        "meaning": "điện thoại",
+        "usageInSentence": "电话响了，是你奶奶打来的。"
+      },
+      {
+        "hanzi": "电脑",
+        "pinyin": "diànnǎo",
+        "meaning": "máy tính",
+        "usageInSentence": "我用电脑给您看照片。"
+      },
+      {
+        "hanzi": "电",
+        "pinyin": "diàn",
+        "meaning": "điện",
+        "usageInSentence": "电插上了，你打开电脑吧。"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲了什么？ (Bài văn chủ yếu kể về điều gì?)",
+        "options": {
+          "A": "手机和电脑帮助我和家人、朋友联系，让我感到幸福。 (Điện thoại và máy tính giúp tôi liên lạc với gia đình, bạn bè và làm tôi cảm thấy hạnh phúc.)",
+          "B": "我学会了做饭和看电视。 (Tôi học được nấu ăn và xem tivi.)",
+          "C": "小明从北京来我家玩。 (Tiểu Minh từ Bắc Kinh đến nhà tôi chơi.)",
+          "D": "我整天上网，不吃饭。 (Tôi lướt mạng cả ngày, không ăn cơm.)"
+        },
+        "answer": "A",
+        "explanation": "Bài văn tập trung vào việc dùng điện thoại, máy tính để liên lạc với gia đình và bạn bè. Câu kết “手机和电话能让我们和朋友、家人说话，电脑能让我们学习，但是最幸福的是在一起。” cho thấy ý chính là công nghệ giúp kết nối, còn hạnh phúc nhất là được ở bên nhau."
+      },
+      {
+        "id": "q2",
+        "question": "为什么一开始电脑不能上网？ (Vì sao lúc đầu máy tính không lên mạng được?)",
+        "options": {
+          "A": "电脑坏了。 (Máy tính hỏng.)",
+          "B": "电脑没有电。 (Máy tính không có điện.)",
+          "C": "我没有手机。 (Tôi không có điện thoại.)",
+          "D": "网络很慢。 (Mạng chậm.)"
+        },
+        "answer": "B",
+        "explanation": "Trong bài có câu “可是电脑没有电，我马上打电话问爸爸。” cho thấy nguyên nhân ban đầu là máy tính chưa có điện."
+      },
+      {
+        "id": "q3",
+        "question": "从“电话响了，是你奶奶打来的”可以知道什么？ (Từ câu “电话响了，是你奶奶打来的” có thể biết điều gì?)",
+        "options": {
+          "A": "奶奶给“我”打电话。 (Bà gọi điện cho “tôi”.)",
+          "B": "奶奶要“我”看电脑。 (Bà muốn “tôi” xem máy tính.)",
+          "C": "妈妈买新手机。 (Mẹ mua điện thoại mới.)",
+          "D": "网友给“我”发消息。 (Bạn mạng gửi tin nhắn cho “tôi”.)"
+        },
+        "answer": "A",
+        "explanation": "Câu “电话响了，是你奶奶打来的。” và hành động “我接电话” cho thấy bà đang gọi điện thoại cho “tôi”."
+      }
+    ]
+  },
+  {
+    "id": "reading_hsk1_t24_01",
+    "hskLevel": 1,
+    "topicId": 24,
+    "topicName": "Giao thông & Hạ tầng",
+    "subTheme": "Đi lại bằng xe buýt và tàu hỏa (坐车出行)",
+    "title": {
+      "hanzi": "坐汽车看火车",
+      "pinyin": "Zuò qìchē kàn huǒchē",
+      "meaning": "Đi xe ô tô xem tàu hỏa"
+    },
+    "contextDescription": "Hai bạn nhỏ đi xe ô tô đến nhà ga xem tàu hỏa, trên đường trò chuyện về tàu hỏa, máy bay và an toàn giao thông.",
+    "content": {
+      "hanzi": "今天是星期六，天气很好。我和小明去火车站看火车。我们坐在马路边等汽车。汽车来得很慢，小明有点着急。他说：“路上车真多！”我笑着回答：“别急，火车不会飞走。”小明又问：“汽车什么时候来？”我说：“快了，你看，它来了。”\n\n过了一会儿，汽车终于来了。司机叔叔开车很稳。我们上车，坐在窗边。小明指着路口说：“看，前面有火车！”原来，路口旁边有一条铁路，一列火车正慢慢开过。我点点头：“火车真长，像一条大龙。”小明高兴得拍手。他小声说：“我喜欢火车，也喜欢汽车。”\n\n汽车继续在路上走。小明问：“为什么火车比汽车快？”我说：“火车走铁路，汽车走马路。路口的红灯短，火车不用等。不过，飞机飞得更高更快。”小明看着天上：“我也想坐飞机，去很远的地方。”我拍拍他的肩膀：“等你长大了，我们一起去坐飞机。”\n\n我们到了火车站。广场上有很多人和很多车。小明说：“这条路真热闹！”我说：“汽车、火车、飞机都帮我们出行。路上安全最重要。”小明点点头，笑了。下午，我们坐汽车回家。回家的路上，我看见天上有一架飞机飞过。我想：今天坐汽车看火车，真开心。",
+      "pinyin": "Jīntiān shì xīngqīliù, tiānqì hěn hǎo. Wǒ hé Xiǎomíng qù huǒchēzhàn kàn huǒchē. Wǒmen zuò zài mǎlù biān děng qìchē. Qìchē lái de hěn màn, Xiǎomíng yǒudiǎn zháojí. Tā shuō: “Lùshang chē zhēn duō!” Wǒ xiàozhe huídá: “Bié jí, huǒchē bù huì fēi zǒu.” Xiǎomíng yòu wèn: “Qìchē shénme shíhou lái?” Wǒ shuō: “Kuài le, nǐ kàn, tā lái le.”\n\nGuò le yī huìr, qìchē zhōngyú lái le. Sījī shūshu kāichē hěn wěn. Wǒmen shàngchē, zuò zài chuāngbiān. Xiǎomíng zhǐzhe lùkǒu shuō: “Kàn, qiánmiàn yǒu huǒchē!” Yuánlái, lùkǒu pángbiān yǒu yī tiáo tiělù, yī liè huǒchē zhèng mànmàn kāi guò. Wǒ diǎndiǎn tóu: “Huǒchē zhēn cháng, xiàng yī tiáo dà lóng.” Xiǎomíng gāoxìng de pāi shǒu. Tā xiǎoshēng shuō: “Wǒ xǐhuan huǒchē, yě xǐhuan qìchē.”\n\nQìchē jìxù zài lùshang zǒu. Xiǎomíng wèn: “Wèishénme huǒchē bǐ qìchē kuài?” Wǒ shuō: “Huǒchē zǒu tiělù, qìchē zǒu mǎlù. Lùkǒu de hóngdēng duǎn, huǒchē bù yòng děng. Bù guò, fēijī fēi de gèng gāo gèng kuài.” Xiǎomíng kànzhe tiānshang: “Wǒ yě xiǎng zuò fēijī, qù hěn yuǎn de dìfang.” Wǒ pāipai tā de jiānbǎng: “Děng nǐ zhǎngdà le, wǒmen yī qǐ qù zuò fēijī.”\n\nWǒmen dào le huǒchēzhàn. Guǎngchǎng shàng yǒu hěn duō rén hé hěn duō chē. Xiǎomíng shuō: “Zhè tiáo lù zhēn rènao!” Wǒ shuō: “Qìchē, huǒchē, fēijī dōu bāng wǒmen chūxíng. Lùshang ānquán zuì zhòngyào.” Xiǎomíng diǎndiǎn tóu, xiàole. Xiàwǔ, wǒmen zuò qìchē huí jiā. Huí jiā de lùshang, wǒ kànjiàn tiānshang yǒu yī jià fēijī fēi guò. Wǒ xiǎng: Jīntiān zuò qìchē kàn huǒchē, zhēn kāixīn.",
+      "meaning": "Hôm nay là thứ Bảy, thời tiết rất đẹp. Tôi và Tiểu Minh đến nhà ga để xem tàu hỏa. Chúng tôi ngồi bên đường cái đợi xe ô tô. Xe ô tô đến rất chậm, Tiểu Minh hơi sốt ruột. Cậu ấy nói: “Trên đường xe cộ đông thật!” Tôi cười và trả lời: “Đừng vội, tàu hỏa không bay đi đâu.” Tiểu Minh lại hỏi: “Khi nào xe ô tô đến?” Tôi nói: “Sắp rồi, cậu xem, nó đến kìa.”\n\nMột lát sau, xe ô tô cuối cùng cũng đến. Chú tài xế lái xe rất vững. Chúng tôi lên xe, ngồi cạnh cửa sổ. Tiểu Minh chỉ vào ngã đường nói: “Nhìn kìa, phía trước có tàu hỏa!” Thì ra, bên cạnh ngã đường có một tuyến đường sắt, một đoàn tàu đang từ từ chạy qua. Tôi gật đầu: “Tàu hỏa dài thật, giống như một con rồng lớn.” Tiểu Minh vui mừng vỗ tay. Cậu ấy nói nhỏ: “Tớ thích tàu hỏa, cũng thích xe ô tô.”\n\nXe ô tô tiếp tục chạy trên đường. Tiểu Minh hỏi: “Tại sao tàu hỏa nhanh hơn xe ô tô?” Tôi nói: “Tàu hỏa chạy trên đường sắt, xe ô tô chạy trên đường cái. Đèn đỏ ở ngã đường ngắn, tàu hỏa không phải chờ. Tuy nhiên, máy bay bay cao hơn và nhanh hơn.” Tiểu Minh nhìn lên bầu trời: “Tớ cũng muốn đi máy bay, đến một nơi rất xa.” Tôi vỗ vai cậu ấy: “Đợi khi cậu lớn lên, chúng mình cùng đi máy bay.”\n\nChúng tôi đến nhà ga. Trên quảng trường có rất nhiều người và rất nhiều xe. Tiểu Minh nói: “Con đường này thật náo nhiệt!” Tôi nói: “Xe ô tô, tàu hỏa, máy bay đều giúp chúng ta đi lại. An toàn trên đường là quan trọng nhất.” Tiểu Minh gật đầu, cười. Buổi chiều, chúng tôi đi xe ô tô về nhà. Trên đường về, tôi nhìn thấy trên bầu trời có một chiếc máy bay đang bay qua. Tôi nghĩ: hôm nay đi xe ô tô xem tàu hỏa, thật vui."
+    },
+    "targetWordsUsed": [
+      {
+        "hanzi": "飞",
+        "pinyin": "fēi",
+        "meaning": "bay",
+        "usageInSentence": "火车不会飞走"
+      },
+      {
+        "hanzi": "飞机",
+        "pinyin": "fēijī",
+        "meaning": "máy bay",
+        "usageInSentence": "我也想坐飞机"
+      },
+      {
+        "hanzi": "火车",
+        "pinyin": "huǒchē",
+        "meaning": "tàu hỏa",
+        "usageInSentence": "我和小明去火车站看火车"
+      },
+      {
+        "hanzi": "开车",
+        "pinyin": "kāichē",
+        "meaning": "lái xe",
+        "usageInSentence": "司机叔叔开车很稳"
+      },
+      {
+        "hanzi": "路",
+        "pinyin": "lù",
+        "meaning": "đường; tuyến đường",
+        "usageInSentence": "这条路真热闹"
+      },
+      {
+        "hanzi": "路口",
+        "pinyin": "lùkǒu",
+        "meaning": "ngã đường, giao lộ",
+        "usageInSentence": "路口旁边有一条铁路"
+      },
+      {
+        "hanzi": "路上",
+        "pinyin": "lùshang",
+        "meaning": "trên đường",
+        "usageInSentence": "路上车真多"
+      },
+      {
+        "hanzi": "马路",
+        "pinyin": "mǎlù",
+        "meaning": "đường cái",
+        "usageInSentence": "我们坐在马路边等汽车"
+      },
+      {
+        "hanzi": "汽车",
+        "pinyin": "qìchē",
+        "meaning": "xe ô tô",
+        "usageInSentence": "汽车来得很慢"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q1",
+        "question": "这篇文章主要讲了什么？（Bài văn này chủ yếu kể về điều gì？）",
+        "options": {
+          "A": "小明和“我”坐汽车去看火车（Tiểu Minh và “tôi” đi xe ô tô để xem tàu hỏa）",
+          "B": "他们坐飞机去很远的地方（Họ đi máy bay đến một nơi rất xa）",
+          "C": "司机叔叔教他们开车（Chú tài xế dạy họ lái xe）",
+          "D": "路上没有汽车和火车（Trên đường không có xe ô tô và tàu hỏa）"
+        },
+        "answer": "A",
+        "explanation": "Bài văn kể về chuyến đi xem tàu hỏa của hai bạn. Câu mở đầu “我和小明去火车站看火车。” và câu kết “今天坐汽车看火车，真开心。” cho thấy ý chính là đi xe ô tô đến nhà ga xem tàu hỏa."
+      },
+      {
+        "id": "q2",
+        "question": "小明为什么有点着急？（Tại sao Tiểu Minh hơi sốt ruột？）",
+        "options": {
+          "A": "因为汽车来得很慢（Vì xe ô tô đến rất chậm）",
+          "B": "因为火车飞走了（Vì tàu hỏa đã bay đi mất）",
+          "C": "因为路口没有红绿灯（Vì ngã đường không có đèn giao thông）",
+          "D": "因为他不喜欢马路（Vì cậu ấy không thích đường cái）"
+        },
+        "answer": "A",
+        "explanation": "Trong bài có câu “汽车来得很慢，小明有点着急。” cho biết nguyên nhân là xe ô tô đến chậm, nên cậu ấy sốt ruột."
+      },
+      {
+        "id": "q3",
+        "question": "“火车不会飞走”这句话是什么意思？（Câu “火车不会飞走” có nghĩa là gì？）",
+        "options": {
+          "A": "火车真的会飞（Tàu hỏa thật sự biết bay）",
+          "B": "安慰小明不要着急，火车还在等他们（An ủi Tiểu Minh đừng sốt ruột, tàu hỏa vẫn đang đợi họ）",
+          "C": "飞机比火车慢（Máy bay chậm hơn tàu hỏa）",
+          "D": "汽车比火车快（Xe ô tô nhanh hơn tàu hỏa）"
+        },
+        "answer": "B",
+        "explanation": "Câu nói “别急，火车不会飞走。” dùng hình ảnh “飞走” một cách dí dỏm để trấn an bạn nhỏ rằng tàu hỏa vẫn còn ở đó, không cần lo lắng."
+      }
+    ]
+  }
+]

@@ -1,0 +1,2455 @@
+{
+  "testId": "hsk3-13",
+  "level": 3,
+  "title": "HSK 3 Test H31219",
+  "durationMinutes": 85,
+  "questionCount": 80,
+  "listeningQuestionCount": 40,
+  "readingQuestionCount": 30,
+  "writingQuestionCount": 10,
+  "audioUrl": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/hsk3-13_full.mp3",
+  "sections": [
+    {
+      "id": "listening",
+      "title": "Listening",
+      "questions": [
+        {
+          "id": "hsk3-13-q001",
+          "number": 1,
+          "type": "image_match",
+          "instruction": "一、听力\n第一部分\n第 1-5 题",
+          "prompt": "",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q001.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": [],
+          "transcript": "一,我喜欢头饭了,你去洗吧。你真骂,我等你半天了。一,我喜欢头饭了,你去洗吧。你真骂,我等你半天了。",
+          "explanation": "【Dịch nghĩa】Bản ghi âm có lỗi nhận diện, câu chuẩn likely là: '我洗完澡了,你去洗吧。' (Wǒ xǐwán zǎo le, nǐ qù xǐ ba.) - 'Tôi tắm xong rồi, bạn vào tắm đi.' và '你真慢,我等你半天了。' (Nǐ zhēn màn, wǒ děng nǐ bàntiān le.) - 'Bạn thật chậm, tôi đợi bạn nửa ngày rồi.'\n【Phân tích】Đây là dạng bài nối câu với tranh ở Phần 1 Listening HSK 3. Từ khóa ăn điểm là '洗' (tắm/rửa) xuất hiện hai lần: '洗完澡了' (tắm xong) và '你去洗吧' (bạn vào tắm đi), cùng chi tiết '我等你半天了' (đợi bạn rất lâu) cho thấy người nói đang chờ bạn mình tắm. Do đó đáp án B là bức tranh mô tả cảnh tắm rửa/phòng tắm. Loại trừ các tranh khác vì câu không nhắc đến ăn cơm, mua sắm hay các hoạt động khác.\n【Từ vựng & Ngữ pháp】• 洗澡 xǐzǎo: tắm. • 等你半天了 děng nǐ bàntiān le: đợi bạn nửa ngày rồi (cách nói phóng đại chỉ thời gian chờ lâu), cấu trúc 'V + 了' thể hiện hành động đã hoàn thành."
+        },
+        {
+          "id": "hsk3-13-q002",
+          "number": 2,
+          "type": "image_match",
+          "instruction": "一、听力\n第一部分\n第 1-5 题",
+          "prompt": "",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q002.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": [],
+          "transcript": "你老师,这个送给您,谢谢您这段时间对我的帮助。不客气,也谢谢你。你老师,这个送给您,谢谢您这段时间对我的帮助。谢谢您的帮助。",
+          "explanation": "【Dịch nghĩa】Bản ghi âm có lỗi nhận diện, câu chuẩn likely là: '王老师,这个送给您,谢谢您这段时间对我的帮助。' (Wáng lǎoshī, zhège sòng gěi nín, xièxie nín zhè duàn shíjiān duì wǒ de bāngzhù.) - 'Thầy Vương, món quà này tặng thầy, cảm ơn thầy đã giúp đỡ em trong thời gian qua.' và '不客气,也谢谢你。' (Bú kèqi, yě xièxie nǐ.) - 'Không có gì, thầy cũng cảm ơn em.'\n【Phân tích】Từ khóa ăn điểm là '送给您' (tặng cho thầy/anh chị - đại từ lịch sự '您' chỉ người lớn tuổi hơn) và '老师' (giáo viên), kết hợp với '谢谢您...对我的帮助' (cảm ơn sự giúp đỡ). Nội dung hội thoại là học sinh tặng quà cảm ơn giáo viên, nên đáp án A là bức tranh mô tả cảnh tặng quà cho giáo viên. Loại trừ các tranh về mua hàng, ăn uống... vì không xuất hiện trong lời thoại.\n【Từ vựng & Ngữ pháp】• 送 sòng: tặng, biếu; cấu trúc '送 + 物 + 给 + 人' (tặng cái gì cho ai). • 帮助 bāngzhù: giúp đỡ; '对...的帮助' (sự giúp đỡ đối với...). • 不客气 bú kèqi: không có gì (câu đáp lại lời cảm ơn)."
+        },
+        {
+          "id": "hsk3-13-q003",
+          "number": 3,
+          "type": "image_match",
+          "instruction": "一、听力\n第一部分\n第 1-5 题",
+          "prompt": "",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q003.mp3",
+          "needsReview": false,
+          "correctAnswer": "E",
+          "imageUrls": [],
+          "transcript": "你看,我穿这双鞋怎么样?很好,你就穿这双吧,很漂亮。三,你看,我穿这双鞋怎么样。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: 你看，我穿这双鞋怎么样？(Nǐ kàn, wǒ chuān zhè shuāng xié zěnmeyàng?) - 'Cậu xem, mình đi đôi giày này thế nào?'\nĐáp lại: 很好，你就穿这双吧，很漂亮。(Hěn hǎo, nǐ jiù chuān zhè shuāng ba, hěn piàoliang.) - 'Đẹp lắm, cậu cứ đi đôi này đi, rất xinh.'\nCác lựa chọn A-F là 6 bức tranh mô tả các hành động/vật khác nhau.\n\n【Phân tích】\nTừ khóa ăn điểm trong đoạn hội thoại là '鞋' (xié - giày) và '穿' (chuān - mang, đi, mặc). Người nói hỏi ý kiến về việc đi đôi giày này thế nào, và người kia khen đôi giày rất đẹp, khuyên nên đi đôi đó. Do đó, đáp án đúng là bức tranh E - hình ảnh liên quan đến đôi giày/việc thử giày. Các bức tranh khác mô tả hành động hoặc đồ vật không xuất hiện trong lời thoại (như mua quần áo, đi họng, ăn uống...) nên bị loại trừ.\n\n【Từ vựng & Ngữ pháp】\n• 这双鞋 (zhè shuāng xié): đôi giày này. Lưu ý: 双 (shuāng) là lượng từ dùng cho các vật đi theo cặp như giày, dép, găng tay.\n• 怎么样 (zěnmeyàng): thế nào, như thế nào - cấu trúc hỏi ý kiến đánh giá về sự vật, sự việc."
+        },
+        {
+          "id": "hsk3-13-q004",
+          "number": 4,
+          "type": "image_match",
+          "instruction": "一、听力\n第一部分\n第 1-5 题",
+          "prompt": "",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q004.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": [],
+          "transcript": "你在想什么呢?我,我在想明天要不要参加那个会议,是。你在想什么呢?我,我在想明天要不要参加那个会议。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: 你在想什么呢？(Nǐ zài xiǎng shénme ne?) - 'Cậu đang nghĩ gì thế?'\nĐáp lại: 我，我在想明天要不要参加那个会议。(Wǒ, wǒ zài xiǎng míngtiān yào bu yào cānjiā nàge huìyì.) - 'Mình... mình đang nghĩ xem ngày mai có nên tham dự cuộc họp đó không.'\nCác lựa chọn A-F là 6 bức tranh mô tả các tình huống khác nhau.\n\n【Phân tích】\nTừ khóa ăn điểm là '会议' (huìyì - cuộc họp, hội nghị) và '参加' (cānjiā - tham gia, tham dự). Người thứ hai đang băn khoăn liệu ngày mai có nên tham dự cuộc họp đó hay không. Do đó, đáp án đúng là bức tranh C - hình ảnh liên quan đến cuộc họp/hội nghị. Các bức tranh khác không liên quan đến việc họp hành nên bị loại trừ.\n\n【Từ vựng & Ngữ pháp】\n• 要不要 (yào bu yào): cấu trúc câu hỏi lựa chọn 'có... hay không', dùng để hỏi về ý định hoặc sự băn khoăn (ví dụ: 要不要去？- Có đi không?).\n• 参加 (cānjiā): tham gia, tham dự - thường đi kèm với 会议 (cuộc họp), 活动 (hoạt động), 比赛 (cuộc thi)."
+        },
+        {
+          "id": "hsk3-13-q005",
+          "number": 5,
+          "type": "image_match",
+          "instruction": "一、听力\n第一部分\n第 1-5 题",
+          "prompt": "",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "text": ""
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q005.mp3",
+          "needsReview": false,
+          "correctAnswer": "F",
+          "imageUrls": [],
+          "transcript": "下班了,再见,节日快乐。再见,也住你节日快乐。五,下班了,再见,节日快乐。再见,也住你节日快乐。",
+          "explanation": "【Dịch nghĩa】\n- 下班了，再见，节日快乐。(Xiàbān le, zàijiàn, jiérì kuàilè.) - 'Tan làm rồi, tạm biệt, chúc mừng ngày lễ!'\n- 再见，也祝你节日快乐。(Zàijiàn, yě zhù nǐ jiérì kuàilè.) - 'Tạm biệt, mình cũng chúc bạn ngày lễ vui vẻ!'\n\n【Phân tích】Đây là đoạn hội thoại ngắn gồm hai lượt lời khi hai người chia tay sau giờ làm. Các từ khóa ăn điểm là: 下班了 (tan làm), 再见 (tạm biệt), 节日快乐 (chúc mừng ngày lễ). Toàn bộ nội dung xoay quanh việc chào tạm biệt và gửi lời chúc nhân dịp lễ, không nhắc đến các hành động khác như ăn uống, mua sắm hay đi du lịch. Do đó, đáp án đúng là hình F - hình mô tả cảnh hai người chào tạm biệt nhau (kèm lời chúc lễ hội). Các hình khác bị loại trừ vì không phản ánh hành động 'chào nhau/tạm biệt' trong ngữ cảnh tan làm.\n\n【Từ vựng & Ngữ pháp】\n- 下班 (xiàbān): tan làm, giờ làm việc kết thúc (trái nghĩa với 上班 - đi làm).\n- 祝 (zhù): chúc; cấu trúc 祝你...节日快乐 dùng để gửi lời chúc. 也 (yě) nghĩa là 'cũng', thể hiện sự đáp lại lời chúc của người kia."
+        },
+        {
+          "id": "hsk3-13-q006",
+          "number": 6,
+          "type": "image_match",
+          "instruction": "第 6-10 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q006.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": [],
+          "transcript": "終于可以休息了, 战了一上午, 我的角都疼了, 那你先坐着休息花, 六, 終于可以休息了, 战了一上午, 我的角都疼了, 那你先坐着休息花,",
+          "explanation": "【Dịch nghĩa】\n- 终于可以休息了，站了一上午，我的脚都疼了。(Zhōngyú kěyǐ xiūxi le, zhàn le yī shàngwǔ, wǒ de jiǎo dōu téng le.) - 'Cuối cùng cũng được nghỉ ngơi rồi, đứng cả buổi sáng, chân tôi đau hết cả.'\n- 那你先坐着休息吧。(Nà nǐ xiān zuòzhe xiūxi ba.) - 'Vậy bạn cứ ngồi xuống nghỉ trước đi.'\n\n【Phân tích】Từ khóa quyết định trong đoạn nghe là: 站了一上午 (đứng cả buổi sáng), 脚都疼了 (chân đau), và đặc biệt là 坐着休息 (ngồi xuống nghỉ). Người nói than mỏi chân vì đứng lâu, người kia đề nghị họ ngồi xuống nghỉ → trọng tâm hình ảnh cần chọn là 'một người ngồi nghỉ ngơi'. Đây chính là nội dung của hình C. Các hình còn lại mô tả hành động khác (đứng, đi lại, làm việc...) nên bị loại trừ vì trái với hành động 坐着休息 trong câu nghe.\n\n【Từ vựng & Ngữ pháp】\n- 终于 (zhōngyú): cuối cùng, sau một thời gian dài chờ đợi - thể hiện cảm xúc nhẹ nhõm.\n- Cấu trúc: Động từ + 了 + khoảng thời gian (站了一上午 - đứng cả buổi sáng) dùng để diễn tả hành động kéo dài trong bao lâu; 疼 (téng): đau; 休息 (xiūxi): nghỉ ngơi."
+        },
+        {
+          "id": "hsk3-13-q007",
+          "number": 7,
+          "type": "image_match",
+          "instruction": "第 6-10 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q007.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": [],
+          "transcript": "你怎么没买香椒买了香椒葡萄都在里面你先放冰香里吧,七你怎么没买香椒买了香椒葡萄都在里面你先放冰香里吧,",
+          "explanation": "【Dịch nghĩa】\nLời thoại (sửa lại theo ngữ cảnh):\n- 你怎么没买香蕉？(Nǐ zěnme méi mǎi xiāngjiāo?) - Sao bạn không mua chuối vậy?\n- 买了香蕉。(Mǎi le xiāngjiāo.) - Mua chuối rồi mà.\n- 葡萄都在里面。(Pútao dōu zài lǐmiàn.) - Nho đều ở trong đó.\n- 你先放冰箱里吧。(Nǐ xiān fàng bīngxiāng li ba.) - Bạn cứ để vào tủ lạnh trước đi.\nCác lựa chọn A-E là tranh ảnh; đáp án A là bức tranh có liên quan đến trái cây (chuối, nho) hoặc tủ lạnh.\n【Phân tích】Đây là dạng bài nghe chọn tranh phù hợp. Từ khóa ăn điểm trong lời thoại là: 香蕉 (chuối), 葡萄 (nho), 冰箱 (tủ lạnh). Toàn bộ đoạn hội thoại xoay quanh việc mua trái cây và bảo quản trong tủ lạnh, nên chỉ có tranh A (thể hiện trái cây/tủ lạnh) là khớp với nội dung. Loại trừ các tranh còn lại vì không có yếu tố trái cây hay tủ lạnh.\n【Từ vựng & Ngữ pháp】\n- 香蕉 (xiāngjiāo): chuối; 葡萄 (pútao): nho; 冰箱 (bīngxiāng): tủ lạnh.\n- Cấu trúc 先...吧 (xiān... ba): đề nghị làm gì đó trước, ví dụ: 你先放冰箱里吧 - Cứ để vào tủ lạnh trước đi."
+        },
+        {
+          "id": "hsk3-13-q008",
+          "number": 8,
+          "type": "image_match",
+          "instruction": "第 6-10 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q008.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": [],
+          "transcript": "这是你儿子吗? 她几岁了。她今年三岁了。她今年三岁了。",
+          "explanation": "【Dịch nghĩa】\nLời thoại:\n- 这是你儿子吗？(Zhè shì nǐ érzi ma?) - Đây là con trai của bạn à?\n- 她几岁了？(Tā jǐ suì le?) - Cháu mấy tuổi rồi?\n- 她今年三岁了。(Tā jīnnián sān suì le.) - Nó năm nay ba tuổi.\nCác lựa chọn A-E là tranh ảnh; đáp án B là bức tranh vẽ một đứa trẻ nhỏ (khoảng 3 tuổi).\n【Phân tích】Đây là dạng bài nghe chọn tranh. Từ khóa quyết định là 儿子 (con trai) và đặc biệt là 三岁 (ba tuổi) - con số tuổi được nhắc trực tiếp trong câu trả lời 她今年三岁了. Nội dung nói về một đứa trẻ 3 tuổi nên tranh B (hình em bé/trẻ nhỏ) là đáp án đúng. Loại trừ các tranh vẽ người lớn hoặc đối tượng khác vì không phù hợp với độ tuổi được nhắc đến. Lưu ý: trong lời thoại dùng 她 (cô ấy) dù hỏi về 儿子 (con trai), khi nghe cần tập trung vào thông tin tuổi thay vì đại từ nhân xưng.\n【Từ vựng & Ngữ pháp】\n- 儿子 (érzi): con trai; 几岁 (jǐ suì): mấy tuổi; 今年 (jīnnián): năm nay.\n- Cấu trúc 岁...了 (suì... le): diễn tả tuổi, 了 cuối câu nhấn mạnh thông tin mới/thay đổi, ví dụ: 她今年三岁了 - Nó năm nay đã ba tuổi."
+        },
+        {
+          "id": "hsk3-13-q009",
+          "number": 9,
+          "type": "image_match",
+          "instruction": "第 6-10 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q009.mp3",
+          "needsReview": false,
+          "correctAnswer": "E",
+          "imageUrls": [],
+          "transcript": "熊猫的眼睛是黑色的, 二多也是黑色的。是, 她真可爱, 可爱几了。九,熊猫的眼睛是黑色的, 二多也是黑色的。是, 她真可爱。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: 熊猫的眼睛是黑色的，耳朵也是黑色的。是啊，她真可爱，可爱极了。\nPinyin: Xióngmāo de yǎnjing shì hēisè de, ěrduo yě shì hēisè de. Shì a, tā zhēn kě'ài, kě'ài jí le.\nDịch: 'Mắt con gấu trúc màu đen, tai cũng màu đen. Đúng vậy, nó thật đáng yêu, đáng yêu vô cùng.'\nĐáp án E: Hình ảnh con gấu trúc (panda).\n\n【Phân tích】\nTừ khóa ăn điểm ở đây là 熊猫 (gấu trúc) xuất hiện ngay câu đầu tiên. Toàn bộ đoạn hội thoại xoay quanh việc mô tả đặc điểm ngoại hình của gấu trúc: mắt màu đen (眼睛是黑色的), tai màu đen (耳朵也是黑色的), và kết luận nó rất đáng yêu (真可爱). Trong dạng bài nối hình HSK 3, khi nghe thấy tên một con vật cụ thể kèm mô tả đặc điểm, thí sinh cần chọn đúng hình ảnh con vật đó. Đáp án E chính là hình con gấu trúc nên khớp hoàn toàn với nội dung. Các đáp án khác mô tả đối tượng hoặc sự vật khác nên bị loại trừ.\n\n【Từ vựng & Ngữ pháp】\n- 熊猫 (xióngmāo): gấu trúc - từ khóa chính của bài nghe.\n- 可爱极了 (kě'ài jí le): đáng yêu cực kỳ. Cấu trúc 'Tính từ + 极了' dùng để nhấn mạnh mức độ cao, ví dụ: 好极了 (tốt cực kỳ), 高兴极了 (vui cực kỳ)."
+        },
+        {
+          "id": "hsk3-13-q010",
+          "number": 10,
+          "type": "image_match",
+          "instruction": "第 6-10 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "text": ""
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q010.mp3",
+          "needsReview": false,
+          "correctAnswer": "D",
+          "imageUrls": [],
+          "transcript": "还在读书呢?时间不早了,别看了,去睡吧。好,看完这段我就去睡。是?还在读书呢?时间不早了,别看了,去睡吧。好,看完这段。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: 还在读书呢？时间不早了，别看了，去睡吧。好，看完这段我就去睡。\nPinyin: Hái zài dúshū ne? Shíjiān bù zǎo le, bié kàn le, qù shuì ba. Hǎo, kàn wán zhè duàn wǒ jiù qù shuì.\nDịch: 'Vẫn còn đang đọc sách à? Trễ rồi đấy, đừng đọc nữa, đi ngủ đi. Được, đọc xong đoạn này mình sẽ đi ngủ.'\nĐáp án D: Hình ảnh một người đang đọc sách vào ban đêm.\n\n【Phân tích】\nTừ khóa ăn điểm là 读书 (đọc sách) và 看 (xem/đọc) kết hợp với 时间不早了 (giờ đã trễ) và 去睡 (đi ngủ). Đoạn hội thoại diễn tả tình huống một người còn thức khuya đọc sách, người kia nhắc nhở đi ngủ. Do đó hình ảnh phù hợp nhất là hình một người đang đọc sách vào buổi tối muộn, tức đáp án D. Cần lưu ý phân biệt: trọng tâm của câu không phải là hành động ngủ mà là hành động đang đọc sách (还在读书呢 - vẫn còn đang đọc sách), nên chọn hình người đang đọc chứ không phải hình người đang ngủ.\n\n【Từ vựng & Ngữ pháp】\n- 读书 (dúshū): đọc sách, học tập.\n- 看完...就... (kàn wán... jiù...): làm xong việc này thì sẽ làm việc kia. Cấu trúc 'Verb + 完 + 就 + động từ' diễn tả hành động thứ hai xảy ra ngay sau khi hành động thứ nhất hoàn thành, ví dụ: 看完这段我就去睡 (đọc xong đoạn này tôi sẽ đi ngủ)."
+        },
+        {
+          "id": "hsk3-13-q011",
+          "number": 11,
+          "type": "true_false",
+          "instruction": "第二部分\n第 11-20 题",
+          "prompt": "★ 他在买电脑。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q011.mp3",
+          "needsReview": false,
+          "correctAnswer": "×",
+          "imageUrls": [],
+          "transcript": "十一,我今天只带了八百,那两字形车要一千多,你先借我三百,明天上午我就还你,他在买电脑,十一,我今天只带了八百,那两字形车要一千多,你先借我三百,明天上午我就还你,",
+          "explanation": "【Dịch nghĩa】\nLời thoại: Wǒ jīntiān zhǐ dài le bābǎi, nà liàng zìxíngchē yào yīqiān duō, nǐ xiān jiè wǒ sānbǎi, míngtiān shàngwǔ wǒ jiù huán nǐ. (Hôm nay tôi chỉ mang theo 800 tệ, chiếc xe đạp đó giá hơn 1000, cậu cho tôi mượn trước 300, sáng mai tôi sẽ trả cậu.)\nCâu nhận định: Tā zài mǎi diànnǎo. (Anh ấy đang mua máy tính.)\nĐáp án: Đúng (√) / Sai (×)\n\n【Phân tích】\nĐáp án đúng là × (Sai). Trong lời thoại, người nói muốn mua 'zìxíngchē' (xe đạp) với giá hơn 1000 tệ nhưng chỉ mang theo 800, nên phải mượn thêm 300. Từ khóa quyết định là 'zìxíngchē' (xe đạp), hoàn toàn khác với 'diànnǎo' (máy tính) trong câu nhận định. Đây là dạng bẫy nghe phổ biến trong HSK: thay thế danh từ bằng một vật khác có cùng ngữ cảnh mua sắm. Vì người nói đang mua xe đạp chứ không phải máy tính, câu nhận định SAI.\n\n【Từ vựng & Ngữ pháp】\n- zìxíngchē: xe đạp (từ khóa phân biệt với diànnǎo - máy tính)\n- jiè: mượn/cho vay; 'nǐ xiān jiè wǒ sānbǎi' = cậu cho tôi mượn trước 300. Cấu trúc 'xiān...jiù...' (làm trước... thì sẽ...) diễn tả trình tự thời gian: mượn trước, trả lại sau."
+        },
+        {
+          "id": "hsk3-13-q012",
+          "number": 12,
+          "type": "true_false",
+          "instruction": "第二部分\n第 11-20 题",
+          "prompt": "★ 他想把电影票送人。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q012.mp3",
+          "needsReview": false,
+          "correctAnswer": "√",
+          "imageUrls": [],
+          "transcript": "我有两张今天下午五点的电影票,我有点事情不能去看了,送你吧,你带你女朋友去看吧。她想把电影票送人,十二,我有两张今天下午五点的电影票,我有点事情不能去看了,送你吧,你带你女朋友去看吧。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: Wǒ yǒu liǎng zhāng jīntiān xiàwǔ wǔ diǎn de diànyǐng piào, wǒ yǒudiǎn shìqing bù néng qù kàn le, sòng nǐ ba, nǐ dài nǐ nǚpéngyou qù kàn ba. (Tôi có hai vé xem phim lúc 5 giờ chiều nay, tôi có việc không đi xem được nữa, tặng cậu nhé, cậu dẫn bạn gái đi xem đi.)\nCâu nhận định: Tā xiǎng bǎ diànyǐng piào sòng rén. (Cô ấy muốn tặng vé xem phim cho người khác.)\nĐáp án: Đúng (√) / Sai (×)\n\n【Phân tích】\nĐáp án đúng là √ (Đúng). Từ khóa quan trọng là 'sòng nǐ ba' (tặng cậu nhé) và lý do 'wǒ yǒudiǎn shìqing bù néng qù kàn le' (tôi có việc nên không đi xem được). Người nói không thể đi xem nên quyết định tặng vé cho người khác, điều này hoàn toàn khớp với câu nhận định 'muốn tặng vé xem phim cho người khác'. Câu nhận định khớp hoàn toàn với nội dung nghe nên chọn Đúng.\n\n【Từ vựng & Ngữ pháp】\n- sòng: tặng, biếu (sòng rén = tặng cho người khác; sòng nǐ = tặng cậu)\n- Cấu trúc 'bǎ' câu: 'bǎ diànyǐng piào sòng rén' (tặng vé xem phim cho người khác) - cấu trúc 'bǎ + tân ngữ + động từ' nhấn mạnh kết quả tác động lên đối tượng."
+        },
+        {
+          "id": "hsk3-13-q013",
+          "number": 13,
+          "type": "true_false",
+          "instruction": "第二部分\n第 11-20 题",
+          "prompt": "★ 他们正在游泳。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q013.mp3",
+          "needsReview": false,
+          "correctAnswer": "×",
+          "imageUrls": [],
+          "transcript": "你走路怎么向跑步一样,我们都根不上你了。刚吃完饭,不要走的这么快,这样对身体不好。他们正在游泳,谁三?你走路怎么向跑步一样,我们都根不上你了。刚吃完饭,不要走的这么快,这样对身体不好。他们正在游泳。",
+          "explanation": "【Dịch nghĩa】\nLời thoại (bản gốc chuẩn): '你走路怎么像跑步一样,我们都跟不上了。刚吃完饭,不要走这么快,这样对身体不好。' - Nǐ zǒulù zěnme xiàng pǎobù yíyàng, wǒmen dōu gēn bu shàng nǐ le. Gāng chī wán fàn, búyào zǒu zhème kuài, zhèyàng duì shēntǐ bù hǎo.\n(Này, sao cậu đi bộ như chạy thế, chúng tôi không theo kịp cậu nữa rồi. Vừa ăn cơm xong, đừng đi nhanh như vậy, như thế không tốt cho sức khỏe.)\nCâu nhận định: '他们正在游泳。' - Tāmen zhèngzài yóuyǒng. (Họ đang bơi lội.)\nLựa chọn: Đúng (√) / Sai (×)\n\n【Phân tích】\nĐáp án đúng là × (Sai). Từ khóa ăn điểm trong lời thoại là: '走路' (đi bộ), '跟不上' (không theo kịp), '刚吃完饭' (vừa ăn cơm xong), '不要走这么快' (đừng đi nhanh thế). Toàn bộ đoạn hội thoại mô tả một người đang ĐI BỘ quá nhanh sau bữa ăn và được người bạn nhắc nhở, hoàn toàn không hề nhắc đến hoạt động bơi lội. Nhận định '他们正在游泳' (Họ đang bơi) không phù hợp với nội dung nghe, nên phải chọn ×. Đây là dạng bẫy kinh điển trong HSK: câu nhận định dùng hành động (bơi) khác hoàn toàn với hành động trong bài nghe (đi bộ).\n\n【Từ vựng & Ngữ pháp】\n- 跟不上 gēn bu shàng: không theo kịp (động từ 跟 + bổ ngữ kết quả khả năng 不上).\n- 刚...完 gāng... wán: vừa mới... xong, diễn tả hành động vừa kết thúc (刚吃完饭 = vừa ăn cơm xong).\n- 对...不好 duì... bù hǎo: không tốt cho... (对身体不好 = không tốt cho sức khỏe)."
+        },
+        {
+          "id": "hsk3-13-q014",
+          "number": 14,
+          "type": "true_false",
+          "instruction": "第二部分\n第 11-20 题",
+          "prompt": "★ 小黄已经结婚了。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q014.mp3",
+          "needsReview": false,
+          "correctAnswer": "√",
+          "imageUrls": [],
+          "transcript": "十四,七子要去国外一个月,教皇的工作也很忙。所以,怕把自己的妈妈请来帮忙照顾孩子。",
+          "explanation": "【Dịch nghĩa】\nLời thoại (bản gốc chuẩn): '小黄要去国外一个月,他爱人的工作也很忙。所以,小黄把自己的妈妈请来帮忙照顾孩子。' - Xiǎo Huáng yào qù guówài yí gè yuè, tā àiren de gōngzuò yě hěn máng. Suǒyǐ, Xiǎo Huáng bǎ zìjǐ de māma qǐng lái bāngmáng zhàogù háizi.\n(Tiểu Hoàng phải đi nước ngoài một tháng, công việc của vợ anh ấy cũng rất bận. Vì vậy, Tiểu Hoàng mời mẹ mình đến giúp trông con.)\nCâu nhận định: '小黄已经结婚了。' - Xiǎo Huáng yǐjīng jiéhūn le. (Tiểu Hoàng đã kết hôn rồi.)\nLựa chọn: Đúng (√) / Sai (×)\n\n【Phân tích】\nĐáp án đúng là √ (Đúng). Từ khóa quyết định là '爱人' (vợ/chồng) và '孩子' (con cái). Trong tiếng Trung, 爱人 dùng để chỉ vợ hoặc chồng, và việc trong nhà có con nhỏ (需要照顾孩子 - cần trông con) chứng tỏ Tiểu Hoàng đã lập gia đình. Ngoài ra, chi tiết '把自己的妈妈请来帮忙照顾孩子' (mời mẹ mình đến giúp trông con) càng khẳng định anh đã có gia đình. Do đó nhận định '小黄已经结婚了' (Tiểu Hoàng đã kết hôn) hoàn toàn đúng với nội dung bài nghe → chọn √. Đây là dạng câu suy luận gián tiếp: bài nghe không nói trực tiếp 'đã kết hôn' mà người nghe phải suy ra từ các chi tiết vợ, con.\n\n【Từ vựng & Ngữ pháp】\n- 结婚 jiéhūn: kết hôn; 已经...了 yǐjīng... le: đã... rồi (cấu trúc diễn tả hành động đã hoàn thành).\n- 把 + Tân ngữ + Động từ + 来/去: cấu trúc 'bả' chỉ xử lý đối tượng và hướng của hành động, ví dụ 把妈妈请来 (mời mẹ đến)."
+        },
+        {
+          "id": "hsk3-13-q015",
+          "number": 15,
+          "type": "true_false",
+          "instruction": "第二部分\n第 11-20 题",
+          "prompt": "★ 现在是夏季。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q015.mp3",
+          "needsReview": false,
+          "correctAnswer": "×",
+          "imageUrls": [],
+          "transcript": "春天道了,花缘里的数和草都绿了,小娘也从南方飞回来了, 现在是下级,十五春天道了,花缘里的数和草都绿了,小娘也从南方飞回来了。",
+          "explanation": "【Dịch nghĩa】\nLời thoại (bản gốc đúng): '春天到了，花园里的树和草都绿了，小燕子也从南方飞回来了。' (Chūntiān dào le, huāyuán lǐ de shù hé cǎo dōu lǜ le, xiǎo yànzi yě cóng nánfāng fēi huílái le.) - 'Mùa xuân đến rồi, cây cỏ trong vườn hoa đều xanh, chim én nhỏ cũng bay về từ phương Nam.'\nCâu nhận định: '现在是夏季。' (Xiànzài shì xiàjì.) - 'Bây giờ là mùa hè.'\n\n【Phân tích】\nĐáp án là × (Sai). Từ khóa quyết định là '春天到了' (mùa xuân đến) cùng các dấu hiệu đặc trưng của mùa xuân: cây cỏ xanh (树和草都绿了)， chim én bay về từ phương Nam (小燕子从南方飞回来). Toàn bộ lời thoại mô tả mùa xuân chứ không hề nói đây là mùa hè (夏季). Do đó nhận định '现在是夏季' trái với nội dung nghe. Lưu ý: cụm '现在是夏季' xuất hiện trong bản ghi thực chất là câu nhận định của đề bài (câu số 15), không phải nội dung thoại, người nghe cần phân biệt rõ.\n\n【Từ vựng & Ngữ pháp】\n- 春天 (chūntiān): mùa xuân; 夏季 (xiàjì): mùa hè - cặp từ chỉ mùa cần phân biệt rõ khi nghe.\n- 到了 (dào le): 'đến rồi' - động từ + 了 diễn tả sự hoàn thành hoặc thay đổi trạng thái (mùa xuân đã đến)."
+        },
+        {
+          "id": "hsk3-13-q016",
+          "number": 16,
+          "type": "true_false",
+          "instruction": "第二部分\n第 11-20 题",
+          "prompt": "★ 他们在超市工作过。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q016.mp3",
+          "needsReview": false,
+          "correctAnswer": "√",
+          "imageUrls": [],
+          "transcript": "我认识他,我们以前都在超市工作,我记得他幸高,我们都叫他老高。但是我忘记他叫什么名字了。他们在超市工作过,十六,我认识他,我们以前都在超市工作。我记得他幸高。我们都叫他老高。但是我忘记他叫什么名字了。",
+          "explanation": "【Dịch nghĩa】\nLời thoại (bản gốc đúng): '我认识他，我们以前都在超市工作。我记得他姓高，我们都叫他老高，但是我忘记他叫什么名字了。' (Wǒ rènshi tā, wǒmen yǐqián dōu zài chāoshì gōngzuò. Wǒ jìde tā xìng Gāo, wǒmen dōu jiào tā Lǎo Gāo, dànshì wǒ wàngjì tā jiào shénme míngzi le.) - 'Tôi quen anh ấy, trước đây chúng tôi đều làm việc ở siêu thị. Tôi nhớ anh ấy họ Cao, chúng tôi đều gọi anh ấy là Lão Cao, nhưng tôi quên mất anh ấy tên gì rồi.'\nCâu nhận định: '他们在超市工作过。' (Tāmen zài chāoshì gōngzuò guo.) - 'Họ đã từng làm việc ở siêu thị.'\n\n【Phân tích】\nĐáp án là √ (Đúng). Từ khóa ăn điểm là '我们以前都在超市工作' - 'trước đây chúng tôi đều làm việc ở siêu thị'. Chữ '都' (đều) chỉ cả hai người, nghĩa là cả người nói lẫn 'anh ấy' đều từng làm ở siêu thị, hoàn toàn khớp với nhận định '他们在超市工作过'. Chi tiết 'quên tên anh ấy' (忘记他叫什么名字) chỉ là thông tin gây nhiễu, không ảnh hưởng đến sự thật là hai người đã từng làm việc cùng nhau ở siêu thị.\n\n【Từ vựng & Ngữ pháp】\n- 以前 (yǐqián): trước đây; 都 (dōu): đều, cả hai - hai từ khóa xác định đáp án đúng.\n- 工作 (gōngzuò): làm việc; trợ từ 过 (guo) trong '工作过' diễn tả kinh nghiệm 'đã từng' làm việc gì đó trong quá khứ."
+        },
+        {
+          "id": "hsk3-13-q017",
+          "number": 17,
+          "type": "true_false",
+          "instruction": "第二部分\n第 11-20 题",
+          "prompt": "★ 这两个游戏不好玩儿。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q017.mp3",
+          "needsReview": false,
+          "correctAnswer": "×",
+          "imageUrls": [],
+          "transcript": "这两个游戏有相同的地方都是要一边回答问题,一边跳舞很有意思。这两个游戏有相同的地方都是要一边回答问题,一边跳舞很有意思。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: Zhè liǎng gè yóuxì yǒu xiāngtóng de dìfang, dōu shì yào yìbiān huídá wèntí, yìbiān tiàowǔ, hěn yǒu yìsi.\n(Hai trò chơi này có điểm giống nhau, đều phải vừa trả lời câu hỏi, vừa nhảy múa, rất thú vị.)\nNhận định: Zhè liǎng gè yóuxì bù hǎowánr.\n(Hai trò chơi này không vui / không hay.)\n\n【Phân tích】\nNhận định là SAI (×). Trong lời thoại, từ khóa ăn điểm là '很有意思' (rất thú vị) - người nói đánh giá tích cực về hai trò chơi này. Trong khi đó, nhận định lại nói '不好玩儿' (không vui). '有意思' (thú vị) và '好玩儿' (vui, hay) là hai cách diễn đạt đồng nghĩa mang nghĩa tích cực, nên '很有意思' phủ định hoàn toàn '不好玩儿'. Đây là dạng câu hỏi ngược nghĩa: nhận định dùng từ phủ định để bẫy người nghe.\n\n【Từ vựng & Ngữ pháp】\n• 有意思 (yǒu yìsi): thú vị, hay → trái nghĩa với 不好玩儿 (bù hǎowánr): không vui.\n• 一边...一边... (yìbiān... yìbiān...): vừa... vừa... - cấu trúc diễn tả hai hành động xảy ra đồng thời, ví dụ: 一边回答问题，一边跳舞 (vừa trả lời câu hỏi, vừa nhảy múa)."
+        },
+        {
+          "id": "hsk3-13-q018",
+          "number": 18,
+          "type": "true_false",
+          "instruction": "第二部分\n第 11-20 题",
+          "prompt": "★ 人们不爱上网买东西。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q018.mp3",
+          "needsReview": false,
+          "correctAnswer": "×",
+          "imageUrls": [],
+          "transcript": "十八, 现在很多人都经常上王买东西, 买书买衣服,买照项机, 大家都觉得上王买东西很方便。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: Xiànzài hěn duō rén dōu jīngcháng shàngwǎng mǎi dōngxi, mǎi shū, mǎi yīfu, mǎi zhàoxiàngjī, dàjiā dōu juéde shàngwǎng mǎi dōngxi hěn fāngbiàn.\n(Ngày nay rất nhiều người thường xuyên mua sắm trên mạng, mua sách, mua quần áo, mua máy ảnh, mọi người đều cảm thấy mua hàng trên mạng rất tiện lợi.)\nNhận định: Rénmen bù ài shàngwǎng mǎi dōngxi.\n(Mọi người không thích mua đồ trên mạng.)\n\n【Phân tích】\nNhận định là SAI (×). Các từ khóa ăn điểm trong lời thoại là '很多人都经常上网买东西' (rất nhiều người thường xuyên mua hàng trên mạng) và '大家都觉得...很方便' (mọi người đều thấy rất tiện). Cả hai đều thể hiện thái độ tích cực và thói quen mua sắm online phổ biến, hoàn toàn trái ngược với nhận định '不爱上网买东西' (không thích mua hàng online). Lưu ý phát âm gần giống: 上网 (shàngwǎng - lên mạng) cần phân biệt để không hiểu nhầm.\n\n【Từ vựng & Ngữ pháp】\n• 上网 (shàngwǎng): lên mạng, truy cập Internet; 上网买东西 = mua sắm trực tuyến.\n• 方便 (fāngbiàn): tiện lợi, thuận tiện → '很方便' là lý do khiến mọi người thích mua hàng online, mâu thuẫn trực tiếp với chữ '不爱' trong nhận định."
+        },
+        {
+          "id": "hsk3-13-q019",
+          "number": 19,
+          "type": "true_false",
+          "instruction": "第二部分\n第 11-20 题",
+          "prompt": "★ 他不愿意搬家。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q019.mp3",
+          "needsReview": false,
+          "correctAnswer": "√",
+          "imageUrls": [],
+          "transcript": "我不想搬到那儿去,虽然这儿的房间有点小,但是环境好,不尽有商店,医院,银行,还有公园,我已经住习惯了。她不愿意搬家。十九?我不想搬到那儿去,虽然这儿的房间有点小,但是环境好,不尽有商店,医院,银行,还有公园,我已经住习惯了。",
+          "explanation": "【Dịch nghĩa】Lời thoại: 'Wǒ bù xiǎng bān dào nàr qù, suīrán zhèr de fángjiān yǒudiǎn xiǎo, dànshì huánjìng hǎo, bùjǐn yǒu shāngdiàn, yīyuàn, yínháng, hái yǒu gōngyuán, wǒ yǐjīng zhù xíguàn le.' - Tôi không muốn chuyển đến đó. Mặc dù phòng ở đây hơi nhỏ, nhưng môi trường tốt, không những có cửa hàng, bệnh viện, ngân hàng mà còn có cả công viên, tôi đã quen với việc sống ở đây rồi. Nhận định: 'Tā bú yuànyì bānjiā.' - Anh ấy không muốn chuyển nhà.\n【Phân tích】Đáp án là ĐÚNG (√). Từ khóa ăn điểm nằm ngay câu đầu: '我不想搬到那儿去' (Tôi không muốn chuyển đến đó) - thể hiện rõ sự không muốn chuyển nhà. Ngoài ra, câu kết '我已经住习惯了' (Tôi đã quen sống ở đây rồi) cùng lý do '环境好' (môi trường tốt), tiện ích đầy đủ (cửa hàng, bệnh viện, ngân hàng, công viên) càng khẳng định lý do anh ấy từ chối việc chuyển nhà. Nhận định '他不愿意搬家' hoàn toàn khớp với nội dung bài nghe.\n【Từ vựng & Ngữ pháp】1. 搬家 (bānjiā): chuyển nhà - trùng với từ khóa trong nhận định. 2. 虽然...但是... (suīrán...dànshì...): mặc dù... nhưng... - cấu trúc liên từ nhấn mạnh vế sau, ở đây nhấn mạnh ưu điểm '环境好' của nơi đang ở."
+        },
+        {
+          "id": "hsk3-13-q020",
+          "number": 20,
+          "type": "true_false",
+          "instruction": "第二部分\n第 11-20 题",
+          "prompt": "★ 他更胖了。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q020.mp3",
+          "needsReview": false,
+          "correctAnswer": "√",
+          "imageUrls": [],
+          "transcript": "最近两个月,我每天早上都会去公圆运动,我以为自己会受下来。没想到,经过两个月的段脸,我发现自己碰了两公斤。我发现自己碰了两公斤。",
+          "explanation": "【Dịch nghĩa】Lời thoại: 'Zuìjìn liǎng gè yuè, wǒ měitiān zǎoshang dōu huì qù gōngyuán yùndòng, wǒ yǐwéi zìjǐ huì shòu xiàlái. Méi xiǎngdào, jīngguò liǎng gè yuè de duànliàn, wǒ fāxiàn zìjǐ pàng le liǎng gōngjīn.' - Hai tháng gần đây, mỗi sáng tôi đều đi công viên vận động. Tôi tưởng mình sẽ gầy đi. Không ngờ, sau hai tháng rèn luyện, tôi phát hiện mình béo lên hai cân. Nhận định: 'Tā gèng pàng le.' - Anh ấy béo hơn rồi.\n【Phân tích】Đáp án là ĐÚNG (√). Từ khóa quyết định là '我发现自己胖了两公斤' (tôi phát hiện mình béo lên hai cân) - khẳng định rõ việc tăng cân. Cần chú ý cấu trúc '我以为...没想到...' (tôi tưởng rằng... nhưng không ngờ...): người nói vốn kỳ vọng sẽ '瘦下来' (gầy xuống) nhờ tập luyện, nhưng kết quả thực tế lại ngược lại là tăng cân. Do đó nhận định '他更胖了' (anh ấy béo hơn) đúng với thực tế được nêu trong bài, dù trái với mong đợi của nhân vật.\n【Từ vựng & Ngữ pháp】1. 胖了两公斤 (pàng le liǎng gōngjīn): béo lên hai cân - '了' sau tính từ chỉ sự thay đổi trạng thái (tăng cân). 2. 我以为...没想到... (wǒ yǐwéi...méi xiǎngdào...): tôi tưởng rằng... nhưng không ngờ... - cấu trúc diễn tả kết quả trái ngược với kỳ vọng, là điểm bẫy thường gặp trong đề nghe HSK."
+        },
+        {
+          "id": "hsk3-13-q021",
+          "number": 21,
+          "type": "multiple_choice",
+          "instruction": "第 21-30 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "太贵了"
+            },
+            {
+              "id": "B",
+              "text": "不放糖"
+            },
+            {
+              "id": "C",
+              "text": "只要果汁"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q021.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": [],
+          "transcript": "二十一,请问,您喝点什么?有啤酒、果汁。给我来杯果汁吧,谢谢,别的先不需要。难的是什么意思,二十一,请问,您喝点什么?有啤酒,果汁。给我来杯果汁吧,谢谢,别的先不需要。",
+          "explanation": "【Dịch nghĩa】\n- Nhân viên: 请问,您喝点什么?有啤酒、果汁。| Qǐngwèn, nín hē diǎn shénme? Yǒu píjiǔ, guǒzhī. | 'Xin hỏi, anh muốn uống gì? Có bia, nước trái cây.'\n- Người đàn ông: 给我来杯果汁吧,谢谢,别的先不需要。| Gěi wǒ lái bēi guǒzhī ba, xièxie, bié de xiān bù xūyào. | 'Cho tôi một cốc nước trái cây, cảm ơn, những thứ khác tạm thời không cần.'\n- Câu hỏi: 男的是什么意思?| Nán de shì shénme yìsi? | 'Ý của người đàn ông là gì?'\n- A. 太贵了 | Tài guì le | 'Quá đắt'\n- B. 不放糖 | Bù fàng táng | 'Không cho đường'\n- C. 只要果汁 | Zhǐ yào guǒzhī | 'Chỉ cần nước trái cây'\n\n【Phân tích】\nTừ khóa ăn điểm là '给我来杯果汁吧' (cho tôi một cốc nước trái cây) và đặc biệt là câu '别的先不需要' (những thứ khác tạm thời không cần). Câu này khẳng định người đàn ông chỉ gọi đúng một món là nước trái cây, từ chối mọi thứ khác → đáp án C '只要果汁' (chỉ cần nước trái cây). Loại trừ: A '太贵了' (quá đắt) hoàn toàn không được nhắc đến trong hội thoại; B '不放糖' (không cho đường) cũng không xuất hiện, đây là các phương án gây nhiễu. Lưu ý trong đề, chữ '难得' là lỗi phiên âm của '男的' (người đàn ông).\n\n【Từ vựng & Ngữ pháp】\n- 果汁 guǒzhī: nước trái cây; 别的 bié de: những thứ khác, cái khác.\n- Cấu trúc gọi món: 给我来杯...吧 (Gěi wǒ lái bēi... ba): 'Cho tôi một cốc... nhé' — động từ 来 (lái) ở đây mang nghĩa 'lấy/làm cho tôi' khi đặt món, rất hay gặp trong nhà hàng, quán nước."
+        },
+        {
+          "id": "hsk3-13-q022",
+          "number": 22,
+          "type": "multiple_choice",
+          "instruction": "第 21-30 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "借书"
+            },
+            {
+              "id": "B",
+              "text": "还书"
+            },
+            {
+              "id": "C",
+              "text": "写作业"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q022.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": [],
+          "transcript": "我先去途书馆还书我们九点在途书馆门口见吧好的,一会儿见,难得去途书馆做什么?二十二我先去途书馆还书我们九点在途书馆门口见吧好的,一会儿见难得去途书馆做什么?",
+          "explanation": "【Dịch nghĩa】\n- Người đàn ông: 我先去图书馆还书,我们九点在图书馆门口见吧。| Wǒ xiān qù túshūguǎn huán shū, wǒmen jiǔ diǎn zài túshūguǎn ménkǒu jiàn ba. | 'Tôi đi thư viện trả sách trước, chúng ta chín giờ gặp nhau ở cửa thư viện nhé.'\n- Người phụ nữ: 好的,一会儿见。| Hǎo de, yíhuìr jiàn. | 'Được, gặp lại sau nhé.'\n- Câu hỏi: 男的去图书馆做什么?| Nán de qù túshūguǎn zuò shénme? | 'Người đàn ông đi thư viện làm gì?'\n- A. 借书 | Jiè shū | 'Mượn sách'\n- B. 还书 | Huán shū | 'Trả sách'\n- C. 写作业 | Xiě zuòyè | 'Làm bài tập'\n\n【Phân tích】\nTừ khóa quyết định nằm ở câu '我先去图书馆还书' — động từ 还 (huán) nghĩa là 'trả lại' → người đàn ông đến thư viện để trả sách → đáp án B. Loại trừ: A '借书' (mượn sách) là bẫy âm thanh và nghĩa, vì 借 (jiè - mượn) và 还 (huán - trả) là hai hành động ngược nhau, người thi phải nghe kỹ động từ; C '写作业' (làm bài tập) hoàn toàn không được đề cập trong hội thoại. Lưu ý trong đề, chữ '难得' là lỗi phiên âm của '男的' (người đàn ông).\n\n【Từ vựng & Ngữ pháp】\n- 还书 huán shū: trả sách (phân biệt với 借书 jiè shū: mượn sách); 图书馆 túshūguǎn: thư viện.\n- 一会儿见 yíhuìr jiàn: 'gặp lại chút nữa' — câu chào tạm biệt thông dụng khi hẹn gặp ngắn hạn; cấu trúc 先...吧 (xiān... ba) diễn tả 'làm việc gì trước đã, sau đó mới...'."
+        },
+        {
+          "id": "hsk3-13-q023",
+          "number": 23,
+          "type": "multiple_choice",
+          "instruction": "第 21-30 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "机场"
+            },
+            {
+              "id": "B",
+              "text": "火车站"
+            },
+            {
+              "id": "C",
+              "text": "动物园"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q023.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": [],
+          "transcript": "经理 您的相机里,怎么这么多小鳥的照片?那是上次去动物圆照的,后面还有好多其他动物。那些照片是在哪照的。",
+          "explanation": "【Dịch nghĩa】\n- 经理,您的相机里,怎么这么多小鸟的照片?(Jīnglǐ, nín de xiàngjī lǐ, zěnme zhème duō xiǎoniǎo de zhàopiàn?) - 'Giám đốc, trong máy ảnh của anh sao lại có nhiều ảnh chim nhỏ thế?'\n- 那是上次去动物园照的,后面还有好多其他动物。(Nà shì shàngcì qù dòngwùyuán zhào de, hòumiàn hái yǒu hǎoduō qítā dòngwù.) - 'Đó là chụp lần trước đi sở thú, phía sau còn có rất nhiều con vật khác.'\n- Câu hỏi: 那些照片是在哪照的?(Nàxiē zhàopiàn shì zài nǎ zhào de?) - 'Những tấm ảnh đó được chụp ở đâu?'\n- A. 机场 (jīchǎng) - sân bay | B. 火车站 (huǒchēzhàn) - nhà ga xe lửa | C. 动物园 (dòngwùyuán) - sở thú\n【Phân tích】Từ khóa ăn điểm là '动物园' (sở thú) xuất hiện trực tiếp trong câu trả lời: '那是上次去动物园照的' (Đó là chụp lần trước đi sở thú). Ngoài ra, các chi tiết '小鸟' (chim nhỏ) và '其他动物' (các con vật khác) cũng củng cố bối cảnh là sở thú. Loại trừ A (sân bay) và B (nhà ga) vì hoàn toàn không có thông tin liên quan trong bài nghe.\n【Từ vựng & Ngữ pháp】\n- 动物园 (dòngwùyuán): sở thú - từ khóa quyết định đáp án.\n- 照 (zhào): chụp (ảnh), đồng nghĩa với 拍 (pāi); 照片 (zhàopiàn): tấm ảnh."
+        },
+        {
+          "id": "hsk3-13-q024",
+          "number": 24,
+          "type": "multiple_choice",
+          "instruction": "第 21-30 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "坐地铁"
+            },
+            {
+              "id": "B",
+              "text": "坐出租车"
+            },
+            {
+              "id": "C",
+              "text": "骑自行车"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q024.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": [],
+          "transcript": "姐,天已经黑了。吃完晚饭,我开车送你回去。不用,我自己坐闭铁就可以。女的大算怎么回去。",
+          "explanation": "【Dịch nghĩa】\n- 姐,天已经黑了。吃完晚饭,我开车送你回去。(Jiě, tiān yǐjīng hēi le. Chī wán wǎnfàn, wǒ kāichē sòng nǐ huíqù.) - 'Chị ơi, trời đã tối rồi. Ăn cơm tối xong, anh lái xe đưa chị về.'\n- 不用,我自己坐地铁就可以。(Búyòng, wǒ zìjǐ zuò dìtiě jiù kěyǐ.) - 'Không cần đâu, em tự đi tàu điện ngầm là được.'\n- Câu hỏi: 女的打算怎么回去?(Nǚde dǎsuàn zěnme huíqù?) - 'Người phụ nữ định quay về bằng phương tiện gì?'\n- A. 坐地铁 (zuò dìtiě) - đi tàu điện ngầm | B. 坐出租车 (zuò chūzūchē) - đi taxi | C. 骑自行车 (qí zìxíngchē) - đạp xe đạp\n【Phân tích】Từ khóa ăn điểm là '坐地铁' trong câu nói của người phụ nữ: '我自己坐地铁就可以' (Tôi tự đi tàu điện ngầm là được). Lưu ý kỹ năng nghe HSK: người đàn ông đề nghị '开车送你回去' (lái xe đưa về) nhưng người phụ nữ đã từ chối bằng '不用' (không cần), nên phương tiện anh ta đề nghị KHÔNG phải đáp án. Loại trừ B (taxi) và C (xe đạp) vì không được nhắc đến trong bài.\n【Từ vựng & Ngữ pháp】\n- 打算 (dǎsuàn): định, dự định - thường xuất hiện trong câu hỏi về kế hoạch.\n- 不用 (búyòng): không cần - cấu trúc từ chối lời đề nghị; mẫu câu '自己...就可以' nghĩa là 'tự mình làm gì đó là được'."
+        },
+        {
+          "id": "hsk3-13-q025",
+          "number": 25,
+          "type": "multiple_choice",
+          "instruction": "第 21-30 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "学校东门"
+            },
+            {
+              "id": "B",
+              "text": "学校西门"
+            },
+            {
+              "id": "C",
+              "text": "学校北门"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q025.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": [],
+          "transcript": "我想买个新眼镜,你知道附近哪有眼镜电吗?学校东门就有一个,听说还比较便宜.那个眼镜电在哪?25,我想买个新眼镜,你知道附近哪有眼镜电吗?学校东门就有一个,听说还比较便宜.那个眼镜电在哪?",
+          "explanation": "【Dịch nghĩa】\nLời thoại: 'Tôi muốn mua một chiếc kính mới, bạn có biết gần đây có cửa hàng kính nào không?' (Wǒ xiǎng mǎi gè xīn yǎnjìng, nǐ zhīdào fùjìn nǎ yǒu yǎnjìngdiàn ma?) – 'Ngay cửa Đông trường học có một cửa hàng, nghe nói còn khá rẻ.' (Xuéxiào dōngmén jiù yǒu yí gè, tīngshuō hái bǐjiào piányi.)\nCâu hỏi: Cửa hàng kính đó ở đâu? (Nàge yǎnjìngdiàn zài nǎr?)\nA. Cửa Đông trường học (Xuéxiào dōngmén) | B. Cửa Tây trường học (Xuéxiào xīmén) | C. Cửa Bắc trường học (Xuéxiào běimén)\n【Phân tích】\nTừ khóa ăn điểm là '学校东门就有一个' – người nghe trả lời thẳng rằng cửa hàng kính nằm ngay ở cửa Đông trường học, nên đáp án là A. Các phương án B (cửa Tây) và C (cửa Bắc) là phương án gây nhiễu về phương hướng, hoàn toàn không được nhắc đến trong bài, do đó loại trừ cả hai.\n【Từ vựng & Ngữ pháp】\n- 眼镜店 (yǎnjìngdiàn): cửa hàng kính (trong transcript ghi '眼镜电' là lỗi chính tả, đúng phải là 店).\n- 就 (jiù): trạng từ nhấn mạnh 'ngay, chính là' – 学校东门就有一个 = ngay ở cửa Đông trường học đã có một cửa hàng."
+        },
+        {
+          "id": "hsk3-13-q026",
+          "number": 26,
+          "type": "multiple_choice",
+          "instruction": "第 21-30 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "快结束了"
+            },
+            {
+              "id": "B",
+              "text": "终于结束了"
+            },
+            {
+              "id": "C",
+              "text": "中午接着开"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q026.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": [],
+          "transcript": "今天的会怎么开了这么久 还没结束啊?快了 很快就结束了 会已开的咱们一样了。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: 'Hôm nay cuộc họp sao kéo dài thế? Chưa kết thúc à?' (Jīntiān de huì zěnme kāi le zhème jiǔ? Hái méi jiéshù a?) – 'Sắp rồi, rất nhanh sẽ kết thúc thôi.' (Kuài le, hěn kuài jiù jiéshù le.)\nCâu hỏi: Cuộc họp hiện đang như thế nào?\nA. Sắp kết thúc (Kuài jiéshù le) | B. Cuối cùng cũng đã kết thúc (Zhōngyú jiéshù le) | C. Buổi trưa họp tiếp (Zhōngwǔ jiēzhe kāi)\n【Phân tích】\nTừ khóa quyết định là '快了,很快就结束了' – nghĩa là cuộc họp chưa xong nhưng 'rất nhanh sẽ kết thúc', tương ứng chính xác với đáp án A '快结束了'. Loại trừ: B sai vì cuộc họp vẫn chưa kết thúc (người hỏi còn nói '还没结束'); C sai vì bài nghe không hề nhắc đến việc họp tiếp vào buổi trưa.\n【Từ vựng & Ngữ pháp】\n- 结束 (jiéshù): kết thúc – xuất hiện nhiều lần, là từ khóa chủ đề của bài.\n- 快...了 (kuài...le): cấu trúc diễn tả sự việc 'sắp... rồi', ví dụ 快结束了 = sắp kết thúc; đối lập với 还没... (hái méi) = vẫn chưa."
+        },
+        {
+          "id": "hsk3-13-q027",
+          "number": 27,
+          "type": "multiple_choice",
+          "instruction": "第 21-30 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "害怕小狗"
+            },
+            {
+              "id": "B",
+              "text": "上学去了"
+            },
+            {
+              "id": "C",
+              "text": "在刷牙洗脸"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q027.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": [],
+          "transcript": "怎么不叫女儿起床吃早饭呢?不快吃到了。今天她考试,这会儿可能已经在教室里了。关于女儿,可以知道什么?二十七,怎么不叫女儿起床吃早饭呢?不快吃到了。今天她考试,这会儿可能已经在教室里了。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: '怎么不叫女儿起床吃早饭呢?不快迟到了。今天她考试,这会儿可能已经在教室里了。'\nPinyin: Zěnme bù jiào nǚ'ér qǐchuáng chī zǎofàn ne? Bù kuài chí dào le. Jīntiān tā kǎoshì, zhè huìr kěnéng yǐjīng zài jiàoshì lǐ le.\nDịch: 'Sao không gọi con gái dậy ăn sáng? Không sợ đến muộn à? Hôm nay con ấy thi, giờ này chắc đã ở trong lớp học rồi.'\nCâu hỏi: '关于女儿,可以知道什么?' (Guānyú nǚ'ér, kěyǐ zhīdào shénme?) - Về cô con gái, có thể biết được điều gì?\nCác đáp án:\nA. 害怕小狗 (Hàipà xiǎo gǒu) - Sợ chó con\nB. 上学去了 (Shàngxué qù le) - Đã đi học rồi\nC. 在刷牙洗脸 (Zài shuāyá xǐliǎn) - Đang đánh răng rửa mặt\n\n【Phân tích】\nTừ khóa quyết định là: '今天她考试,这会儿可能已经在教室里了' (Hôm nay con ấy thi, giờ này chắc đã ở trong lớp học rồi). Điều này cho thấy cô con gái đã đến trường, tức là '上学去了' (đã đi học) → chọn B.\nLoại trừ:\n- A. 害怕小狗: Toàn bộ đoạn hội thoại không hề nhắc đến chó hay nỗi sợ hãi → loại.\n- C. 在刷牙洗脸: Nếu cô ấy đang đánh răng rửa mặt thì phải ở nhà, nhưng thực tế cô ấy đã ở trong lớp học → loại.\n\n【Từ vựng & Ngữ pháp】\n1. 起床 (qǐchuáng): thức dậy, ngủ dậy.\n2. 这会儿 (zhè huìr): lúc này, giờ này - chỉ thời điểm hiện tại.\n3. 可能...了 (kěnéng...le): cấu trúc phỏng đoán 'có thể đã...' - 可能 + động từ/tình huống diễn tả suy đoán về việc có thể đã xảy ra."
+        },
+        {
+          "id": "hsk3-13-q028",
+          "number": 28,
+          "type": "multiple_choice",
+          "instruction": "第 21-30 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "医生"
+            },
+            {
+              "id": "B",
+              "text": "校长"
+            },
+            {
+              "id": "C",
+              "text": "司机"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q028.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": [],
+          "transcript": "我介绍一下,这就是我说的那个同学,现在是这个学校的校长,不用介绍了,我们以前就认识,那个同学现在是做什么的,二十八,我介绍一下。这个就是我说的那个同学,现在是这个学校的校长。不用介绍了,我们以前就认识,那个同学现在是做什么的。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: '我介绍一下,这就是我说的那个同学,现在是这个学校的校长。' - 'Tôi giới thiệu nhé, đây chính là người bạn học mà tôi đã nói, giờ là hiệu trưởng của trường này.'\n'不用介绍了,我们以前就认识。' (Bùyòng jièshào le, wǒmen yǐqián jiù rènshi.) - 'Không cần giới thiệu đâu, chúng tôi quen nhau từ trước rồi.'\nCâu hỏi: '那个同学现在是做什么的?' (Nàge tóngxué xiànzài shì zuò shénme de?) - Người bạn học đó bây giờ làm nghề gì?\nCác đáp án:\nA. 医生 (Yīshēng) - Bác sĩ\nB. 校长 (Xiàozhǎng) - Hiệu trưởng\nC. 司机 (Sījī) - Tài xế\n\n【Phân tích】\nTừ khóa quyết định là: '现在是这个学校的校长' (giờ là hiệu trưởng của trường này). Câu hỏi hỏi về nghề nghiệp hiện tại của người bạn học, và thông tin này được nói rõ ràng ngay trong câu giới thiệu → chọn B.\nLoại trừ:\n- A. 医生 (bác sĩ): Không có thông tin nào liên quan đến bệnh viện hay nghề y → loại.\n- C. 司机 (tài xế): Không có thông tin nào về lái xe → loại.\nLưu ý bẫy đề: Câu '不用介绍了,我们以前就认识' chỉ là câu đáp lại lịch sự của người nghe, không chứa thông tin về nghề nghiệp.\n\n【Từ vựng & Ngữ pháp】\n1. 校长 (xiàozhǎng): hiệu trưởng - danh từ chỉ nghề nghiệp, là từ khóa ăn điểm của câu này.\n2. 做什么的 (zuò shénme de): cấu trúc hỏi nghề nghiệp 'làm nghề gì?' - 做 + 什么 + 的.\n3. 以前就... (yǐqián jiù...): 'đã... từ trước rồi' - 就 nhấn mạnh hành động xảy ra sớm hơn mong đợi/vào thời điểm trước."
+        },
+        {
+          "id": "hsk3-13-q029",
+          "number": 29,
+          "type": "multiple_choice",
+          "instruction": "第 21-30 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "4分钟后"
+            },
+            {
+              "id": "B",
+              "text": "半小时后"
+            },
+            {
+              "id": "C",
+              "text": "5点一刻"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q029.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": [],
+          "transcript": "比赛快开始了吧?马上,还差四分钟。比赛什么时候开始?二十九,比赛快开始了吧?马上,还差四分钟。比赛什么时候开始?",
+          "explanation": "【Dịch nghĩa】\nLời thoại: '比赛快开始了吧?' (Bǐsài kuài kāishǐ le ba?) - 'Trận thi đấu sắp bắt đầu rồi phải không?'\n'马上,还差四分钟。' (Mǎshàng, hái chà sì fēnzhōng.) - 'Ngay bây giờ, còn thiếu 4 phút nữa.'\nCâu hỏi: '比赛什么时候开始?' (Bǐsài shénme shíhou kāishǐ?) - 'Trận thi đấu khi nào bắt đầu?'\nCác đáp án:\nA. 4分钟后 (4 fēnzhōng hòu) - Sau 4 phút\nB. 半小时后 (bàn xiǎoshí hòu) - Sau nửa tiếng\nC. 5点一刻 (wǔ diǎn yíkè) - 5 giờ 15 phút\n\n【Phân tích】\nTừ khóa ăn điểm là '还差四分钟' (còn thiếu 4 phút), nghĩa là trận đấu sẽ bắt đầu sau 4 phút nữa, nên chọn đáp án A. Loại trừ: B '半小时后' (sau nửa tiếng) và C '5点一刻' (5 giờ 15 phút) đều không được nhắc đến trong lời thoại. Cần chú ý đây là dạng câu hỏi gián tiếp: người nói không trả lời trực tiếp bằng giờ cụ thể mà dùng cách nói 'còn thiếu bao nhiêu phút', người nghe phải tự suy ra thời điểm bắt đầu.\n\n【Từ vựng & Ngữ pháp】\n- 还差 (hái chà): còn thiếu, còn cách - cấu trúc thường dùng để nói thời gian còn lại, ví dụ: 还差五分钟 (còn thiếu 5 phút).\n- 马上 (mǎshàng): ngay lập tức, sắp - trạng từ chỉ hành động xảy ra rất sớm."
+        },
+        {
+          "id": "hsk3-13-q030",
+          "number": 30,
+          "type": "multiple_choice",
+          "instruction": "第 21-30 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "要表演节目"
+            },
+            {
+              "id": "B",
+              "text": "同事生病了"
+            },
+            {
+              "id": "C",
+              "text": "最近事情多"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q030.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": [],
+          "transcript": "今天是周六,你怎么还去上班?英文这几天事情特别多,我明天才能休息,女的为什么周六还上班?三十,今天是周六,你怎么还去上班?英文这几天事情特别多,我明天才能休息,女的为什么周六还上班?",
+          "explanation": "【Dịch nghĩa】\nLời thoại: '今天是周六,你怎么还去上班?' (Jīntiān shì zhōuliù, nǐ zěnme hái qù shàngbān?) - 'Hôm nay là thứ Bảy, sao cậu vẫn đi làm?'\n'因为这几天事情特别多,我明天才能休息。' (Yīnwèi zhè jǐ tiān shìqing tèbié duō, wǒ míngtiān cáinéng xiūxi.) - 'Vì mấy ngày nay việc rất nhiều, tôi phải đến ngày mai mới được nghỉ.'\nCâu hỏi: '女的为什么周六还上班?' (Nǚde wèishénme zhōuliù hái shàngbān?) - 'Tại sao người phụ nữ vẫn đi làm thứ Bảy?'\nCác đáp án:\nA. 要表演节目 (yào biǎoyǎn jiémù) - Phải biểu diễn chương trình\nB. 同事生病了 (tóngshì shēngbìng le) - Đồng nghiệp bị ốm\nC. 最近事情多 (zuìjìn shìqing duō) - Dạo này nhiều việc\n\n【Phân tích】\nTừ khóa ăn điểm là '这几天事情特别多' (mấy ngày nay việc rất nhiều), khớp chính xác với đáp án C '最近事情多' (dạo này nhiều việc). Loại trừ: A 'biểu diễn chương trình' và B 'đồng nghiệp ốm' hoàn toàn không xuất hiện trong lời thoại. Đây là câu hỏi hỏi nguyên nhân (为什么), nên phải tìm câu trả lời có từ '因为' (vì) trong phần đáp lời của nhân vật.\n\n【Từ vựng & Ngữ pháp】\n- 特别 (tèbié): đặc biệt, hết sức - trạng từ nhấn mạnh mức độ, ví dụ: 特别多 (rất nhiều).\n- 才 (cái): phó từ nhấn mạnh sự việc xảy ra muộn hoặc muộn hơn dự kiến, ví dụ: 明天才能休息 (phải đến ngày mai mới được nghỉ)."
+        },
+        {
+          "id": "hsk3-13-q031",
+          "number": 31,
+          "type": "multiple_choice",
+          "instruction": "第四部分\n第 31-40 题",
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "想看月亮"
+            },
+            {
+              "id": "B",
+              "text": "要去踢球"
+            },
+            {
+              "id": "C",
+              "text": "要去买面包"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q031.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": [],
+          "transcript": "三十一。 明天是不是请天。念是少说,是英天,呼云。你今天怎么关心天气了?那是,我和同学说好了,明天去踢足球。那应该没什么问题。 难道为什么关心天气?难道为什么关心天气。",
+          "explanation": "【Dịch nghĩa】\nLời thoại (bản gốc chuẩn): \n- 女：明天是不是晴天？(Nǚ: Míngtiān shì bu shì qíngtiān?) – Nữ: Ngày mai có phải trời nắng không?\n- 男：不是，是阴天，多云。(Nán: Bú shì, shì yīntiān, duōyún.) – Nam: Không, trời âm u, nhiều mây.\n- 女：你今天怎么关心天气了？(Nǚ: Nǐ jīntiān zěnme guānxīn tiānqì le?) – Nữ: Hôm nay sao anh lại quan tâm thời tiết thế?\n- 男：我和同学说好了，明天去踢足球。(Nán: Wǒ hé tóngxué shuō hǎo le, míngtiān qù tī zúqiú.) – Nam: Tôi đã hẹn với bạn học, ngày mai đi đá bóng.\n- 女：那应该没什么问题。(Nǚ: Nà yīnggāi méi shénme wèntí.) – Nữ: Vậy chắc không có vấn đề gì.\nCâu hỏi: 男的为什么关心天气？(Nán de wèishénme guānxīn tiānqì?) – Người đàn ông tại sao quan tâm thời tiết?\nA. 想看月亮 (Xiǎng kàn yuèliang) – Muốn ngắm trăng\nB. 要去踢球 (Yào qù tī qiú) – Muốn đi đá bóng\nC. 要去买面包 (Yào qù mǎi miànbāo) – Muốn đi mua bánh mì\n\n【Phân tích】\nTừ khóa ăn điểm nằm ở câu: '我和同学说好了，明天去踢足球' (Tôi đã hẹn với bạn học, ngày mai đi đá bóng). Đây là lý do trực tiếp khiến người đàn ông quan tâm đến thời tiết – vì muốn đá bóng nên cần biết trời có nắng hay không. Đáp án B '要去踢球' khớp hoàn toàn với thông tin này. Loại trừ A '想看月亮' và C '要去买面包' vì cả hai hoạt động này hoàn toàn không được nhắc đến trong bài nghe. Lưu ý: bản ghi âm trong đề có lỗi nhận dạng giọng nói ('请天' thực chất là '晴天', '英天' là '阴天'), người học cần nhận diện âm chuẩn.\n\n【Từ vựng & Ngữ pháp】\n- 关心 (guānxīn): quan tâm, để tâm đến.\n- 说好了 (shuō hǎo le): đã hẹn/hứa rồi – cấu trúc động từ + 结果补语 '好' chỉ kết quả hoàn thành của việc thỏa thuận."
+        },
+        {
+          "id": "hsk3-13-q032",
+          "number": 32,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "汉语"
+            },
+            {
+              "id": "B",
+              "text": "画画儿"
+            },
+            {
+              "id": "C",
+              "text": "做中国菜"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q032.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": [],
+          "transcript": "喂,老白,我记得你弟弟是汉鱼老师吧?是,他是汉鱼老师。我有个朋友,想学汉鱼。但他现在认识的词语很少。只会说几个简单的句子。你弟弟,有没有兴趣将他。我也不清楚。我现在就问问他,你等我电话。那位朋友,想学习什么?三十二,为,老白,我记得你弟弟是汉鱼老师吧?是,他是汉鱼老师。我有个朋友,想学汉鱼。但他现在认识的词语很少。只会说几个简单的句子。你弟弟,有没有兴趣将他。我也不清楚。我现在就问问他,你等我电话。那位朋友,想学习什么。",
+          "explanation": "【Dịch nghĩa】\nLời thoại (bản gốc chuẩn): \n- 男：喂，老白，我记得你弟弟是汉语老师吧？(Nán: Wèi, Lǎo Bái, wǒ jìde nǐ dìdi shì Hànyǔ lǎoshī ba?) – Nam: A-lô, Lão Bái, tôi nhớ em trai cậu là giáo viên tiếng Trung phải không?\n- 女：是，他是汉语老师。(Nǚ: Shì, tā shì Hànyǔ lǎoshī.) – Nữ: Đúng, anh ấy là giáo viên tiếng Trung.\n- 男：我有个朋友想学汉语，但他现在认识的词语很少，只会说几个简单的句子。你弟弟有没有兴趣教他？(Nán: Wǒ yǒu ge péngyou xiǎng xué Hànyǔ, dàn tā xiànzài rènshi de cíyǔ hěn shǎo, zhǐ huì shuō jǐ ge jiǎndān de jùzi. Nǐ dìdi yǒu méiyǒu xìngqù jiāo tā?) – Nam: Tôi có một người bạn muốn học tiếng Trung, nhưng hiện tại bạn ấy biết rất ít từ vựng, chỉ nói được vài câu đơn giản. Em trai cậu có hứng thú dạy anh ấy không?\n- 女：我也不清楚。我现在就问问他，你等我电话。(Nǚ: Wǒ yě bù qīngchu. Wǒ xiànzài jiù wènwen tā, nǐ děng wǒ diànhuà.) – Nữ: Tôi cũng không rõ. Tôi sẽ hỏi anh ấy ngay, cậu đợi điện thoại của tôi nhé.\nCâu hỏi: 那位朋友想学习什么？(Nà wèi péngyou xiǎng xuéxí shénme?) – Người bạn đó muốn học gì?\nA. 汉语 (Hànyǔ) – Tiếng Trung\nB. 画画儿 (huà huàr) – Vẽ tranh\nC. 做中国菜 (zuò Zhōngguó cài) – Nấu món ăn Trung Quốc\n\n【Phân tích】\nTừ khóa ăn điểm là câu: '我有个朋友，想学汉语' (Tôi có một người bạn muốn học tiếng Trung). Thông tin bổ trợ '认识的词语很少，只会说几个简单的句子' (biết rất ít từ vựng, chỉ nói được vài câu đơn giản) càng khẳng định đối tượng học là ngôn ngữ – tiếng Trung. Đáp án A '汉语' hoàn toàn chính xác. Loại trừ B '画画儿' và C '做中国菜' vì không hề xuất hiện trong bài nghe. Lưu ý: bản ghi âm có lỗi nhận dạng '汉鱼' thực chất là '汉语', '将他' thực chất là '教他' (dạy anh ấy).\n\n【Từ vựng & Ngữ pháp】\n- 汉语 (Hànyǔ): tiếng Trung Quốc; 教 (jiāo): dạy; 有兴趣 (yǒu xìngqù): có hứng thú.\n- 只会 (zhǐ huì): chỉ biết/c chỉ biết cách – '会' là động từ năng nguyên chỉ khả năng học hỏi được, kết hợp với '只' nhấn mạnh mức độ hạn chế."
+        },
+        {
+          "id": "hsk3-13-q033",
+          "number": 33,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "很矮"
+            },
+            {
+              "id": "B",
+              "text": "很聪明"
+            },
+            {
+              "id": "C",
+              "text": "变化不大"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q033.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": [],
+          "transcript": "真不凯相信,这是你吗?是啊,那是我八岁时的照片。你几乎没什么变化,一直这么漂亮。是吗?但是,我比过去胖了不少。关于女的,可以知道什么?三十三,真不凯相信。关于女的。",
+          "explanation": "【Dịch nghĩa】\nLời thoại (bản chuẩn): 男: 真不敢相信,这是你吗? (Zhēn bù gǎn xiāngxìn, zhè shì nǐ ma?) - Thật không thể tin được, đây là bạn à? | 女: 是啊,那是我八岁时的照片。 (Shì a, nà shì wǒ bā suì shí de zhàopiàn.) - Ừ, đó là tấm ảnh hồi tôi 8 tuổi. | 男: 你几乎没什么变化,一直这么漂亮。 (Nǐ jīhū méi shénme biànhuà, yīzhí zhème piàoliang.) - Bạn gần như không có gì thay đổi, vẫn xinh đẹp như vậy. | 女: 是吗?但是,我比过去胖了不少。 (Shì ma? Dànshì, wǒ bǐ guòqù pàng le bù shǎo.) - Vậy à? Nhưng tôi béo hơn trước khá nhiều.\nCâu hỏi: 关于女的,可以知道什么? (Guānyú nǚ de, kěyǐ zhīdào shénme?) - Về người phụ nữ, có thể biết điều gì?\nA. 很矮 (hěn ǎi) - Rất lùn | B. 很聪明 (hěn cōngming) - Rất thông minh | C. 变化不大 (biànhuà bù dà) - Không thay đổi nhiều\n【Phân tích】Từ khóa ăn điểm nằm ở câu của người nam: '你几乎没什么变化' (bạn gần như không có gì thay đổi) → khẳng định người phụ nữ '变化不大' → chọn C. Loại trừ A vì đoạn hội thoại không nhắc đến chiều cao (矮); loại trừ B vì không nhắc đến sự thông minh (聪明). Lưu ý: câu '我比过去胖了不少' của nữ chỉ là chi tiết phụ mang tính khiêm tốn, không phải trọng tâm câu hỏi.\n【Từ vựng & Ngữ pháp】\n- 变化 (biànhuà): sự thay đổi; 几乎 (jīhū): hầu như, gần như.\n- 比...胖了不少 (bǐ... pàng le bù shǎo): cấu trúc so sánh '比' chỉ bậc hơn; '不少' = không ít, khá nhiều."
+        },
+        {
+          "id": "hsk3-13-q034",
+          "number": 34,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "很累"
+            },
+            {
+              "id": "B",
+              "text": "很满意"
+            },
+            {
+              "id": "C",
+              "text": "非常饱"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q034.mp3",
+          "needsReview": false,
+          "correctAnswer": "A",
+          "imageUrls": [],
+          "transcript": "起完了吗? 累不累。当然了。 给狗喜次早太累了。那以后还是我来给他喜吧。他如果是猫就好了。难得现在觉得怎么样。三十四。 起完了吗? 累不累。当然了。 给狗喜次早太累了。那以后还是我来给他喜吧。他如果是猫就好了。难得现在觉得怎么样。",
+          "explanation": "【Dịch nghĩa】\nLời thoại (bản chuẩn): 女: 洗完了吗?累不累? (Xǐ wán le ma? Lèi bu lèi?) - Tắm xong chưa? Có mệt không? | 男: 当然了,给狗洗澡太累了。 (Dāngrán le, gěi gǒu xǐzǎo tài lèi le.) - Đương nhiên rồi, tắm cho con chó mệt quá. | 女: 那以后还是我来给它洗吧。 (Nà yǐhòu háishì wǒ lái gěi tā xǐ ba.) - Vậy sau này để tôi tắm cho nó nhé. | 男: 它如果是猫就好了。 (Tā rúguǒ shì māo jiù hǎo le.) - Giá mà nó là con mèo thì tốt rồi.\nCâu hỏi: 男的现在觉得怎么样? (Nán de xiànzài juéde zěnme yàng?) - Người nam bây giờ cảm thấy thế nào?\nA. 很累 (hěn lèi) - Rất mệt | B. 很满意 (hěn mǎnyì) - Rất hài lòng | C. 非常饱 (fēicháng bǎo) - Rất no\n【Phân tích】Từ khóa quyết định là '太累了' (quá mệt) do người nam nói khi tắm cho chó → chọn A 很累. Loại trừ B vì đoạn hội thoại không có từ '满意' (hài lòng); loại trừ C vì '饱' (no) không xuất hiện, đây là bẫy âm thanh dễ nhầm với '累' (lèi) trong phần nghe.\n【Từ vựng & Ngữ pháp】\n- 累 (lèi): mệt; 给狗洗澡 (gěi gǒu xǐzǎo): tắm cho chó. Cấu trúc '给 + người/vật + động từ' = làm việc gì đó cho ai/cái gì.\n- 如果...就好了 (rúguǒ... jiù hǎo le): 'giá mà... thì tốt rồi', diễn tả điều ước không có thật ở hiện tại."
+        },
+        {
+          "id": "hsk3-13-q035",
+          "number": 35,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "生气了"
+            },
+            {
+              "id": "B",
+              "text": "不舒服"
+            },
+            {
+              "id": "C",
+              "text": "穿着裙子"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q035.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": [],
+          "transcript": "外面天气冷,别穿选择了。没关系,我刚才出去了一下,觉得还好?那你小心点,别感冒了。知道了,我会注意的,万云女的,可以知道什么?35,外面天气冷,别穿选择了。没关系,我刚才出去了一下,觉得还好?那你小心点,别感冒了。知道了,我会注意的,万云女的。",
+          "explanation": "【Dịch nghĩa】\n- 外面天气冷,别穿裙子了。(Wàimiàn tiānqì lěng, bié chuān qúnzi le.) - Ngoài trời lạnh, đừng mặc váy nữa.\n- 没关系,我刚才出去了一下,觉得还好。(Méi guānxi, wǒ gāngcái chūqù le yíxià, juéde hái hǎo.) - Không sao, vừa rồi tôi ra ngoài một chút, thấy vẫn ổn.\n- 那你小心点,别感冒了。(Nà nǐ xiǎoxīn diǎn, bié gǎnmào le.) - Vậy cậu cẩn thận nhé, đừng bị cảm.\n- 知道了,我会注意的。(Zhīdào le, wǒ huì zhùyì de.) - Biết rồi, tôi sẽ chú ý.\n- Câu hỏi: 女的可以知道什么?(Nǚ de kěyǐ zhīdào shénme?) - Có thể biết được điều gì về người phụ nữ?\n- A. 生气了 (Shēngqì le) - Đã giận dữ | B. 不舒服 (Bù shūfu) - Không khỏe | C. 穿着裙子 (Chuānzhe qúnzi) - Đang mặc váy\n\n【Phân tích】Đáp án đúng là C. Từ khóa ăn điểm nằm ở câu đầu của người nói: '别穿裙子了' (đừng mặc váy nữa) → điều này chứng tỏ người phụ nữ đang mặc váy. Loại trừ A vì cô ấy trả lời '没关系' (không sao) rất bình tĩnh, hoàn toàn không giận dữ; loại trừ B vì cô ấy nói '觉得还好' (thấy vẫn ổn), không hề cảm thấy khó chịu hay mệt. Lưu ý: bản transcript ghi '别穿选择了' là lỗi nghe, từ đúng phải là '别穿裙子了'.\n\n【Từ vựng & Ngữ pháp】\n- 裙子 (qúnzi): váy; 感冒 (gǎnmào): bị cảm, cảm lạnh.\n- Cấu trúc 别 + động từ: dùng để khuyên hoặc ngăn cản ai đó đừng làm việc gì, ví dụ: 别感冒了 (đừng bị cảm)."
+        },
+        {
+          "id": "hsk3-13-q036",
+          "number": 36,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "左边"
+            },
+            {
+              "id": "B",
+              "text": "中间"
+            },
+            {
+              "id": "C",
+              "text": "右边"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q036.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": [],
+          "transcript": "这个字,是什么意思?我也不知道,我有字点,你自己查一下吧?你的字点,在哪儿呢?那,看见了吗?中间红色的那本,字点在哪儿呢?那,看见了吗?中间红色的那本。",
+          "explanation": "【Dịch nghĩa】\n- 这个字是什么意思?(Zhège zì shì shénme yìsi?) - Chữ này nghĩa là gì?\n- 我也不知道,我有字典,你自己查一下吧。(Wǒ yě bù zhīdào, wǒ yǒu zìdiǎn, nǐ zìjǐ chá yíxià ba.) - Tôi cũng không biết, tôi có từ điển, cậu tự tra một chút nhé.\n- 你的字典在哪儿呢?(Nǐ de zìdiǎn zài nǎr ne?) - Từ điển của cậu ở đâu?\n- 看见了吗?中间红色的那本。(Kànjiàn le ma? Zhōngjiān hóngsè de nà běn.) - Thấy chưa? Quyển màu đỏ ở giữa.\n- Câu hỏi: 字典在哪儿?(Zìdiǎn zài nǎr?) - Từ điển ở đâu?\n- A. 左边 (zuǒbian) - Bên trái | B. 中间 (zhōngjiān) - Ở giữa | C. 右边 (yòubian) - Bên phải\n\n【Phân tích】Đáp án đúng là B. Từ khóa quyết định là câu cuối: '中间红色的那本' (quyển màu đỏ ở giữa) → từ điển nằm ở vị trí giữa. Loại trừ A và C vì trong toàn bộ hội thoại không hề xuất hiện từ '左边' (bên trái) hay '右边' (bên phải), đây là các phương án gây nhiễu. Lưu ý: bản transcript ghi '字点' là lỗi nghe, từ đúng phải là '字典' (từ điển).\n\n【Từ vựng & Ngữ pháp】\n- 字典 (zìdiǎn): từ điển; 查 (chá): tra, tra cứu (từ điển).\n- Cấu trúc chỉ vị trí: 中间 (zhōngjiān) - ở giữa, đối lập với 左边 (bên trái) và 右边 (bên phải); cách chỉ vật: 那 + lượng từ + tính từ + 的 + danh từ, ví dụ: 那本红色的 (quyển màu đỏ kia)."
+        },
+        {
+          "id": "hsk3-13-q037",
+          "number": 37,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "桌子坏了"
+            },
+            {
+              "id": "B",
+              "text": "会议还没举行"
+            },
+            {
+              "id": "C",
+              "text": "班里只有一个人"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q037.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": [],
+          "transcript": "奇怪, 安里面怎么救你一个人?今天下午有蓝球比赛, 大家都去看比赛了。你不说我都忘了, 那你怎么没去?我回来,拿把椅子, 难得为什么觉得奇怪?我回来,拿把椅子, 难得为什么觉得奇怪?",
+          "explanation": "【Dịch nghĩa】\nLời thoại:\n- 奇怪，怎么就你一个人？(Qíguài, zěnme jiù nǐ yí ge rén?) - Lạ thật, sao trong này chỉ có mình bạn?\n- 今天下午有篮球比赛，大家都去看比赛了。(Jīntiān xiàwǔ yǒu lánqiú bǐsài, dàjiā dōu qù kàn bǐsài le.) - Chiều nay có trận bóng rổ, mọi người đều đi xem rồi.\n- 那你怎么没去？(Nà nǐ zěnme méi qù?) - Vậy sao bạn không đi?\n- 我回来拿把椅子。(Wǒ huílái ná bǎ yǐzi.) - Tôi quay lại lấy một cái ghế.\nCâu hỏi: 为什么觉得奇怪？(Wèishénme juéde qíguài?) - Tại sao (người nói) cảm thấy lạ?\nCác đáp án:\nA. 桌子坏了 (Zhuōzi huài le) - Cái bàn bị hỏng\nB. 会议还没举行 (Huìyì hái méi jǔxíng) - Cuộc họp chưa được tổ chức\nC. 班里只有一个人 (Bān lǐ zhǐyǒu yí ge rén) - Trong lớp chỉ có một người\n\n【Phân tích】Từ khóa ăn điểm nằm ở câu mở đầu: '奇怪，怎么就你一个人？' - người nói cảm thấy kỳ lạ vì trong lớp chỉ còn lại một mình người kia (các bạn khác đều đi xem bóng rổ hết). Điều này khớp chính xác với đáp án C '班里只有一个人'. Loại trừ A vì toàn bộ đoạn hội thoại không hề nhắc đến cái bàn bị hỏng; loại trừ B vì không có thông tin nào về cuộc họp.\n\n【Từ vựng & Ngữ pháp】\n- 奇怪 (qíguài): lạ, kỳ lạ - thường dùng để bày tỏ sự thắc mắc, ngạc nhiên.\n- 就 (jiù): 'chỉ, chỉ có' - trong '就你一个人' nhấn mạnh số lượng ít, tức là chỉ có một mình bạn thôi."
+        },
+        {
+          "id": "hsk3-13-q038",
+          "number": 38,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "不爱吃西瓜"
+            },
+            {
+              "id": "B",
+              "text": "想吃面条儿"
+            },
+            {
+              "id": "C",
+              "text": "不喜欢音乐课"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q038.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": [],
+          "transcript": "我点了一个语,一个揚肉,你在点两个。不用了,我看可以了。别客气,给你菜单。那我再点个面吧,这个饭馆的鸡蛋面很有名。关于难的,可以知道什么?三十八,我点了一个语,一个揚肉,你在点两个。不用了,我看可以了。别客气,给你菜单。那我再点个面吧。这个饭馆的鸡蛋面很有名。关于难的。",
+          "explanation": "【Dịch nghĩa】\nLời thoại:\n- 我点了一个鱼，一个羊肉，你再点两个。(Wǒ diǎn le yí ge yú, yí ge yángròu, nǐ zài diǎn liǎng ge.) - Tôi gọi một món cá, một món thịt cừu, bạn gọi thêm hai món nữa đi.\n- 不用了，我看可以了。(Búyòng le, wǒ kàn kěyǐ le.) - Không cần đâu, tôi thấy thế là đủ rồi.\n- 别客气，给你菜单。(Bié kèqi, gěi nǐ càidān.) - Đừng khách sáo, thực đơn đây.\n- 那我再点个面吧，这个饭馆的鸡蛋面很有名。(Nà wǒ zài diǎn ge miàn ba, zhège fànguǎn de jīdàn miàn hěn yǒumíng.) - Vậy tôi gọi thêm một tô mì nhé, mì trứng của nhà hàng này rất nổi tiếng.\nCâu hỏi: 关于男的，可以知道什么？(Guānyú nán de, kěyǐ zhīdào shénme?) - Về người đàn ông, có thể biết được điều gì?\nCác đáp án:\nA. 不爱吃西瓜 (Bú ài chī xīguā) - Không thích ăn dưa hấu\nB. 想吃面条儿 (Xiǎng chī miàntiáor) - Muốn ăn mì\nC. 不喜欢音乐课 (Bù xǐhuan yīnyuè kè) - Không thích môn âm nhạc\n\n【Phân tích】Từ khóa quyết định là câu cuối của người đàn ông: '那我再点个面吧，这个饭馆的鸡蛋面很有名' - anh ấy quyết định gọi thêm mì vì mì trứng ở quán này nổi tiếng, chứng tỏ anh muốn ăn mì → chọn B '想吃面条儿'. Loại trừ A vì đoạn hội thoại không nhắc gì đến dưa hấu (西瓜); loại trừ C vì không hề nhắc đến môn âm nhạc (音乐课), đây là đáp án đánh lạc hướng dựa trên chữ '面' trong '面条' và '音乐'.\n\n【Từ vựng & Ngữ pháp】\n- 点 (diǎn): gọi (món ăn); 菜单 (càidān): thực đơn - từ vựng quen thuộc trong ngữ cảnh nhà hàng.\n- 那...吧 (nà...ba): cấu trúc 'vậy thì... nhé' - dùng để đưa ra quyết định hoặc đề nghị sau khi cân nhắc, ví dụ: '那我再点个面吧'."
+        },
+        {
+          "id": "hsk3-13-q039",
+          "number": 39,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "空调"
+            },
+            {
+              "id": "B",
+              "text": "帽子"
+            },
+            {
+              "id": "C",
+              "text": "故事书"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q039.mp3",
+          "needsReview": false,
+          "correctAnswer": "B",
+          "imageUrls": [],
+          "transcript": "星期日 和我去买个帽子吧?好 你是该买个新帽子了? 那个太久了。那 极点去?下午两遍吧? 那想要买什么?三十九, 星期日 和我去买个帽子吧?好 你是该买个新帽子了?那 那个太久了。那 极点去?下午两遍吧? 那想要买什么?",
+          "explanation": "【Dịch nghĩa】\nLời thoại (bản gốc chuẩn): 男：星期日和我去买个帽子吧？(Xīngqīrì hé wǒ qù mǎi gè màozi ba?) - Chủ nhật đi mua cái mũ với tôi nhé? 女：好，你是该买个新帽子了，那个太旧了。(Hǎo, nǐ shì gāi mǎi gè xīn màozi le, nàge tài jiù le.) - Được, đúng là bạn nên mua cái mũ mới rồi, cái kia quá cũ. 男：那几点去？(Nà jǐ diǎn qù?) - Vậy mấy giờ đi? 女：下午两点吧。(Xiàwǔ liǎng diǎn ba.) - Hai giờ chiều nhé.\nCâu hỏi: 女的想买什么？(Nǚ de xiǎng mǎi shénme?) - Người phụ nữ muốn mua gì?\nA. 空调 (kōngtiáo) - máy điều hòa | B. 帽子 (màozi) - cái mũ | C. 故事书 (gùshi shū) - sách truyện\n【Phân tích】Từ khóa ăn điểm là '帽子' xuất hiện ngay câu đầu tiên '和我去买个帽子吧' và được nhắc lại lần hai ở câu '你是该买个新帽子了'. Người phụ nữ đồng ý và nói cái cũ '太旧了' (quá cũ), chứng tỏ cô ấy chính là người cần mua mũ. Đáp án đúng là B. Loại trừ: A (空调) và C (故事书) hoàn toàn không xuất hiện trong lời thoại, đây là các phương án gây nhiễu dựa trên từ vựng cùng chủ đề đồ vật.\n【Từ vựng & Ngữ pháp】\n- 帽子 (màozi): cái mũ - danh từ trọng tâm của bài nghe.\n- 该...了 (gāi...le): đã đến lúc phải... - cấu trúc diễn tả việc nên làm lúc này, ví dụ: 你是该买个新帽子了 (Đến lúc bạn nên mua cái mũ mới rồi).\n- 太...了 (tài...le): quá... - cấu trúc nhấn mạnh mức độ, ví dụ: 太旧了 (quá cũ)."
+        },
+        {
+          "id": "hsk3-13-q040",
+          "number": 40,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": null,
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "在写信"
+            },
+            {
+              "id": "B",
+              "text": "在买地图"
+            },
+            {
+              "id": "C",
+              "text": "要去世界公园"
+            }
+          ],
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/q040.mp3",
+          "needsReview": false,
+          "correctAnswer": "C",
+          "imageUrls": [],
+          "transcript": "您好,我去世界公园,那儿离这儿远吗?要多长时间?不远,二十多分钟吧?关于女的,可以知道什么?四十,您好,我去世界公园,那儿离这儿远吗?要多长时间?不远,二十多分钟吧?关于女的。",
+          "explanation": "【Dịch nghĩa】\nLời thoại (bản gốc chuẩn): 男：您好，我去世界公园，那儿离这儿远吗？要多长时间？(Nín hǎo, wǒ qù Shìjiè Gōngyuán, nàr lí zhèr yuǎn ma? Yào duō cháng shíjiān?) - Xin chào, tôi đi Công viên Thế giới, chỗ đó xa đây không? Mất bao lâu? 女：不远，二十多分钟吧。(Bù yuǎn, èrshí duō fēnzhōng ba.) - Không xa, khoảng hơn hai mươi phút.\nCâu hỏi: 关于男的，可以知道什么？(Guānyú nán de, kěyǐ zhīdào shénme?) - Về người đàn ông, có thể biết điều gì?\nA. 在写信 (zài xiě xìn) - đang viết thư | B. 在买地图 (zài mǎi dìtú) - đang mua bản đồ | C. 要去世界公园 (yào qù Shìjiè Gōngyuán) - sẽ đi Công viên Thế giới\n【Phân tích】Từ khóa ăn điểm là câu đầu tiên của người đàn ông: '我去世界公园' (tôi đi Công viên Thế giới), kết hợp với việc anh hỏi '那儿离这儿远吗？要多长时间？' (có xa không, mất bao lâu) - đây là câu hỏi đặc trưng của người chuẩn bị di chuyển đến một nơi nào đó. Do đó đáp án đúng là C: 要去世界公园. Loại trừ: A (đang viết thư) và B (đang mua bản đồ) đều không được đề cập trong lời thoại, chỉ là các hành động gây nhiễu.\n【Từ vựng & Ngữ pháp】\n- 离 (lí): cách, xa - giới từ chỉ khoảng cách giữa hai địa điểm, cấu trúc: A 离 B 远/近, ví dụ: 那儿离这儿远吗 (Chỗ đó xa đây không?).\n- 要多长时间 (yào duō cháng shíjiān): mất bao lâu - câu hỏi về thời gian cần thiết để làm việc gì.\n- 世界公园 (Shìjiè Gōngyuán): Công viên Thế giới - tên địa điểm trong bài nghe."
+        }
+      ],
+      "audioUrl": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk3-13/hsk3-13_full.mp3"
+    },
+    {
+      "id": "reading",
+      "title": "Reading",
+      "questions": [
+        {
+          "id": "hsk3-13-q041",
+          "number": 41,
+          "type": "sentence_match",
+          "instruction": "二、阅读\n第一部分\n第 41-45 题",
+          "prompt": "上午王阿姨来过，可能是她吧。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "对不起，我又忘了。"
+            },
+            {
+              "id": "B",
+              "text": "这个蛋糕是谁买的？真好吃。"
+            },
+            {
+              "id": "C",
+              "text": "你昨天去那家新开的商店了？"
+            },
+            {
+              "id": "D",
+              "text": "你这次的数学成绩怎么样？"
+            },
+            {
+              "id": "E",
+              "text": "当然。我们先坐公共汽车，然后换地铁。"
+            },
+            {
+              "id": "F",
+              "text": "因为这是一个了解中国文化的好机会。"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "B",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu đề bài: 上午王阿姨来过，可能是她吧。(Shàngwǔ Wáng āyí lái guo, kěnéng shì tā ba.) - Cô Vương (bác Vương) đã đến vào buổi sáng, có lẽ là cô ấy đấy.\nĐáp án B: 这个蛋糕是谁买的？真好吃。(Zhège dàngāo shì shéi mǎi de? Zhēn hǎochī.) - Cái bánh này là ai mua vậy? Ngon thật.\nCác đáp án khác: A. Xin lỗi, tôi lại quên mất rồi. | C. Hôm qua bạn có đến cửa hàng mới mở kia không? | D. Kết quả môn toán lần này của bạn thế nào? | E. Tất nhiên rồi. Chúng ta ngồi xe buýt trước, sau đó đổi sang tàu điện. | F. Vì đây là một cơ hội tốt để tìm hiểu văn hóa Trung Quốc.\n【Phân tích】\nCâu '可能是她吧' (có lẽ là cô ấy) là câu trả lời cho một câu hỏi hỏi về NGƯỜI (ai). Trong các đáp án, chỉ có câu B chứa từ để hỏi '谁' (ai): '这个蛋糕是谁买的？' - hỏi ai mua cái bánh. Người trả lời đoán rằng người mua bánh chính là cô Vương đã ghé thăm buổi sáng. Đây là mối liên hệ ngữ cảnh chặt chẽ nhất. Các đáp án khác: A trả lời cho câu hỏi về việc quên điều gì; C là câu hỏi có/không (dùng 是...吗 hoặc 吗); D hỏi về kết quả học tập; E trả lời câu hỏi về phương tiện đi lại; F trả lời câu hỏi vì sao (为什么).\n【Từ vựng & Ngữ pháp】\n- 阿姨 (āyí): cô, dì, bác gái - cách gọi người phụ nữ lớn tuổi hơn.\n- 可能 (kěnéng): có lẽ, có thể - từ chỉ sự phỏng đoán, thường đứng trước động từ hoặc 是.\n- 是...的 (shì...de): cấu trúc nhấn mạnh thời gian, nơi chốn, người thực hiện của hành động đã xảy ra, ví dụ: 是谁买的 (là ai mua)."
+        },
+        {
+          "id": "hsk3-13-q042",
+          "number": 42,
+          "type": "sentence_match",
+          "instruction": "二、阅读\n第一部分\n第 41-45 题",
+          "prompt": "是，我在那儿买了件衬衫，给我爷爷买了条裤子。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "对不起，我又忘了。"
+            },
+            {
+              "id": "B",
+              "text": "这个蛋糕是谁买的？真好吃。"
+            },
+            {
+              "id": "C",
+              "text": "你昨天去那家新开的商店了？"
+            },
+            {
+              "id": "D",
+              "text": "你这次的数学成绩怎么样？"
+            },
+            {
+              "id": "E",
+              "text": "当然。我们先坐公共汽车，然后换地铁。"
+            },
+            {
+              "id": "F",
+              "text": "因为这是一个了解中国文化的好机会。"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "C",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu đề bài: 是，我在那儿买了件衬衫，给我爷爷买了条裤子。(Shì, wǒ zài nàr mǎi le jiàn chènshān, gěi wǒ yéye mǎi le tiáo kùzi.) - Vâng, tôi đã mua một chiếc áo sơ mi ở đó, và mua cho ông tôi một chiếc quần.\nĐáp án C: 你昨天去那家新开的商店了？(Nǐ zuótiān qù nà jiā xīn kāi de shāngdiàn le?) - Hôm qua bạn có đến cửa hàng mới mở kia không?\nCác đáp án khác: A. Xin lỗi, tôi lại quên mất rồi. | B. Cái bánh này là ai mua? Ngon thật. | D. Kết quả môn toán lần này của bạn thế nào? | E. Tất nhiên rồi. Chúng ta ngồi xe buýt trước, sau đó đổi sang tàu điện. | F. Vì đây là một cơ hội tốt để tìm hiểu văn hóa Trung Quốc.\n【Phân tích】\nHai từ khóa ăn điểm trong câu đề bài: (1) '是' đứng đầu câu - câu trả lời khẳng định cho một câu hỏi YES/NO; (2) '那儿' (ở đó) - đại từ chỉ nơi chốn, đề cập đến một địa điểm đã được nhắc trước đó. Đáp án C là câu hỏi có/không về việc đi đến '商店' (cửa hàng), khớp hoàn hảo: người hỏi hỏi có đến cửa hàng mới mở không, người trả lời xác nhận '是' (vâng) và kể lại những gì đã mua 'ở đó' (tức ở cửa hàng). Loại trừ: B hỏi về người (谁) nên câu trả lời phải là một người cụ thể; D hỏi về kết quả; E và F không liên quan đến mua sắm.\n【Từ vựng & Ngữ pháp】\n- 衬衫 (chènshān): áo sơ mi - danh từ có lượng từ đi kèm là 件 (jiàn).\n- 裤子 (kùzi): quần - danh từ có lượng từ đi kèm là 条 (tiáo).\n- 给 + người + động từ (gěi + rén + dòngcí): cấu trúc 'làm gì cho ai', ví dụ: 给我爷爷买了条裤子 (mua cho ông tôi một chiếc quần).\n- 了 (le): trợ từ động thái chỉ hành động đã hoàn thành."
+        },
+        {
+          "id": "hsk3-13-q043",
+          "number": 43,
+          "type": "sentence_match",
+          "instruction": "二、阅读\n第一部分\n第 41-45 题",
+          "prompt": "她在电子邮件中说，她欢迎大家都去。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "对不起，我又忘了。"
+            },
+            {
+              "id": "B",
+              "text": "这个蛋糕是谁买的？真好吃。"
+            },
+            {
+              "id": "C",
+              "text": "你昨天去那家新开的商店了？"
+            },
+            {
+              "id": "D",
+              "text": "你这次的数学成绩怎么样？"
+            },
+            {
+              "id": "E",
+              "text": "当然。我们先坐公共汽车，然后换地铁。"
+            },
+            {
+              "id": "F",
+              "text": "因为这是一个了解中国文化的好机会。"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "F",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu đề: 她在电子邮件中说，她欢迎大家都去。(Tā zài diànzǐ yóujiàn zhōng shuō, tā huānyíng dàjiā dōu qù.) - Cô ấy nói trong email rằng cô ấy hoan nghênh mọi người đều đi tham dự.\nĐáp án F: 因为这是一个了解中国文化的好机会。(Yīnwèi zhè shì yí gè liǎojiě Zhōngguó wénhuà de hǎo jīhuì.) - Bởi vì đây là một cơ hội tốt để tìm hiểu văn hóa Trung Quốc.\n【Phân tích】\nĐây là dạng bài nối câu hỏi với câu trả lời. Câu trả lời đúng phải bắt đầu bằng '因为' (bởi vì), nghĩa là câu hỏi tương ứng phải là câu hỏi về lý do, ví dụ: '为什么大家都去？' (Tại sao mọi người đều đi?). Ngữ cảnh: cô ấy mời mọi người đến tham dự (một sự kiện/hoạt động), và lý do mọi người nên đi là vì đây là cơ hội tốt để tìm hiểu văn hóa Trung Quốc. Các đáp án A, B, C, D, E đều trả lời cho những câu hỏi khác (xin lỗi, hỏi về bánh, hỏi về cửa hàng, hỏi điểm số, hỏi đường đi) nên bị loại trừ.\n【Từ vựng & Ngữ pháp】\n- 电子邮件 diànzǐ yóujiàn: thư điện tử (email); 欢迎 huānyíng: hoan nghênh, chào đón.\n- 因为... yīnwèi...: bởi vì... - từ nối chỉ nguyên nhân, thường đi kèm với 所以 trong cấu trúc '因为...所以...'.\n- 了解 liǎojiě: tìm hiểu, hiểu rõ; 机会 jīhuì: cơ hội."
+        },
+        {
+          "id": "hsk3-13-q044",
+          "number": 44,
+          "type": "sentence_match",
+          "instruction": "二、阅读\n第一部分\n第 41-45 题",
+          "prompt": "不好，78 分，比上次还差。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "对不起，我又忘了。"
+            },
+            {
+              "id": "B",
+              "text": "这个蛋糕是谁买的？真好吃。"
+            },
+            {
+              "id": "C",
+              "text": "你昨天去那家新开的商店了？"
+            },
+            {
+              "id": "D",
+              "text": "你这次的数学成绩怎么样？"
+            },
+            {
+              "id": "E",
+              "text": "当然。我们先坐公共汽车，然后换地铁。"
+            },
+            {
+              "id": "F",
+              "text": "因为这是一个了解中国文化的好机会。"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "D",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu đề: 不好，78分，比上次还差。(Bù hǎo, qīshíbā fēn, bǐ shàng cì hái chà.) - Không tốt, 78 điểm, còn tệ hơn lần trước.\nĐáp án D: 你这次的数学成绩怎么样？(Nǐ zhè cì de shùxué chéngjì zěnmeyàng?) - Kết quả môn toán lần này của bạn thế nào?\n【Phân tích】\nCâu đề là câu trả lời về một kết quả/thành tích: '不好，78分' (không tốt, 78 điểm) trả lời trực tiếp cho câu hỏi '...怎么样?' (thế nào?). Từ khóa ăn điểm: '分' (điểm số) và '比上次还差' (so với lần trước còn kém hơn) cho thấy đây là câu nói về điểm số, khớp hoàn hảo với từ '成绩' (kết quả, thành tích) và '数学' (toán) trong đáp án D. Các đáp án khác không hỏi về điểm số nên bị loại trừ: A là lời xin lỗi, B hỏi về bánh, C hỏi về cửa hàng, E trả lời về phương tiện đi lại, F nêu lý do.\n【Từ vựng & Ngữ pháp】\n- 成绩 chéngjì: thành tích, kết quả (học tập); 分 fēn: điểm; 差 chà: tệ, kém.\n- Cấu trúc so sánh: 比...还... (bǐ... hái...): so với... còn... hơn, ví dụ: 比上次还差 - so với lần trước còn tệ hơn."
+        },
+        {
+          "id": "hsk3-13-q045",
+          "number": 45,
+          "type": "sentence_match",
+          "instruction": "二、阅读\n第一部分\n第 41-45 题",
+          "prompt": "以后记得关厨房里的灯。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "对不起，我又忘了。"
+            },
+            {
+              "id": "B",
+              "text": "这个蛋糕是谁买的？真好吃。"
+            },
+            {
+              "id": "C",
+              "text": "你昨天去那家新开的商店了？"
+            },
+            {
+              "id": "D",
+              "text": "你这次的数学成绩怎么样？"
+            },
+            {
+              "id": "E",
+              "text": "当然。我们先坐公共汽车，然后换地铁。"
+            },
+            {
+              "id": "F",
+              "text": "因为这是一个了解中国文化的好机会。"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "A",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu đề: 以后记得关厨房里的灯。 (Yǐhòu jìde guān chúfáng lǐ de dēng.) - Sau này nhớ tắt đèn trong bếp nhé.\nĐáp án A: 对不起，我又忘了。 (Duìbuqǐ, wǒ yòu wàngle.) - Xin lỗi, tôi lại quên rồi.\nĐáp án B: 这个蛋糕是谁买的？真好吃。 (Zhège dàngāo shì shéi mǎi de? Zhēn hǎochī.) - Cái bánh này ai mua vậy? Ngon thật.\nĐáp án C: 你昨天去那家新开的商店了？ (Nǐ zuótiān qù nà jiā xīn kāi de shāngdiàn le?) - Hôm qua bạn đã đi cửa hàng mới mở đó à?\nĐáp án D: 你这次的数学成绩怎么样？ (Nǐ zhè cì de shùxué chéngjì zěnmeyàng?) - Lần này kết quả môn toán của bạn thế nào?\nĐáp án E: 当然。我们先坐公共汽车，然后换地铁。 (Dāngrán. Wǒmen xiān zuò gōnggòng qìchē, ránhòu huàn dìtiě.) - Tất nhiên rồi. Chúng ta ngồi xe buýt trước, rồi đổi sang tàu điện.\nĐáp án F: 因为这是一个了解中国文化的好机会。 (Yīnwèi zhè shì yīgè liǎojiě Zhōngguó wénhuà de hǎo jīhuì.) - Vì đây là một cơ hội tốt để tìm hiểu văn hóa Trung Quốc.\n【Phân tích】\nCâu đề là một lời nhắc nhở/yêu cầu: 'nhớ tắt đèn trong bếp sau này'. Đáp án phù hợp nhất phải là lời đáp nhận lời hoặc xin lỗi vì đã quên. Đáp án A '对不起，我又忘了' (Xin lỗi, tôi lại quên rồi) khớp hoàn toàn với ngữ cảnh này: từ khóa '忘了' (quên) phản hồi trực tiếp lời nhắc '记得关灯' (nhớ tắt đèn). Các đáp án B, C, D nói về bánh, cửa hàng, điểm số; E trả lời câu hỏi về đường đi; F giải thích lý do - tất cả đều không liên quan đến việc tắt đèn nên bị loại trừ.\n【Từ vựng & Ngữ pháp】\n- 记得 (jìde): nhớ, nhớ rằng - động từ chỉ sự ghi nhớ, thường dùng trong lời nhắc nhở.\n- 又...了 (yòu...le): lại... rồi - cấu trúc diễn tả hành động/sự việc lặp lại, ví dụ: 我又忘了 (tôi lại quên rồi)."
+        },
+        {
+          "id": "hsk3-13-q046",
+          "number": 46,
+          "type": "sentence_match",
+          "instruction": "第 46-50 题",
+          "prompt": "你看见我的护照了吗？",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "别着急，再找找，是不是放行李箱了？"
+            },
+            {
+              "id": "B",
+              "text": "那你快点儿给我讲吧。"
+            },
+            {
+              "id": "C",
+              "text": "请问，洗手间是在前面吗？"
+            },
+            {
+              "id": "D",
+              "text": "是，这是我丈夫送我的生日礼物。"
+            },
+            {
+              "id": "E",
+              "text": "你知道你们年级有多少学生吗？"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "A",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu đề: 你看见我的护照了吗？ (Nǐ kànjiàn wǒ de hùzhào le ma?) - Bạn có thấy hộ chiếu của tôi không?\nĐáp án A: 别着急，再找找，是不是放行李箱了？ (Bié zhāojí, zài zhǎozhao, shì bu shì fàng xínglǐxiāng le?) - Đừng lo, tìm lại xem, có phải để trong vali rồi không?\nĐáp án B: 那你快点儿给我讲吧。 (Nà nǐ kuài diǎnr gěi wǒ jiǎng ba.) - Vậy bạn nhanh kể cho tôi nghe đi.\nĐáp án C: 请问，洗手间是在前面吗？ (Qǐngwèn, xǐshǒujiān shì zài qiánmiàn ma?) - Cho hỏi, nhà vệ sinh ở phía trước phải không?\nĐáp án D: 是，这是我丈夫送我的生日礼物。 (Shì, zhè shì wǒ zhàngfu sòng wǒ de shēngrì lǐwù.) - Đúng vậy, đây là món quà sinh nhật chồng tôi tặng tôi.\nĐáp án E: 你知道你们年级有多少学生吗？ (Nǐ zhīdào nǐmen niánjí yǒu duōshao xuéshēng ma?) - Bạn có biết khối của các bạn có bao nhiêu học sinh không?\n【Phân tích】\nCâu đề là câu hỏi hỏi về việc mất/thất lạc đồ vật: 'Bạn có thấy hộ chiếu của tôi không?'. Đáp án A là lời an toàn kèm gợi ý nơi tìm kiếm: '别着急，再找找' (Đừng lo, tìm lại xem) và '是不是放行李箱了' (có phải để trong vali không) - đây là phản hồi tự nhiên và hợp lý nhất khi ai đó hỏi về đồ vật bị thất lạc. Từ khóa ăn điểm là '别着急' (đừng lo lắng) và '再找找' (tìm thêm lần nữa), thể hiện sự động viên khi nghe người khác hỏi về đồ vật bị mất. Các đáp án B, C, D, E lần lượt nói về việc kể chuyện, hỏi đường, quà sinh nhật, số lượng học sinh - đều không liên quan đến hộ chiếu nên bị loại trừ.\n【Từ vựng & Ngữ pháp】\n- 别着急 (bié zhāojí): đừng lo lắng, đừng vội - cụm từ động viên, an ủi người khác.\n- 是不是...了？(shì bu shì... le?): có phải là... rồi không? - cấu trúc câu hỏi nghi vấn dùng để đoán nguyên nhân hoặc xác nhận sự việc, ví dụ: 是不是放行李箱了？(Có phải để trong vali rồi không?)."
+        },
+        {
+          "id": "hsk3-13-q047",
+          "number": 47,
+          "type": "sentence_match",
+          "instruction": "第 46-50 题",
+          "prompt": "这个题其实很简单，为什么是5角钱？我一说你就明白了。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "别着急，再找找，是不是放行李箱了？"
+            },
+            {
+              "id": "B",
+              "text": "那你快点儿给我讲吧。"
+            },
+            {
+              "id": "C",
+              "text": "请问，洗手间是在前面吗？"
+            },
+            {
+              "id": "D",
+              "text": "是，这是我丈夫送我的生日礼物。"
+            },
+            {
+              "id": "E",
+              "text": "你知道你们年级有多少学生吗？"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "B",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu đề: 这个题其实很简单，为什么是5角钱？我一说你就明白了。(Zhège tí qíshí hěn jiǎndān, wèishénme shì wǔ jiǎo qián? Wǒ yī shuō nǐ jiù míngbai le.) - 'Câu này thực ra rất đơn giản, tại sao lại là 5 hào? Tôi nói ra là bạn sẽ hiểu ngay.'\nĐáp án B: 那你快点儿给我讲吧。(Nà nǐ kuài diǎnr gěi wǒ jiǎng ba.) - 'Vậy bạn nhanh nói cho tôi nghe đi.'\nCác đáp án khác: A. 'Đừng lo, tìm lại xem, có phải để trong vali rồi không?' | C. 'Cho hỏi, nhà vệ sinh ở phía trước phải không?' | D. 'Vâng, đây là quà sinh nhật chồng tôi tặng.' | E. 'Bạn có biết khối của các bạn có bao nhiêu học sinh không?'\n【Phân tích】Người nói khẳng định câu hỏi rất đơn giản và nói '我一说你就明白了' (tôi vừa nói là bạn sẽ hiểu ngay), ngầm ý sắp giải thích. Phản hồi tự nhiên nhất của người nghe là thúc giục người kia nói nhanh: '那你快点儿给我讲吧'. Từ khóa ăn điểm: '一说你就明白了' (nói ra là hiểu) → '快点儿给我讲' (nói nhanh cho tôi nghe). Các đáp án A (tìm đồ), C (hỏi đường), D (quà sinh nhật), E (hỏi số học sinh) đều không liên quan đến việc giải thích một câu đố.\n【Từ vựng & Ngữ pháp】明白 (míngbai): hiểu, rõ ràng. Cấu trúc '一...就...' (yī...jiù...): vừa... thì liền..., ví dụ 我一说你就明白了 - tôi vừa nói là bạn hiểu ngay. 快点儿 (kuài diǎnr): nhanh lên."
+        },
+        {
+          "id": "hsk3-13-q048",
+          "number": 48,
+          "type": "multiple_choice",
+          "instruction": "第 46-50 题",
+          "prompt": "你换新手机了？",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "别着急，再找找，是不是放行李箱了？"
+            },
+            {
+              "id": "B",
+              "text": "那你快点儿给我讲吧。"
+            },
+            {
+              "id": "C",
+              "text": "请问，洗手间是在前面吗？"
+            },
+            {
+              "id": "D",
+              "text": "`是，这是我丈夫送我的生日礼物。`"
+            },
+            {
+              "id": "E",
+              "text": "你知道你们年级有多少学生吗？"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "D",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu đề: 你换新手机了？(Nǐ huàn xīn shǒujī le?) - 'Bạn đổi điện thoại mới rồi à?'\nĐáp án D: 是，这是我丈夫送我的生日礼物。(Shì, zhè shì wǒ zhàngfu sòng wǒ de shēngrì lǐwù.) - 'Vâng, đây là quà sinh nhật chồng tôi tặng tôi.'\nCác đáp án khác: A. 'Đừng lo, tìm lại xem, có phải để trong vali rồi không?' | B. 'Vậy bạn nhanh nói cho tôi nghe đi.' | C. 'Cho hỏi, nhà vệ sinh ở phía trước phải không?' | E. 'Bạn có biết khối của các bạn có bao nhiêu học sinh không?'\n【Phân tích】Câu hỏi '你换新手机了？' hỏi về chiếc điện thoại mới. Đáp án phù hợp phải xác nhận và giải thích nguồn gốc chiếc điện thoại đó. Đáp án D trả lời '是' (vâng) rồi giải thích đây là quà sinh nhật chồng tặng - khớp hoàn hảo về ngữ cảnh. Từ khóa ăn điểm: '换新手机' (đổi điện thoại mới) → '这是我丈夫送我的生日礼物' (quà chồng tặng). Các đáp án A, B, C, E đều nói về chủ đề khác hoàn toàn.\n【Từ vựng & Ngữ pháp】换 (huàn): đổi, thay thế; 丈夫 (zhàngfu): chồng; 礼物 (lǐwù): quà tặng. Cấu trúc '送 + người + vật' (sòng): tặng ai cái gì, ví dụ 丈夫送我生日礼物 - chồng tặng tôi quà sinh nhật."
+        },
+        {
+          "id": "hsk3-13-q049",
+          "number": 49,
+          "type": "sentence_match",
+          "instruction": "第 46-50 题",
+          "prompt": "应该有200多个吧，一个班30多个，一共7个班。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "别着急，再找找，是不是放行李箱了？"
+            },
+            {
+              "id": "B",
+              "text": "那你快点儿给我讲吧。"
+            },
+            {
+              "id": "C",
+              "text": "请问，洗手间是在前面吗？"
+            },
+            {
+              "id": "D",
+              "text": "是，这是我丈夫送我的生日礼物。"
+            },
+            {
+              "id": "E",
+              "text": "你知道你们年级有多少学生吗？"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "E",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu trả lời: 应该有200多个吧，一个班30多个，一共7个班。(Yīnggāi yǒu liǎngbǎi duō gè ba, yī gè bān sānshí duō gè, yīgòng qī gè bān.) - 'Chắc khoảng hơn 200 bạn, mỗi lớp hơn 30 bạn, tổng cộng 7 lớp.'\nĐáp án E: 你知道你们年级有多少学生吗？(Nǐ zhīdào nǐmen niánjí yǒu duōshao xuéshēng ma?) - 'Bạn có biết khối của các bạn có bao nhiêu học sinh không?'\n【Phân tích】\nCâu trả lời đưa ra các con số: hơn 200, mỗi lớp hơn 30, tổng cộng 7 lớp. Đây là cách tính tổng số học sinh của cả khối (30 x 7 = hơn 200). Từ khóa ăn điểm là '多少学生' (bao nhiêu học sinh) trong câu hỏi khớp với các con số về sĩ số lớp và tổng số trong câu trả lời. Loại trừ: A nói về tìm hành lý, B nói về việc giảng bài, C hỏi đường, D nói về quà sinh nhật - đều không liên quan đến số liệu học sinh.\n【Từ vựng & Ngữ pháp】\n- 年级 (niánjí): khối, năm học - từ khóa chỉ phạm vi hỏi về tổng số học sinh.\n- 一共 (yīgòng): tổng cộng, tất cả - dùng khi cộng dồn số lượng.\n- 多 + số từ (200多, 30多): cấu trúc 'hơn...' chỉ số lượng ước chừng."
+        },
+        {
+          "id": "hsk3-13-q050",
+          "number": 50,
+          "type": "sentence_match",
+          "instruction": "第 46-50 题",
+          "prompt": "不是，在这边，您向左走，左边第一个门。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "别着急，再找找，是不是放行李箱了？"
+            },
+            {
+              "id": "B",
+              "text": "那你快点儿给我讲吧。"
+            },
+            {
+              "id": "C",
+              "text": "请问，洗手间是在前面吗？"
+            },
+            {
+              "id": "D",
+              "text": "是，这是我丈夫送我的生日礼物。"
+            },
+            {
+              "id": "E",
+              "text": "你知道你们年级有多少学生吗？"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "C",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu trả lời: 不是，在这边，您向左走，左边第一个门。(Bú shì, zài zhè biān, nín xiàng zuǒ zǒu, zuǒbiān dì yī gè mén.) - 'Không phải, ở bên này, bạn đi sang trái, cửa đầu tiên bên tay trái.'\nĐáp án C: 请问，洗手间是在前面吗？(Qǐngwèn, xǐshǒujiān shì zài qiánmiàn ma?) - 'Xin hỏi, nhà vệ sinh có ở phía trước không?'\n【Phân tích】\nCâu trả lời bắt đầu bằng '不是' (không phải) - đây là lời phủ định trực tiếp cho một câu hỏi Yes/No có giả định về vị trí, khớp hoàn hảo với câu hỏi '是在前面吗？' (có ở phía trước không?). Sau đó người nói chỉ dẫn đường: '向左走，左边第一个门' (đi sang trái, cửa đầu tiên bên trái) - đây là cách trả lời điển hình khi ai đó hỏi đường đến một địa điểm. Từ khóa ăn điểm: '不是' phủ định giả định vị trí '在前面', và các từ chỉ phương hướng '向左走' (đi về bên trái). Loại trừ: A, B, D, E đều không phải ngữ cảnh hỏi đường.\n【Từ vựng & Ngữ pháp】\n- 洗手间 (xǐshǒujiān): nhà vệ sinh - đối tượng được hỏi trong câu hỏi.\n- 向左走 (xiàng zuǒ zǒu): đi về phía trái - cấu trúc 向 + phương hướng + động từ để chỉ đường.\n- 第一个 (dì yī gè): cái đầu tiên - cấu trúc 第 + số từ chỉ thứ tự."
+        },
+        {
+          "id": "hsk3-13-q051",
+          "number": 51,
+          "type": "word_cloze",
+          "instruction": "第 51-55 题",
+          "prompt": "哥，你有红颜色的（  ）吗？",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "国家"
+            },
+            {
+              "id": "B",
+              "text": "短"
+            },
+            {
+              "id": "C",
+              "text": "应该"
+            },
+            {
+              "id": "D",
+              "text": "铅笔"
+            },
+            {
+              "id": "E",
+              "text": "声音"
+            },
+            {
+              "id": "F",
+              "text": "复习"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "D",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu hỏi: 哥，你有红颜色的（  ）吗？ (Gē, nǐ yǒu hóng yánsè de ( ) ma?) - Anh ơi, anh có (  ) màu đỏ không?\nCác đáp án:\nA. 国家 (guójiā) - quốc gia, đất nước\nB. 短 (duǎn) - ngắn\nC. 应该 (yīnggāi) - nên, phải\nD. 铅笔 (qiānbǐ) - bút chì\nE. 声音 (shēngyīn) - âm thanh, tiếng\nF. 复习 (fùxí) - ôn tập\n\n【Phân tích】\nĐáp án đúng là D. 铅笔 (bút chì). Từ khóa ăn điểm là '红颜色的' (màu đỏ) - sau cấu trúc này cần một DANH TỪ chỉ đồ vật cụ thể có thể mang màu sắc. Câu '你有...吗?' là câu hỏi sở hữu đồ vật, nên danh từ được điền phải là vật dụng hàng ngày. 铅笔 (bút chì) là danh từ chỉ đồ vật, hoàn toàn hợp lý: 'Anh có bút chì màu đỏ không?'. Loại trừ: A. 国家 (quốc gia) tuy là danh từ nhưng không hợp ngữ cảnh hỏi đồ vật cá nhân; B. 短 (ngắn) là tính từ; C. 应该 (nên) là động từ khiếm khuyết; E. 声音 (âm thanh) không thể 'màu đỏ'; F. 复习 (ôn tập) là động từ.\n\n【Từ vựng & Ngữ pháp】\n- 铅笔 (qiānbǐ): bút chì - danh từ chỉ vật dụng học tập.\n- 红颜色的 (hóng yánsè de): màu đỏ - cấu trúc 'màu sắc + 颜色 + 的' đứng trước danh từ để mô tả đặc điểm của đồ vật."
+        },
+        {
+          "id": "hsk3-13-q052",
+          "number": 52,
+          "type": "word_cloze",
+          "instruction": "第 51-55 题",
+          "prompt": "这双筷子怎么一个长，一个（  ）？",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "国家"
+            },
+            {
+              "id": "B",
+              "text": "短"
+            },
+            {
+              "id": "C",
+              "text": "应该"
+            },
+            {
+              "id": "D",
+              "text": "铅笔"
+            },
+            {
+              "id": "E",
+              "text": "声音"
+            },
+            {
+              "id": "F",
+              "text": "复习"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "B",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu hỏi: 这双筷子怎么一个长，一个（  ）？ (Zhè shuāng kuàizi zěnme yí ge cháng, yí ge ( )?) - Đôi đũa này sao cái thì dài, cái thì (  )?\nCác đáp án:\nA. 国家 (guójiā) - quốc gia\nB. 短 (duǎn) - ngắn\nC. 应该 (yīnggāi) - nên, phải\nD. 铅笔 (qiānbǐ) - bút chì\nE. 声音 (shēngyīn) - âm thanh\nF. 复习 (fùxí) - ôn tập\n\n【Phân tích】\nĐáp án đúng là B. 短 (ngắn). Từ khóa ăn điểm là '长' (cháng - dài) và '一双' (một đôi). Cấu trúc '一个长，一个...' so sánh hai chiếc đũa trong cùng một đôi: một cái dài thì cái kia phải NGẮN. 短 (duǎn) là từ trái nghĩa trực tiếp của 长 (dài), tạo thành cặp từ đối lập 长/短 rất phổ biến trong HSK. Loại trừ: A. 国家, D. 铅笔, E. 声音 là danh từ không phù hợp vị trí cần tính từ; C. 应该 và F. 复习 là động từ, không thể so sánh độ dài với 长.\n\n【Từ vựng & Ngữ pháp】\n- 短 (duǎn): ngắn - tính từ, trái nghĩa với 长 (cháng - dài).\n- 一双 (yì shuāng): một đôi/cặp - lượng từ dùng cho các vật tạo thành cặp như 筷子 (đũa), 鞋 (giày), 眼睛 (mắt)."
+        },
+        {
+          "id": "hsk3-13-q053",
+          "number": 53,
+          "type": "word_cloze",
+          "instruction": "第 51-55 题",
+          "prompt": "我去过那个（  ），但没去过那个城市。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "国家"
+            },
+            {
+              "id": "B",
+              "text": "短"
+            },
+            {
+              "id": "C",
+              "text": "应该"
+            },
+            {
+              "id": "D",
+              "text": "铅笔"
+            },
+            {
+              "id": "E",
+              "text": "声音"
+            },
+            {
+              "id": "F",
+              "text": "复习"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "A",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】Câu: 我去过那个（  ），但没去过那个城市。 (Wǒ qùguo nàge..., dàn méi qùguo nàge chéngshì.) - 'Tôi đã đến... đó, nhưng chưa từng đến thành phố đó.'\nCác đáp án: A. 国家 (guójiā) - quốc gia/nước | B. 短 (duǎn) - ngắn | C. 应该 (yīnggāi) - nên/phải | D. 铅笔 (qiānbǐ) - bút chì | E. 声音 (shēngyīn) - âm thanh/tiếng | F. 复习 (fùxí) - ôn tập\n【Phân tích】Từ khóa ăn điểm là cấu trúc đối lập 但...没去过那个城市 (nhưng chưa đến thành phố đó). Câu đang so sánh giữa một đơn vị địa lý lớn hơn thành phố, nên chỗ trống cần một danh từ chỉ nơi chốn. Chỉ có 国家 (quốc gia) là danh từ chỉ địa danh, hợp nghĩa: 'Tôi đã đến quốc gia đó, nhưng chưa đến thành phố đó.' Loại trừ: 短 là tính từ, 应该 là động từ khiếm khuyết, 铅笔 và 复习 không liên quan đến địa danh, 声音 là danh từ nhưng chỉ âm thanh, không thể 'đi đến'.\n【Từ vựng & Ngữ pháp】去过 (qùguo): đã từng đi - cấu trúc 动词 + 过 diễn tả kinh nghiệm đã từng trải qua trong quá khứ. 国家 (guójiā): quốc gia, nước. 但 (dàn) = 但是: nhưng, từ nối biểu thị sự tương phản."
+        },
+        {
+          "id": "hsk3-13-q054",
+          "number": 54,
+          "type": "word_cloze",
+          "instruction": "第 51-55 题",
+          "prompt": "下星期我要考试，所以这个周末我要在家（  ）。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "国家"
+            },
+            {
+              "id": "B",
+              "text": "短"
+            },
+            {
+              "id": "C",
+              "text": "应该"
+            },
+            {
+              "id": "D",
+              "text": "铅笔"
+            },
+            {
+              "id": "E",
+              "text": "声音"
+            },
+            {
+              "id": "F",
+              "text": "复习"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "F",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】Câu: 下星期我要考试，所以这个周末我要在家（  ）。 (Xià xīngqī wǒ yào kǎoshì, suǒyǐ zhège zhōumò wǒ yào zài jiā....) - 'Tuần sau tôi có kỳ thi, nên cuối tuần này tôi sẽ ở nhà...'\nCác đáp án: A. 国家 (guójiā) - quốc gia | B. 短 (duǎn) - ngắn | C. 应该 (yīnggāi) - nên | D. 铅笔 (qiānbǐ) - bút chì | E. 声音 (shēngyīn) - âm thanh | F. 复习 (fùxí) - ôn tập\n【Phân tích】Từ khóa ăn điểm là 考试 (kǎoshì - thi/có kỳ thi) kết hợp với liên hệ nhân quả 所以 (vì vậy). Khi sắp thi thì việc hợp lý cần làm ở nhà là ôn tập, nên chọn 复习. Cấu trúc 在家 + động từ (ở nhà làm gì) cũng yêu cầu một động từ chỉ hành động, 复习 hoàn toàn phù hợp. Loại trừ: 国家 và 铅笔 là danh từ không thể đứng sau 在家 làm vị ngữ; 短 là tính từ; 声音 là danh từ; 应该 là động từ khiếm khuyết nhưng đã có 要 trong câu rồi, không thể lặp lại.\n【Từ vựng & Ngữ pháp】复习 (fùxí): ôn tập, ôn lại bài - cặp từ thường đi với 考试 (thi cử). 所以 (suǒyǐ): vì vậy, nên - liên từ biểu thị kết quả, thường đi cặp với nguyên nhân ở vế trước (因为...所以...)."
+        },
+        {
+          "id": "hsk3-13-q055",
+          "number": 55,
+          "type": "word_cloze",
+          "instruction": "第 51-55 题",
+          "prompt": "没问题，那辆车（  ）能坐 8 个人。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "国家"
+            },
+            {
+              "id": "B",
+              "text": "短"
+            },
+            {
+              "id": "C",
+              "text": "应该"
+            },
+            {
+              "id": "D",
+              "text": "铅笔"
+            },
+            {
+              "id": "E",
+              "text": "声音"
+            },
+            {
+              "id": "F",
+              "text": "复习"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "C",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】Câu: '没问题，那辆车（应该）能坐 8 个人。' (Méi wèntí, nà liàng chē (yīnggāi) néng zuò 8 gè rén.) - Không vấn đề gì, chiếc xe đó (chắc là) có thể chở được 8 người.\nCác đáp án: A. 国家 (guójiā) - đất nước | B. 短 (duǎn) - ngắn | C. 应该 (yīnggāi) - nên, chắc là | D. 铅笔 (qiānbǐ) - bút chì | E. 声音 (shēngyīn) - âm thanh, tiếng | F. 复习 (fùxí) - ôn tập.\n【Phân tích】Từ khóa ăn điểm là '能坐 8 个人' (chở được 8 người) kết hợp với '没问题' (không vấn đề). Cần một trạng từ/khẩu ngữ biểu thị sự suy đoán hoặc khẳng định khả năng. '应该' đứng trước động từ '能' để diễn tả phán đoán 'chắc chắn là, hẳn là', hoàn toàn hợp ngữ cảnh. Loại trừ: A, D là danh từ (đất nước, bút chì), E là danh từ (âm thanh), F là động từ (ôn tập) - đều không đứng trước '能坐' được; B là tính từ 'ngắn' - vô nghĩa trong ngữ cảnh. Đáp án đúng: C.\n【Từ vựng & Ngữ pháp】应该 (yīnggāi): 1) nên, phải (nghĩa vụ); 2) chắc là, hẳn là (suy đoán). Cấu trúc: 应该 + 能/会 + động từ, ví dụ: 他应该会来 (Tā yīnggāi huì lái - Cậu ấy chắc sẽ đến). 辆 (liàng): lượng từ cho xe cộ, ví dụ: 一辆车 (một chiếc xe)."
+        },
+        {
+          "id": "hsk3-13-q056",
+          "number": 56,
+          "type": "word_cloze",
+          "instruction": "第 56-60 题",
+          "prompt": "A：天阴了，别玩儿了，我们早点儿回去吧。\nB：别（     ），今天不会有雨的。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "练习"
+            },
+            {
+              "id": "B",
+              "text": "重要"
+            },
+            {
+              "id": "C",
+              "text": "担心"
+            },
+            {
+              "id": "D",
+              "text": "爱好"
+            },
+            {
+              "id": "E",
+              "text": "放心"
+            },
+            {
+              "id": "F",
+              "text": "又"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "C",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】A: '天阴了，别玩儿了，我们早点儿回去吧。' (Tiān yīn le, bié wánr le, wǒmen zǎodiǎnr huíqù ba.) - Trời âm u rồi, đừng chơi nữa, chúng ta về sớm đi.\nB: '别（担心），今天不会有雨的。' (Bié (dānxīn), jīntiān bú huì yǒu yǔ de.) - Đừng (lo lắng), hôm nay sẽ không có mưa đâu.\nCác đáp án: A. 练习 (liànxí) - luyện tập | B. 重要 (zhòngyào) - quan trọng | C. 担心 (dānxīn) - lo lắng | D. 爱好 (àihào) - sở thích | E. 放心 (fàngxīn) - yên tâm | F. 又 (yòu) - lại, nữa.\n【Phân tích】Từ khóa ăn điểm là '天阴了' (trời âm u) và '今天不会有雨的' (hôm nay sẽ không có mưa). Người B trấn an người A, cấu trúc '别 + động từ' (đừng...) cần một động từ chỉ tâm trạng lo âu. '别担心' (đừng lo) là cách đáp lại tự nhiên nhất. Loại trừ: E '放心' nghĩa là 'yên tâm' nhưng '别放心' (đừng yên tâm) trái logic; A '练习' (luyện tập), D '爱好' (sở thích), B '重要' (tính từ - quan trọng), F '又' (trạng từ - lại) đều không phù hợp ngữ cảnh. Đáp án đúng: C.\n【Từ vựng & Ngữ pháp】担心 (dānxīn): lo lắng, ví dụ: 别担心，我会帮你的 (Đừng lo, tôi sẽ giúp bạn). Cấu trúc: 别 + động từ: dùng để khuyên hoặc ngăn cản ai đó, ví dụ: 别走 (Đừng đi). Phân biệt: 担心 (lo lắng) >< 放心 (yên tâm) - hai từ trái nghĩa thường xuất hiện trong đề thi HSK."
+        },
+        {
+          "id": "hsk3-13-q057",
+          "number": 57,
+          "type": "word_cloze",
+          "instruction": "第 56-60 题",
+          "prompt": "A：小马说你发烧了，好点儿没？\nB：好多了，已经吃药了，您（     ）吧。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "练习"
+            },
+            {
+              "id": "B",
+              "text": "重要"
+            },
+            {
+              "id": "C",
+              "text": "担心"
+            },
+            {
+              "id": "D",
+              "text": "爱好"
+            },
+            {
+              "id": "E",
+              "text": "放心"
+            },
+            {
+              "id": "F",
+              "text": "又"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "E",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nA: Tiểu Mã nói bạn bị sốt, đỡ hơn chưa? (Xiǎo Mǎ shuō nǐ fāshāo le, hǎo diǎnr méi?)\nB: Đỡ nhiều rồi, đã uống thuốc rồi, anh/chị YÊN TÂM nhé. (Hǎo duō le, yǐjīng chī yào le, nín fàngxīn ba.)\nCác đáp án: A. 练习 (liànxí) luyện tập | B. 重要 (zhòngyào) quan trọng | C. 担心 (dānxīn) lo lắng | D. 爱好 (àihào) sở thích | E. 放心 (fàngxīn) yên tâm | F. 又 (yòu) lại, nữa\n\n【Phân tích】\nNgữ cảnh: Người A hỏi thăm sức khỏe của người B (bị sốt). Người B trả lời đã đỡ nhiều và đã uống thuốc, nên câu kết thúc tự nhiên nhất là trấn an người hỏi: '您放心吧' - 'Anh/chị cứ yên tâm'. Từ khóa ăn điểm là '好多了' (đỡ nhiều rồi) và '已经吃药了' (đã uống thuốc rồi) - đây là những tín hiệu cho thấy tình trạng tốt lên, hợp lý để nói '放心' (yên tâm). Loại trừ: '担心' (C) nghĩa là lo lắng, nhưng nếu điền vào thì câu '您担心吧' (anh/chị cứ lo lắng đi) vô lý về mặt logic; '练习', '重要', '爱好', '又' đều không phù hợp ngữ cảnh hỏi thăm bệnh.\n\n【Từ vựng & Ngữ pháp】\n- 放心 (fàngxīn): yên tâm - trái nghĩa với 担心 (dānxīn) lo lắng. Cấu trúc '放心吧' thường dùng để trấn an người khác.\n- 发烧 (fāshāo): bị sốt - từ vựng thường gặp khi nói về sức khỏe, bệnh tật."
+        },
+        {
+          "id": "hsk3-13-q058",
+          "number": 58,
+          "type": "word_cloze",
+          "instruction": "第 56-60 题",
+          "prompt": "A：报纸上有什么新闻？\nB：我正在看，没发现什么（     ）的新闻。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "练习"
+            },
+            {
+              "id": "B",
+              "text": "重要"
+            },
+            {
+              "id": "C",
+              "text": "担心"
+            },
+            {
+              "id": "D",
+              "text": "爱好"
+            },
+            {
+              "id": "E",
+              "text": "放心"
+            },
+            {
+              "id": "F",
+              "text": "又"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "B",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nA: Trên báo có tin tức gì không? (Bàozhǐ shàng yǒu shénme xīnwén?)\nB: Tôi đang đọc, chưa thấy có tin tức gì QUAN TRỌNG. (Wǒ zhèngzài kàn, méi fāxiàn shénme zhòngyào de xīnwén.)\nCác đáp án: A. 练习 (liànxí) luyện tập | B. 重要 (zhòngyào) quan trọng | C. 担心 (dānxīn) lo lắng | D. 爱好 (àihào) sở thích | E. 放心 (fàngxīn) yên tâm | F. 又 (yòu) lại, nữa\n\n【Phân tích】\nNgữ cảnh: Người A hỏi trên báo có tin gì, người B trả lời đang đọc và chưa thấy tin gì đặc biệt. Chỗ trống đứng trước '的新闻' (tin tức) nên cần một tính từ bổ nghĩa. '重要' (quan trọng) là tính từ, hợp với cấu trúc '什么...的 + danh từ': '什么重要的新闻' - tin tức quan trọng. Từ khóa ăn điểm là '新闻' (tin tức) - tin tức thường được đánh giá là quan trọng hay không quan trọng. Loại trừ: '练习' (A) và '爱好' (D) là danh từ/động từ, không thể bổ nghĩa cho '新闻'; '担心' (C) và '放心' (E) liên quan đến cảm xúc lo lắng, không mô tả được tin tức; '又' (F) là phó từ 'lại', không đứng trước '的' để bổ nghĩa danh từ.\n\n【Từ vựng & Ngữ pháp】\n- 重要 (zhòngyào): quan trọng - tính từ, thường đặt trước danh từ kèm '的': 重要的新闻, 重要的日子.\n- 新闻 (xīnwén): tin tức, thời sự - danh từ hay đi với động từ 看 (đọc/xem): 看新闻."
+        },
+        {
+          "id": "hsk3-13-q059",
+          "number": 59,
+          "type": "word_cloze",
+          "instruction": "第 56-60 题",
+          "prompt": "A：孩子怎么（     ）哭了？是不是饿了？\nB：应该不是，她刚喝完牛奶。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "练习"
+            },
+            {
+              "id": "B",
+              "text": "重要"
+            },
+            {
+              "id": "C",
+              "text": "担心"
+            },
+            {
+              "id": "D",
+              "text": "爱好"
+            },
+            {
+              "id": "E",
+              "text": "放心"
+            },
+            {
+              "id": "F",
+              "text": "又"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "F",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nA: Háizi zěnme yòu kū le? Shì bú shì è le? - Đứa trẻ sao lại khóc nữa vậy? Có phải nó đói không?\nB: Yīnggāi bú shì, tā gāng hē wán niúnǎi. - Chắc là không đâu, nó vừa uống sữa xong mà.\nCác lựa chọn: A. 练习 liànxí - luyện tập | B. 重要 zhòngyào - quan trọng | C. 担心 dānxīn - lo lắng | D. 爱好 àihào - sở thích | E. 放心 fàngxīn - yên tâm | F. 又 yòu - lại, nữa\n\n【Phân tích】\nChỗ trống đứng ngay trước động từ 哭了 trong câu hỏi '怎么...哭了' (sao lại... thế). Từ 又 (yòu) nghĩa là 'lại, nữa', dùng để chỉ một hành động đã xảy ra trước đó nay lặp lại lần nữa: '怎么又哭了' = 'sao lại khóc nữa'. Ngữ cảnh hội thoại (đứa trẻ khóc, người A đoán nguyên nhân) hoàn toàn phù hợp với ý 'lặp lại'. Loại trừ: 练习, 重要, 爱好 là danh từ/tính từ không thể đứng trước 哭了; 担心, 放心 là động từ nhưng đi vào sẽ sai ngữ pháp và phi logic ('怎么担心哭了' vô nghĩa).\n\n【Từ vựng & Ngữ pháp】\n- 又 yòu: lại, nữa - phó từ chỉ sự lặp lại của hành động trong quá khứ, thường đi kèm cấu trúc '怎么...了' để hỏi về việc lặp lại.\n- 刚...完 gāng...wán: vừa mới... xong - '刚喝完牛奶' = vừa uống xong sữa; 刚 chỉ hành động vừa mới xảy ra, 完 chỉ sự hoàn thành."
+        },
+        {
+          "id": "hsk3-13-q060",
+          "number": 60,
+          "type": "word_cloze",
+          "instruction": "第 56-60 题",
+          "prompt": "A：黑板上的这几个（     ）题要在下课前完成。\nB：好的，我知道了。",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "练习"
+            },
+            {
+              "id": "B",
+              "text": "重要"
+            },
+            {
+              "id": "C",
+              "text": "担心"
+            },
+            {
+              "id": "D",
+              "text": "爱好"
+            },
+            {
+              "id": "E",
+              "text": "放心"
+            },
+            {
+              "id": "F",
+              "text": "又"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "A",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nA: Hēibǎn shàng de zhè jǐ gè liànxí tí yào zài xiàkè qián wánchéng. - Mấy câu bài tập trên bảng đen này phải hoàn thành trước giờ tan học.\nB: Hǎo de, wǒ zhīdào le. - Được rồi, tôi biết rồi.\nCác lựa chọn: A. 练习 liànxí - luyện tập | B. 重要 zhòngyào - quan trọng | C. 担心 dānxīn - lo lắng | D. 爱好 àihào - sở thích | E. 放心 fàngxīn - yên tâm | F. 又 yòu - lại, nữa\n\n【Phân tích】\nChỗ trống đứng trước danh từ 题 (câu hỏi/bài tập) để tạo thành cụm danh từ chỉ loại bài. 练习题 (liànxí tí) là cụm từ cố định, rất phổ biến, nghĩa là 'bài tập luyện tập, câu hỏi luyện tập'. Từ khóa ăn điểm là '黑板上的这几个...题' (mấy câu... trên bảng đen) - trong lớp học, thứ viết trên bảng để học sinh làm trước giờ tan học chính là bài tập. Loại trừ: 重要题 không phải cụm tự nhiên (nếu muốn nói 'câu hỏi quan trọng' thường dùng 重要的问题); 担心, 放心 là động từ, 爱好 là danh từ chỉ sở thích, 又 là phó từ - đều không thể bổ nghĩa trực tiếp cho 题 trong ngữ cảnh này.\n\n【Từ vựng & Ngữ pháp】\n- 练习题 liànxí tí: bài tập, câu hỏi luyện tập - cụm danh từ quen thuộc trong ngữ cảnh lớp học.\n- 要在...前完成 yào zài...qián wánchéng: phải hoàn thành trước (mốc thời gian); 在下课前 zài xiàkè qián = trước giờ tan học, cấu trúc '在...前' chỉ thời hạn."
+        },
+        {
+          "id": "hsk3-13-q061",
+          "number": 61,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": "选择当然不是越多越好。有时候，选择太多，会使你忘记自己最想要的是什么，会使你更难做出好的决定。\n★ 选择太多会让人：",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "大笑"
+            },
+            {
+              "id": "B",
+              "text": "很安静"
+            },
+            {
+              "id": "C",
+              "text": "不知道该怎么办"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "C",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nĐề bài: 选择当然不是越多越好。有时候，选择太多，会使你忘记自己最想要的是什么，会使你更难做出好的决定。\n(Xuǎnzé dāngrán bú shì yuè duō yuè hǎo. Yǒushíhou, xuǎnzé tài duō, huì shǐ nǐ wàngjì zìjǐ zuì xiǎng yào de shì shénme, huì shǐ nǐ gèng nán zuò chū hǎo de juédìng.)\nDịch: Lựa chọn tất nhiên không phải càng nhiều càng tốt. Đôi khi, lựa chọn quá nhiều sẽ khiến bạn quên mất điều mình thực sự muốn nhất, và khiến bạn khó đưa ra quyết định tốt hơn.\nCâu hỏi: 选择太多会让人：(Xuǎnzé tài duō huì ràng rén...): Quá nhiều lựa chọn sẽ khiến người ta:\nA. 大笑 (dà xiào): cười to\nB. 很安静 (hěn ānjìng): rất yên tĩnh\nC. 不知道该怎么办 (bù zhīdào gāi zěnme bàn): không biết phải làm sao\n\n【Phân tích】\nTừ khóa ăn điểm nằm ở vế cuối: 会使你更难做出好的决定 (khiến bạn khó đưa ra quyết định tốt hơn). Khi khó quyết định thì nghĩa là không biết phải làm sao, khớp hoàn toàn với đáp án C '不知道该怎么办'.\nLoại trừ: A '大笑' (cười to) và B '很安静' (yên tĩnh) hoàn toàn không được đề cập trong đoạn văn, đây là những phương án gây nhiễu không liên quan đến ngữ cảnh.\n\n【Từ vựng & Ngữ pháp】\n- 越多越好 (yuè duō yuè hǎo): càng nhiều càng tốt - cấu trúc 越...越... diễn tả sự tăng tiến.\n- 使 (shǐ): khiến, làm cho - động từ gây khiến, cấu trúc 使 + người + động từ/tính từ, tương tự 让 (ràng)."
+        },
+        {
+          "id": "hsk3-13-q062",
+          "number": 62,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": "元先生和我们住一个楼，而且都在7层。我们经常会在电梯里看见他，所以就认识了。现在，他和我们的关系不错。\n★ 他们和元先生：",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "是邻居"
+            },
+            {
+              "id": "B",
+              "text": "都很认真"
+            },
+            {
+              "id": "C",
+              "text": "经常一起去唱歌"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "A",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nĐề bài: 元先生和我们住一个楼，而且都在7层。我们经常会在电梯里看见他，所以就认识了。现在，他和我们的关系不错。\n(Yuán xiānsheng hé wǒmen zhù yí ge lóu, érqiě dōu zài qī céng. Wǒmen jīngcháng huì zài diàntī lǐ kànjiàn tā, suǒyǐ jiù rènshi le. Xiànzài, tā hé wǒmen de guānxi búcuò.)\nDịch: Ông Nguyên sống cùng một tòa nhà với chúng tôi, hơn nữa đều ở tầng 7. Chúng tôi thường xuyên gặp ông ấy trong thang máy, nên đã quen biết nhau. Bây giờ, quan hệ giữa ông ấy và chúng tôi khá tốt.\nCâu hỏi: 他们和元先生：(Tāmen hé Yuán xiānsheng...): Họ và ông Nguyên:\nA. 是邻居 (shì línjū): là hàng xóm\nB. 都很认真 (dōu hěn rènzhēn): đều rất nghiêm túc/chăm chỉ\nC. 经常一起去唱歌 (jīngcháng yìqǐ qù chànggē): thường cùng nhau đi hát\n\n【Phân tích】\nTừ khóa ăn điểm: 住一个楼 (sống cùng một tòa nhà) + 都在7层 (đều ở tầng 7) + 经常在电梯里看见他 (thường gặp ông ấy trong thang máy). Những người sống cùng tòa nhà, cùng tầng, thường gặp nhau được gọi là 邻居 (hàng xóm), nên đáp án A đúng.\nLoại trừ: B '都很认真' (rất nghiêm túc) - đoạn văn không nói gì về tính cách nghiêm túc; C '经常一起去唱歌' (thường đi hát cùng nhau) - đoạn chỉ nói gặp nhau trong thang máy, không nhắc đến việc đi hát.\n\n【Từ vựng & Ngữ pháp】\n- 邻居 (línjū): hàng xóm, người láng giềng - từ khóa then chốt của câu.\n- 关系不错 (guānxi búcuò): quan hệ không tệ/khá tốt - 不错 nghĩa là 'không tồi', tức khá tốt; cấu trúc 就 (jiù) trong '所以就认识了' diễn tả kết quả tự nhiên: thường gặp nhau nên quen biết."
+        },
+        {
+          "id": "hsk3-13-q063",
+          "number": 63,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": "你还是去医院好好检查一下你的腿吧，明天是14号，我有时间，我和你一起去。不要觉得自己年轻就没关系，如果真有问题，会影响你以后的健康。你听懂了没有？\n★ 说话人希望明天：",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "去医院"
+            },
+            {
+              "id": "B",
+              "text": "去看看鼻子"
+            },
+            {
+              "id": "C",
+              "text": "能买到机票"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "A",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nBài đọc: 'Bạn tốt nhất nên đến bệnh viện kiểm tra cái chân cho kỹ đi. Ngày mai là ngày 14, tôi có thời gian, tôi sẽ đi cùng bạn. Đừng tưởng mình còn trẻ là không sao, nếu thật sự có vấn đề thì sẽ ảnh hưởng đến sức khỏe sau này của bạn đấy. Bạn nghe hiểu chưa?' (Nǐ háishì qù yīyuàn hǎohǎo jiǎnchá yíxià nǐ de tuǐ ba, míngtiān shì 14 hào, wǒ yǒu shíjiān, wǒ hé nǐ yìqǐ qù.)\nHỏi: Người nói hy vọng ngày mai: A. Đi bệnh viện | B. Đi khám cái mũi | C. Mua được vé máy bay\n\n【Phân tích】\nTừ khóa ăn điểm là '去医院好好检查一下你的腿' (đi bệnh viện kiểm tra cái chân) và '明天...我和你一起去' (ngày mai tôi đi cùng bạn). Người nói khuyên bạn nên đi khám chân và hẹn ngày mai đi cùng → đáp án A là đúng. Loại trừ: B sai vì bài nói về '腿' (cái chân) chứ không phải '鼻子' (cái mũi) - đây là bẫy thay bộ phận cơ thể; C sai vì '机票' (vé máy bay) hoàn toàn không được nhắc đến trong bài.\n\n【Từ vựng & Ngữ pháp】\n- 检查 jiǎnchá: kiểm tra, khám (bệnh)\n- 还是...吧 háishì...ba: cấu trúc đưa lời khuyên, nghĩa là 'tốt nhất là nên...'\n- 影响 yǐngxiǎng: ảnh hưởng"
+        },
+        {
+          "id": "hsk3-13-q064",
+          "number": 64,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": "我妈让我今天晚上7点去和张叔叔的女儿见面。你7点半的时候一定要给我打个电话，我就可以早点儿离开了。\n★ 说话人是什么意思？",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "作用不大"
+            },
+            {
+              "id": "B",
+              "text": "一定要帮我"
+            },
+            {
+              "id": "C",
+              "text": "公司突然有事"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "B",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nBài đọc: 'Mẹ bảo tôi tối nay 7 giờ đi gặp con gái của chú Trương. Lúc 7 giờ rưỡi cậu nhất định phải gọi điện cho tôi, như vậy tôi mới có thể rời đi sớm hơn.' (Wǒ mā ràng wǒ jīntiān wǎnshang 7 diǎn qù hé Zhāng shūshu de nǚ'ér jiànmiàn. Nǐ 7 diǎn bàn de shíhou yídìng yào gěi wǒ dǎ ge diànhuà, wǒ jiù kěyǐ zǎodiǎnr líkāi le.)\nHỏi: Người nói có ý gì? A. Không có tác dụng gì lớn | B. Nhất định phải giúp tôi | C. Công ty đột nhiên có việc\n\n【Phân tích】\nTừ khóa ăn điểm là '你7点半的时候一定要给我打个电话' (7 giờ rưỡi cậu nhất định phải gọi cho tôi) và '我就可以早点儿离开了' (tôi có thể rời đi sớm hơn). Người nói muốn bạn gọi điện đến làm cái cớ để thoát khỏi buổi gặp mặt sớm → ý của người nói chính là 'nhất định phải giúp tôi' → đáp án B. Loại trừ: A '作用不大' (không có tác dụng gì lớn) trái ngược với mong muốn của người nói vì cuộc gọi này rất quan trọng với họ; C '公司突然有事' (công ty đột nhiên có việc) không hề được đề cập trong bài, đó chỉ có thể là cái cớ người nói định bịa ra chứ không phải ý thật.\n\n【Từ vựng & Ngữ pháp】\n- 见面 jiànmiàn: gặp mặt\n- 一定要 yídìng yào: nhất định phải (nhấn mạnh sự bắt buộc)\n- 早点儿 zǎodiǎnr: sớm một chút"
+        },
+        {
+          "id": "hsk3-13-q065",
+          "number": 65,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": "下午有客人来，你去买些水果，然后还要准备一些茶和咖啡，茶的话就准备这种的。\n★ 根据这段话，可以知道什么？",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "客人还没到"
+            },
+            {
+              "id": "B",
+              "text": "苹果卖完了"
+            },
+            {
+              "id": "C",
+              "text": "他们口渴了"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "A",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\n下午有客人来，你去买些水果，然后还要准备一些茶和咖啡，茶的话就准备这种的。\nXiàwǔ yǒu kèrén lái, nǐ qù mǎi xiē shuǐguǒ, ránhòu hái yào zhǔnbèi yīxiē chá hé kāfēi, chá dehuà jiù zhǔnbèi zhè zhǒng de.\n'Chiều nay có khách đến, em đi mua ít trái cây, sau đó còn phải chuẩn bị một ít trà và cà phê, còn trà thì chuẩn bị loại này.'\n\n★ 根据这段话，可以知道什么？(Gēnjù zhè duàn huà, kěyǐ zhīdào shénme?) - 'Dựa vào đoạn thoại này, có thể biết được điều gì?'\nA. 客人还没到 (Kèrén hái méi dào) - Khách chưa đến\nB. 苹果卖完了 (Píngguǒ mài wán le) - Táo đã bán hết\nC. 他们口渴了 (Tāmen kǒukě le) - Họ khát nước\n\n【Phân tích】\nĐáp án đúng là A. Từ khóa ăn điểm là '下午有客人来' - thời gian '下午' (buổi chiều) kết hợp với '来' (đến) ở tương lai cho thấy khách CHƯA đến, người nói đang dặn dò chuẩn bị trước khi khách tới. Loại trừ: B '苹果卖完了' (táo bán hết) hoàn toàn không được đề cập trong bài; C '他们口渴了' (họ khát) cũng không có cơ sở, bài chỉ nói chuẩn bị trà, cà phê để đãi khách chứ không nói khách đang khát.\n\n【Từ vựng & Ngữ pháp】\n- 客人 (kèrén): khách, khách quý\n- 准备 (zhǔnbèi): chuẩn bị\n- Cấu trúc '...的话' (dehuà): 'nếu là... thì', dùng để nêu điều kiện, ví dụ '茶的话就准备这种的' = 'còn nếu là trà thì chuẩn bị loại này'."
+        },
+        {
+          "id": "hsk3-13-q066",
+          "number": 66,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": "我喜欢北京的秋天，主要是因为这个季节的北京不冷也不热。如果北京的秋天能再长一点儿就更好了。\n★ 秋天的北京：",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "不刮风"
+            },
+            {
+              "id": "B",
+              "text": "会下雪"
+            },
+            {
+              "id": "C",
+              "text": "天气不错"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "C",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\n我喜欢北京的秋天，主要是因为这个季节的北京不冷也不热。如果北京的秋天能再长一点儿就更好了。\nWǒ xǐhuān Běijīng de qiūtiān, zhǔyào shì yīnwèi zhège jìjié de Běijīng bù lěng yě bù rè. Rúguǒ Běijīng de qiūtiān néng zài cháng yīdiǎnr jiù gèng hǎo le.\n'Tôi thích mùa thu ở Bắc Kinh, chủ yếu là vì vào mùa này Bắc Kinh không lạnh cũng không nóng. Nếu mùa thu ở Bắc Kinh dài thêm một chút nữa thì càng tốt.'\n\n★ 秋天的北京：(Qiūtiān de Běijīng) - 'Mùa thu ở Bắc Kinh:'\nA. 不刮风 (Bù guā fēng) - Không thổi gió\nB. 会下雪 (Huì xià xuě) - Có tuyết rơi\nC. 天气不错 (Tiānqì bùcuò) - Thời tiết không tệ / khá đẹp\n\n【Phân tích】\nĐáp án đúng là C. Từ khóa ăn điểm là '不冷也不热' (không lạnh cũng không nóng) - đây chính là mô tả cho thời tiết dễ chịu, đẹp (天气不错). Loại trừ: A '不刮风' (không có gió) không hề được nhắc đến trong bài, không thể suy ra; B '会下雪' (có tuyết rơi) sai vì tuyết là đặc trưng của mùa đông, trong khi bài nói mùa thu không lạnh cũng không nóng.\n\n【Từ vựng & Ngữ pháp】\n- 季节 (jìjié): mùa, mùa vụ\n- Cấu trúc '不...也不...' (bù... yě bù...): 'không... cũng không...', diễn tả phủ định song song, ví dụ '不冷也不热' = 'không lạnh cũng không nóng'\n- Cấu trúc giả định '如果...就...' (rúguǒ... jiù...): 'nếu... thì...', ví dụ '如果...能再长一点儿就更好了' = 'nếu... dài thêm chút nữa thì càng tốt'."
+        },
+        {
+          "id": "hsk3-13-q067",
+          "number": 67,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": "我奶奶今年67岁，她每天除了为我们准备早饭外，还要去爬山。她经常和我们说要想健康，就必须多运动。\n★ 根据这段话，奶奶：",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "经常旅游"
+            },
+            {
+              "id": "B",
+              "text": "天天锻炼身体"
+            },
+            {
+              "id": "C",
+              "text": "普通话水平低"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "B",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu văn: 我奶奶今年67岁，她每天除了为我们准备早饭外，还要去爬山。她经常和我们说要想健康，就必须多运动。\nPinyin: Wǒ nǎinai jīnnián 67 suì, tā měitiān chúle wèi wǒmen zhǔnbèi zǎofàn wài, hái yào qù páshān. Tā jīngcháng hé wǒmen shuō yào xiǎng jiànkāng, jiù bìxū duō yùndòng.\nDịch: Bà tôi năm nay 67 tuổi, mỗi ngày ngoài việc chuẩn bị bữa sáng cho chúng tôi, bà còn đi leo núi. Bà thường nói với chúng tôi rằng muốn khỏe mạnh thì phải vận động nhiều.\nCác đáp án:\nA. 经常旅游 (Jīngcháng lǚyóu) - Thường xuyên đi du lịch\nB. 天天锻炼身体 (Tiāntiān duànliàn shēntǐ) - Mỗi ngày đều rèn luyện cơ thể\nC. 普通话水平低 (Pǔtōnghuà shuǐpíng dī) - Trình độ tiếng Phổ thông thấp\n\n【Phân tích】\nĐáp án đúng là B. Từ khóa ăn điểm trong bài là '每天...还要去爬山' (mỗi ngày còn đi leo núi) và '要想健康，就必须多运动' (muốn khỏe mạnh phải vận động nhiều). Leo núi (爬山) là một hình thức rèn luyện thể dục thể thao, và việc làm này diễn ra '每天' (mỗi ngày) nên tương đương với '天天锻炼身体' (ngày nào cũng rèn luyện cơ thể).\nLoại trừ: A sai vì bài không nhắc đến việc đi du lịch (旅游); C sai vì hoàn toàn không có thông tin về trình độ tiếng Phổ thông của bà.\n\n【Từ vựng & Ngữ pháp】\n- 爬山 (páshān): leo núi - hoạt động thể chất, là bằng chứng cho việc rèn luyện sức khỏe.\n- 除了...外，还... (chúle... wài, hái...): ngoài... ra, còn... - cấu trúc diễn tả ngoài việc này ra còn làm việc khác, ví dụ: 除了准备早饭外，还要去爬山."
+        },
+        {
+          "id": "hsk3-13-q068",
+          "number": 68,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": "那个碗看上去不怎么样，但它已经有1000多年的历史了。去年，有人表示愿意出200万来买那个碗。\n★ 关于那个碗，可以知道什么？",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "历史很久"
+            },
+            {
+              "id": "B",
+              "text": "不容易洗"
+            },
+            {
+              "id": "C",
+              "text": "是去年冬天买的"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "A",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu văn: 那个碗看上去不怎么样，但它已经有1000多年的历史了。去年，有人表示愿意出200万来买那个碗。\nPinyin: Nàge wǎn kàn shàngqù bù zěnme yàng, dàn tā yǐjīng yǒu 1000 duō nián de lìshǐ le. Qùnián, yǒurén biǎoshì yuànyì chū 200 wàn lái mǎi nàge wǎn.\nDịch: Cái bát đó nhìn qua thì không có gì đặc biệt, nhưng nó đã có lịch sử hơn 1000 năm. Năm ngoái, có người bày tỏ sẵn lòng trả 2 triệu tệ để mua cái bát đó.\nCác đáp án:\nA. 历史很久 (Lìshǐ hěn jiǔ) - Có lịch sử lâu đời\nB. 不容易洗 (Bù róngyì xǐ) - Không dễ giặt/rửa\nC. 是去年冬天买的 (Shì qùnián dōngtiān mǎi de) - Được mua vào mùa đông năm ngoái\n\n【Phân tích】\nĐáp án đúng là A. Từ khóa ăn điểm là '它已经有1000多年的历史了' (nó đã có lịch sử hơn 1000 năm), khẳng định trực tiếp cái bát có lịch sử rất lâu đời, khớp hoàn toàn với đáp án A.\nLoại trừ: B sai vì bài không nói gì đến việc cái bát khó rửa hay không; C sai vì '去年' (năm ngoái) chỉ là thời điểm có người muốn mua cái bát, chứ không phải thời điểm nó được mua, và bài cũng không nhắc đến mùa đông (冬天).\n\n【Từ vựng & Ngữ pháp】\n- 历史 (lìshǐ): lịch sử - '有1000多年的历史' là mẫu câu nói về độ tuổi/lịch sử của sự vật.\n- 看上去 (kàn shàngqù): nhìn qua có vẻ như - cấu trúc diễn tả ấn tượng bề ngoài, thường đi kèm sự tương phản với thực tế: 看上去...但... (nhìn có vẻ... nhưng...)."
+        },
+        {
+          "id": "hsk3-13-q069",
+          "number": 69,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": "老包是东北人，爱吃米饭。他总是对办公室里的人说，哪个地方的大米也没有东北的大米好吃。\n★ 老包认为：",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "东北水很甜"
+            },
+            {
+              "id": "B",
+              "text": "东北大米新鲜"
+            },
+            {
+              "id": "C",
+              "text": "东北大米最好吃"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "C",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nĐề bài: 老包是东北人，爱吃米饭。(Lǎo Bāo shì dōngběi rén, ài chī mǐfàn.) - Lão Bảo là người Đông Bắc, thích ăn cơm. 他总是对办公室里的人说，哪个地方的大米也没有东北的大米好吃。(Tā zǒngshì duì bàngōngshì lǐ de rén shuō, nǎge dìfang de dàmǐ yě méiyǒu dōngběi de dàmǐ hǎochī.) - Anh ấy luôn nói với mọi người trong văn phòng rằng: gạo ở nơi nào cũng không ngon bằng gạo Đông Bắc.\n★ 老包认为：(Lǎo Bāo rènwéi:) - Lão Bảo cho rằng:\nA. 东北水很甜 (Dōngběi shuǐ hěn tián) - Nước Đông Bắc rất ngọt\nB. 东北大米新鲜 (Dōngběi dàmǐ xīnxiān) - Gạo Đông Bắc tươi\nC. 东北大米最好吃 (Dōngběi dàmǐ zuì hǎochī) - Gạo Đông Bắc ngon nhất\n\n【Phân tích】\nTừ khóa ăn điểm là cấu trúc so sánh: '哪个地方的大米也没有东北的大米好吃' - nghĩa là 'gạo của bất kỳ nơi nào cũng không ngon bằng gạo Đông Bắc'. Khi nói A không bằng B (A没有B好吃) thì ngầm khẳng định B là tốt nhất. Do đó Lão Bảo cho rằng gạo Đông Bắc ngon nhất → chọn C.\nLoại trừ: A sai vì đoạn văn không hề nhắc đến nước (水) ngọt; B sai vì không có thông tin nào nói gạo Đông Bắc tươi (新鲜), đây là chi tiết bịa thêm gây nhiễu.\n\n【Từ vựng & Ngữ pháp】\n- 大米 (dàmǐ): gạo, hạt gạo\n- Cấu trúc so sánh: A + 没有 + B + tính từ = A không bằng B (ví dụ: 哪个地方的大米也没有东北的大米好吃 - gạo nơi nào cũng không ngon bằng gạo Đông Bắc). Đây là dạng phủ định của so sánh, dùng để khẳng định B vượt trội hơn cả."
+        },
+        {
+          "id": "hsk3-13-q070",
+          "number": 70,
+          "type": "multiple_choice",
+          "instruction": null,
+          "prompt": "遇到自己想不明白的事情，或者出现自己不能解决的问题时，我们一般都会找人帮忙，希望别人能告诉自己一些好办法。\n★ 遇到问题时，我们希望别人：",
+          "passage": null,
+          "passageId": null,
+          "options": [
+            {
+              "id": "A",
+              "text": "别在旁边"
+            },
+            {
+              "id": "B",
+              "text": "为我们想办法"
+            },
+            {
+              "id": "C",
+              "text": "同意我们的决定"
+            }
+          ],
+          "needsReview": false,
+          "correctAnswer": "B",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nĐề bài: 遇到自己想不明白的事情，或者出现自己不能解决的问题时，我们一般都会找人帮忙，希望别人能告诉自己一些好办法。(Yùdào zìjǐ xiǎng bu míngbai de shìqing, huòzhě chūxiàn zìjǐ bùnéng jiějué de wèntí shí, wǒmen yìbān dōu huì zhǎo rén bāngmáng, xīwàng biérén néng gàosu zìjǐ yìxiē hǎo bànfǎ.) - Khi gặp những việc mình không hiểu rõ, hoặc khi xuất hiện vấn đề mình không thể giải quyết, chúng ta thường sẽ tìm người giúp đỡ, hy vọng người khác có thể nói cho mình một số cách hay.\n★ 遇到问题时，我们希望别人：(Yùdào wèntí shí, wǒmen xīwàng biérén:) - Khi gặp vấn đề, chúng ta hy vọng người khác:\nA. 别在旁边 (bié zài pángbiān) - Đừng ở bên cạnh\nB. 为我们想办法 (wèi wǒmen xiǎng bànfǎ) - Nghĩ cách cho chúng ta\nC. 同意我们的决定 (tóngyì wǒmen de juédìng) - Đồng ý với quyết định của chúng ta\n\n【Phân tích】\nTừ khóa ăn điểm là: '希望别人能告诉自己一些好办法' - hy vọng người khác nói cho mình những cách hay. '好办法' (cách hay) chính là '想办法' (nghĩ cách) → chọn B.\nLoại trừ: A sai vì đoạn văn nói tìm người giúp đỡ (找人帮忙), hoàn toàn không phải mong người khác tránh xa; C sai vì đoạn văn không nhắc đến việc mong người khác đồng ý với quyết định của mình, mà là mong nhận được cách giải quyết.\n\n【Từ vựng & Ngữ pháp】\n- 办法 (bànfǎ): cách, biện pháp; 想办法 (xiǎng bànfǎ): nghĩ cách, tìm cách giải quyết\n- 希望 (xīwàng): hy vọng; cấu trúc 希望 + người + 能 + động từ (hy vọng ai đó có thể làm gì), ví dụ: 希望别人能告诉自己一些好办法."
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Writing",
+      "questions": [
+        {
+          "id": "hsk3-13-q071",
+          "number": 71,
+          "type": "writing_order",
+          "instruction": null,
+          "prompt": "蓝小姐    热情    对人    非常",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "needsReview": true,
+          "correctAnswer": "蓝小姐对人非常热情。",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\n- 蓝小姐 (Lán xiǎojiě): cô Lan / tiểu thư họ Lam\n- 对人 (duì rén): đối với người khác\n- 非常 (fēicháng): rất, vô cùng\n- 热情 (rèqíng): nhiệt tình, nồng nhiệt\n\nCâu hoàn chỉnh: 蓝小姐对人非常热情。\nPinyin: Lán xiǎojiě duì rén fēicháng rèqíng.\nDịch: Cô Lan rất nhiệt tình với mọi người.\n\n【Phân tích】\nCấu trúc câu: Chủ ngữ + 对 + tân ngữ + trạng từ mức độ + tính từ.\n- 蓝小姐 làm chủ ngữ đứng đầu câu.\n-对人 là cụm giới từ 'đối với người khác', theo sau chủ ngữ.\n- 非常 là trạng từ mức độ (rất) và PHẢI đứng TRƯỚC tính từ nó bổ nghĩa, tức là trước 热情. Đây là điểm mấu chốt: trong tiếng Trung, trạng từ mức độ luôn đặt trước tính từ/động từ, không thể nói 非常热情 tách rời hay đảo thành 热情非常.\n- Vậy trật tự đúng: 蓝小姐 + 对人 + 非常 + 热情。\n\n【Từ vựng & Ngữ pháp】\n- 热情 (rèqíng): tính từ, nghĩa là nhiệt tình, thân thiện, nồng hậu.\n- Cấu trúc 对...+ tính từ (duì...): diễn tả thái độ/cách cư xử đối với ai đó, ví dụ: 他对我很好 (Tā duì wǒ hěn hǎo) - Anh ấy đối xử với tôi rất tốt."
+        },
+        {
+          "id": "hsk3-13-q072",
+          "number": 72,
+          "type": "writing_order",
+          "instruction": null,
+          "prompt": "高兴    地    邻居    走    了",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "needsReview": true,
+          "correctAnswer": "邻居高兴地走了。",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\n- 邻居 (línjū): người hàng xóm\n- 高兴 (gāoxìng): vui vẻ, vui mừng\n- 地 (de): trợ từ cấu tạo trạng ngữ (đứng sau tính từ)\n- 走 (zǒu): đi, rời đi\n- 了 (le): trợ từ ngữ pháp chỉ sự hoàn thành/thay đổi trạng thái\n\nCâu hoàn chỉnh: 邻居高兴地走了。\nPinyin: Línjū gāoxìng de zǒu le.\nDịch: Người hàng xóm vui vẻ rời đi rồi.\n\n【Phân tích】\nCấu trúc câu: Chủ ngữ + tính từ + 地 + động từ + 了.\n- 邻居 là chủ ngữ, đứng đầu câu.\n- 高兴 là tính từ (vui vẻ), khi làm trạng ngữ bổ nghĩa cho động từ thì phải thêm 地 ngay sau nó: 高兴地.\n- 走 là động từ chính (đi/rời đi), theo sau trạng ngữ.\n- 了 đặt ở cuối câu, chỉ hành động đã hoàn thành.\n- Sai lầm thường gặp: đặt 地 trước 高兴 hoặc quên 地. Cần nhớ quy tắc: tính từ + 地 + động từ (giống trạng từ trong tiếng Việt, ví dụ 'vui vẻ mà đi').\n\n【Từ vựng & Ngữ pháp】\n- 地 (de): trợ từ cấu tạo trạng ngữ, công thức: Tính từ + 地 + Động từ, ví dụ: 他慢慢地走 (Tā mànmàn de zǒu) - Anh ấy đi chậm rãi.\n- 邻居 (línjū): danh từ, nghĩa là hàng xóm, người láng giềng."
+        },
+        {
+          "id": "hsk3-13-q073",
+          "number": 73,
+          "type": "writing_order",
+          "instruction": null,
+          "prompt": "像妈妈    长得    最    妹妹",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "needsReview": true,
+          "correctAnswer": "妹妹长得最像妈妈。",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】Các từ xáo trộn: 像妈妈 (xiàng māma - giống mẹ), 长得 (zhǎng de - trông/ngoại hình), 最 (zuì - nhất), 妹妹 (mèimei - em gái).\nCâu đúng: 妹妹长得最像妈妈。(Mèimei zhǎng de zuì xiàng māma.) - Em gái trông giống mẹ nhất.\n【Phân tích】Đáp án đúng là: 妹妹长得最像妈妈。Phân tích cấu trúc: 妹妹 làm chủ ngữ (chủ thể được so sánh), 长得 là động từ chỉ ngoại hình, 最 là phó từ mức độ phải đứng TRƯỚC động từ/tính từ mà nó bổ nghĩa, nên trật tự là 最 + 像 + 妈妈. Từ khóa ăn điểm: cụm 长得...像... là cấu trúc cố định diễn tả ngoại hình giống ai, và 最 luôn đặt ngay trước 像. Nếu đặt 最 ở vị trí khác (như 妹妹最长得...) sẽ sai ngữ pháp. Các từ còn lại chỉ có một cách sắp xếp hợp lệ theo trật tự: Chủ ngữ + 长得 + 最 + 像 + Tân ngữ.\n【Từ vựng & Ngữ pháp】1. 长得 (zhǎng de): trông, có ngoại hình như thế nào - cấu trúc 长得 + tính từ/cụm so sánh, ví dụ: 长得很漂亮 (trông rất xinh). 2. 最 (zuì): nhất, chỉ mức độ cao nhất, luôn đứng trước động từ hoặc tính từ, ví dụ: 最好 (tốt nhất), 最像 (giống nhất)."
+        },
+        {
+          "id": "hsk3-13-q074",
+          "number": 74,
+          "type": "writing_order",
+          "instruction": null,
+          "prompt": "请    根据    回答问题    要求",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "needsReview": true,
+          "correctAnswer": "请根据要求回答问题。",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】Các từ xáo trộn: 请 (qǐng - mời/xin), 根据 (gēnjù - dựa theo), 回答问题 (huídá wèntí - trả lời câu hỏi), 要求 (yāoqiú - yêu cầu).\nCâu đúng: 请根据要求回答问题。(Qǐng gēnjù yāoqiú huídá wèntí.) - Xin hãy trả lời câu hỏi theo yêu cầu.\n【Phân tích】Đáp án đúng là: 请根据要求回答问题。Phân tích cấu trúc: 请 là từ diễn tả lời đề nghị, luôn đứng ĐẦU câu mệnh lệnh/đề nghị lịch sự. 根据 là giới từ (giới từ) phải đứng trước danh từ nó giới thiệu để tạo cụm trạng ngữ, nên có cụm 根据要求 (theo yêu cầu). Cụm trạng ngữ này phải đặt TRƯỚC động từ chính 回答. Trật tự chuẩn: 请 + 根据 + 要求 + 回答 + 问题. Từ khóa ăn điểm: 根据... (dựa theo...) là cấu trúc giới từ cố định, không thể tách 要求 ra khỏi 根据; nếu viết 请回答问题根据要求 sẽ sai vì trạng ngữ chỉ cách thức phải đứng trước động từ. 回答 và 问题 là cặp động-tân gắn chặt với nhau.\n【Từ vựng & Ngữ pháp】1. 根据 (gēnjù): dựa theo, căn cứ vào - giới từ, cấu trúc: 根据 + danh từ + động từ, ví dụ: 根据规定 (theo quy định). 2. 请 (qǐng): mời, xin - dùng ở đầu câu để diễn tả lời đề nghị lịch sự, ví dụ: 请坐 (mời ngồi), 请看 (xin xem)."
+        },
+        {
+          "id": "hsk3-13-q075",
+          "number": 75,
+          "type": "writing_order",
+          "instruction": null,
+          "prompt": "打扫    干净    了    街道    被",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "needsReview": true,
+          "correctAnswer": "街道被打扫干净了。",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】Câu đúng: 街道被打扫干净了。(Jiēdào bèi dǎsǎo gānjìng le.) - Con phố đã được quét dọn sạch sẽ.\nTừ vựng: 街道 (jiēdào) = con phố, đường phố; 打扫 (dǎsǎo) = quét dọn; 干净 (gānjìng) = sạch sẽ; 被 (bèi) = bị/được (từ chỉ bị động).\n【Phân tích】Từ khóa ăn điểm là '被' - dấu hiệu nhận biết câu bị động. Cấu trúc: Chủ ngữ (đối tượng bị tác động) + 被 + động từ + bổ ngữ kết quả + 了. Vì '被' thể hiện bị động nên đối tượng chịu tác động '街道' (con phố) phải đứng đầu câu, không thể là '打扫' (hành động quét dọn). Tiếp theo là động từ '打扫', rồi bổ ngữ kết quả '干净' (kết quả của việc quét là sạch sẽ), cuối cùng là '了' chỉ sự hoàn thành. Trật tự đúng: 街道 + 被 + 打扫 + 干净 + 了.\n【Từ vựng & Ngữ pháp】Câu bị động với 被: S + 被 + (V) + kết quả + 了, dùng khi chủ ngữ là đối tượng nhận hành động. Ví dụ: 作业被做完了。(Bài tập đã được làm xong.)"
+        },
+        {
+          "id": "hsk3-13-q076",
+          "number": 76,
+          "type": "writing_character",
+          "instruction": "第二部分\n第 76-80 题",
+          "prompt": "我爸爸为了买它，（ huā ）了近 60 万块钱。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "needsReview": true,
+          "correctAnswer": "花",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】Câu hoàn chỉnh: 我爸爸为了买它，花了近60万块钱。(Wǒ bàba wèile mǎi tā, huāle jìn 60 wàn kuài qián.) - Bố tôi để mua nó đã tiêu gần 600 nghìn tệ.\nTừ vựng: 花 (huā) = tiêu, dùng (tiền); 为了 (wèile) = để, vì mục đích; 近 (jìn) = gần (khoảng); 万 (wàn) = 10.000; 块钱 (kuài qián) = tệ, tiền tệ.\n【Phân tích】Từ khóa ăn điểm là '近60万块钱' (gần 600 nghìn tệ) - số tiền. Động từ đi kèm số tiền để chỉ việc chi tiêu là '花' (huā, thanh 1). Cần phân biệt các từ đồng âm gần: 欢 (huān, thanh 1 - vui vẻ, như 喜欢), 化 (huà, thanh 4 - hóa, biến hóa). Vì pinyin là 'huā' (thanh 1) và ngữ cảnh là chi tiêu tiền nên đáp án chính xác là 花. Cấu trúc: 花 + 了 + số tiền.\n【Từ vựng & Ngữ pháp】花 (huā): vừa là danh từ 'hoa' vừa là động từ 'tiêu tiền'. Ví dụ: 我花了很多钱。(Tôi đã tiêu nhiều tiền.) Cấu trúc 为了... chỉ mục đích: 为了买房子，他很努力。(Để mua nhà, anh ấy rất cố gắng.)"
+        },
+        {
+          "id": "hsk3-13-q077",
+          "number": 77,
+          "type": "writing_character",
+          "instruction": "第二部分\n第 76-80 题",
+          "prompt": "经过半年多的努力学习，她的汉语（ shuǐ ）平有了很大提高。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "needsReview": true,
+          "correctAnswer": "水",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】经过半年多的努力学习，她的汉语水平有了很大提高。\nJīngguò bàn nián duō de nǔlì xuéxí, tā de hànyǔ shuǐpíng yǒule hěn dà tígāo.\n'Sau hơn nửa năm học tập chăm chỉ, trình độ tiếng Hán của cô ấy đã được nâng cao rất nhiều.'\nĐáp án cần điền: 水 (shuǐ).\n【Phân tích】Từ khóa ăn điểm là cụm '汉语...平' kết hợp với phiên âm 'shuǐ'. Trong tiếng Trung, từ chỉ 'trình độ, mức độ' là 水平 (shuǐpíng), trong đó 水 (shuǐ) đi liền trước 平 (píng). Đây là từ ghép cố định rất phổ biến trong HSK 3, không có chữ Hán nào khác mang phiên âm 'shuǐ' phù hợp ngữ cảnh này. Loại trừ: nếu điền chữ khác sẽ làm sai nghĩa câu vì '汉语水平' là cụm từ cố định nghĩa là 'trình độ tiếng Hán'.\n【Từ vựng & Ngữ pháp】1. 水平 (shuǐpíng): trình độ, mức độ — ví dụ: 汉语水平 (trình độ tiếng Hán).\n2. 经过 (jīngguò): trải qua, qua (một khoảng thời gian) — cấu trúc: 经过 + thời gian/quá trình, diễn tả sau khi trải qua điều gì đó thì kết quả thay đổi; 提高 (tígāo): nâng cao."
+        },
+        {
+          "id": "hsk3-13-q078",
+          "number": 78,
+          "type": "writing_character",
+          "instruction": "第二部分\n第 76-80 题",
+          "prompt": "晚上 12 点（ yě ）可以叫零点。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "needsReview": true,
+          "correctAnswer": "也",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】晚上12点也可以叫零点。\nWǎnshang shí'èr diǎn yě kěyǐ jiào língdiǎn.\n'12 giờ đêm cũng có thể được gọi là 0 giờ (零点).'\nĐáp án cần điền: 也 (yě).\n【Phân tích】Từ khóa ăn điểm là phiên âm 'yě' đứng trước '可以叫' (có thể gọi là). 也 (yě) là phó từ nghĩa là 'cũng', luôn đặt TRƯỚC động từ hoặc động từ khiếm khuyết (ở đây là 可以). Câu diễn đạt ý: ngoài cách nói '12 giờ đêm', người ta 'cũng' có thể gọi là '零点' (0 giờ) — chữ 'cũng' thể hiện sự bổ sung thêm một cách gọi khác, hoàn toàn khớp với 也. Loại trừ: nếu không có 也, câu mất ý so sánh/bổ sung hai cách gọi thời gian, sai với ngữ cảnh đề bài.\n【Từ vựng & Ngữ pháp】1. 也 (yě): cũng — cấu trúc: Chủ ngữ + 也 + động từ/khiếm khuyết, ví dụ: 也可以 (cũng có thể).\n2. 零点 (língdiǎn): 0 giờ, nửa đêm (12 giờ khuya) — 叫 (jiào): gọi là, được gọi là."
+        },
+        {
+          "id": "hsk3-13-q079",
+          "number": 79,
+          "type": "writing_character",
+          "instruction": "第二部分\n第 76-80 题",
+          "prompt": "太阳出来了，不用带（ yǔ ）伞了。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "needsReview": true,
+          "correctAnswer": "雨",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu: 太阳出来了，不用带雨伞了。\nPinyin: Tàiyáng chūlái le, búyòng dài yǔsǎn le.\nDịch: Mặt trời đã mọc lên rồi, không cần mang theo ô (dù) nữa.\nĐáp án cần điền: 雨 (yǔ) - mưa.\n\n【Phân tích】\nTừ khóa ăn điểm là 'yǔ' kết hợp với '伞' (sǎn - ô/dù). Chữ 雨 (yǔ) nghĩa là 'mưa', khi ghép với 伞 tạo thành từ 雨伞 (yǔsǎn) nghĩa là 'ô/dù che mưa'. Ngữ cảnh câu nói 'mặt trời đã lên' nên không cần mang ô nữa, hoàn toàn hợp logic với từ 雨伞. Lưu ý không nhầm với các chữ cùng âm gần như 语 (ngữ - ngôn ngữ) hay 与 (với), vì chỉ có 雨 mới tạo thành từ vựng 雨伞 đúng nghĩa.\n\n【Từ vựng & Ngữ pháp】\n- 雨伞 (yǔsǎn): ô, dù che mưa.\n- 不用...了 (búyòng...le): cấu trúc 'không cần... nữa', diễn tả việc không còn phải làm gì do hoàn cảnh đã thay đổi. Ví dụ: 不用带雨伞了 - không cần mang ô nữa."
+        },
+        {
+          "id": "hsk3-13-q080",
+          "number": 80,
+          "type": "writing_character",
+          "instruction": "第二部分\n第 76-80 题",
+          "prompt": "服务员，请帮我们再拿一（ ge ）盘子。",
+          "passage": null,
+          "passageId": null,
+          "options": [],
+          "needsReview": true,
+          "correctAnswer": "个",
+          "audio": null,
+          "imageUrls": [],
+          "explanation": "【Dịch nghĩa】\nCâu: 服务员，请帮我们再拿一个盘子。\nPinyin: Fúwùyuán, qǐng bāng wǒmen zài ná yí ge pánzi.\nDịch: Nhân viên phục vụ, làm ơn giúp chúng tôi lấy thêm một cái đĩa.\nĐáp án cần điền: 个 (ge) - lượng từ.\n\n【Phân tích】\nTừ khóa ăn điểm là 'ge' đứng sau số từ 一 (một) và trước danh từ 盘子 (pánzi - cái đĩa). Trong tiếng Trung, giữa số từ và danh từ bắt buộc phải có lượng từ. 个 (ge) là lượng từ thông dụng nhất, dùng cho nhiều loại đồ vật, trong đó có 盘子 (cái đĩa). Cấu trúc chuẩn: 一 + 个 + 盘子 = một cái đĩa. Cần viết đúng chữ 个 chứ không phải chữ khác cùng âm như 各.\n\n【Từ vựng & Ngữ pháp】\n- 服务员 (fúwùyuán): nhân viên phục vụ (nhà hàng, khách sạn).\n- 再 (zài): thêm, nữa - trạng từ chỉ lặp lại hoặc bổ sung hành động. Ví dụ: 再拿一个 - lấy thêm một cái. Cấu trúc nhờ vả lịch sự: 请帮我们... (qǐng bāng wǒmen...) - làm ơn giúp chúng tôi..."
+        }
+      ]
+    }
+  ],
+  "answerMap": {
+    "hsk3-13-q001": "B",
+    "hsk3-13-q002": "A",
+    "hsk3-13-q003": "E",
+    "hsk3-13-q004": "C",
+    "hsk3-13-q005": "F",
+    "hsk3-13-q006": "C",
+    "hsk3-13-q007": "A",
+    "hsk3-13-q008": "B",
+    "hsk3-13-q009": "E",
+    "hsk3-13-q010": "D",
+    "hsk3-13-q011": "×",
+    "hsk3-13-q012": "√",
+    "hsk3-13-q013": "×",
+    "hsk3-13-q014": "√",
+    "hsk3-13-q015": "×",
+    "hsk3-13-q016": "√",
+    "hsk3-13-q017": "×",
+    "hsk3-13-q018": "×",
+    "hsk3-13-q019": "√",
+    "hsk3-13-q020": "√",
+    "hsk3-13-q021": "C",
+    "hsk3-13-q022": "B",
+    "hsk3-13-q023": "C",
+    "hsk3-13-q024": "A",
+    "hsk3-13-q025": "A",
+    "hsk3-13-q026": "A",
+    "hsk3-13-q027": "B",
+    "hsk3-13-q028": "B",
+    "hsk3-13-q029": "A",
+    "hsk3-13-q030": "C",
+    "hsk3-13-q031": "B",
+    "hsk3-13-q032": "A",
+    "hsk3-13-q033": "C",
+    "hsk3-13-q034": "A",
+    "hsk3-13-q035": "C",
+    "hsk3-13-q036": "B",
+    "hsk3-13-q037": "C",
+    "hsk3-13-q038": "B",
+    "hsk3-13-q039": "B",
+    "hsk3-13-q040": "C",
+    "hsk3-13-q041": "B",
+    "hsk3-13-q042": "C",
+    "hsk3-13-q043": "F",
+    "hsk3-13-q044": "D",
+    "hsk3-13-q045": "A",
+    "hsk3-13-q046": "A",
+    "hsk3-13-q047": "B",
+    "hsk3-13-q048": "D",
+    "hsk3-13-q049": "E",
+    "hsk3-13-q050": "C",
+    "hsk3-13-q051": "D",
+    "hsk3-13-q052": "B",
+    "hsk3-13-q053": "A",
+    "hsk3-13-q054": "F",
+    "hsk3-13-q055": "C",
+    "hsk3-13-q056": "C",
+    "hsk3-13-q057": "E",
+    "hsk3-13-q058": "B",
+    "hsk3-13-q059": "F",
+    "hsk3-13-q060": "A",
+    "hsk3-13-q061": "C",
+    "hsk3-13-q062": "A",
+    "hsk3-13-q063": "A",
+    "hsk3-13-q064": "B",
+    "hsk3-13-q065": "A",
+    "hsk3-13-q066": "C",
+    "hsk3-13-q067": "B",
+    "hsk3-13-q068": "A",
+    "hsk3-13-q069": "C",
+    "hsk3-13-q070": "B",
+    "hsk3-13-q071": "蓝小姐对人非常热情。",
+    "hsk3-13-q072": "邻居高兴地走了。",
+    "hsk3-13-q073": "妹妹长得最像妈妈。",
+    "hsk3-13-q074": "请根据要求回答问题。",
+    "hsk3-13-q075": "街道被打扫干净了。",
+    "hsk3-13-q076": "花",
+    "hsk3-13-q077": "水",
+    "hsk3-13-q078": "也",
+    "hsk3-13-q079": "雨",
+    "hsk3-13-q080": "个"
+  },
+  "syncedAt": "2026-09-08T09:33:03.006Z"
+}

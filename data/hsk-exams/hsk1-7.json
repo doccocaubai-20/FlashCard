@@ -7,7 +7,7 @@
   "listeningQuestionCount": 20,
   "readingQuestionCount": 20,
   "writingQuestionCount": 0,
-  "audioUrl": "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/audios/hsk1-7.mp3",
+  "audioUrl": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/hsk1-7_full.mp3",
   "sections": [
     {
       "id": "listening",
@@ -22,12 +22,14 @@
           "images": [
             "assets/image_003_xref_23.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q001.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q001.mp3",
           "needsReview": false,
           "correctAnswer": "×",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_003_xref_23.jpeg"
-          ]
+          ],
+          "transcript": "现在开始第一题,一,作出租车,作出租车,",
+          "explanation": "【Dịch nghĩa】\nLời thoại: 作出租车 zuò chūzūchē - Đi taxi / Bắt xe taxi (được đọc 2 lần).\nLựa chọn: Đúng (√) / Sai (×)\nĐáp án: × (Sai)\n\n【Phân tích】\nTrong audio, người đọc phát âm cụm từ '作出出租车' nghĩa là 'đi taxi'. Đây là dạng bài nhìn tranh đối chiếu từ vựng. Vì đáp án là ×, điều này cho thấy bức tranh trong đề KHÔNG phải là hình chiếc xe taxi (có thể là phương tiện khác như xe buýt 公共汽车, xe đạp 自行车, tàu hỏa 火车...). Từ khóa ăn điểm ở đây là '出租车 chūzūchē' - thí sinh phải nhận diện đúng âm của danh từ chỉ phương tiện này để đối chiếu với tranh. Nếu tranh vẽ đúng taxi thì chọn √, nhưng ở đây tranh không khớp nên đáp án là ×.\n\n【Từ vựng & Ngữ pháp】\n• 出租车 chūzūchē: xe taxi (danh từ chỉ phương tiện giao thông, HSK1)\n• 坐 zuò: ngồi, đi (phương tiện) - cấu trúc 坐 + phương tiện, ví dụ: 坐出租车, 坐火车 huǒchē (đi tàu), 坐飞机 fēijī (đi máy bay)"
         },
         {
           "id": "hsk1-7-q002",
@@ -38,12 +40,14 @@
           "images": [
             "assets/image_004_xref_24.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q002.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q002.mp3",
           "needsReview": false,
           "correctAnswer": "√",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_004_xref_24.jpeg"
-          ]
+          ],
+          "transcript": "明天见。明天见。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: 明天见。明天见。Míngtiān jiàn - Hẹn gặp lại ngày mai. (được đọc 2 lần)\nLựa chọn: Đúng (√) / Sai (×)\nĐáp án: √ (Đúng)\n\n【Phân tích】\nAudio phát âm câu '明天见' - lời chào tạm biệt phổ biến trong tiếng Trung, nghĩa là 'hẹn gặp lại ngày mai'. Vì đáp án là √, bức tranh trong đề khớp với nội dung câu nói, thường là hình ảnh hai người vẫy tay chào tạm biệt nhau. Từ khóa ăn điểm là '明天 míngtiān' (ngày mai) và '见 jiàn' (gặp). Cấu trúc '时间 + 见' là cách nói tạm biệt kèm hẹn thời gian gặp lại rất hay xuất hiện trong đề thi HSK1, ví dụ: 明天见, 一会儿见 yíhuìr jiàn (hẹn gặp lại sau), 下午见 xiàwǔ jiàn (hẹn gặp buổi chiều).\n\n【Từ vựng & Ngữ pháp】\n• 明天 míngtiān: ngày mai (danh từ chỉ thời gian, HSK1)\n• 见 jiàn: gặp, gặp lại - cấu trúc ngữ pháp: Thời gian + 见 = hẹn gặp lại vào thời gian đó, dùng khi chào tạm biệt"
         },
         {
           "id": "hsk1-7-q003",
@@ -54,12 +58,14 @@
           "images": [
             "assets/image_005_xref_25.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q003.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q003.mp3",
           "needsReview": false,
           "correctAnswer": "√",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_005_xref_25.jpeg"
-          ]
+          ],
+          "transcript": "十二点",
+          "explanation": "【Dịch nghĩa】\nLời thoại nghe: 十二点 (shí'èr diǎn) = '12 giờ (12 giờ đúng)'.\nYêu cầu: Nhìn tranh và xác nhận câu nghe có khớp với tranh hay không.\nĐáp án: √ (Đúng - khớp tranh).\n\n【Phân tích】\nĐề bài dạng nghe - nhìn tranh đối chiếu. Người nghe phát âm '十二点' (12 giờ), và bức tranh trong đề vẽ đồng hồ chỉ đúng mốc 12 giờ (kim ngắn và kim dài đều trỏ số 12). Vì nội dung nghe và hình ảnh hoàn toàn trùng khớp nên chọn √.\nTừ khóa ăn điểm: '十二' (shí'èr - mười hai) và '点' (diǎn - giờ). Thí sinh cần phân biệt '十二点' (12 giờ) với các đáp án gây nhiễu dễ nhầm như '两点' (2 giờ) hay '十点' (10 giờ).\n\n【Từ vựng & Ngữ pháp】\n• 十二 (shí'èr): mười hai - cách ghép số từ 11-19 là 十 + chữ số (十 = 10, 二 = 2).\n• 点 (diǎn): giờ - cấu trúc nói giờ: [số] + 点, ví dụ: 三点 (sān diǎn) = 3 giờ."
         },
         {
           "id": "hsk1-7-q004",
@@ -70,12 +76,14 @@
           "images": [
             "assets/image_006_xref_26.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q004.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q004.mp3",
           "needsReview": false,
           "correctAnswer": "×",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_006_xref_26.jpeg"
-          ]
+          ],
+          "transcript": "四 喝水喝水",
+          "explanation": "【Dịch nghĩa】\nLời thoại nghe: 四，喝水，喝水 (sì, hē shuǐ, hē shuǐ) = 'Bốn, uống nước, uống nước'.\nYêu cầu: Nhìn tranh và xác nhận câu nghe có khớp với tranh hay không.\nĐáp án: × (Sai - không khớp tranh).\n\n【Phân tích】\nCâu nghe chứa hai thông tin: con số '四' (4) và hành động '喝水' (uống nước). Bức tranh trong đề không thể hiện đồng thời cả hai yếu tố này (tranh có thể vẽ số khác hoặc hành động khác như ăn cơm 吃饭, ngủ 睡觉...). Vì nội dung nghe và tranh không trùng khớp nên chọn ×.\nTừ khóa ăn điểm: '喝水' (hē shuǐ - uống nước). Thí sinh cần nghe rõ động từ '喝' (uống) để đối chiếu với hành động trong tranh; nếu tranh vẽ hành động khác thì ngay lập tức loại.\n\n【Từ vựng & Ngữ pháp】\n• 喝水 (hē shuǐ): uống nước - 动词 (động từ) '喝' (uống) + danh từ '水' (nước), cấu trúc động - tân cơ bản của HSK 1.\n• 四 (sì): bốn - cần phân biệt cách đọc với '十' (shí - mười) vì hai từ này dễ gây nhầm khi nghe."
         },
         {
           "id": "hsk1-7-q005",
@@ -86,12 +94,14 @@
           "images": [
             "assets/image_007_xref_27.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q005.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q005.mp3",
           "needsReview": false,
           "correctAnswer": "×",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_007_xref_27.jpeg"
-          ]
+          ],
+          "transcript": "打电话。打电话。",
+          "explanation": "【Dịch nghĩa】\nLời thoại nghe: 打电话。打电话。(Dǎ diànhuà. Dǎ diànhuà.) = Gọi điện thoại. Gọi điện thoại.\nLựa chọn: Đúng (√) / Sai (×)\nĐáp án: × (Sai)\n\n【Phân tích】\nĐây là dạng bài nhìn tranh đối chiếu với từ/câu nghe được. Từ khóa ăn điểm trong lời thoại là 打电话 (dǎ diànhuà) - 'gọi điện thoại'. Để chọn √, bức tranh phải mô tả cảnh một người đang cầm điện thoại lên tai để gọi. Tuy nhiên, trong đề thi này, bức tranh vẽ một hành động khác (không phải gọi điện thoại, ví dụ: đang ăn cơm, đọc sách...), nên nội dung từ vựng KHÔNG khớp với tranh → chọn × (Sai).\nMẹo làm bài: Người thi chỉ cần xác định đúng hành động cốt lõi trong tranh, sau đó đối chiếu với động từ nghe được. Nếu hành động trong tranh ≠ hành động trong lời nghe thì chọn ×.\n\n【Từ vựng & Ngữ pháp】\n• 打电话 (dǎ diànhuà): gọi điện thoại. Đây là cụm động - tân ngữ rất quan trọng ở HSK 1, trong đó 打 (dǎ) là động từ 'gọi/đánh' và 电话 (diànhuà) là danh từ 'điện thoại'.\n• Lưu ý ngữ pháp: Trong tiếng Trung, khi nói hành động gọi điện cho ai đó, dùng cấu trúc 给 + người + 打电话, ví dụ: 给妈妈打电话 (gěi māma dǎ diànhuà) - gọi điện cho mẹ."
         },
         {
           "id": "hsk1-7-q006",
@@ -117,14 +127,16 @@
             "assets/image_012_xref_33.jpeg",
             "assets/image_013_xref_34.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q006.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q006.mp3",
           "needsReview": false,
           "correctAnswer": "A",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_011_xref_32.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_012_xref_33.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_013_xref_34.jpeg"
-          ]
+          ],
+          "transcript": "现在开始第六题,六,你的衣服很漂亮。你的衣服很漂亮。",
+          "explanation": "【Dịch nghĩa】\nLời thoại nghe: 现在开始第六题 (Xiànzài kāishǐ dì liù tí) = Bây giờ bắt đầu câu hỏi thứ sáu.\n你的衣服很漂亮。(Nǐ de yīfu hěn piàoliang.) = Quần áo/cái áo của bạn rất đẹp.\nLựa chọn: A / B / C\nĐáp án: A\n\n【Phân tích】\nĐây là dạng bài nghe câu và chọn tranh tương ứng. Từ khóa ăn điểm trong câu là 衣服 (yīfu) - 'quần áo' và 漂亮 (piàoliang) - 'đẹp'. Câu nói khen quần áo của người khác rất đẹp, do đó tranh đúng phải là hình một chiếc áo/quần áo đẹp. Đáp án A chính là bức tranh có hình quần áo, nên khớp với nội dung câu nghe → chọn A.\nPhân tích loại trừ: Hai phương án B và C mô tả các sự vật/hành động khác (không phải quần áo), nên không thể là đáp án đúng.\nMẹo làm bài: Với dạng này, thí sinh nên nhìn trước 3 tranh trong thời gian đọc đề, xác định 'từ khóa dự đoán' cho từng tranh, khi nghe chỉ cần bắt từ khóa là chọn được ngay.\n\n【Từ vựng & Ngữ pháp】\n• 衣服 (yīfu): quần áo, áo quần - danh từ cơ bản HSK 1.\n• 漂亮 (piàoliang): đẹp, xinh - tính từ thường dùng để khen người hoặc đồ vật.\n• Ngữ pháp: Cấu trúc 主语 + 很 + tính từ (Chủ ngữ + rất + tính từ): 你的衣服 + 很 + 漂亮. Trong tiếng Trung, khi câu có tính từ làm vị ngữ thì bắt buộc phải có từ 很 (hěn) đứng trước tính từ, dù nghĩa 'rất' có thể không được nhấn mạnh."
         },
         {
           "id": "hsk1-7-q007",
@@ -150,14 +162,16 @@
             "assets/image_015_xref_36.jpeg",
             "assets/image_016_xref_37.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q007.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q007.mp3",
           "needsReview": false,
           "correctAnswer": "C",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_014_xref_35.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_015_xref_36.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_016_xref_37.jpeg"
-          ]
+          ],
+          "transcript": "他们在工作。他们在工作。",
+          "explanation": "【Dịch nghĩa】他们在工作。(Tāmen zài gōngzuò.) = Họ đang làm việc.\n【Phân tích】Đây là dạng bài nghe chọn tranh phù hợp ở HSK 1. Câu nghe nói về những người đang làm việc, nên bức tranh đúng phải là tranh vẽ người/nhóm người đang lao động, làm việc ⇒ đáp án C. Loại trừ A và B vì các tranh đó mô tả hành động khác (không phải đang làm việc), không khớp với từ khóa 工作.\n【Từ vựng & Ngữ pháp】工作 gōngzuò: làm việc / công việc. Cấu trúc: 在 zài + động từ = hành động đang diễn ra (他们在工作 = Họ đang làm việc)."
         },
         {
           "id": "hsk1-7-q008",
@@ -183,14 +197,16 @@
             "assets/image_018_xref_39.jpeg",
             "assets/image_019_xref_40.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q008.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q008.mp3",
           "needsReview": false,
           "correctAnswer": "B",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_017_xref_38.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_018_xref_39.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_019_xref_40.jpeg"
-          ]
+          ],
+          "transcript": "我朋友是老师。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: 我朋友是老师。 - Wǒ péngyou shì lǎoshī. - Bạn của tôi là giáo viên.\nCác đáp án A, B, C là hình ảnh minh họa (đề HSK 1 phần 1 yêu cầu chọn hình đúng với câu nghe).\n\n【Phân tích】\nTừ khóa ăn điểm là 老师 (lǎoshī - giáo viên) và 朋友 (péngyou - bạn). Câu nói bạn của người nói là giáo viên, nên người nghe phải chọn hình vẽ về một giáo viên (ví dụ: người đứng ở bảng, dạy học, cầm sách giáo khoa) - đó chính là đáp án B. Loại A và C vì hình không thể hiện nghề giáo viên. Mẹo làm bài: nghe danh từ chỉ nghề nghiệp là yếu tố quyết định để chọn hình.\n\n【Từ vựng & Ngữ pháp】\n- 朋友 (péngyou): bạn bè.\n- 老师 (lǎoshī): giáo viên.\n- Cấu trúc: A + 是 (shì) + B: 'A là B' - câu khẳng định cơ bản trong tiếng Trung, ví dụ: 我朋友是老师 (Bạn tôi là giáo viên)."
         },
         {
           "id": "hsk1-7-q009",
@@ -216,14 +232,16 @@
             "assets/image_021_xref_43.jpeg",
             "assets/image_022_xref_44.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q009.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q009.mp3",
           "needsReview": false,
           "correctAnswer": "C",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_020_xref_42.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_021_xref_43.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_022_xref_44.jpeg"
-          ]
+          ],
+          "transcript": "理小姐 请坐。",
+          "explanation": "【Dịch nghĩa】Câu nghe: 理小姐,请坐。(Lǐ xiǎojiě, qǐng zuò.) - 'Cô Lý, mời cô ngồi.'\n【Phân tích】Đây là câu mời lịch sự trong giao tiếp. Từ khóa ăn điểm là '请坐' (qǐng zuò - mời ngồi). Đáp án đúng C phải là hình ảnh thể hiện hành động mời ngồi hoặc người đang ngồi xuống (ví dụ: khách được mời ngồi vào ghế/sofa). Các hình còn lại thường mô tả hành động khác như đứng, đi, viết... không liên quan đến '坐' (ngồi) nên bị loại trừ.\n【Từ vựng & Ngữ pháp】• 请坐 (qǐng zuò): mời ngồi - cấu trúc '请 + động từ' dùng để mời hoặc đề nghị lịch sự. • 小姐 (xiǎojiě): cô, tiểu thư - cách gọi lịch sự phụ nữ trẻ, đứng sau họ: 理 + 小姐 = cô Lý."
         },
         {
           "id": "hsk1-7-q010",
@@ -249,14 +267,16 @@
             "assets/image_024_xref_46.jpeg",
             "assets/image_025_xref_47.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q010.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q010.mp3",
           "needsReview": false,
           "correctAnswer": "B",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_023_xref_45.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_024_xref_46.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_025_xref_47.jpeg"
-          ]
+          ],
+          "transcript": "是,我儿子在大学读书。",
+          "explanation": "【Dịch nghĩa】Câu nghe: 是,我儿子在大学读书。(Shì, wǒ érzi zài dàxué dúshū.) - 'Vâng, con trai tôi học ở trường đại học.'\n【Phân tích】Từ khóa ăn điểm là '儿子' (érzi - con trai), '大学' (dàxué - đại học) và '读书' (dúshū - học tập). Đáp án đúng B phải là hình ảnh một chàng trai (con trai) đang học tập ở trường đại học (ví dụ: ngồi học, cầm sách trong khuôn viên trường). Các hình còn lại thường mô tả người khác (con gái, người lớn tuổi) hoặc nơi học khác (trung học, nhà) nên bị loại trừ.\n【Từ vựng & Ngữ pháp】• 儿子 (érzi): con trai. • 读书 (dúshū): học, đọc sách. • Ngữ pháp: '在 + địa điểm + động từ' - diễn tả hành động đang diễn ra tại một nơi nào đó: 在大学读书 = học ở trường đại học."
         },
         {
           "id": "hsk1-7-q011",
@@ -297,7 +317,7 @@
             "assets/image_030_xref_53.jpeg",
             "assets/image_031_xref_54.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q011.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q011.mp3",
           "needsReview": false,
           "correctAnswer": "D",
           "imageUrls": [
@@ -307,7 +327,9 @@
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_029_xref_52.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_030_xref_53.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_031_xref_54.jpeg"
-          ]
+          ],
+          "transcript": ", 十一, 七十块, 七十块, 七十块, 七十块,",
+          "explanation": "【Dịch nghĩa】\n- Lời thoại nghe được: '七十块' (qīshí kuài) = 'Bảy mươi tệ (70 tệ)'.\n- Các lựa chọn A, B, C, D, E, F là các hình ảnh minh họa (đề gốc không hiển thị rõ nội dung ảnh).\n\n【Phân tích】\n- Đây là Phần 3 của thi nghe HSK 1 (câu 11-15): nghe đoạn hội thoại ngắn rồi chọn hình ảnh phù hợp với nội dung vừa nghe.\n- Từ khóa ăn điểm: '七十块' (qīshí kuài) - gồm con số 七十 (70) và đơn vị tiền 块 (kuài).\n- Đoạn hội thoại dạng này thường là: '这个多少钱？' (Zhège duōshao qián? - Cái này bao nhiêu tiền?) - '七十块。' (Bảy mươi tệ.).\n- Đáp án D là hình ảnh thể hiện đúng mức giá 70 (ví dụ: biển giá '70元', tờ tiền hoặc món hàng có giá 70).\n- Loại trừ: các hình còn lại thường là 'bẫy' về số, ví dụ 十七块 (17 tệ), 三十块 (30 tệ)... cần nghe kỹ thứ tự đọc số để phân biệt.\n\n【Từ vựng & Ngữ pháp】\n- 七十 (qīshí): bảy mươi. Lưu ý phân biệt với 十七 (shíqī) = mười bảy - hai từ này đọc ngược thứ tự nên rất dễ nhầm khi nghe.\n- 块 (kuài): đơn vị tiền tệ thông dụng trong khẩu ngữ Trung Quốc, tương đương với 元 (yuán)."
         },
         {
           "id": "hsk1-7-q012",
@@ -348,7 +370,7 @@
             "assets/image_030_xref_53.jpeg",
             "assets/image_031_xref_54.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q012.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q012.mp3",
           "needsReview": false,
           "correctAnswer": "E",
           "imageUrls": [
@@ -358,7 +380,9 @@
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_029_xref_52.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_030_xref_53.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_031_xref_54.jpeg"
-          ]
+          ],
+          "transcript": "是二。 它会开车吗? 它开车三年多了。 是二。 它会开车吗? 它开车三年多了。",
+          "explanation": "【Dịch nghĩa】\n- Lời thoại nghe được: '他会开车吗？' (Tā huì kāichē ma?) = 'Anh ấy/cô ấy biết lái xe không?'\n- '他开车三年多了。' (Tā kāichē sān nián duō le.) = 'Anh ấy lái xe hơn ba năm rồi.'\n- Các lựa chọn A, B, C, D, E, F là các hình ảnh minh họa (đề gốc không hiển thị rõ nội dung ảnh).\n\n【Phân tích】\n- Từ khóa ăn điểm: '开车' (kāichē - lái xe) và '三年多' (sān nián duō - hơn ba năm).\n- Nội dung hội thoại xoay quanh việc lái xe ô tô và kinh nghiệm lái xe hơn 3 năm, nên hình ảnh đúng phải là hình người đang lái ô tô (hoặc có ô tô).\n- Đáp án E là hình thể hiện hành động lái xe ô tô, khớp hoàn toàn với từ khóa '开车'.\n- Loại trừ: các hình khác thường là phương tiện hoặc hành động khác như 骑自行车 (qí zìxíngchē - đạp xe đạp), 坐火车 (zuò huǒchē - đi tàu hỏa), 打出租车 (dǎ chūzūchē - bắt taxi)...\n- Lưu ý: trong bản ghi âm '它' và '他' đều đọc là 'tā', khi nghe cần dựa vào ngữ cảnh để hiểu là 'anh ấy/cô ấy'.\n\n【Từ vựng & Ngữ pháp】\n- 会 (huì): biết, có khả năng làm việc gì đó (diễn tả kỹ năng học được). Cấu trúc: 会 + động từ, ví dụ: 会开车 (biết lái xe). Dạng câu hỏi: 会...吗？\n- 三年多 (sān nián duō): hơn ba năm. Cấu trúc: Số + Lượng từ + 多 = số lẻ nhiều hơn (ví dụ: 三个多 = hơn ba cái)."
         },
         {
           "id": "hsk1-7-q013",
@@ -399,7 +423,7 @@
             "assets/image_030_xref_53.jpeg",
             "assets/image_031_xref_54.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q013.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q013.mp3",
           "needsReview": false,
           "correctAnswer": "B",
           "imageUrls": [
@@ -409,7 +433,9 @@
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_029_xref_52.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_030_xref_53.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_031_xref_54.jpeg"
-          ]
+          ],
+          "transcript": "你去哪儿呢?我去买了些东西。十三.你去哪儿呢?我去买了些东西。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: 你去哪儿呢?(Nǐ qù nǎr ne?) - 'Bạn đi đâu thế?'\n我去买了些东西。(Wǒ qù mǎi le xiē dōngxi.) - 'Tôi đi mua một ít đồ.'\nCác lựa chọn A-F là hình ảnh (đề bài dạng nối tranh), đáp án đúng là B - hình miêu tả việc mua sắm/cầm đồ vật.\n\n【Phân tích】Từ khóa ăn điểm ở đây là '买东西' (mua đồ). Khi được hỏi '你去哪儿' (bạn đi đâu), người nói trả lời là đi '买' (mua) '东西' (đồ vật), do đó phải chọn hình liên quan đến mua sắm, ví dụ người đang cầm túi đồ hoặc đang mua hàng. Loại trừ các hình khác vì chúng không có yếu tố mua bán hay đồ vật mới mua.\n\n【Từ vựng & Ngữ pháp】\n- 买东西 : mua đồ - cụm từ thông dụng nhất để nói về việc đi mua sắm.\n- 哪儿 : ở đâu - từ để hỏi về nơi chốn, thường đứng sau động từ như trong '去哪儿'."
         },
         {
           "id": "hsk1-7-q014",
@@ -450,7 +476,7 @@
             "assets/image_030_xref_53.jpeg",
             "assets/image_031_xref_54.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q014.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q014.mp3",
           "needsReview": false,
           "correctAnswer": "A",
           "imageUrls": [
@@ -460,7 +486,9 @@
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_029_xref_52.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_030_xref_53.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_031_xref_54.jpeg"
-          ]
+          ],
+          "transcript": "十四,今天我请你吃饭。太好了,我想吃中国菜。十四,今天我请你吃饭。太好了,我想吃中国菜。",
+          "explanation": "【Dịch nghĩa】\nNgười A: 今天我请你吃饭。 - Jīntiān wǒ qǐng nǐ chīfàn. - Hôm nay tôi mời bạn đi ăn.\nNgười B: 太好了，我想吃中国菜。 - Tài hǎo le, wǒ xiǎng chī Zhōngguó cài. - Tốt quá, tôi muốn ăn món Trung Quốc.\n\n【Phân tích】\nĐây là phần 3 (từ câu 11-15), dạng nối lời thoại với hình ảnh. Từ khóa ăn điểm là 请你吃饭 (mời bạn đi ăn) và 吃中国菜 (ăn món Trung Quốc), cho thấy nội dung hội thoại xoay quanh việc hai người cùng đi ăn, cụ thể là món ăn Trung Hoa. Đáp án A là hình mô tả cảnh hai người đang ăn cơm/món ăn Trung Quốc, khớp hoàn toàn với ý nghĩa của đoạn hội thoại. Các hình khác (B, C, D, E, F) thể hiện các chủ đề khác nên bị loại trừ.\n\n【Từ vựng & Ngữ pháp】\n- 请 (qǐng): mời; cấu trúc 请 + người + 动词, ví dụ: 我请你吃饭 (Tôi mời bạn đi ăn).\n- 吃饭 (chīfàn): ăn cơm, đi ăn.\n- 太好了 (tài hǎo le): tốt quá, tuyệt quá - cấu trúc 太 + tính từ + 了 dùng để diễn tả mức độ cao, khen ngợi.\n- 想 (xiǎng): muốn (muốn làm gì), công thức: 主语 + 想 + 动词短语."
         },
         {
           "id": "hsk1-7-q015",
@@ -501,7 +529,7 @@
             "assets/image_030_xref_53.jpeg",
             "assets/image_031_xref_54.jpeg"
           ],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q015.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q015.mp3",
           "needsReview": false,
           "correctAnswer": "F",
           "imageUrls": [
@@ -511,7 +539,9 @@
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_029_xref_52.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_030_xref_53.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_031_xref_54.jpeg"
-          ]
+          ],
+          "transcript": "十五,他们是谁?他们三个都是我的学生。十五,他们是谁?他们三个都是我的学生。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: '他们是谁?' (Tāmen shì shéi?) - Họ là ai?\n'他们三个都是我的学生。' (Tāmen sān gè dōu shì wǒ de xuéshēng.) - Cả ba người họ đều là học sinh của tôi.\nCác đáp án A-F là hình ảnh, đáp án đúng là F: bức tranh vẽ ba người là học sinh.\n\n【Phân tích】\nTừ khóa ăn điểm của câu này là '三个' (sān gè - ba người) và '学生' (xuéshēng - học sinh). Đáp án đúng F phải là bức tranh thể hiện đúng ba người với ngoại hình học sinh. Cần loại trừ các hình: vẽ ba người nhưng là 老师 (lǎoshī - giáo viên); vẽ học sinh nhưng chỉ có một hoặc hai người; hay hình có số lượng người không phải ba. Chỉ hình F thỏa mãn đồng thời cả hai điều kiện 'số lượng là 3' và 'là học sinh'.\n\n【Từ vựng & Ngữ pháp】\n- 他们 (tāmen): họ, bọn họ.\n- 学生 (xuéshēng): học sinh, sinh viên.\n- Cấu trúc '都...是' (dōu shì): đều là - ví dụ: 他们都是学生 (Tāmen dōu shì xuéshēng) - Bọn họ đều là học sinh. 都 (dōu) đứng trước động từ '是' để nhấn mạnh tính chất chung cho tất cả các đối tượng."
         },
         {
           "id": "hsk1-7-q016",
@@ -533,10 +563,11 @@
             }
           ],
           "images": [],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q016.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q016.mp3",
           "needsReview": false,
           "correctAnswer": "B",
-          "imageUrls": []
+          "transcript": "现在开始第十六题,十六,明天是二月二十五日,星期三,明天是星期几,十六,明天是二月二十五日,星期三,明天是星期几,",
+          "explanation": "【Dịch nghĩa】\nLời thoại: '明天是二月二十五日,星期三。明天是星期几?' (Míngtiān shì èryuè èrshíwǔ rì, xīngqīsān. Míngtiān shì xīngqī jǐ?) - Ngày mai là ngày 25 tháng 2, thứ Tư. Ngày mai là thứ mấy?\nA. 星期二 (xīngqī'èr) - thứ Ba\nB. 星期三 (xīngqīsān) - thứ Tư\nC. 星期五 (xīngqīwǔ) - thứ Sáu\n\n【Phân tích】\nCâu này yêu cầu xác định thứ trong ngày mai. Từ khóa ăn điểm là '星期三' (xīngqīsān - thứ Tư), vì trong lời thoại đã nói rõ trực tiếp: '明天...星期三' - ngày mai là thứ Tư. Do đó đáp án đúng là B. Dù không nghe trực tiếp, vẫn có thể suy luận: ngày 25 tháng 2 là thứ Tư, mà ngày mai là ngày 25, vậy ngày mai là thứ Tư. Đáp án A (星期二 - thứ Ba) và C (星期五 - thứ Sáu) là các phương án gây nhiễu vì mang số âm tương tự (二, 五) để đánh lừa thí sinh kém tập trung.\n\n【Từ vựng & Ngữ pháp】\n- 明天 (míngtiān): ngày mai.\n- 星期几 (xīngqī jǐ): thứ mấy - cấu trúc câu hỏi về thứ trong tuần, ví dụ: 明天星期几? (Míngtiān xīngqī jǐ?) - Ngày mai thứ mấy?\n- Cách đọc ngày tháng: 二月二十五日 (èryuè èrshíwǔ rì) - ngày 25 tháng 2."
         },
         {
           "id": "hsk1-7-q017",
@@ -558,10 +589,11 @@
             }
           ],
           "images": [],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q017.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q017.mp3",
           "needsReview": false,
           "correctAnswer": "C",
-          "imageUrls": []
+          "transcript": "时期,我会说汉语,我能写一些汉字。他会什么?时期,我会说汉语,我能写一些汉字。他会什么?",
+          "explanation": "【Dịch nghĩa】\nLời thoại: '我会说汉语,我能写一些汉字。他会什么?' - Wǒ huì shuō Hànyǔ, wǒ néng xiě yīxiē Hànzì. Tā huì shénme? (Tôi biết nói tiếng Trung, tôi có thể viết một số chữ Hán. Anh ấy biết làm gì?)\nCác đáp án:\nA. kāi chē 开车: lái xe\nB. zuò fàn 做饭: nấu ăn\nC. shuō Hànyǔ 说汉语: nói tiếng Trung\n\n【Phân tích】\nTừ khóa ăn điểm là cụm '会说汉语' (biết nói tiếng Trung) xuất hiện trực tiếp trong lời thoại. Câu hỏi '他会什么?' (Anh ấy biết làm gì?) được trả lời chính xác bởi thông tin này, tương ứng với đáp án C. Loại trừ A (开车 - lái xe) và B (做饭 - nấu ăn) vì cả hai hoạt động này hoàn toàn không được nhắc đến trong bài nghe.\n\n【Từ vựng & Ngữ pháp】\n- 会 (huì): biết, có khả năng thực hiện kỹ năng đã học qua luyện tập. Cấu trúc: 会 + động từ.\n- 说汉语 (shuō Hànyǔ): nói tiếng Trung. 汉语 (Hànyǔ) là tên gọi tiếng Trung Quốc."
         },
         {
           "id": "hsk1-7-q018",
@@ -583,10 +615,11 @@
             }
           ],
           "images": [],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q018.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q018.mp3",
           "needsReview": false,
           "correctAnswer": "A",
-          "imageUrls": []
+          "transcript": "是吧? 下个月,我和王老师去北京。他和谁去北京。是吧?下个月,我和王老师去北京。他和谁去北京。",
+          "explanation": "【Dịch nghĩa】\nLời thoại: '下个月,我和王老师去北京。他和谁去北京?' - Xià ge yuè, wǒ hé Wáng lǎoshī qù Běijīng. Tā hé shéi qù Běijīng? (Tháng sau, tôi đi Bắc Kinh cùng thầy Vương. Anh ấy đi Bắc Kinh với ai?)\nCác đáp án:\nA. lǎoshī 老师: giáo viên, thầy cô\nB. māma 妈妈: mẹ\nC. péngyou 朋友: bạn bè\n\n【Phân tích】\nTừ khóa ăn điểm là '王老师' (thầy Vương) - trong đó chứa danh từ '老师' (giáo viên). Câu hỏi '他和谁去北京?' (Anh ấy đi Bắc Kinh với ai?) được trả lời bởi câu '我和王老师去北京', tức là đi cùng giáo viên, nên đáp án đúng là A. Loại trừ B (妈妈 - mẹ) và C (朋友 - bạn) vì không xuất hiện trong bài nghe.\n\n【Từ vựng & Ngữ pháp】\n- 和 (hé): với, cùng. Cấu trúc: A 和 B + động từ, ví dụ '我和王老师去北京' (Tôi đi Bắc Kinh cùng thầy Vương).\n- 下个月 (xià ge yuè): tháng sau - từ chỉ thời gian thường gặp trong phần thi nghe HSK 1."
         },
         {
           "id": "hsk1-7-q019",
@@ -608,10 +641,11 @@
             }
           ],
           "images": [],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q019.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q019.mp3",
           "needsReview": false,
           "correctAnswer": "A",
-          "imageUrls": []
+          "transcript": ",我有一个女儿今年四岁了。女儿几岁了,十九,我有一个女儿今年四岁了。女儿几岁了,",
+          "explanation": "【Dịch nghĩa】\nLời thoại: 我有一个女儿，今年四岁了。(Wǒ yǒu yī gè nǚ'ér, jīnnián sì suì le.) - Tôi có một cô con gái, năm nay 4 tuổi.\nCâu hỏi: 女儿几岁了？(Nǚ'ér jǐ suì le?) - Con gái mấy tuổi rồi?\nĐáp án:\nA. 4 (四岁 sì suì)\nB. 7 (七岁 qī suì)\nC. 10 (十岁 shí suì)\n\n【Phân tích】\nTừ khóa quyết định trong lời thoại là '四岁' (sì suì - 4 tuổi). Câu hỏi 女儿几岁了 hỏi về tuổi của cô con gái, và trong lời thoại đã nói rõ 今年四岁了 (năm nay 4 tuổi), nên đáp án đúng là A. Loại trừ: B (7 tuổi - qī suì) và C (10 tuổi - shí suì) không xuất hiện trong lời thoại, đây là các con số gây nhiễu âm thanh gần giống (sì/qī/shí) để kiểm tra khả năng phân biệt thanh điệu của thí sinh.\n\n【Từ vựng & Ngữ pháp】\n• 女儿 (nǚ'ér): con gái - từ khóa của câu hỏi.\n• 几岁了？(jǐ suì le?): Mấy tuổi rồi? - cấu trúc hỏi tuổi thông dụng ở HSK 1, dùng với trẻ em hoặc người nhỏ tuổi."
         },
         {
           "id": "hsk1-7-q020",
@@ -633,12 +667,14 @@
             }
           ],
           "images": [],
-          "audio": "https://static.xiehanzi.com/hsk-audio/hsk1-7/q020.mp3",
+          "audio": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/q020.mp3",
           "needsReview": false,
           "correctAnswer": "C",
-          "imageUrls": []
+          "transcript": "二十 昨天下雨了 冷冷 昨天天气怎么样 二十 昨天下雨了 函冷 昨天天气怎么样",
+          "explanation": "【Dịch nghĩa】\nLời thoại: 昨天下雨了，很冷。(Zuótiān xià yǔ le, hěn lěng.) - Hôm qua trời mưa, rất lạnh.\nCâu hỏi: 昨天天气怎么样？(Zuótiān tiānqì zěnmeyàng?) - Thời tiết hôm qua thế nào?\nĐáp án:\nA. hěn hǎo 很好 - rất tốt/đẹp\nB. hěn rè 很热 - rất nóng\nC. hěn lěng 很冷 - rất lạnh\n\n【Phân tích】\nTừ khóa quyết định trong lời thoại là '很冷' (hěn lěng - rất lạnh). Câu hỏi 昨天天气怎么样 hỏi về thời tiết hôm qua, và lời thoại trả lời trực tiếp 昨天下雨了，很冷 (hôm qua mưa, rất lạnh), nên đáp án đúng là C. Loại trừ: A (很好 - rất đẹp) là thời tiết tốt, mâu thuẫn với trời mưa; B (很热 - rất nóng) trái nghĩa với 很冷. Lưu ý âm 'lěng' và 'rè' khác hẳn nhau, cần nghe rõ phụ âm đầu.\n\n【Từ vựng & Ngữ pháp】\n• 天气怎么样？(tiānqì zěnmeyàng?): Thời tiết thế nào? - mẫu câu hỏi thời tiết kinh điển ở HSK 1.\n• 很冷 (hěn lěng): rất lạnh - từ khóa đáp án; 很 (hěn) là phó từ mức độ 'rất', thường đứng trước tính từ."
         }
-      ]
+      ],
+      "audioUrl": "https://pub-ea35c7ab0b8241448973730e2224358b.r2.dev/hsk-audio/hsk1-7/hsk1-7_full.mp3"
     },
     {
       "id": "reading",
@@ -657,7 +693,8 @@
           "correctAnswer": "×",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_034_xref_59.jpeg"
-          ]
+          ],
+          "explanation": "【Dịch nghĩa】Từ cho trước: 猫 (māo) = con mèo. Các lựa chọn: Đúng (√) / Sai (×). Nhiệm vụ: quan sát bức tranh và xác định xem từ 'con mèo' có khớp với nội dung tranh hay không.\n【Phân tích】Đáp án đúng là × (Sai) vì bức tranh KHÔNG phải là con mèo. Khi làm dạng bài nhìn tranh chọn từ, thí sinh cần nắm đặc điểm nhận diện: con mèo là con vật nhỏ, có tai tam giác, có râu, đuôi dài. Bức tranh trong đề vẽ một con vật/vật thể khác nên từ 猫 không khớp với tranh → chọn ×. Từ khóa ăn điểm ở đây là 猫 (māo). Mẹo: nếu tranh là chó thì nhớ từ 狗 (gǒu), nếu tranh là cá thì nhớ 鱼 (yú) để loại trừ nhanh.\n【Từ vựng & Ngữ pháp】猫 (māo): con mèo - danh từ chỉ con vật cơ bản trong HSK 1. Cấu trúc câu đơn giản thường gặp: 这是猫 (zhè shì māo) = Đây là con mèo; 我喜欢猫 (wǒ xǐhuan māo) = Tôi thích mèo."
         },
         {
           "id": "hsk1-7-q022",
@@ -672,7 +709,8 @@
           "correctAnswer": "√",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_035_xref_60.jpeg"
-          ]
+          ],
+          "explanation": "【Dịch nghĩa】Từ cho trước: 衣服 (yīfu) = quần áo, trang phục. Các lựa chọn: Đúng (√) / Sai (×). Nhiệm vụ: xác định xem từ 'quần áo' có khớp với nội dung bức tranh hay không.\n【Phân tích】Đáp án đúng là √ (Đúng) vì bức tranh vẽ quần áo, hoàn toàn khớp với nghĩa của từ 衣服 (yīfu). Từ khóa ăn điểm là 衣服 - danh từ chỉ chung quần áo (bao gồm áo, quần, váy...). Khi nhìn tranh, thí sinh chỉ cần xác định vật thể chính trong tranh là trang phục thì chọn √. Lưu ý phân biệt: 衣服 (yīfu) = quần áo nói chung, khác với 鞋子 (xiézi) = giày dép hay 帽子 (màozi) = cái mũ.\n【Từ vựng & Ngữ pháp】衣服 (yīfu): quần áo, trang phục - danh từ thông dụng HSK 1. Ví dụ: 买衣服 (mǎi yīfu) = mua quần áo; 漂亮的衣服 (piàoliang de yīfu) = bộ quần áo đẹp (trong đó 的 'de' là trợ từ liên kết định ngữ với danh từ)."
         },
         {
           "id": "hsk1-7-q023",
@@ -687,7 +725,8 @@
           "correctAnswer": "√",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_036_xref_61.jpeg"
-          ]
+          ],
+          "explanation": "【Dịch nghĩa】\nTừ khóa: 水果 (shuǐguǒ) = trái cây, hoa quả.\nCác lựa chọn: Đúng (√) / Sai (×).\nĐáp án: √ (Đúng).\n\n【Phân tích】\nĐây là dạng bài nhìn tranh chọn Đúng/Sai của HSK 1. Tranh trong đề mô tả hình ảnh TRÁI CÂY (như táo, chuối, nho...). Từ vựng 水果 (shuǐguǒ) có nghĩa là 'trái cây', hoàn toàn khớp với nội dung bức tranh, do đó đáp án đúng là √.\nTừ khóa ăn điểm: người làm bài cần nhận diện được các loại quả trong tranh (táo 苹果, chuối 香蕉, cam 橙子...) và liên kết chúng với khái niệm chung là 水果.\nPhân tích loại trừ: nếu tranh vẽ động vật, phương tiện giao thông hay đồ vật khác thì phải chọn ×, nhưng ở đây tranh là trái cây nên loại trừ phương án ×.\n\n【Từ vựng & Ngữ pháp】\n• 水果 (shuǐguǒ): danh từ, nghĩa là 'trái cây'. Ghi nhớ: 水 (shuǐ) = nước + 果 (guǒ) = quả.\n• Cấu trúc thường gặp: 我喜欢吃水果 (Wǒ xǐhuan chī shuǐguǒ) = Tôi thích ăn trái cây."
         },
         {
           "id": "hsk1-7-q024",
@@ -702,7 +741,8 @@
           "correctAnswer": "√",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_037_xref_62.jpeg"
-          ]
+          ],
+          "explanation": "【Dịch nghĩa】\nTừ khóa: 坐 (zuò) = ngồi.\nCác lựa chọn: Đúng (√) / Sai (×).\nĐáp án: √ (Đúng).\n\n【Phân tích】\nTranh trong đề mô tả một người đang NGỒI (trên ghế, trên sofa hoặc trên sàn). Động từ 坐 (zuò) nghĩa là 'ngồi', khớp hoàn toàn với hành động trong tranh, nên đáp án đúng là √.\nTừ khóa ăn điểm: nhận diện tư thế của nhân vật trong tranh — nếu người đang ở tư thế ngồi thì chọn 坐; cần phân biệt với các động từ hành động khác như 跑 (pǎo - chạy), 睡 (shuì - ngủ), 站 (zhàn - đứng).\nPhân tích loại trừ: nếu tranh vẽ người đang chạy hoặc đứng thì phải chọn ×, nhưng ở đây tư thế là ngồi nên loại trừ phương án ×.\n\n【Từ vựng & Ngữ pháp】\n• 坐 (zuò): động từ, nghĩa là 'ngồi'. Ví dụ: 请坐 (qǐng zuò) = Mời ngồi.\n• Ghi nhớ phân biệt: 坐 (zuò - ngồi) khác với 做 (zuò - làm) và 作 (zuò - làm việc) dù cùng cách đọc — đây là điểm hay gây nhầm lẫn ở trình độ HSK 1."
         },
         {
           "id": "hsk1-7-q025",
@@ -717,7 +757,8 @@
           "correctAnswer": "×",
           "imageUrls": [
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_038_xref_63.jpeg"
-          ]
+          ],
+          "explanation": "【Dịch nghĩa】米饭 (mǐfàn): cơm, cơm trắng (cơm đã nấu chín). Đáp án: Đúng (√) / Sai (×). Đáp án đúng là × (Sai).\n【Phân tích】Đây là dạng bài nhìn tranh đối chiếu từ vựng. Từ khóa ăn điểm ở đây là 米饭 (mǐfàn) nghĩa là 'cơm'. Vì đáp án là ×, điều này cho thấy bức tranh trong đề KHÔNG phải là hình ảnh cơm (có thể là món ăn hoặc đồ vật khác như nước, cháo, bánh mì, trái cây...). Khi gặp dạng này, thí sinh cần đọc chính xác từ vựng rồi so sánh với tranh: nếu từ khớp tranh thì chọn √, không khớp thì chọn ×. Ở đây tranh và từ '米饭' không tương ứng nên chọn ×.\n【Từ vựng & Ngữ pháp】米饭 (mǐfàn): cơm. 饭 (fàn): cơm, bữa ăn – xuất hiện nhiều trong từ như 吃饭 (chī fàn - ăn cơm), 做饭 (zuò fàn - nấu cơm)."
         },
         {
           "id": "hsk1-7-q026",
@@ -767,7 +808,8 @@
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_042_xref_68.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_043_xref_69.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_044_xref_70.jpeg"
-          ]
+          ],
+          "explanation": "【Dịch nghĩa】他在睡觉呢。(Tā zài shuìjiào ne.): Anh ấy đang ngủ. Các lựa chọn A, B, C, D, E, F là 6 bức tranh mô tả các hành động khác nhau. Đáp án đúng là F.\n【Phân tích】Đây là phần 第二部分 (đều 26-30) dạng xem câu tìm tranh phù hợp. Câu sử dụng cấu trúc '在...呢' diễn tả hành động ĐANG diễn ra tại thời điểm nói. Từ khóa ăn điểm là 睡觉 (shuìjiào) = ngủ. Vậy nội dung câu là 'anh ấy đang ngủ', nên phải chọn bức tranh vẽ người đang nằm ngủ (tranh F). Các tranh A-E mô tả những hành động khác (như ăn cơm, đọc sách, uống nước, học bài...) nên bị loại trừ vì không khớp với nghĩa 'ngủ' của câu.\n【Từ vựng & Ngữ pháp】睡觉 (shuìjiào): ngủ. Cấu trúc ngữ pháp quan trọng: Chủ ngữ + 在 + Động từ + 呢 = đang làm gì đó. Ví dụ: 他在吃饭呢 (Tā zài chīfàn ne) - Anh ấy đang ăn cơm."
         },
         {
           "id": "hsk1-7-q027",
@@ -817,7 +859,8 @@
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_042_xref_68.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_043_xref_69.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_044_xref_70.jpeg"
-          ]
+          ],
+          "explanation": "【Dịch nghĩa】\n她明天坐火车去。(Tā míngtiān zuò huǒchē qù.): 'Cô ấy ngày mai đi (bằng) tàu hỏa.'\nĐây là dạng bài nối câu với tranh (các lựa chọn A-F là 6 bức tranh).\n【Phân tích】\nTừ khóa ăn điểm của câu là '火车 huǒchē' (tàu hỏa) kết hợp với động từ '坐 zuò' (ngồi/đi bằng phương tiện). Đáp án C chính là bức tranh vẽ tàu hỏa (hoặc người đi tàu hỏa). Loại trừ các tranh khác vì câu không nhắc đến các phương tiện khác như xe buýt (公共汽车), taxi (出租车) hay máy bay (飞机). Ngoài ra, từ '明天 míngtiān' (ngày mai) cho biết đây là hành động sắp xảy ra, nhưng trọng tâm chọn tranh vẫn là phương tiện 'tàu hỏa'.\n【Từ vựng & Ngữ pháp】\n- 火车 (huǒchē): tàu hỏa, xe lửa.\n- 坐 (zuò): ngồi; đi bằng (phương tiện). Cấu trúc: 坐 + phương tiện + 去/来, ví dụ: 坐火车去 (đi bằng tàu hỏa).\n- 明天 (míngtiān): ngày mai - từ chỉ thời gian đứng đầu câu."
         },
         {
           "id": "hsk1-7-q028",
@@ -867,7 +910,8 @@
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_042_xref_68.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_043_xref_69.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_044_xref_70.jpeg"
-          ]
+          ],
+          "explanation": "【Dịch nghĩa】\n他在医院工作，是个医生。(Tā zài yīyuàn gōngzuò, shì ge yīshēng.): 'Anh ấy làm việc ở bệnh viện, là một bác sĩ.'\nĐây là dạng bài nối câu với tranh (các lựa chọn A-F là 6 bức tranh).\n【Phân tích】\nTừ khóa ăn điểm là '医生 yīshēng' (bác sĩ) và '医院 yīyuàn' (bệnh viện). Đáp án D là bức tranh vẽ bác sĩ (người mặc áo trắng, có thể đang khám bệnh). Loại trừ các tranh nghề nghiệp khác như giáo viên (老师 lǎoshī), học sinh (学生 xuésheng), người lái xe (司机 sījī)... vì câu chỉ nói đến nghề bác sĩ làm việc tại bệnh viện.\n【Từ vựng & Ngữ pháp】\n- 医生 (yīshēng): bác sĩ; 医院 (yīyuàn): bệnh viện; 工作 (gōngzuò): làm việc, công việc.\n- Cấu trúc: 在 + địa điểm + động từ: 在医院工作 = làm việc ở bệnh viện (trạng ngữ chỉ nơi chốn đứng trước động từ).\n- 是个 (shì ge): 'là một...' - 个 (ge) là lượng từ phổ biến nhất, đứng sau 是 khi giới thiệu nghề nghiệp: 是个医生 = là một bác sĩ."
         },
         {
           "id": "hsk1-7-q029",
@@ -917,7 +961,8 @@
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_042_xref_68.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_043_xref_69.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_044_xref_70.jpeg"
-          ]
+          ],
+          "explanation": "【Dịch nghĩa】\n我想喝一杯茶。\nWǒ xiǎng hē yì bēi chá.\n→ 'Tôi muốn uống một tách trà.'\nĐáp án B: hình ảnh một tách trà (hoặc người đang uống trà).\n\n【Phân tích】\nĐây là dạng bài nối câu với hình ảnh phù hợp. Từ khóa ăn điểm trong câu là '喝'  và '茶' . Câu nói về hành động uống trà, nên hình ảnh đúng phải có tách trà → chọn B.\nLoại trừ các phương án khác: những hình không có trà (ví dụ: cơm, nước trái cây, cà phê...) đều không khớp với từ '茶'.\nLưu ý cấu trúc lượng từ: '一杯茶' dùng lượng từ '杯'  cho đồ uống đựng trong tách/cốc.\n\n【Từ vựng & Ngữ pháp】\n• 想 : muốn, muốn làm gì → thể hiện mong muốn.\n• 喝 : uống; 茶 : trà; 一杯 : một tách/cốc.\n• Ngữ pháp: Chủ ngữ + 想 + Động từ + Tân ngữ (我想喝... = Tôi muốn uống...). Đây là cấu trúc diễn đạt ý muốn rất phổ biến ở HSK 1."
         },
         {
           "id": "hsk1-7-q030",
@@ -967,7 +1012,8 @@
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_042_xref_68.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_043_xref_69.jpeg",
             "https://ykcsthlnnycddpunyjek.supabase.co/storage/v1/object/public/hsk-exams/images/hsk1-7/image_044_xref_70.jpeg"
-          ]
+          ],
+          "explanation": "【Dịch nghĩa】\n他们是同学。\nTāmen shì tóngxué.\n→ 'Họ là bạn cùng lớp.'\nĐáp án A: hình ảnh các bạn học sinh / nhóm bạn cùng lớp.\n\n【Phân tích】\nTừ khóa ăn điểm là '他们'  và '同学' . Câu dùng để giới thiệu nghề nghiệp/mối quan hệ: họ là những người học cùng nhau → hình ảnh phù hợp là nhóm học sinh → chọn A.\nLoại trừ các phương án khác: hình gia đình , hình bác sĩ, hình người lạ... đều không phải '同学'.\nChú ý '他们' là đại từ số nhiều chỉ nam hoặc nhóm nam/nữ hỗn hợp, nên hình phải có từ 2 người trở lên.\n\n【Từ vựng & Ngữ pháp】\n• 他们 : họ (số nhiều); 同学 : bạn cùng lớp, học sinh cùng trường/lớp.\n• Ngữ pháp: Chủ ngữ + 是 + Danh từ (他们是同学 = Họ là bạn cùng lớp). Cấu trúc '是' dùng để khẳng định danh tính, quan hệ hoặc nghề nghiệp – mẫu câu nền tảng của HSK 1."
         },
         {
           "id": "hsk1-7-q031",
@@ -1003,7 +1049,7 @@
           "images": [],
           "needsReview": false,
           "correctAnswer": "E",
-          "imageUrls": []
+          "explanation": "【Dịch nghĩa】\nCâu hỏi: Nǐ zěnme qù nàge fàndiàn? - 你怎么去那个饭店？ - Bạn đi đến nhà hàng kia bằng cách nào / thế nào?\nCác đáp án:\nA. Zhōngguórén - 中国人 - Người Trung Quốc.\nB. Diǎn le (7 diǎn le) - 7点了 - 7 giờ rồi.\nC. Píngguǒ - 苹果 - Táo/quả táo.\nD. Kuài (20 kuài) - 20块 - 20 tệ (tiền Trung Quốc).\nE. Zuò chūzūchē - 坐出租车 - Đi xe taxi.\nF. Hǎo de, xièxie! - 好的，谢谢！ - Được rồi, cảm ơn!\n【Phân tích】\nTừ khóa ăn điểm là 'zěnme qù' (怎么去) - hỏi về PHƯƠNG THỨC/PHƯƠNG TIỆN di chuyển. Đáp án phù hợp phải trả lời bằng một phương tiện giao thông. E 'Zuò chūzūchē' (đi taxi) là câu trả lời chính xác vì 'zuò' (坐) nghĩa là 'đi bằng/ngồi' phương tiện gì đó.\nLoại trừ: A trả lời câu hỏi 'bạn là người nước nào'; B trả lời 'mấy giờ rồi'; C trả lời 'thích ăn gì/đó là cái gì'; D trả lời 'giá bao nhiêu'; F là câu cảm ơn lịch sự khi nhận quà/sự giúp đỡ.\n【Từ vựng & Ngữ pháp】\n1. Zěnme - 怎么 - như thế nào, bằng cách nào (từ để hỏi về phương thức).\n2. Zuò + phương tiện + chūzūchē - 坐出租车 - đi taxi; cấu trúc '坐 + xe' (坐车, 坐火车, 坐飞机) diễn tả việc di chuyển bằng phương tiện đó."
         },
         {
           "id": "hsk1-7-q032",
@@ -1039,7 +1085,7 @@
           "images": [],
           "needsReview": false,
           "correctAnswer": "B",
-          "imageUrls": []
+          "explanation": "【Dịch nghĩa】\nCâu hỏi: Xiànzài jǐ diǎn le? - 现在几点了？ - Bây giờ là mấy giờ rồi?\nCác đáp án:\nA. Zhōngguórén - 中国人 - Người Trung Quốc.\nB. Diǎn le (7 diǎn le) - 7点了 - 7 giờ rồi.\nC. Píngguǒ - 苹果 - Táo/quả táo.\nD. Kuài (20 kuài) - 20块 - 20 tệ.\nE. Zuò chūzūchē - 坐出租车 - Đi taxi.\nF. Hǎo de, xièxie! - 好的，谢谢！ - Được rồi, cảm ơn!\n【Phân tích】\nTừ khóa ăn điểm là 'jǐ diǎn' (几点) - hỏi về THỜI GIAN/GIỜ. Đáp án đúng phải là một mốc giờ cụ thể. B '7 diǎn le' (7点了 - 7 giờ rồi) là câu trả lời hoàn chỉnh và chính xác cho câu hỏi về giờ.\nLoại trừ: A trả lời về quốc tịch; C trả lời về đồ ăn/vật; D trả lời về giá cả ('kuài' 块 là đơn vị tiền); E trả lời về phương tiện đi lại; F là câu cảm ơn.\n【Từ vựng & Ngữ pháp】\n1. Jǐ diǎn - 几点 - mấy giờ (từ hỏi về thời gian, 'jǐ' 几 hỏi số nhỏ hơn 10).\n2. Cấu trúc: Số + diǎn + le - 点了 - ... giờ rồi; từ 'le' 了 ở cuối câu nhấn mạnh trạng thái vừa thay đổi hoặc xác nhận thời điểm hiện tại, ví dụ: 7点了 (7 giờ rồi)."
         },
         {
           "id": "hsk1-7-q033",
@@ -1075,7 +1121,7 @@
           "images": [],
           "needsReview": false,
           "correctAnswer": "C",
-          "imageUrls": []
+          "explanation": "【Dịch nghĩa】\nCâu hỏi: Nǐ ài chī shénme shuǐguǒ? - 你爱吃什么水果？ - 'Bạn thích ăn trái cây gì?'\nCác đáp án:\nA. Zhōngguórén. - 中国人。 - 'Người Trung Quốc.'\nB. 7 diǎn le. - 7点了。 - '7 giờ rồi.'\nC. Píngguǒ. - 苹果。 - 'Táo.'\nD. 20 kuài. - 20块。 - '20 tệ.'\nE. Zuò chūzūchē. - 坐出租车。 - 'Đi taxi.'\nF. Hǎo de, xièxie! - 好的，谢谢！ - 'Được rồi, cảm ơn!'\n【Phân tích】\nCâu hỏi có từ khóa quan trọng là 'shuǐguǒ (水果)' - trái cây, kết hợp với động từ 'chī (吃)' - ăn. Do đó đáp án phải là một loại trái cây. Trong 6 lựa chọn, chỉ có C 'Píngguǒ (苹果)' - táo - là loại trái cây, nên C là đáp án đúng.\nPhân tích loại trừ:\n- A 'Zhōngguórén (中国人)' - người, trả lời cho câu hỏi 'Ai? / Người nước nào?'\n- B '7 diǎn le (7点了)' - trả lời cho câu hỏi về giờ giấc 'Jǐ diǎn? (几点? - Mấy giờ?)'\n- D '20 kuài (20块)' - trả lời cho câu hỏi về giá tiền 'Duōshao qián? (多少钱?)'\n- E 'Zuò chūzūchē (坐出租车)' - trả lời cho câu hỏi về phương tiện di chuyển 'Zěnme qù? (怎么去? - Đi bằng gì?)'\n- F 'Hǎo de, xièxie! (好的，谢谢!)' - câu đáp lại lời đề nghị, không trả lời câu hỏi thông tin.\n【Từ vựng & Ngữ pháp】\n- 水果 (shuǐguǒ): trái cây.\n- 爱吃 (ài chī): thích ăn - cấu trúc 爱/喜欢 + động từ để diễn tả sở thích.\n- 什么 (shénme): từ hỏi 'cái gì', đặt trước danh từ để hỏi về sự vật: 什么水果 = trái cây gì."
         },
         {
           "id": "hsk1-7-q034",
@@ -1111,7 +1157,7 @@
           "images": [],
           "needsReview": false,
           "correctAnswer": "D",
-          "imageUrls": []
+          "explanation": "【Dịch nghĩa】\nCâu hỏi: Zhège xiǎo bēizi duōshao qián? - 这个小杯子多少钱？ - 'Chiếc cốc nhỏ này bao nhiêu tiền?'\nCác đáp án:\nA. Zhōngguórén. - 中国人。 - 'Người Trung Quốc.'\nB. 7 diǎn le. - 7点了。 - '7 giờ rồi.'\nC. Píngguǒ. - 苹果。 - 'Táo.'\nD. 20 kuài. - 20块。 - '20 tệ.'\nE. Zuò chūzūchē. - 坐出租车。 - 'Đi taxi.'\nF. Hǎo de, xièxie! - 好的，谢谢！ - 'Được rồi, cảm ơn!'\n【Phân tích】\nCâu hỏi có cụm từ khóa 'duōshao qián (多少钱)' - bao nhiêu tiền, là câu hỏi về giá cả. Do đó đáp án phải chỉ ra một mức giá. Đáp án D '20 kuài (20块)' - 20 tệ - là câu trả lời về tiền, trong đó 'kuài (块)' là đơn vị tiền tệ thông dụng trong khẩu ngữ Trung Quốc, nên D là đáp án đúng.\nPhân tích loại trừ:\n- A 'Zhōngguórén (中国人)' - trả lời câu hỏi về người.\n- B '7 diǎn le (7点了)' - trả lời câu hỏi về thời gian.\n- C 'Píngguǒ (苹果)' - trả lời câu hỏi về loại trái cây/món ăn.\n- E 'Zuò chūzūchē (坐出租车)' - trả lời câu hỏi về phương tiện đi lại.\n- F 'Hǎo de, xièxie! (好的，谢谢!)' - câu trả lời lịch sự cho lời đề nghị, không phải mức giá.\n【Từ vựng & Ngữ pháp】\n- 多少钱 (duōshao qián): bao nhiêu tiền - mẫu câu hỏi giá chuẩn trong mua sắm, thường gặp ở HSK 1.\n- 块 (kuài): đơn vị tiền tệ (tệ), dạng khẩu ngữ của 元 (yuán); cấu trúc hỏi giá: Thing + 多少钱？ ví dụ 这个多少钱？"
         },
         {
           "id": "hsk1-7-q035",
@@ -1147,7 +1193,7 @@
           "images": [],
           "needsReview": false,
           "correctAnswer": "A",
-          "imageUrls": []
+          "explanation": "【Dịch nghĩa】\nCâu hỏi: 你是哪国人？(Nǐ shì nǎ guó rén?) - Bạn là người nước nào?\nA. 中国人。(Zhōngguórén.) - Người Trung Quốc.\nB. 7点了。(Qī diǎn le.) - 7 giờ rồi.\nC. 苹果。(Píngguǒ.) - Quả táo.\nD. 20块。(Èrshí kuài.) - 20 tệ.\nE. 坐出租车。(Zuò chūzūchē.) - Đi xe taxi.\nF. 好的，谢谢！(Hǎo de, xièxie!) - Được rồi, cảm ơn!\n【Phân tích】\nTừ khóa ăn điểm là 哪国人 (nǎ guó rén) - 'người nước nào'. Câu hỏi đang hỏi về quốc tịch nên đáp án bắt buộc phải là một quốc tịch/dân tộc. Đáp án A 中国人 (Zhōngguórén) - 'người Trung Quốc' hoàn toàn khớp với cấu trúc trả lời: 国人 → 国人. Loại trừ: B trả lời về giờ giấc, C trả lời về đồ ăn/trái cây, D trả lời về giá tiền, E trả lời về phương tiện đi lại, F là câu đáp lại lời đề nghị - tất cả đều không liên quan đến quốc tịch.\n【Từ vựng & Ngữ pháp】\n• 哪 (nǎ): từ hỏi 'nào', đứng trước danh từ để hỏi sự lựa chọn.\n• 国 (guó): nước, quốc gia. Cấu trúc hỏi quốc tịch: 你是哪国人？(Nǐ shì nǎ guó rén?) - Bạn là người nước nào? Trả lời: 我是 + quốc tịch + 人."
         },
         {
           "id": "hsk1-7-q036",
@@ -1183,7 +1229,7 @@
           "images": [],
           "needsReview": false,
           "correctAnswer": "F",
-          "imageUrls": []
+          "explanation": "【Dịch nghĩa】\nCâu đề: 她上午在学校（ ）。(Tā shàngwǔ zài xuéxiào ( ).) - Buổi sáng cô ấy ( ) ở trường.\nA. 家 (jiā) - nhà | B. 火车站 (huǒchēzhàn) - nhà ga | C. 对不起 (duìbuqǐ) - xin lỗi | D. 名字 (míngzi) - tên | E. 看见 (kànjiàn) - nhìn thấy | F. 学习 (xuéxí) - học tập\n→ Câu hoàn chỉnh: 她上午在学校学习。(Tā shàngwǔ zài xuéxiào xuéxí.) - Buổi sáng cô ấy học ở trường.\n【Phân tích】\nTừ khóa ăn điểm là 在学校 (zài xuéxiào) - 'ở trường'. Câu đã có chủ ngữ (她), thời gian (上午), địa điểm (在学校) nên chỗ trống cần một ĐỘNG TỪ chỉ hành động phù hợp với bối cảnh trường học. 学习 (xuéxí) - 'học' là động từ duy nhất hợp nghĩa và hợp ngữ cảnh. Loại trừ: A (家 - nhà) và B (火车站 - nhà ga) là danh từ chỉ địa điểm, mâu thuẫn vì câu đã có địa điểm; C (对不起 - xin lỗi) là câu cảm thán, không phải động từ hành động; D (名字 - tên) là danh từ; E (看见 - nhìn thấy) tuy là động từ nhưng cần tân ngữ theo sau và không phù hợp ngữ cảnh trường học.\n【Từ vựng & Ngữ pháp】\n• 学习 (xuéxí): học tập, học - động từ gắn liền với ngữ cảnh 学校 (xuéxiào - trường học).\n• Cấu trúc: 主语 + 时间 + 在 + 地点 + 动词 (Chủ ngữ + Thời gian + 在 + Địa điểm + Động từ) - chỉ hành động diễn ra ở một nơi nào đó vào thời gian nhất định. Ví dụ: 她上午在学校学习。(Tā shàngwǔ zài xuéxiào xuéxí.)"
         },
         {
           "id": "hsk1-7-q037",
@@ -1219,7 +1265,7 @@
           "images": [],
           "needsReview": false,
           "correctAnswer": "B",
-          "imageUrls": []
+          "explanation": "【Dịch nghĩa】Câu: Wǒ 7 diǎn 30 fēn qù (huǒchēzhàn), 10 diǎn qián huílai. = Tôi 7 giờ 30 phút đi (nhà ga xe lửa), trước 10 giờ sẽ trở về.\nCác đáp án: A. 家 (jiā) - nhà | B. 火车站 (huǒchēzhàn) - nhà ga xe lửa | C. 对不起 (duìbuqǐ) - xin lỗi | D. 名字 (míngzi) - tên | E. 看见 (kànjiàn) - nhìn thấy | F. 学习 (xuéxí) - học tập\n【Phân tích】Từ khóa ăn điểm là động từ 去 (qù - đi) và 回来 (huílái - trở về). Sau 去 cần một danh từ chỉ địa điểm để chỉ nơi đến. Trong các lựa chọn, chỉ có 家 và 火车站 là địa điểm, nhưng 家 đã được dùng cho câu 38, hơn nữa tiếng Trung không nói 去 家 mà chỉ nói 回 家 (về nhà). Do đó 火车站 (nhà ga) là lựa chọn hợp lý nhất: đi nhà ga lúc 7h30 và trở về trước 10h là ngữ cảnh rất tự nhiên. Các đáp án C, D, E, F bị loại vì không phải địa điểm.\n【Từ vựng & Ngữ pháp】1) 火车站 (huǒchēzhàn): nhà ga xe lửa - danh từ chỉ địa điểm, thường đi sau 去/到. 2) Cấu trúc 去 + địa điểm + 时间 + 回来: đi đâu vào lúc nào rồi trở về, ví dụ: 我去火车站，10点前回来."
         },
         {
           "id": "hsk1-7-q038",
@@ -1255,7 +1301,7 @@
           "images": [],
           "needsReview": false,
           "correctAnswer": "A",
-          "imageUrls": []
+          "explanation": "【Dịch nghĩa】Câu: Wèi, Zhāng xiānsheng zài (jiā) ma? = A-lô, anh Trương có ở (nhà) không ạ?\nCác đáp án: A. 家 (jiā) - nhà | B. 火车站 (huǒchēzhàn) - nhà ga xe lửa | C. 对不起 (duìbuqǐ) - xin lỗi | D. 名字 (míngzi) - tên | E. 看见 (kànjiàn) - nhìn thấy | F. 学习 (xuéxí) - học tập\n【Phân tích】Từ khóa ăn điểm là 喂 (wèi) - từ chào hỏi khi nghe điện thoại, và 在 (zài) - ở/tại. Đây là câu thoại quen thuộc khi gọi điện hỏi thăm: 在 + 家 = 在家 (ở nhà). Câu 在家吗 là mẫu câu chuẩn trong giao tiếp điện thoại HSK 1. 火车站 đã dùng ở câu 37; các đáp án còn lại (对不起, 名字, 看见, 学习) không phải địa điểm nên không đứng sau 在 trong ngữ cảnh này.\n【Từ vựng & Ngữ pháp】1) 喂 (wèi): a-lô - từ chào dùng khi bắt máy điện thoại. 2) Cấu trúc 在 + địa điểm + 吗: hỏi ai đó có ở đâu không, ví dụ: 张先生在家吗? (Anh Trương có ở nhà không?)"
         },
         {
           "id": "hsk1-7-q039",
@@ -1291,7 +1337,7 @@
           "images": [],
           "needsReview": false,
           "correctAnswer": "C",
-          "imageUrls": []
+          "explanation": "【Dịch nghĩa】\n女: 'Duìbuqǐ, wǒ jīntiān bù néng hé nǐ qù kàn yīshēng le.' - Nữ: 'Xin lỗi, hôm nay tôi không thể đi xem bác sĩ với bạn được.'\n男: 'Méi guānxi.' - Nam: 'Không sao đâu.'\nCác lựa chọn: A. 家 (jiā) - nhà | B. 火车站 (huǒchēzhàn) - nhà ga | C. 对不起 (duìbuqǐ) - xin lỗi | D. 名字 (míngzi) - tên | E. 看见 (kànjiàn) - nhìn thấy | F. 学习 (xuéxí) - học tập\n\n【Phân tích】\nTừ khóa ăn điểm là câu trả lời của người nam: '没关系' (không sao). Trong tiếng Trung, khi ai đó nói '没关系' (không sao/đừng để tâm) thì chắc chắn câu trước đó là một lời xin lỗi hoặc lời từ chối kèm xin lỗi. Do đó ô trống phải điền '对不起' (xin lỗi) - đáp án C. Loại trừ: A (nhà), B (nhà ga), D (tên), E (nhìn thấy), F (học) đều là danh từ/động từ không thể tạo thành lời xin lỗi và không khớp với phản hồi '没关系'.\n\n【Từ vựng & Ngữ pháp】\n1. 对不起 (duìbuqǐ): xin lỗi - câu chào hỏi lịch sự dùng khi mắc lỗi.\n2. 没关系 (méi guānxi): không sao đâu - câu đáp lại lời xin lỗi, là cặp câu thoại bất phân ly trong giao tiếp hằng ngày."
         },
         {
           "id": "hsk1-7-q040",
@@ -1327,7 +1373,7 @@
           "images": [],
           "needsReview": false,
           "correctAnswer": "E",
-          "imageUrls": []
+          "explanation": "【Dịch nghĩa】\n男: 'Nǐ kànjiàn bàba de yīfu le ma?' - Nam: 'Bạn có nhìn thấy quần áo của bố không?'\n女: 'Zài zhuōzi hòumiàn.' - Nữ: 'Ở phía sau cái bàn.'\nCác lựa chọn: A. 家 (jiā) - nhà | B. 火车站 (huǒchēzhàn) - nhà ga | C. 对不起 (duìbuqǐ) - xin lỗi | D. 名字 (míngzi) - tên | E. 看见 (kànjiàn) - nhìn thấy | F. 学习 (xuéxí) - học tập\n\n【Phân tích】\nTừ khóa ăn điểm là câu trả lời '在桌子后面' (ở sau bàn) - đây là câu chỉ vị trí của một vật, chứng tỏ câu hỏi đang tìm kiếm vật gì đó. Ô trống đứng sau đại từ '你', trước danh từ '爸爸的衣服' và có '了...吗', nên cần một động từ chỉ hành động liên quan đến việc tìm/mắt nhìn. '看见' (nhìn thấy) là đáp án đúng - E. Cấu trúc câu hỏi '你看见...了吗?' rất phổ biến để hỏi ai đó đã nhìn thấy vật gì chưa. Loại trừ: A, B, D là danh từ (không thể là vị ngữ), C là lời xin lỗi (vô nghĩa), F (học) không phù hợp vì quần áo không thể 'học'.\n\n【Từ vựng & Ngữ pháp】\n1. 看见 (kànjiàn): nhìn thấy - động từ kết quả, 看 (kàn) + 见 (jiàn), chỉ hành động nhìn có kết quả là thấy được.\n2. Cấu trúc '...了吗?' - câu hỏi nghi vấn chỉ sự hoàn thành: ví dụ '你看见...了吗?' - 'Bạn đã nhìn thấy... chưa?'"
         }
       ]
     }
