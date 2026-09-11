@@ -44,6 +44,7 @@ model User {
   gameRecords GameRecord[]
   weakWords UserWeakWord[]
   videoLessons VideoLesson[]
+  readingProgress UserReadingProgress[]
 }
 
 enum AuthProvider {
@@ -383,4 +384,25 @@ model VideoLesson {
   @@index([level])
   @@index([isCommunity])
   @@index([createdAt])
+}
+
+// ═══════════════════════════════════════════
+// Tiến độ Đọc hiểu & Trắc nghiệm HSK (Reading Passages Progress)
+// ═══════════════════════════════════════════
+model UserReadingProgress {
+  id              Int      @id @default(autoincrement())
+  userId          Int
+  passageId       String   // ID bài đọc, ví dụ: "reading_hsk5_t08_p01"
+  hskLevel        Int      // Cấp độ HSK (1-6)
+  isRead          Boolean  @default(false)
+  quizScore       Int      @default(0) // Số câu trả lời đúng
+  quizTotal       Int      @default(0) // Tổng số câu trắc nghiệm
+  xpEarned        Int      @default(0) // Điểm XP đã trao (chống hack điểm lặp lại)
+  lastReadAt      DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, passageId])
+  @@index([userId, hskLevel])
+  @@index([userId, isRead])
 }

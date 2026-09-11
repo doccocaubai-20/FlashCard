@@ -2,7 +2,6 @@ import { Injectable, Logger, NotFoundException } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 import * as fs from 'fs';
 import * as path from 'path';
-import * as https from 'https';
 
 @Injectable()
 export class HskExamService {
@@ -83,105 +82,13 @@ export class HskExamService {
     return result;
   }
 
-  // 4. Get full exam details (with auto-fallback to live API if not yet synced)
+  // 4. Get full exam details (served 100% from local JSON data)
   async getExamDetail(testId: string) {
     const local = this.readJsonFile(`${testId}.json`);
     if (local) {
       return local;
     }
-
-    // Attempt to extract level from testId (e.g. "hsk1-1" -> level 1)
-    const match = testId.match(/hsk(\d)/i);
-    const level = match ? parseInt(match[1], 10) : 1;
-
-    this.logger.log(`Test ${testId} not found locally. Fetching on demand...`);
-    try {
-      const rawDetail: any = await this.fetchJson(
-        `https://api.xiehanzi.com/api/v1/hsk-tests/levels/${level}/${testId}`,
-      );
-      if (!rawDetail || !rawDetail.sections) {
-        throw new NotFoundException(`Không tìm thấy đề thi ${testId}`);
-      }
-
-      // Fetch answer key from /grade
-      const answerMap: Record<string, string> = {};
-      try {
-        const gradeRes: any = await this.postJson(
-          `https://api.xiehanzi.com/api/v1/hsk-tests/${testId}/grade`,
-          { answers: {} },
-        );
-        if (gradeRes && gradeRes.sections) {
-          gradeRes.sections.forEach((s: any) => {
-            s.questions?.forEach((q: any) => {
-              if (q.answer) answerMap[q.id] = q.answer;
-            });
-          });
-        }
-      } catch (err) {
-        this.logger.warn(
-          `Could not get grade key for ${testId}: ${err.message}`,
-        );
-      }
-
-      // Format questions with imageUrls and correctAnswer
-      if (rawDetail.sections) {
-        rawDetail.sections.forEach((sec: any) => {
-          sec.questions?.forEach((q: any) => {
-            if (answerMap[q.id]) {
-              q.correctAnswer = answerMap[q.id];
-            }
-            if (q.images && q.images.length > 0) {
-              q.imageUrls = q.images.map((imgRel: string) => {
-                const found = rawDetail.images?.find(
-                  (item: any) => item.path === imgRel,
-                );
-                return found
-                  ? found.src
-                  : `https://static.xiehanzi.com/hsk-tests/${testId}/${imgRel}`;
-              });
-            } else {
-              q.imageUrls = [];
-            }
-          });
-        });
-      }
-
-      rawDetail.answerMap = answerMap;
-      rawDetail.durationMinutes =
-        level === 1
-          ? 35
-          : level === 2
-            ? 50
-            : level === 3
-              ? 85
-              : level === 4
-                ? 100
-                : level === 5
-                  ? 125
-                  : 140;
-
-      // Cache to disk
-      try {
-        const dataDir = this.getDataDir();
-        if (!fs.existsSync(dataDir)) {
-          fs.mkdirSync(dataDir, { recursive: true });
-        }
-        fs.writeFileSync(
-          path.join(dataDir, `${testId}.json`),
-          JSON.stringify(rawDetail, null, 2),
-          'utf8',
-        );
-      } catch (writeErr) {
-        this.logger.warn(`Could not cache ${testId}.json: ${writeErr.message}`);
-      }
-
-      return rawDetail;
-    } catch (e) {
-      this.logger.error(`Failed to fetch exam ${testId}: ${e.message}`);
-      throw new NotFoundException(
-        `Đề thi ${testId} không tồn tại hoặc lỗi tải.`,
-      );
-    }
+    throw new NotFoundException(`Không tìm thấy đề thi ${testId}`);
   }
 
   // 5. Grade exam with user answers
@@ -302,66 +209,6 @@ export class HskExamService {
     return this.prisma.hskExamResult.findMany({
       where: { userId },
       orderBy: { completedAt: 'desc' },
-    });
-  }
-
-  // Helper HTTP GET
-  private fetchJson(url: string) {
-    return new Promise((resolve, reject) => {
-      https
-        .get(
-          url,
-          {
-            headers: {
-              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
-              Accept: 'application/json',
-            },
-          },
-          (res) => {
-            let body = '';
-            res.on('data', (c) => (body += c));
-            res.on('end', () => {
-              try {
-                resolve(JSON.parse(body));
-              } catch (e) {
-                reject(e);
-              }
-            });
-          },
-        )
-        .on('error', reject);
-    });
-  }
-
-  // Helper HTTP POST
-  private postJson(url: string, data: any) {
-    return new Promise((resolve, reject) => {
-      const postData = JSON.stringify(data);
-      const req = https.request(
-        url,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Content-Length': Buffer.byteLength(postData),
-            'User-Agent': 'Mozilla/5.0',
-          },
-        },
-        (res) => {
-          let body = '';
-          res.on('data', (c) => (body += c));
-          res.on('end', () => {
-            try {
-              resolve(JSON.parse(body));
-            } catch (_e) {
-              resolve(body);
-            }
-          });
-        },
-      );
-      req.on('error', reject);
-      req.write(postData);
-      req.end();
     });
   }
 }

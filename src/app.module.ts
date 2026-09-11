@@ -24,6 +24,8 @@ import { GrammarProgressModule } from './grammar-progress/grammar-progress.modul
 import { GameRecordsModule } from './game-records/game-records.module';
 import { WeakWordsModule } from './weak-words/weak-words.module';
 import { VideoLessonsModule } from './video-lessons/video-lessons.module';
+import { ReadingPassagesModule } from './reading-passages/reading-passages.module';
+import { ChengyuModule } from './chengyu/chengyu.module';
 
 @Module({
   imports: [
@@ -54,6 +56,8 @@ import { VideoLessonsModule } from './video-lessons/video-lessons.module';
     GameRecordsModule,
     WeakWordsModule,
     VideoLessonsModule,
+    ReadingPassagesModule,
+    ChengyuModule,
   ],
   controllers: [AppController],
   providers: [

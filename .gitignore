@@ -64,3 +64,8 @@ scripts/
 .temp_audio/
 __pycache__/
 *.pyc
+
+# Temporary AI generation checkpoints & test files
+data/preview_reading_passages_*.json
+data/ollama_passage_test.json
+data/*.zip
