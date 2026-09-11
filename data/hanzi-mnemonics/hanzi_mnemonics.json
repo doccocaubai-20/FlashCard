@@ -1,0 +1,950 @@
+[
+  {
+    "char": "年",
+    "pinyin": "nián",
+    "sinoVietnamese": "Niên",
+    "hskLevel": "HSK 1",
+    "strokeCount": 6,
+    "mainRadical": {
+      "char": "干",
+      "name": "Bộ Can",
+      "meaning": "Cây cán, khiên"
+    },
+    "components": [
+      {
+        "char": "𠂉",
+        "meaning": "Người vác gánh"
+      },
+      {
+        "char": "三",
+        "meaning": "Ba bó lúa chín"
+      },
+      {
+        "char": "丨",
+        "meaning": "Cây gánh ngang"
+      }
+    ],
+    "mnemonicStory": "Bác nông dân (𠂉) vác gánh (丨) chất ba bó lúa chín (三) về làng — vừa đủ hết một mùa gặt, một năm! Nhìn 年: người mồ hôi nhễ nhại đếm từng mùa trôi qua.",
+    "etymologyType": "Tượng hình",
+    "meaning": "Năm",
+    "commonWords": [
+      {
+        "word": "今年",
+        "pinyin": "jīnnián",
+        "meaning": "Năm nay"
+      },
+      {
+        "word": "新年",
+        "pinyin": "xīnnián",
+        "meaning": "Năm mới"
+      },
+      {
+        "word": "青年",
+        "pinyin": "qīngnián",
+        "meaning": "Thanh niên"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "我今年二十岁。",
+      "pinyin": "Wǒ jīnnián èrshí suì.",
+      "vietnamese": "Năm nay tôi hai mươi tuổi."
+    }
+  },
+  {
+    "char": "帮",
+    "pinyin": "bāng",
+    "sinoVietnamese": "Bang",
+    "hskLevel": "HSK 1",
+    "strokeCount": 9,
+    "mainRadical": {
+      "char": "巾",
+      "name": "Bộ Cân",
+      "meaning": "Khăn vải"
+    },
+    "components": [
+      {
+        "char": "邦",
+        "meaning": "Nước, quốc gia"
+      },
+      {
+        "char": "巾",
+        "meaning": "Khăn vải"
+      }
+    ],
+    "mnemonicStory": "Cả nước (邦) gom từng tấm khăn (巾) cứu trợ đồng bào vùng lũ — ai cũng xắn tay áo 'giúp đỡ'! Nhìn 帮: nước nằm trên, khăn nằm dưới, cả nước cùng giúp nhau.",
+    "etymologyType": "Hình thanh",
+    "meaning": "Giúp đỡ",
+    "commonWords": [
+      {
+        "word": "帮助",
+        "pinyin": "bāngzhù",
+        "meaning": "Giúp đỡ"
+      },
+      {
+        "word": "帮忙",
+        "pinyin": "bāngmáng",
+        "meaning": "Giúp một tay"
+      },
+      {
+        "word": "帮手",
+        "pinyin": "bāngshǒu",
+        "meaning": "Người giúp việc"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "请帮我一下。",
+      "pinyin": "Qǐng bāng wǒ yīxià.",
+      "vietnamese": "Xin hãy giúp tôi một chút."
+    }
+  },
+  {
+    "char": "忙",
+    "pinyin": "máng",
+    "sinoVietnamese": "Mang",
+    "hskLevel": "HSK 1",
+    "strokeCount": 6,
+    "mainRadical": {
+      "char": "忄",
+      "name": "Bộ Tâm",
+      "meaning": "Trái tim"
+    },
+    "components": [
+      {
+        "char": "忄",
+        "meaning": "Trái tim"
+      },
+      {
+        "char": "亡",
+        "meaning": "Mất, vong"
+      }
+    ],
+    "mnemonicStory": "Trái tim (忄) làm việc quá sức đến mức 'mất tích' (亡) luôn — quên cả đập! Chữ 忙 cảnh báo: bận quá thì tim... vong mạng, nhớ nghỉ ngơi nhé!",
+    "etymologyType": "Hình thanh",
+    "meaning": "Bận rộn",
+    "commonWords": [
+      {
+        "word": "帮忙",
+        "pinyin": "bāngmáng",
+        "meaning": "Giúp việc"
+      },
+      {
+        "word": "急忙",
+        "pinyin": "jímáng",
+        "meaning": "Vội vã"
+      },
+      {
+        "word": "忙碌",
+        "pinyin": "mánglù",
+        "meaning": "Bận rộn"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "我今天很忙。",
+      "pinyin": "Wǒ jīntiān hěn máng.",
+      "vietnamese": "Hôm nay tôi rất bận."
+    }
+  },
+  {
+    "char": "包",
+    "pinyin": "bāo",
+    "sinoVietnamese": "Bao",
+    "hskLevel": "HSK 1",
+    "strokeCount": 5,
+    "mainRadical": {
+      "char": "勹",
+      "name": "Bộ Bao",
+      "meaning": "Bao bọc, ôm trọn"
+    },
+    "components": [
+      {
+        "char": "勹",
+        "meaning": "Vòng tay ôm"
+      },
+      {
+        "char": "巳",
+        "meaning": "Em bé trong bào thai"
+      }
+    ],
+    "mnemonicStory": "Mẹ (勹) ôm trọn em bé (巳) trong vòng tay như chiếc túi khổng lồ — bao bọc kín mít! Nhìn 包: vòng tay cong cong ôm đứa nhỏ, nên mới có bánh bao, cặp sách.",
+    "etymologyType": "Hội ý",
+    "meaning": "Gói, bao bọc; túi, bánh bao",
+    "commonWords": [
+      {
+        "word": "面包",
+        "pinyin": "miànbāo",
+        "meaning": "Bánh mì"
+      },
+      {
+        "word": "包子",
+        "pinyin": "bāozi",
+        "meaning": "Bánh bao"
+      },
+      {
+        "word": "书包",
+        "pinyin": "shūbāo",
+        "meaning": "Cặp sách"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "我买了一个面包。",
+      "pinyin": "Wǒ mǎi le yí ge miànbāo.",
+      "vietnamese": "Tôi đã mua một cái bánh mì."
+    }
+  },
+  {
+    "char": "子",
+    "pinyin": "zǐ",
+    "sinoVietnamese": "Tử",
+    "hskLevel": "HSK 1",
+    "strokeCount": 3,
+    "mainRadical": {
+      "char": "子",
+      "name": "Bộ Tử",
+      "meaning": "Con, trẻ em"
+    },
+    "components": [
+      {
+        "char": "了",
+        "meaning": "Em bé đầu to"
+      },
+      {
+        "char": "一",
+        "meaning": "Hai cánh tay vung"
+      }
+    ],
+    "mnemonicStory": "Em bé đầu to tròn (了) vung hai cánh tay (一) tập đi — chữ 子 chính là hình đứa trẻ đang chập chững những bước đầu, đáng yêu đến mức muốn xoa đầu!",
+    "etymologyType": "Tượng hình",
+    "meaning": "Con, trẻ em; hậu tố danh từ",
+    "commonWords": [
+      {
+        "word": "孩子",
+        "pinyin": "háizi",
+        "meaning": "Đứa trẻ"
+      },
+      {
+        "word": "儿子",
+        "pinyin": "érzi",
+        "meaning": "Con trai"
+      },
+      {
+        "word": "桌子",
+        "pinyin": "zhuōzi",
+        "meaning": "Cái bàn"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "这个孩子很可爱。",
+      "pinyin": "Zhège háizi hěn kě'ài.",
+      "vietnamese": "Đứa trẻ này rất đáng yêu."
+    }
+  },
+  {
+    "char": "爱",
+    "pinyin": "ài",
+    "sinoVietnamese": "Ái",
+    "hskLevel": "HSK 1",
+    "strokeCount": 10,
+    "mainRadical": {
+      "char": "心",
+      "name": "Tâm",
+      "meaning": "trái tim, tình cảm"
+    },
+    "components": [
+      {
+        "char": "爫",
+        "meaning": "bàn tay trỏ xuống"
+      },
+      {
+        "char": "冖",
+        "meaning": "cái trùm, chiếc mền"
+      },
+      {
+        "char": "友",
+        "meaning": "bạn bè"
+      }
+    ],
+    "mnemonicStory": "Bàn tay (爫) dốc ngược trùm chiếc chăn (冖) lên người bạn thân (友), ôm ấp che chở giữa trời đông — được bạn bè ủ ấm tận tâm như thế mới gọi là tình yêu!",
+    "etymologyType": "Hội ý",
+    "meaning": "yêu, thương",
+    "commonWords": [
+      {
+        "word": "爱情",
+        "pinyin": "àiqíng",
+        "meaning": "tình yêu"
+      },
+      {
+        "word": "爱人",
+        "pinyin": "àiren",
+        "meaning": "vợ/chồng, người yêu"
+      },
+      {
+        "word": "可爱",
+        "pinyin": "kě'ài",
+        "meaning": "đáng yêu"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "我爱你。",
+      "pinyin": "Wǒ ài nǐ.",
+      "vietnamese": "Tôi yêu bạn."
+    }
+  },
+  {
+    "char": "好",
+    "pinyin": "hǎo",
+    "sinoVietnamese": "Hảo",
+    "hskLevel": "HSK 1",
+    "strokeCount": 6,
+    "mainRadical": {
+      "char": "女",
+      "name": "Nữ",
+      "meaning": "người phụ nữ"
+    },
+    "components": [
+      {
+        "char": "女",
+        "meaning": "người phụ nữ"
+      },
+      {
+        "char": "子",
+        "meaning": "đứa trẻ, con"
+      }
+    ],
+    "mnemonicStory": "Người mẹ (女) bế đứa con (子) khoe với cả xóm: 'Mẹ tròn con vuông!' — hình ảnh người phụ nữ ôm trẻ trong vòng tay chính là điều tốt đẹp nhất, nên 女 + 子 = tốt.",
+    "etymologyType": "Hội ý",
+    "meaning": "tốt, hay, đẹp",
+    "commonWords": [
+      {
+        "word": "你好",
+        "pinyin": "nǐhǎo",
+        "meaning": "xin chào"
+      },
+      {
+        "word": "好吃",
+        "pinyin": "hǎochī",
+        "meaning": "ngon"
+      },
+      {
+        "word": "爱好",
+        "pinyin": "àihào",
+        "meaning": "sở thích"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "你好吗？",
+      "pinyin": "Nǐ hǎo ma?",
+      "vietnamese": "Bạn có khỏe không?"
+    }
+  },
+  {
+    "char": "八",
+    "pinyin": "bā",
+    "sinoVietnamese": "Bát",
+    "hskLevel": "HSK 1",
+    "strokeCount": 2,
+    "mainRadical": {
+      "char": "八",
+      "name": "Bát",
+      "meaning": "hai nét tách rời, chia tách"
+    },
+    "components": [
+      {
+        "char": "丿",
+        "meaning": "nét phẩy bên trái"
+      },
+      {
+        "char": "㇏",
+        "meaning": "nét mác bên phải"
+      }
+    ],
+    "mnemonicStory": "Hai nét rẽ hai bên như ông béo xé đôi chiếc bánh, hay con số 8 đứng thẳng lưng — nhìn phát là biết ngay số tám, chẳng cần đếm!",
+    "etymologyType": "Chỉ sự",
+    "meaning": "số tám",
+    "commonWords": [
+      {
+        "word": "八点",
+        "pinyin": "bādiǎn",
+        "meaning": "8 giờ"
+      },
+      {
+        "word": "八十",
+        "pinyin": "bāshí",
+        "meaning": "tám mươi"
+      },
+      {
+        "word": "八月",
+        "pinyin": "bāyuè",
+        "meaning": "tháng Tám"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "现在八点。",
+      "pinyin": "Xiànzài bā diǎn.",
+      "vietnamese": "Bây giờ là 8 giờ."
+    }
+  },
+  {
+    "char": "爸",
+    "pinyin": "bà",
+    "sinoVietnamese": "Bà",
+    "hskLevel": "HSK 1",
+    "strokeCount": 8,
+    "mainRadical": {
+      "char": "父",
+      "name": "Phụ",
+      "meaning": "người cha"
+    },
+    "components": [
+      {
+        "char": "父",
+        "meaning": "người cha"
+      },
+      {
+        "char": "巴",
+        "meaning": "âm 'ba', bám dính"
+      }
+    ],
+    "mnemonicStory": "Ông bố (父) cầm ly cà phê 'ba' (巴) ngồi đọc báo, con gọi 'ba ba' ầm ĩ cả nhà — chữ 巴 cho âm 'ba', cộng thêm ông cha là ra bố ngay!",
+    "etymologyType": "Hình thanh",
+    "meaning": "bố, ba, cha",
+    "commonWords": [
+      {
+        "word": "爸爸",
+        "pinyin": "bàba",
+        "meaning": "bố"
+      },
+      {
+        "word": "老爸",
+        "pinyin": "lǎobà",
+        "meaning": "tía, bố già"
+      },
+      {
+        "word": "爸妈",
+        "pinyin": "bàmā",
+        "meaning": "bố mẹ"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "我爸爸是老师。",
+      "pinyin": "Wǒ bàba shì lǎoshī.",
+      "vietnamese": "Bố tôi là giáo viên."
+    }
+  },
+  {
+    "char": "吧",
+    "pinyin": "ba",
+    "sinoVietnamese": "Ba",
+    "hskLevel": "HSK 1",
+    "strokeCount": 7,
+    "mainRadical": {
+      "char": "口",
+      "name": "Khẩu",
+      "meaning": "cái miệng"
+    },
+    "components": [
+      {
+        "char": "口",
+        "meaning": "cái miệng"
+      },
+      {
+        "char": "巴",
+        "meaning": "âm 'ba'"
+      }
+    ],
+    "mnemonicStory": "Cái miệng (口) chu môi thốt lên 'ba...' — câu nói thêm chữ này nghe nhẹ tênh như lời rủ rê: 'Đi thôi!', 'Uống nhé!' Miệng nói kèm âm 'ba' chính là trợ từ nhé, nhỉ.",
+    "etymologyType": "Hình thanh",
+    "meaning": "trợ từ 'nhé', 'nhỉ' (đề nghị, suy đoán)",
+    "commonWords": [
+      {
+        "word": "好吧",
+        "pinyin": "hǎo ba",
+        "meaning": "được rồi, thôi được"
+      },
+      {
+        "word": "来吧",
+        "pinyin": "lái ba",
+        "meaning": "đến nào, cứ đến"
+      },
+      {
+        "word": "是吧",
+        "pinyin": "shì ba",
+        "meaning": "phải không nhỉ"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "我们走吧。",
+      "pinyin": "Wǒmen zǒu ba.",
+      "vietnamese": "Chúng ta đi thôi."
+    }
+  },
+  {
+    "char": "去",
+    "pinyin": "qù",
+    "sinoVietnamese": "Khứ",
+    "hskLevel": "HSK 1",
+    "strokeCount": 5,
+    "mainRadical": {
+      "char": "厶",
+      "name": "Bộ Tư",
+      "meaning": "riêng tư, tư hữu"
+    },
+    "components": [
+      {
+        "char": "土",
+        "meaning": "đất"
+      },
+      {
+        "char": "厶",
+        "meaning": "dấu tư hữu"
+      }
+    ],
+    "mnemonicStory": "Anh chàng đứng trên mảnh đất (土) bỗng thấy dấu tư hữu (厶) bị người khác vẽ đè lên, giận quá vứt hết đồ chạy ngay khỏi đó - 去 nghĩa là đi!",
+    "etymologyType": "Hội ý",
+    "meaning": "đi",
+    "commonWords": [
+      {
+        "word": "去年",
+        "pinyin": "qùnián",
+        "meaning": "năm ngoái"
+      },
+      {
+        "word": "回去",
+        "pinyin": "huíqù",
+        "meaning": "trở về"
+      },
+      {
+        "word": "出去",
+        "pinyin": "chūqù",
+        "meaning": "đi ra ngoài"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "我去学校。",
+      "pinyin": "Wǒ qù xuéxiào.",
+      "vietnamese": "Tôi đi đến trường."
+    }
+  },
+  {
+    "char": "穿",
+    "pinyin": "chuān",
+    "sinoVietnamese": "Xuyên",
+    "hskLevel": "HSK 1",
+    "strokeCount": 9,
+    "mainRadical": {
+      "char": "穴",
+      "name": "Bộ Huyệt",
+      "meaning": "hang động, lỗ hổng"
+    },
+    "components": [
+      {
+        "char": "穴",
+        "meaning": "hang, lỗ hổng"
+      },
+      {
+        "char": "牙",
+        "meaning": "răng"
+      }
+    ],
+    "mnemonicStory": "Con chuột tinh nghịch dùng răng (牙) cắn thủng một lỗ xuyên qua vách hang (穴), rồi chui người vào như mặc chiếc áo - 穿 vừa là xuyên qua vừa là mặc!",
+    "etymologyType": "Hình thanh",
+    "meaning": "mặc (quần áo), xuyên qua",
+    "commonWords": [
+      {
+        "word": "穿衣",
+        "pinyin": "chuān yī",
+        "meaning": "mặc quần áo"
+      },
+      {
+        "word": "穿过",
+        "pinyin": "chuānguò",
+        "meaning": "đi xuyên qua"
+      },
+      {
+        "word": "看穿",
+        "pinyin": "kànchuān",
+        "meaning": "nhìn thấu"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "今天我穿红色的衣服。",
+      "pinyin": "Jīntiān wǒ chuān hóngsè de yīfu.",
+      "vietnamese": "Hôm nay tôi mặc quần áo màu đỏ."
+    }
+  },
+  {
+    "char": "床",
+    "pinyin": "chuáng",
+    "sinoVietnamese": "Sàng",
+    "hskLevel": "HSK 1",
+    "strokeCount": 7,
+    "mainRadical": {
+      "char": "广",
+      "name": "Bộ Quảng",
+      "meaning": "mái nhà, nhà rộng"
+    },
+    "components": [
+      {
+        "char": "广",
+        "meaning": "mái nhà"
+      },
+      {
+        "char": "木",
+        "meaning": "gỗ"
+      }
+    ],
+    "mnemonicStory": "Trong căn nhà tranh (广), anh chàng kê một khúc gỗ (木) to tròn làm giường, nằm lên kêu 'chuáng' một tiếng thật đã - 床 nghĩa là chiếc giường!",
+    "etymologyType": "Hội ý",
+    "meaning": "giường",
+    "commonWords": [
+      {
+        "word": "起床",
+        "pinyin": "qǐchuáng",
+        "meaning": "thức dậy"
+      },
+      {
+        "word": "上床",
+        "pinyin": "shàngchuáng",
+        "meaning": "lên giường"
+      },
+      {
+        "word": "床单",
+        "pinyin": "chuángdān",
+        "meaning": "ga giường"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "我在床上睡觉。",
+      "pinyin": "Wǒ zài chuángshang shuìjiào.",
+      "vietnamese": "Tôi ngủ trên giường."
+    }
+  },
+  {
+    "char": "次",
+    "pinyin": "cì",
+    "sinoVietnamese": "Thứ",
+    "hskLevel": "HSK 1",
+    "strokeCount": 6,
+    "mainRadical": {
+      "char": "欠",
+      "name": "Bộ Khuyết",
+      "meaning": "há miệng, thiếu hụt"
+    },
+    "components": [
+      {
+        "char": "冫",
+        "meaning": "hai giọt nước lạnh"
+      },
+      {
+        "char": "欠",
+        "meaning": "há miệng, ngáp"
+      }
+    ],
+    "mnemonicStory": "Xếp hàng lần thứ hai, anh chàng lạnh run cầm cập (冫) vẫn há miệng ngáp (欠) chờ đến lượt mua phở - 次 nghĩa là lần, thứ tự!",
+    "etymologyType": "Hình thanh",
+    "meaning": "lần, thứ tự",
+    "commonWords": [
+      {
+        "word": "每次",
+        "pinyin": "měicì",
+        "meaning": "mỗi lần"
+      },
+      {
+        "word": "第一次",
+        "pinyin": "dì yī cì",
+        "meaning": "lần đầu tiên"
+      },
+      {
+        "word": "其次",
+        "pinyin": "qícì",
+        "meaning": "kế đến, thứ hai"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "这是我第一次来中国。",
+      "pinyin": "Zhè shì wǒ dì yī cì lái Zhōngguó.",
+      "vietnamese": "Đây là lần đầu tiên tôi đến Trung Quốc."
+    }
+  },
+  {
+    "char": "从",
+    "pinyin": "cóng",
+    "sinoVietnamese": "Tùng",
+    "hskLevel": "HSK 1",
+    "strokeCount": 4,
+    "mainRadical": {
+      "char": "人",
+      "name": "Bộ Nhân",
+      "meaning": "người"
+    },
+    "components": [
+      {
+        "char": "人",
+        "meaning": "người đi trước"
+      },
+      {
+        "char": "人",
+        "meaning": "người đi sau"
+      }
+    ],
+    "mnemonicStory": "Hai người (人 + 人) đi nối đuôi nhau như hình với bóng, người sau cứ bám theo người trước không rời nửa bước - 从 nghĩa là theo, từ!",
+    "etymologyType": "Hội ý",
+    "meaning": "từ, theo",
+    "commonWords": [
+      {
+        "word": "从来",
+        "pinyin": "cónglái",
+        "meaning": "trước nay, luôn luôn"
+      },
+      {
+        "word": "从此",
+        "pinyin": "cóngcǐ",
+        "meaning": "từ đó"
+      },
+      {
+        "word": "服从",
+        "pinyin": "fúcóng",
+        "meaning": "phục tùng"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "我从越南来。",
+      "pinyin": "Wǒ cóng Yuènán lái.",
+      "vietnamese": "Tôi đến từ Việt Nam."
+    }
+  },
+  {
+    "char": "错",
+    "pinyin": "cuò",
+    "sinoVietnamese": "Thác",
+    "hskLevel": "HSK 1",
+    "strokeCount": 13,
+    "mainRadical": {
+      "char": "钅",
+      "name": "Kim (kim loại)",
+      "meaning": "kim loại, đồng xu"
+    },
+    "components": [
+      {
+        "char": "钅",
+        "meaning": "Kim loại"
+      },
+      {
+        "char": "昔",
+        "meaning": "Ngày xưa"
+      }
+    ],
+    "mnemonicStory": "Anh thợ kim loại (钅) cầm cái giũa cào lên tấm bia đá ký ức ngày xưa (昔), cào nhầm đường — 'RẮC' một tiếng, bia gãy đôi: ôi thác rồi, làm sai (错) mất cả!",
+    "etymologyType": "Hình thanh",
+    "meaning": "sai, nhầm lẫn",
+    "commonWords": [
+      {
+        "word": "错误",
+        "pinyin": "cuòwù",
+        "meaning": "sai lầm"
+      },
+      {
+        "word": "不错",
+        "pinyin": "bùcuò",
+        "meaning": "không tệ, khá tốt"
+      },
+      {
+        "word": "弄错",
+        "pinyin": "nòngcuò",
+        "meaning": "làm nhầm"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "你写错字了。",
+      "pinyin": "Nǐ xiě cuò zì le.",
+      "vietnamese": "Bạn viết sai chữ rồi."
+    }
+  },
+  {
+    "char": "打",
+    "pinyin": "dǎ",
+    "sinoVietnamese": "Đả",
+    "hskLevel": "HSK 1",
+    "strokeCount": 5,
+    "mainRadical": {
+      "char": "扌",
+      "name": "Thủ (bàn tay)",
+      "meaning": "bàn tay, hành động bằng tay"
+    },
+    "components": [
+      {
+        "char": "扌",
+        "meaning": "Bàn tay"
+      },
+      {
+        "char": "丁",
+        "meaning": "Cái đinh"
+      }
+    ],
+    "mnemonicStory": "Bàn tay (扌) cầm búa đóng cục đinh (丁) vào tường, 'cộc cộc cộc' — mỗi nhát là một cú đả (đánh) giòn tan, làm hàng xóm tưởng cả xóm đang đánh trống hội.",
+    "etymologyType": "Hình thanh",
+    "meaning": "đánh, đập; làm (việc gì)",
+    "commonWords": [
+      {
+        "word": "打电话",
+        "pinyin": "dǎ diànhuà",
+        "meaning": "gọi điện thoại"
+      },
+      {
+        "word": "打球",
+        "pinyin": "dǎqiú",
+        "meaning": "chơi bóng"
+      },
+      {
+        "word": "打工",
+        "pinyin": "dǎgōng",
+        "meaning": "làm thuê, làm việc part-time"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "我给他打电话。",
+      "pinyin": "Wǒ gěi tā dǎ diànhuà.",
+      "vietnamese": "Tôi gọi điện thoại cho anh ấy."
+    }
+  },
+  {
+    "char": "电",
+    "pinyin": "diàn",
+    "sinoVietnamese": "Điện",
+    "hskLevel": "HSK 1",
+    "strokeCount": 5,
+    "mainRadical": {
+      "char": "田",
+      "name": "Điền (ruộng)",
+      "meaning": "ruộng đất, ô vuông"
+    },
+    "components": [
+      {
+        "char": "日",
+        "meaning": "Mặt trời"
+      },
+      {
+        "char": "乚",
+        "meaning": "Tia chớp cong"
+      }
+    ],
+    "mnemonicStory": "Tia chớp (乚) hung hãn lao xuyên qua mặt trời (日), vẽ một vệt cong loằng ngoằng trên trời — đó chính là cú điện giật sét khiến tóc ai đó dựng ngược cả đầu.",
+    "etymologyType": "Tượng hình",
+    "meaning": "điện, điện khí; sét",
+    "commonWords": [
+      {
+        "word": "电话",
+        "pinyin": "diànhuà",
+        "meaning": "điện thoại"
+      },
+      {
+        "word": "电脑",
+        "pinyin": "diànnǎo",
+        "meaning": "máy tính"
+      },
+      {
+        "word": "电视",
+        "pinyin": "diànshì",
+        "meaning": "tivi, truyền hình"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "我用电脑学习。",
+      "pinyin": "Wǒ yòng diànnǎo xuéxí.",
+      "vietnamese": "Tôi dùng máy tính để học."
+    }
+  },
+  {
+    "char": "话",
+    "pinyin": "huà",
+    "sinoVietnamese": "Thoại",
+    "hskLevel": "HSK 1",
+    "strokeCount": 8,
+    "mainRadical": {
+      "char": "讠",
+      "name": "Ngôn (lời nói)",
+      "meaning": "lời nói, ngôn ngữ"
+    },
+    "components": [
+      {
+        "char": "讠",
+        "meaning": "Lời nói"
+      },
+      {
+        "char": "舌",
+        "meaning": "Lưỡi"
+      }
+    ],
+    "mnemonicStory": "Chiếc lưỡi (舌) hiếu kỳ thò ra nằm cạnh chữ 'lời' (讠), liếm liên tục không nghỉ — lưỡi càng lè, chuyện (thoại) càng nhiều, nói từ sáng đến tối không mỏi.",
+    "etymologyType": "Hình thanh",
+    "meaning": "lời nói, lời lẽ",
+    "commonWords": [
+      {
+        "word": "说话",
+        "pinyin": "shuōhuà",
+        "meaning": "nói chuyện"
+      },
+      {
+        "word": "电话",
+        "pinyin": "diànhuà",
+        "meaning": "điện thoại"
+      },
+      {
+        "word": "笑话",
+        "pinyin": "xiàohua",
+        "meaning": "chuyện cười"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "他说话很快。",
+      "pinyin": "Tā shuōhuà hěn kuài.",
+      "vietnamese": "Anh ấy nói chuyện rất nhanh."
+    }
+  },
+  {
+    "char": "开",
+    "pinyin": "kāi",
+    "sinoVietnamese": "Khai",
+    "hskLevel": "HSK 1",
+    "strokeCount": 4,
+    "mainRadical": {
+      "char": "廾",
+      "name": "Cấn (hai bàn tay)",
+      "meaning": "hai bàn tay nâng đỡ"
+    },
+    "components": [
+      {
+        "char": "一",
+        "meaning": "Thanh chốt ngang"
+      },
+      {
+        "char": "廾",
+        "meaning": "Hai bàn tay"
+      }
+    ],
+    "mnemonicStory": "Hai bàn tay (廾) hì hục đẩy thanh chốt ngang (一) ra khỏi cửa, 'CẠCH' một tiếng — cánh cửa tung bật mở (khai) toang, làm sếp đứng ngoài suýt ngã nhào vào.",
+    "etymologyType": "Hội ý",
+    "meaning": "mở, khai; bật (máy)",
+    "commonWords": [
+      {
+        "word": "开心",
+        "pinyin": "kāixīn",
+        "meaning": "vui vẻ"
+      },
+      {
+        "word": "开会",
+        "pinyin": "kāihuì",
+        "meaning": "họp, họp hành"
+      },
+      {
+        "word": "打开",
+        "pinyin": "dǎkāi",
+        "meaning": "mở ra"
+      }
+    ],
+    "exampleSentence": {
+      "hanzi": "请打开门。",
+      "pinyin": "Qǐng dǎkāi mén.",
+      "vietnamese": "Xin hãy mở cửa ra."
+    }
+  }
+]

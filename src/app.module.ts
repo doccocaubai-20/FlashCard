@@ -26,6 +26,7 @@ import { WeakWordsModule } from './weak-words/weak-words.module';
 import { VideoLessonsModule } from './video-lessons/video-lessons.module';
 import { ReadingPassagesModule } from './reading-passages/reading-passages.module';
 import { ChengyuModule } from './chengyu/chengyu.module';
+import { HanziMnemonicsModule } from './hanzi-mnemonics/hanzi-mnemonics.module';
 
 @Module({
   imports: [
@@ -58,6 +59,7 @@ import { ChengyuModule } from './chengyu/chengyu.module';
     VideoLessonsModule,
     ReadingPassagesModule,
     ChengyuModule,
+    HanziMnemonicsModule,
   ],
   controllers: [AppController],
   providers: [
