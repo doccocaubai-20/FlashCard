@@ -24,6 +24,7 @@ export class ReadingPassagesService {
   private readPassagesForLevel(level: number): any[] {
     const candidates = [
       `hsk${level}.json`,
+      `hsk${level < 7 ? level : '7_9'}.json`,
       `preview_reading_passages_hsk${level}.json`,
       `preview_reading_passages_hsk${level < 7 ? level : '7_9'}.json`,
     ];
@@ -53,13 +54,13 @@ export class ReadingPassagesService {
     const levelsSummary: any[] = [];
     let totalAll = 0;
 
-    for (let lvl = 1; lvl <= 6; lvl++) {
+    for (let lvl = 1; lvl <= 7; lvl++) {
       const passages = this.readPassagesForLevel(lvl);
       const count = passages.length;
       totalAll += count;
       levelsSummary.push({
         level: lvl,
-        name: `HSK ${lvl}`,
+        name: lvl === 7 ? 'HSK 7-9' : `HSK ${lvl}`,
         count,
         topicsCount: new Set(passages.map((p) => p.topicId)).size,
       });
@@ -106,9 +107,9 @@ export class ReadingPassagesService {
 
   // 3. Lấy chi tiết toàn bộ 1 bài đọc (nội dung song ngữ, từ vựng, trắc nghiệm)
   async getPassageById(id: string) {
-    // Trích xuất cấp độ từ ID nếu có (ví dụ: reading_hsk5_t08_p01 -> level 5)
+    // Trích xuất cấp độ từ ID nếu có (ví dụ: reading_hsk5_t08_p01 -> level 5, reading_hsk7_t01_p01 -> level 7)
     const match = id.match(/reading_hsk(\d+)_/);
-    const searchLevels = match ? [Number(match[1])] : [1, 2, 3, 4, 5, 6];
+    const searchLevels = match ? [Number(match[1])] : [1, 2, 3, 4, 5, 6, 7];
 
     for (const lvl of searchLevels) {
       const passages = this.readPassagesForLevel(lvl);
@@ -119,7 +120,7 @@ export class ReadingPassagesService {
     }
 
     // Nếu tìm theo searchLevels chưa thấy, quét toàn bộ
-    for (let lvl = 1; lvl <= 6; lvl++) {
+    for (let lvl = 1; lvl <= 7; lvl++) {
       if (searchLevels.includes(lvl)) continue;
       const passages = this.readPassagesForLevel(lvl);
       const found = passages.find((p) => p.id === id);
