@@ -206,9 +206,48 @@ export class HskExamService {
 
   // 7. Get user's exam attempts history
   async getResultsForUser(userId: number) {
-    return this.prisma.hskExamResult.findMany({
+    const results = await this.prisma.hskExamResult.findMany({
       where: { userId },
       orderBy: { completedAt: 'desc' },
     });
+
+    // Ensure testId is populated if legacy records missed it
+    const allExams = this.readJsonFile('all-exams.json');
+    if (Array.isArray(allExams)) {
+      return results.map((r) => {
+        if (!r.testId && r.examTitle) {
+          const match = allExams.find((e: any) => e.title === r.examTitle);
+          if (match) {
+            return { ...r, testId: match.testId };
+          }
+        }
+        return r;
+      });
+    }
+
+    return results;
+  }
+
+  // 8. Get specific exam result by id
+  async getResultById(userId: number, resultId: number) {
+    const result = await this.prisma.hskExamResult.findFirst({
+      where: { id: resultId, userId },
+    });
+
+    if (!result) {
+      throw new NotFoundException(`Không tìm thấy kết quả bài thi #${resultId}`);
+    }
+
+    if (!result.testId && result.examTitle) {
+      const allExams = this.readJsonFile('all-exams.json');
+      if (Array.isArray(allExams)) {
+        const match = allExams.find((e: any) => e.title === result.examTitle);
+        if (match) {
+          return { ...result, testId: match.testId };
+        }
+      }
+    }
+
+    return result;
   }
 }

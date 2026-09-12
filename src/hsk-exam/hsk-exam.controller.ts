@@ -41,6 +41,17 @@ export class HskExamController {
     return this.hskExamService.getResultsForUser(userId);
   }
 
+  // 4b. Get specific result detail by id
+  @Get('results/:id')
+  @UseGuards(AuthGuard('jwt'))
+  async getResultById(
+    @Req() req: any,
+    @Param('id', ParseIntPipe) id: number,
+  ) {
+    const userId = req.user.id;
+    return this.hskExamService.getResultById(userId, id);
+  }
+
   // 5. Get detail of an exam
   @Get('detail/:testId')
   async getExamDetail(@Param('testId') testId: string) {

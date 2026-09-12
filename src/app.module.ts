@@ -27,6 +27,7 @@ import { VideoLessonsModule } from './video-lessons/video-lessons.module';
 import { ReadingPassagesModule } from './reading-passages/reading-passages.module';
 import { ChengyuModule } from './chengyu/chengyu.module';
 import { HanziMnemonicsModule } from './hanzi-mnemonics/hanzi-mnemonics.module';
+import { SpeakingTutorModule } from './speaking-tutor/speaking-tutor.module';
 
 @Module({
   imports: [
@@ -60,6 +61,7 @@ import { HanziMnemonicsModule } from './hanzi-mnemonics/hanzi-mnemonics.module';
     ReadingPassagesModule,
     ChengyuModule,
     HanziMnemonicsModule,
+    SpeakingTutorModule,
   ],
   controllers: [AppController],
   providers: [
